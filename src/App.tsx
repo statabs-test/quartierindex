@@ -3,6 +3,7 @@ import './App.css';
 import TestIndicator from './component/test/TestIndicator';
 import TestDistricts from './component/test/TestDistricts';
 import TestSelectedIndicator from './component/test/TestSelectedIndicator'
+import TestRanking from './component/test/TestRanking'
 
 const logo = require('./logo.svg');
 
@@ -24,6 +25,8 @@ class App extends React.Component {
         <TestSelectedIndicator />
 
         <TestDistricts />
+
+        <TestRanking />
       </div>
     );
   }

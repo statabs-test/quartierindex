@@ -78,15 +78,15 @@ const valueData = _.map(dataWithoutHeader, (data) => {
       id: valueId,
       districtId: data.districtId,
       indicatorId: data.indicatorId,
-      value: data.value,
+      value: parseFloat(data.value),
       ranking: data.ranking,
     }
 });
 
-jsonFile.writeFile(path.join(__dirname, '../src/state/data/values.json'), valueData, function(err) {
+jsonFile.writeFile(path.join(__dirname, '../src/state/data/observation.json'), valueData, function(err) {
   err ?
     console.error(err) :
-    console.info('Successfuly wrote values.json file');
+    console.info('Successfuly wrote observation.json file');
 });
 
 
