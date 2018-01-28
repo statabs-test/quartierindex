@@ -8,22 +8,23 @@ export interface Props {
     indicators: Indicator[]
 }
 
-function TestValues({ indicators }: Props) {
+function TestIndicators({ indicators }: Props) {
     return (
-        <ol>
-            {
+      <div>
+        <h1>Alle Indikatoren</h1>
+        {
                 // Create an element per indicator item
                 indicators.map(indicator => {
                     return (
-                      <li key={indicator.id}>
-                        {indicator.id} has values selected:
-                          {indicator.selected ? 'true' : 'false'},
-                          weight: {indicator.weight}
-                      </li>
+                      <p key={indicator.id}>
+                        {indicator.id} {indicator.name}
+                        (selected: {indicator.selected ? 'true' : 'false'},
+                          weight: {indicator.weight} )
+                      </p>
                     );
                 })
             }
-                </ol>
+     </div>
     );
 }
 
@@ -33,4 +34,4 @@ const mapStateToProps = (state: Rootstate) => ({
 
 const mapDispatchToProps = null;
 
-export default connect(mapStateToProps, mapDispatchToProps)(TestValues);
+export default connect(mapStateToProps, mapDispatchToProps)(TestIndicators);

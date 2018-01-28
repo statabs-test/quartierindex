@@ -1,6 +1,6 @@
 import * as React from 'react';
 import './App.css';
-import TestValues from './component/test/TestValues';
+import TestValues from './component/test/TestIndicator';
 import TestDistricts from './component/test/TestDistricts';
 
 const logo = require('./logo.svg');

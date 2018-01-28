@@ -1,14 +1,23 @@
-import { IncrementAction } from './actions';
-import { StoreState } from './types';
+import { IndicatorAction } from './actions';
+import { IndicatorState } from './types';
 import { INDICATOR_SELECT, INDICATOR_UPDATE } from './constants';
-import { dummyDataIndicator } from '../dummyData';
+import { Indicator } from './types'
+
+const indicatorData = require('./../data/indicator.json');
+const arrayToObjectById = (array: Indicator[]) =>
+  array.reduce((obj, item) => {
+    obj[item.id] = item
+    return obj
+  }, {})
 
 /*
  * A reducer needs to be pure and side effect free
  * -> one solution is to implement a deep copy with the spread operator
 * */
 
-export function indicator(state: StoreState = dummyDataIndicator, action: IncrementAction): StoreState {
+export function indicator(
+  state: IndicatorState = { byId: arrayToObjectById(indicatorData) },
+  action: IndicatorAction): IndicatorState {
     switch (action.type) {
         /*
          * Updates all information based on the user selection, see storeState for shape
@@ -19,7 +28,8 @@ export function indicator(state: StoreState = dummyDataIndicator, action: Increm
                 byId: {
                     ...state.byId,
                     [action.payload.id]: {
-                        ...action.payload
+                      ...state.byId[action.payload.id],
+                      ...action.payload
                     },
                 }
             };

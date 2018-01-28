@@ -1,4 +1,5 @@
 import * as constants from './constants'
+import { NegativePositive } from './types'
 
 /**
  * Select or deselect indicator interface with payload
@@ -14,13 +15,14 @@ export interface IndicatorSelection {
 export interface IndicatorUpdate {
     type: constants.INDICATOR_UPDATE;
     payload: {
-        id: string
-        selected: boolean
-        weight: number
+      id: string
+      selected: boolean
+      valuation: NegativePositive
+      weight: number
     }
 }
 
-export type IncrementAction = IndicatorSelection | IndicatorUpdate;
+export type IndicatorAction = IndicatorSelection | IndicatorUpdate;
 
 /**
  * Select indicator for ranking

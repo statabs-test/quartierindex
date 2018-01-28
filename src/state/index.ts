@@ -2,7 +2,7 @@ declare var window: Window & { devToolsExtension: any, __REDUX_DEVTOOLS_EXTENSIO
 import { compose, createStore, combineReducers, applyMiddleware } from 'redux';
 import { indicator } from './indicator/reducer';
 import { district } from './district/reducer';
-import { StoreState as IndicatorState } from './indicator/types';
+import { IndicatorState as IndicatorState } from './indicator/types';
 import { DistrictState } from './district/types';
 
 export type Rootstate = {
