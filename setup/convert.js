@@ -39,7 +39,7 @@ const indicatorData = _.uniqBy(
   'id'
 );
 
-jsonFile.writeFile(path.join(__dirname, '../data/normalized/indicator.json'), indicatorData, function(err) {
+jsonFile.writeFile(path.join(__dirname, '../src/state/data/indicator.json'), indicatorData, function(err) {
   err ?
     console.error(err) :
     console.info('Successfuly wrote indicator.json file');
@@ -60,7 +60,7 @@ const districtData = _.uniqBy(
   'id'
 );
 
-jsonFile.writeFile(path.join(__dirname, '../data/normalized/district.json'), districtData, function(err) {
+jsonFile.writeFile(path.join(__dirname, '../src/state/data/district.json'), districtData, function(err) {
   err ?
     console.error(err) :
     console.info('Successfuly wrote district.json file');
@@ -83,7 +83,7 @@ const valueData = _.map(dataWithoutHeader, (data) => {
     }
 });
 
-jsonFile.writeFile(path.join(__dirname, '../data/normalized/values.json'), valueData, function(err) {
+jsonFile.writeFile(path.join(__dirname, '../src/state/data/values.json'), valueData, function(err) {
   err ?
     console.error(err) :
     console.info('Successfuly wrote values.json file');

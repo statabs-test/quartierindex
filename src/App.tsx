@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './App.css';
 import TestValues from './component/test/TestValues';
+import TestDistricts from './component/test/TestDistricts';
 
 const logo = require('./logo.svg');
 
@@ -18,6 +19,8 @@ class App extends React.Component {
         </p>
 
         <TestValues />
+
+        <TestDistricts />
       </div>
     );
   }
