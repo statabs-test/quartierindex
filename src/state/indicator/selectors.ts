@@ -11,3 +11,12 @@ const select = (state: Rootstate) => {
 export const allIndicators = (state: Rootstate) => {
     return _.values(select(state).byId);
 };
+
+/**
+ * Select all selected indicator
+ */
+export const selectedIndicators = (state: Rootstate) => {
+    return _.filter(allIndicators(state), (indicator) => {
+        return indicator.selected;
+    })
+}

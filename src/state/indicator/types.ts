@@ -6,7 +6,8 @@ export enum NegativePositive {
 export interface Indicator {
     id: string
     name: string
-
+    publication: string
+    year: string
     selected?: boolean
     valuation: NegativePositive,
     weight?: number

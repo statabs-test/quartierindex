@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { Rootstate } from '../../state/index';
-import { allIndicators } from '../../state/indicator/selectors';
+import { Rootstate } from '../../state';
+import { selectedIndicators } from '../../state/indicator/selectors';
 import { Indicator } from '../../state/indicator/types';
 import {
   selectIndicator, deselectIndicator,
@@ -13,10 +13,10 @@ export interface Props {
   deselect(id: string): void
 }
 
-function TestIndicators({ indicators, select, deselect }: Props) {
+function TestSelectedIndicators({ indicators, select, deselect }: Props) {
     return (
       <div>
-        <h1>Alle Indikatoren</h1>
+        <h1>Selektierte Indikatoren</h1>
         {
                 // Create an element per indicator item
                 indicators.map(indicator => {
@@ -38,7 +38,7 @@ function TestIndicators({ indicators, select, deselect }: Props) {
 }
 
 const mapStateToProps = (state: Rootstate) => ({
-    indicators: allIndicators(state)
+    indicators: selectedIndicators(state)
 });
 
 const mapDispatchToProps = ({
@@ -46,4 +46,4 @@ const mapDispatchToProps = ({
   deselect: deselectIndicator
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(TestIndicators);
+export default connect(mapStateToProps, mapDispatchToProps)(TestSelectedIndicators);

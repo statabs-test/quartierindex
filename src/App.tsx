@@ -1,7 +1,8 @@
 import * as React from 'react';
 import './App.css';
-import TestValues from './component/test/TestIndicator';
+import TestIndicator from './component/test/TestIndicator';
 import TestDistricts from './component/test/TestDistricts';
+import TestSelectedIndicator from './component/test/TestSelectedIndicator'
 
 const logo = require('./logo.svg');
 
@@ -18,7 +19,9 @@ class App extends React.Component {
           To get started, edit <code>src/App.tsx</code> and save to reload.
         </p>
 
-        <TestValues />
+        <TestIndicator />
+
+        <TestSelectedIndicator />
 
         <TestDistricts />
       </div>
