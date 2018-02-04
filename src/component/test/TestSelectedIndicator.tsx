@@ -4,16 +4,16 @@ import { Rootstate } from '../../state';
 import { selectedIndicators } from '../../state/indicator/selectors';
 import { Indicator } from '../../state/indicator/types';
 import {
-  selectIndicator, deselectIndicator,
+  SetPositiveValuation, SetNegativeValuation,
 } from '../../state/indicator/actions';
 
 export interface Props {
-    indicators: Indicator[],
-  select(id: string): void
-  deselect(id: string): void
+  indicators: Indicator[],
+  positiveValuation(id: string): void
+  negativeValuation(id: string): void
 }
 
-function TestSelectedIndicators({ indicators, select, deselect }: Props) {
+function TestSelectedIndicators({ indicators, positiveValuation, negativeValuation }: Props) {
     return (
       <div>
         <h1>Selektierte Indikatoren</h1>
@@ -22,13 +22,9 @@ function TestSelectedIndicators({ indicators, select, deselect }: Props) {
                 indicators.map(indicator => {
                     return (
                       <p key={indicator.id}>
-                        {indicator.id} {indicator.name}
-                        (selected: {indicator.selected ? 'true' : 'false'},
-                          weight: {indicator.weight} )
-                        { indicator.selected ?
-                          (<button onClick={() => deselect(indicator.id)}>DeSelect</button>) :
-                          (<button onClick={() => select(indicator.id)}>Select</button>)
-                        }
+                        {indicator.id} {indicator.name} ({indicator.valuation})
+                        <button onClick={() => positiveValuation(indicator.id)}>Positiv</button>
+                        <button onClick={() => negativeValuation(indicator.id)}>Negativ</button>
                       </p>
                     );
                 })
@@ -42,8 +38,8 @@ const mapStateToProps = (state: Rootstate) => ({
 });
 
 const mapDispatchToProps = ({
-  select: selectIndicator,
-  deselect: deselectIndicator
+  positiveValuation: SetPositiveValuation,
+  negativeValuation: SetNegativeValuation
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(TestSelectedIndicators);

@@ -1,6 +1,6 @@
 import { IndicatorAction } from './actions';
 import { IndicatorState } from './types';
-import { INDICATOR_SELECT, INDICATOR_UPDATE } from './constants';
+import { INDICATOR_SELECT, INDICATOR_UPDATE, INDICATOR_VALUATION } from './constants';
 import { Indicator } from './types'
 
 const indicatorData = require('./../data/indicator.json');
@@ -38,6 +38,20 @@ export function indicator(
          * Sets the selection with the
          */
         case INDICATOR_SELECT:
+            return {
+                ...state,
+                byId: {
+                    ...state.byId,
+                    [action.payload.id]: {
+                        ...state.byId[action.payload.id],
+                        ...action.payload
+                    }
+                }
+            };
+        /*
+         * Valuation
+         */
+        case INDICATOR_VALUATION:
             return {
                 ...state,
                 byId: {
