@@ -4,17 +4,17 @@ export enum NegativePositive {
 }
 
 export interface Indicator {
-    id: string
-    name: string
-    publication: string
-    year: string
-    selected?: boolean
-    valuation: NegativePositive,
-    weight?: number
+    readonly id: string
+    readonly name: string
+    readonly publication: string
+    readonly year: string
+    readonly selected?: boolean
+    readonly valuation: NegativePositive,
+    readonly weight?: number
 }
 
 export interface IndicatorState {
-    byId: {
-        [key: string]: Indicator
+    readonly byId: {
+        readonly [key: string]: Indicator
     }
 }

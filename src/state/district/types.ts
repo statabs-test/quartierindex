@@ -1,10 +1,10 @@
 export interface District {
-    id: string
-    name: string
+    readonly id: string
+    readonly name: string
 }
 
 export interface DistrictState {
-    byId: {
-        [key: string]: District
+    readonly byId: {
+        readonly [key: string]: District
     }
 }

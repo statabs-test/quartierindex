@@ -22,8 +22,8 @@ export function indicator(
         /*
          * Updates all information based on the user selection, see storeState for shape
          */
-        case INDICATOR_UPDATE:
-            return {
+      case INDICATOR_UPDATE:
+          return {
                 ...state,
                 byId: {
                     ...state.byId,
