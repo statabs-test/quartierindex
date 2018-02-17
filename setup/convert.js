@@ -71,14 +71,27 @@ jsonFile.writeFile(path.join(__dirname, '../src/state/data/district.json'), dist
  Export normalized value data
  ###############################
  */
+// Observations between 0 and 1, use per indicator
+const normalizeValue = (val, max, min) =>  {
+  return (val - min) / (max - min);
+};
+
+const groupObservationsByIndicator = (data) => {
+  return _.groupBy(data, 'indicatorId');
+};
+
 let valueId = 0;
+const indicatorGroupedData = groupObservationsByIndicator(dataWithoutHeader);
 const valueData = _.map(dataWithoutHeader, (data) => {
+  const min = _.minBy(indicatorGroupedData[data.indicatorId], 'value');
+  const max = _.maxBy(indicatorGroupedData[data.indicatorId], 'value');
   valueId = valueId + 1;
     return {
       id: valueId,
       districtId: data.districtId,
       indicatorId: data.indicatorId,
       value: parseFloat(data.value),
+      normValue: normalizeValue(parseFloat(data.value), max.value, min.value),
       ranking: data.ranking,
     }
 });

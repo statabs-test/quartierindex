@@ -24,6 +24,7 @@ function TestRanking({ districts, test }: Props) {
                       <p key={district.id}>
                         {district.id} {district.name}
                         calculated value: {
+                        JSON.stringify(test[district.id])
                         /*observations[district.id].map(observation => {
                           return <span key={observation.id}>{observations.value}, </span>
                         })*/
