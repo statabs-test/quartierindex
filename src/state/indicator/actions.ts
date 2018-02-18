@@ -1,5 +1,5 @@
 import * as constants from './constants'
-import { NegativePositive } from './types'
+import { NegativePositive, WeightNumber } from './types'
 
 /**
  * Select or deselect indicator interface with payload
@@ -18,7 +18,7 @@ export interface IndicatorUpdate {
       id: string
       selected: boolean
       valuation: NegativePositive
-      weight: number
+      weight: WeightNumber
     }
 }
 
@@ -30,8 +30,16 @@ export interface SetValuation {
     }
 }
 
+export interface SetWeight {
+  type: constants.INDICATOR_WEIGHT
+  payload: {
+    id: string
+    weight: WeightNumber
+  }
+}
+
 /** Combine the three interfaces to one action */
-export type IndicatorAction = IndicatorSelection | IndicatorUpdate | SetValuation;
+export type IndicatorAction = IndicatorSelection | IndicatorUpdate | SetValuation | SetWeight;
 
 /**
  * Select indicator for ranking
@@ -91,4 +99,14 @@ export function SetNegativeValuation(id: string): SetValuation {
             valuation: NegativePositive.Negative
         }
     }
+}
+
+export function setWeight(id: string, weight: WeightNumber): SetWeight {
+  return {
+    type: constants.INDICATOR_WEIGHT,
+    payload: {
+      id,
+      weight: weight
+    }
+  }
 }

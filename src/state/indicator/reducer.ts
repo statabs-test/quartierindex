@@ -1,6 +1,6 @@
 import { IndicatorAction } from './actions';
 import { IndicatorState } from './types';
-import { INDICATOR_SELECT, INDICATOR_UPDATE, INDICATOR_VALUATION } from './constants';
+import { INDICATOR_SELECT, INDICATOR_UPDATE, INDICATOR_VALUATION, INDICATOR_WEIGHT } from './constants';
 import { Indicator } from './types'
 
 const indicatorData = require('./../data/indicator.json');
@@ -51,17 +51,33 @@ export function indicator(
         /*
          * Valuation
          */
-        case INDICATOR_VALUATION:
-            return {
-                ...state,
-                byId: {
-                    ...state.byId,
-                    [action.payload.id]: {
-                        ...state.byId[action.payload.id],
-                        ...action.payload
-                    }
-                }
-            };
+        case INDICATOR_VALUATION: {
+          return {
+            ...state,
+            byId: {
+              ...state.byId,
+              [action.payload.id]: {
+                ...state.byId[action.payload.id],
+                ...action.payload
+              }
+            }
+          };
+        }
+
+        /*
+         * Weight
+         */
+      case INDICATOR_WEIGHT:
+        return {
+          ...state,
+          byId: {
+            ...state.byId,
+            [action.payload.id]: {
+              ...state.byId[action.payload.id],
+              ...action.payload
+            }
+          }
+        }
     }
     return state;
 }

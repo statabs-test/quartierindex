@@ -16,7 +16,7 @@ export interface Props {
 function TestRanking({ districts, test }: Props) {
     return (
       <div>
-        <h1>Test Ranking ohne Schritt 2 + 3</h1>
+        <h1>Test Ranking</h1>
             {
                 // Create an element per indicator item
               districts.map(district => {

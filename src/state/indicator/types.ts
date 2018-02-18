@@ -3,6 +3,13 @@ export enum NegativePositive {
   Positive = 1,
 }
 
+export enum WeightNumber {
+    ONE = 1,
+    TWO = 2,
+    THREE = 3,
+    FOUR = 4
+}
+
 export interface Indicator {
     readonly id: string
     readonly name: string
@@ -10,7 +17,7 @@ export interface Indicator {
     readonly year: string
     readonly selected?: boolean
     readonly valuation: NegativePositive,
-    readonly weight?: number
+    readonly weight: WeightNumber
 }
 
 export interface IndicatorState {

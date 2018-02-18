@@ -22,19 +22,24 @@ export const groupObservationsByDistrict = (state: Rootstate) => {
  * Todo: Refactor to memoize results of selector with reselect for performance gain
  */
 export const calculatedRankingByDistrictOverall = (state: Rootstate) => {
-    const groupedByDistrict = groupObservationsByDistrict(state);
-    const selectedIndicator = selectedIndicators(state);
-    // const indicatorCnt = allIndicators(state).length;
+  const groupedByDistrict = groupObservationsByDistrict(state);
+  const selectedIndicator = selectedIndicators(state);
+  // const indicatorCnt = allIndicators(state).length;
 
-    return _.map(groupedByDistrict, observations => {
+  return _.sortBy(
+    _.map(groupedByDistrict, observations => {
 
-        const observationTotal = _.reduce(observations, (result, observation, key) => {
-          return result + observation.normValue;
-        }, 0)
+    const observationTotal = _.reduce(observations, (result, observation, key) => {
+      let indicator = _.find(selectedIndicator, {'id': observation.indicatorId});
+      if (indicator) {
+        return result + observation.normValue * indicator.valuation * indicator.weight;
+      }
+      return result;
+    }, 0)
 
-        return {
-          districtId: observations[0].districtId,
-          value: (observationTotal / selectedIndicator.length),
-        }
-    });
+    return {
+      districtId: observations[0].districtId,
+      value: (observationTotal / selectedIndicator.length),
+    }
+  }), 'value').reverse() ;
 }
