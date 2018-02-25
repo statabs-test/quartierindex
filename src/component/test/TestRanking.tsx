@@ -1,36 +1,43 @@
 import * as React from 'react';
+import * as _ from 'lodash';
 import { connect } from 'react-redux';
 import { Rootstate } from '../../state';
 import { allDistricts } from '../../state/district/selectors';
 import { groupObservationsByDistrict, calculatedRankingByDistrictOverall } from '../../state/observation/selectors';
 import { District } from '../../state/district/types'
+import { Ranking } from '../../state/observation/types'
+import { error } from 'util';
 // import { Observation } from '../../state/observation/types'
 
 export interface Props {
-
-  districts: District[],
+  districts: District[]
   observations: any
-  test: any
+  rankings: Ranking[]
 }
 
-function TestRanking({ districts, test }: Props) {
+function TestRanking({ districts, rankings }: Props) {
     return (
       <div>
         <h1>Test Ranking</h1>
             {
                 // Create an element per indicator item
-              districts.map(district => {
-                    return (
-                      <p key={district.id}>
-                        {district.id} {district.name}
-                        calculated value: {
-                        JSON.stringify(test[district.id])
-                        /*observations[district.id].map(observation => {
-                          return <span key={observation.id}>{observations.value}, </span>
-                        })*/
+              rankings.map(ranking => {
+                  const district = _.find(districts, { 'id': ranking.districtId });
+                    if (district) {
+                      return (
+                        <p key={ranking.districtId}>
+                          {district.id} {district.name}
+                          calculated value: {
+                          JSON.stringify(ranking)
+                          /*observations[district.id].map(observation => {
+                            return <span key={observation.id}>{observations.value}, </span>
+                          })*/
                         }
-                      </p>
-                    );
+                        </p>
+                      );
+                    } else {
+                      throw error('Every districtId of ranking needs to exist in districts');
+                    }
                 })
             }
       </div>
@@ -40,7 +47,7 @@ function TestRanking({ districts, test }: Props) {
 const mapStateToProps = (state: Rootstate) => ({
   districts: allDistricts(state),
   observations: groupObservationsByDistrict(state),
-  test: calculatedRankingByDistrictOverall(state)
+  rankings: calculatedRankingByDistrictOverall(state)
 });
 
 const mapDispatchToProps = null;

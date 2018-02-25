@@ -13,3 +13,8 @@ export interface ObservationState {
         readonly [key: string]: Observation
     }
 }
+
+export interface Ranking {
+  districtId: string
+  value: number
+}
