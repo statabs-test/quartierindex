@@ -6,15 +6,19 @@ import { allDistricts } from '../../state/district/selectors';
 import { groupObservationsByDistrict, getSortedGlobalRanking } from '../../state/observation/selectors';
 import { District } from '../../state/district/types'
 import { Ranking } from '../../state/observation/types'
+import { Indicator } from '../../state/indicator/types'
+import { getSelectedIndicators } from '../../state/indicator/selectors';
+import TestIndicatorRanking from './TestIndicatorRanking';
 // import { Observation } from '../../state/observation/types'
 
 export interface Props {
   districts: District[]
   observations: any
   rankings: Ranking[]
+  selectedIndicators: Indicator[]
 }
 
-function TestRanking({ districts, rankings }: Props) {
+function TestRanking({ districts, rankings, selectedIndicators }: Props) {
     return (
       <div>
         <h1>Test Ranking</h1>
@@ -39,6 +43,11 @@ function TestRanking({ districts, rankings }: Props) {
                     }
                 })
             }
+
+            <h1>Test indicator Rating</h1>
+        {selectedIndicators.map(indicator => {
+          return (<TestIndicatorRanking key={indicator.id} id={indicator.id} />)
+        })}
       </div>
         );
 }
@@ -47,6 +56,7 @@ const mapStateToProps = (state: Rootstate) => ({
   districts: allDistricts(state),
   observations: groupObservationsByDistrict(state),
   rankings: getSortedGlobalRanking(state), // calculatedRankingByDistrictOverall(state)
+  selectedIndicators: getSelectedIndicators(state)
 });
 
 const mapDispatchToProps = null;

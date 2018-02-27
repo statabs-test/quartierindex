@@ -13,6 +13,10 @@ export const allIndicators = (state: Rootstate): Indicator[] => {
     return _.values(select(state).byId);
 };
 
+export const getIndicator = (state: Rootstate, props: { id: string }): Indicator => {
+  return select(state).byId[props.id];
+};
+
 /**
  * Select all selected indicator
  */
