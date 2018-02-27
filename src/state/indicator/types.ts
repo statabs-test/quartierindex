@@ -4,10 +4,10 @@ export enum NegativePositive {
 }
 
 export enum WeightNumber {
-    ONE = 1,
-    TWO = 2,
-    THREE = 3,
-    FOUR = 4
+    ONE = 0.25,
+    TWO = 0.5,
+    THREE = 0.75,
+    FOUR = 1
 }
 
 export interface Indicator {

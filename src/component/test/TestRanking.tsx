@@ -3,7 +3,7 @@ import * as _ from 'lodash';
 import { connect } from 'react-redux';
 import { Rootstate } from '../../state';
 import { allDistricts } from '../../state/district/selectors';
-import { groupObservationsByDistrict, calculatedRankingByDistrictOverall } from '../../state/observation/selectors';
+import { groupObservationsByDistrict, getSortedGlobalRanking } from '../../state/observation/selectors';
 import { District } from '../../state/district/types'
 import { Ranking } from '../../state/observation/types'
 import { error } from 'util';
@@ -47,7 +47,7 @@ function TestRanking({ districts, rankings }: Props) {
 const mapStateToProps = (state: Rootstate) => ({
   districts: allDistricts(state),
   observations: groupObservationsByDistrict(state),
-  rankings: calculatedRankingByDistrictOverall(state)
+  rankings: getSortedGlobalRanking(state), // calculatedRankingByDistrictOverall(state)
 });
 
 const mapDispatchToProps = null;

@@ -16,7 +16,7 @@ export const allIndicators = (state: Rootstate): Indicator[] => {
 /**
  * Select all selected indicator
  */
-export const selectedIndicators = (state: Rootstate): Indicator[] => {
+export const getSelectedIndicators = (state: Rootstate): Indicator[] => {
     return _.filter(allIndicators(state), (indicator) => {
         return indicator.selected;
     })

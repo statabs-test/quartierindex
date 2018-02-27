@@ -1,6 +1,8 @@
 import * as _ from 'lodash';
 import { Rootstate } from '../index';
-import { selectedIndicators } from '../indicator/selectors';
+import { getSelectedIndicators } from '../indicator/selectors';
+import { Observation, Ranking } from './types';
+import { Indicator } from '../indicator/types';
 
 const select = (state: Rootstate) => {
     return state.observation.byId;
@@ -15,31 +17,70 @@ export const allObservations = (state: Rootstate) => {
 
 export const groupObservationsByDistrict = (state: Rootstate) => {
     return _.groupBy(select(state), 'districtId');
-}
+};
 
-/*
- * Todo: Continue to implement ranking function
- * Todo: Refactor to memoize results of selector with reselect for performance gain
- */
-export const calculatedRankingByDistrictOverall = (state: Rootstate) => {
+export const getMedianValue = (observations: Observation[], indicator: Indicator) => {
+  let cnt = 0;
+  // Sum all observations with indicator
+  const total = _.reduce(observations, (result, observation, key) => {
+    if (observation.indicatorId === indicator.id) {
+      cnt = cnt + 1;
+      return result + observation.normValue
+    }
+    return result;
+  }, 0);
+  if (cnt === 0) {
+    return total;
+  }
+  return (total / cnt);
+};
+
+export const getWeightedMedianValue = (observations: Observation[], indicator: Indicator) => {
+  return getMedianValue(observations, indicator) * indicator.valuation * indicator.weight;
+};
+
+export const getIndicatorRanking = (state: Rootstate, indicator: Indicator): Ranking[] => {
   const groupedByDistrict = groupObservationsByDistrict(state);
-  const selectedIndicator = selectedIndicators(state);
-  // const indicatorCnt = allIndicators(state).length;
 
-  return _.sortBy(
-    _.map(groupedByDistrict, observations => {
-
-    const observationTotal = _.reduce(observations, (result, observation, key) => {
-      let indicator = _.find(selectedIndicator, {'id': observation.indicatorId});
-      if (indicator) {
-        return result + observation.normValue * indicator.valuation * indicator.weight;
-      }
-      return result;
-    }, 0)
+  // Get Ranking per District
+  return _.map(groupedByDistrict, observations => {
+    const total = getMedianValue(observations, indicator);
 
     return {
       districtId: observations[0].districtId,
-      value: (observationTotal / selectedIndicator.length),
+      value: total,
     }
-  }), 'value').reverse() ;
-}
+  });
+};
+
+export const getGlobalRanking = (state: Rootstate): Ranking[] => {
+  // Retrieve selectedIndicators
+  const selectedIndicators = getSelectedIndicators(state);
+  if (selectedIndicators.length === 0) {
+    return [];
+  }
+  // Retrieve groupedByDistrict observations
+  const groupedByDistrict = groupObservationsByDistrict(state);
+
+  // Get Ranking per District
+  return _.map(groupedByDistrict, observations => {
+    const total = _.reduce(selectedIndicators, (result, selectedIndicator, key) => {
+      return result + getWeightedMedianValue(observations, selectedIndicator);
+    }, 0);
+    return {
+      districtId: observations[0].districtId,
+      value: (total / selectedIndicators.length),
+    }
+  });
+};
+
+export const getSortedGlobalRanking = (state: Rootstate): Ranking[] => {
+  return _.sortBy(
+    getGlobalRanking(state),
+    'value'
+  ).reverse();
+};
+
+/*
+ * Todo: Refactor to memoize results of selector with reselect for performance gain
+ */

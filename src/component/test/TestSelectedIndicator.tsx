@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { Rootstate } from '../../state';
-import { selectedIndicators } from '../../state/indicator/selectors';
+import { getSelectedIndicators } from '../../state/indicator/selectors';
 import { Indicator, WeightNumber } from '../../state/indicator/types';
 import {
   SetPositiveValuation, SetNegativeValuation, setWeight,
@@ -49,7 +49,7 @@ function TestSelectedIndicators({ indicators, positiveValuation, negativeValuati
 }
 
 const mapStateToProps = (state: Rootstate) => ({
-    indicators: selectedIndicators(state)
+    indicators: getSelectedIndicators(state)
 });
 
 const mapDispatchToProps = ({
