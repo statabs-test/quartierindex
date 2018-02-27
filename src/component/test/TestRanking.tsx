@@ -6,7 +6,6 @@ import { allDistricts } from '../../state/district/selectors';
 import { groupObservationsByDistrict, getSortedGlobalRanking } from '../../state/observation/selectors';
 import { District } from '../../state/district/types'
 import { Ranking } from '../../state/observation/types'
-import { error } from 'util';
 // import { Observation } from '../../state/observation/types'
 
 export interface Props {
@@ -36,7 +35,7 @@ function TestRanking({ districts, rankings }: Props) {
                         </p>
                       );
                     } else {
-                      throw error('Every districtId of ranking needs to exist in districts');
+                      throw new RangeError('Every districtId of ranking needs to exist in districts');
                     }
                 })
             }
