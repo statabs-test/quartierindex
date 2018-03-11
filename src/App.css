@@ -26,3 +26,9 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.ranking-container{
+  position: relative;
+  height: 100vh;
+  width: 50vw;
+}

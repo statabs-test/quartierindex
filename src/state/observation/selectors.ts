@@ -1,9 +1,10 @@
 import * as _ from 'lodash';
 import { createSelector } from 'reselect'
 import { Rootstate } from '../index';
-import { getSelectedIndicators, getIndicator } from '../indicator/selectors';
-import { Observation, Ranking } from './types';
+import { getIndicator, getSelectedIndicators } from '../indicator/selectors';
+import { LineRank, LineRankI, Observation, Rank } from './types';
 import { Indicator } from '../indicator/types';
+import { getDistrictBy } from '../district/selectors';
 
 /**
  * Get all observations from state without any filter
@@ -11,7 +12,7 @@ import { Indicator } from '../indicator/types';
  * @returns { {[p: string]: Observation} } Observations listed byId
  */
 const getObservations = (state: Rootstate) => {
-    return state.observation.byId;
+  return state.observation.byId;
 };
 
 /**
@@ -19,10 +20,10 @@ const getObservations = (state: Rootstate) => {
  * @returns { [districtId: string]: Observation[] }
  */
 export const groupObservationsByDistrict = createSelector(
-  [getObservations],
-  (observations) => {
-    return _.groupBy(observations, 'districtId');
-});
+    [getObservations],
+    (observations) => {
+      return _.groupBy(observations, 'districtId');
+    });
 
 /**
  * Calculate the average value of all observations with a reference to indicator
@@ -58,63 +59,74 @@ export const getWeightedAverageValue = (observations: Observation[], indicator: 
 
 /**
  * Get weighted ranking with all selected indicators per district
- * @returns {Ranking[]} per district
+ * @returns {Rank[]} per district
  */
 export const getGlobalRanking = createSelector(
-  [getSelectedIndicators, groupObservationsByDistrict],
-  (selectedIndicators, groupedByDistrict): Ranking[] => {
-    if (selectedIndicators.length === 0) {
-      return [];
-    }
-
-    // Get Ranking per District
-    return _.map(groupedByDistrict, observations => {
-      const total = _.reduce(selectedIndicators, (result, selectedIndicator, key) => {
-        return result + getWeightedAverageValue(observations, selectedIndicator);
-      }, 0);
-      return {
-        districtId: observations[0].districtId,
-        value: (total / selectedIndicators.length),
+    [getSelectedIndicators, groupObservationsByDistrict],
+    (selectedIndicators, groupedByDistrict): Rank[] => {
+      if (selectedIndicators.length === 0) {
+        return [];
       }
-    });
-  }
+
+      // Get Rank per District
+      return _.map(groupedByDistrict, observations => {
+        const total = _.reduce(selectedIndicators, (result, selectedIndicator, key) => {
+          return result + getWeightedAverageValue(observations, selectedIndicator);
+        }, 0);
+        return {
+          districtId: observations[0].districtId,
+          value: (total / selectedIndicators.length),
+        }
+      });
+    }
 );
 
 /**
  * Sorted weighted ranking with all selected indicators per district by value
- * @returns {Ranking[]} sorted ranking list
+ * @returns {Rank[]} sorted ranking list
  */
 export const getSortedGlobalRanking = createSelector(
-  [getGlobalRanking],
-  (globalRanking): Ranking[] => {
-    return _.sortBy(globalRanking, 'value').reverse();
-  }
+    [getGlobalRanking],
+    (globalRanking): Rank[] => {
+      return _.sortBy(globalRanking, 'value').reverse();
+    }
 );
 
 /**
  * This function accepts an additional prop {id: IndicatorId}, see getIndicator
- * Returns an unweighted Ranking[] of the corresponding indicator
- * @returns {Ranking[]} sorted the same way as getSortedGlobalRanking
+ * Returns an unweighted Rank[] of the corresponding indicator
+ * @returns {Rank[]} sorted the same way as getSortedGlobalRanking
  */
 export const makeGetIndicatorRanking = () => {
   return createSelector(
-    [groupObservationsByDistrict, getSortedGlobalRanking, getIndicator],
-    (groupedByDistrict, sortedRanking, indicator): Ranking[] => {
-      // Get Ranking per District
-      const rankings = _.map(groupedByDistrict, observations => {
-        // Do not weight
-        const total = getAverageValue(observations, indicator);
+      [groupObservationsByDistrict, getSortedGlobalRanking, getIndicator],
+      (groupedByDistrict, sortedRanking, indicator): Rank[] => {
+        // Get Rank per District
+        const rankings = _.map(groupedByDistrict, observations => {
+          // Do not weight
+          const total = getAverageValue(observations, indicator);
 
-        return {
-          districtId: observations[0].districtId,
-          value: total,
-        }
-      });
+          return {
+            districtId: observations[0].districtId,
+            value: total,
+          }
+        });
 
-      // Sort indicator rankings by sorted global ranking
-      return _.sortBy(rankings, [function(ranking: Ranking) {
-        return _.findIndex(sortedRanking, {'districtId': ranking.districtId});
-      }]);
-    }
+        // Sort indicator rankings by sorted global ranking
+        return _.sortBy(rankings, [function (ranking: Rank) {
+          return _.findIndex(sortedRanking, {'districtId': ranking.districtId});
+        }]);
+      }
   );
 };
+
+const toLineRank = (rank: Rank, state: Rootstate): LineRankI =>
+    new LineRank(rank.districtId,
+        rank.value,
+        getDistrictBy(
+            rank.districtId,
+            state
+        ).name);
+
+export const getLineRanking = (state: Rootstate) =>
+    getSortedGlobalRanking(state).map(rank => toLineRank(rank, state));

@@ -5,7 +5,7 @@ import { Rootstate } from '../../state';
 import { allDistricts } from '../../state/district/selectors';
 import { groupObservationsByDistrict, getSortedGlobalRanking } from '../../state/observation/selectors';
 import { District } from '../../state/district/types'
-import { Ranking } from '../../state/observation/types'
+import { Rank } from '../../state/observation/types'
 import { Indicator } from '../../state/indicator/types'
 import { getSelectedIndicators } from '../../state/indicator/selectors';
 import TestIndicatorRanking from './TestIndicatorRanking';
@@ -14,7 +14,7 @@ import TestIndicatorRanking from './TestIndicatorRanking';
 export interface Props {
   districts: District[]
   observations: any
-  rankings: Ranking[]
+  rankings: Rank[]
   selectedIndicators: Indicator[]
 }
 

@@ -5,13 +5,13 @@ import { Rootstate } from '../../state';
 import { makeGetIndicatorRanking } from '../../state/observation/selectors';
 import { getIndicator } from '../../state/indicator/selectors';
 import { District } from '../../state/district/types'
-import { Ranking } from '../../state/observation/types'
+import { Rank } from '../../state/observation/types'
 import { Indicator } from '../../state/indicator/types';
 import { allDistricts } from '../../state/district/selectors';
 // import { Observation } from '../../state/observation/types'
 
 export interface EnhancedProps {
-  rankings: Ranking[]
+  rankings: Rank[]
   districts: District[]
   indicator: Indicator
 }

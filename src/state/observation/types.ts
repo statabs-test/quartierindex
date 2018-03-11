@@ -9,12 +9,25 @@ export interface Observation {
 }
 
 export interface ObservationState {
-    readonly byId: {
-        readonly [key: string]: Observation
-    }
+  readonly byId: {
+    readonly [key: string]: Observation
+  }
 }
 
-export interface Ranking {
+export interface Rank {
   districtId: string
   value: number
+}
+
+export interface LineRankI {
+  objectId: string;
+  rankValue: number;
+  labelText: string;
+}
+
+export class LineRank implements LineRankI {
+  constructor(public objectId: string,
+              public rankValue: number,
+              public labelText: string) {
+  }
 }
