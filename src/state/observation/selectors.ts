@@ -48,13 +48,16 @@ export const getAverageValue = (observations: Observation[], indicator: Indicato
 };
 
 /**
- * Same as getAverageValue with multiplication of valuation (-1 / +1) and weight (0.25 - 1)
+ * Same as getAverageValue with multiplication and weight (0.25 - 1)
+ * if valuation -1 subtraction of wighted average from 1
  * @param {Observation[]} observations
  * @param {Indicator} indicator
  * @returns {number}
  */
 export const getWeightedAverageValue = (observations: Observation[], indicator: Indicator) => {
-  return getAverageValue(observations, indicator) * indicator.valuation * indicator.weight;
+  return indicator.valuation === 1 ?
+      getAverageValue(observations, indicator) * indicator.weight
+      : 1 - getAverageValue(observations, indicator) * indicator.weight;
 };
 
 /**
