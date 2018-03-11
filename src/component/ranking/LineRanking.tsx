@@ -14,7 +14,7 @@ const LineRanking = ({ranking}: Props) => {
       <div>
         <h1>Line Ranking</h1>
         <svg className="ranking-container">
-          <line x1="50%" y1={0} x2="50%" y2="100%" stroke="green" stroke-width="2"/>
+          <line x1="10%" y1={0} x2="10%" y2="100%" stroke="grey" stroke-width="2"/>
           {
             ranking
             .map((rank, index) => (<LineRank rank={rank} rankIndex={index}/>))}

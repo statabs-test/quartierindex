@@ -2,7 +2,7 @@ import * as _ from 'lodash';
 import { createSelector } from 'reselect'
 import { Rootstate } from '../index';
 import { getIndicator, getSelectedIndicators } from '../indicator/selectors';
-import { LineRank, LineRankI, Observation, Rank } from './types';
+import { Color, LineRank, LineRankI, Observation, Rank } from './types';
 import { Indicator } from '../indicator/types';
 import { getDistrictBy } from '../district/selectors';
 
@@ -126,7 +126,10 @@ const toLineRank = (rank: Rank, state: Rootstate): LineRankI =>
         getDistrictBy(
             rank.districtId,
             state
-        ).name);
+        ).name,
+        rank.value > 0.5 ?
+            new Color(128, 80 * rank.value, 50)
+            : new Color(348, 95 * (1 - rank.value), 50));
 
 export const getLineRanking = (state: Rootstate) =>
     getSortedGlobalRanking(state).map(rank => toLineRank(rank, state));
