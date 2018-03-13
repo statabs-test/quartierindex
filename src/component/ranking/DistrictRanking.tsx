@@ -11,7 +11,12 @@ export interface Props {
   rankings: LineRank[]
 }
 
-function DistrictRanking({rankings}: Props) {
+export interface PublicProps {
+  title: string
+  className?: string
+}
+
+const DistrictRanking: React.StatelessComponent<Props & PublicProps> = ({ rankings, title }) => {
   return (
       <div>
         <h1>DistrictRanking</h1>
@@ -22,15 +27,8 @@ function DistrictRanking({rankings}: Props) {
   );
 }
 
-const makeMapStateToProps = () => {
-  const mapStateToProps = (state: Rootstate) => {
-    return {
-      rankings: getLineRanking(state)
-    }
-  };
-  return mapStateToProps;
-};
+const mapStateToProps = (state: Rootstate): Props => ({
+  rankings: getLineRanking(state),
+});
 
-const mapDispatchToProps = null;
-
-export default connect(makeMapStateToProps, mapDispatchToProps)(DistrictRanking);
+export default connect<Props, PublicProps>(mapStateToProps)(DistrictRanking);

@@ -1,6 +1,4 @@
 import * as React from 'react';
-import { connect } from 'react-redux';
-import { Rootstate } from '../../state';
 import { LineRank } from '../../state/observation/types';
 import LineRankItem from './LineRankItem';
 
@@ -9,7 +7,7 @@ export interface Props {
 
 }
 
-const LineRanking = ({ranking}: Props) => {
+const LineRanking: React.StatelessComponent<Props> = ({ ranking }) => {
   return (
       <div>
         <h1>Line Ranking</h1>
@@ -23,10 +21,4 @@ const LineRanking = ({ranking}: Props) => {
   );
 }
 
-const mapStateToProps = (state: Rootstate, ownProps: { ranking: LineRank[] }) => ({
-  ranking: ownProps.ranking
-});
-
-const mapDispatchToProps = null;
-
-export default connect(mapStateToProps, mapDispatchToProps)(LineRanking);
+export default LineRanking;
