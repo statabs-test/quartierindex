@@ -33,7 +33,10 @@ const indicatorData = _.uniqBy(
         id: data.indicatorId,
         name: data.indicatorName,
         publication: data.publication,
-        year: data.year
+        year: data.year,
+        // Compare with indicator types
+        valuation: 1,
+        weight: 1
     }
   }),
   'id'
