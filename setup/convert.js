@@ -86,8 +86,12 @@ const groupObservationsByIndicator = (data) => {
 let valueId = 0;
 const indicatorGroupedData = groupObservationsByIndicator(dataWithoutHeader);
 const valueData = _.map(dataWithoutHeader, (data) => {
-  const min = _.minBy(indicatorGroupedData[data.indicatorId], 'value');
-  const max = _.maxBy(indicatorGroupedData[data.indicatorId], 'value');
+  const min = _.minBy(indicatorGroupedData[data.indicatorId], function(indicator) {
+      return parseFloat(indicator.value);
+  });
+  const max = _.maxBy(indicatorGroupedData[data.indicatorId], function(indicator) {
+      return parseFloat(indicator.value);
+  });
   valueId = valueId + 1;
     return {
       id: valueId,

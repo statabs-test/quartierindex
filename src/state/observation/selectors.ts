@@ -49,7 +49,7 @@ export const getAverageValue = (observations: Observation[], indicator: Indicato
 
 /**
  * Same as getAverageValue with multiplication and weight (0.25 - 1)
- * if valuation -1 subtraction of wighted average from 1
+ * if valuation -1 subtraction of weighted average from 1
  * @param {Observation[]} observations
  * @param {Indicator} indicator
  * @returns {number}
