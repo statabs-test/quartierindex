@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { LineRankI } from '../../state/observation/types';
+import { LineRank } from '../../state/observation/types';
 import { Rootstate } from '../../state';
 import { connect } from 'react-redux';
 
 export interface Props {
-  rank: LineRankI;
+  rank: LineRank;
   rankIndex: number;
 }
 
@@ -13,7 +13,7 @@ const y = (yPos: number): string => {
   return yy.toString() + '%';
 };
 
-const color = (rank: LineRankI): string =>
+const color = (rank: LineRank): string =>
     'hsl(' + rank.color.h.toString() + ', '
     + rank.color.s.toString() + '%,'
     + rank.color.v.toString() + '%)';
@@ -21,7 +21,7 @@ const color = (rank: LineRankI): string =>
 const labelPos = (rankIndex: number): string =>
     ((1 - 0.9 * (1 - rankIndex / 21)) * 100).toString() + '%';
 
-const LineRank = ({rank, rankIndex}: Props) => {
+const LineRankItem = ({rank, rankIndex}: Props) => {
   return (
       <g>
         <line x1="10%" x2="18%" y1={y(rank.rankValue)} y2={y(rank.rankValue)} stroke={color(rank)}/>
@@ -32,11 +32,11 @@ const LineRank = ({rank, rankIndex}: Props) => {
   );
 };
 
-const mapStateToProps = (state: Rootstate, ownProps: { rank: LineRankI, rankIndex: number }) => ({
+const mapStateToProps = (state: Rootstate, ownProps: { rank: LineRank, rankIndex: number }) => ({
   rank: ownProps.rank,
   rankIndex: ownProps.rankIndex
 });
 
 const mapDispatchToProps = null;
 
-export default connect(mapStateToProps, mapDispatchToProps)(LineRank);
+export default connect(mapStateToProps, mapDispatchToProps)(LineRankItem);

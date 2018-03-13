@@ -2,13 +2,13 @@ import * as React from 'react';
 import { connect } from 'react-redux';
 import { Rootstate } from '../../state';
 import LineRanking from './LineRanking';
-import { LineRankI } from '../../state/observation/types';
+import { LineRank } from '../../state/observation/types';
 import { getLineRanking } from '../../state/observation/selectors';
 
 // import { Observation } from '../../state/observation/types'
 
 export interface Props {
-  rankings: LineRankI[]
+  rankings: LineRank[]
 }
 
 function DistrictRanking({rankings}: Props) {

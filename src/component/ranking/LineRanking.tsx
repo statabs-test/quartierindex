@@ -1,11 +1,11 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { Rootstate } from '../../state';
-import LineRank from './LineRank';
-import { LineRankI } from '../../state/observation/types';
+import { LineRank } from '../../state/observation/types';
+import LineRankItem from './LineRankItem';
 
 export interface Props {
-  ranking: LineRankI[];
+  ranking: LineRank[];
 
 }
 
@@ -17,13 +17,13 @@ const LineRanking = ({ranking}: Props) => {
           <line x1="10%" y1={0} x2="10%" y2="100%" stroke="grey" stroke-width="2"/>
           {
             ranking
-            .map((rank, index) => (<LineRank rank={rank} rankIndex={index}/>))}
+            .map((rank, index) => (<LineRankItem rank={rank} rankIndex={index}/>))}
         </svg>
       </div>
   );
 }
 
-const mapStateToProps = (state: Rootstate, ownProps: { ranking: LineRankI[] }) => ({
+const mapStateToProps = (state: Rootstate, ownProps: { ranking: LineRank[] }) => ({
   ranking: ownProps.ranking
 });
 
