@@ -12,13 +12,13 @@ const LineRanking: React.StatelessComponent<Props> = ({ ranking }) => {
       <div>
         <h1>Line Ranking</h1>
         <svg className="ranking-container">
-          <line x1="10%" y1={0} x2="10%" y2="100%" stroke="grey" stroke-width="2"/>
+          <line x1="10%" y1={0} x2="10%" y2="100%" stroke="grey" strokeWidth="2"/>
           {
             ranking
-            .map((rank, index) => (<LineRankItem rank={rank} rankIndex={index}/>))}
+            .map((rank, index) => (<LineRankItem key={rank.objectId} rank={rank} rankIndex={index}/>))}
         </svg>
       </div>
   );
-}
+};
 
 export default LineRanking;
