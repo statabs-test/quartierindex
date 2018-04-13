@@ -123,6 +123,52 @@ export const makeGetIndicatorRanking = () => {
   );
 };
 
+/**
+ * Maps quartierindex data model to Rechart data model
+ * @param {{indicator: Indicator; districtRank: Rank[]}} indicatorRanking
+ * @param {Rootstate} state
+ * @returns {{name: string, indicatorName1: number, indicatorName2: number, ..., indicatorNameN}[]}
+ */
+const mapToRechartsDataModel =
+    (indicatorRanking: { indicator: Indicator; districtRank: Rank[] }, state: Rootstate) => {
+      const dataModel = {name: indicatorRanking.indicator.name};
+
+      indicatorRanking.districtRank.forEach(
+          districtIdAndRankValue => {
+            const districtName =
+                getDistrictBy(
+                    districtIdAndRankValue.districtId,
+                    state).name;
+
+            dataModel[districtName] = districtIdAndRankValue.value
+          });
+
+      return dataModel
+    };
+
+/**
+ * Returns the ranking as it is required by Recharts
+ * the rank of all selected indicators will be retrieved
+ * @param {Rootstate} state
+ * @returns {{name: string, indicatorName1: number, indicatorName2: number, ..., indicatorNameN}[]}
+ */
+export const getRankingDataForChart = (state: Rootstate) => {
+  const selectedIndicators = getSelectedIndicators(state);
+  const getIndicatorRanking = makeGetIndicatorRanking();
+
+  const indicatorRanking =
+      selectedIndicators
+      .map(indicator =>
+          ({
+            indicator: indicator,
+            districtRank: getIndicatorRanking(state, {id: indicator.id})
+          })
+      )
+      .map(r => mapToRechartsDataModel(r, state));
+
+  return indicatorRanking;
+};
+
 const toLineRank = (rank: Rank, state: Rootstate): LineRank => {
   const green: Color = {h: 128, s: 80 * rank.value, v: 50};
   const red: Color = {h: 348, s: 95 * (1 - rank.value), v: 50};
