@@ -1,36 +1,114 @@
-.App {
-  text-align: center;
+.just-for-dev {
+  position: absolute;
+  right: 0;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+/*Grid setup*/
+/*MAIN GRID*/
+.App {
+  display: grid;
+  width: 951px;
+  background: aquamarine;
+
+  grid-template-columns: 201px 750px;
+  grid-template-rows: 30px 800px;
+  grid-template-areas: "header header" "ranking parallel-line-plot";
 }
+
+/*HEADER
+----------------------------------------------*/
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
+  grid-area: header;
+  background-color: #1208081f;
   color: white;
 }
 
 .App-title {
   font-size: 1.5em;
+  margin: 0;
+  text-align: center;
 }
 
-.App-intro {
-  font-size: large;
+/*RANKING MAIN CONTAINER
+-----------------------------------------------*/
+.ranking-container {
+  display: grid;
+  grid-area: ranking;
+
+  grid-template-columns: auto;
+  grid-template-rows: 30px auto;
+  grid-template-areas: "title" "ranking";
+
+  height: 100%;
+  width: 100%;
+  background: aliceblue;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.line-ranking {
+  grid-area: ranking;
+  background: blue;
+  height: 95%;
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+
 }
 
-.ranking-container{
-  position: absolute;
-  right: 0;
-  top: 20vh;
-  height: 78vh;
-  width: 20vw;
+/*PARALLEL LINE PLOT MAIN CONTAINER
+------------------------------------------------*/
+.parallel-line-plot-container {
+  display: grid;
+  grid-area: parallel-line-plot;
+
+  position: relative;
+
+  grid-template-columns: auto;
+  grid-template-rows: 30px auto;
+  grid-template-areas: "title" "scroll-area";
+
+  height: 100%;
+  width: 100%;
+  background: blanchedalmond;
 }
+
+.parallel-line-plot-scroll-area {
+  display: grid;
+  grid-area: scroll-area;
+
+  grid-template-columns: auto;
+  grid-template-rows: 15% auto;
+  grid-template-areas: "legend" "chart";
+
+  height: 100%;
+  width: 750px;
+  overflow-x: scroll;
+  background: green;
+}
+
+.parallel-line-plot-legend {
+  display: grid;
+  grid-area: legend;
+  background: blanchedalmond;
+}
+
+.parallel-line-plot-chart {
+  display: grid;
+  grid-area: chart;
+
+  margin-left: 50px;
+  background: cornflowerblue;
+
+}
+
+/*UTIL ELEMENTS
+------------------------------------------------*/
+.title {
+  grid-area: title;
+  width: 100%;
+  height: auto;
+  background: brown;
+  text-align: center;
+  margin: 0;
+}
+

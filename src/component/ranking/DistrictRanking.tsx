@@ -16,10 +16,10 @@ export interface PublicProps {
   className?: string
 }
 
-const DistrictRanking: React.StatelessComponent<Props & PublicProps> = ({ rankings, title }) => {
+const DistrictRanking: React.StatelessComponent<Props & PublicProps> = ({rankings, title}) => {
   return (
-      <div>
-        <h1>DistrictRanking</h1>
+      <div className="ranking-container">
+        <h1 className="title">Rangliste</h1>
         <LineRanking
             ranking={rankings}
         />

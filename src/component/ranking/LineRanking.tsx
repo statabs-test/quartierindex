@@ -9,15 +9,12 @@ export interface Props {
 
 const LineRanking: React.StatelessComponent<Props> = ({ ranking }) => {
   return (
-      <div>
-        <h1>Line Ranking</h1>
-        <svg className="ranking-container">
+        <svg className="line-ranking">
           <line x1="10%" y1={0} x2="10%" y2="100%" stroke="grey" strokeWidth="2"/>
           {
             ranking
             .map((rank, index) => (<LineRankItem key={rank.objectId} rank={rank} rankIndex={index}/>))}
         </svg>
-      </div>
   );
 };
 

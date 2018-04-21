@@ -7,30 +7,26 @@ import TestRanking from './component/test/TestRanking'
 import DistricRanking from './component/ranking/DistrictRanking';
 import Chart from './component/chart/Chart';
 
-const logo = require('./logo.svg');
-
 class App extends React.Component {
   render() {
     return (
         <div className="App">
           <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo"/>
-            <h1 className="App-title">Welcome to React</h1>
+            <h1 className="App-title">Quartierindex</h1>
           </header>
 
-          <p className="App-intro">
-            To get started, edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <Chart/>
           <DistricRanking title={'District Ranking'}/>
+          <Chart/>
 
-          <TestIndicator/>
+          <div className="just-for-dev">
+            <TestIndicator/>
 
-          <TestSelectedIndicator/>
+            <TestSelectedIndicator/>
 
-          <TestDistricts/>
+            <TestDistricts/>
 
-          <TestRanking/>
+            <TestRanking/>
+          </div>
         </div>
     );
   }

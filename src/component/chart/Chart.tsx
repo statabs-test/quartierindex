@@ -32,13 +32,25 @@ const getColor = (lineRank: LineRank[], district: District): string => {
 
 function Chart({districts, selectedIndicators, rankingData, lineRanking}: Props) {
   return (
-      <LineChart width={600} height={600} data={rankingData}>
-        {districts.map(
+      <div className="parallel-line-plot-container">
+        <h1 className="title">Some title</h1>
+        <div className="parallel-line-plot-scroll-area">
+          <div className="parallel-line-plot-legend">
+            legend of selected indicator corresponding to chart ... react component must be created
+            <p>
+              if more than 3 indicators are selected the chart width must be changed by
+            </p>
+            width = selectedInicatorsSize * 650/3
+          </div>
+          <LineChart className="parallel-line-plot-chart" width={650} height={630} data={rankingData}>
+          {districts.map(
             d => (
                 <Line key={d.id} type="monotone" dataKey={d.name} stroke={getColor(lineRanking, d)} activeDot={{r: 8}}/>
             ))}
-        <XAxis dataKey="name"/>
-      </LineChart>
+          <XAxis dataKey="name"/>
+        </LineChart>
+      </div>
+      </div>
   );
 }
 
