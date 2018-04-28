@@ -6,11 +6,12 @@
 /*Grid setup*/
 /*MAIN GRID*/
 .App {
+  --plot-width: 750px;
   display: grid;
   width: 951px;
   background: aquamarine;
 
-  grid-template-columns: 201px 750px;
+  grid-template-columns: 201px var(--plot-width);
   grid-template-rows: 30px 800px;
   grid-template-areas: "header header" "ranking parallel-line-plot";
 }
@@ -73,6 +74,9 @@
 }
 
 .parallel-line-plot-scroll-area {
+  --number-of-elements: 3;
+  --line-plot-margin-left: calc(var(--plot-width) / 2 / var(--number-of-elements));
+
   display: grid;
   grid-area: scroll-area;
 
@@ -81,7 +85,7 @@
   grid-template-areas: "legend" "chart";
 
   height: 100%;
-  width: 750px;
+  width: calc(750px - var(--legend-container-width));
   overflow-x: scroll;
   background: green;
 }
@@ -90,14 +94,27 @@
   display: grid;
   grid-area: legend;
   background: blanchedalmond;
+  align-items: center;
+  position:relative;
 }
 
 .parallel-line-plot-chart {
   display: grid;
   grid-area: chart;
 
-  margin-left: 50px;
+  margin-left: var(--line-plot-margin-left);
   background: cornflowerblue;
+
+}
+
+.legend-container {
+  --legend-container-width: calc(var(--line-plot-margin-left) * 2);
+  width: var(--legend-container-width);
+  height: 50px;
+  background: black;
+  position: absolute;
+  text-align: center;
+  left: 0;
 
 }
 

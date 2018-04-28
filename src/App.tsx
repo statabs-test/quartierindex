@@ -5,7 +5,7 @@ import TestDistricts from './component/test/TestDistricts';
 import TestSelectedIndicator from './component/test/TestSelectedIndicator'
 import TestRanking from './component/test/TestRanking'
 import DistricRanking from './component/ranking/DistrictRanking';
-import Chart from './component/chart/Chart';
+import ParallelLinePlot from './component/parallelLinePlot/ParallelLinePlot';
 
 class App extends React.Component {
   render() {
@@ -16,7 +16,7 @@ class App extends React.Component {
           </header>
 
           <DistricRanking title={'District Ranking'}/>
-          <Chart/>
+          <ParallelLinePlot/>
 
           <div className="just-for-dev">
             <TestIndicator/>
