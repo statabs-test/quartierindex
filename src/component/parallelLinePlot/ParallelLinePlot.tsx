@@ -16,6 +16,7 @@ function ParallelLinePlot({selectedIndicators}: Props) {
   return (
       <div className="parallel-line-plot-container">
         <h1 className="title">Some title</h1>
+        <div className="add-inicator"> Inikator Hinzufügen</div>
         <div  id="scroll-area" className="parallel-line-plot-scroll-area">
           <LegendContainer selectedIndicators={selectedIndicators}/>
           <ChartContainer/>
