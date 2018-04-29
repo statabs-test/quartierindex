@@ -13,14 +13,14 @@ export interface StateFromProps {
 }
 
 const legendStyle = (indicators: Indicator[], indicator: Indicator) => {
-  const width = 750;
+  const width = 100;
   const elementWidth = width / 3;
   const indicatorIndex = indicators.indexOf(indicator);
   const pos = elementWidth * indicatorIndex;
 
   return {
     background: 'red',
-    left: pos
+    left: pos + '%'
   }
 };
 const LegendContainer = ({selectedIndicators}: EnhancedProps) => {
