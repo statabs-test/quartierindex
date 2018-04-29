@@ -12,37 +12,11 @@ export interface StateFromProps {
   selectedIndicators: Indicator[]
 }
 
-const ledgendStyle = (indicators: Indicator[], indicator: Indicator) => {
+const legendStyle = (indicators: Indicator[], indicator: Indicator) => {
   const width = 750;
   const elementWidth = width / 3;
-  const numberOfIndicators = indicators.length;
   const indicatorIndex = indicators.indexOf(indicator);
-  let pos = 0;
-
-  if (indicatorIndex === 0) {
-    if (numberOfIndicators === 1) {
-      pos = width / 2 - elementWidth / 2
-    } else {
-      pos = 0
-    }
-  } else {
-    if (numberOfIndicators === 1) {
-      pos = width / 2;
-    } else if (numberOfIndicators === 2) {
-      pos = elementWidth * 2;
-
-    } else if (numberOfIndicators === 3) {
-      if (indicatorIndex === 1) {
-        pos = elementWidth;
-
-      } else {
-        pos = elementWidth * 2;
-      }
-
-    } else {
-      pos = elementWidth * indicatorIndex;
-    }
-  }
+  const pos = elementWidth * indicatorIndex;
 
   return {
     background: 'red',
@@ -54,7 +28,7 @@ const LegendContainer = ({selectedIndicators}: EnhancedProps) => {
       <div className="parallel-line-plot-legend">
         {
           selectedIndicators.map(i => {
-                const style = ledgendStyle(selectedIndicators, i);
+                const style = legendStyle(selectedIndicators, i);
                 return <div key={i.id} className="legend-container" style={style}>
                   {i.name}
                 </div>

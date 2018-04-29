@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { Rootstate } from '../../state';
-import { Line, LineChart, ResponsiveContainer, XAxis } from 'recharts';
+import { Line, LineChart, ResponsiveContainer } from 'recharts';
 import { LineRank } from '../../state/observation/types';
 import { District } from '../../state/district/types';
 import { allDistricts } from '../../state/district/selectors';
@@ -34,12 +34,13 @@ const getWidth = (indicators: Indicator[]): number => {
   const maxIndicators = 3;
   const initScrollArea = 750;
   const widthOfElement = initScrollArea / maxIndicators;
-  if (indicators.length < maxIndicators + 1) {
-    return initScrollArea - widthOfElement;
+  if (indicators.length ===  1) {
+    return 10;
   } else {
     return widthOfElement * (indicators.length - 1);
   }
 };
+
 const LegendContainer = ({districts, rankingData, lineRanking, selectedIndicators}: Props) =>
     (
      <ResponsiveContainer width={getWidth(selectedIndicators)} height={600} >
@@ -48,7 +49,6 @@ const LegendContainer = ({districts, rankingData, lineRanking, selectedIndicator
           d => (
               <Line key={d.id} type="monotone" dataKey={d.name} stroke={getColor(lineRanking, d)} activeDot={{r: 8}}/>
           ))}
-      <XAxis dataKey="name"/>
     </LineChart>
      </ResponsiveContainer>
     );
