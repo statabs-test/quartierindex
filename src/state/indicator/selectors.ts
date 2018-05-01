@@ -18,7 +18,7 @@ export const getIndicator = (state: Rootstate, props: { id: string }): Indicator
 };
 
 /**
- * Select all selected indicator
+ * SelectIndicator all selected indicator
  */
 export const getSelectedIndicators = (state: Rootstate): Indicator[] => {
     return _.filter(allIndicators(state), (indicator) => {

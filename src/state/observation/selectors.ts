@@ -71,7 +71,7 @@ export const getGlobalRanking = createSelector(
         return [];
       }
 
-      // Get Rank per District
+      // Get Rank per Util
       return _.map(groupedByDistrict, observations => {
         const total = _.reduce(selectedIndicators, (result, selectedIndicator, key) => {
           return result + getWeightedAverageValue(observations, selectedIndicator);
@@ -104,7 +104,7 @@ export const makeGetIndicatorRanking = () => {
   return createSelector(
       [groupObservationsByDistrict, getSortedGlobalRanking, getIndicator],
       (groupedByDistrict, sortedRanking, indicator): Rank[] => {
-        // Get Rank per District
+        // Get Rank per Util
         const rankings = _.map(groupedByDistrict, observations => {
           // Do not weight
           const total = getAverageValue(observations, indicator);
@@ -142,7 +142,9 @@ const mapToRechartsDataModel =
 
             dataModel[districtName] = districtIdAndRankValue.value
           });
-
+      // there is something wrong, raking has always same values
+      // select just one indicator and change weight
+      console.log(dataModel)
       return dataModel
     };
 

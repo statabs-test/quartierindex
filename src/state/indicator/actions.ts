@@ -2,7 +2,7 @@ import * as constants from './constants'
 import { NegativePositive, WeightNumber } from './types'
 
 /**
- * Select or deselect indicator interface with payload
+ * SelectIndicator or deselect indicator interface with payload
  */
 export interface IndicatorSelection {
     type: constants.INDICATOR_SELECT
@@ -42,7 +42,7 @@ export interface SetWeight {
 export type IndicatorAction = IndicatorSelection | IndicatorUpdate | SetValuation | SetWeight;
 
 /**
- * Select indicator for ranking
+ * SelectIndicator indicator for ranking
  * @param {string} id of indicator
  * @returns {IndicatorSelection}
  */
@@ -57,7 +57,7 @@ export function selectIndicator(id: string): IndicatorSelection {
 }
 
 /**
- * Select indicator for ranking
+ * SelectIndicator indicator for ranking
  * @param {string} id of indicator
  * @returns {IndicatorSelection}
  */

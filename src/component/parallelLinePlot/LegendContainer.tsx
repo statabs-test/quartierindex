@@ -34,7 +34,11 @@ export interface StateFromProps {
 
 const legendStyle = (indicators: Indicator[], indicator: Indicator) => {
   const width = 100;
-  const elementWidth = width / 3;
+  const elementWidth =
+      width /
+      (indicators.length <= 3 ?
+              3 : (indicators.length - 1)
+      );
   const indicatorIndex = indicators.indexOf(indicator);
   const pos = elementWidth * indicatorIndex;
 
@@ -75,12 +79,35 @@ const LegendContainer = ({
                 return (
                     <div key={i.id} className="legend-container" style={style}>
                       <div className="legend-name"> {i.name}</div>
-                      <div className="rate-positive" onClick={() => positiveValuation(i.id)}>+</div>
-                      <div className="rate-negativ" onClick={() => negativeValuation(i.id)}>-</div>
-                      <div className="weight">
-                        <Slider min={1} max={4} onChange={(value) => setIndicatorWeight(i.id, toWNumber(value))}/>
+
+                      <div
+                          className="rate-positive"
+                          onClick={() => positiveValuation(i.id)}
+                      >
+                        +
                       </div>
-                      <div className="remove" onClick={() => deselect(i.id)}> X</div>
+
+                      <div
+                          className="rate-negativ"
+                          onClick={() => negativeValuation(i.id)}
+                      >
+                        -
+                      </div>
+
+                      <div className="weight">
+                        <Slider
+                            min={1}
+                            max={4}
+                            onChange={(value) => setIndicatorWeight(i.id, toWNumber(value))}
+                        />
+                      </div>
+
+                      <div
+                          className="remove"
+                          onClick={() => deselect(i.id)}
+                      >
+                        X
+                      </div>
                     </div>
                 )
               }

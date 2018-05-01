@@ -43,7 +43,7 @@ const getWidth = (indicators: Indicator[]): number => {
   const maxIndicators = 3;
   const initScrollArea = getParentWidth();
   const widthOfElement = initScrollArea / maxIndicators;
-  if (indicators.length ===  1) {
+  if (indicators.length === 1) {
     return 10;
   } else {
     return widthOfElement * (indicators.length - 1);
@@ -52,14 +52,23 @@ const getWidth = (indicators: Indicator[]): number => {
 
 const LegendContainer = ({districts, rankingData, lineRanking, selectedIndicators}: Props) =>
     (
-     <ResponsiveContainer width={getWidth(selectedIndicators)} height={600} >
-        <LineChart className="parallel-line-plot-chart" data={rankingData}>
-      {districts.map(
-          d => (
-              <Line key={d.id} type="monotone" dataKey={d.name} stroke={getColor(lineRanking, d)} activeDot={{r: 8}}/>
-          ))}
-    </LineChart>
-     </ResponsiveContainer>
+        <ResponsiveContainer width={getWidth(selectedIndicators)} height={600}>
+          <LineChart className="parallel-line-plot-chart" data={rankingData}>
+            {districts.map(
+                d => (
+                    <Line
+                        /*dots disappearing https://github.com/recharts/recharts/issues/804*/
+                        isAnimationActive={false}
+
+                        key={d.id}
+                        type="monotone"
+                        dataKey={d.name}
+                        stroke={getColor(lineRanking, d)}
+                        activeDot={{r: 18}}
+                    />
+                ))}
+          </LineChart>
+        </ResponsiveContainer>
     );
 
 const mapStateToProps = (state: Rootstate) => ({

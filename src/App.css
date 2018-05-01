@@ -7,12 +7,19 @@
 /*MAIN GRID*/
 .App {
   --plot-width: 750px;
+  --app-height: 830px;
+  --app-width: 951px;
+  --title-height: 30px;
+  --add-indicator-height: 30px;
+  --app-header-height: 30px;
+  --ranking-width: 201px;
+
   display: grid;
-  width: 951px;
+  width: var(--app-width);
   background: aquamarine;
 
-  grid-template-columns: 201px var(--plot-width);
-  grid-template-rows: 30px 800px;
+  grid-template-columns: var(--ranking-width) var(--plot-width);
+  grid-template-rows: var(--app-header-height) calc(var(--app-height) - 30px);
   grid-template-areas:  "header header"
                         "ranking parallel-line-plot";
 }
@@ -62,11 +69,10 @@
 .parallel-line-plot-container {
   display: grid;
   grid-area: parallel-line-plot;
-
   position: relative;
 
   grid-template-columns: auto;
-  grid-template-rows: 30px 30px auto;
+  grid-template-rows: var(--title-height) var(--add-indicator-height) auto;
   grid-template-areas:  "title"
                         "add-ind"
                         "scroll-area";
@@ -76,7 +82,7 @@
   background: blanchedalmond;
 }
 
-.add-inicator {
+.add-indicator {
   display: grid;
   grid-area: add-ind;
   text-align: center;
@@ -176,7 +182,31 @@
 
 }
 
+/* Indicator selection and deselection
+------------------------------------------------*/
+.floating-container {
+  z-index: 10;
+  display: grid;
+  position: absolute;
+  width: var(--app-width);
+  height: var(--app-height);
 
+  background: #8080809c;
+}
+.selection-container{
+  --margin: calc(var(--app-header-height) + var(--add-indicator-height) + var(--title-height));
+  --height: calc(var(--app-height) - var(--margin));
+  --width: calc(var(--app-width) - var(--ranking-width));
+
+  height: var(--height);
+  margin-top: var(--margin);
+  margin-left: var(--ranking-width);
+  width: var(--width);
+
+  display: flex;
+  flex-direction: column;
+  background: blanchedalmond;
+}
 
 /*UTIL ELEMENTS
 ------------------------------------------------*/

@@ -7,17 +7,22 @@ import { getLineRanking, getRankingDataForChart } from '../../state/observation/
 import LegendContainer from './LegendContainer';
 import ChartContainer from './ChartContainer';
 import { Indicator } from '../../state/indicator/types';
+import { toggleIndicatorSelectionVisibility } from '../../state/util/actions';
 
 export interface Props {
   selectedIndicators: Indicator[]
+
+  toggleVisibility(visibility: boolean): void
 }
 
-function ParallelLinePlot({selectedIndicators}: Props) {
+function ParallelLinePlot({selectedIndicators, toggleVisibility}: Props) {
   return (
       <div className="parallel-line-plot-container">
         <h1 className="title">Some title</h1>
-        <div className="add-inicator"> Inikator Hinzufügen</div>
-        <div  id="scroll-area" className="parallel-line-plot-scroll-area">
+        <div className="add-indicator" onClick={() => toggleVisibility(false)}>
+          Inikator Hinzufügen
+        </div>
+        <div id="scroll-area" className="parallel-line-plot-scroll-area">
           <LegendContainer selectedIndicators={selectedIndicators}/>
           <ChartContainer/>
         </div>
@@ -33,6 +38,8 @@ const mapStateToProps = (state: Rootstate) => ({
 
 });
 
-const mapDispatchToProps = null;
+const mapDispatchToProps = ({
+  toggleVisibility: toggleIndicatorSelectionVisibility
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(ParallelLinePlot);
