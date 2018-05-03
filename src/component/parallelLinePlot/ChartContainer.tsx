@@ -46,7 +46,7 @@ const getWidth = (indicators: Indicator[]): number => {
   }
 };
 
-const LegendContainer = ({districts, rankingData, lineRanking, selectedIndicators}: Props) =>
+const ChartContainer = ({districts, rankingData, lineRanking, selectedIndicators}: Props) =>
     (
         <ResponsiveContainer width={getWidth(selectedIndicators)} height={600}>
           <LineChart className="parallel-line-plot-chart" data={rankingData}>
@@ -77,4 +77,4 @@ const mapStateToProps = (state: Rootstate) => ({
 
 const mapDispatchToProps = null;
 
-export default connect(mapStateToProps, mapDispatchToProps)(LegendContainer);
+export default connect(mapStateToProps, mapDispatchToProps)(ChartContainer);
