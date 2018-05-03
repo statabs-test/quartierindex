@@ -1,10 +1,8 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { Rootstate } from '../../state';
-import { allDistricts } from '../../state/district/selectors';
 import { getSelectedIndicators } from '../../state/indicator/selectors';
-import { getLineRanking, getRankingDataForChart } from '../../state/observation/selectors';
-import LegendContainer from './LegendContainer';
+import Legend from './legend/Legend';
 import ChartContainer from './ChartContainer';
 import { Indicator } from '../../state/indicator/types';
 import { toggleIndicatorSelectionVisibility } from '../../state/util/actions';
@@ -23,7 +21,7 @@ function ParallelLinePlot ({selectedIndicators, toggleVisibility}: Props) {
           Indikator Hinzufügen
         </div>
         <div id="scroll-area" className="parallel-line-plot-scroll-area">
-          <LegendContainer selectedIndicators={selectedIndicators}/>
+          <Legend selectedIndicators={selectedIndicators}/>
           <ChartContainer/>
         </div>
       </div>
@@ -31,11 +29,7 @@ function ParallelLinePlot ({selectedIndicators, toggleVisibility}: Props) {
 }
 
 const mapStateToProps = (state: Rootstate) => ({
-  districts: allDistricts(state),
-  selectedIndicators: getSelectedIndicators(state),
-  rankingData: getRankingDataForChart(state),
-  lineRanking: getLineRanking(state)
-
+  selectedIndicators: getSelectedIndicators(state)
 });
 
 const mapDispatchToProps = ({
