@@ -25,7 +25,7 @@ const DistrictRanking: React.StatelessComponent<Props & PublicProps> = ({ranking
         />
       </div>
   );
-}
+};
 
 const mapStateToProps = (state: Rootstate): Props => ({
   rankings: getLineRanking(state),

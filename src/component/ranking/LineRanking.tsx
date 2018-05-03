@@ -4,7 +4,6 @@ import LineRankItem from './LineRankItem';
 
 export interface Props {
   ranking: LineRank[];
-
 }
 
 const LineRanking: React.StatelessComponent<Props> = ({ ranking }) => {
