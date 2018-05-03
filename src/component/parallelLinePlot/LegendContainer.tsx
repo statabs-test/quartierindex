@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { Indicator, WeightNumber } from '../../state/indicator/types';
 import {
   deselectIndicator,
-  selectIndicator,
   SetNegativeValuation,
   SetPositiveValuation,
   setWeight
@@ -21,8 +20,6 @@ export interface EnhancedProps {
   negativeValuation(id: string): void
 
   setIndicatorWeight(id: string, weight: WeightNumber): void
-
-  select(id: string): void
 
   deselect(id: string): void
 
@@ -68,8 +65,7 @@ const LegendContainer = ({
                            negativeValuation,
                            positiveValuation,
                            setIndicatorWeight,
-                           deselect,
-                           select
+                           deselect
                          }: EnhancedProps) => {
   return (
       <div className="parallel-line-plot-legend">
@@ -126,7 +122,6 @@ const mapDispatchToProps = ({
   positiveValuation: SetPositiveValuation,
   negativeValuation: SetNegativeValuation,
   setIndicatorWeight: setWeight,
-  select: selectIndicator,
   deselect: deselectIndicator
 });
 
