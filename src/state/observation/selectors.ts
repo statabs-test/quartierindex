@@ -97,7 +97,7 @@ export const getSortedGlobalRanking = createSelector(
 
 /**
  * This function accepts an additional prop {id: IndicatorId}, see getIndicator
- * Returns an unweighted Rank[] of the corresponding indicator
+ * Returns a weighted Rank[] of the corresponding indicator
  * @returns {Rank[]} sorted the same way as getSortedGlobalRanking
  */
 export const makeGetIndicatorRanking = () => {
@@ -106,8 +106,8 @@ export const makeGetIndicatorRanking = () => {
       (groupedByDistrict, sortedRanking, indicator): Rank[] => {
         // Get Rank per Util
         const rankings = _.map(groupedByDistrict, observations => {
-          // Do not weight
-          const total = getAverageValue(observations, indicator);
+          // Do weight
+          const total = getWeightedAverageValue(observations, indicator);
 
           return {
             districtId: observations[0].districtId,

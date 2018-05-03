@@ -15,12 +15,12 @@ export interface Props {
   toggleVisibility(visibility: boolean): void
 }
 
-function ParallelLinePlot({selectedIndicators, toggleVisibility}: Props) {
+function ParallelLinePlot ({selectedIndicators, toggleVisibility}: Props) {
   return (
       <div className="parallel-line-plot-container">
         <h1 className="title">Some title</h1>
         <div className="add-indicator" onClick={() => toggleVisibility(false)}>
-          Inikator Hinzufügen
+          Indikator Hinzufügen
         </div>
         <div id="scroll-area" className="parallel-line-plot-scroll-area">
           <LegendContainer selectedIndicators={selectedIndicators}/>
