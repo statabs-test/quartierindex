@@ -142,9 +142,6 @@ const mapToRechartsDataModel =
 
             dataModel[districtName] = districtIdAndRankValue.value
           });
-      // there is something wrong, raking has always same values
-      // select just one indicator and change weight
-      console.log(dataModel)
       return dataModel
     };
 
