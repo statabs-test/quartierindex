@@ -13,6 +13,7 @@ export enum WeightNumber {
 export interface Indicator {
     readonly id: string
     readonly name: string
+    readonly subject: string
     readonly publication: string
     readonly year: string
     readonly selected?: boolean

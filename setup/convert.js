@@ -15,8 +15,8 @@ const options = {
   delimiter : ',', // optional
 
   // Rename column header, original was
-  // Publikationsjahr,Indikator_Nr,jahr_num,jahr_char,Wert,Indikator_Name,Wohnviertel_id,Wohnviertel,Rang
-  headers: 'publication,indicatorId,year,yearChar,value,indicatorName,districtId,district,ranking',
+  // Publikationsjahr,Indikator_Nr,jahr_num,jahr_char,Wert,Indikator_Name,Wohnviertel_id,Wohnviertel,Rang,Subjekt
+  headers: 'publication,indicatorId,year,yearChar,value,indicatorName,districtId,district,ranking,subject',
 };
 
 const dataObject = csvjson.toObject(data, options);
@@ -32,6 +32,7 @@ const indicatorData = _.uniqBy(
     return {
         id: data.indicatorId,
         name: data.indicatorName,
+        subject: data.subject,
         publication: data.publication,
         year: data.year,
         // Compare with indicator types
