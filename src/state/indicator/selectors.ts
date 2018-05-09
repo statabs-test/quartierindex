@@ -17,6 +17,10 @@ export const getIndicator = (state: Rootstate, props: { id: string }): Indicator
   return select(state).byId[props.id];
 };
 
+export const getGroupedIndicators = (state: Rootstate): { [key: string]: Indicator[]} => {
+    return _.groupBy(allIndicators(state), (indicator) => indicator.subject); 
+};
+
 /**
  * SelectIndicator all selected indicator
  */

@@ -1,15 +1,22 @@
 import * as React from 'react';
+import * as _ from 'lodash';
 import { connect } from 'react-redux';
+import { compose } from 'redux';
 import { Rootstate } from '../../state/index';
-import { allIndicators } from '../../state/indicator/selectors';
+import { getGroupedIndicators } from '../../state/indicator/selectors';
 import { Indicator } from '../../state/indicator/types';
 import { deselectIndicator, selectIndicator, } from '../../state/indicator/actions';
 import { getUtil } from '../../state/util/selectors';
 import { Util } from '../../state/util/types';
 import { toggleIndicatorSelectionVisibility } from '../../state/util/actions';
+import Grid from 'material-ui/Grid';
+import { Theme, WithStyles } from 'material-ui/styles';
+import { withStyles } from 'material-ui/styles';
+import Checkbox from 'material-ui/Checkbox';
+import { FormControlLabel } from 'material-ui/Form';
 
 export interface Props {
-  indicators: Indicator[],
+  indicators: {[key: string]: Indicator[]},
   util: Util
 
   select(id: string): void
@@ -19,43 +26,71 @@ export interface Props {
   toggleVisibility(visibility: boolean): void
 }
 
-const isVisible = (util: Util): any => ({
-  'visibility': util.selectIndicatorConf.visible ? 'visible' : 'hidden'
+type ClassNames = WithStyles<'root' | 'title'>
+
+const styles = (theme: Theme) => ({
+  root: {
+    flexGrow: 1,
+  } as React.CSSProperties,
+  title: {
+    padding: theme.spacing.unit * 2,
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+  } as React.CSSProperties,
 });
 
-function IndicatorSelection({indicators, util, select, deselect, toggleVisibility}: Props) {
-  return (
+// const isVisible = (util: Util): any => ({
+//   'visibility': util.selectIndicatorConf.visible ? 'visible' : 'hidden'
+// });
 
-      <div className="floating-container" style={isVisible(util)}>
+const IndicatorSelection: React.SFC<Props & ClassNames> = (props) => {
+  const {classes, indicators, select, deselect, util} = props;
+  return (
+    <Grid item xs={8}>
+      <div className="floating-container">
         {console.log(util)}
         <div className="selection-container">
-          <div style={{textAlign: 'right'}} onClick={() => toggleVisibility(util.selectIndicatorConf.visible)}>
-            X
-          </div>
-          <h1>Alle Indikatoren</h1>
+          <h2 className={classes.title}>
+            Schritt 1: Wählen Sie mindestens einen Indikator für die Index Berechnung aus
+          </h2>
+          <Grid container spacing={8}>
           {
-            // Create an element per indicator item
-            indicators.map(indicator => {
-              return (
-                  <p style={{margin: 0}} key={indicator.id}>
-                    {indicator.id} {indicator.name}
-                    (selected: {indicator.selected ? 'true' : 'false'},
-                    weight: {indicator.weight} )
-                    {indicator.selected ?
-                        (<button onClick={() => deselect(indicator.id)}>DeSelect</button>) :
-                        (<button onClick={() => select(indicator.id)}>Select</button>)
-                    }
-                  </p>
-              );
-            })
-          }
+            _.map(indicators, (value, key) => (
+              
+              <Grid item xs={4} key={key}>
+              <h3>Bereich {key}</h3>
+              <Grid container> {
+              value.map(indicator => (
+                <Grid item xs={12} key={indicator.id}>
+                <FormControlLabel
+                  key={indicator.id}
+                  control={
+                    <Checkbox
+                      checked={indicator.selected}
+                      onChange={(e) => {
+                        return e.target.checked ? select(indicator.id) : deselect(indicator.id)}
+                      }
+                      value={indicator.id}
+                    />
+                  }
+                  label={indicator.name}
+                />
+                </Grid>
+              ))
+            }
+            </Grid>
+              </Grid>
+            )
+          )}
+          </Grid>
         </div>
       </div>
+      </Grid>
   );
 }
 
 const mapStateToProps = (state: Rootstate) => ({
-  indicators: allIndicators(state),
+  indicators: getGroupedIndicators(state),
   util: getUtil(state)
 });
 
@@ -65,4 +100,7 @@ const mapDispatchToProps = ({
   toggleVisibility: toggleIndicatorSelectionVisibility
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(IndicatorSelection);
+export default compose (
+  withStyles(styles),
+  connect(mapStateToProps, mapDispatchToProps))
+  (IndicatorSelection);

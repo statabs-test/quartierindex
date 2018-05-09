@@ -6,6 +6,7 @@ import Legend from './legend/Legend';
 import ChartContainer from './ChartContainer';
 import { Indicator } from '../../state/indicator/types';
 import { toggleIndicatorSelectionVisibility } from '../../state/util/actions';
+import Button from 'material-ui/Button';
 
 export interface Props {
   selectedIndicators: Indicator[]
@@ -17,9 +18,7 @@ function ParallelLinePlot ({selectedIndicators, toggleVisibility}: Props) {
   return (
       <div className="parallel-line-plot-container">
         <h1 className="title">Some title</h1>
-        <div className="add-indicator" onClick={() => toggleVisibility(false)}>
-          Indikator Hinzufügen
-        </div>
+        <Button variant="flat" onClick={() => toggleVisibility(false)}>Indikator Hinzufügen</Button>
         <div id="scroll-area" className="parallel-line-plot-scroll-area">
           <Legend selectedIndicators={selectedIndicators}/>
           <ChartContainer/>
