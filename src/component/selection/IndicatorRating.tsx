@@ -6,8 +6,7 @@ import { getSelectedIndicators } from '../../state/indicator/selectors';
 import { Indicator } from '../../state/indicator/types';
 import { toggleIndicatorSelectionVisibility } from '../../state/util/actions';
 import Grid from 'material-ui/Grid';
-import { Theme, WithStyles } from 'material-ui/styles';
-import { withStyles } from 'material-ui/styles';
+import { Theme, WithStyles, withStyles } from 'material-ui/styles';
 import Button from 'material-ui/Button';
 import { Link } from 'react-router-dom';
 import IndicatorRatingLine from './IndicatorRatingLine';
@@ -16,7 +15,7 @@ export interface Props {
   selectedIndicators: Indicator[]
 
   positiveValuation(id: string): void
-  
+
   negativeValuation(id: string): void
 
   toggleVisibility(visibility: boolean): void
@@ -42,29 +41,31 @@ const IndicatorRating: React.SFC<Props & ClassNames> = (props) => {
   const {classes, selectedIndicators} = props;
   console.log(classes);
   return (
-    <Grid item xs={8}>
-      <h2 className={classes.title}>
-        Schritt 2: Bewerten Sie, ob der Indikator positiv oder negativ ausfällt
-      </h2>
-      <Grid container direction="row">
-      {
-        selectedIndicators.map(indicator => {
-          return <IndicatorRatingLine key={indicator.id} indicator={indicator} />
-      })} 
-      </Grid>
-      <Grid container justify="space-between">
-        <Grid item xs={1}>
-          <Link to={'/'}>
-          <Button variant="raised">Zurück</Button>
-          </Link>
+      <div className="floating-container">
+        <Grid item xs={8}>
+          <h2 className={classes.title}>
+            Schritt 2: Bewerten Sie, ob der Indikator positiv oder negativ ausfällt
+          </h2>
+          <Grid container direction="row">
+            {
+              selectedIndicators.map(indicator => {
+                return <IndicatorRatingLine key={indicator.id} indicator={indicator}/>
+              })}
+          </Grid>
+          <Grid container justify="space-between">
+            <Grid item xs={1}>
+              <Link to={'/'}>
+                <Button variant="raised">Zurück</Button>
+              </Link>
+            </Grid>
+            <Grid item xs={1}>
+              <Link to={'/importance'}>
+                <Button variant="raised">Weiter</Button>
+              </Link>
+            </Grid>
+          </Grid>
         </Grid>
-        <Grid item xs={1}>
-          <Link to={'/importance'}>
-          <Button variant="raised">Weiter</Button>
-          </Link>
-        </Grid>
-      </Grid>
-    </Grid>
+      </div>
   );
 }
 
@@ -77,6 +78,6 @@ const mapDispatchToProps = ({
 });
 
 export default compose(
-  withStyles(styles),
-  connect(mapStateToProps, mapDispatchToProps))
-  (IndicatorRating);
+    withStyles(styles),
+    connect(mapStateToProps, mapDispatchToProps))
+(IndicatorRating);

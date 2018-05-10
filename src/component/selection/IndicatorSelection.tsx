@@ -12,12 +12,12 @@ import { toggleIndicatorSelectionVisibility } from '../../state/util/actions';
 import Grid from 'material-ui/Grid';
 import { Theme, WithStyles, withStyles } from 'material-ui/styles';
 import Checkbox from 'material-ui/Checkbox';
-import Button from 'material-ui/Button';
 import { FormControlLabel } from 'material-ui/Form';
 import { Link } from 'react-router-dom';
+import { Button } from 'material-ui';
 
 export interface Props {
-  groupedIndicators: {[key: string]: Indicator[]}
+  groupedIndicators: { [key: string]: Indicator[] }
   util: Util
 
   select(id: string): void
@@ -51,53 +51,55 @@ export const styles = (theme: Theme) => ({
 const IndicatorSelection: React.SFC<Props & ClassNames> = (props) => {
   const {classes, groupedIndicators, select, deselect, util} = props;
   return (
-    <Grid item xs={8}>
       <div className="floating-container">
-        {console.log(util)}
-        <div className="selection-container">
-          <h2 className={classes.title}>
-            Schritt 1: Wählen Sie mindestens einen Indikator für die Index Berechnung aus
-          </h2>
-          <Grid container spacing={8}>
-          {
-            _.map(groupedIndicators, (value, key) => (
-              <Grid item xs={4} key={key}>
-                  <h3>Bereich {key}</h3>
-                <Grid container>
-                {
-                  value.map(indicator => (
-                    <Grid item xs={12} key={indicator.id}>
-                      <FormControlLabel
-                        key={indicator.id}
-                        control={
-                          <Checkbox
-                            checked={indicator.selected}
-                            onChange={(e) => {
-                              return e.target.checked ? select(indicator.id) : deselect(indicator.id)}
-                            }
-                            value={indicator.id}
-                          />
+        <Grid item xs={8}>
+          <div>
+            {console.log(util)}
+            <h2 className={classes.title}>
+              Schritt 1: Wählen Sie mindestens einen Indikator für die Index Berechnung aus
+            </h2>
+            <Grid container spacing={8}>
+              {
+                _.map(groupedIndicators, (value, key) => (
+                    <Grid item xs={4} key={key}>
+                      <h3>Bereich {key}</h3>
+                      <Grid container>
+                        {
+                          value.map(indicator => (
+                              <Grid item xs={12} key={indicator.id}>
+                                <FormControlLabel
+                                    key={indicator.id}
+                                    control={
+                                      <Checkbox
+                                          checked={indicator.selected}
+                                          onChange={(e) => {
+                                            return e.target.checked ? select(indicator.id) : deselect(indicator.id)
+                                          }
+                                          }
+                                          value={indicator.id}
+                                      />
+                                    }
+                                    label={indicator.name}
+                                />
+                              </Grid>
+                          ))
                         }
-                        label={indicator.name}
-                      />
+                      </Grid>
                     </Grid>
-                  ))
-                }
-                </Grid>
-              </Grid>
-            ))
-          }
+                ))
+              }
+            </Grid>
+          </div>
+          <Grid container justify="flex-end">
+            <Grid item xs={1}>
+              <Link to={'/ranking'}>
+                <Button variant="raised">Weiter</Button>
+              </Link>
+            </Grid>
+          </Grid>
+
         </Grid>
-        </div>
       </div>
-      <Grid container justify="flex-end">
-        <Grid item xs={1}>
-          <Link to={'/ranking'}>
-          <Button variant="raised">Weiter</Button>
-          </Link>
-        </Grid>
-      </Grid>
-    </Grid>
   );
 }
 

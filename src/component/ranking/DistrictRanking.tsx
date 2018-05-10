@@ -19,6 +19,7 @@ export interface PublicProps {
 const DistrictRanking: React.StatelessComponent<Props & PublicProps> = ({rankings, title}) => {
   return (
       <div className="ranking-container">
+        <div className="title">{title}</div>
         <LineRanking
           ranking={rankings}
         />
