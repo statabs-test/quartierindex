@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Rootstate } from '../../../state';
 import { connect } from 'react-redux';
 import { Indicator, WeightNumber } from '../../../state/indicator/types';
+import Cancel from 'material-ui-icons/Cancel';
 import {
   deselectIndicator,
   SetNegativeValuation,
@@ -14,8 +15,11 @@ import Slider from 'rc-slider';
 
 interface Props {
   positiveValuation(id: string): void
+
   negativeValuation(id: string): void
+
   setIndicatorWeight(id: string, weight: WeightNumber): void
+
   deselect(id: string): void
 }
 
@@ -41,53 +45,52 @@ const toWNumber = (weightValue: number): WeightNumber => {
 };
 
 const LegendItem = ({
-                  indicator,
-                  style,
-                  negativeValuation,
-                  positiveValuation,
-                  setIndicatorWeight,
-                  deselect
-                }: Props & PublicProps) => {
+                      indicator,
+                      style,
+                      negativeValuation,
+                      positiveValuation,
+                      setIndicatorWeight,
+                      deselect
+                    }: Props & PublicProps) => {
   return (
-              <div key={indicator.id} className="legend-container" style={style}>
-                <div className="legend-name"> {indicator.name}</div>
+      <div key={indicator.id} className="legend-container" style={style}>
+        <div className="legend-name"> {indicator.name}</div>
 
-                <div
-                  className="rate-positive"
-                  onClick={() => positiveValuation(indicator.id)}
-                >
-                  +
-                </div>
+        <div
+            className="rate-positive"
+            onClick={() => positiveValuation(indicator.id)}
+        >
+          +
+        </div>
 
-                <div
-                  className="rate-negativ"
-                  onClick={() => negativeValuation(indicator.id)}
-                >
-                  -
-                </div>
+        <div
+            className="rate-negativ"
+            onClick={() => negativeValuation(indicator.id)}
+        >
+          -
+        </div>
 
-                <div className="weight">
-                  <Slider
-                    min={1}
-                    max={4}
-                    onChange={(value) => setIndicatorWeight(indicator.id, toWNumber(value))}
-                  />
-                </div>
+        <div className="weight">
+          <Slider
+              min={1}
+              max={4}
+              onChange={(value) => setIndicatorWeight(indicator.id, toWNumber(value))}
+          />
+        </div>
 
-                <div
-                  className="remove"
-                  onClick={() => deselect(indicator.id)}
-                >
-                  X
-                </div>
-              </div>
+        <Cancel
+            className="remove"
+
+            onClick={() => deselect(indicator.id)}
+        />
+      </div>
   )
 };
 
 const mapStateToProps = (state: Rootstate, props: PublicProps) =>
-  ({
-    ...props,
-  });
+    ({
+      ...props,
+    });
 
 const mapDispatchToProps: Partial<Props> = ({
   positiveValuation: SetPositiveValuation,

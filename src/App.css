@@ -127,7 +127,8 @@
 }
 
 .legend-container {
-  --legend-container-width: calc(var(--line-plot-margin-left) * 2);
+  --legend-margin: 5px;
+  --legend-container-width: calc(var(--line-plot-margin-left) * 2 - 2 * var(--legend-margin));
   width: var(--legend-container-width);
   display: grid;
 
@@ -143,8 +144,9 @@
 
   border-radius: 12px;
   text-align: center;
+  border: solid #e0e0e0;
 
-/*  background: #cc8dab;*/
+  /*  background: #cc8dab;*/
 }
 
 .legend-name {
@@ -193,7 +195,7 @@
   position: absolute;
   width: var(--app-width);
   height: var(--app-height);
-
+  background: #e0e0e094;
 /*  background: #8080809c;*/
 }
 .selection-container{
@@ -208,6 +210,8 @@
 
   display: flex;
   flex-direction: column;
+  background: #e0e0e0f5;
+  border-radius: 50px 20px;
 /*  background: blanchedalmond;*/
 }
 
