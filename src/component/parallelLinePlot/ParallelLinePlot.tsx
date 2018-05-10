@@ -17,7 +17,7 @@ export interface Props {
   toggleVisibility(visibility: boolean): void
 }
 
-function ParallelLinePlot ({selectedIndicators, toggleVisibility}: Props) {
+function ParallelLinePlot({selectedIndicators, toggleVisibility}: Props) {
   return (
     <Grid item xs={8}>
     <Grid container spacing={8}>

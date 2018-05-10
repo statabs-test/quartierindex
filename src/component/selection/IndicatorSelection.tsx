@@ -10,8 +10,7 @@ import { getUtil } from '../../state/util/selectors';
 import { Util } from '../../state/util/types';
 import { toggleIndicatorSelectionVisibility } from '../../state/util/actions';
 import Grid from 'material-ui/Grid';
-import { Theme, WithStyles } from 'material-ui/styles';
-import { withStyles } from 'material-ui/styles';
+import { Theme, WithStyles, withStyles } from 'material-ui/styles';
 import Checkbox from 'material-ui/Checkbox';
 import Button from 'material-ui/Button';
 import { FormControlLabel } from 'material-ui/Form';
@@ -113,7 +112,7 @@ const mapDispatchToProps = ({
   toggleVisibility: toggleIndicatorSelectionVisibility
 });
 
-export default compose (
-  withStyles(styles),
-  connect(mapStateToProps, mapDispatchToProps))
-  (IndicatorSelection);
+export default compose(
+    withStyles(styles),
+    connect(mapStateToProps, mapDispatchToProps))
+(IndicatorSelection);

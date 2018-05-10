@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { Rootstate } from '../../state';
-import { Line, LineChart, ResponsiveContainer } from 'recharts';
+import { CartesianGrid, Line, LineChart, ResponsiveContainer } from 'recharts';
 import { LineRank } from '../../state/observation/types';
 import { District } from '../../state/district/types';
 import { allDistricts } from '../../state/district/selectors';
@@ -50,12 +50,13 @@ const ChartContainer = ({districts, rankingData, lineRanking, selectedIndicators
     (
         <ResponsiveContainer width={getWidth(selectedIndicators)} height={600}>
           <LineChart className="parallel-line-plot-chart" data={rankingData}>
+            <CartesianGrid stroke="#d9d9d9" strokeDasharray="2"/>
             {districts.map(
                 d => (
+
                     <Line
                         /*dots disappearing https://github.com/recharts/recharts/issues/804*/
                         isAnimationActive={false}
-
                         key={d.id}
                         type="monotone"
                         dataKey={d.name}

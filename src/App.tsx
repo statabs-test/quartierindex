@@ -56,5 +56,4 @@ class App extends React.Component<ClassNames> {
     );
   }
 }
-
 export default withStyles(styles)(App);

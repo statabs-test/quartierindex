@@ -3,23 +3,26 @@
   right: 0;
 }
 
+* {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
 /*Grid setup*/
 /*MAIN GRID*/
 .App {
   --plot-width: 750px;
   --app-height: 830px;
   --app-width: 951px;
-  --title-height: 30px;
-  --add-indicator-height: 30px;
+  --title-height: 40px;
+  --add-indicator-height: 40px;
   --app-header-height: 30px;
   --ranking-width: 201px;
 
   display: grid;
   width: var(--app-width);
-  background: aquamarine;
+/*  background: aquamarine;*/
 
   grid-template-columns: var(--ranking-width) var(--plot-width);
-  grid-template-rows: var(--app-header-height) calc(var(--app-height) - 30px);
+  grid-template-rows: var(--app-header-height) calc(var(--app-height) - var(--app-header-height));
   grid-template-areas:  "header header"
                         "ranking parallel-line-plot";
 }
@@ -29,8 +32,7 @@
 
 .App-header {
   grid-area: header;
-  background-color: #1208081f;
-  color: white;
+/*  background-color: #1208081f;*/
 }
 
 .App-title {
@@ -46,17 +48,17 @@
   grid-area: ranking;
 
   grid-template-columns: auto;
-  grid-template-rows: 30px auto;
+  grid-template-rows: 40px auto;
   grid-template-areas: "title" "ranking";
 
   height: 100%;
   width: 100%;
-  background: aliceblue;
+/*  background: aliceblue;*/
 }
 
 .line-ranking {
   grid-area: ranking;
-  background: blue;
+ /* background: blue;*/
   height: 95%;
   width: 100%;
   padding-top: 10%;
@@ -79,7 +81,7 @@
 
   height: 100%;
   width: 100%;
-  background: blanchedalmond;
+/*  background: blanchedalmond;*/
 }
 
 .add-indicator {
@@ -87,7 +89,7 @@
   grid-area: add-ind;
   text-align: center;
   align-items: center;
-  background: #eded00;
+/*  background: #eded00;*/
 }
 .parallel-line-plot-scroll-area {
   --number-of-elements: 3;
@@ -103,13 +105,14 @@
   height: 100%;
   width: calc(750px - var(--legend-container-width));
   overflow-x: scroll;
-  background: green;
+  overflow-y: hidden;
+/*  background: green;*/
 }
 
 .parallel-line-plot-legend {
   display: grid;
   grid-area: legend;
-  background: blanchedalmond;
+/*  background: blanchedalmond;*/
   align-items: center;
   position: relative;
 }
@@ -119,12 +122,13 @@
   grid-area: chart;
 
   margin-left: var(--line-plot-margin-left);
-  background: cornflowerblue;
+/*  background: cornflowerblue;*/
 
 }
 
 .legend-container {
-  --legend-container-width: calc(var(--line-plot-margin-left) * 2);
+  --legend-margin: 5px;
+  --legend-container-width: calc(var(--line-plot-margin-left) * 2 - 2 * var(--legend-margin));
   width: var(--legend-container-width);
   display: grid;
 
@@ -140,29 +144,30 @@
 
   border-radius: 12px;
   text-align: center;
+  border: solid #e0e0e0;
 
-  background: #cc8dab;
+  /*  background: #cc8dab;*/
 }
 
 .legend-name {
   display: grid;
   grid-area: name;
 
-  background: cornflowerblue;
+/*  background: cornflowerblue;*/
 }
 
 .rate-positive {
   display: grid;
   grid-area: positiv;
 
-  background: #0044ed;
+/*  background: #0044ed;*/
 }
 
 .rate-negativ {
   display: grid;
   grid-area: negativ;
 
-  background: #eded00;
+/*  background: #eded00;*/
 }
 
 .weight {
@@ -173,7 +178,7 @@
   padding-left: 25%;
   padding-top: 15%;
 
-  background: cornflowerblue;
+/*  background: cornflowerblue;*/
 }
 
 .remove{
@@ -190,8 +195,8 @@
   position: absolute;
   width: var(--app-width);
   height: var(--app-height);
-
-  background: #8080809c;
+  background: #e0e0e094;
+/*  background: #8080809c;*/
 }
 .selection-container{
   --margin: calc(var(--app-header-height) + var(--add-indicator-height) + var(--title-height));
@@ -205,7 +210,9 @@
 
   display: flex;
   flex-direction: column;
-  background: blanchedalmond;
+  background: #e0e0e0f5;
+  border-radius: 50px 20px;
+/*  background: blanchedalmond;*/
 }
 
 /*UTIL ELEMENTS
@@ -214,7 +221,7 @@
   grid-area: title;
   width: 100%;
   height: auto;
-  background: brown;
+/*  background: brown;*/
   text-align: center;
   margin: 0;
 }

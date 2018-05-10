@@ -3,11 +3,11 @@ import * as ReactDOM from 'react-dom';
 import { HashRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { MuiThemeProvider } from 'material-ui/styles';
-import { theme } from './theme/theme';
 import App from './App';
 import { store } from './state/index';
 import registerServiceWorker from './registerServiceWorker';
-import './index.css';
+// import './index.css';
+import { theme } from './theme/theme';
 
 ReactDOM.render(
     <Provider store={store}>
