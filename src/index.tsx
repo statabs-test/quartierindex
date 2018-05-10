@@ -1,5 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
+import { HashRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { MuiThemeProvider } from 'material-ui/styles';
 import { theme } from './theme/theme';
@@ -10,9 +11,11 @@ import './index.css';
 
 ReactDOM.render(
     <Provider store={store}>
-     <MuiThemeProvider theme={theme}>
-        <App />
-        </MuiThemeProvider>
+        <Router>
+            <MuiThemeProvider theme={theme}>
+                <App />
+            </MuiThemeProvider>
+        </Router>
     </Provider>,
   document.getElementById('root') as HTMLElement
 );

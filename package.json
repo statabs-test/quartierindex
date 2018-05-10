@@ -10,6 +10,7 @@
     "@types/react": "^16.0.34",
     "@types/react-dom": "^16.0.3",
     "@types/react-redux": "^5.0.14",
+    "@types/react-router-dom": "^4.2.6",
     "csvjson": "^5.0.0",
     "csvtojson": "^1.1.9",
     "enzyme": "^3.3.0",
@@ -19,8 +20,10 @@
     "react-scripts-ts": "2.12.0"
   },
   "dependencies": {
+    "@material-ui/icons": "^1.0.0-beta.43",
     "@types/rc-slider": "^8.2.3",
     "@types/recharts": "^1.0.18",
+    "classnames": "^2.2.5",
     "lodash": "^4.17.4",
     "material-ui": "^1.0.0-beta.45",
     "rc-slider": "^8.6.1",
@@ -28,6 +31,7 @@
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
     "recharts": "^1.0.0-beta.10",
     "redux": "^3.7.2",
     "reselect": "^3.0.1"
