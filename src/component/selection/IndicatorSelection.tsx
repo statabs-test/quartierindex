@@ -10,13 +10,13 @@ import { getUtil } from '../../state/util/selectors';
 import { Util } from '../../state/util/types';
 import { toggleIndicatorSelectionVisibility } from '../../state/util/actions';
 import Grid from 'material-ui/Grid';
-import { Theme, WithStyles } from 'material-ui/styles';
-import { withStyles } from 'material-ui/styles';
+import { Theme, WithStyles, withStyles } from 'material-ui/styles';
 import Checkbox from 'material-ui/Checkbox';
 import { FormControlLabel } from 'material-ui/Form';
+import Button from 'material-ui/es/Button/Button';
 
 export interface Props {
-  indicators: {[key: string]: Indicator[]},
+  indicators: { [key: string]: Indicator[] },
   util: Util
 
   select(id: string): void
@@ -39,53 +39,55 @@ const styles = (theme: Theme) => ({
   } as React.CSSProperties,
 });
 
-// const isVisible = (util: Util): any => ({
-//   'visibility': util.selectIndicatorConf.visible ? 'visible' : 'hidden'
-// });
+const isVisible = (util: Util): any => ({
+  'visibility': util.selectIndicatorConf.visible ? 'visible' : 'hidden'
+});
 
 const IndicatorSelection: React.SFC<Props & ClassNames> = (props) => {
-  const {classes, indicators, select, deselect, util} = props;
+  const {classes, indicators, select, deselect, util, toggleVisibility} = props;
   return (
-    <Grid item xs={8}>
-      <div className="floating-container">
-        {console.log(util)}
-        <div className="selection-container">
-          <h2 className={classes.title}>
-            Schritt 1: Wählen Sie mindestens einen Indikator für die Index Berechnung aus
-          </h2>
-          <Grid container spacing={8}>
-          {
-            _.map(indicators, (value, key) => (
-              
-              <Grid item xs={4} key={key}>
-              <h3>Bereich {key}</h3>
-              <Grid container> {
-              value.map(indicator => (
-                <Grid item xs={12} key={indicator.id}>
-                <FormControlLabel
-                  key={indicator.id}
-                  control={
-                    <Checkbox
-                      checked={indicator.selected}
-                      onChange={(e) => {
-                        return e.target.checked ? select(indicator.id) : deselect(indicator.id)}
-                      }
-                      value={indicator.id}
-                    />
-                  }
-                  label={indicator.name}
-                />
-                </Grid>
-              ))
-            }
+      <div className="floating-container" style={isVisible(util)}>
+        <Grid item xs={8}>
+          {console.log(util)}
+          <div className="selection-container">
+            <h2 className={classes.title}>
+              Schritt 1: Wählen Sie mindestens einen Indikator für die Index Berechnung aus
+            </h2>
+            <Grid container spacing={8}>
+              {
+                _.map(indicators, (value, key) => (
+
+                        <Grid item xs={4} key={key}>
+                          <h3>Bereich {key}</h3>
+                          <Grid container> {
+                            value.map(indicator => (
+                                <Grid item xs={12} key={indicator.id}>
+                                  <FormControlLabel
+                                      key={indicator.id}
+                                      control={
+                                        <Checkbox
+                                            checked={indicator.selected}
+                                            onChange={(e) => {
+                                              return e.target.checked ? select(indicator.id) : deselect(indicator.id)
+                                            }
+                                            }
+                                            value={indicator.id}
+                                        />
+                                      }
+                                      label={indicator.name}
+                                  />
+                                </Grid>
+                            ))
+                          }
+                          </Grid>
+                        </Grid>
+                    )
+                )}
+                <Button onClick={() => toggleVisibility(util.selectIndicatorConf.visible)}>Ok</Button>
             </Grid>
-              </Grid>
-            )
-          )}
-          </Grid>
-        </div>
+          </div>
+        </Grid>
       </div>
-      </Grid>
   );
 }
 
@@ -100,7 +102,7 @@ const mapDispatchToProps = ({
   toggleVisibility: toggleIndicatorSelectionVisibility
 });
 
-export default compose (
-  withStyles(styles),
-  connect(mapStateToProps, mapDispatchToProps))
-  (IndicatorSelection);
+export default compose(
+    withStyles(styles),
+    connect(mapStateToProps, mapDispatchToProps))
+(IndicatorSelection);
