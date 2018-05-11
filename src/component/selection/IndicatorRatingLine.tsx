@@ -23,7 +23,7 @@ export interface Props {
 
 }
 
-type ClassNames = WithStyles<'root' | 'title' | 'leftIcon' | 'textCentered' >
+type ClassNames = WithStyles<'root' | 'title' | 'textCentered' | 'positiveButton' | 'negativeButton' >
 
 export const styles = (theme: Theme) => ({
   root: {
@@ -34,20 +34,34 @@ export const styles = (theme: Theme) => ({
     textAlign: 'center',
     color: '#1D4E2C',
   } as React.CSSProperties,
-  leftIcon: {
-    marginRight: theme.spacing.unit,
-    marginBottom: theme.spacing.unit
-  } as React.CSSProperties,
   textCentered: {
     display: 'inline-block'
   } as React.CSSProperties,
+  positiveButton: {
+    color: 'white',
+    backgroundColor: '#0387c1',
+    '&:hover': {
+      backgroundColor: '#0387c1'[200],
+    },
+    marginRight: theme.spacing.unit,
+    marginBottom: theme.spacing.unit
+  },
+  negativeButton: {
+    color: 'white',
+    backgroundColor: '#e54803',
+    '&:hover': {
+      backgroundColor: '#e54803'[200],
+    },
+    marginRight: theme.spacing.unit,
+    marginBottom: theme.spacing.unit
+  },
 });
 
 const IndicatorRatingLine: React.SFC<Props & ClassNames> = (props) => {
   const {classes, positiveValuation, negativeValuation, indicator} = props;
   return (
     <Grid container spacing={0} alignItems="center">
-      <Grid item xs={6} >
+      <Grid item xs={8} >
         Einen hohe/n Anteil {indicator.name} ist für mich
       </Grid>
       <Grid item xs={4}>
@@ -55,7 +69,7 @@ const IndicatorRatingLine: React.SFC<Props & ClassNames> = (props) => {
           color="primary"
           variant="raised"
           component="span"
-          className={classes.leftIcon}
+          className={classes.positiveButton}
           onClick={() => positiveValuation(indicator.id)}
         >
           <Icon>sentiment_satisfied</Icon>
@@ -65,7 +79,7 @@ const IndicatorRatingLine: React.SFC<Props & ClassNames> = (props) => {
           color="secondary"
           variant="raised"
           component="span"
-          className={classes.leftIcon}
+          className={classes.negativeButton}
           onClick={() => negativeValuation(indicator.id)}
         >
             <Icon>sentiment_dissatisfied</Icon>

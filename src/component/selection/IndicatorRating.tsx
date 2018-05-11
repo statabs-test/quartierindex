@@ -42,7 +42,7 @@ const IndicatorRating: React.SFC<Props & ClassNames> = (props) => {
   console.log(classes);
   return (
       <div className="floating-container">
-        <Grid item xs={8}>
+        <Grid item xs={12}>
           <h2 className={classes.title}>
             Schritt 2: Bewerten Sie, ob der Indikator positiv oder negativ ausfällt
           </h2>

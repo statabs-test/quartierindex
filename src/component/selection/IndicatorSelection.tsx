@@ -5,29 +5,20 @@ import { compose } from 'redux';
 import { Rootstate } from '../../state/index';
 import { getGroupedIndicators } from '../../state/indicator/selectors';
 import { Indicator } from '../../state/indicator/types';
-import { deselectIndicator, selectIndicator, } from '../../state/indicator/actions';
 import { getUtil } from '../../state/util/selectors';
 import { Util } from '../../state/util/types';
-import { toggleIndicatorSelectionVisibility } from '../../state/util/actions';
 import Grid from 'material-ui/Grid';
 import { Theme, WithStyles, withStyles } from 'material-ui/styles';
-import Checkbox from 'material-ui/Checkbox';
-import { FormControlLabel } from 'material-ui/Form';
 import { Link } from 'react-router-dom';
 import { Button } from 'material-ui';
+import IndicatorSelectionGroup from './IndicatorSelectionGroup';
 
 export interface Props {
   groupedIndicators: { [key: string]: Indicator[] }
   util: Util
-
-  select(id: string): void
-
-  deselect(id: string): void
-
-  toggleVisibility(visibility: boolean): void
 }
 
-type ClassNames = WithStyles<'root' | 'title'>
+type ClassNames = WithStyles<'root' | 'title' | 'nav_button'>
 
 export const styles = (theme: Theme) => ({
   root: {
@@ -42,6 +33,13 @@ export const styles = (theme: Theme) => ({
     textAlign: 'center',
     color: '#1d4e2c',
   } as React.CSSProperties,
+  nav_button: {
+    color: 'white',
+    backgroundColor: '#1d4e2c',
+    '&:hover': {
+      backgroundColor: '#1d4e2c'[700],
+    },
+  } as React.CSSProperties,
 });
 
 // const isVisible = (util: Util): any => ({
@@ -49,43 +47,19 @@ export const styles = (theme: Theme) => ({
 // });
 
 const IndicatorSelection: React.SFC<Props & ClassNames> = (props) => {
-  const {classes, groupedIndicators, select, deselect, util} = props;
+  const {classes, groupedIndicators, util} = props;
   return (
       <div className="floating-container">
-        <Grid item xs={8}>
+        <Grid item xs={12}>
           <div>
             {console.log(util)}
             <h2 className={classes.title}>
               Schritt 1: Wählen Sie mindestens einen Indikator für die Index Berechnung aus
             </h2>
-            <Grid container spacing={8}>
+            <Grid container spacing={0}>
               {
                 _.map(groupedIndicators, (value, key) => (
-                    <Grid item xs={4} key={key}>
-                      <h3>Bereich {key}</h3>
-                      <Grid container>
-                        {
-                          value.map(indicator => (
-                              <Grid item xs={12} key={indicator.id}>
-                                <FormControlLabel
-                                    key={indicator.id}
-                                    control={
-                                      <Checkbox
-                                          checked={indicator.selected}
-                                          onChange={(e) => {
-                                            return e.target.checked ? select(indicator.id) : deselect(indicator.id)
-                                          }
-                                          }
-                                          value={indicator.id}
-                                      />
-                                    }
-                                    label={indicator.name}
-                                />
-                              </Grid>
-                          ))
-                        }
-                      </Grid>
-                    </Grid>
+                    <IndicatorSelectionGroup key={key} groupName={key} value={value} />
                 ))
               }
             </Grid>
@@ -93,7 +67,7 @@ const IndicatorSelection: React.SFC<Props & ClassNames> = (props) => {
           <Grid container justify="flex-end">
             <Grid item xs={1}>
               <Link to={'/ranking'}>
-                <Button variant="raised">Weiter</Button>
+                <Button variant="raised" className={classes.title} >Weiter</Button>
               </Link>
             </Grid>
           </Grid>
@@ -109,9 +83,6 @@ const mapStateToProps = (state: Rootstate) => ({
 });
 
 const mapDispatchToProps = ({
-  select: selectIndicator,
-  deselect: deselectIndicator,
-  toggleVisibility: toggleIndicatorSelectionVisibility
 });
 
 export default compose(
