@@ -30,22 +30,6 @@ export interface PublicProps {
   style: React.CSSProperties
 }
 
-const toWNumber = (weightValue: number): WeightNumber => {
-  switch (weightValue) {
-    case 1 :
-      return WeightNumber.ONE;
-
-    case 2 :
-      return WeightNumber.TWO;
-
-    case 3 :
-      return WeightNumber.THREE;
-
-    default :
-      return WeightNumber.FOUR;
-  }
-};
-
 const LegendItem = ({
                       indicator,
                       style,
@@ -80,9 +64,11 @@ const LegendItem = ({
         </div>
         <div className="weight">
           <Slider
-              min={1}
-              max={4}
-              onChange={(value) => setIndicatorWeight(indicator.id, toWNumber(value))}
+              min={0.25}
+              max={1.00}
+              step={0.25}
+              value={indicator.weight}
+              onChange={(value) => setIndicatorWeight(indicator.id, value)}
           />
         </div>
 
