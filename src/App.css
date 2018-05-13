@@ -129,7 +129,7 @@
   width: var(--legend-container-width);
   display: grid;
 
-  grid-template-columns: 10% auto 10%;
+  grid-template-columns: 15% auto 10%;
   grid-template-rows: 20px auto auto;
   grid-template-areas:  "name     name      remove"
                         "positiv  weighting weighting"
@@ -156,15 +156,21 @@
 .rate-positive {
   display: grid;
   grid-area: positiv;
-
+  align-items: center;
 /*  background: #0044ed;*/
 }
 
 .rate-negativ {
   display: grid;
   grid-area: negativ;
+  align-items: center;
+
 
 /*  background: #eded00;*/
+}
+.rating-icon {
+  border-radius: 0 12px 12px 0;
+  width: 100% !important;
 }
 
 .weight {
