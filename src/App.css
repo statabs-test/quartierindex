@@ -136,7 +136,7 @@
   display: grid;
 
   grid-template-columns: 15% auto 10%;
-  grid-template-rows: 20px auto auto;
+  grid-template-rows: 24px auto auto;
   grid-template-areas:
       "name     name      remove"
       "positiv  weighting weighting"
@@ -157,8 +157,8 @@
   display: grid;
   grid-area: name;
   text-align: left;
-  margin-left: 9px;
-
+  border-top-left-radius: 4px;
+  padding-left: 10px;
   /*  background: cornflowerblue;*/
 }
 
@@ -180,15 +180,15 @@
 .rating-icon {
   border-radius: 0 12px 12px 0;
   width: 100% !important;
+
 }
 
 .weight {
   display: grid;
   grid-area: weighting;
-
-  width: 50%;
-  padding-left: 25%;
-  padding-top: 15%;
+  width: 70%;
+  padding-left: 15%;
+  padding-top: 13%;
 
   /*  background: cornflowerblue;*/
 }
@@ -196,7 +196,7 @@
 .remove {
   display: grid;
   grid-area: remove;
-
+  border-top-right-radius: 4px;
 }
 
 /* Indicator selection and deselection
@@ -257,6 +257,14 @@
 
 .negative-border {
   border-color: #e54803 !important;
+}
+
+.negative {
+  background: #e54803 !important;
+}
+
+.positive {
+  background: #0387c1 !important;
 }
 
 .positive-border {

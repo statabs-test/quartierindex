@@ -21,12 +21,23 @@ export const getClassNameSelectedUnselected = (indicator: Indicator, buttonType:
   return '';
 };
 
-export const getClassNamePositive = (indicator: Indicator): string => {
+export const getClassNameNegPosBorder = (indicator: Indicator): string => {
   switch (indicator.valuation) {
     case NegativePositive.Negative:
       return ' negative-border ';
     case NegativePositive.Positive:
       return ' positive-border ';
+    default:
+      return '';
+  }
+};
+
+export const getClassNameNegPos = (indicator: Indicator): string => {
+  switch (indicator.valuation) {
+    case NegativePositive.Negative:
+      return ' negative ';
+    case NegativePositive.Positive:
+      return ' positive ';
     default:
       return '';
   }

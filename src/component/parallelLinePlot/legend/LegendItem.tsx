@@ -13,7 +13,11 @@ import {
 import 'rc-slider/assets/index.css';
 import Slider from 'rc-slider';
 import { SentimentDissatisfied, SentimentSatisfied } from '@material-ui/icons';
-import { getClassNamePositive, getClassNameSelectedUnselected } from '../../../helpers';
+import {
+  getClassNameNegPos,
+  getClassNameNegPosBorder,
+  getClassNameSelectedUnselected
+} from '../../../helpers';
 
 interface Props {
   positiveValuation(id: string): void
@@ -41,10 +45,10 @@ const LegendItem = ({
   return (
       <div
           key={indicator.id}
-          className={'legend-container' + getClassNamePositive(indicator)}
+          className={'legend-container' + getClassNameNegPosBorder(indicator)}
           style={style}
       >
-        <div className="legend-name"> {indicator.name}</div>
+        <div className={'legend-name' + getClassNameNegPos(indicator)}> {indicator.name}</div>
 
         <div
             className="rate-positive"
@@ -73,7 +77,7 @@ const LegendItem = ({
         </div>
 
         <Cancel
-            className="remove"
+            className={'remove' + getClassNameNegPos(indicator)}
 
             onClick={() => deselect(indicator.id)}
         />
