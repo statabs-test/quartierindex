@@ -5,25 +5,22 @@ import { Rootstate } from '../../state';
 import { getSelectedIndicators } from '../../state/indicator/selectors';
 import { Indicator } from '../../state/indicator/types';
 import Grid from 'material-ui/Grid';
-import { Theme, WithStyles } from 'material-ui/styles';
-import { withStyles } from 'material-ui/styles';
+import { Theme, WithStyles, withStyles } from 'material-ui/styles';
 import Button from 'material-ui/Button';
 import Icon from 'material-ui/Icon';
-import {
-  SetNegativeValuation,
-  SetPositiveValuation,
-} from '../../state/indicator/actions';
+import { SetNegativeValuation, SetPositiveValuation, } from '../../state/indicator/actions';
+import { getClassName } from '../../helpers';
 
 export interface Props {
   indicator: Indicator
 
   positiveValuation(id: string): void
-  
+
   negativeValuation(id: string): void
 
 }
 
-type ClassNames = WithStyles<'root' | 'title' | 'textCentered' | 'positiveButton' | 'negativeButton' >
+type ClassNames = WithStyles<'root' | 'title' | 'textCentered' | 'positiveButton' | 'negativeButton'>
 
 export const styles = (theme: Theme) => ({
   root: {
@@ -49,48 +46,34 @@ export const styles = (theme: Theme) => ({
   },
 });
 
-const getClassName = (indicator: Indicator, buttonType: string): string => {
-
-  if (indicator.valuation === -1 && buttonType === 'negative') {
-    return ' negative-selected'
-  } else if (indicator.valuation === 1 && buttonType === 'negative') {
-    return ' negative-unselected'
-  } else if (indicator.valuation === 1 && buttonType === 'positive') {
-    return ' positive-selected'
-  } else if (indicator.valuation === -1 && buttonType === 'positive') {
-    return ' positive-unselected'
-  }
-  return '';
-} 
-
 const IndicatorRatingLine: React.SFC<Props & ClassNames> = (props) => {
   const {classes, positiveValuation, negativeValuation, indicator} = props;
   return (
-    <Grid container spacing={0} alignItems="center">
-      <Grid item xs={8} >
-        Einen hohe/n Anteil {indicator.name} ist für mich
-      </Grid>
-      <Grid item xs={4}>
-        <Button 
-          variant="raised"
-          component="span"
-          className={classes.positiveButton + getClassName(indicator, 'positive')}
-          onClick={() => positiveValuation(indicator.id)}
-        >
-          <Icon>sentiment_satisfied</Icon>
-          positiv
-        </Button>
-        <Button
-          className={classes.negativeButton + getClassName(indicator, 'negative')}
-          variant="raised"
-          component="span"
-          onClick={() => negativeValuation(indicator.id)}
-        >
+      <Grid container spacing={0} alignItems="center">
+        <Grid item xs={8}>
+          Einen hohe/n Anteil {indicator.name} ist für mich
+        </Grid>
+        <Grid item xs={4}>
+          <Button
+              variant="raised"
+              component="span"
+              className={classes.positiveButton + getClassName(indicator, 'positive')}
+              onClick={() => positiveValuation(indicator.id)}
+          >
+            <Icon>sentiment_satisfied</Icon>
+            positiv
+          </Button>
+          <Button
+              className={classes.negativeButton + getClassName(indicator, 'negative')}
+              variant="raised"
+              component="span"
+              onClick={() => negativeValuation(indicator.id)}
+          >
             <Icon>sentiment_dissatisfied</Icon>
             negativ
-        </Button>
+          </Button>
+        </Grid>
       </Grid>
-    </Grid>
   );
 }
 
@@ -104,6 +87,6 @@ const mapDispatchToProps = ({
 });
 
 export default compose(
-  withStyles(styles),
-  connect(mapStateToProps, mapDispatchToProps))
-  (IndicatorRatingLine);
+    withStyles(styles),
+    connect(mapStateToProps, mapDispatchToProps))
+(IndicatorRatingLine);
