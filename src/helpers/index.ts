@@ -1,13 +1,13 @@
 import { LineRank } from '../state/observation/types';
-import { Indicator } from '../state/indicator/types';
+import { Indicator, NegativePositive } from '../state/indicator/types';
 
 export const getRankingColor = (rank: LineRank): string => {
   return 'hsl(' + rank.color.h.toString() + ', '
-    + rank.color.s.toString() + '%,'
-    + rank.color.v.toString() + '%)';
+      + rank.color.s.toString() + '%,'
+      + rank.color.v.toString() + '%)';
 };
 
-export const getClassName = (indicator: Indicator, buttonType: string): string => {
+export const getClassNameSelectedUnselected = (indicator: Indicator, buttonType: string): string => {
 
   if (indicator.valuation === -1 && buttonType === 'negative') {
     return ' negative-selected'
@@ -19,4 +19,15 @@ export const getClassName = (indicator: Indicator, buttonType: string): string =
     return ' positive-unselected'
   }
   return '';
+};
+
+export const getClassNamePositive = (indicator: Indicator): string => {
+  switch (indicator.valuation) {
+    case NegativePositive.Negative:
+      return ' negative-border ';
+    case NegativePositive.Positive:
+      return ' positive-border ';
+    default:
+      return '';
+  }
 };

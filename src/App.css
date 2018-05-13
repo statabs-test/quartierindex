@@ -244,7 +244,13 @@
 .negative-unselected:hover {
   background-color: #e54803 !important;
 }
+.negative-border {
+  border-color: #e54803 !important;
+}
 
+.positive-border {
+  border-color: #0387c1 !important;
+}
 .positive-selected {
   background-color: #0387c1 !important;
 }

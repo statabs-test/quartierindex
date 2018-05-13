@@ -13,7 +13,7 @@ import {
 import 'rc-slider/assets/index.css';
 import Slider from 'rc-slider';
 import { SentimentDissatisfied, SentimentSatisfied } from '@material-ui/icons';
-import { getClassName } from '../../../helpers';
+import { getClassNamePositive, getClassNameSelectedUnselected } from '../../../helpers';
 
 interface Props {
   positiveValuation(id: string): void
@@ -55,7 +55,11 @@ const LegendItem = ({
                       deselect
                     }: Props & PublicProps) => {
   return (
-      <div key={indicator.id} className="legend-container" style={style}>
+      <div
+          key={indicator.id}
+          className={'legend-container' + getClassNamePositive(indicator)}
+          style={style}
+      >
         <div className="legend-name"> {indicator.name}</div>
 
         <div
@@ -63,7 +67,7 @@ const LegendItem = ({
             onClick={() => positiveValuation(indicator.id)}
         >
           <SentimentSatisfied
-              className={'rating-icon' + getClassName(indicator, 'positive')}
+              className={'rating-icon' + getClassNameSelectedUnselected(indicator, 'positive')}
           />
         </div>
         <div
@@ -71,7 +75,7 @@ const LegendItem = ({
             onClick={() => negativeValuation(indicator.id)}
         >
           <SentimentDissatisfied
-              className={'rating-icon' + getClassName(indicator, 'negative')}
+              className={'rating-icon' + getClassNameSelectedUnselected(indicator, 'negative')}
           />
         </div>
         <div className="weight">

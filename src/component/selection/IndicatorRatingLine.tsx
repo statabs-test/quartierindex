@@ -9,7 +9,7 @@ import { Theme, WithStyles, withStyles } from 'material-ui/styles';
 import Button from 'material-ui/Button';
 import Icon from 'material-ui/Icon';
 import { SetNegativeValuation, SetPositiveValuation, } from '../../state/indicator/actions';
-import { getClassName } from '../../helpers';
+import { getClassNameSelectedUnselected } from '../../helpers';
 
 export interface Props {
   indicator: Indicator
@@ -57,14 +57,14 @@ const IndicatorRatingLine: React.SFC<Props & ClassNames> = (props) => {
           <Button
               variant="raised"
               component="span"
-              className={classes.positiveButton + getClassName(indicator, 'positive')}
+              className={classes.positiveButton + getClassNameSelectedUnselected(indicator, 'positive')}
               onClick={() => positiveValuation(indicator.id)}
           >
             <Icon>sentiment_satisfied</Icon>
             positiv
           </Button>
           <Button
-              className={classes.negativeButton + getClassName(indicator, 'negative')}
+              className={classes.negativeButton + getClassNameSelectedUnselected(indicator, 'negative')}
               variant="raised"
               component="span"
               onClick={() => negativeValuation(indicator.id)}
