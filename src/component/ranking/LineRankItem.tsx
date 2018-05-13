@@ -8,7 +8,7 @@ export interface Props {
 }
 
 const y = (yPos: number): string => {
-  const yy = ( 1 - yPos ) * 100;
+  const yy = (1 - yPos) * 100;
   return yy.toString() + '%';
 };
 
@@ -18,17 +18,50 @@ const labelPos = (rankIndex: number): string =>
 const LineRankItem: React.StatelessComponent<Props> = ({rank, rankIndex}) => {
   return (
       <g>
-        <line x1="10%" x2="18%" y1={y(rank.rankValue)} y2={y(rank.rankValue)} stroke={getRankingColor(rank)}/>
-        <line
-          x1="18%"
-          x2="40%"
-          y1={y(rank.rankValue)}
-          y2={labelPos(rankIndex)}
-          stroke={getRankingColor(rank)}
-          strokeWidth="1"
+
+        <circle
+            cx="10%"
+            cy={y(rank.rankValue)}
+
+            r={10}
+            fill={getRankingColor(rank)}
         />
-        <circle cx="10%" cy={y(rank.rankValue)} r={10} fill={getRankingColor(rank)}/>
-        <text x="40%" y={labelPos(rankIndex)} fill={getRankingColor(rank)}>{rank.labelText}</text>
+
+        /**
+        * Horizontal line
+        */
+        <line
+            x1="10%"
+            y1={y(rank.rankValue)}
+
+            x2="18%"
+            y2={y(rank.rankValue)}
+
+            stroke={getRankingColor(rank)}
+        />
+
+        /**
+        * Line to Text
+        */
+        <line
+            x1="18%"
+            y1={y(rank.rankValue)}
+
+            x2="30%"
+            y2={labelPos(rankIndex)}
+
+            stroke={getRankingColor(rank)}
+            strokeWidth="1"
+        />
+
+        <text
+            x="30%"
+            y={labelPos(rankIndex)}
+
+            fill={getRankingColor(rank)}
+        >
+          {rank.labelText}
+        </text>
       </g>
   );
 
