@@ -3,20 +3,28 @@ import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { Rootstate } from '../../state';
 import { getSelectedIndicators } from '../../state/indicator/selectors';
-import { Indicator } from '../../state/indicator/types';
+import { Indicator, WeightNumber } from '../../state/indicator/types';
 import Grid from 'material-ui/Grid';
 import { Theme, WithStyles } from 'material-ui/styles';
 import { withStyles } from 'material-ui/styles';
+import green from 'material-ui/colors/green';
+import Radio from 'material-ui/Radio';
+import { setWeight } from '../../state/indicator/actions';
 
 export interface Props {
   indicator: Indicator
+
+  setIndicatorWeight(id: string, weight: WeightNumber): void
 }
 
 type ClassNames = WithStyles<'root' | 'title' | 'leftIcon' | 'textCentered' >
 
 export const styles = (theme: Theme) => ({
   root: {
-    flexGrow: 1,
+    color: green[600],
+    '&$checked': {
+      color: green[500],
+    },
   } as React.CSSProperties,
   title: {
     padding: theme.spacing.unit * 2,
@@ -33,12 +41,31 @@ export const styles = (theme: Theme) => ({
 });
 
 const IndicatorRatingLine: React.SFC<Props & ClassNames> = (props) => {
-  const {indicator} = props;
+  const {classes, indicator, setIndicatorWeight} = props;
+  const labels = ['sehr unwichtig', 'eher unwichtig', 'eher wichtig', 'sehr wichtig'];
   return (
     <Grid container spacing={0} alignItems="center">
-      <Grid item xs={6} >
-        Der Anteil {indicator.name} ist für mich
+      <Grid item xs={4} >
+      Der Anteil {indicator.name} ist für mich
       </Grid>
+      <Grid item xs={8} >
+      <Grid container spacing={0}>
+      {
+        [WeightNumber.ONE, WeightNumber.TWO, WeightNumber.THREE, WeightNumber.FOUR].map((weight, idx) => (
+          <Grid item xs={3}>
+            <Radio
+              checked={indicator.weight === weight}
+              onChange={(value) => setIndicatorWeight(indicator.id, weight)}
+              value={weight.toString()}
+              name={weight.toString()}
+              classes={{ root: classes.root }}
+            />
+              {labels[idx]}
+          </Grid>
+      ))
+      }  
+      </Grid>
+    </Grid>
     </Grid>
   );
 }
@@ -48,6 +75,7 @@ const mapStateToProps = (state: Rootstate) => ({
 });
 
 const mapDispatchToProps = ({
+  setIndicatorWeight: setWeight,
 });
 
 export default compose(

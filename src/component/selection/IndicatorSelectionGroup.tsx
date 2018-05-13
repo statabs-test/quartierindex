@@ -19,16 +19,9 @@ export interface Props {
   deselect(id: string): void
 }
 
-type ClassNames = WithStyles<'root' | 'title' | 'checkbox'>
+type ClassNames = WithStyles<'title' | 'checkbox' | 'checked' >
 
 export const styles = (theme: Theme) => ({
-  root: {
-    flexGrow: 1,
-    paddingTop: 16,
-    paddingBottom: 16,
-    marginTop: theme.spacing.unit * 3,
-    paddingLeft: theme.spacing.unit * 3,
-  } as React.CSSProperties,
   title: {
     padding: theme.spacing.unit * 2,
     textAlign: 'center',
@@ -36,6 +29,15 @@ export const styles = (theme: Theme) => ({
   } as React.CSSProperties,
   checkbox: {
     color: '#1d4e2c',
+    '&$checked': {
+      color: '#1d4e2c'[500],
+    }
+  } as React.CSSProperties,
+  checked: {
+    color: '#1d4e2c',
+    '&$checked': {
+      color: '#1d4e2c'[500],
+    }
   } as React.CSSProperties,
 });
 
@@ -56,10 +58,13 @@ const IndicatorSelectionGroup: React.SFC<Props & ClassNames> = (props) => {
                             className={classes.checkbox}
                             checked={indicator.selected}
                             onChange={(e) => {
-                            return e.target.checked ? select(indicator.id) : deselect(indicator.id)
-                            }
-                            }
+                              return e.target.checked ? select(indicator.id) : deselect(indicator.id)
+                            }}
                             value={indicator.id}
+                            classes={{
+                              root: classes.checkbox,
+                              checked: classes.checked,
+                            }}
                         />
                     }
                     label={indicator.name}

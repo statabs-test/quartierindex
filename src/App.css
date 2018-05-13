@@ -226,3 +226,28 @@
 }
 
 
+/* Rating buttons
+------------------------------------------------*/
+.negative-selected {
+  background-color: #e54803 !important;
+}
+
+.negative-unselected {
+  background-color: #E6D3CB !important;
+}
+.negative-unselected:hover {
+  background-color: #e54803 !important;
+}
+
+.positive-selected {
+  background-color: #0387c1 !important;
+}
+
+.positive-unselected {
+  background-color: #9AB6C3 !important;
+}
+.positive-unselected:hover {
+  background-color: #0387c1 !important;
+}
+
+

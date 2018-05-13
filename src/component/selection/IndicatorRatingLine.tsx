@@ -39,23 +39,29 @@ export const styles = (theme: Theme) => ({
   } as React.CSSProperties,
   positiveButton: {
     color: 'white',
-    backgroundColor: '#0387c1',
-    '&:hover': {
-      backgroundColor: '#0387c1'[200],
-    },
     marginRight: theme.spacing.unit,
     marginBottom: theme.spacing.unit
   },
   negativeButton: {
     color: 'white',
-    backgroundColor: '#e54803',
-    '&:hover': {
-      backgroundColor: '#e54803'[200],
-    },
     marginRight: theme.spacing.unit,
     marginBottom: theme.spacing.unit
   },
 });
+
+const getClassName = (indicator: Indicator, buttonType: string): string => {
+
+  if (indicator.valuation === -1 && buttonType === 'negative') {
+    return ' negative-selected'
+  } else if (indicator.valuation === 1 && buttonType === 'negative') {
+    return ' negative-unselected'
+  } else if (indicator.valuation === 1 && buttonType === 'positive') {
+    return ' positive-selected'
+  } else if (indicator.valuation === -1 && buttonType === 'positive') {
+    return ' positive-unselected'
+  }
+  return '';
+} 
 
 const IndicatorRatingLine: React.SFC<Props & ClassNames> = (props) => {
   const {classes, positiveValuation, negativeValuation, indicator} = props;
@@ -66,20 +72,18 @@ const IndicatorRatingLine: React.SFC<Props & ClassNames> = (props) => {
       </Grid>
       <Grid item xs={4}>
         <Button 
-          color="primary"
           variant="raised"
           component="span"
-          className={classes.positiveButton}
+          className={classes.positiveButton + getClassName(indicator, 'positive')}
           onClick={() => positiveValuation(indicator.id)}
         >
           <Icon>sentiment_satisfied</Icon>
           positiv
         </Button>
         <Button
-          color="secondary"
+          className={classes.negativeButton + getClassName(indicator, 'negative')}
           variant="raised"
           component="span"
-          className={classes.negativeButton}
           onClick={() => negativeValuation(indicator.id)}
         >
             <Icon>sentiment_dissatisfied</Icon>

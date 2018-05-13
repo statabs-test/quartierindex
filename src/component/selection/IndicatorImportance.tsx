@@ -40,7 +40,7 @@ const IndicatorImportance: React.SFC<Props & ClassNames> = (props) => {
   const {classes, selectedIndicators} = props;
   return (
       <div className="floating-container">
-        <Grid item xs={8}>
+        <Grid item xs={12}>
           <h2 className={classes.title}>
             Schritt 3: Geben Sie an, wie wichtig der Indikator für Sie ist
           </h2>
