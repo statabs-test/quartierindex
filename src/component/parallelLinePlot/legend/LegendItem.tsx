@@ -16,7 +16,7 @@ import { SentimentDissatisfied, SentimentSatisfied } from '@material-ui/icons';
 import {
   getClassNameNegPos,
   getClassNameNegPosBorder,
-  getClassNameSelectedUnselected
+  getClassNameSelectedUnselected, getLabelBy
 } from '../../../helpers';
 
 interface Props {
@@ -80,6 +80,9 @@ const LegendItem = ({
               }}
               onChange={(value) => setIndicatorWeight(indicator.id, value)}
           />
+          <div className="weight-label">
+            {getLabelBy(indicator.weight)}
+          </div>
         </div>
 
         <Cancel

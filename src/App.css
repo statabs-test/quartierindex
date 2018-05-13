@@ -184,6 +184,7 @@
 }
 
 .weight {
+  position: relative;
   display: grid;
   grid-area: weighting;
   width: 70%;
@@ -191,6 +192,15 @@
   padding-top: 13%;
 
   /*  background: cornflowerblue;*/
+}
+
+.weight-label {
+  text-align: center;
+  position: absolute;
+  justify-items: center;
+  left: 24px;
+  bottom: 5px;
+  color: #808080;
 }
 
 .remove {

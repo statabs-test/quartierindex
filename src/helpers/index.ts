@@ -1,5 +1,5 @@
 import { LineRank } from '../state/observation/types';
-import { Indicator, NegativePositive } from '../state/indicator/types';
+import { Indicator, NegativePositive, WeightNumber } from '../state/indicator/types';
 
 export const getRankingColor = (rank: LineRank): string => {
   return 'hsl(' + rank.color.h.toString() + ', '
@@ -44,3 +44,18 @@ export const getClassNameNegPos = (indicator: Indicator): string => {
 };
 
 export const labels = ['sehr unwichtig', 'eher unwichtig', 'eher wichtig', 'sehr wichtig'];
+
+export const getLabelBy = (weight: WeightNumber): string => {
+  switch (weight) {
+    case WeightNumber.ONE:
+      return labels[0];
+    case WeightNumber.TWO:
+      return labels[1];
+    case WeightNumber.THREE:
+      return labels[2];
+    case WeightNumber.FOUR:
+      return labels[3];
+    default:
+      return '';
+  }
+};
