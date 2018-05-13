@@ -13,6 +13,7 @@ import {
 import 'rc-slider/assets/index.css';
 import Slider from 'rc-slider';
 import { SentimentDissatisfied, SentimentSatisfied } from '@material-ui/icons';
+import { getClassName } from '../../../helpers';
 
 interface Props {
   positiveValuation(id: string): void
@@ -61,13 +62,17 @@ const LegendItem = ({
             className="rate-positive"
             onClick={() => positiveValuation(indicator.id)}
         >
-          <SentimentSatisfied className="rating-icon"/>
+          <SentimentSatisfied
+              className={'rating-icon' + getClassName(indicator, 'positive')}
+          />
         </div>
         <div
             className="rate-negativ"
             onClick={() => negativeValuation(indicator.id)}
         >
-          <SentimentDissatisfied className="rating-icon"/>
+          <SentimentDissatisfied
+              className={'rating-icon' + getClassName(indicator, 'negative')}
+          />
         </div>
         <div className="weight">
           <Slider
