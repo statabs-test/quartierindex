@@ -10,6 +10,7 @@ import { withStyles } from 'material-ui/styles';
 import green from 'material-ui/colors/green';
 import Radio from 'material-ui/Radio';
 import { setWeight } from '../../state/indicator/actions';
+import { labels } from '../../helpers';
 
 export interface Props {
   indicator: Indicator
@@ -42,7 +43,7 @@ export const styles = (theme: Theme) => ({
 
 const IndicatorRatingLine: React.SFC<Props & ClassNames> = (props) => {
   const {classes, indicator, setIndicatorWeight} = props;
-  const labels = ['sehr unwichtig', 'eher unwichtig', 'eher wichtig', 'sehr wichtig'];
+
   return (
     <Grid container spacing={0} alignItems="center">
       <Grid item xs={4} >

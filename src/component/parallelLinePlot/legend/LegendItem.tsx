@@ -72,6 +72,12 @@ const LegendItem = ({
               max={1.00}
               step={0.25}
               value={indicator.weight}
+              marks={{
+                0.25: '',
+                0.5: '',
+                0.75: '',
+                1: ''
+              }}
               onChange={(value) => setIndicatorWeight(indicator.id, value)}
           />
         </div>

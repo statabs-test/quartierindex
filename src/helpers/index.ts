@@ -42,3 +42,5 @@ export const getClassNameNegPos = (indicator: Indicator): string => {
       return '';
   }
 };
+
+export const labels = ['sehr unwichtig', 'eher unwichtig', 'eher wichtig', 'sehr wichtig'];
