@@ -6,6 +6,7 @@
 * {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
+
 /*Grid setup*/
 /*MAIN GRID*/
 .App {
@@ -16,15 +17,17 @@
   --add-indicator-height: 40px;
   --app-header-height: 30px;
   --ranking-width: 201px;
+  --legend-container-height: 95px;
 
   display: grid;
   width: var(--app-width);
-/*  background: aquamarine;*/
+  /*  background: aquamarine;*/
 
   grid-template-columns: var(--ranking-width) var(--plot-width);
   grid-template-rows: var(--app-header-height) calc(var(--app-height) - var(--app-header-height));
-  grid-template-areas:  "header header"
-                        "ranking parallel-line-plot";
+  grid-template-areas:
+      "header header"
+      "ranking parallel-line-plot";
 }
 
 /*HEADER
@@ -35,7 +38,7 @@
   font-size: 1.5em;
   margin: 0;
   text-align: center;
-/*  background-color: #1208081f;*/
+  /*  background-color: #1208081f;*/
 }
 
 /*RANKING MAIN CONTAINER
@@ -45,22 +48,21 @@
   grid-area: ranking;
 
   grid-template-columns: auto;
-  grid-template-rows: 40px auto;
-  grid-template-areas: "title" "ranking";
+  grid-template-rows: calc( var(--title-height) + var(--add-indicator-height) + var(--legend-container-height)) auto;
+  grid-template-areas:
+      "title"
+      "ranking";
 
   height: 100%;
   width: 100%;
-/*  background: aliceblue;*/
+  /*  background: aliceblue;*/
 }
 
 .line-ranking {
   grid-area: ranking;
- /* background: blue;*/
+  /* background: blue;*/
   height: 95%;
   width: 100%;
-  padding-top: 10%;
-  padding-bottom: 10%;
-
 }
 
 /*PARALLEL LINE PLOT MAIN CONTAINER
@@ -72,13 +74,14 @@
 
   grid-template-columns: auto;
   grid-template-rows: var(--title-height) var(--add-indicator-height) auto;
-  grid-template-areas:  "title"
-                        "add-ind"
-                        "scroll-area";
+  grid-template-areas:
+      "title"
+      "add-ind"
+      "scroll-area";
 
   height: 100%;
   width: 100%;
-/*  background: blanchedalmond;*/
+  /*  background: blanchedalmond;*/
 }
 
 .add-indicator {
@@ -86,8 +89,9 @@
   grid-area: add-ind;
   text-align: center;
   align-items: center;
-/*  background: #eded00;*/
+  /*  background: #eded00;*/
 }
+
 .parallel-line-plot-scroll-area {
   --number-of-elements: 3;
   --line-plot-margin-left: calc(var(--plot-width) / 2 / var(--number-of-elements));
@@ -96,20 +100,22 @@
   grid-area: scroll-area;
 
   grid-template-columns: auto;
-  grid-template-rows: 15% auto;
-  grid-template-areas: "legend" "chart";
+  grid-template-rows: var(--legend-container-height) auto;
+  grid-template-areas:
+      "legend"
+      "chart";
 
   height: 100%;
   width: calc(750px - var(--legend-container-width));
   overflow-x: scroll;
   overflow-y: hidden;
-/*  background: green;*/
+  /*  background: green;*/
 }
 
 .parallel-line-plot-legend {
   display: grid;
   grid-area: legend;
-/*  background: blanchedalmond;*/
+  /*  background: blanchedalmond;*/
   align-items: center;
   position: relative;
 }
@@ -119,7 +125,7 @@
   grid-area: chart;
 
   margin-left: var(--line-plot-margin-left);
-/*  background: cornflowerblue;*/
+  /*  background: cornflowerblue;*/
 
 }
 
@@ -131,9 +137,10 @@
 
   grid-template-columns: 15% auto 10%;
   grid-template-rows: 20px auto auto;
-  grid-template-areas:  "name     name      remove"
-                        "positiv  weighting weighting"
-                        "negativ  weighting weighting";
+  grid-template-areas:
+      "name     name      remove"
+      "positiv  weighting weighting"
+      "negativ  weighting weighting";
 
   height: 95%;
   position: absolute;
@@ -152,14 +159,14 @@
   text-align: left;
   margin-left: 9px;
 
-/*  background: cornflowerblue;*/
+  /*  background: cornflowerblue;*/
 }
 
 .rate-positive {
   display: grid;
   grid-area: positiv;
   align-items: center;
-/*  background: #0044ed;*/
+  /*  background: #0044ed;*/
 }
 
 .rate-negativ {
@@ -167,9 +174,9 @@
   grid-area: negativ;
   align-items: center;
 
-
-/*  background: #eded00;*/
+  /*  background: #eded00;*/
 }
+
 .rating-icon {
   border-radius: 0 12px 12px 0;
   width: 100% !important;
@@ -183,10 +190,10 @@
   padding-left: 25%;
   padding-top: 15%;
 
-/*  background: cornflowerblue;*/
+  /*  background: cornflowerblue;*/
 }
 
-.remove{
+.remove {
   display: grid;
   grid-area: remove;
 
@@ -203,9 +210,10 @@
   background: #e0e0e094;
   margin-top: var(--app-header-height);
   border-radius: 50px 20px;
-/*  background: #8080809c;*/
+  /*  background: #8080809c;*/
 }
-.selection-container{
+
+.selection-container {
   --margin: calc(var(--app-header-height) + var(--add-indicator-height) + var(--title-height));
   --height: calc(var(--app-height) - var(--margin));
   --width: calc(var(--app-width) - var(--ranking-width));
@@ -219,7 +227,7 @@
   flex-direction: column;
   background: #e0e0e0f5;
   border-radius: 50px 20px;
-/*  background: blanchedalmond;*/
+  /*  background: blanchedalmond;*/
 }
 
 /*UTIL ELEMENTS
@@ -228,11 +236,10 @@
   grid-area: title;
   width: 100%;
   height: auto;
-/*  background: brown;*/
+  /*  background: brown;*/
   text-align: center;
   margin: 0;
 }
-
 
 /* Rating buttons
 ------------------------------------------------*/
@@ -243,9 +250,11 @@
 .negative-unselected {
   background-color: #E6D3CB !important;
 }
+
 .negative-unselected:hover {
   background-color: #e54803 !important;
 }
+
 .negative-border {
   border-color: #e54803 !important;
 }
@@ -253,6 +262,7 @@
 .positive-border {
   border-color: #0387c1 !important;
 }
+
 .positive-selected {
   background-color: #0387c1 !important;
 }
@@ -260,6 +270,7 @@
 .positive-unselected {
   background-color: #9AB6C3 !important;
 }
+
 .positive-unselected:hover {
   background-color: #0387c1 !important;
 }
