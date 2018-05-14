@@ -48,7 +48,7 @@ const getWidth = (indicators: Indicator[]): number => {
 
 const ChartContainer = ({districts, rankingData, lineRanking, selectedIndicators}: Props) =>
     (
-        <ResponsiveContainer width={getWidth(selectedIndicators)} height={600}>
+        <ResponsiveContainer  width={getWidth(selectedIndicators)} height={600}>
           <LineChart className="parallel-line-plot-chart" data={rankingData}>
             <CartesianGrid stroke="#d9d9d9" strokeDasharray="2"/>
             {districts.map(

@@ -60,6 +60,14 @@ const LineRankItem: React.StatelessComponent<Props> = ({rank, rankIndex}) => {
 
             fill={getRankingColor(rank)}
         >
+          {rankIndex + 1}
+        </text>
+        <text
+            x="38%"
+            y={labelPos(rankIndex)}
+
+            fill={getRankingColor(rank)}
+        >
           {rank.labelText}
         </text>
       </g>
