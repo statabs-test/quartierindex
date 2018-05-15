@@ -59,6 +59,7 @@ const districtData = _.uniqBy(
     return {
       id: data.districtId,
       name: data.district,
+      viewOptions: false
     }
   }),
   'id'

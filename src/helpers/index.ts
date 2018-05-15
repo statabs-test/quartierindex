@@ -1,10 +1,15 @@
 import { LineRank } from '../state/observation/types';
 import { Indicator, NegativePositive, WeightNumber } from '../state/indicator/types';
+import { District } from '../state/district/types';
 
 export const getRankingColor = (rank: LineRank): string => {
-  return 'hsl(' + rank.color.h.toString() + ', '
-      + rank.color.s.toString() + '%,'
-      + rank.color.v.toString() + '%)';
+  if (rank.highlighted) {
+    return 'hsl(' + rank.color.h.toString() + ', '
+        + rank.color.s.toString() + '%,'
+        + rank.color.v.toString() + '%)';
+  } else {
+    return 'rgb(160, 160, 160)';
+  }
 };
 
 export const getClassNameSelectedUnselected = (indicator: Indicator, buttonType: string): string => {
@@ -59,3 +64,8 @@ export const getLabelBy = (weight: WeightNumber): string => {
       return '';
   }
 };
+
+export const anyUserSelection = (districts: District[]): boolean =>
+    districts
+    .map(d => d.viewOptions.isSelected)
+    .reduce((a, b) => a || b);

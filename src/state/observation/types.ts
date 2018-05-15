@@ -30,4 +30,6 @@ export interface LineRank {
   rankValue: number;
   labelText: string;
   color: Color;
+  highlighted: boolean;
+
 }

@@ -1,12 +1,20 @@
 import * as React from 'react';
 import { LineRank } from '../../state/observation/types';
 import LineRankItem from './LineRankItem';
+import { Rootstate } from '../../state';
+import { connect } from 'react-redux';
+import { getLineRanking } from '../../state/observation/selectors';
+import { _hideDistrict, _highlightDistrict } from '../../state/district/actions';
 
 export interface Props {
   ranking: LineRank[];
+
+  highlightDistrict(id: string): void
+
+  hideDistrict(id: string): void
 }
 
-const LineRanking: React.StatelessComponent<Props> = ({ranking}) => {
+const LineRanking = ({ranking, highlightDistrict, hideDistrict}: Props) => {
   return (
       <svg className="line-ranking" overflow="visible">
         <line x1="10%" y1={0} x2="10%" y2="100%" stroke="grey" strokeWidth="2"/>
@@ -63,9 +71,29 @@ const LineRanking: React.StatelessComponent<Props> = ({ranking}) => {
         {
           ranking
           .map((rank, index) => (
-              <LineRankItem key={rank.objectId} rank={rank} rankIndex={index}/>))}
+              <LineRankItem
+                  key={rank.objectId}
+                  rank={rank}
+                  rankIndex={index}
+                  onClick={() =>
+                      rank.highlighted ?
+                          hideDistrict(rank.objectId)
+                          : highlightDistrict(rank.objectId)}
+                  onMouseEnter={() => highlightDistrict(rank.objectId)}
+                  onMouseLeave={() => hideDistrict(rank.objectId)}
+              />
+          ))}
       </svg>
   );
 };
 
-export default LineRanking;
+const mapStateToProps = (state: Rootstate) => ({
+  ranking: getLineRanking(state)
+});
+
+const mapDispatchToProps = ({
+  highlightDistrict: _highlightDistrict,
+  hideDistrict: _hideDistrict
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(LineRanking);

@@ -5,6 +5,12 @@ import { getRankingColor } from '../../helpers';
 export interface Props {
   rank: LineRank;
   rankIndex: number;
+
+  onClick(): void;
+
+  onMouseEnter(): void;
+
+  onMouseLeave(): void;
 }
 
 const y = (yPos: number): string => {
@@ -15,64 +21,69 @@ const y = (yPos: number): string => {
 const labelPos = (rankIndex: number): string =>
     ((1 - 0.9 * (1 - rankIndex / 21)) * 100).toString() + '%';
 
-const LineRankItem: React.StatelessComponent<Props> = ({rank, rankIndex}) => {
-  return (
-      <g>
+const LineRankItem: React.StatelessComponent<Props> =
+    ({rank, rankIndex, onClick, onMouseEnter, onMouseLeave}) => {
+      return (
+          <g
+              onClick={() => onClick()}
+              onMouseEnter={() => onMouseEnter()}
+           //   onMouseLeave={() => onMouseLeave()}
+          >
 
-        <circle
-            cx="10%"
-            cy={y(rank.rankValue)}
+            <circle
+                cx="10%"
+                cy={y(rank.rankValue)}
 
-            r={10}
-            fill={getRankingColor(rank)}
-        />
+                r={10}
+                fill={getRankingColor(rank)}
+            />
 
-        /**
-        * Horizontal line
-        */
-        <line
-            x1="10%"
-            y1={y(rank.rankValue)}
+            /**
+            * Horizontal line
+            */
+            <line
+                x1="10%"
+                y1={y(rank.rankValue)}
 
-            x2="18%"
-            y2={y(rank.rankValue)}
+                x2="18%"
+                y2={y(rank.rankValue)}
 
-            stroke={getRankingColor(rank)}
-        />
+                stroke={getRankingColor(rank)}
+            />
 
-        /**
-        * Line to Text
-        */
-        <line
-            x1="18%"
-            y1={y(rank.rankValue)}
+            /**
+            * Line to Text
+            */
+            <line
+                x1="18%"
+                y1={y(rank.rankValue)}
 
-            x2="30%"
-            y2={labelPos(rankIndex)}
+                x2="30%"
+                y2={labelPos(rankIndex)}
 
-            stroke={getRankingColor(rank)}
-            strokeWidth="1"
-        />
+                stroke={getRankingColor(rank)}
+                strokeWidth="1"
+            />
 
-        <text
-            x="30%"
-            y={labelPos(rankIndex)}
+            <text
+                x="30%"
+                y={labelPos(rankIndex)}
 
-            fill={getRankingColor(rank)}
-        >
-          {rankIndex + 1}
-        </text>
-        <text
-            x="38%"
-            y={labelPos(rankIndex)}
+                fill={getRankingColor(rank)}
+            >
+              {rankIndex + 1}
+            </text>
+            <text
+                x="38%"
+                y={labelPos(rankIndex)}
 
-            fill={getRankingColor(rank)}
-        >
-          {rank.labelText}
-        </text>
-      </g>
-  );
+                fill={getRankingColor(rank)}
+            >
+              {rank.labelText}
+            </text>
+          </g>
+      );
 
-};
+    };
 
 export default LineRankItem;

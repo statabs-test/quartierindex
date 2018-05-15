@@ -177,8 +177,9 @@ const toLineRank = (rank: Rank, state: Rootstate): LineRank => {
     objectId: rank.districtId,
     labelText: getDistrictBy(rank.districtId, state).name,
     rankValue: rank.value,
-    color: color
-  }
+    color: color,
+    highlighted: getDistrictBy(rank.districtId, state).viewOptions.isSelected
+  };
 
   return lineRank;
 };
