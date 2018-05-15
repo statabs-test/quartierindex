@@ -1,8 +1,9 @@
 import { createMuiTheme } from 'material-ui/styles';
-import blue from 'material-ui/colors/blue';
+import teal from 'material-ui/colors/teal';
 
 export const theme = createMuiTheme({
   palette: {
-    primary: blue,
+    primary: teal,
+    secondary: teal
   },
 });
