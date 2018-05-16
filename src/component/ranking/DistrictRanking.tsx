@@ -2,14 +2,12 @@ import * as React from 'react';
 import LineRanking from './LineRanking';
 
 export interface PublicProps {
-  title: string
   className?: string
 }
 
-const DistrictRanking: React.StatelessComponent<PublicProps> = ({ title}) => {
+const DistrictRanking: React.StatelessComponent<PublicProps> = ({}) => {
   return (
       <div className="ranking-container">
-        <div className="title">{title}</div>
         <LineRanking/>
       </div>
   );

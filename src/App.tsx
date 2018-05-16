@@ -11,7 +11,6 @@ class App extends React.Component {
 
     return (
         <div className="App">
-          <h1 className="App-header">Quartier-Index: Wohnviertel und Gemeinden vergleich</h1>
 
           <Route exact path="/" component={IndicatorSelection}/>
           <Route exact path="/ranking" component={IndicatorRating}/>

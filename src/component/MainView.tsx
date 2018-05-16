@@ -14,7 +14,7 @@ const MainView: React.StatelessComponent<Props> = ({}) => {
   return (
       <div className="App">
         <ParallelLinePlot/>
-        <DistrictRanking title={'Rangliste'}/>
+        <DistrictRanking />
       </div>
   );
 };

@@ -17,7 +17,7 @@ export interface Props {
 function ParallelLinePlot({selectedIndicators, toggleVisibility}: Props) {
   return (
       <div className="parallel-line-plot-container">
-        <h1 className="title">Some title</h1>
+        <h1 className="title">Rangliste</h1>
 
         <div>
           <NavButton variant="raised" to={'/'}>Auswahl</NavButton>
