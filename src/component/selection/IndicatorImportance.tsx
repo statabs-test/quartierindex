@@ -28,7 +28,6 @@ export const styles = (theme: Theme) => ({
   title: {
     padding: theme.spacing.unit * 2,
     textAlign: 'center',
-    color: '#1D4E2C',
   } as React.CSSProperties,
   leftIcon: {
     marginRight: theme.spacing.unit,
@@ -67,7 +66,7 @@ const IndicatorImportance: React.SFC<Props & ClassNames> = (props) => {
             <Grid item xs={1}>
               <NavButton variant="raised" to={'/ranking'}>Zurück</NavButton>
             </Grid>
-            <Grid item xs={1}>
+            <Grid item xs={2}>
               <NavButton variant="raised" to={'plot'}>Weiter</NavButton>
             </Grid>
           </Grid>

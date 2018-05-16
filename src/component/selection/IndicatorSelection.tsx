@@ -28,7 +28,6 @@ export const styles = (theme: Theme) => ({
   title: {
     padding: theme.spacing.unit * 2,
     textAlign: 'center',
-    color: '#1d4e2c',
   } as React.CSSProperties,
   nav_button: {
     color: 'white',
@@ -56,8 +55,13 @@ const IndicatorSelection: React.SFC<Props & ClassNames> = (props) => {
               }
             </Grid>
           </div>
+
           <Grid container justify="flex-end">
-            <Grid item xs={1}>
+            <Grid item xs={2}>
+              <NavButton disabled={!valid} variant="raised" to={'/plot'}>Rangliste</NavButton>
+            </Grid>
+
+            <Grid item xs={2}>
               <NavButton disabled={!valid} variant="raised" to={'/ranking'}>Weiter</NavButton>
             </Grid>
           </Grid>
