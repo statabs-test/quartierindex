@@ -3,18 +3,18 @@ import * as _ from 'lodash';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
 import { Rootstate } from '../../state/index';
-import { getGroupedIndicators } from '../../state/indicator/selectors';
+import { getGroupedIndicators, getSelectedIndicators } from '../../state/indicator/selectors';
 import { Indicator } from '../../state/indicator/types';
 import { getUtil } from '../../state/util/selectors';
 import { Util } from '../../state/util/types';
 import Grid from 'material-ui/Grid';
 import { Theme, WithStyles, withStyles } from 'material-ui/styles';
-import { Link } from 'react-router-dom';
-import { Button } from 'material-ui';
 import IndicatorSelectionGroup from './IndicatorSelectionGroup';
+import NavButton from '../customElements/NavButton';
 
 export interface Props {
   groupedIndicators: { [key: string]: Indicator[] }
+  valid: boolean
   util: Util
 }
 
@@ -47,7 +47,7 @@ export const styles = (theme: Theme) => ({
 // });
 
 const IndicatorSelection: React.SFC<Props & ClassNames> = (props) => {
-  const {classes, groupedIndicators, util} = props;
+  const {classes, groupedIndicators, util, valid} = props;
   return (
       <div className="floating-container">
         <Grid item xs={12}>
@@ -66,9 +66,7 @@ const IndicatorSelection: React.SFC<Props & ClassNames> = (props) => {
           </div>
           <Grid container justify="flex-end">
             <Grid item xs={1}>
-              <Link to={'/ranking'}>
-                <Button variant="raised" className={classes.title} >Weiter</Button>
-              </Link>
+              <NavButton disabled={!valid} variant="raised" to={'/ranking'}>Weiter</NavButton>
             </Grid>
           </Grid>
 
@@ -79,6 +77,7 @@ const IndicatorSelection: React.SFC<Props & ClassNames> = (props) => {
 
 const mapStateToProps = (state: Rootstate) => ({
   groupedIndicators: getGroupedIndicators(state),
+  valid: getSelectedIndicators(state).length > 0,
   util: getUtil(state)
 });
 
