@@ -9,14 +9,14 @@ const _ = require('lodash');
  Convert CSV to JS-Object
  ###############################
  */
-const data = fs.readFileSync(path.join(__dirname, '../data/spiderranks_2017.csv'), { encoding : 'utf8'});
+const data = fs.readFileSync(path.join(__dirname, '../data/spiderranks_2018.csv'), { encoding : 'utf8'});
 
 const options = {
   delimiter : ',', // optional
 
   // Rename column header, original was
-  // Publikationsjahr,Indikator_Nr,jahr_num,jahr_char,Wert,Indikator_Name,Wohnviertel_id,Wohnviertel,Rang,Subjekt
-  headers: 'publication,indicatorId,year,yearChar,value,indicatorName,districtId,district,ranking,subject',
+  // Publikationsjahr,Indikator_Nr,jahr_num,jahr_char,Wert,Indikator_Name,Indicator_Label,Wohnviertel_id,Wohnviertel,Rang,Subjekt
+  headers: 'publication,indicatorId,year,yearChar,value,indicatorName,indicatorLabel,districtId,district,ranking,subject',
 };
 
 const dataObject = csvjson.toObject(data, options);
@@ -31,7 +31,7 @@ const indicatorData = _.uniqBy(
   _.map(dataWithoutHeader, (data) => {
     return {
         id: data.indicatorId,
-        name: data.indicatorName,
+        name: data.indicatorLabel,
         subject: data.subject,
         publication: data.publication,
         year: data.year,
