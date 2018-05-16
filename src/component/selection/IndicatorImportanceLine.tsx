@@ -11,6 +11,7 @@ import green from 'material-ui/colors/green';
 import Radio from 'material-ui/Radio';
 import { setWeight } from '../../state/indicator/actions';
 import { labels } from '../../helpers';
+import FormLabel from 'material-ui/Form/FormLabel';
 
 export interface Props {
   indicator: Indicator
@@ -54,14 +55,18 @@ const IndicatorImportanceLine: React.SFC<Props & ClassNames> = (props) => {
       {
         [WeightNumber.ONE, WeightNumber.TWO, WeightNumber.THREE, WeightNumber.FOUR].map((weight, idx) => (
           <Grid item xs={3}>
+
             <Radio
+              id={indicator.id + weight.toString()}
               checked={indicator.weight === weight}
               onChange={(value) => setIndicatorWeight(indicator.id, weight)}
               value={weight.toString()}
               name={weight.toString()}
               classes={{ root: classes.root }}
             />
+            <FormLabel htmlFor={indicator.id + weight.toString()} >
               {labels[idx]}
+            </FormLabel>
           </Grid>
       ))
       }  
