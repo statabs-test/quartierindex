@@ -20,9 +20,9 @@ function ParallelLinePlot({selectedIndicators, toggleVisibility}: Props) {
         <h1 className="title">Some title</h1>
 
         <div>
-          <NavButton variant="raised" to={'/'}>Schritt 1</NavButton>
-          <NavButton variant="raised" to={'ranking'}>Schritt 2</NavButton>
-          <NavButton variant="raised" to={'/importance'}>Schritt 3</NavButton>
+          <NavButton variant="raised" to={'/'}>Auswahl</NavButton>
+          <NavButton variant="raised" to={'ranking'}>Bewertung</NavButton>
+          <NavButton variant="raised" to={'/importance'}>Gewichtung</NavButton>
         </div>
 {/*        <Button
             className="add-indicator"
