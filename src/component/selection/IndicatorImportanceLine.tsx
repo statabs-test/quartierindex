@@ -41,7 +41,7 @@ export const styles = (theme: Theme) => ({
   } as React.CSSProperties,
 });
 
-const IndicatorRatingLine: React.SFC<Props & ClassNames> = (props) => {
+const IndicatorImportanceLine: React.SFC<Props & ClassNames> = (props) => {
   const {classes, indicator, setIndicatorWeight} = props;
 
   return (
@@ -82,4 +82,4 @@ const mapDispatchToProps = ({
 export default compose(
   withStyles(styles),
   connect(mapStateToProps, mapDispatchToProps))
-  (IndicatorRatingLine);
+  (IndicatorImportanceLine);
