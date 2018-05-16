@@ -1,379 +1,379 @@
-Publikationsjahr;Indikator_Nr;jahr_num;jahr_char;Wert;Indikator_Name;Indikator_Label;Wohnviertel_id;Wohnviertel;Rang
-2018;1;2017;2017;0.0166023166;Sozialhilfeanteil;Anteil Sozialhilfeempfänger;1;Altstadt Grossbasel;2
-2018;1;2017;2017;0.0362911266;Sozialhilfeanteil;Anteil Sozialhilfeempfänger;2;Vorstädte;6
-2018;1;2017;2017;0.0369102683;Sozialhilfeanteil;Anteil Sozialhilfeempfänger;3;Am Ring;7
-2018;1;2017;2017;0.0592991914;Sozialhilfeanteil;Anteil Sozialhilfeempfänger;4;Breite;12
-2018;1;2017;2017;0.039971321;Sozialhilfeanteil;Anteil Sozialhilfeempfänger;5;St. Alban;9
-2018;1;2017;2017;0.0714703225;Sozialhilfeanteil;Anteil Sozialhilfeempfänger;6;Gundeldingen;13
-2018;1;2017;2017;0.0179556517;Sozialhilfeanteil;Anteil Sozialhilfeempfänger;7;Bruderholz;3
-2018;1;2017;2017;0.0246931835;Sozialhilfeanteil;Anteil Sozialhilfeempfänger;8;Bachletten;4
-2018;1;2017;2017;0.046390258;Sozialhilfeanteil;Anteil Sozialhilfeempfänger;9;Gotthelf;10
-2018;1;2017;2017;0.0970977506;Sozialhilfeanteil;Anteil Sozialhilfeempfänger;10;Iselin;17
-2018;1;2017;2017;0.0888650964;Sozialhilfeanteil;Anteil Sozialhilfeempfänger;11;St. Johann;16
-2018;1;2017;2017;0.0799512987;Sozialhilfeanteil;Anteil Sozialhilfeempfänger;12;Altstadt Kleinbasel;14
-2018;1;2017;2017;0.0844760039;Sozialhilfeanteil;Anteil Sozialhilfeempfänger;13;Clara;15
-2018;1;2017;2017;0.0359855335;Sozialhilfeanteil;Anteil Sozialhilfeempfänger;14;Wettstein;5
-2018;1;2017;2017;0.048733362;Sozialhilfeanteil;Anteil Sozialhilfeempfänger;15;Hirzbrunnen;11
-2018;1;2017;2017;0.1117673785;Sozialhilfeanteil;Anteil Sozialhilfeempfänger;16;Rosental;18
-2018;1;2017;2017;0.1171948838;Sozialhilfeanteil;Anteil Sozialhilfeempfänger;17;Matthäus;19
-2018;1;2017;2017;0.1394900069;Sozialhilfeanteil;Anteil Sozialhilfeempfänger;18;Klybeck;21
-2018;1;2017;2017;0.1332630098;Sozialhilfeanteil;Anteil Sozialhilfeempfänger;19;Kleinhüningen;20
-2018;1;2017;2017;0.0369328834;Sozialhilfeanteil;Anteil Sozialhilfeempfänger;20;Riehen;8
-2018;1;2017;2017;0.0159529807;Sozialhilfeanteil;Anteil Sozialhilfeempfänger;30;Bettingen;1
-2018;2;2017;2017;0.2841698842;Auslaenderanteil;Anteil Ausländer;1;Altstadt Grossbasel;7
-2018;2;2017;2017;0.3840478564;Auslaenderanteil;Anteil Ausländer;2;Vorstädte;14
-2018;2;2017;2017;0.3619796485;Auslaenderanteil;Anteil Ausländer;3;Am Ring;11
-2018;2;2017;2017;0.3286163522;Auslaenderanteil;Anteil Ausländer;4;Breite;9
-2018;2;2017;2017;0.3310629145;Auslaenderanteil;Anteil Ausländer;5;St. Alban;10
-2018;2;2017;2017;0.3930070673;Auslaenderanteil;Anteil Ausländer;6;Gundeldingen;15
-2018;2;2017;2017;0.2398053002;Auslaenderanteil;Anteil Ausländer;7;Bruderholz;2
-2018;2;2017;2017;0.2142540293;Auslaenderanteil;Anteil Ausländer;8;Bachletten;1
-2018;2;2017;2017;0.2752971876;Auslaenderanteil;Anteil Ausländer;9;Gotthelf;6
-2018;2;2017;2017;0.3791322927;Auslaenderanteil;Anteil Ausländer;10;Iselin;13
-2018;2;2017;2017;0.4300856531;Auslaenderanteil;Anteil Ausländer;11;St. Johann;16
-2018;2;2017;2017;0.3717532468;Auslaenderanteil;Anteil Ausländer;12;Altstadt Kleinbasel;12
-2018;2;2017;2017;0.4674338883;Auslaenderanteil;Anteil Ausländer;13;Clara;17
-2018;2;2017;2017;0.3113924051;Auslaenderanteil;Anteil Ausländer;14;Wettstein;8
-2018;2;2017;2017;0.249463289;Auslaenderanteil;Anteil Ausländer;15;Hirzbrunnen;4
-2018;2;2017;2017;0.5577767681;Auslaenderanteil;Anteil Ausländer;16;Rosental;21
-2018;2;2017;2017;0.5057022242;Auslaenderanteil;Anteil Ausländer;17;Matthäus;19
-2018;2;2017;2017;0.5235010338;Auslaenderanteil;Anteil Ausländer;18;Klybeck;20
-2018;2;2017;2017;0.4743319269;Auslaenderanteil;Anteil Ausländer;19;Kleinhüningen;18
-2018;2;2017;2017;0.2609673791;Auslaenderanteil;Anteil Ausländer;20;Riehen;5
-2018;2;2017;2017;0.241813602;Auslaenderanteil;Anteil Ausländer;30;Bettingen;3
-2018;3;2017;2017;0.5196911197;Anteilkonfessionslose;Anteil Personen ohne Religionszugehörigkeit;1;Altstadt Grossbasel;18
-2018;3;2017;2017;0.5509471585;Anteilkonfessionslose;Anteil Personen ohne Religionszugehörigkeit;2;Vorstädte;20
-2018;3;2017;2017;0.5094357077;Anteilkonfessionslose;Anteil Personen ohne Religionszugehörigkeit;3;Am Ring;17
-2018;3;2017;2017;0.4916891285;Anteilkonfessionslose;Anteil Personen ohne Religionszugehörigkeit;4;Breite;13
-2018;3;2017;2017;0.4933679871;Anteilkonfessionslose;Anteil Personen ohne Religionszugehörigkeit;5;St. Alban;14
-2018;3;2017;2017;0.4567724109;Anteilkonfessionslose;Anteil Personen ohne Religionszugehörigkeit;6;Gundeldingen;6
-2018;3;2017;2017;0.485559762;Anteilkonfessionslose;Anteil Personen ohne Religionszugehörigkeit;7;Bruderholz;12
-2018;3;2017;2017;0.4814431465;Anteilkonfessionslose;Anteil Personen ohne Religionszugehörigkeit;8;Bachletten;11
-2018;3;2017;2017;0.5010147869;Anteilkonfessionslose;Anteil Personen ohne Religionszugehörigkeit;9;Gotthelf;16
-2018;3;2017;2017;0.4521930085;Anteilkonfessionslose;Anteil Personen ohne Religionszugehörigkeit;10;Iselin;5
-2018;3;2017;2017;0.4697537473;Anteilkonfessionslose;Anteil Personen ohne Religionszugehörigkeit;11;St. Johann;8
-2018;3;2017;2017;0.5706168831;Anteilkonfessionslose;Anteil Personen ohne Religionszugehörigkeit;12;Altstadt Kleinbasel;21
-2018;3;2017;2017;0.4708619001;Anteilkonfessionslose;Anteil Personen ohne Religionszugehörigkeit;13;Clara;9
-2018;3;2017;2017;0.5497287523;Anteilkonfessionslose;Anteil Personen ohne Religionszugehörigkeit;14;Wettstein;19
-2018;3;2017;2017;0.4971017604;Anteilkonfessionslose;Anteil Personen ohne Religionszugehörigkeit;15;Hirzbrunnen;15
-2018;3;2017;2017;0.4160230198;Anteilkonfessionslose;Anteil Personen ohne Religionszugehörigkeit;16;Rosental;3
-2018;3;2017;2017;0.4649990549;Anteilkonfessionslose;Anteil Personen ohne Religionszugehörigkeit;17;Matthäus;7
-2018;3;2017;2017;0.4121295658;Anteilkonfessionslose;Anteil Personen ohne Religionszugehörigkeit;18;Klybeck;2
-2018;3;2017;2017;0.3948663854;Anteilkonfessionslose;Anteil Personen ohne Religionszugehörigkeit;19;Kleinhüningen;1
-2018;3;2017;2017;0.4805961755;Anteilkonfessionslose;Anteil Personen ohne Religionszugehörigkeit;20;Riehen;10
-2018;3;2017;2017;0.4391267842;Anteilkonfessionslose;Anteil Personen ohne Religionszugehörigkeit;30;Bettingen;4
-2018;4;2017;2017;0.2922636103;Anteileinpersonenhaushalte;Anteil Personen in Einpersonenhaushalten;1;Altstadt Grossbasel;19
-2018;4;2017;2017;0.3167572085;Anteileinpersonenhaushalte;Anteil Personen in Einpersonenhaushalten;2;Vorstädte;20
-2018;4;2017;2017;0.2780228594;Anteileinpersonenhaushalte;Anteil Personen in Einpersonenhaushalten;3;Am Ring;16
-2018;4;2017;2017;0.2849794239;Anteileinpersonenhaushalte;Anteil Personen in Einpersonenhaushalten;4;Breite;17
-2018;4;2017;2017;0.2392694911;Anteileinpersonenhaushalte;Anteil Personen in Einpersonenhaushalten;5;St. Alban;10
-2018;4;2017;2017;0.273321097;Anteileinpersonenhaushalte;Anteil Personen in Einpersonenhaushalten;6;Gundeldingen;15
-2018;4;2017;2017;0.1545054945;Anteileinpersonenhaushalte;Anteil Personen in Einpersonenhaushalten;7;Bruderholz;2
-2018;4;2017;2017;0.2107660146;Anteileinpersonenhaushalte;Anteil Personen in Einpersonenhaushalten;8;Bachletten;6
-2018;4;2017;2017;0.2869757174;Anteileinpersonenhaushalte;Anteil Personen in Einpersonenhaushalten;9;Gotthelf;18
-2018;4;2017;2017;0.2655998089;Anteileinpersonenhaushalte;Anteil Personen in Einpersonenhaushalten;10;Iselin;13
-2018;4;2017;2017;0.2289479562;Anteileinpersonenhaushalte;Anteil Personen in Einpersonenhaushalten;11;St. Johann;9
-2018;4;2017;2017;0.3210091344;Anteileinpersonenhaushalte;Anteil Personen in Einpersonenhaushalten;12;Altstadt Kleinbasel;21
-2018;4;2017;2017;0.2677286742;Anteileinpersonenhaushalte;Anteil Personen in Einpersonenhaushalten;13;Clara;14
-2018;4;2017;2017;0.2642381657;Anteileinpersonenhaushalte;Anteil Personen in Einpersonenhaushalten;14;Wettstein;12
-2018;4;2017;2017;0.1886155855;Anteileinpersonenhaushalte;Anteil Personen in Einpersonenhaushalten;15;Hirzbrunnen;4
-2018;4;2017;2017;0.2144399877;Anteileinpersonenhaushalte;Anteil Personen in Einpersonenhaushalten;16;Rosental;7
-2018;4;2017;2017;0.2433320448;Anteileinpersonenhaushalte;Anteil Personen in Einpersonenhaushalten;17;Matthäus;11
-2018;4;2017;2017;0.2177126918;Anteileinpersonenhaushalte;Anteil Personen in Einpersonenhaushalten;18;Klybeck;8
-2018;4;2017;2017;0.1952813067;Anteileinpersonenhaushalte;Anteil Personen in Einpersonenhaushalten;19;Kleinhüningen;5
-2018;4;2017;2017;0.1628540045;Anteileinpersonenhaushalte;Anteil Personen in Einpersonenhaushalten;20;Riehen;3
-2018;4;2017;2017;0.1311627907;Anteileinpersonenhaushalte;Anteil Personen in Einpersonenhaushalten;30;Bettingen;1
-2018;5;2017;2017;0.6666666667;Gymnasialquote;Gymnasialquote;1;Altstadt Grossbasel;19
-2018;5;2017;2017;0.44;Gymnasialquote;Gymnasialquote;2;Vorstädte;11
-2018;5;2017;2017;0.5888888889;Gymnasialquote;Gymnasialquote;3;Am Ring;17
-2018;5;2017;2017;0.329787234;Gymnasialquote;Gymnasialquote;4;Breite;6
-2018;5;2017;2017;0.5507246377;Gymnasialquote;Gymnasialquote;5;St. Alban;13
-2018;5;2017;2017;0.2606635071;Gymnasialquote;Gymnasialquote;6;Gundeldingen;2
-2018;5;2017;2017;0.6835443038;Gymnasialquote;Gymnasialquote;7;Bruderholz;20
-2018;5;2017;2017;0.693877551;Gymnasialquote;Gymnasialquote;8;Bachletten;21
-2018;5;2017;2017;0.578313253;Gymnasialquote;Gymnasialquote;9;Gotthelf;16
-2018;5;2017;2017;0.3436293436;Gymnasialquote;Gymnasialquote;10;Iselin;7
-2018;5;2017;2017;0.3625498008;Gymnasialquote;Gymnasialquote;11;St. Johann;8
-2018;5;2017;2017;0.44;Gymnasialquote;Gymnasialquote;12;Altstadt Kleinbasel;11
-2018;5;2017;2017;0.3191489362;Gymnasialquote;Gymnasialquote;13;Clara;5
-2018;5;2017;2017;0.5555555556;Gymnasialquote;Gymnasialquote;14;Wettstein;15
-2018;5;2017;2017;0.4277108434;Gymnasialquote;Gymnasialquote;15;Hirzbrunnen;10
-2018;5;2017;2017;0.3023255814;Gymnasialquote;Gymnasialquote;16;Rosental;4
-2018;5;2017;2017;0.3;Gymnasialquote;Gymnasialquote;17;Matthäus;3
-2018;5;2017;2017;0.2083333333;Gymnasialquote;Gymnasialquote;18;Klybeck;1
-2018;5;2017;2017;0.3673469388;Gymnasialquote;Gymnasialquote;19;Kleinhüningen;9
-2018;5;2017;2017;0.5512820513;Gymnasialquote;Gymnasialquote;20;Riehen;14
-2018;5;2017;2017;0.652173913;Gymnasialquote;Gymnasialquote;30;Bettingen;18
-2018;6;2017;2017;0.2812328013;Altersquotient;Altersquotient;1;Altstadt Grossbasel;8
-2018;6;2017;2017;0.3685828466;Altersquotient;Altersquotient;2;Vorstädte;15
-2018;6;2017;2017;0.3426260292;Altersquotient;Altersquotient;3;Am Ring;13
-2018;6;2017;2017;0.3408931083;Altersquotient;Altersquotient;4;Breite;12
-2018;6;2017;2017;0.4655742871;Altersquotient;Altersquotient;5;St. Alban;20
-2018;6;2017;2017;0.219809322;Altersquotient;Altersquotient;6;Gundeldingen;4
-2018;6;2017;2017;0.4217833399;Altersquotient;Altersquotient;7;Bruderholz;18
-2018;6;2017;2017;0.3699692308;Altersquotient;Altersquotient;8;Bachletten;16
-2018;6;2017;2017;0.3449315704;Altersquotient;Altersquotient;9;Gotthelf;14
-2018;6;2017;2017;0.2522425547;Altersquotient;Altersquotient;10;Iselin;6
-2018;6;2017;2017;0.2299215096;Altersquotient;Altersquotient;11;St. Johann;5
-2018;6;2017;2017;0.2743055556;Altersquotient;Altersquotient;12;Altstadt Kleinbasel;7
-2018;6;2017;2017;0.3210332103;Altersquotient;Altersquotient;13;Clara;11
-2018;6;2017;2017;0.2948402948;Altersquotient;Altersquotient;14;Wettstein;10
-2018;6;2017;2017;0.422836584;Altersquotient;Altersquotient;15;Hirzbrunnen;19
-2018;6;2017;2017;0.1244444444;Altersquotient;Altersquotient;16;Rosental;1
-2018;6;2017;2017;0.1771840394;Altersquotient;Altersquotient;17;Matthäus;2
-2018;6;2017;2017;0.2034212696;Altersquotient;Altersquotient;18;Klybeck;3
-2018;6;2017;2017;0.285391991;Altersquotient;Altersquotient;19;Kleinhüningen;9
-2018;6;2017;2017;0.4815329799;Altersquotient;Altersquotient;20;Riehen;21
-2018;6;2017;2017;0.4144927536;Altersquotient;Altersquotient;30;Bettingen;17
-2018;7;2017;2017;0.3111969112;Anteilsesshafte;Anteil Sesshafte;1;Altstadt Grossbasel;6
-2018;7;2017;2017;0.2783649053;Anteilsesshafte;Anteil Sesshafte;2;Vorstädte;3
-2018;7;2017;2017;0.3042553191;Anteilsesshafte;Anteil Sesshafte;3;Am Ring;5
-2018;7;2017;2017;0.3470350404;Anteilsesshafte;Anteil Sesshafte;4;Breite;13
-2018;7;2017;2017;0.3366194659;Anteilsesshafte;Anteil Sesshafte;5;St. Alban;11
-2018;7;2017;2017;0.3199426112;Anteilsesshafte;Anteil Sesshafte;6;Gundeldingen;9
-2018;7;2017;2017;0.431151974;Anteilsesshafte;Anteil Sesshafte;7;Bruderholz;21
-2018;7;2017;2017;0.4232589088;Anteilsesshafte;Anteil Sesshafte;8;Bachletten;18
-2018;7;2017;2017;0.3545955349;Anteilsesshafte;Anteil Sesshafte;9;Gotthelf;15
-2018;7;2017;2017;0.3312956259;Anteilsesshafte;Anteil Sesshafte;10;Iselin;10
-2018;7;2017;2017;0.3171841542;Anteilsesshafte;Anteil Sesshafte;11;St. Johann;8
-2018;7;2017;2017;0.2727272727;Anteilsesshafte;Anteil Sesshafte;12;Altstadt Kleinbasel;2
-2018;7;2017;2017;0.3148873653;Anteilsesshafte;Anteil Sesshafte;13;Clara;7
-2018;7;2017;2017;0.3638336347;Anteilsesshafte;Anteil Sesshafte;14;Wettstein;16
-2018;7;2017;2017;0.3984542722;Anteilsesshafte;Anteil Sesshafte;15;Hirzbrunnen;17
-2018;7;2017;2017;0.2088444646;Anteilsesshafte;Anteil Sesshafte;16;Rosental;1
-2018;7;2017;2017;0.2982168735;Anteilsesshafte;Anteil Sesshafte;17;Matthäus;4
-2018;7;2017;2017;0.3419710544;Anteilsesshafte;Anteil Sesshafte;18;Klybeck;12
-2018;7;2017;2017;0.3516174402;Anteilsesshafte;Anteil Sesshafte;19;Kleinhüningen;14
-2018;7;2017;2017;0.4280089989;Anteilsesshafte;Anteil Sesshafte;20;Riehen;20
-2018;7;2017;2017;0.4265323258;Anteilsesshafte;Anteil Sesshafte;30;Bettingen;19
-2018;8;2017;2017;0.1441937259;Jugendquotient;Jugendquotient;1;Altstadt Grossbasel;1
-2018;8;2017;2017;0.1730710114;Jugendquotient;Jugendquotient;2;Vorstädte;3
-2018;8;2017;2017;0.2188357648;Jugendquotient;Jugendquotient;3;Am Ring;8
-2018;8;2017;2017;0.2245077356;Jugendquotient;Jugendquotient;4;Breite;9
-2018;8;2017;2017;0.2924216165;Jugendquotient;Jugendquotient;5;St. Alban;15
-2018;8;2017;2017;0.2041464891;Jugendquotient;Jugendquotient;6;Gundeldingen;5
-2018;8;2017;2017;0.3859992178;Jugendquotient;Jugendquotient;7;Bruderholz;21
-2018;8;2017;2017;0.2947692308;Jugendquotient;Jugendquotient;8;Bachletten;16
-2018;8;2017;2017;0.2551612155;Jugendquotient;Jugendquotient;9;Gotthelf;11
-2018;8;2017;2017;0.2591496233;Jugendquotient;Jugendquotient;10;Iselin;12
-2018;8;2017;2017;0.2510901451;Jugendquotient;Jugendquotient;11;St. Johann;10
-2018;8;2017;2017;0.1516203704;Jugendquotient;Jugendquotient;12;Altstadt Kleinbasel;2
-2018;8;2017;2017;0.1859778598;Jugendquotient;Jugendquotient;13;Clara;4
-2018;8;2017;2017;0.2148512149;Jugendquotient;Jugendquotient;14;Wettstein;6
-2018;8;2017;2017;0.3412232532;Jugendquotient;Jugendquotient;15;Hirzbrunnen;19
-2018;8;2017;2017;0.273015873;Jugendquotient;Jugendquotient;16;Rosental;13
-2018;8;2017;2017;0.2177008262;Jugendquotient;Jugendquotient;17;Matthäus;7
-2018;8;2017;2017;0.2918384171;Jugendquotient;Jugendquotient;18;Klybeck;14
-2018;8;2017;2017;0.3186689227;Jugendquotient;Jugendquotient;19;Kleinhüningen;18
-2018;8;2017;2017;0.3726427392;Jugendquotient;Jugendquotient;20;Riehen;20
-2018;8;2017;2017;0.3115942029;Jugendquotient;Jugendquotient;30;Bettingen;17
-2018;9;2017;2017;1822.9739479;Baujahrwohngebaeude;Baujahr Wohngebäude;1;Altstadt Grossbasel;1
-2018;9;2017;2017;1898.8798521;Baujahrwohngebaeude;Baujahr Wohngebäude;2;Vorstädte;3
-2018;9;2017;2017;1918.832483;Baujahrwohngebaeude;Baujahr Wohngebäude;3;Am Ring;4
-2018;9;2017;2017;1940.8815592;Baujahrwohngebaeude;Baujahr Wohngebäude;4;Breite;15
-2018;9;2017;2017;1938.8973928;Baujahrwohngebaeude;Baujahr Wohngebäude;5;St. Alban;14
-2018;9;2017;2017;1932.2727273;Baujahrwohngebaeude;Baujahr Wohngebäude;6;Gundeldingen;8
-2018;9;2017;2017;1948.622051;Baujahrwohngebaeude;Baujahr Wohngebäude;7;Bruderholz;18
-2018;9;2017;2017;1934.1737915;Baujahrwohngebaeude;Baujahr Wohngebäude;8;Bachletten;11
-2018;9;2017;2017;1924.7530612;Baujahrwohngebaeude;Baujahr Wohngebäude;9;Gotthelf;5
-2018;9;2017;2017;1937.1588721;Baujahrwohngebaeude;Baujahr Wohngebäude;10;Iselin;13
-2018;9;2017;2017;1932.9564931;Baujahrwohngebaeude;Baujahr Wohngebäude;11;St. Johann;9
-2018;9;2017;2017;1880.2206406;Baujahrwohngebaeude;Baujahr Wohngebäude;12;Altstadt Kleinbasel;2
-2018;9;2017;2017;1928.2022901;Baujahrwohngebaeude;Baujahr Wohngebäude;13;Clara;7
-2018;9;2017;2017;1933.15625;Baujahrwohngebaeude;Baujahr Wohngebäude;14;Wettstein;10
-2018;9;2017;2017;1941.7718078;Baujahrwohngebaeude;Baujahr Wohngebäude;15;Hirzbrunnen;16
-2018;9;2017;2017;1949.2990033;Baujahrwohngebaeude;Baujahr Wohngebäude;16;Rosental;19
-2018;9;2017;2017;1925.1191937;Baujahrwohngebaeude;Baujahr Wohngebäude;17;Matthäus;6
-2018;9;2017;2017;1936.9816092;Baujahrwohngebaeude;Baujahr Wohngebäude;18;Klybeck;12
-2018;9;2017;2017;1946.4011976;Baujahrwohngebaeude;Baujahr Wohngebäude;19;Kleinhüningen;17
-2018;9;2017;2017;1957.6253324;Baujahrwohngebaeude;Baujahr Wohngebäude;20;Riehen;20
-2018;9;2017;2017;1961.9485531;Baujahrwohngebaeude;Baujahr Wohngebäude;30;Bettingen;21
-2018;10;2017;2017;0.1022044088;Anteileinfamilienhaeuser;Anteil Einfamilienhäuser;1;Altstadt Grossbasel;8
-2018;10;2017;2017;0.0776340111;Anteileinfamilienhaeuser;Anteil Einfamilienhäuser;2;Vorstädte;6
-2018;10;2017;2017;0.1972789116;Anteileinfamilienhaeuser;Anteil Einfamilienhäuser;3;Am Ring;12
-2018;10;2017;2017;0.1349325337;Anteileinfamilienhaeuser;Anteil Einfamilienhäuser;4;Breite;9
-2018;10;2017;2017;0.3372582002;Anteileinfamilienhaeuser;Anteil Einfamilienhäuser;5;St. Alban;15
-2018;10;2017;2017;0.0293706294;Anteileinfamilienhaeuser;Anteil Einfamilienhäuser;6;Gundeldingen;2
-2018;10;2017;2017;0.7332691382;Anteileinfamilienhaeuser;Anteil Einfamilienhäuser;7;Bruderholz;20
-2018;10;2017;2017;0.5605273672;Anteileinfamilienhaeuser;Anteil Einfamilienhäuser;8;Bachletten;17
-2018;10;2017;2017;0.3693877551;Anteileinfamilienhaeuser;Anteil Einfamilienhäuser;9;Gotthelf;16
-2018;10;2017;2017;0.166437414;Anteileinfamilienhaeuser;Anteil Einfamilienhäuser;10;Iselin;11
-2018;10;2017;2017;0.2478576137;Anteileinfamilienhaeuser;Anteil Einfamilienhäuser;11;St. Johann;13
-2018;10;2017;2017;0.0996441281;Anteileinfamilienhaeuser;Anteil Einfamilienhäuser;12;Altstadt Kleinbasel;7
-2018;10;2017;2017;0.0229007634;Anteileinfamilienhaeuser;Anteil Einfamilienhäuser;13;Clara;1
-2018;10;2017;2017;0.3352272727;Anteileinfamilienhaeuser;Anteil Einfamilienhäuser;14;Wettstein;14
-2018;10;2017;2017;0.6972187105;Anteileinfamilienhaeuser;Anteil Einfamilienhäuser;15;Hirzbrunnen;19
-2018;10;2017;2017;0.0697674419;Anteileinfamilienhaeuser;Anteil Einfamilienhäuser;16;Rosental;3
-2018;10;2017;2017;0.0709903593;Anteileinfamilienhaeuser;Anteil Einfamilienhäuser;17;Matthäus;4
-2018;10;2017;2017;0.0712643678;Anteileinfamilienhaeuser;Anteil Einfamilienhäuser;18;Klybeck;5
-2018;10;2017;2017;0.1556886228;Anteileinfamilienhaeuser;Anteil Einfamilienhäuser;19;Kleinhüningen;10
-2018;10;2017;2017;0.6565143824;Anteileinfamilienhaeuser;Anteil Einfamilienhäuser;20;Riehen;18
-2018;10;2017;2017;0.7909967846;Anteileinfamilienhaeuser;Anteil Einfamilienhäuser;30;Bettingen;21
-2018;11;2017;2017;0.0672594599;Gruenflaechenanteil;Anteil Grünfläche;1;Altstadt Grossbasel;1
-2018;11;2017;2017;0.1947350181;Gruenflaechenanteil;Anteil Grünfläche;2;Vorstädte;8
-2018;11;2017;2017;0.2376157997;Gruenflaechenanteil;Anteil Grünfläche;3;Am Ring;10
-2018;11;2017;2017;0.3595967668;Gruenflaechenanteil;Anteil Grünfläche;4;Breite;15
-2018;11;2017;2017;0.3221370715;Gruenflaechenanteil;Anteil Grünfläche;5;St. Alban;13
-2018;11;2017;2017;0.1760147512;Gruenflaechenanteil;Anteil Grünfläche;6;Gundeldingen;7
-2018;11;2017;2017;0.7137712478;Gruenflaechenanteil;Anteil Grünfläche;7;Bruderholz;19
-2018;11;2017;2017;0.4131869998;Gruenflaechenanteil;Anteil Grünfläche;8;Bachletten;17
-2018;11;2017;2017;0.3240684495;Gruenflaechenanteil;Anteil Grünfläche;9;Gotthelf;14
-2018;11;2017;2017;0.369216064;Gruenflaechenanteil;Anteil Grünfläche;10;Iselin;16
-2018;11;2017;2017;0.2839416111;Gruenflaechenanteil;Anteil Grünfläche;11;St. Johann;12
-2018;11;2017;2017;0.0809475704;Gruenflaechenanteil;Anteil Grünfläche;12;Altstadt Kleinbasel;2
-2018;11;2017;2017;0.1596210148;Gruenflaechenanteil;Anteil Grünfläche;13;Clara;5
-2018;11;2017;2017;0.2785714268;Gruenflaechenanteil;Anteil Grünfläche;14;Wettstein;11
-2018;11;2017;2017;0.5903189074;Gruenflaechenanteil;Anteil Grünfläche;15;Hirzbrunnen;18
-2018;11;2017;2017;0.1357870952;Gruenflaechenanteil;Anteil Grünfläche;16;Rosental;4
-2018;11;2017;2017;0.1657239983;Gruenflaechenanteil;Anteil Grünfläche;17;Matthäus;6
-2018;11;2017;2017;0.1193188639;Gruenflaechenanteil;Anteil Grünfläche;18;Klybeck;3
-2018;11;2017;2017;0.2267642282;Gruenflaechenanteil;Anteil Grünfläche;19;Kleinhüningen;9
-2018;11;2017;2017;0.7956226483;Gruenflaechenanteil;Anteil Grünfläche;20;Riehen;20
-2018;11;2017;2017;0.9020116677;Gruenflaechenanteil;Anteil Grünfläche;30;Bettingen;21
-2018;12;2017;2017;89.982578397;Flaecheprowohnung;Fläche pro Wohnung;1;Altstadt Grossbasel;16
-2018;12;2017;2017;81.703573521;Flaecheprowohnung;Fläche pro Wohnung;2;Vorstädte;13
-2018;12;2017;2017;81.96043395;Flaecheprowohnung;Fläche pro Wohnung;3;Am Ring;14
-2018;12;2017;2017;70.004521477;Flaecheprowohnung;Fläche pro Wohnung;4;Breite;6
-2018;12;2017;2017;93.466570467;Flaecheprowohnung;Fläche pro Wohnung;5;St. Alban;18
-2018;12;2017;2017;70.427866942;Flaecheprowohnung;Fläche pro Wohnung;6;Gundeldingen;8
-2018;12;2017;2017;109.24315693;Flaecheprowohnung;Fläche pro Wohnung;7;Bruderholz;20
-2018;12;2017;2017;92.894002211;Flaecheprowohnung;Fläche pro Wohnung;8;Bachletten;17
-2018;12;2017;2017;74.544131911;Flaecheprowohnung;Fläche pro Wohnung;9;Gotthelf;11
-2018;12;2017;2017;68.511779293;Flaecheprowohnung;Fläche pro Wohnung;10;Iselin;4
-2018;12;2017;2017;71.680063511;Flaecheprowohnung;Fläche pro Wohnung;11;St. Johann;9
-2018;12;2017;2017;72.17236927;Flaecheprowohnung;Fläche pro Wohnung;12;Altstadt Kleinbasel;10
-2018;12;2017;2017;66.391708968;Flaecheprowohnung;Fläche pro Wohnung;13;Clara;2
-2018;12;2017;2017;83.225836146;Flaecheprowohnung;Fläche pro Wohnung;14;Wettstein;15
-2018;12;2017;2017;80.960734102;Flaecheprowohnung;Fläche pro Wohnung;15;Hirzbrunnen;12
-2018;12;2017;2017;69.447001989;Flaecheprowohnung;Fläche pro Wohnung;16;Rosental;5
-2018;12;2017;2017;67.244349005;Flaecheprowohnung;Fläche pro Wohnung;17;Matthäus;3
-2018;12;2017;2017;65.419001868;Flaecheprowohnung;Fläche pro Wohnung;18;Klybeck;1
-2018;12;2017;2017;70.42468773;Flaecheprowohnung;Fläche pro Wohnung;19;Kleinhüningen;7
-2018;12;2017;2017;102.73655706;Flaecheprowohnung;Fläche pro Wohnung;20;Riehen;19
-2018;12;2017;2017;120.82306163;Flaecheprowohnung;Fläche pro Wohnung;30;Bettingen;21
-2018;13;2017;2017;52.670028818;Wohnflaecheprokopf;Wohnfäche pro Kopf;1;Altstadt Grossbasel;20
-2018;13;2017;2017;49.710686542;Wohnflaecheprokopf;Wohnfäche pro Kopf;2;Vorstädte;19
-2018;13;2017;2017;45.562575574;Wohnflaecheprokopf;Wohnfäche pro Kopf;3;Am Ring;13
-2018;13;2017;2017;38.929061785;Wohnflaecheprokopf;Wohnfäche pro Kopf;4;Breite;9
-2018;13;2017;2017;48.696245096;Wohnflaecheprokopf;Wohnfäche pro Kopf;5;St. Alban;18
-2018;13;2017;2017;38.358770363;Wohnflaecheprokopf;Wohnfäche pro Kopf;6;Gundeldingen;8
-2018;13;2017;2017;48.67246313;Wohnflaecheprokopf;Wohnfäche pro Kopf;7;Bruderholz;17
-2018;13;2017;2017;46.408682635;Wohnflaecheprokopf;Wohnfäche pro Kopf;8;Bachletten;15
-2018;13;2017;2017;41.130126881;Wohnflaecheprokopf;Wohnfäche pro Kopf;9;Gotthelf;11
-2018;13;2017;2017;36.325632892;Wohnflaecheprokopf;Wohnfäche pro Kopf;10;Iselin;6
-2018;13;2017;2017;36.186283285;Wohnflaecheprokopf;Wohnfäche pro Kopf;11;St. Johann;5
-2018;13;2017;2017;42.151075977;Wohnflaecheprokopf;Wohnfäche pro Kopf;12;Altstadt Kleinbasel;12
-2018;13;2017;2017;36.433815926;Wohnflaecheprokopf;Wohnfäche pro Kopf;13;Clara;7
-2018;13;2017;2017;45.690524754;Wohnflaecheprokopf;Wohnfäche pro Kopf;14;Wettstein;14
-2018;13;2017;2017;38.967116725;Wohnflaecheprokopf;Wohnfäche pro Kopf;15;Hirzbrunnen;10
-2018;13;2017;2017;33.579200248;Wohnflaecheprokopf;Wohnfäche pro Kopf;16;Rosental;3
-2018;13;2017;2017;34.833732445;Wohnflaecheprokopf;Wohnfäche pro Kopf;17;Matthäus;4
-2018;13;2017;2017;31.680970411;Wohnflaecheprokopf;Wohnfäche pro Kopf;18;Klybeck;1
-2018;13;2017;2017;32.477628228;Wohnflaecheprokopf;Wohnfäche pro Kopf;19;Kleinhüningen;2
-2018;13;2017;2017;47.494001816;Wohnflaecheprokopf;Wohnfäche pro Kopf;20;Riehen;16
-2018;13;2017;2017;52.716153128;Wohnflaecheprokopf;Wohnfäche pro Kopf;30;Bettingen;21
-2018;14;2015;Steuerjahr 2015;5514.6161194;Vermoegenssteuer;Vermögenssteuer;1;Altstadt Grossbasel;17
-2018;14;2015;Steuerjahr 2015;6165.9059687;Vermoegenssteuer;Vermögenssteuer;2;Vorstädte;19
-2018;14;2015;Steuerjahr 2015;2060.938612;Vermoegenssteuer;Vermögenssteuer;3;Am Ring;15
-2018;14;2015;Steuerjahr 2015;512.9425141;Vermoegenssteuer;Vermögenssteuer;4;Breite;8
-2018;14;2015;Steuerjahr 2015;5783.6317751;Vermoegenssteuer;Vermögenssteuer;5;St. Alban;18
-2018;14;2015;Steuerjahr 2015;552.75010831;Vermoegenssteuer;Vermögenssteuer;6;Gundeldingen;9
-2018;14;2015;Steuerjahr 2015;18071.401123;Vermoegenssteuer;Vermögenssteuer;7;Bruderholz;21
-2018;14;2015;Steuerjahr 2015;1877.6147682;Vermoegenssteuer;Vermögenssteuer;8;Bachletten;14
-2018;14;2015;Steuerjahr 2015;962.38892866;Vermoegenssteuer;Vermögenssteuer;9;Gotthelf;11
-2018;14;2015;Steuerjahr 2015;448.2365746;Vermoegenssteuer;Vermögenssteuer;10;Iselin;4
-2018;14;2015;Steuerjahr 2015;509.91830365;Vermoegenssteuer;Vermögenssteuer;11;St. Johann;7
-2018;14;2015;Steuerjahr 2015;1123.5396725;Vermoegenssteuer;Vermögenssteuer;12;Altstadt Kleinbasel;12
-2018;14;2015;Steuerjahr 2015;508.20508614;Vermoegenssteuer;Vermögenssteuer;13;Clara;6
-2018;14;2015;Steuerjahr 2015;1328.9580318;Vermoegenssteuer;Vermögenssteuer;14;Wettstein;13
-2018;14;2015;Steuerjahr 2015;735.59236151;Vermoegenssteuer;Vermögenssteuer;15;Hirzbrunnen;10
-2018;14;2015;Steuerjahr 2015;254.13869538;Vermoegenssteuer;Vermögenssteuer;16;Rosental;3
-2018;14;2015;Steuerjahr 2015;491.56606275;Vermoegenssteuer;Vermögenssteuer;17;Matthäus;5
-2018;14;2015;Steuerjahr 2015;185.90031762;Vermoegenssteuer;Vermögenssteuer;18;Klybeck;1
-2018;14;2015;Steuerjahr 2015;206.8607831;Vermoegenssteuer;Vermögenssteuer;19;Kleinhüningen;2
-2018;14;2015;Steuerjahr 2015;3075.9103589;Vermoegenssteuer;Vermögenssteuer;20;Riehen;16
-2018;14;2015;Steuerjahr 2015;15530.157643;Vermoegenssteuer;Vermögenssteuer;30;Bettingen;20
-2018;15;2015;Steuerjahr 2015;16657.376716;Einkommenssteuer;Einkommenssteuer;1;Altstadt Grossbasel;19
-2018;15;2015;Steuerjahr 2015;16404.67856;Einkommenssteuer;Einkommenssteuer;2;Vorstädte;18
-2018;15;2015;Steuerjahr 2015;11315.365443;Einkommenssteuer;Einkommenssteuer;3;Am Ring;14
-2018;15;2015;Steuerjahr 2015;7288.0944151;Einkommenssteuer;Einkommenssteuer;4;Breite;9
-2018;15;2015;Steuerjahr 2015;16187.932598;Einkommenssteuer;Einkommenssteuer;5;St. Alban;17
-2018;15;2015;Steuerjahr 2015;7236.5977818;Einkommenssteuer;Einkommenssteuer;6;Gundeldingen;8
-2018;15;2015;Steuerjahr 2015;19693.706779;Einkommenssteuer;Einkommenssteuer;7;Bruderholz;21
-2018;15;2015;Steuerjahr 2015;11394.452909;Einkommenssteuer;Einkommenssteuer;8;Bachletten;15
-2018;15;2015;Steuerjahr 2015;8647.5237414;Einkommenssteuer;Einkommenssteuer;9;Gotthelf;11
-2018;15;2015;Steuerjahr 2015;6316.4219119;Einkommenssteuer;Einkommenssteuer;10;Iselin;5
-2018;15;2015;Steuerjahr 2015;6584.1510923;Einkommenssteuer;Einkommenssteuer;11;St. Johann;7
-2018;15;2015;Steuerjahr 2015;8736.081864;Einkommenssteuer;Einkommenssteuer;12;Altstadt Kleinbasel;12
-2018;15;2015;Steuerjahr 2015;6127.2649713;Einkommenssteuer;Einkommenssteuer;13;Clara;3
-2018;15;2015;Steuerjahr 2015;10771.600289;Einkommenssteuer;Einkommenssteuer;14;Wettstein;13
-2018;15;2015;Steuerjahr 2015;7527.794101;Einkommenssteuer;Einkommenssteuer;15;Hirzbrunnen;10
-2018;15;2015;Steuerjahr 2015;6401.2032932;Einkommenssteuer;Einkommenssteuer;16;Rosental;6
-2018;15;2015;Steuerjahr 2015;6313.3239063;Einkommenssteuer;Einkommenssteuer;17;Matthäus;4
-2018;15;2015;Steuerjahr 2015;4462.0400684;Einkommenssteuer;Einkommenssteuer;18;Klybeck;1
-2018;15;2015;Steuerjahr 2015;4908.5997514;Einkommenssteuer;Einkommenssteuer;19;Kleinhüningen;2
-2018;15;2015;Steuerjahr 2015;13428.811448;Einkommenssteuer;Einkommenssteuer;20;Riehen;16
-2018;15;2015;Steuerjahr 2015;19464.664013;Einkommenssteuer;Einkommenssteuer;30;Bettingen;20
-2018;16;;2012-2016;0.8563773753;Erwerbstaetigenquote;Erwerbstätigenquote;1;Altstadt Grossbasel;21
-2018;16;;2012-2016;0.7730196667;Erwerbstaetigenquote;Erwerbstätigenquote;2;Vorstädte;17
-2018;16;;2012-2016;0.8011045547;Erwerbstaetigenquote;Erwerbstätigenquote;3;Am Ring;20
-2018;16;;2012-2016;0.7402545444;Erwerbstaetigenquote;Erwerbstätigenquote;4;Breite;12
-2018;16;;2012-2016;0.7285669841;Erwerbstaetigenquote;Erwerbstätigenquote;5;St. Alban;10
-2018;16;;2012-2016;0.7611023509;Erwerbstaetigenquote;Erwerbstätigenquote;6;Gundeldingen;16
-2018;16;;2012-2016;0.7357069134;Erwerbstaetigenquote;Erwerbstätigenquote;7;Bruderholz;11
-2018;16;;2012-2016;0.780542957;Erwerbstaetigenquote;Erwerbstätigenquote;8;Bachletten;18
-2018;16;;2012-2016;0.7497290566;Erwerbstaetigenquote;Erwerbstätigenquote;9;Gotthelf;15
-2018;16;;2012-2016;0.705780116;Erwerbstaetigenquote;Erwerbstätigenquote;10;Iselin;7
-2018;16;;2012-2016;0.7033538377;Erwerbstaetigenquote;Erwerbstätigenquote;11;St. Johann;5
-2018;16;;2012-2016;0.7043903035;Erwerbstaetigenquote;Erwerbstätigenquote;12;Altstadt Kleinbasel;6
-2018;16;;2012-2016;0.6647432124;Erwerbstaetigenquote;Erwerbstätigenquote;13;Clara;3
-2018;16;;2012-2016;0.8001764749;Erwerbstaetigenquote;Erwerbstätigenquote;14;Wettstein;19
-2018;16;;2012-2016;0.7095861405;Erwerbstaetigenquote;Erwerbstätigenquote;15;Hirzbrunnen;8
-2018;16;;2012-2016;0.727021636;Erwerbstaetigenquote;Erwerbstätigenquote;16;Rosental;9
-2018;16;;2012-2016;0.6812807264;Erwerbstaetigenquote;Erwerbstätigenquote;17;Matthäus;4
-2018;16;;2012-2016;0.6147351268;Erwerbstaetigenquote;Erwerbstätigenquote;18;Klybeck;1
-2018;16;;2012-2016;0.6593773305;Erwerbstaetigenquote;Erwerbstätigenquote;19;Kleinhüningen;2
-2018;16;;2012-2016;0.74117237;Erwerbstaetigenquote;Erwerbstätigenquote;20;Riehen;13
-2018;16;;2012-2016;0.74117237;Erwerbstaetigenquote;Erwerbstätigenquote;30;Bettingen;13
-2018;17;2015;2015;4.3204680878;Arbeitsplaetzeprokopf;Arbeitsplätze pro Kopf;1;Altstadt Grossbasel;20
-2018;17;2015;2015;4.4226589734;Arbeitsplaetzeprokopf;Arbeitsplätze pro Kopf;2;Vorstädte;21
-2018;17;2015;2015;1.0218275784;Arbeitsplaetzeprokopf;Arbeitsplätze pro Kopf;3;Am Ring;15
-2018;17;2015;2015;0.1260591194;Arbeitsplaetzeprokopf;Arbeitsplätze pro Kopf;4;Breite;1
-2018;17;2015;2015;2.2305900441;Arbeitsplaetzeprokopf;Arbeitsplätze pro Kopf;5;St. Alban;19
-2018;17;2015;2015;0.58465375;Arbeitsplaetzeprokopf;Arbeitsplätze pro Kopf;6;Gundeldingen;10
-2018;17;2015;2015;0.13613081;Arbeitsplaetzeprokopf;Arbeitsplätze pro Kopf;7;Bruderholz;2
-2018;17;2015;2015;0.2139095874;Arbeitsplaetzeprokopf;Arbeitsplätze pro Kopf;8;Bachletten;6
-2018;17;2015;2015;0.2957959879;Arbeitsplaetzeprokopf;Arbeitsplätze pro Kopf;9;Gotthelf;8
-2018;17;2015;2015;0.156407656;Arbeitsplaetzeprokopf;Arbeitsplätze pro Kopf;10;Iselin;3
-2018;17;2015;2015;0.9785720793;Arbeitsplaetzeprokopf;Arbeitsplätze pro Kopf;11;St. Johann;14
-2018;17;2015;2015;1.6536017327;Arbeitsplaetzeprokopf;Arbeitsplätze pro Kopf;12;Altstadt Kleinbasel;16
-2018;17;2015;2015;0.6670430957;Arbeitsplaetzeprokopf;Arbeitsplätze pro Kopf;13;Clara;11
-2018;17;2015;2015;1.8984669248;Arbeitsplaetzeprokopf;Arbeitsplätze pro Kopf;14;Wettstein;17
-2018;17;2015;2015;0.3361931625;Arbeitsplaetzeprokopf;Arbeitsplätze pro Kopf;15;Hirzbrunnen;9
-2018;17;2015;2015;0.8699137943;Arbeitsplaetzeprokopf;Arbeitsplätze pro Kopf;16;Rosental;13
-2018;17;2015;2015;0.1825223428;Arbeitsplaetzeprokopf;Arbeitsplätze pro Kopf;17;Matthäus;5
-2018;17;2015;2015;0.7963973842;Arbeitsplaetzeprokopf;Arbeitsplätze pro Kopf;18;Klybeck;12
-2018;17;2015;2015;2.1589777005;Arbeitsplaetzeprokopf;Arbeitsplätze pro Kopf;19;Kleinhüningen;18
-2018;17;2015;2015;0.1686329241;Arbeitsplaetzeprokopf;Arbeitsplätze pro Kopf;20;Riehen;4
-2018;17;2015;2015;0.2922294754;Arbeitsplaetzeprokopf;Arbeitsplätze pro Kopf;30;Bettingen;7
-2018;18;2016;2016;0.0257474605;Arbeitslosenquote;Arbeitslosenquote;1;Altstadt Grossbasel;6
-2018;18;2016;2016;0.0242808282;Arbeitslosenquote;Arbeitslosenquote;2;Vorstädte;4
-2018;18;2016;2016;0.0313845067;Arbeitslosenquote;Arbeitslosenquote;3;Am Ring;8
-2018;18;2016;2016;0.0492950163;Arbeitslosenquote;Arbeitslosenquote;4;Breite;13
-2018;18;2016;2016;0.0295674895;Arbeitslosenquote;Arbeitslosenquote;5;St. Alban;7
-2018;18;2016;2016;0.0418457558;Arbeitslosenquote;Arbeitslosenquote;6;Gundeldingen;12
-2018;18;2016;2016;0.0251482114;Arbeitslosenquote;Arbeitslosenquote;7;Bruderholz;5
-2018;18;2016;2016;0.0241987109;Arbeitslosenquote;Arbeitslosenquote;8;Bachletten;3
-2018;18;2016;2016;0.0344512819;Arbeitslosenquote;Arbeitslosenquote;9;Gotthelf;9
-2018;18;2016;2016;0.0501539147;Arbeitslosenquote;Arbeitslosenquote;10;Iselin;14
-2018;18;2016;2016;0.050458782;Arbeitslosenquote;Arbeitslosenquote;11;St. Johann;15
-2018;18;2016;2016;0.0542989532;Arbeitslosenquote;Arbeitslosenquote;12;Altstadt Kleinbasel;17
-2018;18;2016;2016;0.0539961926;Arbeitslosenquote;Arbeitslosenquote;13;Clara;16
-2018;18;2016;2016;0.038280833;Arbeitslosenquote;Arbeitslosenquote;14;Wettstein;10
-2018;18;2016;2016;0.0404742079;Arbeitslosenquote;Arbeitslosenquote;15;Hirzbrunnen;11
-2018;18;2016;2016;0.0654724892;Arbeitslosenquote;Arbeitslosenquote;16;Rosental;20
-2018;18;2016;2016;0.0555946177;Arbeitslosenquote;Arbeitslosenquote;17;Matthäus;18
-2018;18;2016;2016;0.0719648949;Arbeitslosenquote;Arbeitslosenquote;18;Klybeck;21
-2018;18;2016;2016;0.0631074121;Arbeitslosenquote;Arbeitslosenquote;19;Kleinhüningen;19
-2018;18;2016;2016;0.0193855888;Arbeitslosenquote;Arbeitslosenquote;20;Riehen;1
-2018;18;2016;2016;0.0193855888;Arbeitslosenquote;Arbeitslosenquote;30;Bettingen;1
+Publikationsjahr,Indikator_Nr,jahr_num,jahr_char,Wert,Indikator_Name,Indikator_Label,Wohnviertel_id,Wohnviertel,Rang
+2018,1,2017,2017,0.0166023166,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,1,Altstadt Grossbasel,2
+2018,1,2017,2017,0.0362911266,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,2,Vorstädte,6
+2018,1,2017,2017,0.0369102683,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,3,Am Ring,7
+2018,1,2017,2017,0.0592991914,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,4,Breite,12
+2018,1,2017,2017,0.039971321,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,5,St. Alban,9
+2018,1,2017,2017,0.0714703225,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,6,Gundeldingen,13
+2018,1,2017,2017,0.0179556517,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,7,Bruderholz,3
+2018,1,2017,2017,0.0246931835,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,8,Bachletten,4
+2018,1,2017,2017,0.046390258,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,9,Gotthelf,10
+2018,1,2017,2017,0.0970977506,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,10,Iselin,17
+2018,1,2017,2017,0.0888650964,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,11,St. Johann,16
+2018,1,2017,2017,0.0799512987,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,12,Altstadt Kleinbasel,14
+2018,1,2017,2017,0.0844760039,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,13,Clara,15
+2018,1,2017,2017,0.0359855335,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,14,Wettstein,5
+2018,1,2017,2017,0.048733362,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,15,Hirzbrunnen,11
+2018,1,2017,2017,0.1117673785,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,16,Rosental,18
+2018,1,2017,2017,0.1171948838,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,17,Matthäus,19
+2018,1,2017,2017,0.1394900069,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,18,Klybeck,21
+2018,1,2017,2017,0.1332630098,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,19,Kleinhüningen,20
+2018,1,2017,2017,0.0369328834,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,20,Riehen,8
+2018,1,2017,2017,0.0159529807,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,30,Bettingen,1
+2018,2,2017,2017,0.2841698842,Auslaenderanteil,Anteil Ausländer,1,Altstadt Grossbasel,7
+2018,2,2017,2017,0.3840478564,Auslaenderanteil,Anteil Ausländer,2,Vorstädte,14
+2018,2,2017,2017,0.3619796485,Auslaenderanteil,Anteil Ausländer,3,Am Ring,11
+2018,2,2017,2017,0.3286163522,Auslaenderanteil,Anteil Ausländer,4,Breite,9
+2018,2,2017,2017,0.3310629145,Auslaenderanteil,Anteil Ausländer,5,St. Alban,10
+2018,2,2017,2017,0.3930070673,Auslaenderanteil,Anteil Ausländer,6,Gundeldingen,15
+2018,2,2017,2017,0.2398053002,Auslaenderanteil,Anteil Ausländer,7,Bruderholz,2
+2018,2,2017,2017,0.2142540293,Auslaenderanteil,Anteil Ausländer,8,Bachletten,1
+2018,2,2017,2017,0.2752971876,Auslaenderanteil,Anteil Ausländer,9,Gotthelf,6
+2018,2,2017,2017,0.3791322927,Auslaenderanteil,Anteil Ausländer,10,Iselin,13
+2018,2,2017,2017,0.4300856531,Auslaenderanteil,Anteil Ausländer,11,St. Johann,16
+2018,2,2017,2017,0.3717532468,Auslaenderanteil,Anteil Ausländer,12,Altstadt Kleinbasel,12
+2018,2,2017,2017,0.4674338883,Auslaenderanteil,Anteil Ausländer,13,Clara,17
+2018,2,2017,2017,0.3113924051,Auslaenderanteil,Anteil Ausländer,14,Wettstein,8
+2018,2,2017,2017,0.249463289,Auslaenderanteil,Anteil Ausländer,15,Hirzbrunnen,4
+2018,2,2017,2017,0.5577767681,Auslaenderanteil,Anteil Ausländer,16,Rosental,21
+2018,2,2017,2017,0.5057022242,Auslaenderanteil,Anteil Ausländer,17,Matthäus,19
+2018,2,2017,2017,0.5235010338,Auslaenderanteil,Anteil Ausländer,18,Klybeck,20
+2018,2,2017,2017,0.4743319269,Auslaenderanteil,Anteil Ausländer,19,Kleinhüningen,18
+2018,2,2017,2017,0.2609673791,Auslaenderanteil,Anteil Ausländer,20,Riehen,5
+2018,2,2017,2017,0.241813602,Auslaenderanteil,Anteil Ausländer,30,Bettingen,3
+2018,3,2017,2017,0.5196911197,Anteilkonfessionslose,Anteil Personen ohne Religionszugehörigkeit,1,Altstadt Grossbasel,18
+2018,3,2017,2017,0.5509471585,Anteilkonfessionslose,Anteil Personen ohne Religionszugehörigkeit,2,Vorstädte,20
+2018,3,2017,2017,0.5094357077,Anteilkonfessionslose,Anteil Personen ohne Religionszugehörigkeit,3,Am Ring,17
+2018,3,2017,2017,0.4916891285,Anteilkonfessionslose,Anteil Personen ohne Religionszugehörigkeit,4,Breite,13
+2018,3,2017,2017,0.4933679871,Anteilkonfessionslose,Anteil Personen ohne Religionszugehörigkeit,5,St. Alban,14
+2018,3,2017,2017,0.4567724109,Anteilkonfessionslose,Anteil Personen ohne Religionszugehörigkeit,6,Gundeldingen,6
+2018,3,2017,2017,0.485559762,Anteilkonfessionslose,Anteil Personen ohne Religionszugehörigkeit,7,Bruderholz,12
+2018,3,2017,2017,0.4814431465,Anteilkonfessionslose,Anteil Personen ohne Religionszugehörigkeit,8,Bachletten,11
+2018,3,2017,2017,0.5010147869,Anteilkonfessionslose,Anteil Personen ohne Religionszugehörigkeit,9,Gotthelf,16
+2018,3,2017,2017,0.4521930085,Anteilkonfessionslose,Anteil Personen ohne Religionszugehörigkeit,10,Iselin,5
+2018,3,2017,2017,0.4697537473,Anteilkonfessionslose,Anteil Personen ohne Religionszugehörigkeit,11,St. Johann,8
+2018,3,2017,2017,0.5706168831,Anteilkonfessionslose,Anteil Personen ohne Religionszugehörigkeit,12,Altstadt Kleinbasel,21
+2018,3,2017,2017,0.4708619001,Anteilkonfessionslose,Anteil Personen ohne Religionszugehörigkeit,13,Clara,9
+2018,3,2017,2017,0.5497287523,Anteilkonfessionslose,Anteil Personen ohne Religionszugehörigkeit,14,Wettstein,19
+2018,3,2017,2017,0.4971017604,Anteilkonfessionslose,Anteil Personen ohne Religionszugehörigkeit,15,Hirzbrunnen,15
+2018,3,2017,2017,0.4160230198,Anteilkonfessionslose,Anteil Personen ohne Religionszugehörigkeit,16,Rosental,3
+2018,3,2017,2017,0.4649990549,Anteilkonfessionslose,Anteil Personen ohne Religionszugehörigkeit,17,Matthäus,7
+2018,3,2017,2017,0.4121295658,Anteilkonfessionslose,Anteil Personen ohne Religionszugehörigkeit,18,Klybeck,2
+2018,3,2017,2017,0.3948663854,Anteilkonfessionslose,Anteil Personen ohne Religionszugehörigkeit,19,Kleinhüningen,1
+2018,3,2017,2017,0.4805961755,Anteilkonfessionslose,Anteil Personen ohne Religionszugehörigkeit,20,Riehen,10
+2018,3,2017,2017,0.4391267842,Anteilkonfessionslose,Anteil Personen ohne Religionszugehörigkeit,30,Bettingen,4
+2018,4,2017,2017,0.2922636103,Anteileinpersonenhaushalte,Anteil Personen in Einpersonenhaushalten,1,Altstadt Grossbasel,19
+2018,4,2017,2017,0.3167572085,Anteileinpersonenhaushalte,Anteil Personen in Einpersonenhaushalten,2,Vorstädte,20
+2018,4,2017,2017,0.2780228594,Anteileinpersonenhaushalte,Anteil Personen in Einpersonenhaushalten,3,Am Ring,16
+2018,4,2017,2017,0.2849794239,Anteileinpersonenhaushalte,Anteil Personen in Einpersonenhaushalten,4,Breite,17
+2018,4,2017,2017,0.2392694911,Anteileinpersonenhaushalte,Anteil Personen in Einpersonenhaushalten,5,St. Alban,10
+2018,4,2017,2017,0.273321097,Anteileinpersonenhaushalte,Anteil Personen in Einpersonenhaushalten,6,Gundeldingen,15
+2018,4,2017,2017,0.1545054945,Anteileinpersonenhaushalte,Anteil Personen in Einpersonenhaushalten,7,Bruderholz,2
+2018,4,2017,2017,0.2107660146,Anteileinpersonenhaushalte,Anteil Personen in Einpersonenhaushalten,8,Bachletten,6
+2018,4,2017,2017,0.2869757174,Anteileinpersonenhaushalte,Anteil Personen in Einpersonenhaushalten,9,Gotthelf,18
+2018,4,2017,2017,0.2655998089,Anteileinpersonenhaushalte,Anteil Personen in Einpersonenhaushalten,10,Iselin,13
+2018,4,2017,2017,0.2289479562,Anteileinpersonenhaushalte,Anteil Personen in Einpersonenhaushalten,11,St. Johann,9
+2018,4,2017,2017,0.3210091344,Anteileinpersonenhaushalte,Anteil Personen in Einpersonenhaushalten,12,Altstadt Kleinbasel,21
+2018,4,2017,2017,0.2677286742,Anteileinpersonenhaushalte,Anteil Personen in Einpersonenhaushalten,13,Clara,14
+2018,4,2017,2017,0.2642381657,Anteileinpersonenhaushalte,Anteil Personen in Einpersonenhaushalten,14,Wettstein,12
+2018,4,2017,2017,0.1886155855,Anteileinpersonenhaushalte,Anteil Personen in Einpersonenhaushalten,15,Hirzbrunnen,4
+2018,4,2017,2017,0.2144399877,Anteileinpersonenhaushalte,Anteil Personen in Einpersonenhaushalten,16,Rosental,7
+2018,4,2017,2017,0.2433320448,Anteileinpersonenhaushalte,Anteil Personen in Einpersonenhaushalten,17,Matthäus,11
+2018,4,2017,2017,0.2177126918,Anteileinpersonenhaushalte,Anteil Personen in Einpersonenhaushalten,18,Klybeck,8
+2018,4,2017,2017,0.1952813067,Anteileinpersonenhaushalte,Anteil Personen in Einpersonenhaushalten,19,Kleinhüningen,5
+2018,4,2017,2017,0.1628540045,Anteileinpersonenhaushalte,Anteil Personen in Einpersonenhaushalten,20,Riehen,3
+2018,4,2017,2017,0.1311627907,Anteileinpersonenhaushalte,Anteil Personen in Einpersonenhaushalten,30,Bettingen,1
+2018,5,2017,2017,0.6666666667,Gymnasialquote,Gymnasialquote,1,Altstadt Grossbasel,19
+2018,5,2017,2017,0.44,Gymnasialquote,Gymnasialquote,2,Vorstädte,11
+2018,5,2017,2017,0.5888888889,Gymnasialquote,Gymnasialquote,3,Am Ring,17
+2018,5,2017,2017,0.329787234,Gymnasialquote,Gymnasialquote,4,Breite,6
+2018,5,2017,2017,0.5507246377,Gymnasialquote,Gymnasialquote,5,St. Alban,13
+2018,5,2017,2017,0.2606635071,Gymnasialquote,Gymnasialquote,6,Gundeldingen,2
+2018,5,2017,2017,0.6835443038,Gymnasialquote,Gymnasialquote,7,Bruderholz,20
+2018,5,2017,2017,0.693877551,Gymnasialquote,Gymnasialquote,8,Bachletten,21
+2018,5,2017,2017,0.578313253,Gymnasialquote,Gymnasialquote,9,Gotthelf,16
+2018,5,2017,2017,0.3436293436,Gymnasialquote,Gymnasialquote,10,Iselin,7
+2018,5,2017,2017,0.3625498008,Gymnasialquote,Gymnasialquote,11,St. Johann,8
+2018,5,2017,2017,0.44,Gymnasialquote,Gymnasialquote,12,Altstadt Kleinbasel,11
+2018,5,2017,2017,0.3191489362,Gymnasialquote,Gymnasialquote,13,Clara,5
+2018,5,2017,2017,0.5555555556,Gymnasialquote,Gymnasialquote,14,Wettstein,15
+2018,5,2017,2017,0.4277108434,Gymnasialquote,Gymnasialquote,15,Hirzbrunnen,10
+2018,5,2017,2017,0.3023255814,Gymnasialquote,Gymnasialquote,16,Rosental,4
+2018,5,2017,2017,0.3,Gymnasialquote,Gymnasialquote,17,Matthäus,3
+2018,5,2017,2017,0.2083333333,Gymnasialquote,Gymnasialquote,18,Klybeck,1
+2018,5,2017,2017,0.3673469388,Gymnasialquote,Gymnasialquote,19,Kleinhüningen,9
+2018,5,2017,2017,0.5512820513,Gymnasialquote,Gymnasialquote,20,Riehen,14
+2018,5,2017,2017,0.652173913,Gymnasialquote,Gymnasialquote,30,Bettingen,18
+2018,6,2017,2017,0.2812328013,Altersquotient,Altersquotient,1,Altstadt Grossbasel,8
+2018,6,2017,2017,0.3685828466,Altersquotient,Altersquotient,2,Vorstädte,15
+2018,6,2017,2017,0.3426260292,Altersquotient,Altersquotient,3,Am Ring,13
+2018,6,2017,2017,0.3408931083,Altersquotient,Altersquotient,4,Breite,12
+2018,6,2017,2017,0.4655742871,Altersquotient,Altersquotient,5,St. Alban,20
+2018,6,2017,2017,0.219809322,Altersquotient,Altersquotient,6,Gundeldingen,4
+2018,6,2017,2017,0.4217833399,Altersquotient,Altersquotient,7,Bruderholz,18
+2018,6,2017,2017,0.3699692308,Altersquotient,Altersquotient,8,Bachletten,16
+2018,6,2017,2017,0.3449315704,Altersquotient,Altersquotient,9,Gotthelf,14
+2018,6,2017,2017,0.2522425547,Altersquotient,Altersquotient,10,Iselin,6
+2018,6,2017,2017,0.2299215096,Altersquotient,Altersquotient,11,St. Johann,5
+2018,6,2017,2017,0.2743055556,Altersquotient,Altersquotient,12,Altstadt Kleinbasel,7
+2018,6,2017,2017,0.3210332103,Altersquotient,Altersquotient,13,Clara,11
+2018,6,2017,2017,0.2948402948,Altersquotient,Altersquotient,14,Wettstein,10
+2018,6,2017,2017,0.422836584,Altersquotient,Altersquotient,15,Hirzbrunnen,19
+2018,6,2017,2017,0.1244444444,Altersquotient,Altersquotient,16,Rosental,1
+2018,6,2017,2017,0.1771840394,Altersquotient,Altersquotient,17,Matthäus,2
+2018,6,2017,2017,0.2034212696,Altersquotient,Altersquotient,18,Klybeck,3
+2018,6,2017,2017,0.285391991,Altersquotient,Altersquotient,19,Kleinhüningen,9
+2018,6,2017,2017,0.4815329799,Altersquotient,Altersquotient,20,Riehen,21
+2018,6,2017,2017,0.4144927536,Altersquotient,Altersquotient,30,Bettingen,17
+2018,7,2017,2017,0.3111969112,Anteilsesshafte,Anteil Sesshafte,1,Altstadt Grossbasel,6
+2018,7,2017,2017,0.2783649053,Anteilsesshafte,Anteil Sesshafte,2,Vorstädte,3
+2018,7,2017,2017,0.3042553191,Anteilsesshafte,Anteil Sesshafte,3,Am Ring,5
+2018,7,2017,2017,0.3470350404,Anteilsesshafte,Anteil Sesshafte,4,Breite,13
+2018,7,2017,2017,0.3366194659,Anteilsesshafte,Anteil Sesshafte,5,St. Alban,11
+2018,7,2017,2017,0.3199426112,Anteilsesshafte,Anteil Sesshafte,6,Gundeldingen,9
+2018,7,2017,2017,0.431151974,Anteilsesshafte,Anteil Sesshafte,7,Bruderholz,21
+2018,7,2017,2017,0.4232589088,Anteilsesshafte,Anteil Sesshafte,8,Bachletten,18
+2018,7,2017,2017,0.3545955349,Anteilsesshafte,Anteil Sesshafte,9,Gotthelf,15
+2018,7,2017,2017,0.3312956259,Anteilsesshafte,Anteil Sesshafte,10,Iselin,10
+2018,7,2017,2017,0.3171841542,Anteilsesshafte,Anteil Sesshafte,11,St. Johann,8
+2018,7,2017,2017,0.2727272727,Anteilsesshafte,Anteil Sesshafte,12,Altstadt Kleinbasel,2
+2018,7,2017,2017,0.3148873653,Anteilsesshafte,Anteil Sesshafte,13,Clara,7
+2018,7,2017,2017,0.3638336347,Anteilsesshafte,Anteil Sesshafte,14,Wettstein,16
+2018,7,2017,2017,0.3984542722,Anteilsesshafte,Anteil Sesshafte,15,Hirzbrunnen,17
+2018,7,2017,2017,0.2088444646,Anteilsesshafte,Anteil Sesshafte,16,Rosental,1
+2018,7,2017,2017,0.2982168735,Anteilsesshafte,Anteil Sesshafte,17,Matthäus,4
+2018,7,2017,2017,0.3419710544,Anteilsesshafte,Anteil Sesshafte,18,Klybeck,12
+2018,7,2017,2017,0.3516174402,Anteilsesshafte,Anteil Sesshafte,19,Kleinhüningen,14
+2018,7,2017,2017,0.4280089989,Anteilsesshafte,Anteil Sesshafte,20,Riehen,20
+2018,7,2017,2017,0.4265323258,Anteilsesshafte,Anteil Sesshafte,30,Bettingen,19
+2018,8,2017,2017,0.1441937259,Jugendquotient,Jugendquotient,1,Altstadt Grossbasel,1
+2018,8,2017,2017,0.1730710114,Jugendquotient,Jugendquotient,2,Vorstädte,3
+2018,8,2017,2017,0.2188357648,Jugendquotient,Jugendquotient,3,Am Ring,8
+2018,8,2017,2017,0.2245077356,Jugendquotient,Jugendquotient,4,Breite,9
+2018,8,2017,2017,0.2924216165,Jugendquotient,Jugendquotient,5,St. Alban,15
+2018,8,2017,2017,0.2041464891,Jugendquotient,Jugendquotient,6,Gundeldingen,5
+2018,8,2017,2017,0.3859992178,Jugendquotient,Jugendquotient,7,Bruderholz,21
+2018,8,2017,2017,0.2947692308,Jugendquotient,Jugendquotient,8,Bachletten,16
+2018,8,2017,2017,0.2551612155,Jugendquotient,Jugendquotient,9,Gotthelf,11
+2018,8,2017,2017,0.2591496233,Jugendquotient,Jugendquotient,10,Iselin,12
+2018,8,2017,2017,0.2510901451,Jugendquotient,Jugendquotient,11,St. Johann,10
+2018,8,2017,2017,0.1516203704,Jugendquotient,Jugendquotient,12,Altstadt Kleinbasel,2
+2018,8,2017,2017,0.1859778598,Jugendquotient,Jugendquotient,13,Clara,4
+2018,8,2017,2017,0.2148512149,Jugendquotient,Jugendquotient,14,Wettstein,6
+2018,8,2017,2017,0.3412232532,Jugendquotient,Jugendquotient,15,Hirzbrunnen,19
+2018,8,2017,2017,0.273015873,Jugendquotient,Jugendquotient,16,Rosental,13
+2018,8,2017,2017,0.2177008262,Jugendquotient,Jugendquotient,17,Matthäus,7
+2018,8,2017,2017,0.2918384171,Jugendquotient,Jugendquotient,18,Klybeck,14
+2018,8,2017,2017,0.3186689227,Jugendquotient,Jugendquotient,19,Kleinhüningen,18
+2018,8,2017,2017,0.3726427392,Jugendquotient,Jugendquotient,20,Riehen,20
+2018,8,2017,2017,0.3115942029,Jugendquotient,Jugendquotient,30,Bettingen,17
+2018,9,2017,2017,1822.9739479,Baujahrwohngebaeude,Baujahr Wohngebäude,1,Altstadt Grossbasel,1
+2018,9,2017,2017,1898.8798521,Baujahrwohngebaeude,Baujahr Wohngebäude,2,Vorstädte,3
+2018,9,2017,2017,1918.832483,Baujahrwohngebaeude,Baujahr Wohngebäude,3,Am Ring,4
+2018,9,2017,2017,1940.8815592,Baujahrwohngebaeude,Baujahr Wohngebäude,4,Breite,15
+2018,9,2017,2017,1938.8973928,Baujahrwohngebaeude,Baujahr Wohngebäude,5,St. Alban,14
+2018,9,2017,2017,1932.2727273,Baujahrwohngebaeude,Baujahr Wohngebäude,6,Gundeldingen,8
+2018,9,2017,2017,1948.622051,Baujahrwohngebaeude,Baujahr Wohngebäude,7,Bruderholz,18
+2018,9,2017,2017,1934.1737915,Baujahrwohngebaeude,Baujahr Wohngebäude,8,Bachletten,11
+2018,9,2017,2017,1924.7530612,Baujahrwohngebaeude,Baujahr Wohngebäude,9,Gotthelf,5
+2018,9,2017,2017,1937.1588721,Baujahrwohngebaeude,Baujahr Wohngebäude,10,Iselin,13
+2018,9,2017,2017,1932.9564931,Baujahrwohngebaeude,Baujahr Wohngebäude,11,St. Johann,9
+2018,9,2017,2017,1880.2206406,Baujahrwohngebaeude,Baujahr Wohngebäude,12,Altstadt Kleinbasel,2
+2018,9,2017,2017,1928.2022901,Baujahrwohngebaeude,Baujahr Wohngebäude,13,Clara,7
+2018,9,2017,2017,1933.15625,Baujahrwohngebaeude,Baujahr Wohngebäude,14,Wettstein,10
+2018,9,2017,2017,1941.7718078,Baujahrwohngebaeude,Baujahr Wohngebäude,15,Hirzbrunnen,16
+2018,9,2017,2017,1949.2990033,Baujahrwohngebaeude,Baujahr Wohngebäude,16,Rosental,19
+2018,9,2017,2017,1925.1191937,Baujahrwohngebaeude,Baujahr Wohngebäude,17,Matthäus,6
+2018,9,2017,2017,1936.9816092,Baujahrwohngebaeude,Baujahr Wohngebäude,18,Klybeck,12
+2018,9,2017,2017,1946.4011976,Baujahrwohngebaeude,Baujahr Wohngebäude,19,Kleinhüningen,17
+2018,9,2017,2017,1957.6253324,Baujahrwohngebaeude,Baujahr Wohngebäude,20,Riehen,20
+2018,9,2017,2017,1961.9485531,Baujahrwohngebaeude,Baujahr Wohngebäude,30,Bettingen,21
+2018,10,2017,2017,0.1022044088,Anteileinfamilienhaeuser,Anteil Einfamilienhäuser,1,Altstadt Grossbasel,8
+2018,10,2017,2017,0.0776340111,Anteileinfamilienhaeuser,Anteil Einfamilienhäuser,2,Vorstädte,6
+2018,10,2017,2017,0.1972789116,Anteileinfamilienhaeuser,Anteil Einfamilienhäuser,3,Am Ring,12
+2018,10,2017,2017,0.1349325337,Anteileinfamilienhaeuser,Anteil Einfamilienhäuser,4,Breite,9
+2018,10,2017,2017,0.3372582002,Anteileinfamilienhaeuser,Anteil Einfamilienhäuser,5,St. Alban,15
+2018,10,2017,2017,0.0293706294,Anteileinfamilienhaeuser,Anteil Einfamilienhäuser,6,Gundeldingen,2
+2018,10,2017,2017,0.7332691382,Anteileinfamilienhaeuser,Anteil Einfamilienhäuser,7,Bruderholz,20
+2018,10,2017,2017,0.5605273672,Anteileinfamilienhaeuser,Anteil Einfamilienhäuser,8,Bachletten,17
+2018,10,2017,2017,0.3693877551,Anteileinfamilienhaeuser,Anteil Einfamilienhäuser,9,Gotthelf,16
+2018,10,2017,2017,0.166437414,Anteileinfamilienhaeuser,Anteil Einfamilienhäuser,10,Iselin,11
+2018,10,2017,2017,0.2478576137,Anteileinfamilienhaeuser,Anteil Einfamilienhäuser,11,St. Johann,13
+2018,10,2017,2017,0.0996441281,Anteileinfamilienhaeuser,Anteil Einfamilienhäuser,12,Altstadt Kleinbasel,7
+2018,10,2017,2017,0.0229007634,Anteileinfamilienhaeuser,Anteil Einfamilienhäuser,13,Clara,1
+2018,10,2017,2017,0.3352272727,Anteileinfamilienhaeuser,Anteil Einfamilienhäuser,14,Wettstein,14
+2018,10,2017,2017,0.6972187105,Anteileinfamilienhaeuser,Anteil Einfamilienhäuser,15,Hirzbrunnen,19
+2018,10,2017,2017,0.0697674419,Anteileinfamilienhaeuser,Anteil Einfamilienhäuser,16,Rosental,3
+2018,10,2017,2017,0.0709903593,Anteileinfamilienhaeuser,Anteil Einfamilienhäuser,17,Matthäus,4
+2018,10,2017,2017,0.0712643678,Anteileinfamilienhaeuser,Anteil Einfamilienhäuser,18,Klybeck,5
+2018,10,2017,2017,0.1556886228,Anteileinfamilienhaeuser,Anteil Einfamilienhäuser,19,Kleinhüningen,10
+2018,10,2017,2017,0.6565143824,Anteileinfamilienhaeuser,Anteil Einfamilienhäuser,20,Riehen,18
+2018,10,2017,2017,0.7909967846,Anteileinfamilienhaeuser,Anteil Einfamilienhäuser,30,Bettingen,21
+2018,11,2017,2017,0.0672594599,Gruenflaechenanteil,Anteil Grünfläche,1,Altstadt Grossbasel,1
+2018,11,2017,2017,0.1947350181,Gruenflaechenanteil,Anteil Grünfläche,2,Vorstädte,8
+2018,11,2017,2017,0.2376157997,Gruenflaechenanteil,Anteil Grünfläche,3,Am Ring,10
+2018,11,2017,2017,0.3595967668,Gruenflaechenanteil,Anteil Grünfläche,4,Breite,15
+2018,11,2017,2017,0.3221370715,Gruenflaechenanteil,Anteil Grünfläche,5,St. Alban,13
+2018,11,2017,2017,0.1760147512,Gruenflaechenanteil,Anteil Grünfläche,6,Gundeldingen,7
+2018,11,2017,2017,0.7137712478,Gruenflaechenanteil,Anteil Grünfläche,7,Bruderholz,19
+2018,11,2017,2017,0.4131869998,Gruenflaechenanteil,Anteil Grünfläche,8,Bachletten,17
+2018,11,2017,2017,0.3240684495,Gruenflaechenanteil,Anteil Grünfläche,9,Gotthelf,14
+2018,11,2017,2017,0.369216064,Gruenflaechenanteil,Anteil Grünfläche,10,Iselin,16
+2018,11,2017,2017,0.2839416111,Gruenflaechenanteil,Anteil Grünfläche,11,St. Johann,12
+2018,11,2017,2017,0.0809475704,Gruenflaechenanteil,Anteil Grünfläche,12,Altstadt Kleinbasel,2
+2018,11,2017,2017,0.1596210148,Gruenflaechenanteil,Anteil Grünfläche,13,Clara,5
+2018,11,2017,2017,0.2785714268,Gruenflaechenanteil,Anteil Grünfläche,14,Wettstein,11
+2018,11,2017,2017,0.5903189074,Gruenflaechenanteil,Anteil Grünfläche,15,Hirzbrunnen,18
+2018,11,2017,2017,0.1357870952,Gruenflaechenanteil,Anteil Grünfläche,16,Rosental,4
+2018,11,2017,2017,0.1657239983,Gruenflaechenanteil,Anteil Grünfläche,17,Matthäus,6
+2018,11,2017,2017,0.1193188639,Gruenflaechenanteil,Anteil Grünfläche,18,Klybeck,3
+2018,11,2017,2017,0.2267642282,Gruenflaechenanteil,Anteil Grünfläche,19,Kleinhüningen,9
+2018,11,2017,2017,0.7956226483,Gruenflaechenanteil,Anteil Grünfläche,20,Riehen,20
+2018,11,2017,2017,0.9020116677,Gruenflaechenanteil,Anteil Grünfläche,30,Bettingen,21
+2018,12,2017,2017,89.982578397,Flaecheprowohnung,Fläche pro Wohnung,1,Altstadt Grossbasel,16
+2018,12,2017,2017,81.703573521,Flaecheprowohnung,Fläche pro Wohnung,2,Vorstädte,13
+2018,12,2017,2017,81.96043395,Flaecheprowohnung,Fläche pro Wohnung,3,Am Ring,14
+2018,12,2017,2017,70.004521477,Flaecheprowohnung,Fläche pro Wohnung,4,Breite,6
+2018,12,2017,2017,93.466570467,Flaecheprowohnung,Fläche pro Wohnung,5,St. Alban,18
+2018,12,2017,2017,70.427866942,Flaecheprowohnung,Fläche pro Wohnung,6,Gundeldingen,8
+2018,12,2017,2017,109.24315693,Flaecheprowohnung,Fläche pro Wohnung,7,Bruderholz,20
+2018,12,2017,2017,92.894002211,Flaecheprowohnung,Fläche pro Wohnung,8,Bachletten,17
+2018,12,2017,2017,74.544131911,Flaecheprowohnung,Fläche pro Wohnung,9,Gotthelf,11
+2018,12,2017,2017,68.511779293,Flaecheprowohnung,Fläche pro Wohnung,10,Iselin,4
+2018,12,2017,2017,71.680063511,Flaecheprowohnung,Fläche pro Wohnung,11,St. Johann,9
+2018,12,2017,2017,72.17236927,Flaecheprowohnung,Fläche pro Wohnung,12,Altstadt Kleinbasel,10
+2018,12,2017,2017,66.391708968,Flaecheprowohnung,Fläche pro Wohnung,13,Clara,2
+2018,12,2017,2017,83.225836146,Flaecheprowohnung,Fläche pro Wohnung,14,Wettstein,15
+2018,12,2017,2017,80.960734102,Flaecheprowohnung,Fläche pro Wohnung,15,Hirzbrunnen,12
+2018,12,2017,2017,69.447001989,Flaecheprowohnung,Fläche pro Wohnung,16,Rosental,5
+2018,12,2017,2017,67.244349005,Flaecheprowohnung,Fläche pro Wohnung,17,Matthäus,3
+2018,12,2017,2017,65.419001868,Flaecheprowohnung,Fläche pro Wohnung,18,Klybeck,1
+2018,12,2017,2017,70.42468773,Flaecheprowohnung,Fläche pro Wohnung,19,Kleinhüningen,7
+2018,12,2017,2017,102.73655706,Flaecheprowohnung,Fläche pro Wohnung,20,Riehen,19
+2018,12,2017,2017,120.82306163,Flaecheprowohnung,Fläche pro Wohnung,30,Bettingen,21
+2018,13,2017,2017,52.670028818,Wohnflaecheprokopf,Wohnfäche pro Kopf,1,Altstadt Grossbasel,20
+2018,13,2017,2017,49.710686542,Wohnflaecheprokopf,Wohnfäche pro Kopf,2,Vorstädte,19
+2018,13,2017,2017,45.562575574,Wohnflaecheprokopf,Wohnfäche pro Kopf,3,Am Ring,13
+2018,13,2017,2017,38.929061785,Wohnflaecheprokopf,Wohnfäche pro Kopf,4,Breite,9
+2018,13,2017,2017,48.696245096,Wohnflaecheprokopf,Wohnfäche pro Kopf,5,St. Alban,18
+2018,13,2017,2017,38.358770363,Wohnflaecheprokopf,Wohnfäche pro Kopf,6,Gundeldingen,8
+2018,13,2017,2017,48.67246313,Wohnflaecheprokopf,Wohnfäche pro Kopf,7,Bruderholz,17
+2018,13,2017,2017,46.408682635,Wohnflaecheprokopf,Wohnfäche pro Kopf,8,Bachletten,15
+2018,13,2017,2017,41.130126881,Wohnflaecheprokopf,Wohnfäche pro Kopf,9,Gotthelf,11
+2018,13,2017,2017,36.325632892,Wohnflaecheprokopf,Wohnfäche pro Kopf,10,Iselin,6
+2018,13,2017,2017,36.186283285,Wohnflaecheprokopf,Wohnfäche pro Kopf,11,St. Johann,5
+2018,13,2017,2017,42.151075977,Wohnflaecheprokopf,Wohnfäche pro Kopf,12,Altstadt Kleinbasel,12
+2018,13,2017,2017,36.433815926,Wohnflaecheprokopf,Wohnfäche pro Kopf,13,Clara,7
+2018,13,2017,2017,45.690524754,Wohnflaecheprokopf,Wohnfäche pro Kopf,14,Wettstein,14
+2018,13,2017,2017,38.967116725,Wohnflaecheprokopf,Wohnfäche pro Kopf,15,Hirzbrunnen,10
+2018,13,2017,2017,33.579200248,Wohnflaecheprokopf,Wohnfäche pro Kopf,16,Rosental,3
+2018,13,2017,2017,34.833732445,Wohnflaecheprokopf,Wohnfäche pro Kopf,17,Matthäus,4
+2018,13,2017,2017,31.680970411,Wohnflaecheprokopf,Wohnfäche pro Kopf,18,Klybeck,1
+2018,13,2017,2017,32.477628228,Wohnflaecheprokopf,Wohnfäche pro Kopf,19,Kleinhüningen,2
+2018,13,2017,2017,47.494001816,Wohnflaecheprokopf,Wohnfäche pro Kopf,20,Riehen,16
+2018,13,2017,2017,52.716153128,Wohnflaecheprokopf,Wohnfäche pro Kopf,30,Bettingen,21
+2018,14,2015,Steuerjahr 2015,5514.6161194,Vermoegenssteuer,Vermögenssteuer,1,Altstadt Grossbasel,17
+2018,14,2015,Steuerjahr 2015,6165.9059687,Vermoegenssteuer,Vermögenssteuer,2,Vorstädte,19
+2018,14,2015,Steuerjahr 2015,2060.938612,Vermoegenssteuer,Vermögenssteuer,3,Am Ring,15
+2018,14,2015,Steuerjahr 2015,512.9425141,Vermoegenssteuer,Vermögenssteuer,4,Breite,8
+2018,14,2015,Steuerjahr 2015,5783.6317751,Vermoegenssteuer,Vermögenssteuer,5,St. Alban,18
+2018,14,2015,Steuerjahr 2015,552.75010831,Vermoegenssteuer,Vermögenssteuer,6,Gundeldingen,9
+2018,14,2015,Steuerjahr 2015,18071.401123,Vermoegenssteuer,Vermögenssteuer,7,Bruderholz,21
+2018,14,2015,Steuerjahr 2015,1877.6147682,Vermoegenssteuer,Vermögenssteuer,8,Bachletten,14
+2018,14,2015,Steuerjahr 2015,962.38892866,Vermoegenssteuer,Vermögenssteuer,9,Gotthelf,11
+2018,14,2015,Steuerjahr 2015,448.2365746,Vermoegenssteuer,Vermögenssteuer,10,Iselin,4
+2018,14,2015,Steuerjahr 2015,509.91830365,Vermoegenssteuer,Vermögenssteuer,11,St. Johann,7
+2018,14,2015,Steuerjahr 2015,1123.5396725,Vermoegenssteuer,Vermögenssteuer,12,Altstadt Kleinbasel,12
+2018,14,2015,Steuerjahr 2015,508.20508614,Vermoegenssteuer,Vermögenssteuer,13,Clara,6
+2018,14,2015,Steuerjahr 2015,1328.9580318,Vermoegenssteuer,Vermögenssteuer,14,Wettstein,13
+2018,14,2015,Steuerjahr 2015,735.59236151,Vermoegenssteuer,Vermögenssteuer,15,Hirzbrunnen,10
+2018,14,2015,Steuerjahr 2015,254.13869538,Vermoegenssteuer,Vermögenssteuer,16,Rosental,3
+2018,14,2015,Steuerjahr 2015,491.56606275,Vermoegenssteuer,Vermögenssteuer,17,Matthäus,5
+2018,14,2015,Steuerjahr 2015,185.90031762,Vermoegenssteuer,Vermögenssteuer,18,Klybeck,1
+2018,14,2015,Steuerjahr 2015,206.8607831,Vermoegenssteuer,Vermögenssteuer,19,Kleinhüningen,2
+2018,14,2015,Steuerjahr 2015,3075.9103589,Vermoegenssteuer,Vermögenssteuer,20,Riehen,16
+2018,14,2015,Steuerjahr 2015,15530.157643,Vermoegenssteuer,Vermögenssteuer,30,Bettingen,20
+2018,15,2015,Steuerjahr 2015,16657.376716,Einkommenssteuer,Einkommenssteuer,1,Altstadt Grossbasel,19
+2018,15,2015,Steuerjahr 2015,16404.67856,Einkommenssteuer,Einkommenssteuer,2,Vorstädte,18
+2018,15,2015,Steuerjahr 2015,11315.365443,Einkommenssteuer,Einkommenssteuer,3,Am Ring,14
+2018,15,2015,Steuerjahr 2015,7288.0944151,Einkommenssteuer,Einkommenssteuer,4,Breite,9
+2018,15,2015,Steuerjahr 2015,16187.932598,Einkommenssteuer,Einkommenssteuer,5,St. Alban,17
+2018,15,2015,Steuerjahr 2015,7236.5977818,Einkommenssteuer,Einkommenssteuer,6,Gundeldingen,8
+2018,15,2015,Steuerjahr 2015,19693.706779,Einkommenssteuer,Einkommenssteuer,7,Bruderholz,21
+2018,15,2015,Steuerjahr 2015,11394.452909,Einkommenssteuer,Einkommenssteuer,8,Bachletten,15
+2018,15,2015,Steuerjahr 2015,8647.5237414,Einkommenssteuer,Einkommenssteuer,9,Gotthelf,11
+2018,15,2015,Steuerjahr 2015,6316.4219119,Einkommenssteuer,Einkommenssteuer,10,Iselin,5
+2018,15,2015,Steuerjahr 2015,6584.1510923,Einkommenssteuer,Einkommenssteuer,11,St. Johann,7
+2018,15,2015,Steuerjahr 2015,8736.081864,Einkommenssteuer,Einkommenssteuer,12,Altstadt Kleinbasel,12
+2018,15,2015,Steuerjahr 2015,6127.2649713,Einkommenssteuer,Einkommenssteuer,13,Clara,3
+2018,15,2015,Steuerjahr 2015,10771.600289,Einkommenssteuer,Einkommenssteuer,14,Wettstein,13
+2018,15,2015,Steuerjahr 2015,7527.794101,Einkommenssteuer,Einkommenssteuer,15,Hirzbrunnen,10
+2018,15,2015,Steuerjahr 2015,6401.2032932,Einkommenssteuer,Einkommenssteuer,16,Rosental,6
+2018,15,2015,Steuerjahr 2015,6313.3239063,Einkommenssteuer,Einkommenssteuer,17,Matthäus,4
+2018,15,2015,Steuerjahr 2015,4462.0400684,Einkommenssteuer,Einkommenssteuer,18,Klybeck,1
+2018,15,2015,Steuerjahr 2015,4908.5997514,Einkommenssteuer,Einkommenssteuer,19,Kleinhüningen,2
+2018,15,2015,Steuerjahr 2015,13428.811448,Einkommenssteuer,Einkommenssteuer,20,Riehen,16
+2018,15,2015,Steuerjahr 2015,19464.664013,Einkommenssteuer,Einkommenssteuer,30,Bettingen,20
+2018,16,,2012-2016,0.8563773753,Erwerbstaetigenquote,Erwerbstätigenquote,1,Altstadt Grossbasel,21
+2018,16,,2012-2016,0.7730196667,Erwerbstaetigenquote,Erwerbstätigenquote,2,Vorstädte,17
+2018,16,,2012-2016,0.8011045547,Erwerbstaetigenquote,Erwerbstätigenquote,3,Am Ring,20
+2018,16,,2012-2016,0.7402545444,Erwerbstaetigenquote,Erwerbstätigenquote,4,Breite,12
+2018,16,,2012-2016,0.7285669841,Erwerbstaetigenquote,Erwerbstätigenquote,5,St. Alban,10
+2018,16,,2012-2016,0.7611023509,Erwerbstaetigenquote,Erwerbstätigenquote,6,Gundeldingen,16
+2018,16,,2012-2016,0.7357069134,Erwerbstaetigenquote,Erwerbstätigenquote,7,Bruderholz,11
+2018,16,,2012-2016,0.780542957,Erwerbstaetigenquote,Erwerbstätigenquote,8,Bachletten,18
+2018,16,,2012-2016,0.7497290566,Erwerbstaetigenquote,Erwerbstätigenquote,9,Gotthelf,15
+2018,16,,2012-2016,0.705780116,Erwerbstaetigenquote,Erwerbstätigenquote,10,Iselin,7
+2018,16,,2012-2016,0.7033538377,Erwerbstaetigenquote,Erwerbstätigenquote,11,St. Johann,5
+2018,16,,2012-2016,0.7043903035,Erwerbstaetigenquote,Erwerbstätigenquote,12,Altstadt Kleinbasel,6
+2018,16,,2012-2016,0.6647432124,Erwerbstaetigenquote,Erwerbstätigenquote,13,Clara,3
+2018,16,,2012-2016,0.8001764749,Erwerbstaetigenquote,Erwerbstätigenquote,14,Wettstein,19
+2018,16,,2012-2016,0.7095861405,Erwerbstaetigenquote,Erwerbstätigenquote,15,Hirzbrunnen,8
+2018,16,,2012-2016,0.727021636,Erwerbstaetigenquote,Erwerbstätigenquote,16,Rosental,9
+2018,16,,2012-2016,0.6812807264,Erwerbstaetigenquote,Erwerbstätigenquote,17,Matthäus,4
+2018,16,,2012-2016,0.6147351268,Erwerbstaetigenquote,Erwerbstätigenquote,18,Klybeck,1
+2018,16,,2012-2016,0.6593773305,Erwerbstaetigenquote,Erwerbstätigenquote,19,Kleinhüningen,2
+2018,16,,2012-2016,0.74117237,Erwerbstaetigenquote,Erwerbstätigenquote,20,Riehen,13
+2018,16,,2012-2016,0.74117237,Erwerbstaetigenquote,Erwerbstätigenquote,30,Bettingen,13
+2018,17,2015,2015,4.3204680878,Arbeitsplaetzeprokopf,Arbeitsplätze pro Kopf,1,Altstadt Grossbasel,20
+2018,17,2015,2015,4.4226589734,Arbeitsplaetzeprokopf,Arbeitsplätze pro Kopf,2,Vorstädte,21
+2018,17,2015,2015,1.0218275784,Arbeitsplaetzeprokopf,Arbeitsplätze pro Kopf,3,Am Ring,15
+2018,17,2015,2015,0.1260591194,Arbeitsplaetzeprokopf,Arbeitsplätze pro Kopf,4,Breite,1
+2018,17,2015,2015,2.2305900441,Arbeitsplaetzeprokopf,Arbeitsplätze pro Kopf,5,St. Alban,19
+2018,17,2015,2015,0.58465375,Arbeitsplaetzeprokopf,Arbeitsplätze pro Kopf,6,Gundeldingen,10
+2018,17,2015,2015,0.13613081,Arbeitsplaetzeprokopf,Arbeitsplätze pro Kopf,7,Bruderholz,2
+2018,17,2015,2015,0.2139095874,Arbeitsplaetzeprokopf,Arbeitsplätze pro Kopf,8,Bachletten,6
+2018,17,2015,2015,0.2957959879,Arbeitsplaetzeprokopf,Arbeitsplätze pro Kopf,9,Gotthelf,8
+2018,17,2015,2015,0.156407656,Arbeitsplaetzeprokopf,Arbeitsplätze pro Kopf,10,Iselin,3
+2018,17,2015,2015,0.9785720793,Arbeitsplaetzeprokopf,Arbeitsplätze pro Kopf,11,St. Johann,14
+2018,17,2015,2015,1.6536017327,Arbeitsplaetzeprokopf,Arbeitsplätze pro Kopf,12,Altstadt Kleinbasel,16
+2018,17,2015,2015,0.6670430957,Arbeitsplaetzeprokopf,Arbeitsplätze pro Kopf,13,Clara,11
+2018,17,2015,2015,1.8984669248,Arbeitsplaetzeprokopf,Arbeitsplätze pro Kopf,14,Wettstein,17
+2018,17,2015,2015,0.3361931625,Arbeitsplaetzeprokopf,Arbeitsplätze pro Kopf,15,Hirzbrunnen,9
+2018,17,2015,2015,0.8699137943,Arbeitsplaetzeprokopf,Arbeitsplätze pro Kopf,16,Rosental,13
+2018,17,2015,2015,0.1825223428,Arbeitsplaetzeprokopf,Arbeitsplätze pro Kopf,17,Matthäus,5
+2018,17,2015,2015,0.7963973842,Arbeitsplaetzeprokopf,Arbeitsplätze pro Kopf,18,Klybeck,12
+2018,17,2015,2015,2.1589777005,Arbeitsplaetzeprokopf,Arbeitsplätze pro Kopf,19,Kleinhüningen,18
+2018,17,2015,2015,0.1686329241,Arbeitsplaetzeprokopf,Arbeitsplätze pro Kopf,20,Riehen,4
+2018,17,2015,2015,0.2922294754,Arbeitsplaetzeprokopf,Arbeitsplätze pro Kopf,30,Bettingen,7
+2018,18,2016,2016,0.0257474605,Arbeitslosenquote,Arbeitslosenquote,1,Altstadt Grossbasel,6
+2018,18,2016,2016,0.0242808282,Arbeitslosenquote,Arbeitslosenquote,2,Vorstädte,4
+2018,18,2016,2016,0.0313845067,Arbeitslosenquote,Arbeitslosenquote,3,Am Ring,8
+2018,18,2016,2016,0.0492950163,Arbeitslosenquote,Arbeitslosenquote,4,Breite,13
+2018,18,2016,2016,0.0295674895,Arbeitslosenquote,Arbeitslosenquote,5,St. Alban,7
+2018,18,2016,2016,0.0418457558,Arbeitslosenquote,Arbeitslosenquote,6,Gundeldingen,12
+2018,18,2016,2016,0.0251482114,Arbeitslosenquote,Arbeitslosenquote,7,Bruderholz,5
+2018,18,2016,2016,0.0241987109,Arbeitslosenquote,Arbeitslosenquote,8,Bachletten,3
+2018,18,2016,2016,0.0344512819,Arbeitslosenquote,Arbeitslosenquote,9,Gotthelf,9
+2018,18,2016,2016,0.0501539147,Arbeitslosenquote,Arbeitslosenquote,10,Iselin,14
+2018,18,2016,2016,0.050458782,Arbeitslosenquote,Arbeitslosenquote,11,St. Johann,15
+2018,18,2016,2016,0.0542989532,Arbeitslosenquote,Arbeitslosenquote,12,Altstadt Kleinbasel,17
+2018,18,2016,2016,0.0539961926,Arbeitslosenquote,Arbeitslosenquote,13,Clara,16
+2018,18,2016,2016,0.038280833,Arbeitslosenquote,Arbeitslosenquote,14,Wettstein,10
+2018,18,2016,2016,0.0404742079,Arbeitslosenquote,Arbeitslosenquote,15,Hirzbrunnen,11
+2018,18,2016,2016,0.0654724892,Arbeitslosenquote,Arbeitslosenquote,16,Rosental,20
+2018,18,2016,2016,0.0555946177,Arbeitslosenquote,Arbeitslosenquote,17,Matthäus,18
+2018,18,2016,2016,0.0719648949,Arbeitslosenquote,Arbeitslosenquote,18,Klybeck,21
+2018,18,2016,2016,0.0631074121,Arbeitslosenquote,Arbeitslosenquote,19,Kleinhüningen,19
+2018,18,2016,2016,0.0193855888,Arbeitslosenquote,Arbeitslosenquote,20,Riehen,1
+2018,18,2016,2016,0.0193855888,Arbeitslosenquote,Arbeitslosenquote,30,Bettingen,1
