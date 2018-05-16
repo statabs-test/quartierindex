@@ -30,8 +30,8 @@ const getColor = (lineRank: LineRank[], district: District): string => {
 };
 
 const getParentWidth = (): number => {
-  const parent = document.getElementById('scroll-area');
-  console.log(parent);
+  // const parent = document.getElementById('scroll-area');
+  // console.log(parent);
   // If one could get the width of the parent div the plot are
   // could be resized reponsively
 

@@ -43,7 +43,7 @@ export const styles = (theme: Theme) => ({
 
 const IndicatorSelectionGroup: React.SFC<Props & ClassNames> = (props) => {
   const {classes, value, groupName, select, deselect} = props;
-  console.log(classes);
+  // console.log(classes);
   return (
     <Grid item xs={4}>
         <h3>{groupName}</h3>

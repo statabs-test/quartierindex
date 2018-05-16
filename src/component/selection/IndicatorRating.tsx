@@ -38,7 +38,6 @@ export const styles = (theme: Theme) => ({
 
 const IndicatorRating: React.SFC<Props & ClassNames> = (props) => {
   const {classes, selectedIndicators} = props;
-  console.log(classes);
   return (
       <div className="floating-container">
         <Grid item xs={12}>

@@ -5,8 +5,6 @@ import { compose } from 'redux';
 import { Rootstate } from '../../state/index';
 import { getGroupedIndicators, getSelectedIndicators } from '../../state/indicator/selectors';
 import { Indicator } from '../../state/indicator/types';
-import { getUtil } from '../../state/util/selectors';
-import { Util } from '../../state/util/types';
 import Grid from 'material-ui/Grid';
 import { Theme, WithStyles, withStyles } from 'material-ui/styles';
 import IndicatorSelectionGroup from './IndicatorSelectionGroup';
@@ -15,7 +13,6 @@ import NavButton from '../customElements/NavButton';
 export interface Props {
   groupedIndicators: { [key: string]: Indicator[] }
   valid: boolean
-  util: Util
 }
 
 type ClassNames = WithStyles<'root' | 'title' | 'nav_button'>
@@ -42,17 +39,12 @@ export const styles = (theme: Theme) => ({
   } as React.CSSProperties,
 });
 
-// const isVisible = (util: Util): any => ({
-//   'visibility': util.selectIndicatorConf.visible ? 'visible' : 'hidden'
-// });
-
 const IndicatorSelection: React.SFC<Props & ClassNames> = (props) => {
-  const {classes, groupedIndicators, util, valid} = props;
+  const {classes, groupedIndicators, valid} = props;
   return (
       <div className="floating-container">
         <Grid item xs={12}>
           <div>
-            {console.log(util)}
             <h2 className={classes.title}>
               Schritt 1: Wählen Sie mindestens einen Indikator für die Index Berechnung aus
             </h2>
@@ -78,7 +70,6 @@ const IndicatorSelection: React.SFC<Props & ClassNames> = (props) => {
 const mapStateToProps = (state: Rootstate) => ({
   groupedIndicators: getGroupedIndicators(state),
   valid: getSelectedIndicators(state).length > 0,
-  util: getUtil(state)
 });
 
 const mapDispatchToProps = ({
