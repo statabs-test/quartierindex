@@ -7,9 +7,8 @@ import { Indicator } from '../../state/indicator/types';
 import { toggleIndicatorSelectionVisibility } from '../../state/util/actions';
 import Grid from 'material-ui/Grid';
 import { Theme, WithStyles, withStyles } from 'material-ui/styles';
-import Button from 'material-ui/Button';
-import { Link } from 'react-router-dom';
 import IndicatorRatingLine from './IndicatorRatingLine';
+import NavButton from '../customElements/NavButton';
 
 export interface Props {
   selectedIndicators: Indicator[]
@@ -54,14 +53,10 @@ const IndicatorRating: React.SFC<Props & ClassNames> = (props) => {
           </Grid>
           <Grid container justify="space-between">
             <Grid item xs={1}>
-              <Link to={'/'}>
-                <Button variant="raised">Zurück</Button>
-              </Link>
+              <NavButton variant="raised" to={'/'}>Zurück</NavButton>
             </Grid>
             <Grid item xs={1}>
-              <Link to={'/importance'}>
-                <Button variant="raised">Weiter</Button>
-              </Link>
+              <NavButton variant="raised" to={'/importance'}>Weiter</NavButton>
             </Grid>
           </Grid>
         </Grid>

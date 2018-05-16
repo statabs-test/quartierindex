@@ -6,8 +6,7 @@ import { getSelectedIndicators } from '../../state/indicator/selectors';
 import { Indicator } from '../../state/indicator/types';
 import Grid from 'material-ui/Grid';
 import { Theme, WithStyles, withStyles } from 'material-ui/styles';
-import Button from 'material-ui/Button';
-import { Link } from 'react-router-dom';
+import NavButton from '../customElements/NavButton';
 import IndicatorImportanceLine from './IndicatorImportanceLine';
 
 export interface Props {
@@ -66,14 +65,10 @@ const IndicatorImportance: React.SFC<Props & ClassNames> = (props) => {
           </Grid>
           <Grid container justify="space-between">
             <Grid item xs={1}>
-              <Link to={'/ranking'}>
-                <Button variant="raised">Zurück</Button>
-              </Link>
+              <NavButton variant="raised" to={'/ranking'}>Zurück</NavButton>
             </Grid>
             <Grid item xs={1}>
-              <Link to={'/plot'}>
-                <Button variant="raised">Weiter</Button>
-              </Link>
+              <NavButton variant="raised" to={'plot'}>Weiter</NavButton>
             </Grid>
           </Grid>
         </Grid>

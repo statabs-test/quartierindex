@@ -6,8 +6,7 @@ import Legend from './legend/Legend';
 import ChartContainer from './ChartContainer';
 import { Indicator } from '../../state/indicator/types';
 import { toggleIndicatorSelectionVisibility } from '../../state/util/actions';
-import Button from 'material-ui/Button';
-import { Link } from 'react-router-dom';
+import NavButton from '../customElements/NavButton';
 
 export interface Props {
   selectedIndicators: Indicator[]
@@ -21,15 +20,9 @@ function ParallelLinePlot({selectedIndicators, toggleVisibility}: Props) {
         <h1 className="title">Some title</h1>
 
         <div>
-          <Link to={'/'}>
-            <Button variant="raised">Schritt 1</Button>
-          </Link>
-          <Link to={'/ranking'}>
-            <Button variant="raised">Schritt 2</Button>
-          </Link>
-          <Link to={'/importance'}>
-            <Button variant="raised">Schritt 1</Button>
-          </Link>
+          <NavButton variant="raised" to={'/'}>Schritt 1</NavButton>
+          <NavButton variant="raised" to={'ranking'}>Schritt 2</NavButton>
+          <NavButton variant="raised" to={'/importance'}>Schritt 3</NavButton>
         </div>
 {/*        <Button
             className="add-indicator"
