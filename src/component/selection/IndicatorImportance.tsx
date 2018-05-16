@@ -49,11 +49,11 @@ const IndicatorImportance: React.SFC<Props & ClassNames> = (props) => {
             Folgende Gewichts-Einstellungen sind beim Quartier-Index mögllich:<br/>
           </p>
           <p>
-            positiv: ser unwichtig = Gewicht von 0.25, eher unwichtig = Gewicht von 0.5, eher
+            positiv: sehr unwichtig = Gewicht von 0.25, eher unwichtig = Gewicht von 0.5, eher
             wichtig = Gewicht von 0.75,
             sehr wichtig = Gewicht von 1.0<br/>
 
-            negativ: ser unwichtig = Gewicht von -0.25, eher unwichtig = Gewicht von -0.5, eher
+            negativ: sehr unwichtig = Gewicht von -0.25, eher unwichtig = Gewicht von -0.5, eher
             wichtig = Gewicht von -0.75,
             sehr wichtig = Gewicht von -1.0
           </p>
