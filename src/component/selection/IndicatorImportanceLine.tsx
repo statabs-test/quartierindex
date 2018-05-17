@@ -9,6 +9,8 @@ import { Theme, WithStyles } from 'material-ui/styles';
 import { withStyles } from 'material-ui/styles';
 import green from 'material-ui/colors/green';
 import Radio from 'material-ui/Radio';
+import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
+import RadioButtonCheckedIcon from '@material-ui/icons/RadioButtonChecked';
 import { setWeight } from '../../state/indicator/actions';
 import { labels } from '../../helpers';
 import FormLabel from 'material-ui/Form/FormLabel';
@@ -19,14 +21,16 @@ export interface Props {
   setIndicatorWeight(id: string, weight: WeightNumber): void
 }
 
-type ClassNames = WithStyles<'root' | 'title' | 'leftIcon' | 'textCentered' >
+type ClassNames = WithStyles<'root' | 'title' | 'leftIcon' | 'textCentered' | 'sizeIcon'>
 
 export const styles = (theme: Theme) => ({
   root: {
     color: green[600],
+    width: 30,
     '&$checked': {
       color: green[500],
     },
+
   } as React.CSSProperties,
   title: {
     padding: theme.spacing.unit * 2,
@@ -39,6 +43,9 @@ export const styles = (theme: Theme) => ({
   } as React.CSSProperties,
   textCentered: {
     display: 'inline-block'
+  } as React.CSSProperties,
+  sizeIcon: {
+    fontSize: 20,
   } as React.CSSProperties,
 });
 
@@ -63,6 +70,8 @@ const IndicatorImportanceLine: React.SFC<Props & ClassNames> = (props) => {
               value={weight.toString()}
               name={weight.toString()}
               classes={{ root: classes.root }}
+              icon={<RadioButtonUncheckedIcon className={classes.sizeIcon} />}
+              checkedIcon={<RadioButtonCheckedIcon className={classes.sizeIcon} />}
             />
             <FormLabel htmlFor={indicator.id + weight.toString()} >
               {labels[idx]}

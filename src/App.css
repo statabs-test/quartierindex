@@ -4,7 +4,15 @@
 }
 
 * {
+  font-size:12px;
+  font-weight:normal;
+  font-family:Arial;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+h1, h2 {
+  font-size:14px;
+  font-weight:bold;
 }
 
 /*Grid setup*/
@@ -260,14 +268,17 @@
 ------------------------------------------------*/
 .negative-selected {
   background-color: #e54803 !important;
+  height: 20px;
 }
 
 .negative-unselected {
   background-color: #E6D3CB !important;
+  height: 20px;
 }
 
 .negative-unselected:hover {
   background-color: #e54803 !important;
+  height: 20px;
 }
 
 .negative-border {
@@ -276,10 +287,12 @@
 
 .negative {
   background: #e54803 !important;
+  height: 20px;
 }
 
 .positive {
   background: #0387c1 !important;
+  height: 20px;
 }
 
 .positive-border {
@@ -288,10 +301,12 @@
 
 .positive-selected {
   background-color: #0387c1 !important;
+  height: 20px;
 }
 
 .positive-unselected {
   background-color: #9AB6C3 !important;
+  height: 20px;
 }
 
 .positive-unselected:hover {
