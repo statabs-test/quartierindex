@@ -3,7 +3,10 @@ import { Indicator, NegativePositive, WeightNumber } from '../state/indicator/ty
 import { District } from '../state/district/types';
 
 export const getRankingColor = (rank: LineRank): string => {
-  if (rank.highlighted || rank.hover) {
+
+  if (rank.highlighted && rank.hover) {
+    return '#4d00ff';
+  } else if (rank.highlighted || rank.hover) {
     return 'black';
   } else {
     return 'rgb(160, 160, 160)';
