@@ -22,10 +22,26 @@ export interface HideDistrict {
     id: string
     highlight: boolean
   }
+}
+
+  export interface OnHover {
+  type: constants.DISTRICT_ON_HOVER
+  payload: {
+    id: string
+    hover: boolean
+  }
 
 }
 
-export type DistrictAction = (DoSomehtingWithDistrict | HighlightDistrict | HideDistrict);
+export interface OffHover {
+  type: constants.DISTRICT_OFF_HOVER
+  payload: {
+    id: string
+    hover: boolean
+  }
+}
+
+export type DistrictAction = (DoSomehtingWithDistrict | HighlightDistrict | HideDistrict | OnHover | OffHover );
 // type with all interfaces, more with ||
 
 /**
@@ -49,5 +65,25 @@ export const _hideDistrict = (id: string)
       payload: {
         id: id,
         highlight: false
+      }
+    });
+
+export const _onHover = (id: string)
+    : OnHover =>
+    ({
+      type: constants.DISTRICT_ON_HOVER,
+      payload: {
+        id: id,
+        hover: true
+      }
+    });
+
+export const _offHover = (id: string)
+    : OffHover =>
+    ({
+      type: constants.DISTRICT_OFF_HOVER,
+      payload: {
+        id: id,
+        hover: false
       }
     });
