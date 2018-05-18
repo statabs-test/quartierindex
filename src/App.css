@@ -21,7 +21,7 @@ h1, h2 {
   --plot-width: 750px;
   --app-height: 600px;
   --app-width: 951px;
-  --add-indicator-height: 40px;
+
   --app-header-height: 50px;
   --ranking-width: 201px;
   --legend-container-height: 120px;
@@ -59,7 +59,7 @@ h1, h2 {
   grid-area: ranking;
 
   grid-template-columns: auto;
-  grid-template-rows: calc( var(--add-indicator-height) + var(--legend-container-height)) auto;
+  grid-template-rows: calc( var(--legend-container-height)) auto;
   grid-template-areas:
       "title"
       "ranking";
@@ -237,7 +237,7 @@ h1, h2 {
 }
 
 .selection-container {
-  --margin: calc(var(--app-header-height) + var(--add-indicator-height) + var(--title-height));
+  --margin: calc(var(--app-header-height) );
   --height: calc(var(--app-height) - var(--margin));
   --width: calc(var(--app-width) - var(--ranking-width));
 
