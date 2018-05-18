@@ -18,8 +18,6 @@ function ParallelLinePlot({selectedIndicators, toggleVisibility}: Props) {
   const disabled = !(selectedIndicators.length > 0);
   return (
       <div className="parallel-line-plot-container">
-        <h1 className="title">Rangliste</h1>
-
         <div>
           <NavButton variant="raised" to={'/'}>Auswahl</NavButton>
           <NavButton disabled={disabled} variant="raised" to={'ranking'}>Bewertung</NavButton>

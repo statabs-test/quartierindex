@@ -19,9 +19,8 @@ h1, h2 {
 /*MAIN GRID*/
 .App {
   --plot-width: 750px;
-  --app-height: 830px;
+  --app-height: auto;
   --app-width: 951px;
-  --title-height: 40px;
   --add-indicator-height: 40px;
   --app-header-height: 30px;
   --ranking-width: 201px;
@@ -32,9 +31,8 @@ h1, h2 {
   /*  background: aquamarine;*/
 
   grid-template-columns: var(--ranking-width) var(--plot-width);
-  grid-template-rows: var(--app-header-height) calc(var(--app-height) - var(--app-header-height));
+
   grid-template-areas:
-      "header header"
       "ranking parallel-line-plot";
 }
 
@@ -56,7 +54,7 @@ h1, h2 {
   grid-area: ranking;
 
   grid-template-columns: auto;
-  grid-template-rows: calc( var(--title-height) + var(--add-indicator-height) + var(--legend-container-height)) auto;
+  grid-template-rows: calc( var(--add-indicator-height) + var(--legend-container-height)) auto;
   grid-template-areas:
       "title"
       "ranking";
@@ -85,9 +83,8 @@ h1, h2 {
   position: relative;
 
   grid-template-columns: auto;
-  grid-template-rows: var(--title-height) var(--add-indicator-height) auto;
+  grid-template-rows: var(--add-indicator-height) auto;
   grid-template-areas:
-      "title"
       "add-ind"
       "scroll-area";
 
