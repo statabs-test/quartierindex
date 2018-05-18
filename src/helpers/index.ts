@@ -4,9 +4,7 @@ import { District } from '../state/district/types';
 
 export const getRankingColor = (rank: LineRank): string => {
   if (rank.highlighted || rank.hover) {
-    return 'hsl(' + rank.color.h.toString() + ', '
-        + rank.color.s.toString() + '%,'
-        + rank.color.v.toString() + '%)';
+    return 'black';
   } else {
     return 'rgb(160, 160, 160)';
   }
