@@ -14,7 +14,6 @@ import 'rc-slider/assets/index.css';
 import Slider from 'rc-slider';
 import { SentimentDissatisfied, SentimentSatisfied } from '@material-ui/icons';
 import {
-  getClassNameNegPos,
   getClassNameNegPosBorder,
   getClassNameSelectedUnselected, getLabelBy
 } from '../../../helpers';
@@ -48,7 +47,7 @@ const LegendItem = ({
           className={'legend-container' + getClassNameNegPosBorder(indicator)}
           style={style}
       >
-        <div className={'legend-name' + getClassNameNegPos(indicator)}> {indicator.name}</div>
+        <div className={'legend-name'}> {indicator.name}</div>
 
         <div
             className="rate-positive"
@@ -86,7 +85,7 @@ const LegendItem = ({
         </div>
 
         <Cancel
-            className={'remove' + getClassNameNegPos(indicator)}
+            className={'remove'}
 
             onClick={() => deselect(indicator.id)}
         />

@@ -24,7 +24,7 @@ h1, h2 {
   --add-indicator-height: 40px;
   --app-header-height: 50px;
   --ranking-width: 201px;
-  --legend-container-height: 95px;
+  --legend-container-height: 120px;
 
   display: grid;
   width: var(--app-width);
@@ -88,9 +88,8 @@ h1, h2 {
   position: relative;
 
   grid-template-columns: auto;
-  grid-template-rows: var(--add-indicator-height) auto;
+  grid-template-rows:  auto;
   grid-template-areas:
-      "add-ind"
       "scroll-area";
 
   height: 100%;
@@ -151,7 +150,7 @@ h1, h2 {
   display: grid;
 
   grid-template-columns: 15% auto 10%;
-  grid-template-rows: 24px auto auto;
+  grid-template-rows: 35px auto auto;
   grid-template-areas:
       "name     name      remove"
       "positiv  weighting weighting"
