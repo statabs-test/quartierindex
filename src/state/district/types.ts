@@ -11,6 +11,6 @@ export interface DistrictState {
 }
 
 export interface ViewOptions {
-  readonly isSelected: boolean
-
+  readonly highlight: boolean
+  readonly hover: boolean
 }

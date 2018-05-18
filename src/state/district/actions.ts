@@ -11,7 +11,7 @@ export interface HighlightDistrict {
   type: constants.DISTRICT_HIGHLIGHT
   payload: {
     id: string
-    selection: boolean
+    highlight: boolean
   }
 
 }
@@ -20,7 +20,7 @@ export interface HideDistrict {
   type: constants.DISTRICT_HIDE
   payload: {
     id: string
-    selection: boolean
+    highlight: boolean
   }
 
 }
@@ -38,7 +38,7 @@ export const _highlightDistrict = (id: string)
       type: constants.DISTRICT_HIGHLIGHT,
       payload: {
         id: id,
-        selection: true
+          highlight: true
       }
     });
 
@@ -48,6 +48,6 @@ export const _hideDistrict = (id: string)
       type: constants.DISTRICT_HIDE,
       payload: {
         id: id,
-        selection: false
+        highlight: false
       }
     });

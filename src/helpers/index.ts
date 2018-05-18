@@ -67,5 +67,5 @@ export const getLabelBy = (weight: WeightNumber): string => {
 
 export const anyUserSelection = (districts: District[]): boolean =>
     districts
-    .map(d => d.viewOptions.isSelected)
+    .map(d => d.viewOptions.highlight)
     .reduce((a, b) => a || b);

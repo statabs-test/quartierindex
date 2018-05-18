@@ -22,7 +22,7 @@ export interface Props {
 
 const getColor = (lineRank: LineRank[], district: District): string => {
   const r = lineRank.find(rank => rank.objectId === district.id);
-  if (district.viewOptions.isSelected && r) {
+  if (district.viewOptions.highlight && r) {
     return getRankingColor(r);
   } else {
     return '#A0A0A0'

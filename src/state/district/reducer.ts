@@ -27,7 +27,8 @@ export function district(
           [action.payload.id]: {
             ...state.byId[action.payload.id],
             viewOptions: {
-              isSelected: action.payload.selection
+              highlight: action.payload.highlight,
+              hover: state.byId[action.payload.id].viewOptions.hover
             }
           }
         }
@@ -41,8 +42,9 @@ export function district(
           [action.payload.id]: {
             ...state.byId[action.payload.id],
             viewOptions: {
-              isSelected: action.payload.selection
-          }
+              highlight: action.payload.highlight,
+              hover: state.byId[action.payload.id].viewOptions.hover
+            }
           }
         }
 
