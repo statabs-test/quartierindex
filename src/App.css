@@ -22,7 +22,7 @@ h1, h2 {
   --app-height: auto;
   --app-width: 951px;
   --add-indicator-height: 40px;
-  --app-header-height: 30px;
+  --app-header-height: 50px;
   --ranking-width: 201px;
   --legend-container-height: 95px;
 
@@ -30,21 +30,23 @@ h1, h2 {
   width: var(--app-width);
   /*  background: aquamarine;*/
 
+  grid-template-rows: var(--app-header-height);
   grid-template-columns: var(--ranking-width) var(--plot-width);
 
   grid-template-areas:
+      "header header"
       "ranking parallel-line-plot";
 }
 
 /*HEADER
 ----------------------------------------------*/
 
-.App-header {
+.App-navigation {
   grid-area: header;
   font-size: 1.5em;
   margin: 0;
   text-align: center;
-  /*  background-color: #1208081f;*/
+  background-color: #1208081f;
 }
 
 /*RANKING MAIN CONTAINER
