@@ -27,7 +27,7 @@ const LineRankItem: React.StatelessComponent<Props> =
           <g
               onClick={() => onClick()}
               onMouseEnter={() => onMouseEnter()}
-           //   onMouseLeave={() => onMouseLeave()}
+              onMouseLeave={() => onMouseLeave()}
           >
 
             <circle

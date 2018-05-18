@@ -31,5 +31,6 @@ export interface LineRank {
   labelText: string;
   color: Color;
   highlighted: boolean;
+  hover: boolean;
 
 }

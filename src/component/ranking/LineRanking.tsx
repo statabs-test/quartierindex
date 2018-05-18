@@ -4,17 +4,23 @@ import LineRankItem from './LineRankItem';
 import { Rootstate } from '../../state';
 import { connect } from 'react-redux';
 import { getLineRanking } from '../../state/observation/selectors';
-import { _hideDistrict, _highlightDistrict } from '../../state/district/actions';
+import {
+  _hideDistrict,
+  _highlightDistrict,
+  _offHover,
+  _onHover
+} from '../../state/district/actions';
 
 export interface Props {
   ranking: LineRank[];
 
   highlightDistrict(id: string): void
-
   hideDistrict(id: string): void
+  onHover(id: string): void
+  offHover(id: string): void
 }
 
-const LineRanking = ({ranking, highlightDistrict, hideDistrict}: Props) => {
+const LineRanking = ({ranking, highlightDistrict, hideDistrict, offHover, onHover}: Props) => {
   return (
       <svg className="line-ranking" overflow="visible">
         <line x1="10%" y1={0} x2="10%" y2="100%" stroke="grey" strokeWidth="2"/>
@@ -76,11 +82,11 @@ const LineRanking = ({ranking, highlightDistrict, hideDistrict}: Props) => {
                   rank={rank}
                   rankIndex={index}
                   onClick={() =>
-                      rank.highlighted ?
+                      (rank.highlighted) ?
                           hideDistrict(rank.objectId)
                           : highlightDistrict(rank.objectId)}
-                  onMouseEnter={() => highlightDistrict(rank.objectId)}
-                  onMouseLeave={() => hideDistrict(rank.objectId)}
+                  onMouseEnter={() => onHover(rank.objectId)}
+                  onMouseLeave={() => offHover(rank.objectId)}
               />
           ))}
       </svg>
@@ -93,7 +99,9 @@ const mapStateToProps = (state: Rootstate) => ({
 
 const mapDispatchToProps = ({
   highlightDistrict: _highlightDistrict,
-  hideDistrict: _hideDistrict
+  hideDistrict: _hideDistrict,
+  onHover: _onHover,
+  offHover: _offHover
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(LineRanking);
