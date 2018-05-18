@@ -19,7 +19,7 @@ h1, h2 {
 /*MAIN GRID*/
 .App {
   --plot-width: 750px;
-  --app-height: auto;
+  --app-height: 600px;
   --app-width: 951px;
   --add-indicator-height: 40px;
   --app-header-height: 50px;
@@ -28,6 +28,9 @@ h1, h2 {
 
   display: grid;
   width: var(--app-width);
+  height: var(--height);
+
+
   /*  background: aquamarine;*/
 
   grid-template-rows: var(--app-header-height);
@@ -230,7 +233,6 @@ h1, h2 {
   width: calc(var(--app-width) - var(--app-header-height));
   height: var(--app-height);
   background: #e0e0e094;
-  margin-top: var(--app-header-height);
   border-radius: 50px 20px;
   /*  background: #8080809c;*/
 }
