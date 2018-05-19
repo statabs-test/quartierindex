@@ -233,6 +233,8 @@ h1, h2 {
   height: var(--app-height);
   background: #e0e0e094;
   border-radius: 50px 20px;
+  overflow: hidden;
+  overflow-y: scroll;
   /*  background: #8080809c;*/
 }
 
@@ -312,5 +314,3 @@ h1, h2 {
 .positive-unselected:hover {
   background-color: #0387c1 !important;
 }
-
-

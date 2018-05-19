@@ -29,6 +29,13 @@ const getColor = (lineRank: LineRank[], district: District): string => {
   }
 };
 
+const getLineStroke = (district: District): number => {
+  if ((district.viewOptions.highlight || district.viewOptions.hover)) {
+    return 2;
+  };
+  return 1
+};
+
 const getParentWidth = (): number => {
   // const parent = document.getElementById('scroll-area');
   // console.log(parent);
@@ -69,6 +76,7 @@ const ChartContainer = ({districts, rankingData, lineRanking, selectedIndicators
                         type="monotone"
                         dataKey={d.name}
                         stroke={getColor(lineRanking, d)}
+                        strokeWidth={getLineStroke(d)}
                         activeDot={{r: 18}}
                         onClick={() => highlightDistrict(d.id)}
                     />
