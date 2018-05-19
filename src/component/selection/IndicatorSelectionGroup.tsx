@@ -34,7 +34,7 @@ export const styles = (theme: Theme) => ({
     width: 40,
     height: 30,
     '&$checked': {
-      color: '#1d4e2c'[500],
+      color: '#1d4e2c',
     }
   } as React.CSSProperties,
   checked: {

@@ -7,7 +7,6 @@ import { Indicator, WeightNumber } from '../../state/indicator/types';
 import Grid from 'material-ui/Grid';
 import { Theme, WithStyles } from 'material-ui/styles';
 import { withStyles } from 'material-ui/styles';
-import green from 'material-ui/colors/green';
 import Radio from 'material-ui/Radio';
 import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
 import RadioButtonCheckedIcon from '@material-ui/icons/RadioButtonChecked';
@@ -21,16 +20,21 @@ export interface Props {
   setIndicatorWeight(id: string, weight: WeightNumber): void
 }
 
-type ClassNames = WithStyles<'root' | 'title' | 'leftIcon' | 'textCentered' | 'sizeIcon'>
+type ClassNames = WithStyles<'root' | 'title' | 'leftIcon' | 'textCentered' | 'sizeIcon' | 'checked'>
 
 export const styles = (theme: Theme) => ({
   root: {
-    color: green[600],
+    color: '#1d4e2c',
     width: 30,
     '&$checked': {
-      color: green[500],
+      color: '#1d4e2c',
     },
-
+  } as React.CSSProperties,
+  checked: {
+    color: '#1d4e2c',
+    '&$checked': {
+      color: '#1d4e2c',
+    },
   } as React.CSSProperties,
   title: {
     padding: theme.spacing.unit * 2,
@@ -66,10 +70,13 @@ const IndicatorImportanceLine: React.SFC<Props & ClassNames> = (props) => {
             <Radio
               id={indicator.id + weight.toString()}
               checked={indicator.weight === weight}
+              className={classes.root}
               onChange={(value) => setIndicatorWeight(indicator.id, weight)}
               value={weight.toString()}
               name={weight.toString()}
-              classes={{ root: classes.root }}
+              classes={{ 
+                root: classes.root,
+                checked: classes.checked }}
               icon={<RadioButtonUncheckedIcon className={classes.sizeIcon} />}
               checkedIcon={<RadioButtonCheckedIcon className={classes.sizeIcon} />}
             />
