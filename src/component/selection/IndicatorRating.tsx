@@ -9,6 +9,7 @@ import Grid from 'material-ui/Grid';
 import { Theme, WithStyles, withStyles } from 'material-ui/styles';
 import IndicatorRatingLine from './IndicatorRatingLine';
 import NavButton from '../customElements/NavButton';
+import { Redirect } from 'react-router';
 
 export interface Props {
   selectedIndicators: Indicator[]
@@ -37,6 +38,9 @@ export const styles = (theme: Theme) => ({
 
 const IndicatorRating: React.SFC<Props & ClassNames> = (props) => {
   const {classes, selectedIndicators} = props;
+  if (selectedIndicators.length === 0) {
+    return <Redirect to="/"/>
+  }
   return (
       <div className="floating-container">
         <Grid item xs={12}>

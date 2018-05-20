@@ -24,7 +24,7 @@ h1, h2 {
 
   --app-header-height: 50px;
   --ranking-width: 201px;
-  --legend-container-height: 120px;
+  --legend-container-height: 110px;
 
   display: grid;
   width: var(--app-width);
@@ -80,7 +80,7 @@ h1, h2 {
 .line-ranking {
   grid-area: ranking;
   /* background: blue;*/
-  height: 96%;
+  height: 98.5%;
   width: 100%;
   margin-top: 10px;
   background: white;
@@ -239,7 +239,7 @@ h1, h2 {
   width: calc(var(--app-width) - var(--app-header-height));
   height: var(--app-height);
 /*  background: #e0e0e094;*/
-  padding: 5%;
+  padding: 0 5% 0 5%;
 }
 
 .selection-container {

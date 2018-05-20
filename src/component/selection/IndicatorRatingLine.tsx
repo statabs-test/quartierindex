@@ -60,7 +60,7 @@ const IndicatorRatingLine: React.SFC<Props & ClassNames> = (props) => {
               className={classes.positiveButton + getClassNameSelectedUnselected(indicator, 'positive')}
               onClick={() => positiveValuation(indicator.id)}
           >
-            <Icon>sentiment_satisfied</Icon>
+            <Icon>mood</Icon>
             positiv
           </Button>
           <Button
@@ -69,7 +69,7 @@ const IndicatorRatingLine: React.SFC<Props & ClassNames> = (props) => {
               component="span"
               onClick={() => negativeValuation(indicator.id)}
           >
-            <Icon>sentiment_dissatisfied</Icon>
+            <Icon>mood_bad</Icon>
             negativ
           </Button>
         </Grid>
