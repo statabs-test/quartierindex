@@ -1,19 +1,20 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { Rootstate } from '../../state';
-import { selectedIndicators } from '../../state/indicator/selectors';
-import { Indicator } from '../../state/indicator/types';
+import { getSelectedIndicators } from '../../state/indicator/selectors';
+import { Indicator, WeightNumber } from '../../state/indicator/types';
 import {
-  selectIndicator, deselectIndicator,
+  SetPositiveValuation, SetNegativeValuation, setWeight,
 } from '../../state/indicator/actions';
 
 export interface Props {
-    indicators: Indicator[],
-  select(id: string): void
-  deselect(id: string): void
+  indicators: Indicator[],
+  positiveValuation(id: string): void
+  negativeValuation(id: string): void
+  setIndicatorWeight(id: string, weight: WeightNumber): void
 }
 
-function TestSelectedIndicators({ indicators, select, deselect }: Props) {
+function TestSelectedIndicators({ indicators, positiveValuation, negativeValuation, setIndicatorWeight }: Props) {
     return (
       <div>
         <h1>Selektierte Indikatoren</h1>
@@ -22,13 +23,23 @@ function TestSelectedIndicators({ indicators, select, deselect }: Props) {
                 indicators.map(indicator => {
                     return (
                       <p key={indicator.id}>
-                        {indicator.id} {indicator.name}
-                        (selected: {indicator.selected ? 'true' : 'false'},
-                          weight: {indicator.weight} )
-                        { indicator.selected ?
-                          (<button onClick={() => deselect(indicator.id)}>DeSelect</button>) :
-                          (<button onClick={() => select(indicator.id)}>Select</button>)
-                        }
+                        {indicator.id} {indicator.name} ({indicator.valuation})
+                        <button onClick={() => positiveValuation(indicator.id)}>Positiv</button>
+                        <button onClick={() => negativeValuation(indicator.id)}>Negativ</button>
+                        Gewicht:
+                        <button onClick={() => setIndicatorWeight(indicator.id, WeightNumber.ONE)}>
+                          {indicator.weight === WeightNumber.ONE ? <b>ONE</b> : <span>ONE</span>}
+                        </button>
+
+                        <button onClick={() => setIndicatorWeight(indicator.id, WeightNumber.TWO)}>
+                          {indicator.weight === WeightNumber.TWO ? <b>TWO</b> : <span>TWO</span>}
+                        </button>
+                        <button onClick={() => setIndicatorWeight(indicator.id, WeightNumber.THREE)}>
+                          {indicator.weight === WeightNumber.THREE ? <b>THREE</b> : <span>THREE</span>}
+                        </button>
+                        <button onClick={() => setIndicatorWeight(indicator.id, WeightNumber.FOUR)}>
+                          {indicator.weight === WeightNumber.FOUR ? <b>FOUR</b> : <span>FOUR</span>}
+                        </button>
                       </p>
                     );
                 })
@@ -38,12 +49,13 @@ function TestSelectedIndicators({ indicators, select, deselect }: Props) {
 }
 
 const mapStateToProps = (state: Rootstate) => ({
-    indicators: selectedIndicators(state)
+    indicators: getSelectedIndicators(state)
 });
 
 const mapDispatchToProps = ({
-  select: selectIndicator,
-  deselect: deselectIndicator
+  positiveValuation: SetPositiveValuation,
+  negativeValuation: SetNegativeValuation,
+  setIndicatorWeight: setWeight,
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(TestSelectedIndicators);

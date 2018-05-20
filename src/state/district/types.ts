@@ -1,10 +1,16 @@
 export interface District {
-    id: string
-    name: string
+  readonly id: string
+  readonly name: string
+  readonly viewOptions: ViewOptions
 }
 
 export interface DistrictState {
-    byId: {
-        [key: string]: District
-    }
+  readonly byId: {
+    readonly [key: string]: District
+  }
+}
+
+export interface ViewOptions {
+  readonly highlight: boolean
+  readonly hover: boolean
 }

@@ -1,28 +1,320 @@
+.just-for-dev {
+  position: absolute;
+  right: 0;
+}
+
+* {
+  font-size:12px;
+  font-weight:normal;
+  font-family:Arial;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+h1, h2 {
+  font-size:14px;
+  font-weight:bold;
+}
+
+/*Grid setup*/
+/*MAIN GRID*/
 .App {
-  text-align: center;
+  --plot-width: 750px;
+  --app-height: 600px;
+  --app-width: 951px;
+
+  --app-header-height: 50px;
+  --ranking-width: 201px;
+  --legend-container-height: 110px;
+
+  display: grid;
+  width: var(--app-width);
+  height: var(--height);
+
+
+  /*  background: aquamarine;*/
+
+  grid-template-rows: var(--app-header-height);
+  grid-template-columns: var(--ranking-width) var(--plot-width);
+
+  grid-template-areas:
+      "header header"
+      "ranking parallel-line-plot";
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
+/*HEADER
+----------------------------------------------*/
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
+.App-navigation {
+  grid-area: header;
   font-size: 1.5em;
+  margin: 0;
+  text-align: center;
+/*  background-color: #1208081f;*/
+  display: flex;
+  height: 80%;
+}
+.nav-button {
+  display: flex !important;
+  width: 100%;
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+}
+/*RANKING MAIN CONTAINER
+-----------------------------------------------*/
+.ranking-container {
+  display: grid;
+  grid-area: ranking;
+
+  grid-template-columns: auto;
+  grid-template-rows: calc( var(--legend-container-height)) auto;
+  grid-template-areas:
+      "title"
+      "ranking";
+  overflow: visible;
+
+  height: 100%;
+  width: 162%;
+  /*  background: aliceblue;*/
 }
 
-.App-intro {
-  font-size: large;
+.line-ranking {
+  grid-area: ranking;
+  /* background: blue;*/
+  height: 98.5%;
+  width: 100%;
+  margin-top: 10px;
+  background: white;
+  z-index: 2;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/*PARALLEL LINE PLOT MAIN CONTAINER
+------------------------------------------------*/
+.parallel-line-plot-container {
+  display: grid;
+  grid-area: parallel-line-plot;
+  position: relative;
+
+  grid-template-columns: auto;
+  grid-template-rows:  auto;
+  grid-template-areas:
+      "scroll-area";
+
+  height: 100%;
+  width: 100%;
+  /*  background: blanchedalmond;*/
+}
+
+.add-indicator {
+  display: grid;
+  grid-area: add-ind;
+  text-align: center;
+  align-items: center;
+  /*  background: #eded00;*/
+}
+
+.parallel-line-plot-scroll-area {
+  --number-of-elements: 3;
+  --line-plot-margin-left: calc(var(--plot-width) / 2 / var(--number-of-elements));
+
+  display: grid;
+  grid-area: scroll-area;
+
+  grid-template-columns: auto;
+  grid-template-rows: var(--legend-container-height) auto;
+  grid-template-areas:
+      "legend"
+      "chart";
+
+  height: 100%;
+  width: calc(750px - var(--legend-container-width));
+  overflow-x: scroll;
+  overflow-y: hidden;
+  /*  background: green;*/
+}
+
+.parallel-line-plot-legend {
+  display: grid;
+  grid-area: legend;
+  /*  background: blanchedalmond;*/
+  align-items: center;
+  position: relative;
+}
+
+.parallel-line-plot-chart {
+  display: grid;
+  grid-area: chart;
+
+  margin-left: var(--line-plot-margin-left);
+  margin-top: 5px;
+  /*  background: cornflowerblue;*/
+
+}
+
+.legend-container {
+  --legend-margin: 5px;
+  --legend-container-width: calc(var(--line-plot-margin-left) * 2 - 2 * var(--legend-margin));
+  width: var(--legend-container-width);
+  display: grid;
+
+  grid-template-columns: 15% auto 10%;
+  grid-template-rows: 35px auto auto;
+  grid-template-areas:
+      "name     name      remove"
+      "positiv  weighting weighting"
+      "negativ  weighting weighting";
+
+  height: 95%;
+  position: absolute;
+  left: 0;
+
+  border-radius: 12px;
+  text-align: center;
+  border: solid #e0e0e0;
+
+  /*  background: #cc8dab;*/
+}
+
+.legend-name {
+  display: grid;
+  grid-area: name;
+  text-align: left;
+  border-top-left-radius: 4px;
+  padding-left: 10px;
+  /*  background: cornflowerblue;*/
+}
+
+.rate-positive {
+  display: grid;
+  grid-area: positiv;
+  align-items: center;
+  /*  background: #0044ed;*/
+}
+
+.rate-negativ {
+  display: grid;
+  grid-area: negativ;
+  align-items: center;
+
+  /*  background: #eded00;*/
+}
+
+.rating-icon {
+  border-radius: 0 12px 12px 0;
+  width: 100% !important;
+
+}
+
+.weight {
+  position: relative;
+  display: grid;
+  grid-area: weighting;
+  width: 70%;
+  padding-left: 15%;
+  padding-top: 13%;
+
+  /*  background: cornflowerblue;*/
+}
+
+.weight-label {
+  text-align: center;
+  position: absolute;
+  justify-items: center;
+  left: 24px;
+  bottom: 5px;
+  color: #808080;
+}
+
+.remove {
+  display: grid;
+  grid-area: remove;
+  border-top-right-radius: 4px;
+}
+
+/* Indicator selection and deselection
+------------------------------------------------*/
+.floating-container {
+  z-index: 10;
+  display: grid;
+  position: absolute;
+  width: calc(var(--app-width) - var(--app-header-height));
+  height: var(--app-height);
+/*  background: #e0e0e094;*/
+  padding: 0 5% 0 5%;
+}
+
+.selection-container {
+  --margin: calc(var(--app-header-height) );
+  --height: calc(var(--app-height) - var(--margin));
+  --width: calc(var(--app-width) - var(--ranking-width));
+
+  height: var(--height);
+  margin-top: var(--margin);
+  margin-left: var(--ranking-width);
+  width: var(--width);
+
+  display: flex;
+  flex-direction: column;
+  background: #e0e0e0f5;
+  border-radius: 50px 20px;
+  /*  background: blanchedalmond;*/
+}
+
+/*UTIL ELEMENTS
+------------------------------------------------*/
+.title {
+  grid-area: title;
+  width: 100%;
+  height: auto;
+  /*  background: brown;*/
+  text-align: center;
+  margin: 0;
+}
+
+/* Rating buttons
+------------------------------------------------*/
+.negative-selected {
+  background-color: #e54803 !important;
+  height: 20px;
+}
+
+.negative-unselected {
+  background-color: #E6D3CB !important;
+  height: 20px;
+}
+
+.negative-unselected:hover {
+  background-color: #e54803 !important;
+  height: 20px;
+}
+
+.negative-border {
+  border-color: #e54803 !important;
+}
+
+.negative {
+  background: #e54803 !important;
+  height: 20px;
+}
+
+.positive {
+  background: #0387c1 !important;
+  height: 20px;
+}
+
+.positive-border {
+  border-color: #0387c1 !important;
+}
+
+.positive-selected {
+  background-color: #0387c1 !important;
+  height: 20px;
+}
+
+.positive-unselected {
+  background-color: #9AB6C3 !important;
+  height: 20px;
+}
+
+.positive-unselected:hover {
+  background-color: #0387c1 !important;
 }

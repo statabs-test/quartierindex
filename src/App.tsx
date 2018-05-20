@@ -1,33 +1,23 @@
 import * as React from 'react';
 import './App.css';
-import TestIndicator from './component/test/TestIndicator';
-import TestDistricts from './component/test/TestDistricts';
-import TestSelectedIndicator from './component/test/TestSelectedIndicator'
-import TestRanking from './component/test/TestRanking'
-
-const logo = require('./logo.svg');
+import IndicatorSelection from './component/selection/IndicatorSelection';
+import IndicatorRating from './component/selection/IndicatorRating';
+import IndicatorImportance from './component/selection/IndicatorImportance';
+import { Route } from 'react-router-dom';
+import MainView from './component/MainView';
 
 class App extends React.Component {
   render() {
+
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
+        <div className="App">
 
-        <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
-        </p>
+          <Route exact path="/" component={IndicatorSelection}/>
+          <Route exact path="/ranking" component={IndicatorRating}/>
+          <Route exact path="/importance" component={IndicatorImportance}/>
+          <Route exact path="/plot" component={MainView}/>
 
-        <TestIndicator />
-
-        <TestSelectedIndicator />
-
-        <TestDistricts />
-
-        <TestRanking />
-      </div>
+        </div>
     );
   }
 }
