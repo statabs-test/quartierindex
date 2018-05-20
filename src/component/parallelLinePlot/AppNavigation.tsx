@@ -13,11 +13,33 @@ export interface Props {
 function AppNaviation({selectedIndicators}: Props) {
   const disabled = !(selectedIndicators.length > 0);
   return (
-        <div className="App-navigation">
-          <NavButton variant="raised" to={'/'}>Auswahl</NavButton>
-          <NavButton disabled={disabled} variant="raised" to={'ranking'}>Bewertung</NavButton>
-          <NavButton disabled={disabled} variant="raised" to={'/importance'}>Gewichtung</NavButton>
-        </div>
+      <div className="App-navigation">
+        <NavButton
+            className="nav-button"
+            variant="raised"
+            to={'/'}
+        >
+          Auswahl
+        </NavButton>
+
+        <NavButton
+            className="nav-button"
+            disabled={disabled}
+            variant="raised"
+            to={'ranking'}
+        >
+          Bewertung
+        </NavButton>
+
+        <NavButton
+            className="nav-button"
+            disabled={disabled}
+            variant="raised"
+            to={'/importance'}
+        >
+          Gewichtung
+        </NavButton>
+      </div>
   );
 }
 
