@@ -49,7 +49,7 @@ h1, h2 {
   font-size: 1.5em;
   margin: 0;
   text-align: center;
-  background-color: #1208081f;
+/*  background-color: #1208081f;*/
   display: flex;
   height: 80%;
 }
@@ -238,11 +238,8 @@ h1, h2 {
   position: absolute;
   width: calc(var(--app-width) - var(--app-header-height));
   height: var(--app-height);
-  background: #e0e0e094;
-  border-radius: 50px 20px;
-  overflow: hidden;
-  overflow-y: scroll;
-  /*  background: #8080809c;*/
+/*  background: #e0e0e094;*/
+  padding: 5%;
 }
 
 .selection-container {
