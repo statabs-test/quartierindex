@@ -6,6 +6,7 @@ import Legend from './legend/Legend';
 import ChartContainer from './ChartContainer';
 import { Indicator } from '../../state/indicator/types';
 import { toggleIndicatorSelectionVisibility } from '../../state/util/actions';
+import { Redirect } from 'react-router';
 
 export interface Props {
   selectedIndicators: Indicator[]
@@ -14,6 +15,9 @@ export interface Props {
 }
 
 function ParallelLinePlot({selectedIndicators, toggleVisibility}: Props) {
+  if (selectedIndicators.length === 0) {
+    return <Redirect to="/"/>
+  }
   return (
       <div className="parallel-line-plot-container">
 
