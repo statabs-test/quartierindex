@@ -65,7 +65,7 @@ const IndicatorImportanceLine: React.SFC<Props & ClassNames> = (props) => {
       <Grid container spacing={0}>
       {
         [WeightNumber.ONE, WeightNumber.TWO, WeightNumber.THREE, WeightNumber.FOUR].map((weight, idx) => (
-          <Grid item xs={3}>
+          <Grid item xs={3} key={indicator.id + weight.toString()}>
 
             <Radio
               id={indicator.id + weight.toString()}

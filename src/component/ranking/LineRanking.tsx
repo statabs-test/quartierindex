@@ -22,7 +22,7 @@ export interface Props {
 
 const LineRanking = ({ranking, highlightDistrict, hideDistrict, offHover, onHover}: Props) => {
   return (
-      <svg className="line-ranking" overflow="visible">
+      <svg className="line-ranking" overflow="visible" xmlns="http://www.w3.org/2000/svg">
         <line x1="10%" y1={0} x2="10%" y2="100%" stroke="grey" strokeWidth="2"/>
 
         {[0, 25, 75, 50, 100]
@@ -47,7 +47,7 @@ const LineRanking = ({ranking, highlightDistrict, hideDistrict, offHover, onHove
 
                 stroke="grey"
                 strokeWidth="1"
-                stroke-dasharray="5, 5, 1, 5"
+                strokeDasharray="5, 5, 1, 5"
             />
 
             <text
@@ -67,7 +67,7 @@ const LineRanking = ({ranking, highlightDistrict, hideDistrict, offHover, onHove
 
                 stroke="grey"
                 strokeWidth="1"
-                stroke-dasharray="5, 5, 1, 5"
+                strokeDasharray="5, 5, 1, 5"
             />
           </g>;
 

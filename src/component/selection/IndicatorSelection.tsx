@@ -15,7 +15,7 @@ export interface Props {
   valid: boolean
 }
 
-type ClassNames = WithStyles<'root' | 'title' | 'nav_button'>
+type ClassNames = WithStyles<'root' | 'title'>
 
 export const styles = (theme: Theme) => ({
   root: {
@@ -28,13 +28,6 @@ export const styles = (theme: Theme) => ({
   title: {
     padding: theme.spacing.unit * 2,
     textAlign: 'center',
-  } as React.CSSProperties,
-  nav_button: {
-    color: 'white',
-    backgroundColor: '#1d4e2c',
-    '&:hover': {
-      backgroundColor: '#1d4e2c'[700],
-    },
   } as React.CSSProperties,
 });
 

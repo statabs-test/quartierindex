@@ -15,8 +15,12 @@ const NavButton: React.StatelessComponent<NavButtonProps> = ({to, children, ...r
   return (
     <Button
       {...rest}
-      component={(b) => <Link to={to} className={b.className}>{children}</Link>}
-    />
+      component={(b) => <Link to={to} className={b.className}>
+                          {b.children}
+                        </Link>}
+    >
+        {children}
+    </Button>
   );
 };
 

@@ -1,4 +1,5 @@
 import * as React from 'react';
+import * as _ from 'lodash';
 import { connect } from 'react-redux';
 import { Rootstate } from '../../state';
 import { CartesianGrid, Line, LineChart, ResponsiveContainer } from 'recharts';
@@ -21,7 +22,7 @@ export interface Props {
 }
 
 const getColor = (lineRank: LineRank[], district: District): string => {
-  const r = lineRank.find(rank => rank.objectId === district.id);
+  const r = _.find(lineRank, rank => rank.objectId === district.id);
   if ((district.viewOptions.highlight || district.viewOptions.hover) && r) {
     return getRankingColor(r);
   } else {
