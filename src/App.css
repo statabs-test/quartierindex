@@ -80,7 +80,7 @@ h1, h2 {
 .line-ranking {
   grid-area: ranking;
   /* background: blue;*/
-  height: 98.5%;
+  height: 590px;
   width: 100%;
   margin-top: 10px;
   background: white;
