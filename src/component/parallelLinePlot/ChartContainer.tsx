@@ -63,8 +63,8 @@ const ChartContainer = ({districts, rankingData, lineRanking, selectedIndicators
   }*/
 
   return (
-      <ResponsiveContainer width={getWidth(selectedIndicators)} height={600}>
-        <LineChart className="parallel-line-plot-chart" data={rankingData} height={600}>
+      <ResponsiveContainer width={getWidth(selectedIndicators)} height={510}>
+        <LineChart className="parallel-line-plot-chart" data={rankingData} height={510}>
           <CartesianGrid stroke="#d9d9d9" strokeDasharray="2"/>
           {
             districts.map(

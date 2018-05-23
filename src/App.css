@@ -18,40 +18,26 @@ h1, h2 {
 /*Grid setup*/
 /*MAIN GRID*/
 .App {
-  --plot-width: 750px;
-  --app-height: 600px;
-  --app-width: 951px;
-
-  --app-header-height: 50px;
-  --ranking-width: 201px;
-  --legend-container-height: 110px;
-
-  display: grid;
-  width: var(--app-width);
-  height: var(--height);
-
-
-  /*  background: aquamarine;*/
-
-  grid-template-rows: var(--app-header-height);
-  grid-template-columns: var(--ranking-width) var(--plot-width);
-
-  grid-template-areas:
-      "header header"
-      "ranking parallel-line-plot";
+  position: relative;
+  display: block;
+  width: 951px;
+  height: 700px;
 }
 
 /*HEADER
 ----------------------------------------------*/
 
 .App-navigation {
-  grid-area: header;
+  position: absolute;
+  height: 5%;
+  width: 100%;
+  
   font-size: 1.5em;
   margin: 0;
   text-align: center;
-/*  background-color: #1208081f;*/
+  background-color: #1208081f;
   display: flex;
-  height: 80%;
+  
 }
 .nav-button {
   display: flex !important;
@@ -62,107 +48,61 @@ h1, h2 {
 /*RANKING MAIN CONTAINER
 -----------------------------------------------*/
 .ranking-container {
-  display: grid;
-  grid-area: ranking;
-
-  grid-template-columns: auto;
-  grid-template-rows: calc( var(--legend-container-height)) auto;
-  grid-template-areas:
-      "title"
-      "ranking";
+  position: absolute;
   overflow: visible;
-
-  height: 100%;
-  width: 162%;
-  /*  background: aliceblue;*/
+  height: 71%;
+  width: 30%;
+  top: 24%;
+  background: aliceblue;
 }
 
 .line-ranking {
-  grid-area: ranking;
+  position: relative;
   /* background: blue;*/
-  height: 590px;
+  height: 100%;
   width: 100%;
-  margin-top: 10px;
-  background: white;
+ 
   z-index: 2;
 }
 
 /*PARALLEL LINE PLOT MAIN CONTAINER
 ------------------------------------------------*/
-.parallel-line-plot-container {
-  display: grid;
-  grid-area: parallel-line-plot;
-  position: relative;
 
-  grid-template-columns: auto;
-  grid-template-rows:  auto;
-  grid-template-areas:
-      "scroll-area";
-
-  height: 100%;
-  width: 100%;
-  /*  background: blanchedalmond;*/
-}
-
-.add-indicator {
-  display: grid;
-  grid-area: add-ind;
-  text-align: center;
-  align-items: center;
-  /*  background: #eded00;*/
-}
 
 .parallel-line-plot-scroll-area {
-  --number-of-elements: 3;
-  --line-plot-margin-left: calc(var(--plot-width) / 2 / var(--number-of-elements));
+  position: absolute;
 
-  display: grid;
-  grid-area: scroll-area;
+  left: 20%;
+  top: 6%;
+  
+  width: 70%;
+  height: 94%;
 
-  grid-template-columns: auto;
-  grid-template-rows: var(--legend-container-height) auto;
-  grid-template-areas:
-      "legend"
-      "chart";
-
-  height: 100%;
-  width: calc(750px - var(--legend-container-width));
   overflow-x: scroll;
   overflow-y: hidden;
-  /*  background: green;*/
+   background: green;
 }
 
 .parallel-line-plot-legend {
-  display: grid;
-  grid-area: legend;
-  /*  background: blanchedalmond;*/
+  
+  width: 100%;
+  height: 18%;
+  background: rgb(245, 143, 0);
   align-items: center;
   position: relative;
+  
 }
 
 .parallel-line-plot-chart {
-  display: grid;
-  grid-area: chart;
-
-  margin-left: var(--line-plot-margin-left);
-  margin-top: 5px;
-  /*  background: cornflowerblue;*/
-
+  position: relative;
+  background: cornflowerblue;
+  left: 107.5px;
+  top:1%;
 }
 
 .legend-container {
-  --legend-margin: 5px;
-  --legend-container-width: calc(var(--line-plot-margin-left) * 2 - 2 * var(--legend-margin));
-  width: var(--legend-container-width);
-  display: grid;
-
-  grid-template-columns: 15% auto 10%;
-  grid-template-rows: 35px auto auto;
-  grid-template-areas:
-      "name     name      remove"
-      "positiv  weighting weighting"
-      "negativ  weighting weighting";
-
+  display: flex;
+  width: 215px;
   height: 95%;
   position: absolute;
   left: 0;
@@ -171,31 +111,30 @@ h1, h2 {
   text-align: center;
   border: solid #e0e0e0;
 
-  /*  background: #cc8dab;*/
+  background: #cc8dab;
 }
 
 .legend-name {
-  display: grid;
-  grid-area: name;
+ 
   text-align: left;
   border-top-left-radius: 4px;
   padding-left: 10px;
-  /*  background: cornflowerblue;*/
+  background: cornflowerblue;
 }
 
 .rate-positive {
-  display: grid;
+ 
   grid-area: positiv;
   align-items: center;
-  /*  background: #0044ed;*/
+   background: #0044ed;
 }
 
 .rate-negativ {
-  display: grid;
+  
   grid-area: negativ;
   align-items: center;
 
-  /*  background: #eded00;*/
+   background: #eded00;
 }
 
 .rating-icon {
@@ -212,7 +151,7 @@ h1, h2 {
   padding-left: 15%;
   padding-top: 13%;
 
-  /*  background: cornflowerblue;*/
+   background: cornflowerblue;
 }
 
 .weight-label {
@@ -238,7 +177,7 @@ h1, h2 {
   position: absolute;
   width: calc(var(--app-width) - var(--app-header-height));
   height: var(--app-height);
-/*  background: #e0e0e094;*/
+  background: #e0e0e094;
   padding: 0 5% 0 5%;
 }
 
@@ -256,7 +195,7 @@ h1, h2 {
   flex-direction: column;
   background: #e0e0e0f5;
   border-radius: 50px 20px;
-  /*  background: blanchedalmond;*/
+  background: blanchedalmond;
 }
 
 /*UTIL ELEMENTS
@@ -265,7 +204,7 @@ h1, h2 {
   grid-area: title;
   width: 100%;
   height: auto;
-  /*  background: brown;*/
+  background: brown;
   text-align: center;
   margin: 0;
 }
