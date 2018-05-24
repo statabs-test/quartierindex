@@ -102,6 +102,8 @@ h1, h2 {
 
 .legend-container {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 215px;
   height: 95%;
   position: absolute;
@@ -114,8 +116,20 @@ h1, h2 {
   background: #cc8dab;
 }
 
+.legend-container-left {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.legend-container-right {
+  width: 65px;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .legend-name {
- 
+
   text-align: left;
   border-top-left-radius: 4px;
   padding-left: 10px;
@@ -144,13 +158,12 @@ h1, h2 {
 }
 
 .weight {
-  position: relative;
-  display: grid;
+
   grid-area: weighting;
   width: 70%;
   padding-left: 15%;
-  padding-top: 13%;
-
+  margin-top: 10px;
+  margin-bottom: 0px;
    background: cornflowerblue;
 }
 
@@ -159,12 +172,12 @@ h1, h2 {
   position: absolute;
   justify-items: center;
   left: 24px;
-  bottom: 5px;
+  bottom: 24px;
   color: #808080;
 }
 
 .remove {
-  display: grid;
+  align-items: right;
   grid-area: remove;
   border-top-right-radius: 4px;
 }
