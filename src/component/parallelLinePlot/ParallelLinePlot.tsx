@@ -19,9 +19,8 @@ function ParallelLinePlot({selectedIndicators, toggleVisibility}: Props) {
     return <Redirect to="/"/>
   }
   return (
-      <div className="parallel-line-plot-container">
-
         <div id="scroll-area" className="parallel-line-plot-scroll-area">
+        <div className="parallel-line-plot-container">
           <Legend selectedIndicators={selectedIndicators}/>
           <ChartContainer/>
         </div>

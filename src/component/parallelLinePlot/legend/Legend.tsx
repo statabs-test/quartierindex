@@ -13,17 +13,14 @@ export interface StateFromProps {
 }
 
 const legendStyle = (indicators: Indicator[], indicator: Indicator): React.CSSProperties => {
-  const width = 100;
-  const elementWidth =
-      width /
-      (indicators.length <= 3 ?
-              3 : (indicators.length - 1)
-      );
+  const elementWidth = 238;
+  const spcaing = 8;
   const indicatorIndex = indicators.indexOf(indicator);
-  const pos = elementWidth * indicatorIndex;
+  const pos = (spcaing + elementWidth) * indicatorIndex;
 
   return {
-    left: pos + '%'
+    left: pos + 'px',
+    width: elementWidth
   }
 };
 
