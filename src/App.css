@@ -199,7 +199,7 @@ html {
   width: calc(var(--app-width) - var(--app-header-height));
   height: var(--app-height);
  
-  padding: 0 5% 0 5%;
+  padding: 0;
 }
 
 .selection-container {
