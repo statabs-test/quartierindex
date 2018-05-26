@@ -34,7 +34,7 @@ const LineRankItem: React.StatelessComponent<Props> =
                 cx="10%"
                 cy={y(rank.rankValue)}
 
-                r={10}
+                r={4}
                 fill={getRankingColor(rank)}
             />
 

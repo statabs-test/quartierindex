@@ -8,9 +8,6 @@ import { deselectIndicator, selectIndicator, } from '../../state/indicator/actio
 import { getUtil } from '../../state/util/selectors';
 import Grid from 'material-ui/Grid';
 import { Theme, WithStyles, withStyles } from 'material-ui/styles';
-import Checkbox from 'material-ui/Checkbox';
-import CheckBoxOutlineBlankIcon from '@material-ui/icons/CheckBoxOutlineBlank';
-import CheckBoxIcon from '@material-ui/icons/CheckBox';
 import { FormControlLabel } from 'material-ui/Form';
 
 export interface Props {
@@ -30,12 +27,7 @@ export const styles = (theme: Theme) => ({
     color: '#1d4e2c',
   } as React.CSSProperties,
   checkbox: {
-    color: '#1d4e2c',
-    width: 40,
-    height: 30,
-    '&$checked': {
-      color: '#1d4e2c',
-    }
+    marginLeft: '15px',
   } as React.CSSProperties,
   checked: {
     color: '#1d4e2c',
@@ -61,22 +53,19 @@ const IndicatorSelectionGroup: React.SFC<Props & ClassNames> = (props) => {
                 <FormControlLabel
                     key={indicator.id}
                     control={
-                        <Checkbox
+                        <input
+                            type="checkbox"
+                            id={indicator.id}
                             className={classes.checkbox}
                             checked={indicator.selected}
                             onChange={(e) => {
                               return e.target.checked ? select(indicator.id) : deselect(indicator.id)
                             }}
-                            icon={<CheckBoxOutlineBlankIcon className={classes.sizeIcon} />}
-                            checkedIcon={<CheckBoxIcon className={classes.sizeIcon} />}
                             value={indicator.id}
-                            classes={{
-                              root: classes.checkbox,
-                              checked: classes.checked,
-                            }}
                         />
                     }
                     label={indicator.name}
+                    style={{padding: '5px'}}
                 />
                 </Grid>
             ))

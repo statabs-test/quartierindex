@@ -7,9 +7,6 @@ import { Indicator, WeightNumber } from '../../state/indicator/types';
 import Grid from 'material-ui/Grid';
 import { Theme, WithStyles } from 'material-ui/styles';
 import { withStyles } from 'material-ui/styles';
-import Radio from 'material-ui/Radio';
-import RadioButtonUncheckedIcon from '@material-ui/icons/RadioButtonUnchecked';
-import RadioButtonCheckedIcon from '@material-ui/icons/RadioButtonChecked';
 import { setWeight } from '../../state/indicator/actions';
 import { labels } from '../../helpers';
 import FormLabel from 'material-ui/Form/FormLabel';
@@ -24,11 +21,7 @@ type ClassNames = WithStyles<'root' | 'title' | 'leftIcon' | 'textCentered' | 's
 
 export const styles = (theme: Theme) => ({
   root: {
-    color: '#1d4e2c',
-    width: 30,
-    '&$checked': {
-      color: '#1d4e2c',
-    },
+    paddingBottom: '5px'
   } as React.CSSProperties,
   checked: {
     color: '#1d4e2c',
@@ -67,18 +60,14 @@ const IndicatorImportanceLine: React.SFC<Props & ClassNames> = (props) => {
         [WeightNumber.ONE, WeightNumber.TWO, WeightNumber.THREE, WeightNumber.FOUR].map((weight, idx) => (
           <Grid item xs={3} key={indicator.id + weight.toString()}>
 
-            <Radio
-              id={indicator.id + weight.toString()}
-              checked={indicator.weight === weight}
-              className={classes.root}
-              onChange={(value) => setIndicatorWeight(indicator.id, weight)}
-              value={weight.toString()}
-              name={weight.toString()}
-              classes={{ 
-                root: classes.root,
-                checked: classes.checked }}
-              icon={<RadioButtonUncheckedIcon className={classes.sizeIcon} />}
-              checkedIcon={<RadioButtonCheckedIcon className={classes.sizeIcon} />}
+            <input
+                type="radio"
+                id={indicator.id + weight.toString()}
+                checked={indicator.weight === weight}
+                className={classes.root}
+                onChange={(value) => setIndicatorWeight(indicator.id, weight)}
+                value={weight.toString()}
+                name={indicator.id}
             />
             <FormLabel htmlFor={indicator.id + weight.toString()} >
               {labels[idx]}
