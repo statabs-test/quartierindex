@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { Rootstate } from '../../../state';
 import { connect } from 'react-redux';
-import { Indicator, WeightNumber } from '../../../state/indicator/types';
+import { Grid } from 'material-ui';
+import { Indicator, NegativePositive, WeightNumber } from '../../../state/indicator/types';
 import Cancel from 'material-ui-icons/Cancel';
 import {
   deselectIndicator,
@@ -12,11 +13,11 @@ import {
 
 import 'rc-slider/assets/index.css';
 import Slider from 'rc-slider';
-import { SentimentDissatisfied, SentimentSatisfied } from '@material-ui/icons';
 import {
-  getClassNameNegPosBorder,
-  getClassNameSelectedUnselected, getLabelBy
+    getClassNameNegPosBorder,
+    getClassNameSelectedUnselected, getColor, getLabelBy
 } from '../../../helpers';
+import { Icon } from 'material-ui';
 
 interface Props {
   positiveValuation(id: string): void
@@ -41,58 +42,84 @@ const LegendItem = ({
                       setIndicatorWeight,
                       deselect
                     }: Props & PublicProps) => {
+
+    const sliderStyle = getColor(indicator.valuation === NegativePositive.Positive);
+
   return (
       <div
           key={indicator.id}
           className={'legend-container' + getClassNameNegPosBorder(indicator)}
           style={style}
       >
-        <div className={'legend-container-left'}>
-            <div className={'legend-name'}> {indicator.name}</div>
+          <Grid container>
+              <Grid item xs={10}>
+                  <div className={'legend-name'}> {indicator.name}</div>
+              </Grid>
+              <Grid item xs={2} alignContent={'flex-end'}>
+                  <Cancel
+                      className={'remove'}
 
-            <div
-                className="rate-positive"
-                onClick={() => positiveValuation(indicator.id)}
-            >
-              <SentimentSatisfied
-                  className={'rating-icon' + getClassNameSelectedUnselected(indicator, 'positive')}
-              />
-            </div>
-            <div
-                className="rate-negativ"
-                onClick={() => negativeValuation(indicator.id)}
-            >
-              <SentimentDissatisfied
-                  className={'rating-icon' + getClassNameSelectedUnselected(indicator, 'negative')}
-              />
-            </div>
-        </div>
-          <div className="legend-container-right">
-            <Cancel
-                className={'remove'}
+                      onClick={() => deselect(indicator.id)}
+                  />
+              </Grid>
+              <Grid item xs={2}>
+                  <Grid container>
+                      <Grid item xs={12}>
+                      <div
+                          className="rate-positive"
+                          onClick={() => positiveValuation(indicator.id)}
+                      >
+                          <Icon className={'rating-icon ' + getClassNameSelectedUnselected(indicator, 'positive')}>
+                              mood
+                          </Icon>
+                      </div>
+                      </Grid>
+                      <Grid item xs={12}>
+                      <div
+                          className="rate-negativ"
+                          onClick={() => negativeValuation(indicator.id)}
+                      >
+                          <Icon className={'rating-icon' + getClassNameSelectedUnselected(indicator, 'negative')}>
+                              mood_bad
+                          </Icon>
+                      </div>
+                      </Grid>
+                  </Grid>
+              </Grid>
+              <Grid item className="weight" xs={10}>
+                  <Grid container direction={'column'} justify={'space-around'}>
+                      <Grid item xs={12}>
+                          <Slider
+                              min={0.25}
+                              max={1.00}
+                              step={0.25}
+                              value={indicator.weight}
+                              marks={{
+                                  0.25: '',
+                                  0.5: '',
+                                  0.75: '',
+                                  1: ''
+                              }}
+                              activeDotStyle={sliderStyle}
 
-                onClick={() => deselect(indicator.id)}
-            />
-          </div>
+                              trackStyle={sliderStyle}
+                              handleStyle={sliderStyle}
 
-          <div className="weight">
-              <Slider
-                  min={0.25}
-                  max={1.00}
-                  step={0.25}
-                  value={indicator.weight}
-                  marks={{
-                      0.25: '',
-                      0.5: '',
-                      0.75: '',
-                      1: ''
-                  }}
-                  onChange={(value) => setIndicatorWeight(indicator.id, value)}
-              />
-              <div className="weight-label">
-                  {getLabelBy(indicator.weight)}
-              </div>
-          </div>
+                              style={{
+                                  paddingRight: '5px',
+                                  marginTop: '5px'
+                              }}
+                              onChange={(value) => setIndicatorWeight(indicator.id, value)}
+                          />
+                      </Grid>
+                      <Grid item xs={12}>
+                          <div className="weight-label">
+                              {getLabelBy(indicator.weight)}
+                          </div>
+                      </Grid>
+                  </Grid>
+              </Grid>
+          </Grid>
       </div>
   )
 };

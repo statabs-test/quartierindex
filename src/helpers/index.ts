@@ -13,6 +13,20 @@ export const getRankingColor = (rank: LineRank): string => {
   }
 };
 
+export const getColor = (positive: boolean): React.CSSProperties => {
+  if (positive) {
+    return {
+      borderColor: '#0387c1',
+      backgroundColor: '#0387c1'
+    }
+  } else {
+    return {
+      borderColor: '#e54803',
+      backgroundColor: '#e54803'
+    }
+  }
+}
+
 export const getClassNameSelectedUnselected = (indicator: Indicator, buttonType: string): string => {
 
   if (indicator.valuation === -1 && buttonType === 'negative') {
