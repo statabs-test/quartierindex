@@ -6,11 +6,16 @@ export const getRankingColor = (rank: LineRank): string => {
 
   if (rank.highlighted && rank.hover) {
     return '#4d00ff';
-  } else if (rank.highlighted || rank.hover) {
-    return 'black';
   } else {
-    return 'rgb(160, 160, 160)';
+    return 'black';
   }
+};
+
+export const getLineStroke = (rank: LineRank): string => {
+  if (rank.highlighted || rank.hover) {
+    return '2';
+  }
+  return '1';
 };
 
 export const getColor = (positive: boolean): React.CSSProperties => {

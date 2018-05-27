@@ -10,7 +10,7 @@ import { getLineRanking, getRankingDataForChart } from '../../state/observation/
 import { getSelectedIndicators } from '../../state/indicator/selectors';
 import { Indicator } from '../../state/indicator/types';
 import { getRankingColor } from '../../helpers';
-import { _highlightDistrict } from '../../state/district/actions';
+import { _highlightDistrict, _onHover, _offHover } from '../../state/district/actions';
 
 export interface Props {
   districts: District[]
@@ -19,6 +19,8 @@ export interface Props {
   selectedIndicators: Indicator[]
 
   highlightDistrict(id: string): void
+  onHover(id: string): void
+  offHover(id: string): void
 }
 
 const getColor = (lineRank: LineRank[], district: District): string => {
@@ -57,11 +59,11 @@ const getWidth = (indicators: Indicator[]): number => {
   }
 };
 
-const ChartContainer = ({districts, rankingData, lineRanking, selectedIndicators, highlightDistrict}: Props) => {
+const ChartContainer = (props: Props) => {
 /*  if (!anyUserSelection) {
     lineRanking.slice(0, 3).forEach(r => _highlightDistrict(r.objectId, false))
   }*/
-
+  const {districts, rankingData, lineRanking, selectedIndicators, highlightDistrict, onHover, offHover} = props
   return (
       <ResponsiveContainer className="parallel-line-plot-chart" width={getWidth(selectedIndicators)} height={600}>
         <LineChart  data={rankingData} height={600}>
@@ -80,6 +82,8 @@ const ChartContainer = ({districts, rankingData, lineRanking, selectedIndicators
                         strokeWidth={getLineStroke(d)}
                         activeDot={{r: 18}}
                         onClick={() => highlightDistrict(d.id)}
+                        onMouseEnter={() => onHover(d.id)}
+                        onMouseLeave={() => offHover(d.id)}                         
                     />
                 ))}
         </LineChart>
@@ -95,7 +99,9 @@ const mapStateToProps = (state: Rootstate) => ({
 });
 
 const mapDispatchToProps = ({
- highlightDistrict: _highlightDistrict
+  highlightDistrict: _highlightDistrict,
+  onHover: _onHover,
+  offHover: _offHover
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ChartContainer);
