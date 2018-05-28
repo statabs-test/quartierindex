@@ -51,7 +51,7 @@ export const styles = (theme: Theme) => ({
 const IndicatorRatingLine: React.SFC<Props & ClassNames> = (props) => {
   const {classes, positiveValuation, negativeValuation, indicator} = props;
   return (
-      <Grid container spacing={0} alignItems="center">
+      <Grid container spacing={0}>
         <Grid item xs={8}>
           Einen hohe/n Anteil {indicator.name} ist für mich
         </Grid>

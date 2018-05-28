@@ -18,14 +18,9 @@ export interface Props {
   deselect(id: string): void
 }
 
-type ClassNames = WithStyles<'title' | 'checkbox' | 'checked' | 'sizeIcon' >
+type ClassNames = WithStyles<'checkbox' | 'checked' | 'sizeIcon' >
 
 export const styles = (theme: Theme) => ({
-  title: {
-    padding: theme.spacing.unit * 2,
-    textAlign: 'center',
-    color: '#1d4e2c',
-  } as React.CSSProperties,
   checkbox: {
     marginLeft: '15px',
   } as React.CSSProperties,

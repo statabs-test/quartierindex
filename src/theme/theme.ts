@@ -7,6 +7,15 @@ export const theme = createMuiTheme({
     secondary: teal
   },
   overrides: {
-
+    MuiFormLabel: {
+      root: {
+        color: 'balck',
+      },
+    },
+    MuiFormControlLabel: {
+      label: {
+        fontSize: '12px !important',
+      },
+    },
   }
 });

@@ -13,7 +13,9 @@ export interface StateFromProps {
 }
 
 const legendStyle = (indicators: Indicator[], indicator: Indicator): React.CSSProperties => {
-  const elementWidth = 238;
+  // Attention if you change the width of this element the widht 
+  // of the plot in ChartContainer must be updated too!
+  const elementWidth = 235;
   const spcaing = 8;
   const indicatorIndex = indicators.indexOf(indicator);
   const pos = (spcaing + elementWidth) * indicatorIndex;

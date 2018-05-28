@@ -47,7 +47,8 @@ const LineRanking = ({ranking, highlightDistrict, hideDistrict, offHover, onHove
 
                 stroke="grey"
                 strokeWidth="1"
-                strokeDasharray="5, 5, 1, 5"
+                strokeDasharray="2"
+                strokeOpacity="0.3"
             />
 
             <text
@@ -67,7 +68,8 @@ const LineRanking = ({ranking, highlightDistrict, hideDistrict, offHover, onHove
 
                 stroke="grey"
                 strokeWidth="1"
-                strokeDasharray="5, 5, 1, 5"
+                strokeDasharray="2"
+                strokeOpacity="0.3"
             />
           </g>;
 

@@ -44,8 +44,8 @@ const getParentWidth = (): number => {
   // console.log(parent);
   // If one could get the width of the parent div the plot are
   // could be resized reponsively
-
-  return 750;
+  // How do you calculate this value? Try!?
+  return 730;
 };
 
 const getWidth = (indicators: Indicator[]): number => {
@@ -63,7 +63,7 @@ const ChartContainer = (props: Props) => {
 /*  if (!anyUserSelection) {
     lineRanking.slice(0, 3).forEach(r => _highlightDistrict(r.objectId, false))
   }*/
-  const {districts, rankingData, lineRanking, selectedIndicators, highlightDistrict, onHover, offHover} = props
+  const {districts, rankingData, lineRanking, selectedIndicators, highlightDistrict, onHover, offHover} = props;
   return (
       <ResponsiveContainer className="parallel-line-plot-chart" width={getWidth(selectedIndicators)} height={600}>
         <LineChart  data={rankingData} height={600}>
@@ -71,7 +71,6 @@ const ChartContainer = (props: Props) => {
           {
             districts.map(
                 d => (
-
                     <Line
                         /*dots disappearing https://github.com/recharts/recharts/issues/804*/
                         isAnimationActive={false}
@@ -80,10 +79,9 @@ const ChartContainer = (props: Props) => {
                         dataKey={d.name}
                         stroke={getColor(lineRanking, d)}
                         strokeWidth={getLineStroke(d)}
-                        activeDot={{r: 18}}
                         onClick={() => highlightDistrict(d.id)}
                         onMouseEnter={() => onHover(d.id)}
-                        onMouseLeave={() => offHover(d.id)}                         
+                        onMouseLeave={() => offHover(d.id)}
                     />
                 ))}
         </LineChart>
