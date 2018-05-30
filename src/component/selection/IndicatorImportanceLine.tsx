@@ -52,7 +52,7 @@ const IndicatorImportanceLine: React.SFC<Props & ClassNames> = (props) => {
   return (
     <Grid container spacing={0} alignItems="center">
       <Grid item xs={4} >
-      Der Anteil {indicator.name} ist für mich
+          {indicator.weightText}
       </Grid>
       <Grid item xs={8} >
       <Grid container spacing={0}>

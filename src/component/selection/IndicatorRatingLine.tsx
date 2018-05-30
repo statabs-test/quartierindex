@@ -53,7 +53,7 @@ const IndicatorRatingLine: React.SFC<Props & ClassNames> = (props) => {
   return (
       <Grid container spacing={0}>
         <Grid item xs={8}>
-          Einen hohe/n Anteil {indicator.name} ist für mich
+            {indicator.valuationText}
         </Grid>
         <Grid item xs={4}>
           <Button
