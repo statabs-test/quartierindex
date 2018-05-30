@@ -11,6 +11,7 @@ import { getSelectedIndicators } from '../../state/indicator/selectors';
 import { Indicator } from '../../state/indicator/types';
 import { getRankingColor } from '../../helpers';
 import { _highlightDistrict, _onHover, _offHover } from '../../state/district/actions';
+import CustomDot from './plotElements/CustomDot';
 
 export interface Props {
   districts: District[]
@@ -82,6 +83,7 @@ const ChartContainer = (props: Props) => {
                         onClick={() => highlightDistrict(d.id)}
                         onMouseEnter={() => onHover(d.id)}
                         onMouseLeave={() => offHover(d.id)}
+                        dot={<CustomDot onHover={() => onHover(d.id)} offHover={() => offHover(d.id)} />}
                     />
                 ))}
         </LineChart>
