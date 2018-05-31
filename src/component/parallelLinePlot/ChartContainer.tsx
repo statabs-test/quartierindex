@@ -10,7 +10,7 @@ import { getLineRanking, getRankingDataForChart } from '../../state/observation/
 import { getSelectedIndicators } from '../../state/indicator/selectors';
 import { Indicator } from '../../state/indicator/types';
 import { getRankingColor } from '../../helpers';
-import { _highlightDistrict, _onHover, _offHover } from '../../state/district/actions';
+import { _highlightDistrict, _hideDistrict, _onHover, _offHover } from '../../state/district/actions';
 import CustomDot from './plotElements/CustomDot';
 
 export interface Props {
@@ -20,6 +20,7 @@ export interface Props {
   selectedIndicators: Indicator[]
 
   highlightDistrict(id: string): void
+  hideDistrict(id: string): void
   onHover(id: string): void
   offHover(id: string): void
 }
@@ -64,7 +65,8 @@ const ChartContainer = (props: Props) => {
 /*  if (!anyUserSelection) {
     lineRanking.slice(0, 3).forEach(r => _highlightDistrict(r.objectId, false))
   }*/
-  const {districts, rankingData, lineRanking, selectedIndicators, highlightDistrict, onHover, offHover} = props;
+  const {districts, rankingData, lineRanking, selectedIndicators,
+         highlightDistrict, hideDistrict, onHover, offHover} = props;
   return (
       <ResponsiveContainer className="parallel-line-plot-chart" width={getWidth(selectedIndicators)} height={600}>
         <LineChart  data={rankingData} height={600}>
@@ -80,10 +82,14 @@ const ChartContainer = (props: Props) => {
                         dataKey={d.name}
                         stroke={getColor(lineRanking, d)}
                         strokeWidth={getLineStroke(d)}
-                        onClick={() => highlightDistrict(d.id)}
+                        onClick={() => (d.viewOptions.highlight ) ? hideDistrict(d.id) : highlightDistrict(d.id)}
                         onMouseEnter={() => onHover(d.id)}
                         onMouseLeave={() => offHover(d.id)}
-                        dot={<CustomDot onHover={() => onHover(d.id)} offHover={() => offHover(d.id)} />}
+                        dot={<CustomDot
+                          onHover={() => onHover(d.id)}
+                          offHover={() => offHover(d.id)}
+                          onClick={() => (d.viewOptions.highlight ) ? hideDistrict(d.id) : highlightDistrict(d.id)}
+                        />}
                     />
                 ))}
         </LineChart>
@@ -100,6 +106,7 @@ const mapStateToProps = (state: Rootstate) => ({
 
 const mapDispatchToProps = ({
   highlightDistrict: _highlightDistrict,
+  hideDistrict: _hideDistrict,
   onHover: _onHover,
   offHover: _offHover
 });
