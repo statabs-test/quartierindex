@@ -194,7 +194,6 @@ html {
 .floating-container {
   z-index: 10;
   display: grid;
-  position: absolute;
   width: calc(var(--app-width) - var(--app-header-height));
   height: var(--app-height);
  
