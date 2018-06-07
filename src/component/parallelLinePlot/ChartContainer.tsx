@@ -1,4 +1,5 @@
 import * as React from 'react';
+import * as _ from 'lodash';
 import { connect } from 'react-redux';
 import { Rootstate } from '../../state';
 import { CartesianGrid, Line, LineChart, ResponsiveContainer } from 'recharts';
@@ -9,7 +10,8 @@ import { getLineRanking, getRankingDataForChart } from '../../state/observation/
 import { getSelectedIndicators } from '../../state/indicator/selectors';
 import { Indicator } from '../../state/indicator/types';
 import { getRankingColor } from '../../helpers';
-import { _highlightDistrict } from '../../state/district/actions';
+import { _highlightDistrict, _hideDistrict, _onHover, _offHover } from '../../state/district/actions';
+import CustomDot from './plotElements/CustomDot';
 
 export interface Props {
   districts: District[]
@@ -18,10 +20,13 @@ export interface Props {
   selectedIndicators: Indicator[]
 
   highlightDistrict(id: string): void
+  hideDistrict(id: string): void
+  onHover(id: string): void
+  offHover(id: string): void
 }
 
 const getColor = (lineRank: LineRank[], district: District): string => {
-  const r = lineRank.find(rank => rank.objectId === district.id);
+  const r = _.find(lineRank, rank => rank.objectId === district.id);
   if ((district.viewOptions.highlight || district.viewOptions.hover) && r) {
     return getRankingColor(r);
   } else {
@@ -41,8 +46,8 @@ const getParentWidth = (): number => {
   // console.log(parent);
   // If one could get the width of the parent div the plot are
   // could be resized reponsively
-
-  return 750;
+  // How do you calculate this value? Try!?
+  return 730;
 };
 
 const getWidth = (indicators: Indicator[]): number => {
@@ -56,19 +61,19 @@ const getWidth = (indicators: Indicator[]): number => {
   }
 };
 
-const ChartContainer = ({districts, rankingData, lineRanking, selectedIndicators, highlightDistrict}: Props) => {
+const ChartContainer = (props: Props) => {
 /*  if (!anyUserSelection) {
     lineRanking.slice(0, 3).forEach(r => _highlightDistrict(r.objectId, false))
   }*/
-
+  const {districts, rankingData, lineRanking, selectedIndicators,
+         highlightDistrict, hideDistrict, onHover, offHover} = props;
   return (
-      <ResponsiveContainer width={getWidth(selectedIndicators)} height={600}>
-        <LineChart className="parallel-line-plot-chart" data={rankingData} height={600}>
+      <ResponsiveContainer className="parallel-line-plot-chart" width={getWidth(selectedIndicators)} height={600}>
+        <LineChart  data={rankingData} height={600}>
           <CartesianGrid stroke="#d9d9d9" strokeDasharray="2"/>
           {
             districts.map(
                 d => (
-
                     <Line
                         /*dots disappearing https://github.com/recharts/recharts/issues/804*/
                         isAnimationActive={false}
@@ -77,8 +82,14 @@ const ChartContainer = ({districts, rankingData, lineRanking, selectedIndicators
                         dataKey={d.name}
                         stroke={getColor(lineRanking, d)}
                         strokeWidth={getLineStroke(d)}
-                        activeDot={{r: 18}}
-                        onClick={() => highlightDistrict(d.id)}
+                        onClick={() => (d.viewOptions.highlight ) ? hideDistrict(d.id) : highlightDistrict(d.id)}
+                        onMouseEnter={() => onHover(d.id)}
+                        onMouseLeave={() => offHover(d.id)}
+                        dot={<CustomDot
+                          onHover={() => onHover(d.id)}
+                          offHover={() => offHover(d.id)}
+                          onClick={() => (d.viewOptions.highlight ) ? hideDistrict(d.id) : highlightDistrict(d.id)}
+                        />}
                     />
                 ))}
         </LineChart>
@@ -94,7 +105,10 @@ const mapStateToProps = (state: Rootstate) => ({
 });
 
 const mapDispatchToProps = ({
- highlightDistrict: _highlightDistrict
+  highlightDistrict: _highlightDistrict,
+  hideDistrict: _hideDistrict,
+  onHover: _onHover,
+  offHover: _offHover
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(ChartContainer);

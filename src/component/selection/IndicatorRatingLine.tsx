@@ -37,21 +37,23 @@ export const styles = (theme: Theme) => ({
   positiveButton: {
     color: 'white',
     marginRight: theme.spacing.unit,
-    marginBottom: theme.spacing.unit
-  },
+    marginBottom: theme.spacing.unit,
+    textTransform: 'none'
+  } as React.CSSProperties,
   negativeButton: {
     color: 'white',
     marginRight: theme.spacing.unit,
-    marginBottom: theme.spacing.unit
-  },
+    marginBottom: theme.spacing.unit,
+    textTransform: 'none'
+  } as React.CSSProperties,
 });
 
 const IndicatorRatingLine: React.SFC<Props & ClassNames> = (props) => {
   const {classes, positiveValuation, negativeValuation, indicator} = props;
   return (
-      <Grid container spacing={0} alignItems="center">
+      <Grid container spacing={0}>
         <Grid item xs={8}>
-          Einen hohe/n Anteil {indicator.name} ist für mich
+            {indicator.valuationText}
         </Grid>
         <Grid item xs={4}>
           <Button
@@ -60,8 +62,8 @@ const IndicatorRatingLine: React.SFC<Props & ClassNames> = (props) => {
               className={classes.positiveButton + getClassNameSelectedUnselected(indicator, 'positive')}
               onClick={() => positiveValuation(indicator.id)}
           >
-            <Icon>mood</Icon>
-            positiv
+            <Icon style={{paddingRight: '5px'}}>mood</Icon>
+            Positiv
           </Button>
           <Button
               className={classes.negativeButton + getClassNameSelectedUnselected(indicator, 'negative')}
@@ -69,8 +71,8 @@ const IndicatorRatingLine: React.SFC<Props & ClassNames> = (props) => {
               component="span"
               onClick={() => negativeValuation(indicator.id)}
           >
-            <Icon>mood_bad</Icon>
-            negativ
+            <Icon style={{paddingRight: '5px'}}>mood_bad</Icon>
+            Negativ
           </Button>
         </Grid>
       </Grid>

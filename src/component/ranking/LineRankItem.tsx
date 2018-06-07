@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { LineRank } from '../../state/observation/types';
-import { getRankingColor } from '../../helpers';
+import { getRankingColor, getLineStroke } from '../../helpers';
 
 export interface Props {
   rank: LineRank;
@@ -21,6 +21,12 @@ const y = (yPos: number): string => {
 const labelPos = (rankIndex: number): string =>
     ((1 - 0.9 * (1 - rankIndex / 21)) * 100).toString() + '%';
 
+const getRankingFontWeight = (rank: LineRank): React.CSSProperties => {
+    if (rank.highlighted || rank.hover) {
+        return {fontWeight: 'bold'};
+    }
+    return {fontWeight: 400};
+}
 const LineRankItem: React.StatelessComponent<Props> =
     ({rank, rankIndex, onClick, onMouseEnter, onMouseLeave}) => {
       return (
@@ -34,7 +40,7 @@ const LineRankItem: React.StatelessComponent<Props> =
                 cx="10%"
                 cy={y(rank.rankValue)}
 
-                r={10}
+                r={4}
                 fill={getRankingColor(rank)}
             />
 
@@ -47,7 +53,7 @@ const LineRankItem: React.StatelessComponent<Props> =
 
                 x2="18%"
                 y2={y(rank.rankValue)}
-
+                strokeWidth={getLineStroke(rank)}
                 stroke={getRankingColor(rank)}
             />
 
@@ -62,7 +68,7 @@ const LineRankItem: React.StatelessComponent<Props> =
                 y2={labelPos(rankIndex)}
 
                 stroke={getRankingColor(rank)}
-                strokeWidth="1"
+                strokeWidth={getLineStroke(rank)}
             />
 
             <text
@@ -71,7 +77,9 @@ const LineRankItem: React.StatelessComponent<Props> =
 
                 fill={getRankingColor(rank)}
             >
+            <tspan style={getRankingFontWeight(rank)}>
               {rankIndex + 1}
+            </tspan>  
             </text>
             <text
                 x="38%"
@@ -79,7 +87,9 @@ const LineRankItem: React.StatelessComponent<Props> =
 
                 fill={getRankingColor(rank)}
             >
+            <tspan style={getRankingFontWeight(rank)}>
               {rank.labelText}
+              </tspan>
             </text>
           </g>
       );

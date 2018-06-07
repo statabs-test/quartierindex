@@ -15,7 +15,7 @@ export interface Props {
   valid: boolean
 }
 
-type ClassNames = WithStyles<'root' | 'title' | 'nav_button'>
+type ClassNames = WithStyles<'root' | 'title'>
 
 export const styles = (theme: Theme) => ({
   root: {
@@ -27,24 +27,16 @@ export const styles = (theme: Theme) => ({
   } as React.CSSProperties,
   title: {
     padding: theme.spacing.unit * 2,
-    textAlign: 'center',
-  } as React.CSSProperties,
-  nav_button: {
-    color: 'white',
-    backgroundColor: '#1d4e2c',
-    '&:hover': {
-      backgroundColor: '#1d4e2c'[700],
-    },
   } as React.CSSProperties,
 });
 
 const IndicatorSelection: React.SFC<Props & ClassNames> = (props) => {
-  const {classes, groupedIndicators, valid} = props;
+  const {groupedIndicators, valid} = props;
   return (
       <div className="floating-container">
         <Grid item xs={12}>
           <div>
-            <h2 className={classes.title}>
+            <h2>
               Schritt 1: Wählen Sie mindestens einen Indikator für die Index Berechnung aus
             </h2>
             <Grid container spacing={0}>

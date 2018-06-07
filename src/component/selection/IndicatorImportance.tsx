@@ -20,15 +20,11 @@ export interface Props {
   toggleVisibility(visibility: boolean): void
 }
 
-type ClassNames = WithStyles<'root' | 'title' | 'leftIcon'>
+type ClassNames = WithStyles<'root' | 'leftIcon'>
 
 export const styles = (theme: Theme) => ({
   root: {
     flexGrow: 1,
-  } as React.CSSProperties,
-  title: {
-    padding: theme.spacing.unit * 2,
-    textAlign: 'center',
   } as React.CSSProperties,
   leftIcon: {
     marginRight: theme.spacing.unit,
@@ -36,14 +32,14 @@ export const styles = (theme: Theme) => ({
 });
 
 const IndicatorImportance: React.SFC<Props & ClassNames> = (props) => {
-  const {classes, selectedIndicators} = props;
+  const {selectedIndicators} = props;
   if (selectedIndicators.length === 0) {
     return <Redirect to="/"/>
   }
   return (
       <div className="floating-container">
         <Grid item xs={12}>
-          <h2 className={classes.title}>
+          <h2>
             Schritt 3: Geben Sie an, wie wichtig der Indikator für Sie ist
           </h2>
           <p>

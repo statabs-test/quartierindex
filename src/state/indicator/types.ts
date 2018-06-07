@@ -17,8 +17,10 @@ export interface Indicator {
     readonly publication: string
     readonly year: string
     readonly selected?: boolean
-    readonly valuation: NegativePositive,
+    readonly valuation: NegativePositive
+    readonly valuationText: string
     readonly weight: WeightNumber
+    readonly weightText: string
 }
 
 export interface IndicatorState {
