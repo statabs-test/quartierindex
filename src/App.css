@@ -138,6 +138,12 @@ html {
   display: flex;
   flex-direction: column;
 }
+/*RANKING MAIN CONTAINER
+-----------------------------------------------*/
+.ranking-container {
+  display: grid;
+  grid-area: ranking;
+}
 
 .legend-container-right {
   width: 165px;
