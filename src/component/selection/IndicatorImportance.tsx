@@ -43,18 +43,11 @@ const IndicatorImportance: React.SFC<Props & ClassNames> = (props) => {
             Schritt 3: Geben Sie an, wie wichtig der Indikator für Sie ist
           </h2>
           <p>
-            Mit der Wichtigkeit wird festgelegt mit welchen Gewichten ein ausgewähtler Indikator
-            in die Index-Berechnung einfliesst.<br/>
-            Folgende Gewichts-Einstellungen sind beim Quartier-Index mögllich:<br/>
+              Mit der Gewichtung wird festgelegt, wie stark ein Indikator in die Index-Berechnung einfliesst.
+              Folgende Gewichte sind wählbar:
           </p>
           <p>
-            positiv: sehr unwichtig = Gewicht von 0.25, eher unwichtig = Gewicht von 0.5, eher
-            wichtig = Gewicht von 0.75,
-            sehr wichtig = Gewicht von 1.0<br/>
-
-            negativ: sehr unwichtig = Gewicht von -0.25, eher unwichtig = Gewicht von -0.5, eher
-            wichtig = Gewicht von -0.75,
-            sehr wichtig = Gewicht von -1.0
+            sehr unwichtig: 0.25, eher unwichtig: 0.5, eher wichtig: 0.75, sehr wichtig: 1.0
           </p>
           <Grid container direction="row">
             {

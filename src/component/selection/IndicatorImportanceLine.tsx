@@ -50,7 +50,7 @@ const IndicatorImportanceLine: React.SFC<Props & ClassNames> = (props) => {
   const {classes, indicator, setIndicatorWeight} = props;
 
   return (
-    <Grid container spacing={0} alignItems="center">
+    <Grid container alignItems="center" style={{paddingTop: '5px', paddingBottom: '5px'}}>
       <Grid item xs={4} >
           {indicator.weightText}
       </Grid>
