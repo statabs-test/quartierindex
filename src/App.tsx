@@ -1,10 +1,12 @@
 import * as React from 'react';
 import './App.css';
-import IndicatorSelection from './component/selection/IndicatorSelection';
-import IndicatorRating from './component/selection/IndicatorRating';
-import IndicatorImportance from './component/selection/IndicatorImportance';
+import IndicatorSelection from './page/IndicatorSelection';
+import IndicatorRating from './page/IndicatorRating';
+import IndicatorImportance from './page/IndicatorImportance';
 import { Route } from 'react-router-dom';
-import MainView from './component/MainView';
+import MainView from './page/MainView';
+
+/* tslint-disable */
 
 class App extends React.Component {
   render() {

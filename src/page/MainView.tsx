@@ -1,10 +1,10 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
-import { Rootstate } from '../state';
+import { Rootstate } from '../state/index';
 import { getLineRanking } from '../state/observation/selectors';
-import ParallelLinePlot from './parallelLinePlot/ParallelLinePlot';
-import DistrictRanking from './ranking/DistrictRanking';
-import AppNavigation from './parallelLinePlot/AppNavigation';
+import ParallelLinePlot from '../component/parallelLinePlot/ParallelLinePlot';
+import DistrictRanking from '../component/ranking/DistrictRanking';
+import AppNavigation from '../component/parallelLinePlot/AppNavigation';
 
 // import { Observation } from '../../state/observation/types'
 

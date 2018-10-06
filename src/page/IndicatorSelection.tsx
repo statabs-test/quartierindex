@@ -2,13 +2,13 @@ import * as React from 'react';
 import * as _ from 'lodash';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
-import { Rootstate } from '../../state/index';
-import { getGroupedIndicators, getSelectedIndicators } from '../../state/indicator/selectors';
-import { Indicator } from '../../state/indicator/types';
+import { Rootstate } from '../state/index';
+import { getGroupedIndicators, getSelectedIndicators } from '../state/indicator/selectors';
+import { Indicator } from '../state/indicator/types';
 import Grid from 'material-ui/Grid';
 import { Theme, WithStyles, withStyles } from 'material-ui/styles';
-import IndicatorSelectionGroup from './IndicatorSelectionGroup';
-import NavButton from '../customElements/NavButton';
+import IndicatorSelectionGroup from '../component/selection/IndicatorSelectionGroup';
+import NavButton from '../component/customElements/NavButton';
 
 export interface Props {
   groupedIndicators: { [key: string]: Indicator[] }
