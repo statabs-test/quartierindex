@@ -4,17 +4,18 @@
 }
 
 * {
-  font-size:12px;
-  font-weight:normal;
-  font-family: "Helvetica Neue", Helvetica, Arial sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: 'Helvetica Neue', Helvetica, Arial sans-serif;
 }
 
-h1, h2 {
-  font-size:12px;
+h1,
+h2 {
+  font-size: 12px;
 }
 
 html {
- background: #fcfcfc;
+  background: #fcfcfc;
 }
 
 /*Grid setup*/
@@ -26,6 +27,15 @@ html {
   height: 700px;
 }
 
+/* Wizard
+------------------------------------------------*/
+h2.wizardTitle {
+  font-family: Arial;
+  font-size: 13pt;
+  font-weight: bold;
+  color: #225b33;
+}
+
 /*HEADER
 ----------------------------------------------*/
 
@@ -33,13 +43,12 @@ html {
   position: absolute;
   height: 5%;
   width: 100%;
-  
+
   font-size: 1.5em;
   margin: 0;
   text-align: center;
   /* background-color: #1208081f; */
   display: flex;
-  
 }
 .nav-button {
   display: flex !important;
@@ -63,28 +72,27 @@ html {
   /* background: blue;*/
   height: 100%;
   width: 100%;
- 
+
   z-index: 2;
 }
 
 /*PARALLEL LINE PLOT MAIN CONTAINER
 ------------------------------------------------*/
 
-
 .parallel-line-plot-scroll-area {
   position: absolute;
   left: 20%;
   top: 6%;
-  
+
   width: 727px;
   height: 750px;
 
   overflow-x: scroll;
   overflow-y: hidden;
-   /* background: green; */
+  /* background: green; */
 }
 
-.parallel-line-plot-container{
+.parallel-line-plot-container {
   width: 100%;
   height: 100%;
 }
@@ -95,7 +103,7 @@ html {
   /* background: rgb(245, 143, 0); */
   align-items: center;
   position: absolute;
-  /* rechars creates some transparant divs...*/  
+  /* rechars creates some transparant divs...*/
 }
 
 .parallel-line-plot-chart {
@@ -104,7 +112,6 @@ html {
   left: 115px;
   top: 125px;
 }
-
 
 .legend-container {
   display: flex;
@@ -160,25 +167,22 @@ html {
 }
 
 .rate-positive {
- 
   grid-area: positiv;
   align-items: center;
-   /* background: #0044ed; */
+  /* background: #0044ed; */
 }
 
 .rate-negativ {
-  
   grid-area: negativ;
   align-items: center;
 
-   /* background: #eded00; */
+  /* background: #eded00; */
 }
 
 .rating-icon {
   color: white;
   border-radius: 0 12px 12px 0;
   width: 100% !important;
-
 }
 
 .weight {
@@ -186,7 +190,7 @@ html {
   padding: 0 20px;
   margin-top: 10px;
   margin-bottom: 0px;
-   /* background: cornflowerblue; */
+  /* background: cornflowerblue; */
 }
 
 .weight-label {
@@ -202,12 +206,12 @@ html {
   display: grid;
   width: calc(var(--app-width) - var(--app-header-height));
   height: var(--app-height);
- 
+
   padding: 0;
 }
 
 .selection-container {
-  --margin: calc(var(--app-header-height) );
+  --margin: calc(var(--app-header-height));
   --height: calc(var(--app-height) - var(--margin));
   --width: calc(var(--app-width) - var(--ranking-width));
 
@@ -241,7 +245,7 @@ html {
 }
 
 .negative-unselected {
-  background-color: #E6D3CB !important;
+  background-color: #e6d3cb !important;
 }
 
 .negative-unselected:hover {
@@ -249,7 +253,6 @@ html {
 }
 
 .negative-border {
-
 }
 
 .negative {
@@ -261,7 +264,6 @@ html {
 }
 
 .positive-border {
-
 }
 
 .positive-selected {
@@ -269,7 +271,7 @@ html {
 }
 
 .positive-unselected {
-  background-color: #9AB6C3 !important;
+  background-color: #9ab6c3 !important;
 }
 
 .positive-unselected:hover {

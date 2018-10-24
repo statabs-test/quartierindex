@@ -1,15 +1,15 @@
-import { createMuiTheme } from 'material-ui/styles';
-import teal from 'material-ui/colors/teal';
+import { createMuiTheme } from '@material-ui/core/styles'
+import teal from '@material-ui/core/colors/teal'
 
 export const theme = createMuiTheme({
   palette: {
     primary: teal,
-    secondary: teal
+    secondary: teal,
   },
   overrides: {
     MuiFormLabel: {
       root: {
-        color: 'balck',
+        color: 'black',
       },
     },
     MuiFormControlLabel: {
@@ -17,5 +17,5 @@ export const theme = createMuiTheme({
         fontSize: '12px !important',
       },
     },
-  }
-});
+  },
+})
