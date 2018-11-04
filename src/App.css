@@ -23,7 +23,7 @@ html {
 .App {
   position: relative;
   display: block;
-  width: 900px;
+  width: 951px;
   height: 700px;
   --district-ranking-width: 40%
 }
@@ -101,6 +101,24 @@ h2.district-ranking-title {
   background: #f5f5f5;
   border: 1px solid #cccccc;
   border-radius: 5px;
+}
+  .mainFrame {
+  background-color: #f5f5f5;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+}
+/* INDICATOR SELECTION
+----------------------------------------------*/
+.selection {
+  background-color: #fcfcfc;
+  margin: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+}
+
+.highlitedText {
+  color: '#386c8e';
+  font-weight: 'bold';
 }
 
 

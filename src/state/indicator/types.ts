@@ -27,4 +27,6 @@ export interface IndicatorState {
     readonly byId: {
         readonly [key: string]: Indicator
     }
+
+    readonly orderedBySelection: string[]
 }

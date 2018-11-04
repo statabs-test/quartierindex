@@ -51,11 +51,15 @@ const IndicatorImportanceLine: React.SFC<
   Props & PublicProps & WithStyles<typeof styles>
 > = props => {
   const { classes, indicator, setIndicatorWeight } = props
-
+  const indexPrefix = indicator.weightText.indexOf(indicator.name.split(' ')[0]);
+  const prefix = indicator.weightText.substring(0, indexPrefix);
+  const suffixIndex = indicator.weightText.indexOf(' ', indexPrefix + indicator.name.length);
+  const suffix = indicator.weightText.substring(suffixIndex, indicator.weightText.length);
+  const text = indicator.weightText.substring(indexPrefix, suffixIndex );
   return (
     <Grid container alignItems="center" style={{ paddingTop: '5px', paddingBottom: '5px' }}>
       <Grid item xs={4}>
-        {indicator.weightText}
+        {prefix} <span style={{color: '#386c8e', fontWeight: 'bold'}}>{text} </span> {suffix}
       </Grid>
       <Grid item xs={8}>
         <Grid container spacing={0}>

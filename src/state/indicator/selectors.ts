@@ -31,3 +31,11 @@ export const getSelectedIndicators = (state: Rootstate): Indicator[] => {
     return indicator.selected
   })
 }
+
+/**
+ * Get choosable indicators (Selector for dropdown in diagram)
+ */
+export const getChoosableIndicators = (state: Rootstate): Indicator[] => {
+  const indicators = allIndicators(state)
+  return indicators.filter(indicator => !indicator.selected);
+}

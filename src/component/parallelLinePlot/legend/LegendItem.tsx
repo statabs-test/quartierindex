@@ -4,6 +4,8 @@ import { connect } from 'react-redux'
 import { Grid, Icon } from '@material-ui/core'
 import { Indicator, NegativePositive, WeightNumber } from '../../../state/indicator/types'
 import Cancel from '@material-ui/icons/Cancel'
+import { getChoosableIndicators } from '../../../state/indicator/selectors'
+
 import {
   deselectIndicator,
   SetNegativeValuation,
@@ -21,6 +23,8 @@ import {
 } from '../../../helpers'
 
 interface Props {
+  choosableIndicators: Indicator[]
+
   positiveValuation(id: string): void
 
   negativeValuation(id: string): void
@@ -28,6 +32,7 @@ interface Props {
   setIndicatorWeight(id: string, weight: WeightNumber): void
 
   deselect(id: string): void
+
 }
 
 export interface PublicProps {
@@ -42,6 +47,7 @@ const LegendItem = ({
   positiveValuation,
   setIndicatorWeight,
   deselect,
+  choosableIndicators,
 }: Props & PublicProps) => {
   const sliderStyle = getColor(indicator.valuation === NegativePositive.Positive)
 
@@ -53,6 +59,16 @@ const LegendItem = ({
     >
       <Grid container>
         <Grid item xs={10}>
+          <select
+            onChange={event => alert('asdf')}
+            value={indicator.id}
+          >
+          <option value={indicator.id}>{indicator.name}</option>
+          {choosableIndicators.map(indic =>
+            (<option value={indic.id}>{indic.name}</option>)
+          )}
+          </select>
+
           <div className={'legend-name'}> {indicator.name}</div>
         </Grid>
         <Grid item xs={2} alignContent={'flex-end'}>
@@ -116,6 +132,7 @@ const LegendItem = ({
 
 const mapStateToProps = (state: Rootstate, props: PublicProps) => ({
   ...props,
+  choosableIndicators: getChoosableIndicators(state),
 })
 
 const mapDispatchToProps: Partial<Props> = {

@@ -1,11 +1,10 @@
 import * as React from 'react'
+import * as _ from 'lodash'
 import { connect } from 'react-redux'
 import { compose } from 'recompose'
 import { Rootstate } from '../../state/index'
-import { getGroupedIndicators } from '../../state/indicator/selectors'
 import { Indicator } from '../../state/indicator/types'
-import { deselectIndicator, selectIndicator } from '../../state/indicator/actions'
-import { getUtil } from '../../state/util/selectors'
+import { deselectIndicator, selectIndicator, toggleGroupIndicators } from '../../state/indicator/actions'
 import Grid from '@material-ui/core/Grid'
 import { Theme, WithStyles, withStyles, createStyles } from '@material-ui/core/styles'
 import FormControlLabel from '@material-ui/core/FormControlLabel'
@@ -18,6 +17,7 @@ interface PublicProps {
 export interface Props {
   select(id: string): void
   deselect(id: string): void
+  toggleGroup(subject: string, selected: boolean): void
 }
 
 export const styles = (theme: Theme) =>
@@ -36,14 +36,13 @@ export const styles = (theme: Theme) =>
     },
   })
 
-const IndicatorSelectionGroup: React.SFC<
-  Props & PublicProps & WithStyles<typeof styles>
-> = props => {
-  const { classes, value, groupName, select, deselect } = props
-  // console.log(classes);
+const IndicatorSelectionGroup: React.SFC<Props & PublicProps & WithStyles<typeof styles>> = props => {
+  const { classes, value, groupName, select, deselect, toggleGroup } = props;
+  const groupSelectedCount = _.filter(value, indicator => indicator.selected).length; 
   return (
     <Grid item xs={4}>
-      <h3>{groupName}</h3>
+    <div className="selection">
+      <h3>{groupName} ({groupSelectedCount})</h3>
       <Grid container>
         {value.map(indicator => (
           <Grid item xs={12} key={indicator.id}>
@@ -66,19 +65,39 @@ const IndicatorSelectionGroup: React.SFC<
             />
           </Grid>
         ))}
+        <Grid item xs={12} alignItems={'flex-end'}>
+      <FormControlLabel
+        key={groupName}
+        control={
+          <input
+            type="checkbox"
+            id={groupName}
+            className={classes.checkbox}
+            onChange={e => {
+              return toggleGroup(groupName, e.target.checked);
+            }}
+            value={groupName}
+          />
+        }
+        label={<div>Alle {groupName} Indikatoren</div>}
+        style={{ padding: '5px' }}
+      />
+      </Grid> 
       </Grid>
+      
+    </div>
     </Grid>
   )
 }
 
 const mapStateToProps = (state: Rootstate) => ({
-  groupedIndicators: getGroupedIndicators(state),
-  util: getUtil(state),
+  // empty
 })
 
 const mapDispatchToProps = {
   select: selectIndicator,
   deselect: deselectIndicator,
+  toggleGroup: toggleGroupIndicators,
 }
 
 export default compose<Props, PublicProps>(

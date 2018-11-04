@@ -12,7 +12,7 @@ export interface Props {
 }
 
 function AppNaviation({selectedIndicators}: Props) {
-  const disabled = !(selectedIndicators.length > 0);
+  const disabled = (selectedIndicators.length <= 0);
   return (
       <div className="right-grid navigation">
         <NavButton

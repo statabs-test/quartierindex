@@ -42,7 +42,7 @@ const Legend = ({selectedIndicators}: EnhancedProps) => {
 
 const mapStateToProps = (state: Rootstate, props: StateFromProps) =>
     ({
-      selectedIndicators: props.selectedIndicators
+      selectedIndicators: props.selectedIndicators,
     });
 
 const mapDispatchToProps = null;

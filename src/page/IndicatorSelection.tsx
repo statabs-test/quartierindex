@@ -34,8 +34,20 @@ export const styles = (theme: Theme) =>
 
 const IndicatorSelection: React.SFC<Props & WithStyles<typeof styles>> = props => {
   const { groupedIndicators, valid } = props
+  const numIndicators = _.reduce(groupedIndicators, (sum, indicatorGroup) => (indicatorGroup.length + sum), 0); 
   return (
     <WizardLayout ignoreRedirect>
+      <div className="wizardDescription">
+      Willkommen beim Wohnviertel- und Gemeinde-Index. Hier können Sie anhand ausgesuchter Merkmale Ihre eigene
+      Quartier-Rangliste erstellen.<br />
+      Bitte wählen Sie in einem ersten Schritt zwischen 1 und {numIndicators} Indikatoren aus, welche in die 
+      Index-Berechnung einfliessen sollen.<br />
+      In einem nächsten Schritt können Sie bestimmen, ob Sie einen hohen Wert eines Indikators als positiv 
+      oder als negativ beurteilen.<br />
+      Im dritten Schritt können Sie festlegen, mit welcher Gewichtung ein ausgewählter Indikator in Ihre 
+      Berechnung einfliessen soll.
+      </div>
+      <div className="mainFrame">
       <div>
         <h2 className="wizardTitle">
           Schritt 1: Wählen Sie mindestens einen Indikator für die Index Berechnung aus
@@ -48,6 +60,7 @@ const IndicatorSelection: React.SFC<Props & WithStyles<typeof styles>> = props =
       </div>
 
       <SelectionNavigation valid={valid} />
+      </div>
     </WizardLayout>
   )
 }

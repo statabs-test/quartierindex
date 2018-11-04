@@ -1,6 +1,9 @@
 import * as constants from './constants'
 import { NegativePositive, WeightNumber } from './types'
 
+/** Combine the three interfaces to one action */
+export type IndicatorAction = IndicatorSelection | IndicatorUpdate | SetValuation | SetWeight | IndicatorGroupToggle;
+
 /**
  * SelectIndicator or deselect indicator interface with payload
  */
@@ -38,8 +41,13 @@ export interface SetWeight {
   }
 }
 
-/** Combine the three interfaces to one action */
-export type IndicatorAction = IndicatorSelection | IndicatorUpdate | SetValuation | SetWeight;
+export interface IndicatorGroupToggle {
+    type: constants.INDICATOR_GROUP_SELECTION
+    payload: {
+        subject: string
+        selected: boolean
+    }
+}
 
 /**
  * SelectIndicator indicator for ranking
@@ -109,4 +117,14 @@ export function setWeight(id: string, weight: WeightNumber): SetWeight {
       weight: weight
     }
   }
+}
+
+export function toggleGroupIndicators(subject: string, selected: boolean): IndicatorGroupToggle {
+    return {
+        type: constants.INDICATOR_GROUP_SELECTION,
+        payload: {
+            subject,
+            selected
+        }
+    }
 }

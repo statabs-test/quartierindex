@@ -36,6 +36,14 @@ const IndicatorRating: React.SFC<Props & WithStyles<typeof styles>> = props => {
 
   return (
     <WizardLayout>
+      <div className="wizardDescription">
+        Bitte legen Sie hier für jeden Indikator fest, ob ein hoher Wert für 
+        Sie positiv oder negativ ist.<br />
+        Ein Beispiel: Wenn Sie keinen hohen Anteil an Einfamilienhäuser haben wollen, 
+        weisen Sie dem entsprechenden Indikator das Attribut "negativ" zu.<br />
+        Die Ausgangseinstellung ist für jeden ausgewählten Indikator "positiv" gesetzt.
+      </div>
+      <div className="mainFrame">
       <h2 className="wizardTitle">
         Schritt 2: Bewerten Sie, ob der Indikator positiv oder negativ ausfällt
       </h2>
@@ -45,6 +53,7 @@ const IndicatorRating: React.SFC<Props & WithStyles<typeof styles>> = props => {
         })}
       </Grid>
       <RatingNavigation />
+      </div>
     </WizardLayout>
   )
 }
