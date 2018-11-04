@@ -1,6 +1,7 @@
 import * as _ from 'lodash'
 import { Rootstate } from '../index'
 import { Indicator } from './types'
+// import { indicator } from './reducer';
 
 const select = (state: Rootstate) => {
   return state.indicator
@@ -25,10 +26,9 @@ export const getGroupedIndicators = (state: Rootstate): { [key: string]: Indicat
  * SelectIndicator all selected indicator
  */
 export const getSelectedIndicators = (state: Rootstate): Indicator[] => {
-  const indicators = allIndicators(state)
-
-  return indicators.filter(indicator => {
-    return indicator.selected
+  const selectedIndicatorIndexes = state.indicator.orderedBySelection;
+  return _.map(selectedIndicatorIndexes, (selectedId) => {
+    return state.indicator.byId[selectedId];
   })
 }
 
