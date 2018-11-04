@@ -1,0 +1,19 @@
+.App {
+  background: green;
+}
+.main-view > .information {
+  background: #bf6e6e;
+}
+
+.main-view > .title {
+  background: #6c6c6c;
+}
+
+.main-view > .indicator-ranking {
+  background: #225b33;
+}
+
+.main-view > .navigation {
+  background-color: rgb(1, 2, 1);
+}
+

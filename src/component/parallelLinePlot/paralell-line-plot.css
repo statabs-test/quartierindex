@@ -1,0 +1,31 @@
+.parallel-line-plot-scroll-area {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+  /* background: green; */
+}
+
+.parallel-line-plot-container {
+  width: 100%;
+  height: 100%;
+}
+
+.parallel-line-plot-legend {
+  height: 18%;
+  width: 100%;
+  /* background: rgb(245, 143, 0); */
+  align-items: center;
+  position: absolute;
+  /* rechars creates some transparant divs...*/
+}
+
+.parallel-line-plot-chart {
+  position: absolute;
+  /* background: cornflowerblue; */
+  left: 115px;
+  top: 125px;
+}
+

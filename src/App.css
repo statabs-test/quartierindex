@@ -25,6 +25,7 @@ html {
   display: block;
   width: 900px;
   height: 700px;
+  --district-ranking-width: 40%
 }
 
 /* Wizard
@@ -36,26 +37,73 @@ h2.wizardTitle {
   color: #225b33;
 }
 
-/*HEADER
-----------------------------------------------*/
+h2.district-ranking-title {
+  font-family: Arial, sans-serif;
+  font-size: 13pt;
+  font-weight: bold;
+  color: black;
+}
 
-.App-navigation {
-  position: absolute;
+
+/* Main view
+-----------------------------------------------*/
+.main-view {
+  position: relative;
+}
+
+.main-view > .information {
+  height: 10%;
+  top: 0;
+}
+
+.main-view > .title {
   height: 5%;
-  width: 100%;
+  top: 10%;
+}
 
-  font-size: 1.5em;
-  margin: 0;
+.main-view > .district-ranking {
+  height: 85%;
+  top: 15%;
+}
+
+.main-view > .indicator-ranking {
+  height: 95%;
+  top: 0;
+}
+
+.main-view > .navigation {
+  height: 5%;
+  bottom: 0;
+
   text-align: center;
-  /* background-color: #1208081f; */
   display: flex;
 }
-.nav-button {
-  display: flex !important;
-  width: 100%;
-  margin-left: 5% !important;
-  margin-right: 5% !important;
+
+.main-view > .left-grid {
+  position: absolute;
+  width: var(--district-ranking-width);
+  left: 0;
 }
+
+.main-view > .right-grid {
+  position: absolute;
+  width: calc(100% - var(--district-ranking-width));
+  left: var(--district-ranking-width);
+}
+
+.district-ranking > .container {
+  --margin: 4%;
+  position: relative;
+  width: calc(100% - var(--margin));
+  height:calc(100% - var(--margin));
+  left: calc(var(--margin)/2);
+  top: 1%;
+  background: #f5f5f5;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+
 /*RANKING MAIN CONTAINER
 -----------------------------------------------*/
 .ranking-container {
@@ -72,45 +120,7 @@ h2.wizardTitle {
   /* background: blue;*/
   height: 100%;
   width: 100%;
-
   z-index: 2;
-}
-
-/*PARALLEL LINE PLOT MAIN CONTAINER
-------------------------------------------------*/
-
-.parallel-line-plot-scroll-area {
-  position: absolute;
-  left: 20%;
-  top: 6%;
-
-  width: 727px;
-  height: 750px;
-
-  overflow-x: scroll;
-  overflow-y: hidden;
-  /* background: green; */
-}
-
-.parallel-line-plot-container {
-  width: 100%;
-  height: 100%;
-}
-
-.parallel-line-plot-legend {
-  height: 18%;
-  width: 100%;
-  /* background: rgb(245, 143, 0); */
-  align-items: center;
-  position: absolute;
-  /* rechars creates some transparant divs...*/
-}
-
-.parallel-line-plot-chart {
-  position: absolute;
-  /* background: cornflowerblue; */
-  left: 115px;
-  top: 125px;
 }
 
 .legend-container {
@@ -145,12 +155,8 @@ h2.wizardTitle {
   display: flex;
   flex-direction: column;
 }
-/*RANKING MAIN CONTAINER
------------------------------------------------*/
-.ranking-container {
-  display: grid;
-  grid-area: ranking;
-}
+
+/*RANKING MAIN CONTAINER -----------------------------------------------*/
 
 .legend-container-right {
   width: 165px;
@@ -227,16 +233,6 @@ h2.wizardTitle {
   background: blanchedalmond;
 }
 
-/*UTIL ELEMENTS
-------------------------------------------------*/
-.title {
-  grid-area: title;
-  width: 100%;
-  height: auto;
-  background: brown;
-  text-align: center;
-  margin: 0;
-}
 
 /* Rating buttons
 ------------------------------------------------*/

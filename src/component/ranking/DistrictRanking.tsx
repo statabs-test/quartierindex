@@ -1,5 +1,4 @@
 import * as React from 'react';
-import LineRanking from './LineRanking';
 
 export interface PublicProps {
   className?: string
@@ -7,8 +6,10 @@ export interface PublicProps {
 
 const DistrictRanking: React.StatelessComponent<PublicProps> = ({}) => {
   return (
-      <div className="ranking-container">
-        <LineRanking/>
+      <div className="left-grid district-ranking">
+        <div className="container">
+          District ranking bar plot
+        </div>
       </div>
   );
 };

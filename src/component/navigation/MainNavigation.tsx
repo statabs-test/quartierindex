@@ -4,6 +4,7 @@ import { Rootstate } from '../../state';
 import { getSelectedIndicators } from '../../state/indicator/selectors';
 import { Indicator } from '../../state/indicator/types';
 import NavButton from '../customElements/NavButton';
+import './navigation.css';
 
 export interface Props {
   selectedIndicators: Indicator[]
@@ -13,7 +14,7 @@ export interface Props {
 function AppNaviation({selectedIndicators}: Props) {
   const disabled = !(selectedIndicators.length > 0);
   return (
-      <div className="App-navigation">
+      <div className="right-grid navigation">
         <NavButton
             className="nav-button"
             variant="raised"
