@@ -57,6 +57,15 @@ function updateOrderedListById(orderedBySelection: string[], select: boolean, ne
   return removeIdFromOrderedListById(orderedBySelection, newId);
 }
 
+function updetOrderedListBySelectedGroup(orderedBySelection: string[], select: boolean, indicators: Indicator[]) {
+  if (select) {
+    let onlyNewEntries = indicators.filter(i => orderedBySelection.findIndex(e => i.id === e) === -1 );
+    let ids = _.map(onlyNewEntries, 'id');
+    return [...orderedBySelection, ...ids];
+  }
+  return orderedBySelection.filter( id => indicators.findIndex(i => id === i.id) === -1 );
+}
+
 export function indicator(
   state: IndicatorState = { byId: arrayToObjectById(indicatorData), orderedBySelection: [] },
   action: IndicatorAction): IndicatorState {
@@ -144,7 +153,11 @@ export function indicator(
           byId: {
             ...state.byId,
             ...toggledIndicators
-          }
+          },
+          orderedBySelection: updetOrderedListBySelectedGroup(
+            state.orderedBySelection,
+            action.payload.selected,
+            toGroupIndicator),
         }
     }
     return state;

@@ -61,10 +61,11 @@ const IndicatorSelectionGroup: React.SFC<Props & PublicProps & WithStyles<typeof
                 />
               }
               label={indicator.name}
-              style={{ padding: '5px' }}
+              style={{ paddingBottom: '2px' }}
             />
           </Grid>
         ))}
+        
         <Grid item xs={12} alignItems={'flex-end'}>
       <FormControlLabel
         key={groupName}
@@ -80,7 +81,7 @@ const IndicatorSelectionGroup: React.SFC<Props & PublicProps & WithStyles<typeof
           />
         }
         label={<div>Alle {groupName} Indikatoren</div>}
-        style={{ padding: '5px' }}
+        style={{ paddingBottom: '2px' }}
       />
       </Grid> 
       </Grid>
