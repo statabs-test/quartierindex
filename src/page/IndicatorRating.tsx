@@ -47,7 +47,7 @@ const IndicatorRating: React.SFC<Props & WithStyles<typeof styles>> = props => {
       <h2 className="wizardTitle">
         Schritt 2: Legen Sie fest, ob ein hoher Wert eines Indikators positiv oder negativ ist
       </h2>
-      <div className="selection">
+      <div className="ratingLines">
       <Grid container direction="row">
         {selectedIndicators.map(indicator => {
           return <IndicatorRatingLine key={indicator.id} indicator={indicator} />

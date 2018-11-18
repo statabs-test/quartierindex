@@ -113,21 +113,18 @@ h2.district-ranking-title {
   border: 1px solid #cccccc;
   border-radius: 2px;
 }
-/* INDICATOR SELECTION
-----------------------------------------------*/
+
+/*----------------------------------------------*/
+/* INDICATOR SELECTION                          */
+/*----------------------------------------------*/
 .selection {
   background-color: #fcfcfc;
   margin: 5px;
   padding-left: 5px;
   border: 1px solid #cccccc;
   border-radius: 2px;
+  height: 100%;
 }
-
-.highlitedText {
-  color: '#386c8e';
-  font-weight: 'bold';
-}
-
 
 /*RANKING MAIN CONTAINER
 -----------------------------------------------*/
@@ -258,43 +255,103 @@ h2.district-ranking-title {
   background: blanchedalmond;
 }
 
+/*------------------------------------------------*/
+/* R A I T I N G  (Pos / Neg)                     */
+/*------------------------------------------------*/
+.ratingLines {
+  background-color: #fcfcfc;
+  margin: 5px;
+  padding: 8px 5px 8px 5px;
+  padding-right: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  height: 100%;
+}
+.ratingLine {
+  /* Use Flex row system */
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 4px 0px 4px 0px;
+  justify-content: space-between;
+}
+
+.ratingLineText {
+  display: flex;
+}
+
+.ratingLineText p {
+  display: flex;
+  align-content: center
+}
+
+.ratingLineText p:before {
+  content:"\A";
+  width: 0; 
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 10px solid black;
+  padding-right: 3px; 
+}
+.ratingLineText p:after {
+  content: " ...";
+  white-space: pre;
+}
+
+.ratingLineButtons {
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.ratingButton {
+  display: flex;
+  color: white;
+  text-transform: none;
+  border-radius: 2px;
+  cursor: pointer;
+  align-items: center;
+  box-shadow: 1px 2px #c1c1c1;
+}
 
 /* Rating buttons
 ------------------------------------------------*/
 .negative-selected {
-  background-color: #e54803 !important;
+  background-color: #e54803;
+  border: 1px solid #e54803;
+
 }
 
 .negative-unselected {
-  background-color: #e6d3cb !important;
+  background-color: #e6d3cb;
+  border: 1px solid #e6d3cb;
 }
 
 .negative-unselected:hover {
-  background-color: #e54803 !important;
-}
-
-.negative-border {
+  background-color: #e54803;
+  border: 1px solid #e54803;
 }
 
 .negative {
-  background: #e54803 !important;
-}
-
-.positive {
-  background: #0387c1 !important;
-}
-
-.positive-border {
+  background: #e54803;
+  border: 1px solid #e54803;
 }
 
 .positive-selected {
-  background-color: #0387c1 !important;
+  background-color: #0387c1;
+  border: 1px solid #0387c1;
+  margin-right: 10px;
 }
 
 .positive-unselected {
-  background-color: #9ab6c3 !important;
+  background-color: #9ab6c3;
+  border: 1px solid #9ab6c3;
+  margin-right: 10px;
 }
 
 .positive-unselected:hover {
-  background-color: #0387c1 !important;
+  background-color: #0387c1;
+  border: 1px solid #0387c1;
+  margin-right: 10px;
 }

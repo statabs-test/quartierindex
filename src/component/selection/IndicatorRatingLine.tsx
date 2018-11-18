@@ -4,9 +4,9 @@ import { compose } from 'recompose'
 import { Rootstate } from '../../state'
 import { getSelectedIndicators } from '../../state/indicator/selectors'
 import { Indicator } from '../../state/indicator/types'
-import Grid from '@material-ui/core/Grid'
-import { Theme, WithStyles, withStyles, createStyles } from '@material-ui/core/styles'
-import Button from '@material-ui/core/Button'
+// import Grid from '@material-ui/core/Grid'
+// import { Theme, WithStyles, withStyles, createStyles } from '@material-ui/core/styles'
+// import Button from '@material-ui/core/Button'
 import Icon from '@material-ui/core/Icon'
 import { SetNegativeValuation, SetPositiveValuation } from '../../state/indicator/actions'
 import { getClassNameSelectedUnselected } from '../../helpers'
@@ -21,61 +21,31 @@ export interface Props {
   negativeValuation(id: string): void
 }
 
-export const styles = (theme: Theme) =>
-  createStyles({
-    root: {
-      flexGrow: 1,
-    },
-    title: {
-      padding: theme.spacing.unit * 2,
-      textAlign: 'center',
-      color: '#1D4E2C',
-    },
-    textCentered: {
-      display: 'inline-block',
-    },
-    positiveButton: {
-      color: 'white',
-      marginRight: theme.spacing.unit,
-      marginBottom: theme.spacing.unit,
-      textTransform: 'none',
-    },
-    negativeButton: {
-      color: 'white',
-      marginRight: theme.spacing.unit,
-      marginBottom: theme.spacing.unit,
-      textTransform: 'none',
-    },
-  })
-
-const IndicatorRatingLine: React.SFC<Props & PublicProps & WithStyles<typeof styles>> = props => {
-  const { classes, positiveValuation, negativeValuation, indicator } = props
+const IndicatorRatingLine: React.SFC<Props & PublicProps> = props => {
+  const { positiveValuation, negativeValuation, indicator } = props
   return (
-    <Grid container spacing={0}>
-      <Grid item xs={8}>
-        {indicator.valuationText}
-      </Grid>
-      <Grid item xs={4}>
-        <Button
-          variant="raised"
-          component="span"
-          className={classes.positiveButton + getClassNameSelectedUnselected(indicator, 'positive')}
+    <div className="ratingLine">
+      <div className="ratingLineText">
+        <p>{indicator.valuationText}</p>
+      </div>
+      <div className="ratingLineButtons">
+        <button
+          className={'ratingButton' + getClassNameSelectedUnselected(indicator, 'positive')}
           onClick={() => positiveValuation(indicator.id)}
         >
-          <Icon style={{ paddingRight: '5px' }}>mood</Icon>
+        <Icon style={{ paddingRight: '5px' }}>mood</Icon>
           Positiv
-        </Button>
-        <Button
-          className={classes.negativeButton + getClassNameSelectedUnselected(indicator, 'negative')}
-          variant="raised"
-          component="span"
+        </button>
+
+        <button
+          className={'ratingButton' + getClassNameSelectedUnselected(indicator, 'negative')}
           onClick={() => negativeValuation(indicator.id)}
         >
           <Icon style={{ paddingRight: '5px' }}>mood_bad</Icon>
           Negativ
-        </Button>
-      </Grid>
-    </Grid>
+        </button>
+      </div>
+    </div>
   )
 }
 
@@ -89,7 +59,7 @@ const mapDispatchToProps = {
 }
 
 export default compose<Props, PublicProps>(
-  withStyles(styles),
+  // withStyles(styles),
   connect(
     mapStateToProps,
     mapDispatchToProps
