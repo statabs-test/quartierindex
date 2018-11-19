@@ -6,7 +6,8 @@ import Legend from './legend/Legend';
 import { Indicator } from '../../state/indicator/types';
 import { toggleIndicatorSelectionVisibility } from '../../state/util/actions';
 import { Redirect } from 'react-router';
-import './paralell-line-plot.css'
+import './paralell-line-plot.css' 
+import ChartContainer from './ChartContainer';
 
 export interface Props {
   selectedIndicators: Indicator[]
@@ -22,7 +23,7 @@ function IndicatorRanking({selectedIndicators, toggleVisibility}: Props) {
       <div id="scroll-area" className="right-grid parallel-line-plot-scroll-area">
         <div className="parallel-line-plot-container">
           <Legend selectedIndicators={selectedIndicators}/>
-
+          <ChartContainer/>
         </div>
       </div>
   );

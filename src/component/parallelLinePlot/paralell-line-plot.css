@@ -29,3 +29,19 @@
   top: 125px;
 }
 
+
+.bar-plot-container {    
+  height: 80%;
+  width: 100%;
+  top: 20%;
+  /* background: rgb(245, 143, 0); */
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  display: -webkit-box;
+}
+.bar-plot {
+  
+  width: 239px;
+}
+

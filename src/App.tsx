@@ -5,7 +5,8 @@ import IndicatorSelection from './page/IndicatorSelection'
 import IndicatorRating from './page/IndicatorRating'
 import IndicatorImportance from './page/IndicatorWeight'
 import MainView from './page/MainView'
-// import './app.debug.css'
+import './app.debug.css'
+
 class App extends React.Component {
   render() {
     return (
