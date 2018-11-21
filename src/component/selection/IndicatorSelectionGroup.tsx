@@ -5,9 +5,6 @@ import { compose } from 'recompose'
 import { Rootstate } from '../../state/index'
 import { Indicator } from '../../state/indicator/types'
 import { deselectIndicator, selectIndicator, toggleGroupIndicators } from '../../state/indicator/actions'
-import Grid from '@material-ui/core/Grid'
-import { Theme, WithStyles, withStyles, createStyles } from '@material-ui/core/styles'
-import FormControlLabel from '@material-ui/core/FormControlLabel'
 
 interface PublicProps {
   groupName: string
@@ -20,74 +17,51 @@ export interface Props {
   toggleGroup(subject: string, selected: boolean): void
 }
 
-export const styles = (theme: Theme) =>
-  createStyles({
-    checkbox: {
-      marginLeft: '15px',
-    },
-    checked: {
-      color: '#1d4e2c',
-      '&$checked': {
-        color: '#1d4e2c'[500],
-      },
-    },
-    sizeIcon: {
-      fontSize: 20,
-    },
-  })
+function getToggleLabel(label: String) {
+  return 'Alle ' + label + 'Indikatoren';
+}
 
-const IndicatorSelectionGroup: React.SFC<Props & PublicProps & WithStyles<typeof styles>> = props => {
-  const { classes, value, groupName, select, deselect, toggleGroup } = props;
+const IndicatorSelectionGroup: React.SFC<Props & PublicProps> = props => {
+  const { value, groupName, select, deselect, toggleGroup } = props;
   const groupSelectedCount = _.filter(value, indicator => indicator.selected).length; 
   return (
-    <Grid item xs={4}>
-    <div className="selection">
-      <h3>{groupName} ({groupSelectedCount})</h3>
-      <Grid container>
+    <div className="selectionGroup">
+      <div className="selectionGroupTitle">
+        {groupName} ({groupSelectedCount})
+      </div>
+      <div className="selectionCheckboxes">
         {value.map(indicator => (
-          <Grid item xs={12} key={indicator.id}>
-            <FormControlLabel
-              key={indicator.id}
-              control={
-                <input
-                  type="checkbox"
-                  id={indicator.id}
-                  className={classes.checkbox}
-                  checked={indicator.selected}
-                  onChange={e => {
-                    return e.target.checked ? select(indicator.id) : deselect(indicator.id)
-                  }}
-                  value={indicator.id}
-                />
-              }
-              label={indicator.name}
-              style={{ paddingBottom: '2px' }}
-            />
-          </Grid>
-        ))}
-        
-        <Grid item xs={12} alignItems={'flex-end'}>
-      <FormControlLabel
-        key={groupName}
-        control={
+          <div className="selectionCheckbox">
+            <label>
+              <input
+                type="checkbox"
+                id={indicator.id}
+                name={indicator.name}
+                value={indicator.id}
+                checked={indicator.selected}
+                onChange={e => {
+                  return e.target.checked ? select(indicator.id) : deselect(indicator.id)
+                }}
+              />
+            {indicator.name}
+          </label>
+        </div>
+      ))}
+      </div>
+      <div className="toggleGroup">
+        <label>
           <input
             type="checkbox"
             id={groupName}
-            className={classes.checkbox}
+            value={groupName}
             onChange={e => {
               return toggleGroup(groupName, e.target.checked);
             }}
-            value={groupName}
           />
-        }
-        label={<div>Alle {groupName} Indikatoren</div>}
-        style={{ paddingBottom: '2px' }}
-      />
-      </Grid> 
-      </Grid>
-      
+          {getToggleLabel(groupName)}
+        </label>
+      </div> 
     </div>
-    </Grid>
   )
 }
 
@@ -102,7 +76,6 @@ const mapDispatchToProps = {
 }
 
 export default compose<Props, PublicProps>(
-  withStyles(styles),
   connect(
     mapStateToProps,
     mapDispatchToProps
