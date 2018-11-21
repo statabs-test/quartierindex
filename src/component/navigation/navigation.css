@@ -4,3 +4,18 @@
   margin-left: 5% !important;
   margin-right: 5% !important;
 }
+
+div.wizardFooter {
+  margin: 10px 5px 5px 5px;
+  height: 80px;
+}
+
+p.stepper-description {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.wizard-right-button {
+  width: 100%;
+  margin-bottom: 5px !important;
+}

@@ -37,24 +37,26 @@ const IndicatorRating: React.SFC<Props & WithStyles<typeof styles>> = props => {
   return (
     <WizardLayout>
       <div className="wizardDescription">
-        Bitte legen Sie hier für jeden Indikator fest, ob ein hoher Wert für 
-        Sie positiv oder negativ ist.<br />
-        Ein Beispiel: Wenn Sie keinen hohen Anteil an Einfamilienhäuser haben wollen, 
-        weisen Sie dem entsprechenden Indikator das Attribut "negativ" zu.<br />
+        Bitte legen Sie hier für jeden Indikator fest, ob ein hoher Wert für Sie positiv oder
+        negativ ist.
+        <br />
+        Ein Beispiel: Wenn Sie keinen hohen Anteil an Einfamilienhäuser haben wollen, weisen Sie dem
+        entsprechenden Indikator das Attribut "negativ" zu.
+        <br />
         Die Ausgangseinstellung ist für jeden ausgewählten Indikator "positiv" gesetzt.
       </div>
       <div className="mainFrame">
-      <h2 className="wizardTitle">
-        Schritt 2: Legen Sie fest, ob ein hoher Wert eines Indikators positiv oder negativ ist
-      </h2>
-      <div className="ratingLines">
-      <Grid container direction="row">
-        {selectedIndicators.map(indicator => {
-          return <IndicatorRatingLine key={indicator.id} indicator={indicator} />
-        })}
-      </Grid>
-      </div>
-      <RatingNavigation />
+        <h2 className="wizardTitle">
+          Schritt 2: Legen Sie fest, ob ein hoher Wert eines Indikators positiv oder negativ ist
+        </h2>
+        <div className="ratingLines">
+          <Grid container direction="row">
+            {selectedIndicators.map(indicator => {
+              return <IndicatorRatingLine key={indicator.id} indicator={indicator} />
+            })}
+          </Grid>
+        </div>
+        <RatingNavigation />
       </div>
     </WizardLayout>
   )
