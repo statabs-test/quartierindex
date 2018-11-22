@@ -6,7 +6,6 @@ import { getSelectedIndicators } from '../state/indicator/selectors'
 import { Indicator } from '../state/indicator/types'
 import { toggleIndicatorSelectionVisibility } from '../state/util/actions'
 import Grid from '@material-ui/core/Grid'
-import { Theme, WithStyles, withStyles, createStyles } from '@material-ui/core/styles'
 import IndicatorRatingLine from '../component/selection/IndicatorRatingLine'
 import RatingNavigation from '../component/navigation/RatingNavigation'
 import WizardLayout from 'src/component/layout/WizardLayout'
@@ -21,17 +20,7 @@ export interface Props {
   toggleVisibility(visibility: boolean): void
 }
 
-export const styles = (theme: Theme) =>
-  createStyles({
-    root: {
-      flexGrow: 1,
-    },
-    leftIcon: {
-      marginRight: theme.spacing.unit,
-    },
-  })
-
-const IndicatorRating: React.SFC<Props & WithStyles<typeof styles>> = props => {
+const IndicatorRating: React.SFC<Props> = props => {
   const { selectedIndicators } = props
 
   return (
@@ -49,7 +38,7 @@ const IndicatorRating: React.SFC<Props & WithStyles<typeof styles>> = props => {
         <h2 className="wizardTitle">
           Schritt 2: Legen Sie fest, ob ein hoher Wert eines Indikators positiv oder negativ ist
         </h2>
-        <div className="ratingLines">
+        <div className="contentBox">
           <Grid container direction="row">
             {selectedIndicators.map(indicator => {
               return <IndicatorRatingLine key={indicator.id} indicator={indicator} />
@@ -74,6 +63,5 @@ export default compose(
   connect(
     mapStateToProps,
     mapDispatchToProps
-  ),
-  withStyles(styles)
+  )
 )(IndicatorRating)

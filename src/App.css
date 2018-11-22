@@ -276,7 +276,7 @@ h2.district-ranking-title {
 /*------------------------------------------------*/
 /* R A I T I N G  (Pos / Neg)                     */
 /*------------------------------------------------*/
-.ratingLines {
+.contentBox {
   background-color: #fcfcfc;
   margin: 5px;
   padding: 8px 5px 8px 5px;
