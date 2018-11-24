@@ -6,7 +6,7 @@ import Legend from './legend/Legend';
 import { Indicator } from '../../state/indicator/types';
 import { toggleIndicatorSelectionVisibility } from '../../state/util/actions';
 import { Redirect } from 'react-router';
-import './paralell-line-plot.css' 
+import './paralell-line-plot.css'
 import ChartContainer from './ChartContainer';
 
 export interface Props {
@@ -15,18 +15,36 @@ export interface Props {
   toggleVisibility(visibility: boolean): void
 }
 
-function IndicatorRanking({selectedIndicators, toggleVisibility}: Props) {
-  if (selectedIndicators.length === 0) {
-    return <Redirect to="/"/>
+class IndicatorRanking extends React.Component<Props> {
+  selectedIndicators: Indicator[];
+  myRef: React.RefObject<HTMLDivElement> = React.createRef<HTMLDivElement>();
+
+  constructor(props: Props) {
+    super(props)
+    this.selectedIndicators = props.selectedIndicators;
   }
-  return (
-      <div id="scroll-area" className="right-grid parallel-line-plot-scroll-area">
+
+  componentDidMount() {
+
+    if (this.myRef.current) {
+      this.myRef.current.style.setProperty('--number-of-selected-indicators', String(this.selectedIndicators.length))
+    }
+  }
+
+  render() {
+    if (this.selectedIndicators.length === 0) {
+      return <Redirect to="/" />
+    }
+
+    return (
+      <div ref={this.myRef} id="scroll-area" className="right-grid parallel-line-plot-scroll-area">
         <div className="parallel-line-plot-container">
-          <Legend selectedIndicators={selectedIndicators}/>
-          <ChartContainer/>
+          <Legend selectedIndicators={this.selectedIndicators} />
+          <ChartContainer />
         </div>
       </div>
-  );
+    );
+  }
 }
 
 const mapStateToProps = (state: Rootstate) => ({
