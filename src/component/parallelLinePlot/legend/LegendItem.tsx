@@ -37,12 +37,10 @@ interface Props {
 
 export interface PublicProps {
   indicator: Indicator
-  style: React.CSSProperties
 }
 
 const LegendItem = ({
   indicator,
-  style,
   negativeValuation,
   positiveValuation,
   setIndicatorWeight,
@@ -55,7 +53,6 @@ const LegendItem = ({
     <div
       key={indicator.id}
       className={'legend-container' + getClassNameNegPosBorder(indicator)}
-      style={style}
     >
       <Grid container>
         <Grid item xs={10}>
