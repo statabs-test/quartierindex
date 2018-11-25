@@ -25,7 +25,7 @@ html {
   display: block;
   width: 951px;
   height: 700px;
-  --district-ranking-width: 30%;
+  --district-ranking-width: 135px;
   --column-width-indicator: 190px;
   --column-margin-indicator:3px;
   --ranking-top: 120px;
