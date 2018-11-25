@@ -53,7 +53,6 @@ h2.district-ranking-title {
   color: black;
 }
 
-
 /* Main view
 -----------------------------------------------*/
 .main-view {
@@ -110,7 +109,7 @@ h2.district-ranking-title {
   border: 1px solid #cccccc;
   border-radius: 5px;
 }
-  .mainFrame {
+.mainFrame {
   background-color: #f5f5f5;
   border: 1px solid #cccccc;
   border-radius: 2px;
@@ -119,13 +118,32 @@ h2.district-ranking-title {
 /*----------------------------------------------*/
 /* INDICATOR SELECTION                          */
 /*----------------------------------------------*/
-.selection {
+.selections {
+  display: flex;
+}
+
+.selectionGroup {
+  display: flex; /* This pushs the toggle group to the bottom */
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1; /* All columns same width */
   background-color: #fcfcfc;
   margin: 5px;
   padding-left: 5px;
   border: 1px solid #cccccc;
   border-radius: 2px;
-  height: 100%;
+}
+
+.selectionGroupTitle {
+  padding: 5px 0px 3px 5px;
+}
+.selectionCheckboxes {
+  flex-grow: 1;
+  padding-bottom: 10px;
+}
+
+.selectionCheckbox {
+  padding-bottom: 2px;
 }
 
 /*RANKING MAIN CONTAINER
@@ -260,7 +278,7 @@ h2.district-ranking-title {
 /*------------------------------------------------*/
 /* R A I T I N G  (Pos / Neg)                     */
 /*------------------------------------------------*/
-.ratingLines {
+.contentBox {
   background-color: #fcfcfc;
   margin: 5px;
   padding: 8px 5px 8px 5px;
@@ -278,33 +296,29 @@ h2.district-ranking-title {
   justify-content: space-between;
 }
 
-.ratingLineText {
-  display: flex;
-}
-
 .ratingLineText p {
   display: flex;
-  align-content: center
+  align-content: center;
 }
 
 .ratingLineText p:before {
-  content:"\A";
-  width: 0; 
+  content: '\A';
+  width: 0;
   height: 0;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
   border-left: 10px solid black;
-  padding-right: 3px; 
+  padding-right: 3px;
+  margin-top: 2px;
 }
 .ratingLineText p:after {
-  content: " ...";
+  content: ' ...';
   white-space: pre;
 }
 
 .ratingLineButtons {
   display: flex;
   justify-content: flex-end;
-
 }
 
 .ratingButton {
@@ -322,7 +336,6 @@ h2.district-ranking-title {
 .negative-selected {
   background-color: #e54803;
   border: 1px solid #e54803;
-
 }
 
 .negative-unselected {

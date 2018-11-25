@@ -58,10 +58,10 @@ const IndicatorImportanceLine: React.SFC<
   const text = indicator.weightText.substring(indexPrefix, suffixIndex );
   return (
     <Grid container alignItems="center" style={{ paddingTop: '5px', paddingBottom: '5px' }}>
-      <Grid item xs={4}>
-        {prefix} <span style={{color: '#386c8e', fontWeight: 'bold'}}>{text} </span> {suffix}
+      <Grid item xs={6}>
+        <p>{prefix} <span style={{color: '#386c8e', fontWeight: 'bold'}}>{text} </span> {suffix}</p>
       </Grid>
-      <Grid item xs={8}>
+      <Grid item xs={6}>
         <Grid container spacing={0}>
           {[WeightNumber.ONE, WeightNumber.TWO, WeightNumber.THREE, WeightNumber.FOUR].map(
             (weight, idx) => (

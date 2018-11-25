@@ -1,4 +1,5 @@
 import * as React from 'react'
+import * as c from 'classnames'
 import { Button } from '@material-ui/core'
 import * as H from 'history'
 import { ButtonProps } from '@material-ui/core/Button'
@@ -29,12 +30,21 @@ const styleDisabledButton = {
 /**
  * Additional functionality for navigation for material ui buttons
  */
-const NavButton: React.StatelessComponent<NavButtonProps> = ({ to, children, ...rest }) => {
+const NavButton: React.StatelessComponent<NavButtonProps> = ({
+  className,
+  to,
+  children,
+  ...rest
+}) => {
   return (
     <Button
       {...rest}
       component={b => (
-        <Link to={to} className={b.className} style={rest.disabled ? styleDisabledButton : styleEnabledButton}>
+        <Link
+          to={to}
+          className={c(b.className, className)}
+          style={rest.disabled ? styleDisabledButton : styleEnabledButton}
+        >
           {b.children}
         </Link>
       )}

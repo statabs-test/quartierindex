@@ -5,7 +5,7 @@ import { compose } from 'recompose'
 import { Rootstate } from '../state/index'
 import { getGroupedIndicators, getSelectedIndicators } from '../state/indicator/selectors'
 import { Indicator } from '../state/indicator/types'
-import Grid from '@material-ui/core/Grid'
+// import Grid from '@material-ui/core/Grid'
 import { Theme, WithStyles, withStyles, createStyles } from '@material-ui/core/styles'
 import IndicatorSelectionGroup from '../component/selection/IndicatorSelectionGroup'
 import SelectionNavigation from 'src/component/navigation/SelectionNavigation'
@@ -51,11 +51,11 @@ const IndicatorSelection: React.SFC<Props & WithStyles<typeof styles>> = props =
           <h2 className="wizardTitle">
             Schritt 1: Wählen Sie mindestens einen Indikator für die Index Berechnung aus
           </h2>
-          <Grid container spacing={0}>
+          <div className="selections">
             {_.map(groupedIndicators, (value, key) => (
               <IndicatorSelectionGroup key={key} groupName={key} value={value} />
             ))}
-          </Grid>
+          </div>
 
         <SelectionNavigation valid={valid} />
       </div>
