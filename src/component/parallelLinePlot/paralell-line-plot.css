@@ -1,3 +1,7 @@
+#scroll-area {
+   --number-of-selected-indicators: 0; /* the default */
+}
+
 .parallel-line-plot-scroll-area {
   position: absolute;
   width: 90%;
@@ -9,7 +13,12 @@
 }
 
 .parallel-line-plot-container {
-  width: 100%;
+  --flex-box-margin-multiplier: 4;
+  width: calc(  
+              (var(--number-of-selected-indicators) * 
+              ( var(--column-margin-indicator)  *  var(--flex-box-margin-multiplier) 
+                    + var(--column-width-indicator))
+              ));
   height: 100%;
 }
 
@@ -18,14 +27,15 @@
   width: 100%;
   /* background: rgb(245, 143, 0); */
   align-items: center;
-  position: absolute;
+  display: flex;
+
   /* rechars creates some transparant divs...*/
 }
 
 .parallel-line-plot-chart {
   position: absolute;
   /* background: cornflowerblue; */
-  left: 115px;
+  left: calc(var(--column-width-indicator) / 2);
   top: 125px;
 }
 
@@ -33,7 +43,7 @@
 .bar-plot-container {    
   height: 80%;
   width: 100%;
-  top: 20%;
+  top: var(--ranking-top);
   /* background: rgb(245, 143, 0); */
   -ms-flex-align: center;
   align-items: center;
@@ -41,7 +51,10 @@
   display: -webkit-box;
 }
 .bar-plot {
-  
-  width: 239px;
+  width: var(--column-width-indicator);
+  margin-left: var(--column-margin-indicator);
+  margin-right: var(--column-margin-indicator);
+  border: 1px solid #000000;
+  background-color: #ffffff
 }
 
