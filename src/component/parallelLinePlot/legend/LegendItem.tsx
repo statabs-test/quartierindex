@@ -32,7 +32,6 @@ interface Props {
   setIndicatorWeight(id: string, weight: WeightNumber): void
 
   deselect(id: string): void
-
 }
 
 export interface PublicProps {
@@ -50,20 +49,14 @@ const LegendItem = ({
   const sliderStyle = getColor(indicator.valuation === NegativePositive.Positive)
 
   return (
-    <div
-      key={indicator.id}
-      className={'legend-container' + getClassNameNegPosBorder(indicator)}
-    >
+    <div key={indicator.id} className={'legend-container' + getClassNameNegPosBorder(indicator)}>
       <Grid container>
         <Grid item xs={10}>
-          <select
-            onChange={event => alert('asdf')}
-            value={indicator.id}
-          >
-          <option value={indicator.id}>{indicator.name}</option>
-          {choosableIndicators.map(indic =>
-            (<option value={indic.id}>{indic.name}</option>)
-          )}
+          <select onChange={event => alert('asdf')} value={indicator.id}>
+            <option value={indicator.id}>{indicator.name}</option>
+            {choosableIndicators.map(indic => (
+              <option value={indic.id}>{indic.name}</option>
+            ))}
           </select>
 
           <div className={'legend-name'}> {indicator.name}</div>
