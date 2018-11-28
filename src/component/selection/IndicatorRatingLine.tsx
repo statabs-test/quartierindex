@@ -8,7 +8,7 @@ import { Indicator } from '../../state/indicator/types'
 // import { Theme, WithStyles, withStyles, createStyles } from '@material-ui/core/styles'
 // import Button from '@material-ui/core/Button'
 import Icon from '@material-ui/core/Icon'
-import { SetNegativeValuation, SetPositiveValuation } from '../../state/indicator/actions'
+import { setNegativeValuation, setPositiveValuation } from '../../state/indicator/actions'
 import { getClassNameSelectedUnselected } from '../../helpers'
 
 export interface PublicProps {
@@ -33,7 +33,7 @@ const IndicatorRatingLine: React.SFC<Props & PublicProps> = props => {
           className={'ratingButton' + getClassNameSelectedUnselected(indicator, 'positive')}
           onClick={() => positiveValuation(indicator.id)}
         >
-        <Icon style={{ paddingRight: '5px' }}>mood</Icon>
+          <Icon style={{ paddingRight: '5px' }}>mood</Icon>
           Positiv
         </button>
 
@@ -54,8 +54,8 @@ const mapStateToProps = (state: Rootstate) => ({
 })
 
 const mapDispatchToProps = {
-  positiveValuation: SetPositiveValuation,
-  negativeValuation: SetNegativeValuation,
+  positiveValuation: setPositiveValuation,
+  negativeValuation: setNegativeValuation,
 }
 
 export default compose<Props, PublicProps>(

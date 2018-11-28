@@ -1,4 +1,5 @@
 import * as React from 'react'
+import * as _ from 'lodash'
 import { Rootstate } from '../../../state'
 import { connect } from 'react-redux'
 import { Grid, Icon } from '@material-ui/core'
@@ -8,9 +9,10 @@ import { getChoosableIndicators } from '../../../state/indicator/selectors'
 
 import {
   deselectIndicator,
-  SetNegativeValuation,
-  SetPositiveValuation,
+  setNegativeValuation,
+  setPositiveValuation,
   setWeight,
+  replaceIndicatorWith,
 } from '../../../state/indicator/actions'
 
 import 'rc-slider/assets/index.css'
@@ -32,6 +34,8 @@ interface Props {
   setIndicatorWeight(id: string, weight: WeightNumber): void
 
   deselect(id: string): void
+  // curried function
+  replaceIndicator(selectId: string, replaceId: string): void
 }
 
 export interface PublicProps {
@@ -45,6 +49,7 @@ const LegendItem = ({
   setIndicatorWeight,
   deselect,
   choosableIndicators,
+  replaceIndicator,
 }: Props & PublicProps) => {
   const sliderStyle = getColor(indicator.valuation === NegativePositive.Positive)
 
@@ -52,7 +57,10 @@ const LegendItem = ({
     <div key={indicator.id} className={'legend-container' + getClassNameNegPosBorder(indicator)}>
       <Grid container>
         <Grid item xs={10}>
-          <select onChange={event => alert('asdf')} value={indicator.id}>
+          <select
+            onChange={event => replaceIndicator(event.target.value, indicator.id)}
+            value={indicator.id}
+          >
             <option value={indicator.id}>{indicator.name}</option>
             {choosableIndicators.map(indic => (
               <option value={indic.id}>{indic.name}</option>
@@ -126,10 +134,11 @@ const mapStateToProps = (state: Rootstate, props: PublicProps) => ({
 })
 
 const mapDispatchToProps: Partial<Props> = {
-  positiveValuation: SetPositiveValuation,
-  negativeValuation: SetNegativeValuation,
+  positiveValuation: setPositiveValuation,
+  negativeValuation: setNegativeValuation,
   setIndicatorWeight: setWeight,
   deselect: deselectIndicator,
+  replaceIndicator: _.curry(replaceIndicatorWith),
 }
 
 export default connect(
