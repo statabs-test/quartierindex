@@ -1,5 +1,5 @@
 #scroll-area {
-   --number-of-selected-indicators: 0; /* the default */
+  --number-of-selected-indicators: 0; /* the default */
 }
 
 .parallel-line-plot-scroll-area {
@@ -14,11 +14,15 @@
 
 .parallel-line-plot-container {
   --flex-box-margin-multiplier: 4;
-  width: calc(  
-              (var(--number-of-selected-indicators) * 
-              ( var(--column-margin-indicator)  *  var(--flex-box-margin-multiplier) 
-                    + var(--column-width-indicator))
-              ));
+  width: calc(
+    (
+      var(--number-of-selected-indicators) *
+        (
+          var(--column-margin-indicator) * var(--flex-box-margin-multiplier) +
+            var(--column-width-indicator)
+        )
+    )
+  );
   height: 100%;
 }
 
@@ -39,9 +43,9 @@
   top: 125px;
 }
 
-
-.bar-plot-container {    
-  height: 80%;
+/* Height need to be aligned with container (from rankning) */
+.bar-plot-container {
+  height: 100%;
   width: 100%;
   top: var(--ranking-top);
   /* background: rgb(245, 143, 0); */
@@ -50,11 +54,12 @@
   position: absolute;
   display: -webkit-box;
 }
+/* For responsive container of recharts a width and height is needed */
 .bar-plot {
   width: var(--column-width-indicator);
+  height: 100%;
   margin-left: var(--column-margin-indicator);
   margin-right: var(--column-margin-indicator);
   border: 1px solid #000000;
-  background-color: #ffffff
+  background-color: #ffffff;
 }
-

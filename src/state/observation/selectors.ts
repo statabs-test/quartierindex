@@ -61,7 +61,10 @@ export const getAverageValue = (observations: Observation[], indicator: Indicato
  */
 export const getWeightedAverageValue = (observations: Observation[], indicator: Indicator) => {
   return getAverageValue(observations, indicator) * indicator.valuation * indicator.weight
-  /*return indicator.valuation === 1 ?
+  /* Same as getAverageValue with multiplication and weight (0.25 - 1)
+   * if valuation -1 subtraction of weighted average from 1
+  
+  return indicator.valuation === 1 ?
       getAverageValue(observations, indicator) * indicator.weight
       : 1 - getAverageValue(observations, indicator) * indicator.weight;
       */
@@ -107,7 +110,7 @@ export const getSortedGlobalRanking = createSelector(
 )
 
 /**
- * This function accepts an additional prop {id: IndicatorId}, see getIndicator
+ * This function accepts an additional prop {id: string}, see getIndicator
  * Returns a weighted Rank[] of the corresponding indicator
  * @returns {Rank[]} sorted the same way as getSortedGlobalRanking
  */
@@ -117,8 +120,8 @@ export const makeGetIndicatorRanking = () => {
     (groupedByDistrict, sortedRanking, indicator): Rank[] => {
       // Get Rank per Util
       const rankings = _.map(groupedByDistrict, observations => {
-        // Do weight
-        const total = getWeightedAverageValue(observations, indicator)
+        // Do weight, but only positive in this case
+        const total = Math.abs(getWeightedAverageValue(observations, indicator))
 
         return {
           districtId: observations[0].districtId,
