@@ -22,8 +22,9 @@ const DistrictRanking: React.StatelessComponent<PublicProps & InjectedProps> = (
   ranks,
 }) => {
   const data = ranks.map((rank, i) => {
+    const rankNum = i + 1
     return {
-      name: i + '. ' + districts[rank.districtId].name,
+      name: rankNum + '. ' + districts[rank.districtId].name,
       value: round(rank.value, 2),
     }
   })
