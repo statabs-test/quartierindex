@@ -70,12 +70,12 @@ function updetOrderedListBySelectedGroup(
 ) {
   if (select) {
     let onlyNewEntries = indicators.filter(
-      i => orderedBySelection.findIndex(e => i.id === e) === -1
+      i => _.findIndex(orderedBySelection, e => i.id === e) === -1
     )
     let ids = _.map(onlyNewEntries, 'id')
     return [...orderedBySelection, ...ids]
   }
-  return orderedBySelection.filter(id => indicators.findIndex(i => id === i.id) === -1)
+  return orderedBySelection.filter(id => _.findIndex(indicators, i => id === i.id) === -1)
 }
 
 export function indicator(
