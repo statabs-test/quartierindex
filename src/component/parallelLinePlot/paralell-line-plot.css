@@ -14,15 +14,6 @@
 
 .parallel-line-plot-container {
   --flex-box-margin-multiplier: 4;
-  width: calc(
-    (
-      var(--number-of-selected-indicators) *
-        (
-          var(--column-margin-indicator) * var(--flex-box-margin-multiplier) +
-            var(--column-width-indicator)
-        )
-    )
-  );
   height: 100%;
 }
 
@@ -39,7 +30,7 @@
 .parallel-line-plot-chart {
   position: absolute;
   /* background: cornflowerblue; */
-  left: calc(var(--column-width-indicator) / 2);
+  left: calc(190px /**--column-width-indicator:**/ / 2);
   top: 125px;
 }
 
@@ -47,7 +38,7 @@
 .bar-plot-container {
   height: 100%;
   width: 100%;
-  top: var(--ranking-top);
+  top: 120px /*--ranking-top*/;
   /* background: rgb(245, 143, 0); */
   -ms-flex-align: center;
   align-items: center;
@@ -56,10 +47,10 @@
 }
 /* For responsive container of recharts a width and height is needed */
 .bar-plot {
-  width: var(--column-width-indicator);
+  width: 190px /**--column-width-indicator:**/;
   height: 100%;
-  margin-left: var(--column-margin-indicator);
-  margin-right: var(--column-margin-indicator);
+  margin-left: 3px; /**--column-margin-indicator**/
+  margin-right: 3px; /**--column-margin-indicator**/
   border: 1px solid #000000;
   background-color: #ffffff;
 }
