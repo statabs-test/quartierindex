@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { round } from 'lodash'
 import { connect } from 'react-redux'
-import { BarChart, Bar, CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tooltip } from 'recharts'
+import { BarChart, Bar, CartesianGrid, XAxis, YAxis, ResponsiveContainer } from 'recharts'
 import { Rootstate } from '../../state'
 import { getSortedGlobalRanking } from '../../state/observation/selectors'
 import { Rank } from 'src/state/observation/types'
@@ -45,7 +45,6 @@ const DistrictRanking: React.StatelessComponent<PublicProps & InjectedProps> = (
               orientation="right"
               axisLine={false}
             />
-            <Tooltip itemStyle={{ color: 'black' }} labelStyle={{ fontWeight: 'bold' }} />
             <Bar dataKey="value" fill="#FFD300" />
           </BarChart>
         </ResponsiveContainer>

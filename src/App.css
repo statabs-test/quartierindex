@@ -85,14 +85,14 @@ h2.district-ranking-title {
 
 .main-view > .left-grid {
   position: absolute;
-  width: 135px;  /* --district-ranking-width */
+  width: 300px;  /*--district-ranking-width*/
   left: 0;
 }
 
 .main-view > .right-grid {
   position: absolute;
-  width: calc(100% - 135px  /* --district-ranking-width */);
-  left: 135px;  /* --district-ranking-width */
+  width: calc(100% - 300px  /*--district-ranking-width*/);
+  left: 300px;  /* --district-ranking-width */
 }
 
 .district-ranking > .container {
