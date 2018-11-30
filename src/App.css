@@ -91,16 +91,16 @@ h2.district-ranking-title {
 
 .main-view > .right-grid {
   position: absolute;
-  width: calc(100% - 300px  /*--district-ranking-width*/);
-  left: 300px;  /* --district-ranking-width */
+  width: calc(100% - 300px /*--district-ranking-width*/);
+  left: 300px; /* --district-ranking-width */
 }
 
 .district-ranking > .container {
   --margin: 4%;
   position: relative;
   width: calc(100% - 4px /**--margin**/);
-  height:calc(100% - 4px /**--margin**/);
-  left: calc(4px /**--margin**//2);
+  height: calc(100% - 4px /**--margin**/);
+  left: calc(4px /**--margin**/ / 2);
   background: #f5f5f5;
   border: 1px solid #cccccc;
   border-radius: 5px;
@@ -163,13 +163,13 @@ h2.district-ranking-title {
 
 .legend-container {
   align-items: center;
-  display: -webkit-box; 
-  width:190px;
+  display: -webkit-box;
+  width: 190px;
   height: 110px;
- 
-  margin-left: 3px; /**--column-margin-indicator**/;
-  margin-right: 3px; /**--column-margin-indicator**/;
-  
+
+  margin-left: 3px; /**--column-margin-indicator**/
+  margin-right: 3px; /**--column-margin-indicator**/
+
   border-radius: 12px;
   text-align: center;
   border: 1px solid #000000;
