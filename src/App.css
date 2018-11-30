@@ -98,6 +98,7 @@ h2.district-ranking-title {
 .district-ranking > .container {
   --margin: 4%;
   position: relative;
+  display: inline-table;
   width: calc(100% - 4px /**--margin**/);
   height: calc(100% - 4px /**--margin**/);
   left: calc(4px /**--margin**/ / 2);
