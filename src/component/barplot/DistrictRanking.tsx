@@ -47,6 +47,7 @@ const DistrictRanking: React.StatelessComponent<PublicProps & InjectedProps> = (
                     />
                     <Bar dataKey="value" fill="#FFD300"/>
                 </BarChart>
+
             </div>
         </div>
     )
