@@ -24,10 +24,9 @@ const IndicatorRanking: React.SFC<Props> = props => {
   return (
     <div
       id="scroll-area"
-      style={{ '--number-of-selected-indicators': selectedIndicators.length } as any}
       className="right-grid parallel-line-plot-scroll-area"
     >
-      <div className="parallel-line-plot-container" style={{width: ( 190 + 6 ) * selectedIndicators.length}}>
+      <div className="parallel-line-plot-container" style={{width: ( 190 + 8) * (selectedIndicators.length + 1)}}>
         <Legend selectedIndicators={selectedIndicators} />
         <ChartContainer />
       </div>
