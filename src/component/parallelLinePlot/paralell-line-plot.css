@@ -19,7 +19,7 @@
 
 .parallel-line-plot-legend {
   height: 18%;
-  width: 100%;
+  width: inherit;
   /* background: rgb(245, 143, 0); */
   align-items: center;
   display: flex;
@@ -37,13 +37,13 @@
 /* Height need to be aligned with container (of rankning) */
 .bar-plot-container {
   height: 100%;
-  width: 100%;
+  width: inherit;
   top: 120px /*--ranking-top*/;
   /* background: rgb(245, 143, 0); */
   -ms-flex-align: center;
   align-items: center;
   position: absolute;
-  display: -webkit-box;
+  display: inline-flex;
 }
 /* For responsive container of recharts a width and height is needed */
 .bar-plot {
