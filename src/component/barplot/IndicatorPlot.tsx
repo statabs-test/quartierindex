@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { compose } from 'recompose'
 import { connect } from 'react-redux'
-import { Bar, BarChart, CartesianGrid,  ResponsiveContainer, XAxis, YAxis } from 'recharts'
+import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from 'recharts'
 import { round } from 'lodash'
 import { Rank } from '../../state/observation/types'
 import { Rootstate } from '../../state'
@@ -33,11 +33,10 @@ const IndicatorPlot: React.SFC<IndicatorProps> = ({ districts, indicator, ranks 
 
   return (
     <div className="bar-plot" key={indicator.id}>
-      <ResponsiveContainer>
-        <BarChart data={data} layout="vertical" width={500} height={1000}>
+        <BarChart data={data} layout="vertical" width={190} height={530}>
           <CartesianGrid />
           // TODO: Check color of bar
-          <XAxis domain={[0, 1]} type="number" />
+          <XAxis  domain={[0, 1]} type="number" />
           {
             <YAxis
               dataKey="name"
@@ -49,7 +48,6 @@ const IndicatorPlot: React.SFC<IndicatorProps> = ({ districts, indicator, ranks 
           }
           <Bar dataKey="value" fill={color.backgroundColor} />
         </BarChart>
-      </ResponsiveContainer>
     </div>
   )
 }
