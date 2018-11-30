@@ -165,12 +165,12 @@ const LegendItem: React.SFC<Props & PublicProps> = ({
           <Grid container>
             <Grid item xs={12}>
               <div className="rate-positive">
-                <Icon className={'rating-icon positive-unselected'}>mood</Icon>
+                <Icon className={'rating-icon positive-unselected-disabled'}>mood</Icon>
               </div>
             </Grid>
             <Grid item xs={12}>
               <div className="rate-negativ">
-                <Icon className={'rating-icon negative-unselected'}>mood_bad</Icon>
+                <Icon className={'rating-icon negative-unselected-disabled'}>mood_bad</Icon>
               </div>
             </Grid>
           </Grid>
