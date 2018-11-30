@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { compose } from 'recompose'
 import { connect } from 'react-redux'
-import { Bar, BarChart, CartesianGrid, Tooltip, ResponsiveContainer, XAxis, YAxis } from 'recharts'
+import { Bar, BarChart, CartesianGrid,  ResponsiveContainer, XAxis, YAxis } from 'recharts'
 import { round } from 'lodash'
 import { Rank } from '../../state/observation/types'
 import { Rootstate } from '../../state'
@@ -47,7 +47,6 @@ const IndicatorPlot: React.SFC<IndicatorProps> = ({ districts, indicator, ranks 
               hide={true}
             />
           }
-          <Tooltip itemStyle={{ color: 'black' }} labelStyle={{ fontWeight: 'bold' }} />
           <Bar dataKey="value" fill={color.backgroundColor} />
         </BarChart>
       </ResponsiveContainer>
