@@ -70,6 +70,19 @@ h2.district-ranking-title {
   top:120px /**--ranking-top**/;
 }
 
+.districtRankingExplanation {
+  margin-left: 5px;
+}
+.districtRankingExplanationList {
+  display: flex;
+  flex-direction: column;
+}
+
+.districtRankingExplanation > li {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid red;
+}
+
 .main-view > .indicator-ranking {
   height: 95%;
   top: 0;
@@ -260,18 +273,47 @@ h2.district-ranking-title {
   border-radius: 5px;
   height: 100%;
 }
+
+.rating {
+  display: flex;
+}
+
+.ratingLeft {
+  flex: 8;
+  background-color: #fcfcfc;
+  margin: 5px;
+  padding: 8px 5px 8px 5px;
+  padding-right: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.raitingRight {
+  flex: 4;
+  background-color: #fcfcfc;
+  margin: 5px;
+  padding: 8px 5px 8px 5px;
+  padding-right: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.indicatorRatingDescription {
+  padding: 4px 0px 4px 0px;
+  height: 45px;
+}
 .ratingLine {
   /* Use Flex row system */
   display: flex;
-  flex-direction: row;
-  width: 100%;
   padding: 4px 0px 4px 0px;
+  height: 45px;
   justify-content: space-between;
 }
 
 .ratingLineText p {
   display: flex;
-  align-content: center;
 }
 
 .ratingLineText p:before {
@@ -284,6 +326,7 @@ h2.district-ranking-title {
   padding-right: 3px;
   margin-top: 2px;
 }
+
 .ratingLineText p:after {
   content: ' ...';
   white-space: pre;
@@ -291,6 +334,7 @@ h2.district-ranking-title {
 
 .ratingLineButtons {
   display: flex;
+  height: 35px;
   justify-content: flex-end;
 }
 
@@ -342,4 +386,9 @@ h2.district-ranking-title {
   background-color: #0387c1;
   border: 1px solid #0387c1;
   margin-right: 10px;
+}
+
+/* Remove horizontal lines in barchart */
+.recharts-wrapper .recharts-cartesian-grid-horizontal {
+  stroke-opacity: 0;
 }

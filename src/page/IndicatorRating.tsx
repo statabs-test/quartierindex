@@ -5,7 +5,7 @@ import { Rootstate } from '../state/index'
 import { getSelectedIndicators } from '../state/indicator/selectors'
 import { Indicator } from '../state/indicator/types'
 import { toggleIndicatorSelectionVisibility } from '../state/util/actions'
-import Grid from '@material-ui/core/Grid'
+// import Grid from '@material-ui/core/Grid'
 import IndicatorRatingLine from '../component/selection/IndicatorRatingLine'
 import RatingNavigation from '../component/navigation/RatingNavigation'
 import WizardLayout from 'src/component/layout/WizardLayout'
@@ -38,15 +38,20 @@ const IndicatorRating: React.SFC<Props> = props => {
         <h2 className="wizardTitle">
           Schritt 2: Legen Sie fest, ob ein hoher Wert eines Indikators positiv oder negativ ist
         </h2>
-        <div className="contentBox">
-          <Grid container direction="row">
-            {selectedIndicators.map(indicator => {
-              return <IndicatorRatingLine key={indicator.id} indicator={indicator} />
-            })}
-          </Grid>
+          <div className="rating">
+            <div className="ratingLeft">
+              {selectedIndicators.map(indicator => {
+                return <IndicatorRatingLine key={indicator.id} indicator={indicator} />
+              })}
+            </div>
+            <div className="raitingRight">
+              {selectedIndicators.map(indicator => {
+                return <div className="indicatorRatingDescription" key={indicator.id}>{indicator.description}</div>
+              })}
+            </div>
+          </div>
         </div>
         <RatingNavigation />
-      </div>
     </WizardLayout>
   )
 }

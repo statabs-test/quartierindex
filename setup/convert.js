@@ -13,7 +13,7 @@ const data = fs.readFileSync(path.join(__dirname, '../data/spiderranks_2018.csv'
 
 const options = {
   delimiter : ',', // optional
-
+  
   // Rename column header, original was
   // Publikationsjahr,Indikator_Nr,jahr_num,jahr_char,Wert,Indikator_Name,Indicator_Label,Wohnviertel_id,Wohnviertel,Rang,Subjekt,Gewichtung_Text,Bewertung_Text
   headers: 'publication,indicatorId,year,yearChar,value,indicatorName,indicatorLabel,districtId,district,ranking,subject,weightText,valuationText',
@@ -21,6 +21,21 @@ const options = {
 
 const dataObject = csvjson.toObject(data, options);
 const dataWithoutHeader =  _.tail(dataObject);
+
+/* Gets the description for the indicators */
+const indicator_desc = fs.readFileSync(path.join(__dirname, '../data/indikatoren_texte.tsv'), { encoding : 'utf8'});
+const indicatorOptions = {
+  delimiter : '\t',
+  headers: "id\tname\tshortName\tdesc"
+};
+const indicatorDescObject = csvjson.toObject(indicator_desc, indicatorOptions);
+const indicatorDescWithoutHeader =  _.tail(indicatorDescObject);
+
+/* Returns the correct description for this indicator */
+function getDescription(data) {
+  indicator = _.find(indicatorDescWithoutHeader, item => item.id === data.indicatorId);
+  return indicator.desc
+}
 
 /*
  ###############################
@@ -39,7 +54,8 @@ const indicatorData = _.uniqBy(
         valuation: 1,
         valuationText: data.valuationText,
         weight: 1,
-        weightText: data.weightText
+        weightText: data.weightText,
+        description: getDescription(data)
     }
   }),
   'id'
