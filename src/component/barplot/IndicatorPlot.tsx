@@ -31,12 +31,20 @@ const IndicatorPlot: React.SFC<IndicatorProps> = ({ districts, indicator, ranks 
 
   const color = getColor(indicator.valuation === NegativePositive.Positive)
 
+  const ticks = [0, 0.25, 0.5, 0.75, 1]
+
   return (
     <div className="bar-plot" key={indicator.id}>
       <BarChart data={data} layout="vertical" width={190} height={530}>
         <CartesianGrid />
         // TODO: Check color of bar
-        <XAxis domain={[0, 1]} type="number" />
+        <XAxis
+          domain={[0, 1]}
+          type="number"
+          tickLine={false}
+          ticks={ticks}
+          tickFormatter={tick => (ticks.indexOf(tick) % 2 === 0 ? tick : '')}
+        />
         {<YAxis dataKey="name" type="category" orientation="right" axisLine={false} hide={true} />}
         <Bar dataKey="value" fill={color.backgroundColor} />
       </BarChart>
