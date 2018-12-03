@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { Grid, Icon } from '@material-ui/core'
 import { Indicator, NegativePositive, WeightNumber } from '../../../state/indicator/types'
 import { getChoosableIndicators } from '../../../state/indicator/selectors'
-import './legend.css';
+import './legend.css'
 
 import {
   deselectIndicator,
@@ -63,21 +63,22 @@ const LegendItem: React.SFC<Props & PublicProps> = ({
       <div key={indicator.id} className={'legend-container' + getClassNameNegPosBorder(indicator)}>
         <Grid container>
           <Grid item xs={2} alignContent={'flex-end'}>
-              <Icon className={'clear-icon'} onClick={() => deselect(indicator.id)}>clear </Icon>
+            <Icon className={'clear-icon'} onClick={() => deselect(indicator.id)}>
+              clear{' '}
+            </Icon>
           </Grid>
-            <Grid item xs={10}>
-                <select
-                    className={'legend-select'}
-                    onChange={event => replaceIndicator(event.target.value, indicator.id)}
-                    value={indicator.id}
-                >
-                    <option value={indicator.id}>{indicator.name}</option>
-                    {choosableIndicators.map(indic => (
-                        <option value={indic.id}>{indic.name}</option>
-                    ))}
-                </select>
-
-            </Grid>
+          <Grid item xs={10}>
+            <select
+              className={'legend-select'}
+              onChange={event => replaceIndicator(event.target.value, indicator.id)}
+              value={indicator.id}
+            >
+              <option value={indicator.id}>{indicator.name}</option>
+              {choosableIndicators.map(indic => (
+                <option value={indic.id}>{indic.name}</option>
+              ))}
+            </select>
+          </Grid>
 
           <Grid item xs={2}>
             <Grid container>
@@ -146,11 +147,11 @@ const LegendItem: React.SFC<Props & PublicProps> = ({
       <Grid container>
         <Grid item xs={10}>
           <select
-              className="legend-select-empty"
-              onChange={event =>
-                event.target.value !== 'empty' ? selectEmptyIndicator(event.target.value) : null
-              }
-              value="empty"
+            className="legend-select-empty"
+            onChange={event =>
+              event.target.value !== 'empty' ? selectEmptyIndicator(event.target.value) : null
+            }
+            value="empty"
           >
             <option value="empty">Indikator auswählen</option>
             {choosableIndicators.map(indic => (
