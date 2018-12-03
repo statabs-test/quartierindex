@@ -79,10 +79,12 @@ h2.district-ranking-title {
 .districtRankingExplanation {
   margin-left: 5px;
 }
+/* Didn't work with IE, partial support 
 .districtRankingExplanationList {
   display: flex;
   flex-direction: column;
 }
+*/
 
 .districtRankingExplanation > li {
   font: 200 20px/1.5 Helvetica, Verdana, sans-serif;

@@ -54,17 +54,20 @@ const DistrictRanking: React.StatelessComponent<PublicProps & InjectedProps> = (
           <Bar dataKey="value" fill="#FFD300" />
         </BarChart>
         <div className="districtRankingExplanation">
-          Berechnungsergebnis aus:
-          <div className="districtRankingExplanationList">
-            {indicators.map((indicator, i) => {
+          <p>
+            Berechnungsergebnis aus: <br />
+            {indicators.map(indicator => {
               return (
-                <div key={indicator.id}>
-                  - {indicator.name} mit einer Gewichtung von{' '}
-                  {indicator.weight * indicator.valuation}
-                </div>
+                <React.Fragment key={indicator.id}>
+                  <span className="districtRankingExplanationEntry">
+                    - {indicator.name} mit einer Gewichtung von{' '}
+                    {indicator.weight * indicator.valuation}
+                  </span>
+                  <br />
+                </React.Fragment>
               )
             })}
-          </div>
+          </p>
         </div>
       </div>
     </div>
