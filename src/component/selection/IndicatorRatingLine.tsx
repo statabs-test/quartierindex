@@ -15,13 +15,12 @@ export interface PublicProps {
   indicator: Indicator
 }
 
-export interface Props {
+type Props = {
   positiveValuation(id: string): void
-
   negativeValuation(id: string): void
-}
+} & PublicProps
 
-const IndicatorRatingLine: React.SFC<Props & PublicProps> = props => {
+const IndicatorRatingLine: React.SFC<Props> = props => {
   const { positiveValuation, negativeValuation, indicator } = props
   return (
     <div className="ratingLine">

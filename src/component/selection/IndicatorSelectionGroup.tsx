@@ -15,17 +15,17 @@ interface PublicProps {
   value: Indicator[]
 }
 
-export interface Props {
+type Props = {
   select(id: string): void
   deselect(id: string): void
   toggleGroup(subject: string, selected: boolean): void
-}
+} & PublicProps
 
 function getToggleLabel(label: String) {
   return 'Alle ' + label + ' Indikatoren'
 }
 
-const IndicatorSelectionGroup: React.SFC<Props & PublicProps> = props => {
+const IndicatorSelectionGroup: React.SFC<Props> = props => {
   const { value, groupName, select, deselect, toggleGroup } = props
   const groupSelectedCount = _.filter(value, indicator => indicator.selected).length
   return (

@@ -8,15 +8,10 @@ import { Indicator } from '../state/indicator/types'
 // import Grid from '@material-ui/core/Grid'
 import { Theme, WithStyles, withStyles, createStyles } from '@material-ui/core/styles'
 import IndicatorSelectionGroup from '../component/selection/IndicatorSelectionGroup'
-import SelectionNavigation from 'src/component/navigation/SelectionNavigation'
-import WizardLayout from 'src/component/layout/WizardLayout'
+import SelectionNavigation from '../component/navigation/SelectionNavigation'
+import WizardLayout from '../component/layout/WizardLayout'
 
 export interface PublicProps {}
-
-export interface Props {
-  groupedIndicators: { [key: string]: Indicator[] }
-  valid: boolean
-}
 
 export const styles = (theme: Theme) =>
   createStyles({
@@ -32,30 +27,42 @@ export const styles = (theme: Theme) =>
     },
   })
 
-const IndicatorSelection: React.SFC<Props & WithStyles<typeof styles>> = props => {
+export type Props = {
+  groupedIndicators: { [key: string]: Indicator[] }
+  valid: boolean
+} & WithStyles<typeof styles>
+
+const IndicatorSelection: React.SFC<Props> = props => {
   const { groupedIndicators, valid } = props
-  const numIndicators = _.reduce(groupedIndicators, (sum, indicatorGroup) => (indicatorGroup.length + sum), 0); 
+  const numIndicators = _.reduce(
+    groupedIndicators,
+    (sum, indicatorGroup) => indicatorGroup.length + sum,
+    0
+  )
   return (
     <WizardLayout ignoreRedirect>
       <div className="wizardDescription">
-        Willkommen beim Wohnviertel- und Gemeinde-Index. Hier können Sie anhand ausgesuchter Merkmale Ihre eigene
-        Quartier-Rangliste erstellen.<br />
-        Bitte wählen Sie in einem ersten Schritt zwischen 1 und {numIndicators} Indikatoren aus, welche in die 
-        Index-Berechnung einfliessen sollen.<br />
-        In einem nächsten Schritt können Sie bestimmen, ob Sie einen hohen Wert eines Indikators als positiv 
-        oder als negativ beurteilen.<br />
-        Im dritten Schritt können Sie festlegen, mit welcher Gewichtung ein ausgewählter Indikator in Ihre 
-        Berechnung einfliessen soll.
+        Willkommen beim Wohnviertel- und Gemeinde-Index. Hier können Sie anhand ausgesuchter
+        Merkmale Ihre eigene Quartier-Rangliste erstellen.
+        <br />
+        Bitte wählen Sie in einem ersten Schritt zwischen 1 und {numIndicators} Indikatoren aus,
+        welche in die Index-Berechnung einfliessen sollen.
+        <br />
+        In einem nächsten Schritt können Sie bestimmen, ob Sie einen hohen Wert eines Indikators als
+        positiv oder als negativ beurteilen.
+        <br />
+        Im dritten Schritt können Sie festlegen, mit welcher Gewichtung ein ausgewählter Indikator
+        in Ihre Berechnung einfliessen soll.
       </div>
-        <div className="mainFrame">
-          <h2 className="wizardTitle">
-            Schritt 1: Wählen Sie mindestens einen Indikator für die Index Berechnung aus
-          </h2>
-          <div className="selections">
-            {_.map(groupedIndicators, (value, key) => (
-              <IndicatorSelectionGroup key={key} groupName={key} value={value} />
-            ))}
-          </div>
+      <div className="mainFrame">
+        <h2 className="wizardTitle">
+          Schritt 1: Wählen Sie mindestens einen Indikator für die Index Berechnung aus
+        </h2>
+        <div className="selections">
+          {_.map(groupedIndicators, (value, key) => (
+            <IndicatorSelectionGroup key={key} groupName={key} value={value} />
+          ))}
+        </div>
 
         <SelectionNavigation valid={valid} />
       </div>

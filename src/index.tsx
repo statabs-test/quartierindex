@@ -8,6 +8,7 @@ import { store } from './state/index'
 // import registerServiceWorker from './registerServiceWorker'
 import './index.css'
 import { theme } from './theme/theme'
+import 'babel-polyfill'
 
 ReactDOM.render(
   <Provider store={store}>

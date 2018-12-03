@@ -15,10 +15,6 @@ export interface PublicProps {
   indicator: Indicator
 }
 
-export interface Props {
-  setIndicatorWeight(id: string, weight: WeightNumber): void
-}
-
 export const styles = (theme: Theme) =>
   createStyles({
     root: {
@@ -47,19 +43,24 @@ export const styles = (theme: Theme) =>
     },
   })
 
-const IndicatorImportanceLine: React.SFC<
-  Props & PublicProps & WithStyles<typeof styles>
-> = props => {
+type Props = {
+  setIndicatorWeight(id: string, weight: WeightNumber): void
+} & PublicProps &
+  WithStyles<typeof styles>
+
+const IndicatorImportanceLine: React.SFC<Props> = props => {
   const { classes, indicator, setIndicatorWeight } = props
-  const indexPrefix = indicator.weightText.indexOf(indicator.name.split(' ')[0]);
-  const prefix = indicator.weightText.substring(0, indexPrefix);
-  const suffixIndex = indicator.weightText.indexOf(' ', indexPrefix + indicator.name.length);
-  const suffix = indicator.weightText.substring(suffixIndex, indicator.weightText.length);
-  const text = indicator.weightText.substring(indexPrefix, suffixIndex );
+  const indexPrefix = indicator.weightText.indexOf(indicator.name.split(' ')[0])
+  const prefix = indicator.weightText.substring(0, indexPrefix)
+  const suffixIndex = indicator.weightText.indexOf(' ', indexPrefix + indicator.name.length)
+  const suffix = indicator.weightText.substring(suffixIndex, indicator.weightText.length)
+  const text = indicator.weightText.substring(indexPrefix, suffixIndex)
   return (
     <Grid container alignItems="center" style={{ paddingTop: '5px', paddingBottom: '5px' }}>
       <Grid item xs={6}>
-        <p>{prefix} <span style={{color: '#386c8e', fontWeight: 'bold'}}>{text} </span> {suffix}</p>
+        <p>
+          {prefix} <span style={{ color: '#386c8e', fontWeight: 'bold' }}>{text} </span> {suffix}
+        </p>
       </Grid>
       <Grid item xs={6}>
         <Grid container spacing={0}>
@@ -85,8 +86,9 @@ const IndicatorImportanceLine: React.SFC<
   )
 }
 
-const mapStateToProps = (state: Rootstate) => ({
+const mapStateToProps = (state: Rootstate, ownProps: PublicProps) => ({
   selectedIndicators: getSelectedIndicators(state),
+  ...ownProps,
 })
 
 const mapDispatchToProps = {

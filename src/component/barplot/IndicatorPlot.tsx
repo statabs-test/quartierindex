@@ -5,10 +5,10 @@ import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from 'recharts'
 import { round } from 'lodash'
 import { Rank } from '../../state/observation/types'
 import { Rootstate } from '../../state'
-import { makeGetIndicatorRanking } from 'src/state/observation/selectors'
+import { makeGetIndicatorRanking } from '../../state/observation/selectors'
 import { District } from '../../state/district/types'
 import { Indicator, NegativePositive } from '../../state/indicator/types'
-import { allDistrictsById } from 'src/state/district/selectors'
+import { allDistrictsById } from '../../state/district/selectors'
 import { getColor } from '../../helpers'
 export interface IndicatorPlotPublicProps {
   // indicator id

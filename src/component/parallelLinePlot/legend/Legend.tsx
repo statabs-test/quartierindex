@@ -28,9 +28,7 @@ const mapStateToProps = (state: Rootstate, props: StateFromProps) => ({
   selectedIndicators: props.selectedIndicators,
 })
 
-const mapDispatchToProps = null
-
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
+  undefined
 )(Legend)

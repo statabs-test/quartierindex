@@ -5,12 +5,13 @@ import { getSelectedIndicators } from '../../state/indicator/selectors'
 import { Indicator } from '../../state/indicator/types'
 import NavButton from '../customElements/NavButton'
 import './navigation.css'
+import { compose } from 'recompose'
 
 export interface Props {
   selectedIndicators: Indicator[]
 }
 
-function AppNaviation({ selectedIndicators }: Props) {
+const AppNaviation: React.SFC<Props> = ({ selectedIndicators }) => {
   const disabled = selectedIndicators.length <= 0
 
   return (
@@ -34,7 +35,9 @@ const mapStateToProps = (state: Rootstate) => ({
   selectedIndicators: getSelectedIndicators(state),
 })
 
-export default connect(
-  mapStateToProps,
-  null
+export default compose<Props, {}>(
+  connect(
+    mapStateToProps,
+    undefined
+  )
 )(AppNaviation)

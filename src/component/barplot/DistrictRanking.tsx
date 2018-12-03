@@ -4,11 +4,11 @@ import { connect } from 'react-redux'
 import { BarChart, Bar, CartesianGrid, XAxis, YAxis } from 'recharts'
 import { Rootstate } from '../../state'
 import { getSortedGlobalRanking } from '../../state/observation/selectors'
-import { Rank } from 'src/state/observation/types'
-import { Indicator } from 'src/state/indicator/types'
-import { allDistrictsById } from 'src/state/district/selectors'
-import { getSelectedIndicators } from 'src/state/indicator/selectors'
-import { District } from 'src/state/district/types'
+import { Rank } from '../../state/observation/types'
+import { Indicator } from '../../state/indicator/types'
+import { allDistrictsById } from '../../state/district/selectors'
+import { getSelectedIndicators } from '../../state/indicator/selectors'
+import { District } from '../../state/district/types'
 
 export interface PublicProps {
   className?: string
