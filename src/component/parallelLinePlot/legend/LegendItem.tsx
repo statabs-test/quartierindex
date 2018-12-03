@@ -62,7 +62,7 @@ const LegendItem: React.SFC<Props & PublicProps> = ({
     return (
       <div key={indicator.id} className={'legend-container' + getClassNameNegPosBorder(indicator)}>
         <Grid container>
-          <Grid item xs={2} alignContent={'flex-end'}>
+          <Grid item xs={2}>
             <Icon className={'clear-icon'} onClick={() => deselect(indicator.id)}>
               clear{' '}
             </Icon>
@@ -75,7 +75,9 @@ const LegendItem: React.SFC<Props & PublicProps> = ({
             >
               <option value={indicator.id}>{indicator.name}</option>
               {choosableIndicators.map(indic => (
-                <option value={indic.id}>{indic.name}</option>
+                <option key={indic.id} value={indic.id}>
+                  {indic.name}
+                </option>
               ))}
             </select>
           </Grid>

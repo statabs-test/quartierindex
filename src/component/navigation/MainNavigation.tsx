@@ -15,15 +15,15 @@ function AppNaviation({ selectedIndicators }: Props) {
 
   return (
     <div className="right-grid navigation">
-      <NavButton className="nav-button" variant="raised" to={'/'}>
+      <NavButton className="nav-button" variant="contained" to={'/'}>
         Auswahl
       </NavButton>
 
-      <NavButton className="nav-button" disabled={disabled} variant="raised" to={'ranking'}>
+      <NavButton className="nav-button" disabled={disabled} variant="contained" to={'ranking'}>
         Bewertung
       </NavButton>
 
-      <NavButton className="nav-button" disabled={disabled} variant="raised" to={'/importance'}>
+      <NavButton className="nav-button" disabled={disabled} variant="contained" to={'/importance'}>
         Gewichtung
       </NavButton>
     </div>

@@ -11,7 +11,12 @@ const SelectionNavigation: React.SFC<SelectionNavigationProps> = ({ valid }) => 
     <div className="wizardFooter">
       <Grid container justify="space-between">
         <Grid item xs={2}>
-          <NavButton className="wizard-left-button" disabled={!valid} variant="raised" to={'/plot'}>
+          <NavButton
+            className="wizard-left-button"
+            disabled={!valid}
+            variant="contained"
+            to={'/plot'}
+          >
             Rangliste erstellen
           </NavButton>
         </Grid>
@@ -32,7 +37,7 @@ const SelectionNavigation: React.SFC<SelectionNavigationProps> = ({ valid }) => 
           <NavButton
             className="wizard-right-button"
             disabled={!valid}
-            variant="raised"
+            variant="contained"
             to={'/ranking'}
           >
             Weiter zur Bewertung
