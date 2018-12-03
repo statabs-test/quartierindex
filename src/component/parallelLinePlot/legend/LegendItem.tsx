@@ -157,13 +157,15 @@ const LegendItem: React.SFC<Props & PublicProps> = ({
           >
             <option value="empty">Indikator auswählen</option>
             {choosableIndicators.map(indic => (
-              <option value={indic.id}>{indic.name}</option>
+              <option key={indic.id} value={indic.id}>
+                {indic.name}
+              </option>
             ))}
           </select>
 
           {/* <div className={'legend-name'}> </div> */}
         </Grid>
-        <Grid item xs={2} alignContent={'flex-end'}>
+        <Grid item xs={2}>
           {}
         </Grid>
         <Grid item xs={2}>

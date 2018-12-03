@@ -41,7 +41,7 @@ const DistrictRanking: React.StatelessComponent<PublicProps & InjectedProps> = (
         {/* District ranking bar plot */}
         <BarChart data={data} width={280} height={530} layout="vertical">
           <CartesianGrid />
-          // TODO: Check color of bar
+          {/* TODO: Check color of bar*/}
           <XAxis
             domain={[-1, 1]}
             interval="preserveStart"
@@ -50,14 +50,7 @@ const DistrictRanking: React.StatelessComponent<PublicProps & InjectedProps> = (
             ticks={ticks}
             tickFormatter={tick => (ticks.indexOf(tick) % 2 === 0 ? tick : '')}
           />
-          <YAxis
-            width={130}
-            // mirror
-            dataKey="name"
-            type="category"
-            orientation="right"
-            axisLine={false}
-          />
+          <YAxis width={130} dataKey="name" type="category" orientation="right" axisLine={false} />
           <Bar dataKey="value" fill="#FFD300" />
         </BarChart>
         <div className="districtRankingExplanation">
