@@ -27,6 +27,12 @@ html {
   height: 700px;
 }
 
+label,
+input[type='checkbox'],
+input[type='radio'] {
+  cursor: pointer;
+}
+
 /* Wizard
 ------------------------------------------------*/
 h2.wizardTitle {
@@ -67,7 +73,7 @@ h2.district-ranking-title {
 
 .main-view > .district-ranking {
   height: 83%;
-  top:120px /**--ranking-top**/;
+  top: 120px /**--ranking-top**/;
 }
 
 .districtRankingExplanation {
@@ -98,7 +104,7 @@ h2.district-ranking-title {
 
 .main-view > .left-grid {
   position: absolute;
-  width: 300px;  /*--district-ranking-width*/
+  width: 300px; /*--district-ranking-width*/
   left: 0;
 }
 
@@ -260,7 +266,6 @@ h2.district-ranking-title {
 /* Indicator selection and deselection
 ------------------------------------------------*/
 
-
 /*------------------------------------------------*/
 /* R A I T I N G  (Pos / Neg)                     */
 /*------------------------------------------------*/
@@ -343,7 +348,6 @@ h2.district-ranking-title {
   color: white;
   text-transform: none;
   border-radius: 2px;
-  cursor: pointer;
   align-items: center;
   box-shadow: 1px 2px #c1c1c1;
 }
@@ -358,6 +362,13 @@ h2.district-ranking-title {
 .negative-unselected {
   background-color: #e6d3cb;
   border: 1px solid #e6d3cb;
+  cursor: pointer;
+}
+
+.negative-unselected-disabled {
+  background-color: #e6d3cb;
+  border: 1px solid #e6d3cb;
+  cursor: not-allowed;
 }
 
 .negative-unselected:hover {
@@ -380,6 +391,14 @@ h2.district-ranking-title {
   background-color: #9ab6c3;
   border: 1px solid #9ab6c3;
   margin-right: 10px;
+  cursor: pointer;
+}
+
+.positive-unselected-disabled {
+  background-color: #9ab6c3;
+  border: 1px solid #9ab6c3;
+  margin-right: 10px;
+  cursor: not-allowed;
 }
 
 .positive-unselected:hover {
@@ -391,4 +410,8 @@ h2.district-ranking-title {
 /* Remove horizontal lines in barchart */
 .recharts-wrapper .recharts-cartesian-grid-horizontal {
   stroke-opacity: 0;
+}
+
+.clear-icon {
+  cursor: pointer;
 }
