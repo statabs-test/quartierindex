@@ -33,21 +33,13 @@ const IndicatorPlot: React.SFC<IndicatorProps> = ({ districts, indicator, ranks 
 
   return (
     <div className="bar-plot" key={indicator.id}>
-        <BarChart data={data} layout="vertical" width={190} height={530}>
-          <CartesianGrid />
-          // TODO: Check color of bar
-          <XAxis  domain={[0, 1]} type="number" />
-          {
-            <YAxis
-              dataKey="name"
-              type="category"
-              orientation="right"
-              axisLine={false}
-              hide={true}
-            />
-          }
-          <Bar dataKey="value" fill={color.backgroundColor} />
-        </BarChart>
+      <BarChart data={data} layout="vertical" width={190} height={530}>
+        <CartesianGrid />
+        // TODO: Check color of bar
+        <XAxis domain={[0, 1]} type="number" />
+        {<YAxis dataKey="name" type="category" orientation="right" axisLine={false} hide={true} />}
+        <Bar dataKey="value" fill={color.backgroundColor} />
+      </BarChart>
     </div>
   )
 }

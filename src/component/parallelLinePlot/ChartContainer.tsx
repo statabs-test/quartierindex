@@ -19,6 +19,7 @@ import {
 import CustomDot from './plotElements/CustomDot'
 import { compose } from 'recompose'
 import IndicatorPlot from '../barplot/IndicatorPlot'
+import EmptyIndicatorPlot from '../barplot/EmptyIndicatorPlot'
 
 export interface PublicProps {}
 
@@ -122,6 +123,7 @@ const barPlot: React.SFC<Props> = props => {
       {props.selectedIndicators.map(indicator => (
         <IndicatorPlot key={indicator.id} indicator={indicator} />
       ))}
+      <EmptyIndicatorPlot />
     </div>
   )
 }
