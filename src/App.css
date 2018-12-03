@@ -197,6 +197,10 @@ h2.district-ranking-title {
   /* background: #cc8dab; */
 }
 
+.neutral-border {
+  border: 1px solid #aaa;
+}
+
 .legend-container-title {
   display: flex;
   flex-direction: column;
