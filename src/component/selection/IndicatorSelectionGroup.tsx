@@ -22,7 +22,16 @@ type Props = {
 } & PublicProps
 
 function getToggleLabel(label: String) {
-  return 'Alle ' + label + ' Indikatoren'
+  switch (label) {
+    case 'Gesellschaft und Soziales':
+      return 'Alle gesellschaftlichen Indikatoren'
+    case 'Raum und Umwelt':
+      return 'Alle räumlichen Indiktatoren'
+    case 'Wirtschaft und Arbeit':
+      return 'Alle wirtschaftlichen Indikatoren'
+    default:
+      return 'Alle Indikatoren'
+  }
 }
 
 const IndicatorSelectionGroup: React.SFC<Props> = props => {
