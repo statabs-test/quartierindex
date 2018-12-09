@@ -54,8 +54,8 @@ const IndicatorRating: React.SFC<Props> = props => {
             })}
           </div>
         </div>
+        <RatingNavigation />
       </div>
-      <RatingNavigation />
     </WizardLayout>
   )
 }
