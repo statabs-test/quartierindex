@@ -9,8 +9,11 @@ const WeightNavigation: React.SFC<WeightNavigationProps> = props => {
     <div className="wizardFooter">
       <Grid container justify="flex-end">
         <Grid item xs={2}>
-          <NavButton className="wizard-left-button" variant="contained" to={'/plot'}>
-            Rangliste erstellen
+          <NavButton className="wizard-left-button" variant="contained" to={'/ranking'}>
+            Zurück zur Bewertung
+          </NavButton>
+          <NavButton className="wizard-left-button" variant="contained" to="/">
+            Zurück zur Auswahl
           </NavButton>
         </Grid>
 
@@ -23,11 +26,8 @@ const WeightNavigation: React.SFC<WeightNavigationProps> = props => {
         </Grid>
 
         <Grid item xs={2}>
-          <NavButton className="wizard-right-button" variant="contained" to={'/ranking'}>
-            Zurück zu Bewertung
-          </NavButton>
-          <NavButton className="wizard-right-button" variant="contained" to="/">
-            Zurück zur Auswahl
+          <NavButton className="wizard-right-button" variant="contained" to={'/plot'}>
+            Rangliste erstellen
           </NavButton>
         </Grid>
       </Grid>

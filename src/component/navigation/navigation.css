@@ -13,9 +13,18 @@ div.wizardFooter {
 p.stepper-description {
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-left: 7px;
+  margin-right: 7px;
 }
 
 .wizard-right-button {
-  width: 100%;
+  width: 100% !important;
   margin-bottom: 5px !important;
+  padding: 8px 13px !important;
+}
+
+.wizard-left-button {
+  width: 100% !important;
+  margin-bottom: 5px !important;
+  padding: 8px 13px !important;
 }
