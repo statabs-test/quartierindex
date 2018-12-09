@@ -55,6 +55,10 @@ h2.district-ranking-title {
   color: black;
 }
 
+div.hideDescription {
+  display: none;
+}
+
 /* Main view
 -----------------------------------------------*/
 .main-view {
