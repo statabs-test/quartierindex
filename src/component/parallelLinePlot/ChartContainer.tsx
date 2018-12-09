@@ -7,7 +7,7 @@ import { LineRank, Rank } from '../../state/observation/types'
 import { District } from '../../state/district/types'
 import { allDistricts } from '../../state/district/selectors'
 import { getLineRanking } from '../../state/observation/selectors'
-import { getSelectedIndicators } from '../../state/indicator/selectors'
+import { getSelectedIndicators, getChoosableIndicators } from '../../state/indicator/selectors'
 import { Indicator } from '../../state/indicator/types'
 import { getRankingColor } from '../../helpers'
 import {
@@ -28,6 +28,7 @@ export interface Props {
   rankingData: Rank[]
   lineRanking: LineRank[]
   selectedIndicators: Indicator[]
+  choosableIndicators: Indicator[]
 
   highlightDistrict(id: string): void
   hideDistrict(id: string): void
@@ -123,7 +124,7 @@ const barPlot: React.SFC<Props> = props => {
       {props.selectedIndicators.map(indicator => (
         <IndicatorPlot key={indicator.id} indicator={indicator} />
       ))}
-      <EmptyIndicatorPlot />
+      {props.choosableIndicators.length !== 0 ? <EmptyIndicatorPlot /> : null}
     </div>
   )
 }
@@ -142,6 +143,7 @@ const ChartContainer = (props: Props) => {
 const mapStateToProps = (state: Rootstate) => ({
   districts: allDistricts(state),
   selectedIndicators: getSelectedIndicators(state),
+  choosableIndicators: getChoosableIndicators(state),
   // rankingData: getSortedGlobalRanking(state), // getRankingDataForChart(state),
   lineRanking: getLineRanking(state),
 })
