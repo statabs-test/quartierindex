@@ -13,6 +13,7 @@ const EmptyIndicatorPlot: React.SFC<EmptyIndicatorPlotProps> = ({}) => {
         <CartesianGrid />
 
         <XAxis
+          axisLine={false}
           domain={[0, 1]}
           type="number"
           tickLine={false}

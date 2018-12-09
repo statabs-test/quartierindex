@@ -39,6 +39,7 @@ const IndicatorPlot: React.SFC<IndicatorProps> = ({ districts, indicator, ranks 
         <CartesianGrid />
         // TODO: Check color of bar
         <XAxis
+          axisLine={false}
           domain={[0, 1]}
           type="number"
           tickLine={false}

@@ -43,6 +43,7 @@ const DistrictRanking: React.StatelessComponent<PublicProps & InjectedProps> = (
           <CartesianGrid />
           {/* TODO: Check color of bar*/}
           <XAxis
+            axisLine={false}
             domain={[-1, 1]}
             interval="preserveStart"
             type="number"
