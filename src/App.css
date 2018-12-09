@@ -422,6 +422,17 @@ div.hideDescription {
   stroke-opacity: 0;
 }
 
+/* keep white space in labels of y-axis */
+.preserveWhiteSpace {
+  white-space: pre;
+  margin-left: 1em;
+}
+
+.recharts-cartesian-axis-tick-value {
+  fill: black;
+  white-space: pre;
+}
+
 .clear-icon {
   cursor: pointer;
 }

@@ -20,7 +20,16 @@ const EmptyIndicatorPlot: React.SFC<EmptyIndicatorPlotProps> = ({}) => {
           ticks={ticks}
           tickFormatter={tick => (ticks.indexOf(tick) % 2 === 0 ? tick : '')}
         />
-        {<YAxis dataKey="name" type="category" orientation="right" axisLine={false} hide={true} />}
+        {
+          <YAxis
+            dataKey="name"
+            type="category"
+            orientation="right"
+            axisLine={false}
+            hide={true}
+            tickLine={false}
+          />
+        }
         <Bar dataKey="value" />
       </BarChart>
     </div>

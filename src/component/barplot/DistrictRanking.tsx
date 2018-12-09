@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { round } from 'lodash'
+import { round, trim } from 'lodash'
 import { connect } from 'react-redux'
 import { BarChart, Bar, CartesianGrid, XAxis, YAxis } from 'recharts'
 import { Rootstate } from '../../state'
@@ -20,6 +20,26 @@ interface InjectedProps {
   indicators: Indicator[]
 }
 
+const WhiteSpacePreservedTick = (props: any) => {
+  const {
+    x,
+    y,
+    width,
+    height,
+    payload: { value },
+  } = props
+
+  const xNew = value[0] === ' ' ? x+6.5 :  x;
+  const yNew = y+4;
+
+  return (
+    <text width={width} height={height} x={xNew} y={yNew} fill={'black'} className="recharts-text recharts-cartesian-axis-tick-value" textAnchor="start" >
+      {trim(value)}
+    </text>
+  )
+}
+
+
 const DistrictRanking: React.StatelessComponent<PublicProps & InjectedProps> = ({
   districts,
   ranks,
@@ -28,7 +48,7 @@ const DistrictRanking: React.StatelessComponent<PublicProps & InjectedProps> = (
   const data = ranks.map((rank, i) => {
     const rankNum = i + 1
     return {
-      name: rankNum + '. ' + districts[rank.districtId].name,
+      name: `${rankNum < 10 ? ' ' : ''}${rankNum}. ${districts[rank.districtId].name}`,
       value: round(rank.value, 2),
     }
   })
@@ -51,7 +71,15 @@ const DistrictRanking: React.StatelessComponent<PublicProps & InjectedProps> = (
             ticks={ticks}
             tickFormatter={tick => (ticks.indexOf(tick) % 2 === 0 ? tick : '')}
           />
-          <YAxis width={130} dataKey="name" type="category" orientation="right" axisLine={false} />
+          <YAxis
+            width={130}
+            dataKey="name"
+            type="category"
+            orientation="right"
+            tick={WhiteSpacePreservedTick}
+            axisLine={false}
+            tickLine={false}
+          />
           <Bar dataKey="value" fill="#FFD300" />
         </BarChart>
         <div className="districtRankingExplanation">

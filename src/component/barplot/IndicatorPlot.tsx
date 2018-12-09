@@ -46,7 +46,16 @@ const IndicatorPlot: React.SFC<IndicatorProps> = ({ districts, indicator, ranks 
           ticks={ticks}
           tickFormatter={tick => (ticks.indexOf(tick) % 2 === 0 ? tick : '')}
         />
-        {<YAxis dataKey="name" type="category" orientation="right" axisLine={false} hide={true} />}
+        {
+          <YAxis
+            dataKey="name"
+            type="category"
+            orientation="right"
+            axisLine={false}
+            hide={true}
+            tickLine={false}
+          />
+        }
         <Bar dataKey="value" fill={color.backgroundColor} />
       </BarChart>
     </div>
