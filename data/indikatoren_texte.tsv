@@ -9,11 +9,11 @@ ID	Name Indikator CSV	Name kurz neu	Definition/Erläuterung
 8	Jugendquotient	Jugendquotient	Anzahl Personen im Alter zwischen 0 und 19 Jahren gemessen an 100 Personen im Alter zwischen 20 und 64 Jahren.
 9	Baujahr Wohngebäude	Gebäudealter	Mittleres Baujahr der Wohngebäude. 
 10	Anteil Einfamilienhäuser	Einfamilienhausquote	Anteil der Einfamilienhäuser an allen bewohnten Gebäuden.
-11	Anteil Grünfläche	Grünflächenanteil	Anteil der Grünflächen an der Gesamtfläche. Als Grünflächen gelten alle privaten und öffentlichen bestocktrn oder humusierten Flächen.
+11	Anteil Grünfläche	Grünflächenanteil	Anteil der Grünflächen an der Gesamtfläche. Als Grünflächen gelten alle privaten und öffentlichen bestockten oder humusierten Flächen.
 12	Fläche pro Wohnung	Wohnungsgrösse	Mittlere Fläche einer Wohnung in Quadratmetern.
 13	Wohnfläche pro Kopf	Wohnfläche pro Kopf	Gesamtfläche der durch Privatpersonen belegten Wohnungen geteilt durch das Total der dort wohnenden Bevölkerung.
-14	Vermögenssteuer	Vermögenssteuer	Mittlere Vermögenssteuer pro ordetliche Veranlagung natürlicher Personen. Berechnet als totaler Vermögenssteuerertrag geteilt durch die Anzahl Veranlagungen. 
-15	Einkommenssteuer	Einkommenssteuer	Mittlere Einkommenssteuer pro ordetliche Veranlagung natürlicher Personen. Berechnet als totaler Einkommenssteuerertrag geteilt durch die Anzahl Veranlagungen. 
+14	Vermögenssteuer	Vermögenssteuer	Mittlere Vermögenssteuer pro ordentliche Veranlagung natürlicher Personen.
+15	Einkommenssteuer	Einkommenssteuer	Mittlere Einkommenssteuer pro ordentliche Veranlagung natürlicher Personen.
 16	Erwerbstätigenquote	Erwerbstätigenquote	Anteil der erwerbstätigen Wohnbevölkerung an der gesamten erwerbsfähigen Wohnbevölkerung (15 bis 64 Jahre; Nettoerwerbstätigenquote).
 17	Arbeitsplätze pro Kopf	Arbeitsplätze pro Kopf	Anzahl Arbeitsplätze (Beschäftigte, die in Basel-Stadt arbeiten, in Vollzeitäquivalenten) am Total der Bevölkerung.
 18	Arbeitslosenquote	Arbeitslosenquote	Anteil als arbeitslos gemeldeter Personen am Total der Erwerbspersonen (15 bis 64 Jahre), jeweils Ende Jahr. 

@@ -61,7 +61,7 @@ const indicatorData = _.uniqBy(
   'id'
 );
 
-jsonFile.writeFile(path.join(__dirname, '../src/state/data/indicator.json'), indicatorData, function(err) {
+fs.writeFile(path.join(__dirname, '../src/state/data/indicator.json'), JSON.stringify(indicatorData, null, 4), function(err) {
   err ?
     console.error(err) :
     console.info('Successfuly wrote indicator.json file');
