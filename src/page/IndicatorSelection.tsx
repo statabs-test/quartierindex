@@ -56,7 +56,7 @@ const IndicatorSelection: React.SFC<Props> = props => {
       </div>
       <div className="mainFrame">
         <h2 className="wizardTitle">
-          Schritt 1: Wählen Sie mindestens einen Indikator für die Index Berechnung aus
+        Schritt 1: Wählen Sie mindestends einen Indikator aus
         </h2>
         <div className="selections">
           {_.map(groupedIndicators, (value, key) => (
