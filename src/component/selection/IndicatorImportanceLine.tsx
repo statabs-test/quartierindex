@@ -50,7 +50,11 @@ type Props = {
 
 const IndicatorImportanceLine: React.SFC<Props> = props => {
   const { classes, indicator, setIndicatorWeight } = props
-  const indexPrefix = indicator.weightText.indexOf(indicator.name.split(' ')[0])
+  let indexPrefix = indicator.weightText.indexOf(indicator.name.split(' ')[0])
+  /* Hack for Sesshaftigkeit */
+  if (indexPrefix === -1) {
+    indexPrefix = 4;
+  }
   const prefix = indicator.weightText.substring(0, indexPrefix)
   const suffixIndex = indicator.weightText.indexOf(' ', indexPrefix + indicator.name.length)
   const suffix = indicator.weightText.substring(suffixIndex, indicator.weightText.length)

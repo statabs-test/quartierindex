@@ -25,14 +25,14 @@
     },
     {
         "id": "3",
-        "name": "Anteil Personen ohne Religionszugehörigkeit",
+        "name": "Anteil Konfessionslose",
         "subject": "Gesellschaft und Soziales",
         "publication": "2018",
         "year": "2017",
         "valuation": 1,
-        "valuationText": "Ein hoher Anteil Personen ohne Religionszugehörigkeit ist für mich",
+        "valuationText": "Ein hoher Anteil Konfessionslose ist für mich",
         "weight": 1,
-        "weightText": "Der Anteil Personen ohne Religionszugehörigkeit ist für mich",
+        "weightText": "Der Anteil Konfessionslose ist für mich",
         "description": "Anteil Personen, welche keiner Konfession angehört."
     },
     {
@@ -73,7 +73,7 @@
     },
     {
         "id": "7",
-        "name": "Anteil Sesshafte",
+        "name": "Sesshaftigkeit",
         "subject": "Gesellschaft und Soziales",
         "publication": "2018",
         "year": "2017",
