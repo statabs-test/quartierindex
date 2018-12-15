@@ -33,7 +33,7 @@ const IndicatorWeight: React.SFC<Props & WithStyles<typeof styles>> = props => {
   const { selectedIndicators } = props
   return (
     <WizardLayout>
-      <div className="wizardDescription">
+      <div className="wizardDescription text">
         Bitte weisen Sie jedem ausgewählten Indikator ein individuelles Gewicht zu und bestimmen Sie
         somit, wie wichtig er für die Berechnung ihrer Wohnviertel-Rangliste sein soll. Folgende
         Gewichtungs-Einstellungen stehen zur Auswahl: <br />

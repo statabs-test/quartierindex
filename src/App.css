@@ -33,6 +33,11 @@ input[type='radio'] {
   cursor: pointer;
 }
 
+.text {
+  font-size: 9.6pt;
+  line-height: 14pt;
+}
+
 /* Wizard
 ------------------------------------------------*/
 h2.wizardTitle {

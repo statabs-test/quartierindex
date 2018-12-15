@@ -18,7 +18,7 @@ const WeightNavigation: React.SFC<WeightNavigationProps> = props => {
         </Grid>
 
         <Grid item xs={8}>
-          <p className="stepper-description">
+          <p className="stepper-description text">
             «Rangliste erstellen» zeigt die Rangliste als Ergebnis Ihrer Indikatoren-Auswahl und der
             oben eingestellten Gewichtung der Indikatoren an. Alle Bewertungen und Gewichtungen
             können auch direkt in der Ergebnisdarstellung beliebig oft neu eingestellt werden.

@@ -22,7 +22,7 @@ const SelectionNavigation: React.SFC<SelectionNavigationProps> = ({ valid }) => 
         </Grid>
         <Grid className={valid ? 'showDescription' : 'hideDescription'} item xs={8}>
           {}
-          <p className="stepper-description">
+          <p className="stepper-description text">
             «Rangliste erstellen» zeigt direkt die Rangliste als Ergebnis Ihrer Indikatoren-Auswahl
             an.
             <br />

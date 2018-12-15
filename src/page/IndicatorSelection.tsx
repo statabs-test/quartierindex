@@ -41,10 +41,7 @@ const IndicatorSelection: React.SFC<Props> = props => {
   )
   return (
     <WizardLayout ignoreRedirect>
-      <div className="wizardDescription">
-        Willkommen beim Wohnviertel- und Gemeinde-Index. Hier können Sie anhand ausgesuchter
-        Merkmale Ihre eigene Quartier-Rangliste erstellen.
-        <br />
+      <div className="wizardDescription text">
         Bitte wählen Sie in einem ersten Schritt zwischen 1 und {numIndicators} Indikatoren aus,
         welche in die Index-Berechnung einfliessen sollen.
         <br />

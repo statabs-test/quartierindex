@@ -25,7 +25,7 @@ const IndicatorRating: React.SFC<Props> = props => {
 
   return (
     <WizardLayout>
-      <div className="wizardDescription">
+      <div className="wizardDescription text">
         Bitte legen Sie hier für jeden Indikator fest, ob ein hoher Wert für Sie positiv oder
         negativ ist.
         <br />
