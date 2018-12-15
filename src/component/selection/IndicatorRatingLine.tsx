@@ -25,7 +25,7 @@ const IndicatorRatingLine: React.SFC<Props> = props => {
   return (
     <div className="ratingLine">
       <div className="ratingLineText">
-        <p>{indicator.valuationText}</p>
+        <p>&#x25BA; {indicator.valuationText} ...</p>
       </div>
       <div className="ratingLineButtons">
         <button

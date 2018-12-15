@@ -336,26 +336,6 @@ div.hideDescription {
   justify-content: space-between;
 }
 
-.ratingLineText p {
-  display: flex;
-}
-
-.ratingLineText p:before {
-  content: '\A';
-  width: 0;
-  height: 0;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 10px solid black;
-  padding-right: 3px;
-  margin-top: 2px;
-}
-
-.ratingLineText p:after {
-  content: ' ...';
-  white-space: pre;
-}
-
 .ratingLineButtons {
   display: flex;
   height: 35px;
