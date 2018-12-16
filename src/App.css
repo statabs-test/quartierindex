@@ -52,6 +52,19 @@ h2.wizardTitle {
 .wizardDescription {
   margin-bottom: 10px;
 }
+h1.welcome-title {
+  font-family: Arial, sans-serif;
+  font-size: 22pt;
+  font-weight: bold;
+  color: black;
+}
+
+.welcome-img {
+  width: 951px;
+  height: 153px;
+  margin-top: 6px;
+  margin-bottom: 54px;
+}
 
 h2.district-ranking-title {
   font-family: Arial, sans-serif;

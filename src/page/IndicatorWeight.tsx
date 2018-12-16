@@ -8,6 +8,7 @@ import { Theme, WithStyles, withStyles, createStyles } from '@material-ui/core/s
 import IndicatorImportanceLine from '../component/selection/IndicatorImportanceLine'
 import WeightNavigation from '../component/navigation/WeightNavigation'
 import WizardLayout from '../component/layout/WizardLayout'
+import { welcome } from './welcome';
 
 export interface Props {
   selectedIndicators: Indicator[]
@@ -33,6 +34,10 @@ const IndicatorWeight: React.SFC<Props & WithStyles<typeof styles>> = props => {
   const { selectedIndicators } = props
   return (
     <WizardLayout>
+      {welcome(
+        `Erstellen Sie Ihre ganz persönliche Rangliste der Basler Wohnviertel und Gemeinden!`
+      )}
+
       <div className="wizardDescription text">
         Bitte weisen Sie jedem ausgewählten Indikator ein individuelles Gewicht zu und bestimmen Sie
         somit, wie wichtig er für die Berechnung ihrer Wohnviertel-Rangliste sein soll. Folgende
