@@ -51,6 +51,6 @@
   height: 100%;
   margin-left: 3px; /**--column-margin-indicator**/
   margin-right: 3px; /**--column-margin-indicator**/
-  border: 1px solid #000000;
+  border: 1px solid #999999;
   background-color: #ffffff;
 }
