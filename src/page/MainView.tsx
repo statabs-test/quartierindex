@@ -5,6 +5,7 @@ import DistrictRanking from '../component/barplot/DistrictRanking'
 import AppNavigation from '../component/navigation/MainNavigation'
 import IndicatorRanking from '../component/parallelLinePlot/IndicatorRanking'
 import { compose } from 'recompose'
+import Disclaimer from '../component/disclaimer/Disclaimer';
 // import { Observation } from '../../state/observation/types'
 
 export interface Props {}
@@ -24,6 +25,7 @@ const MainView: React.StatelessComponent<Props> = ({}) => {
         <IndicatorRanking />
       </div>
       <DistrictRanking />
+      <Disclaimer/>
     </div>
   )
 }

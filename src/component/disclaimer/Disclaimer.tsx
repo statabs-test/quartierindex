@@ -24,7 +24,7 @@ const Disclaimer: React.SFC<Props> = props => {
         return null;
     }
     return(
-        <div className="disclaimer">
+        <div className="right-grid disclaimer-main-view disclaimer" >
             <div className="disclaimerText">
                 Die von Ihnen vorgenommenen Einstellungen (Auswah, Bewertung und Gewichtung) werden nicht gepsichert.<br />
                 Sie werden ausschliesslich für die Berechnung der Rangliste genutzt.
