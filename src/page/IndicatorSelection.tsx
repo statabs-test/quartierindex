@@ -7,13 +7,15 @@ import { getGroupedIndicators, getSelectedIndicators } from '../state/indicator/
 import { getDisclaimer } from '../state/util/selectors'
 import { Indicator } from '../state/indicator/types'
 // import Grid from '@material-ui/core/Grid'
-import { Theme, WithStyles, withStyles, createStyles } from '@material-ui/core/styles'
+import { createStyles, Theme, withStyles, WithStyles } from '@material-ui/core/styles'
 import IndicatorSelectionGroup from '../component/selection/IndicatorSelectionGroup'
 import SelectionNavigation from '../component/navigation/SelectionNavigation'
 import WizardLayout from '../component/layout/WizardLayout'
 import Disclaimer from '../component/disclaimer/Disclaimer'
+import { welcome } from './welcome';
 
-export interface PublicProps {}
+export interface PublicProps {
+}
 
 export const styles = (theme: Theme) =>
   createStyles({
@@ -44,28 +46,34 @@ const IndicatorSelection: React.SFC<Props> = props => {
     )
   return (
     <WizardLayout ignoreRedirect>
+
+      {welcome(
+        `Herzlich Willkommen bei "Finden Sie Ihr Lieblingswohnviertel"!
+              Auf dieser Seite können Sie Ihre ganz persönliche Rangliste der
+              Basler Wohnviertel und Gemeinden erstellen.
+          `
+      )}
       <div className="wizardDescription text">
         Bitte wählen Sie in einem ersten Schritt zwischen 1 und {numIndicators} Indikatoren aus,
         welche in die Index-Berechnung einfliessen sollen.
-        <br />
+        <br/>
         In einem nächsten Schritt können Sie bestimmen, ob Sie einen hohen Wert eines Indikators als
         positiv oder als negativ beurteilen.
-        <br />
+        <br/>
         Im dritten Schritt können Sie festlegen, mit welcher Gewichtung ein ausgewählter Indikator
         in Ihre Berechnung einfliessen soll.
       </div>
       <div className="mainFrame">
         <h2 className="wizardTitle">
-        Schritt 1: Wählen Sie mindestends einen Indikator aus
+          Schritt 1: Wählen Sie mindestends einen Indikator aus
         </h2>
         <div className="selections">
           {_.map(groupedIndicators, (value, key) => (
-            <IndicatorSelectionGroup key={key} groupName={key} value={value} />
+            <IndicatorSelectionGroup key={key} groupName={key} value={value}/>
           ))}
         </div>
         <SelectionNavigation valid={valid} />
         {showDisclaimer ? (<Disclaimer />) : ("")}
-        
       </div>
     </WizardLayout>
   )
