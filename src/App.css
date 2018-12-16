@@ -429,6 +429,10 @@ div.hideDescription {
   margin-left: 1em;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .recharts-cartesian-axis-tick-value {
   fill: black;
   white-space: pre;
