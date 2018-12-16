@@ -2,6 +2,7 @@ import * as React from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'recompose'
 import { Rootstate } from '../../state'
+import { Tooltip } from '@material-ui/core'
 import { getSelectedIndicators } from '../../state/indicator/selectors'
 import { Indicator, WeightNumber } from '../../state/indicator/types'
 import Grid from '@material-ui/core/Grid'
@@ -53,7 +54,7 @@ const IndicatorImportanceLine: React.SFC<Props> = props => {
   let indexPrefix = indicator.weightText.indexOf(indicator.name.split(' ')[0])
   /* Hack for Sesshaftigkeit */
   if (indexPrefix === -1) {
-    indexPrefix = 4;
+    indexPrefix = 4
   }
   const prefix = indicator.weightText.substring(0, indexPrefix)
   const suffixIndex = indicator.weightText.indexOf(' ', indexPrefix + indicator.name.length)
@@ -61,30 +62,36 @@ const IndicatorImportanceLine: React.SFC<Props> = props => {
   const text = indicator.weightText.substring(indexPrefix, suffixIndex)
   return (
     <Grid container alignItems="center" style={{ paddingTop: '5px', paddingBottom: '5px' }}>
-    <Grid item xs={6}>
-      <p>&#x25BA; {prefix} <span style={{ color: '#386c8e', fontWeight: 'bold' }}>{text} </span> {suffix} ...</p>
-    </Grid>
-    <Grid item xs={6}>
-      <Grid container spacing={0}>
-        {[WeightNumber.ONE, WeightNumber.TWO, WeightNumber.THREE, WeightNumber.FOUR].map(
-          (weight, idx) => (
-            <Grid item xs={3} key={indicator.id + weight.toString()}>
-              <input
-                type="radio"
-                id={indicator.id + weight.toString()}
-                checked={indicator.weight === weight}
-                className={classes.root}
-                onChange={value => setIndicatorWeight(indicator.id, weight)}
-                value={weight.toString()}
-                name={indicator.id}
-              />
-              <FormLabel htmlFor={indicator.id + weight.toString()}>{labels[idx]}</FormLabel>
-            </Grid>
-          )
-        )}
+      <Grid item xs={6}>
+        <p>
+          &#x25BA; {prefix}{' '}
+          <Tooltip placement="top" title={indicator.valuationText}>
+            <span style={{ color: '#386c8e', fontWeight: 'bold' }}>{text}</span>
+          </Tooltip>{' '}
+          {suffix} ...
+        </p>
+      </Grid>
+      <Grid item xs={6}>
+        <Grid container spacing={0}>
+          {[WeightNumber.ONE, WeightNumber.TWO, WeightNumber.THREE, WeightNumber.FOUR].map(
+            (weight, idx) => (
+              <Grid item xs={3} key={indicator.id + weight.toString()}>
+                <input
+                  type="radio"
+                  id={indicator.id + weight.toString()}
+                  checked={indicator.weight === weight}
+                  className={classes.root}
+                  onChange={value => setIndicatorWeight(indicator.id, weight)}
+                  value={weight.toString()}
+                  name={indicator.id}
+                />
+                <FormLabel htmlFor={indicator.id + weight.toString()}>{labels[idx]}</FormLabel>
+              </Grid>
+            )
+          )}
+        </Grid>
       </Grid>
     </Grid>
-  </Grid>
   )
 }
 
