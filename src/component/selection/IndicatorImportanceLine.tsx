@@ -65,7 +65,7 @@ const IndicatorImportanceLine: React.SFC<Props> = props => {
       <Grid item xs={6}>
         <p>
           &#x25BA; {prefix}{' '}
-          <Tooltip placement="top" title={indicator.valuationText}>
+          <Tooltip placement="top" title={indicator.description}>
             <span style={{ color: '#386c8e', fontWeight: 'bold' }}>{text}</span>
           </Tooltip>{' '}
           {suffix} ...

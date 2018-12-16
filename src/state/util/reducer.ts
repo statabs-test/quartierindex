@@ -1,6 +1,6 @@
 import { UtilAction } from './actions';
 import { Util } from './types';
-import { TOGGLE_SELECT_INDICATOR_VISIBILITY } from './constants';
+import { TOGGLE_SELECT_INDICATOR_VISIBILITY, DISABLE_DISCLAIMER } from './constants';
 
 const utilData = require('./../data/util.json');
 
@@ -19,6 +19,14 @@ export function util(
       return {
         ...state,
         selectIndicatorConf: {
+          visible: action.payload.visible
+        }
+      }
+    }
+    case DISABLE_DISCLAIMER : {
+      return {
+        ...state,
+        disclaimer: {
           visible: action.payload.visible
         }
       }
