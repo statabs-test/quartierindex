@@ -10,5 +10,8 @@
 }
 
 .clear-icon {
-  margin-top: 11%;
+  font-size: 12px !important;
+  position: relative;
+  top: 6px;
 }
+
