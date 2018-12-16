@@ -9,6 +9,7 @@ import { toggleIndicatorSelectionVisibility } from '../state/util/actions'
 import IndicatorRatingLine from '../component/selection/IndicatorRatingLine'
 import RatingNavigation from '../component/navigation/RatingNavigation'
 import WizardLayout from '../component/layout/WizardLayout'
+import { welcome } from './welcome';
 
 export interface Props {
   selectedIndicators: Indicator[]
@@ -25,6 +26,11 @@ const IndicatorRating: React.SFC<Props> = props => {
 
   return (
     <WizardLayout>
+
+      {welcome(
+        `Erstellen Sie Ihre ganz persönliche Rangliste der Basler Wohnviertel und Gemeinden!`
+      )}
+
       <div className="wizardDescription text">
         Bitte legen Sie hier für jeden Indikator fest, ob ein hoher Wert für Sie positiv oder
         negativ ist.
