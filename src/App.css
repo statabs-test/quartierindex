@@ -268,16 +268,15 @@ div.hideDescription {
   width: 100% !important;
 }
 
-.weight {
+.weight-label {
   grid-area: weighting;
-  padding: 0 20px;
-  margin-top: 10px;
-  margin-bottom: 0px;
+  margin-top: 12px;
   /* background: cornflowerblue; */
 }
 
-.weight-label {
-  margin-top: 12%;
+.weight {
+  padding: 0 20px;
+  margin-top: 10px;
   text-align: left;
   color: #808080;
 }

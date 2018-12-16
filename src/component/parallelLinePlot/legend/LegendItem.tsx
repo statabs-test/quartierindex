@@ -113,29 +113,31 @@ const LegendItem: React.SFC<Props & PublicProps> = ({
           <Grid item className="weight" xs={10}>
             <Grid container direction={'column'} justify={'space-around'}>
               <Grid item xs={12}>
-                <Slider
-                  min={0.25}
-                  max={1.0}
-                  step={0.25}
-                  value={indicator.weight}
-                  marks={{
-                    0.25: '',
-                    0.5: '',
-                    0.75: '',
-                    1: '',
-                  }}
-                  activeDotStyle={sliderStyle}
-                  trackStyle={sliderStyle}
-                  handleStyle={sliderStyle}
-                  style={{
-                    paddingRight: '5px',
-                    marginTop: '5px',
-                  }}
-                  onChange={value => setIndicatorWeight(indicator.id, value)}
-                />
+                  <div className="weight-label">{getLabelBy(indicator.weight)}</div>
               </Grid>
               <Grid item xs={12}>
-                <div className="weight-label">{getLabelBy(indicator.weight)}</div>
+
+                  <Slider
+                      min={0.25}
+                      max={1.0}
+                      step={0.25}
+                      value={indicator.weight}
+                      marks={{
+                          0.25: '',
+                          0.5: '',
+                          0.75: '',
+                          1: '',
+                      }}
+                      activeDotStyle={sliderStyle}
+                      trackStyle={sliderStyle}
+                      handleStyle={sliderStyle}
+                      style={{
+                          paddingRight: '5px',
+                          marginTop: '5px',
+                      }}
+                      onChange={value => setIndicatorWeight(indicator.id, value)}
+                  />
+
               </Grid>
             </Grid>
           </Grid>
