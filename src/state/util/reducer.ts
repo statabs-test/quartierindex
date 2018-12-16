@@ -26,9 +26,7 @@ export function util(
     case DISABLE_DISCLAIMER : {
       return {
         ...state,
-        disclaimer: {
-          visible: action.payload.visible
-        }
+        showDisclaimer: action.payload.visible
       }
     }
   }
