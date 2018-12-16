@@ -18,7 +18,7 @@
 }
 
 .parallel-line-plot-legend {
-  height: 18%;
+  height: 18% /**--parallel-line-plot-height:**/ ;
   width: inherit;
   /* background: rgb(245, 143, 0); */
   align-items: center;
@@ -36,7 +36,7 @@
 
 /* Height need to be aligned with container (of rankning) */
 .bar-plot-container {
-  height: 100%;
+  height: calc(100% - 18% /**--parallel-line-plot-height:**/ - 1% /**scroll bar**/);
   width: inherit;
   top: 120px /*--ranking-top*/;
   /* background: rgb(245, 143, 0); */
