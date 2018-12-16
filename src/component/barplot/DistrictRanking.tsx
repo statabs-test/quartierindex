@@ -29,16 +29,23 @@ const WhiteSpacePreservedTick = (props: any) => {
     payload: { value },
   } = props
 
-  const xNew = value[0] === ' ' ? x+6.5 :  x;
-  const yNew = y+4;
+  const xNew = value[0] === ' ' ? x + 6.5 : x
+  const yNew = y + 4
 
   return (
-    <text width={width} height={height} x={xNew} y={yNew} fill={'black'} className="recharts-text recharts-cartesian-axis-tick-value" textAnchor="start" >
+    <text
+      width={width}
+      height={height}
+      x={xNew}
+      y={yNew}
+      fill={'black'}
+      className="recharts-text recharts-cartesian-axis-tick-value"
+      textAnchor="start"
+    >
       {trim(value)}
     </text>
   )
 }
-
 
 const DistrictRanking: React.StatelessComponent<PublicProps & InjectedProps> = ({
   districts,
