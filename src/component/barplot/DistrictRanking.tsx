@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { round, trim } from 'lodash'
 import { connect } from 'react-redux'
-import { BarChart, Bar, CartesianGrid, XAxis, YAxis } from 'recharts'
+import { BarChart, Bar, CartesianGrid, Cell, XAxis, YAxis } from 'recharts'
 import { Rootstate } from '../../state'
 import { getSortedGlobalRanking } from '../../state/observation/selectors'
 import { Rank } from '../../state/observation/types'
@@ -29,7 +29,21 @@ const WhiteSpacePreservedTick = (props: any) => {
     payload: { value },
   } = props
 
-  const xNew = value[0] === ' ' ? x + 6.5 : x
+  let xNew = 0
+  switch (value[0]) {
+    // single number 1-9
+    case ' ': {
+      xNew = x + 6.5
+    }
+    // Basel-Stadt special
+    case 'X': {
+      xNew = x + 13
+    }
+    // multi number 10-99
+    default:
+      xNew = x
+  }
+  // const xNew = value[0] === ' ' ? x + 6.5 : x
   const yNew = y + 4
 
   return (
@@ -52,11 +66,21 @@ const DistrictRanking: React.StatelessComponent<PublicProps & InjectedProps> = (
   ranks,
   indicators,
 }) => {
+  let rankNum = 0
   const data = ranks.map((rank, i) => {
-    const rankNum = i + 1
+    if (rank.districtId !== '99') {
+      rankNum = i + 1
+      return {
+        name: `${rankNum < 10 ? ' ' : ''}${rankNum}. ${districts[rank.districtId].name}`,
+        value: round(rank.value, 2),
+        id: rank.districtId,
+      }
+    }
+    // Basel-Stadt without rank (number), see handling in WhiteSpacePreservedTick
     return {
-      name: `${rankNum < 10 ? ' ' : ''}${rankNum}. ${districts[rank.districtId].name}`,
+      name: `X ${districts[rank.districtId].name}`,
       value: round(rank.value, 2),
+      id: rank.districtId,
     }
   })
 
@@ -87,7 +111,15 @@ const DistrictRanking: React.StatelessComponent<PublicProps & InjectedProps> = (
             axisLine={false}
             tickLine={false}
           />
-          <Bar dataKey="value" fill="#FFD300" />
+          <Bar dataKey="value">
+            {data.map((entry, index) =>
+              entry.id === '99' ? (
+                <Cell key={`cell-${index}`} fill={'black'} />
+              ) : (
+                <Cell key={`cell-${index}`} fill={'#FFD300'} />
+              )
+            )}
+          </Bar>
         </BarChart>
         <div className="districtRankingExplanation">
           <p>
