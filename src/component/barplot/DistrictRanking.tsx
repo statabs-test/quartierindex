@@ -80,13 +80,14 @@ const DistrictRanking: React.StatelessComponent<PublicProps & InjectedProps> = (
   let rankNum = 0
   const data = ranks.map((rank, i) => {
     if (rank.districtId !== '99') {
-      rankNum = i + 1
+      rankNum = rankNum + 1
       return {
         name: `${rankNum < 10 ? ' ' : ''}${rankNum}. ${districts[rank.districtId].name}`,
         value: round(rank.value, 2),
         id: rank.districtId,
       }
     }
+    //    rankNum = rankNum - 1
     // Basel-Stadt without rank (number), see handling in WhiteSpacePreservedTick
     return {
       name: `X ${districts[rank.districtId].name}`,
