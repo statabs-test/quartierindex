@@ -9,6 +9,7 @@ import { toggleIndicatorSelectionVisibility } from '../state/util/actions'
 import IndicatorRatingLine from '../component/selection/IndicatorRatingLine'
 import RatingNavigation from '../component/navigation/RatingNavigation'
 import WizardLayout from '../component/layout/WizardLayout'
+import Disclaimer from '../component/disclaimer/Disclaimer'
 import { welcome } from './welcome';
 
 export interface Props {
@@ -61,6 +62,7 @@ const IndicatorRating: React.SFC<Props> = props => {
           </div>
         </div>
         <RatingNavigation />
+        <Disclaimer />
       </div>
     </WizardLayout>
   )

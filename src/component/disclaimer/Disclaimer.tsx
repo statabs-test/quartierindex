@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { compose } from 'recompose'
 import { Rootstate } from '../../state'
 import { disableDisclaimer } from '../../state/util/actions'
+import { getShowDisclaimer } from '../../state/util/selectors'
 
 import './disclaimer.css'
 
@@ -14,10 +15,14 @@ export interface PublicProps {
   
 type Props = {
     disableDisclaimer(visible: boolean): void
+    showDisclaimer: boolean
 } & PublicProps
 
 const Disclaimer: React.SFC<Props> = props => {
-    const { disableDisclaimer } = props
+    const { disableDisclaimer, showDisclaimer } = props
+    if (!showDisclaimer) {
+        return null;
+    }
     return(
         <div className="disclaimer">
             <div className="disclaimerText">
@@ -37,7 +42,7 @@ const Disclaimer: React.SFC<Props> = props => {
 }
 
 const mapStateToProps = (state: Rootstate) => ({
-    // empty
+    showDisclaimer: getShowDisclaimer(state)
 })
 
 const mapDispatchToProps = {

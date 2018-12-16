@@ -7,7 +7,5 @@
   "selectIndicatorConf": {
     "visible": false
   },
-  "disclaimer": {
-    "visible": true
-  }
+  "showDisclaimer": true
 }

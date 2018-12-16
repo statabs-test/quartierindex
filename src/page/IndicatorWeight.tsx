@@ -8,6 +8,7 @@ import { Theme, WithStyles, withStyles, createStyles } from '@material-ui/core/s
 import IndicatorImportanceLine from '../component/selection/IndicatorImportanceLine'
 import WeightNavigation from '../component/navigation/WeightNavigation'
 import WizardLayout from '../component/layout/WizardLayout'
+import Disclaimer from '../component/disclaimer/Disclaimer'
 import { welcome } from './welcome';
 
 export interface Props {
@@ -58,6 +59,7 @@ const IndicatorWeight: React.SFC<Props & WithStyles<typeof styles>> = props => {
         </div>
 
         <WeightNavigation />
+        <Disclaimer />
       </div>
     </WizardLayout>
   )

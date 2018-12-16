@@ -4,7 +4,6 @@ import { connect } from 'react-redux'
 import { compose } from 'recompose'
 import { Rootstate } from '../state/index'
 import { getGroupedIndicators, getSelectedIndicators } from '../state/indicator/selectors'
-import { getShowDisclaimer } from '../state/util/selectors'
 import { Indicator } from '../state/indicator/types'
 // import Grid from '@material-ui/core/Grid'
 import { createStyles, Theme, withStyles, WithStyles } from '@material-ui/core/styles'
@@ -34,11 +33,10 @@ export const styles = (theme: Theme) =>
 export type Props = {
   groupedIndicators: { [key: string]: Indicator[] }
   valid: boolean
-  showDisclaimer: boolean
 } & WithStyles<typeof styles>
 
 const IndicatorSelection: React.SFC<Props> = props => {
-  const { groupedIndicators, valid, showDisclaimer } = props
+  const { groupedIndicators, valid } = props
   const numIndicators = _.reduce(
     groupedIndicators,
     (sum, indicatorGroup) => indicatorGroup.length + sum,
@@ -73,7 +71,7 @@ const IndicatorSelection: React.SFC<Props> = props => {
           ))}
         </div>
         <SelectionNavigation valid={valid} />
-        {showDisclaimer ? (<Disclaimer />) : ("")}
+        <Disclaimer />
       </div>
     </WizardLayout>
   )
@@ -82,7 +80,6 @@ const IndicatorSelection: React.SFC<Props> = props => {
 const mapStateToProps = (state: Rootstate) => ({
   groupedIndicators: getGroupedIndicators(state),
   valid: getSelectedIndicators(state).length > 0,
-  showDisclaimer: getShowDisclaimer(state)
 })
 
 const mapDispatchToProps = {}
