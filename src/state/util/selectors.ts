@@ -11,6 +11,6 @@ export const getUtil = (state: Rootstate) => {
   return select(state);
 };
 
-export const getDisclaimer = (state: Rootstate) => {
-  return state.util.disclaimer;
+export const getShowDisclaimer = (state: Rootstate) => {
+  return state.util.showDisclaimer;
 }

@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { compose } from 'recompose'
 import { Rootstate } from '../state/index'
 import { getGroupedIndicators, getSelectedIndicators } from '../state/indicator/selectors'
-import { getDisclaimer } from '../state/util/selectors'
+import { getShowDisclaimer } from '../state/util/selectors'
 import { Indicator } from '../state/indicator/types'
 // import Grid from '@material-ui/core/Grid'
 import { createStyles, Theme, withStyles, WithStyles } from '@material-ui/core/styles'
@@ -82,7 +82,7 @@ const IndicatorSelection: React.SFC<Props> = props => {
 const mapStateToProps = (state: Rootstate) => ({
   groupedIndicators: getGroupedIndicators(state),
   valid: getSelectedIndicators(state).length > 0,
-  showDisclaimer: getDisclaimer(state)
+  showDisclaimer: getShowDisclaimer(state)
 })
 
 const mapDispatchToProps = {}

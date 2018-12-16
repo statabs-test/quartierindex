@@ -69,7 +69,7 @@ const LegendItem: React.SFC<Props & PublicProps> = ({
               </Icon>
             </div>
           </Grid>
-          <Grid item xs={10}>
+          <Grid item xs={10} style={{minHeight:35}}>
             <select
               className={'legend-select'}
               onChange={event => replaceIndicator(event.target.value, indicator.id)}
@@ -84,7 +84,7 @@ const LegendItem: React.SFC<Props & PublicProps> = ({
             </select>
           </Grid>
 
-          <Grid item xs={2}>
+          <Grid item xs={2} >
             <Grid container>
               <Grid item xs={12}>
                 <div className="rate-positive" onClick={() => positiveValuation(indicator.id)}>
@@ -110,9 +110,9 @@ const LegendItem: React.SFC<Props & PublicProps> = ({
               </Grid>
             </Grid>
           </Grid>
-          <Grid item className="weight" xs={10}>
+          <Grid item className="weight" xs={10} >
             <Grid container direction={'column'} justify={'space-around'}>
-              <Grid item xs={12}>
+              <Grid item xs={12} style={{minHeight: 30}}>
                   <div className="weight-label">{getLabelBy(indicator.weight)}</div>
               </Grid>
               <Grid item xs={12}>

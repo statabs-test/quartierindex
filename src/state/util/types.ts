@@ -8,12 +8,8 @@ export interface SelectIndicatorConfig {
   visible: boolean
 }
 
-export interface Disclaimer {
-  visible: boolean
-}
-
 export interface Util {
   readonly rootConf: RootConfig
   readonly selectIndicatorConf: SelectIndicatorConfig
-  disclaimer: Disclaimer
+  readonly showDisclaimer: boolean
 }
