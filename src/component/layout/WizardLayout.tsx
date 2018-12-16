@@ -1,8 +1,8 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
-import { Rootstate } from 'src/state'
-import { getSelectedIndicators } from 'src/state/indicator/selectors'
+import { Rootstate } from '../../state'
+import { getSelectedIndicators } from '../../state/indicator/selectors'
 import { Redirect } from 'react-router-dom'
 import { Grid } from '@material-ui/core'
 

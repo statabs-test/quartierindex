@@ -1,5 +1,5 @@
 import * as React from 'react'
-import * as c from 'classnames'
+import c from 'classnames'
 import { Button } from '@material-ui/core'
 import * as H from 'history'
 import { ButtonProps } from '@material-ui/core/Button'

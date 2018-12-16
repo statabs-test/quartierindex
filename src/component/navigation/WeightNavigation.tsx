@@ -9,13 +9,16 @@ const WeightNavigation: React.SFC<WeightNavigationProps> = props => {
     <div className="wizardFooter">
       <Grid container justify="flex-end">
         <Grid item xs={2}>
-          <NavButton className="wizard-left-button" variant="raised" to={'/plot'}>
-            Rangliste erstellen
+          <NavButton className="wizard-left-button" variant="contained" to={'/ranking'}>
+            Zurück zur Bewertung
+          </NavButton>
+          <NavButton className="wizard-left-button" variant="contained" to="/">
+            Zurück zur Auswahl
           </NavButton>
         </Grid>
 
         <Grid item xs={8}>
-          <p className="stepper-description">
+          <p className="stepper-description text">
             «Rangliste erstellen» zeigt die Rangliste als Ergebnis Ihrer Indikatoren-Auswahl und der
             oben eingestellten Gewichtung der Indikatoren an. Alle Bewertungen und Gewichtungen
             können auch direkt in der Ergebnisdarstellung beliebig oft neu eingestellt werden.
@@ -23,11 +26,8 @@ const WeightNavigation: React.SFC<WeightNavigationProps> = props => {
         </Grid>
 
         <Grid item xs={2}>
-          <NavButton className="wizard-right-button" variant="raised" to={'/ranking'}>
-            Zurück zu Bewertung
-          </NavButton>
-          <NavButton className="wizard-right-button" variant="raised" to="/">
-            Zurück zur Auswahl
+          <NavButton className="wizard-right-button" variant="contained" to={'/plot'}>
+            Rangliste erstellen
           </NavButton>
         </Grid>
       </Grid>

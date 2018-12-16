@@ -54,3 +54,7 @@
   border: 1px solid #999999;
   background-color: #ffffff;
 }
+
+.bar-plot-empty {
+  border: 1px solid #aaa;
+}

@@ -19,16 +19,16 @@ export const getIndicator = (state: Rootstate, props: { id: string }): Indicator
 }
 
 export const getGroupedIndicators = (state: Rootstate): { [key: string]: Indicator[] } => {
-  return _.groupBy(allIndicators(state), indicator => indicator.subject)
+  return _.groupBy(_.sortBy(allIndicators(state), 'name'), indicator => indicator.subject)
 }
 
 /**
  * SelectIndicator all selected indicator
  */
 export const getSelectedIndicators = (state: Rootstate): Indicator[] => {
-  const selectedIndicatorIndexes = state.indicator.orderedBySelection;
-  return _.map(selectedIndicatorIndexes, (selectedId) => {
-    return state.indicator.byId[selectedId];
+  const selectedIndicatorIndexes = state.indicator.orderedBySelection
+  return _.map(selectedIndicatorIndexes, selectedId => {
+    return state.indicator.byId[selectedId]
   })
 }
 
@@ -37,5 +37,5 @@ export const getSelectedIndicators = (state: Rootstate): Indicator[] => {
  */
 export const getChoosableIndicators = (state: Rootstate): Indicator[] => {
   const indicators = allIndicators(state)
-  return indicators.filter(indicator => !indicator.selected);
+  return indicators.filter(indicator => !indicator.selected)
 }

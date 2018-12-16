@@ -5,25 +5,26 @@ import { getSelectedIndicators } from '../../state/indicator/selectors'
 import { Indicator } from '../../state/indicator/types'
 import NavButton from '../customElements/NavButton'
 import './navigation.css'
+import { compose } from 'recompose'
 
 export interface Props {
   selectedIndicators: Indicator[]
 }
 
-function AppNaviation({ selectedIndicators }: Props) {
+const AppNaviation: React.SFC<Props> = ({ selectedIndicators }) => {
   const disabled = selectedIndicators.length <= 0
 
   return (
     <div className="right-grid navigation">
-      <NavButton className="nav-button" variant="raised" to={'/'}>
+      <NavButton className="nav-button" variant="contained" to={'/'}>
         Auswahl
       </NavButton>
 
-      <NavButton className="nav-button" disabled={disabled} variant="raised" to={'ranking'}>
+      <NavButton className="nav-button" disabled={disabled} variant="contained" to={'ranking'}>
         Bewertung
       </NavButton>
 
-      <NavButton className="nav-button" disabled={disabled} variant="raised" to={'/importance'}>
+      <NavButton className="nav-button" disabled={disabled} variant="contained" to={'/importance'}>
         Gewichtung
       </NavButton>
     </div>
@@ -34,7 +35,9 @@ const mapStateToProps = (state: Rootstate) => ({
   selectedIndicators: getSelectedIndicators(state),
 })
 
-export default connect(
-  mapStateToProps,
-  null
+export default compose<Props, {}>(
+  connect(
+    mapStateToProps,
+    undefined
+  )
 )(AppNaviation)

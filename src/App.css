@@ -27,6 +27,17 @@ html {
   height: 700px;
 }
 
+label,
+input[type='checkbox'],
+input[type='radio'] {
+  cursor: pointer;
+}
+
+.text {
+  font-size: 9.6pt;
+  line-height: 14pt;
+}
+
 /* Wizard
 ------------------------------------------------*/
 h2.wizardTitle {
@@ -49,6 +60,10 @@ h2.district-ranking-title {
   color: black;
 }
 
+div.hideDescription {
+  display: none;
+}
+
 /* Main view
 -----------------------------------------------*/
 .main-view {
@@ -67,7 +82,22 @@ h2.district-ranking-title {
 
 .main-view > .district-ranking {
   height: 83%;
-  top:120px /**--ranking-top**/;
+  top: 120px /**--ranking-top**/;
+}
+
+.districtRankingExplanation {
+  margin-left: 5px;
+}
+/* Didn't work with IE, partial support 
+.districtRankingExplanationList {
+  display: flex;
+  flex-direction: column;
+}
+*/
+
+.districtRankingExplanation > li {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid red;
 }
 
 .main-view > .indicator-ranking {
@@ -85,7 +115,7 @@ h2.district-ranking-title {
 
 .main-view > .left-grid {
   position: absolute;
-  width: 300px;  /*--district-ranking-width*/
+  width: 300px; /*--district-ranking-width*/
   left: 0;
 }
 
@@ -143,6 +173,10 @@ h2.district-ranking-title {
   padding-bottom: 2px;
 }
 
+.toggleGroup {
+  padding: 0px 0px 5px 0px;
+}
+
 /*RANKING MAIN CONTAINER
 -----------------------------------------------*/
 .ranking-container {
@@ -171,11 +205,15 @@ h2.district-ranking-title {
   margin-left: 3px; /**--column-margin-indicator**/
   margin-right: 3px; /**--column-margin-indicator**/
 
-  border-radius: 12px;
+  border-radius: 5px;
   text-align: center;
   border: 1px solid #000000;
 
   /* background: #cc8dab; */
+}
+
+.neutral-border {
+  border: 1px solid #aaa;
 }
 
 .legend-container-title {
@@ -247,7 +285,6 @@ h2.district-ranking-title {
 /* Indicator selection and deselection
 ------------------------------------------------*/
 
-
 /*------------------------------------------------*/
 /* R A I T I N G  (Pos / Neg)                     */
 /*------------------------------------------------*/
@@ -260,37 +297,48 @@ h2.district-ranking-title {
   border-radius: 5px;
   height: 100%;
 }
+
+.rating {
+  display: flex;
+}
+
+.ratingLeft {
+  flex: 8;
+  background-color: #fcfcfc;
+  margin: 5px;
+  padding: 8px 5px 8px 5px;
+  padding-right: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.raitingRight {
+  flex: 4;
+  background-color: #fcfcfc;
+  margin: 5px;
+  padding: 8px 5px 8px 5px;
+  padding-right: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.indicatorRatingDescription {
+  padding: 4px 0px 4px 0px;
+  height: 45px;
+}
 .ratingLine {
   /* Use Flex row system */
   display: flex;
-  flex-direction: row;
-  width: 100%;
   padding: 4px 0px 4px 0px;
+  height: 45px;
   justify-content: space-between;
-}
-
-.ratingLineText p {
-  display: flex;
-  align-content: center;
-}
-
-.ratingLineText p:before {
-  content: '\A';
-  width: 0;
-  height: 0;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-left: 10px solid black;
-  padding-right: 3px;
-  margin-top: 2px;
-}
-.ratingLineText p:after {
-  content: ' ...';
-  white-space: pre;
 }
 
 .ratingLineButtons {
   display: flex;
+  height: 35px;
   justify-content: flex-end;
 }
 
@@ -299,7 +347,6 @@ h2.district-ranking-title {
   color: white;
   text-transform: none;
   border-radius: 2px;
-  cursor: pointer;
   align-items: center;
   box-shadow: 1px 2px #c1c1c1;
 }
@@ -314,6 +361,13 @@ h2.district-ranking-title {
 .negative-unselected {
   background-color: #e6d3cb;
   border: 1px solid #e6d3cb;
+  cursor: pointer;
+}
+
+.negative-unselected-disabled {
+  background-color: #e6d3cb;
+  border: 1px solid #e6d3cb;
+  cursor: not-allowed;
 }
 
 .negative-unselected:hover {
@@ -336,10 +390,38 @@ h2.district-ranking-title {
   background-color: #9ab6c3;
   border: 1px solid #9ab6c3;
   margin-right: 10px;
+  cursor: pointer;
+}
+
+.positive-unselected-disabled {
+  background-color: #9ab6c3;
+  border: 1px solid #9ab6c3;
+  margin-right: 10px;
+  cursor: not-allowed;
 }
 
 .positive-unselected:hover {
   background-color: #0387c1;
   border: 1px solid #0387c1;
   margin-right: 10px;
+}
+
+/* Remove horizontal lines in barchart */
+.recharts-wrapper .recharts-cartesian-grid-horizontal {
+  stroke-opacity: 0;
+}
+
+/* keep white space in labels of y-axis */
+.preserveWhiteSpace {
+  white-space: pre;
+  margin-left: 1em;
+}
+
+.recharts-cartesian-axis-tick-value {
+  fill: black;
+  white-space: pre;
+}
+
+.clear-icon {
+  cursor: pointer;
 }

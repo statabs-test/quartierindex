@@ -11,13 +11,18 @@ const SelectionNavigation: React.SFC<SelectionNavigationProps> = ({ valid }) => 
     <div className="wizardFooter">
       <Grid container justify="space-between">
         <Grid item xs={2}>
-          <NavButton className="wizard-left-button" disabled={!valid} variant="raised" to={'/plot'}>
-            Rangliste
+          <NavButton
+            className="wizard-left-button"
+            disabled={!valid}
+            variant="contained"
+            to={'/plot'}
+          >
+            Rangliste erstellen
           </NavButton>
         </Grid>
         <Grid className={valid ? 'showDescription' : 'hideDescription'} item xs={8}>
           {}
-          <p className="stepper-description">
+          <p className="stepper-description text">
             «Rangliste erstellen» zeigt direkt die Rangliste als Ergebnis Ihrer Indikatoren-Auswahl
             an.
             <br />
@@ -32,7 +37,7 @@ const SelectionNavigation: React.SFC<SelectionNavigationProps> = ({ valid }) => 
           <NavButton
             className="wizard-right-button"
             disabled={!valid}
-            variant="raised"
+            variant="contained"
             to={'/ranking'}
           >
             Weiter zur Bewertung
