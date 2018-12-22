@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { round, trim } from 'lodash'
 import { connect } from 'react-redux'
-import { BarChart, Bar, CartesianGrid, Cell, XAxis, YAxis } from 'recharts'
+import { AxisDomain, Bar, BarChart, CartesianGrid, Cell, XAxis, YAxis } from 'recharts'
 import { Rootstate } from '../../state'
 import { getSortedGlobalRanking } from '../../state/observation/selectors'
 import { Rank } from '../../state/observation/types'
@@ -26,7 +26,7 @@ const WhiteSpacePreservedTick = (props: any) => {
     y,
     width,
     height,
-    payload: { value },
+    payload: {value},
   } = props
 
   let xNew = 0
@@ -72,11 +72,40 @@ const WhiteSpacePreservedTick = (props: any) => {
   )
 }
 
-const DistrictRanking: React.StatelessComponent<PublicProps & InjectedProps> = ({
-  districts,
-  ranks,
-  indicators,
-}) => {
+const domainOf = (data: { id: string, name: string, value: number }[])
+  : [AxisDomain, AxisDomain] => {
+  const values = data.map(d => d.value);
+  const min = Math.min(...values)
+  const max = Math.max(...values)
+  if (values.length === 0) return [0, 0]
+  return [min, max]
+}
+
+const getTicks = (domain: [AxisDomain, AxisDomain], nTicks: number)
+  : Number[] => {
+
+  const calcOffset = (n1: number, n2: number)
+    : number => {
+    if ((n1 <= 0 && n2 <= 0) ||
+      (n1 >= 0 && n2 >= 0))
+      return Math.abs((Math.abs(n1) - Math.abs(n2))) / (nTicks - 1)
+
+    return (Math.abs(n1) + Math.abs(n2)) / (nTicks - 1)
+  }
+  const min = Number(domain[0])
+  const max = Number(domain[1])
+  const offset = calcOffset(min, max)
+
+  return Array(nTicks).fill(min)
+    .map((v, index) => v + offset * index)
+}
+
+const DistrictRanking: React.StatelessComponent<PublicProps & InjectedProps>
+  = ({
+       districts,
+       ranks,
+       indicators,
+     }) => {
   let rankNum = 0
   const data = ranks.map((rank, i) => {
     if (rank.districtId !== '99') {
@@ -96,23 +125,22 @@ const DistrictRanking: React.StatelessComponent<PublicProps & InjectedProps> = (
     }
   })
 
-  const ticks = [-1, -0.5, 0, 0.5, 1]
-
+  const ticks = getTicks(domainOf(data), 4)
   return (
     <div className="left-grid district-ranking">
       <div className="container">
         {/* District ranking bar plot */}
         <BarChart data={data} width={280} height={530} layout="vertical">
-          <CartesianGrid />
+          <CartesianGrid/>
           {/* TODO: Check color of bar*/}
           <XAxis
             axisLine={false}
-            domain={[-1, 1]}
+            domain={domainOf(data)}
             interval="preserveStart"
             type="number"
             tickLine={false}
             ticks={ticks}
-            tickFormatter={tick => (ticks.indexOf(tick) % 2 === 0 ? tick : '')}
+            tickFormatter={tick => tick.toString().substr(0, 5)}
           />
           <YAxis
             width={130}
@@ -126,16 +154,16 @@ const DistrictRanking: React.StatelessComponent<PublicProps & InjectedProps> = (
           <Bar dataKey="value">
             {data.map((entry, index) =>
               entry.id === '99' ? (
-                <Cell key={`cell-${index}`} fill={'black'} />
+                <Cell key={`cell-${index}`} fill={'black'}/>
               ) : (
-                <Cell key={`cell-${index}`} fill={'#FFD300'} />
+                <Cell key={`cell-${index}`} fill={'#FFD300'}/>
               )
             )}
           </Bar>
         </BarChart>
         <div className="districtRankingExplanation">
           <p>
-            Berechnungsergebnis aus: <br />
+            Berechnungsergebnis aus: <br/>
             {indicators.map(indicator => {
               return (
                 <React.Fragment key={indicator.id}>
@@ -143,7 +171,7 @@ const DistrictRanking: React.StatelessComponent<PublicProps & InjectedProps> = (
                     - {indicator.name} mit einer Gewichtung von{' '}
                     {indicator.weight * indicator.valuation}
                   </span>
-                  <br />
+                  <br/>
                 </React.Fragment>
               )
             })}
