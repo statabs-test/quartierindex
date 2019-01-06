@@ -42,14 +42,14 @@ const IndicatorSelection: React.SFC<Props> = props => {
     (sum, indicatorGroup) => indicatorGroup.length + sum,
     0
     )
-  return (
+    return (
     <WizardLayout ignoreRedirect>
 
       {welcome(
-        `Herzlich Willkommen bei "Finden Sie Ihr Lieblingswohnviertel"!
-              Auf dieser Seite können Sie Ihre ganz persönliche Rangliste der
-              Basler Wohnviertel und Gemeinden erstellen.
-          `
+        `Herzlich Willkommen bei \u00ABFinden Sie Ihr Lieblingswohnviertel\u00BB!
+          Auf dieser Seite können Sie Ihre ganz persönliche Rangliste der
+          Basler Wohnviertel und Gemeinden erstellen.
+        `
       )}
       <div className="wizardDescription text">
         Bitte wählen Sie in einem ersten Schritt zwischen 1 und {numIndicators} Indikatoren aus,
