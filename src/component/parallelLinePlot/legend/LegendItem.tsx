@@ -151,7 +151,7 @@ const LegendItem: React.SFC<Props & PublicProps> = ({
   return (
     <div key={'emptyLegend'} className={'legend-container neutral-border'}>
       <Grid container>
-        <Grid item xs={10}>
+        <Grid item xs={12}>
           <select
             className="legend-select-empty"
             onChange={event =>
@@ -168,9 +168,6 @@ const LegendItem: React.SFC<Props & PublicProps> = ({
           </select>
 
           {/* <div className={'legend-name'}> </div> */}
-        </Grid>
-        <Grid item xs={2}>
-          {}
         </Grid>
         <Grid item xs={2}>
           <Grid container>
