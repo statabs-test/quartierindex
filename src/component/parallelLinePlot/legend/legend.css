@@ -38,3 +38,7 @@
 .clear-icon-container:hover {
   background-color: hsl(0, 90%, 95%);
 }
+
+.weight-label {
+  color: black;
+}
