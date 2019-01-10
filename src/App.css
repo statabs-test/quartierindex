@@ -149,6 +149,7 @@ div.hideDescription {
   background: #f5f5f5;
   border: 1px solid #cccccc;
   border-radius: 5px;
+  overflow: hidden;
 }
 .mainFrame {
   background-color: #f5f5f5;
