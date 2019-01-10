@@ -1,10 +1,11 @@
 .legend-select {
   width: 156px;
-  height: 24px;
+  height: 23px;
   border-radius: 0px 3px 3px 0px;
   border: 0.5px solid #999999;
   margin-right: 2px;
   margin-top: 2px;
+  overflow: hidden;
 }
 .legend-select-empty {
   height: 24px;

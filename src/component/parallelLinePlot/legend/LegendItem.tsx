@@ -9,21 +9,16 @@ import './legend.css'
 
 import {
   deselectIndicator,
+  replaceIndicatorWith,
+  selectIndicator,
   setNegativeValuation,
   setPositiveValuation,
   setWeight,
-  replaceIndicatorWith,
-  selectIndicator,
 } from '../../../state/indicator/actions'
 
 import 'rc-slider/assets/index.css'
 import Slider from 'rc-slider'
-import {
-  getClassNameNegPosBorder,
-  getClassNameSelectedUnselected,
-  getColor,
-  getLabelBy,
-} from '../../../helpers'
+import { getClassNameNegPosBorder, getClassNameSelectedUnselected, getColor, getLabelBy, } from '../../../helpers'
 
 interface Props {
   choosableIndicators: Indicator[]
@@ -37,6 +32,7 @@ interface Props {
   deselect(id: string): void
 
   selectEmptyIndicator(id: string): void
+
   // curried function
   replaceIndicator(selectId: string, replaceId: string): void
 }
@@ -46,15 +42,15 @@ export interface PublicProps {
 }
 
 const LegendItem: React.SFC<Props & PublicProps> = ({
-  indicator,
-  negativeValuation,
-  positiveValuation,
-  setIndicatorWeight,
-  deselect,
-  choosableIndicators,
-  replaceIndicator,
-  selectEmptyIndicator,
-}) => {
+                                                      indicator,
+                                                      negativeValuation,
+                                                      positiveValuation,
+                                                      setIndicatorWeight,
+                                                      deselect,
+                                                      choosableIndicators,
+                                                      replaceIndicator,
+                                                      selectEmptyIndicator,
+                                                    }) => {
   // normal rendering
   if (indicator) {
     const sliderStyle = getColor(indicator.valuation === NegativePositive.Positive)
@@ -69,22 +65,25 @@ const LegendItem: React.SFC<Props & PublicProps> = ({
               </Icon>
             </div>
           </Grid>
-          <Grid item xs={10} style={{minHeight:35}}>
-            <select
+          <Grid item xs={10} style={{minHeight: 35}}>
+            <div
               className={'legend-select'}
-              onChange={event => replaceIndicator(event.target.value, indicator.id)}
-              value={indicator.id}
             >
-              <option value={indicator.id}>{indicator.name}</option>
-              {choosableIndicators.map(indic => (
-                <option key={indic.id} value={indic.id}>
-                  {indic.name}
-                </option>
-              ))}
-            </select>
+              <select style={{height: '100%', width: '100%'}}
+                onChange={event => replaceIndicator(event.target.value, indicator.id)}
+                value={indicator.id}
+              >
+                <option value={indicator.id}>{indicator.name}</option>
+                {choosableIndicators.map(indic => (
+                  <option key={indic.id} value={indic.id}>
+                    {indic.name}
+                  </option>
+                ))}
+              </select>
+            </div>
           </Grid>
 
-          <Grid item xs={2} >
+          <Grid item xs={2}>
             <Grid container>
               <Grid item xs={12}>
                 <div className="rate-positive" onClick={() => positiveValuation(indicator.id)}>
@@ -110,33 +109,33 @@ const LegendItem: React.SFC<Props & PublicProps> = ({
               </Grid>
             </Grid>
           </Grid>
-          <Grid item className="weight" xs={10} >
+          <Grid item className="weight" xs={10}>
             <Grid container direction={'column'} justify={'space-around'}>
               <Grid item xs={12} style={{minHeight: 30}}>
-                  <div className="weight-label">{getLabelBy(indicator.weight)}</div>
+                <div className="weight-label">{getLabelBy(indicator.weight)}</div>
               </Grid>
               <Grid item xs={12}>
 
-                  <Slider
-                      min={0.25}
-                      max={1.0}
-                      step={0.25}
-                      value={indicator.weight}
-                      marks={{
-                          0.25: '',
-                          0.5: '',
-                          0.75: '',
-                          1: '',
-                      }}
-                      activeDotStyle={sliderStyle}
-                      trackStyle={sliderStyle}
-                      handleStyle={sliderStyle}
-                      style={{
-                          paddingRight: '5px',
-                          marginTop: '5px',
-                      }}
-                      onChange={value => setIndicatorWeight(indicator.id, value)}
-                  />
+                <Slider
+                  min={0.25}
+                  max={1.0}
+                  step={0.25}
+                  value={indicator.weight}
+                  marks={{
+                    0.25: '',
+                    0.5: '',
+                    0.75: '',
+                    1: '',
+                  }}
+                  activeDotStyle={sliderStyle}
+                  trackStyle={sliderStyle}
+                  handleStyle={sliderStyle}
+                  style={{
+                    paddingRight: '5px',
+                    marginTop: '5px',
+                  }}
+                  onChange={value => setIndicatorWeight(indicator.id, value)}
+                />
 
               </Grid>
             </Grid>
