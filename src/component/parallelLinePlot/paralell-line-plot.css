@@ -44,11 +44,16 @@
   align-items: center;
   position: absolute;
   display: inline-flex;
+  overflow: hidden; /** hide recarts bar plot overflow (IE11)**/
 }
 /* For responsive container of recharts a width and height is needed */
 .bar-plot {
   width: 190px /**--column-width-indicator:**/;
-  height: 100%;
+
+  /* The height must be set a little bit less than 100%,
+     since the parent container otherwise hides the border.
+   */
+  height: 99.7%;
   margin-left: 3px; /**--column-margin-indicator**/
   margin-right: 3px; /**--column-margin-indicator**/
   border: 1px solid #999999;
