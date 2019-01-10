@@ -140,7 +140,13 @@ const DistrictRanking: React.StatelessComponent<PublicProps & InjectedProps>
             type="number"
             tickLine={false}
             ticks={ticks}
-            tickFormatter={tick => tick.toString().substr(0, 5)}
+            tickFormatter={tick =>
+              tick > 0
+                ?
+                tick.toString().substr(0, 4)
+                :
+                tick.toString().substr(0, 5)
+            }
           />
           <YAxis
             width={130}
