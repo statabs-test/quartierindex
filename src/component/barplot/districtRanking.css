@@ -1,0 +1,22 @@
+
+.districtRankingExplanation {
+    margin-left: 5px;
+}
+
+.districtRankingExplanation ul {
+    display: table;
+    margin: 0;
+    padding: 0;
+}
+
+.districtRankingExplanation li {
+    list-style: none;
+    display: table-row;
+}
+
+.districtRankingExplanation li::before {
+    display: table-cell;
+    content: "-";
+    text-align: right;
+    padding-right: .3em;
+}

@@ -98,21 +98,6 @@ div.hideDescription {
   top: 120px /**--ranking-top**/;
 }
 
-.districtRankingExplanation {
-  margin-left: 5px;
-}
-/* Didn't work with IE, partial support 
-.districtRankingExplanationList {
-  display: flex;
-  flex-direction: column;
-}
-*/
-
-.districtRankingExplanation > li {
-  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
-  border-bottom: 1px solid red;
-}
-
 .main-view > .indicator-ranking {
   height: 95%;
   top: 0;

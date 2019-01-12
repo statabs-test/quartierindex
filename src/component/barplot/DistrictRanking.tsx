@@ -9,6 +9,7 @@ import { Indicator } from '../../state/indicator/types'
 import { allDistrictsById } from '../../state/district/selectors'
 import { getSelectedIndicators } from '../../state/indicator/selectors'
 import { District } from '../../state/district/types'
+import './districtRanking.css'
 
 export interface PublicProps {
   className?: string
@@ -170,17 +171,17 @@ const DistrictRanking: React.StatelessComponent<PublicProps & InjectedProps>
         <div className="districtRankingExplanation">
           <p>
             Berechnungsergebnis aus: <br/>
+            <ul>
             {indicators.map(indicator => {
               return (
                 <React.Fragment key={indicator.id}>
-                  <span className="districtRankingExplanationEntry">
-                    - {indicator.name} mit einer Gewichtung von{' '}
+                    <li>{indicator.name} mit Gewicht {' '}
                     {indicator.weight * indicator.valuation}
-                  </span>
-                  <br/>
+                    </li>
                 </React.Fragment>
               )
             })}
+            </ul>
           </p>
         </div>
       </div>
