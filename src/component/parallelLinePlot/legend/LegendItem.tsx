@@ -69,7 +69,7 @@ const LegendItem: React.SFC<Props & PublicProps> = ({
             <div
               className={'legend-select'}
             >
-              <select style={{height: '100%', width: '100%'}}
+              <select style={{height: '100%', width: '100%' , border: 'none'}}
                 onChange={event => replaceIndicator(event.target.value, indicator.id)}
                 value={indicator.id}
               >
