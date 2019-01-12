@@ -17,15 +17,15 @@ const AppNaviation: React.SFC<Props> = ({ selectedIndicators }) => {
   return (
     <div className="right-grid navigation">
       <NavButton className="nav-button" variant="contained" to={'/'}>
-        Auswahl
+        Auswahl ändern
       </NavButton>
 
       <NavButton className="nav-button" disabled={disabled} variant="contained" to={'ranking'}>
-        Bewertung
+        Bewertung ändern
       </NavButton>
 
       <NavButton className="nav-button" disabled={disabled} variant="contained" to={'/importance'}>
-        Gewichtung
+        Gewichtung ändern
       </NavButton>
     </div>
   )
