@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { round, isEqual } from 'lodash'
 import { connect } from 'react-redux'
-import { BarChart, Bar, CartesianGrid, Cell, XAxis, YAxis, Label } from 'recharts'
+import { AxisDomain, Bar, BarChart, CartesianGrid, Cell, XAxis, YAxis, Label } from 'recharts'
 import { Rootstate } from '../../state'
 import { getSortedGlobalRanking } from '../../state/observation/selectors'
 import { Rank } from '../../state/observation/types'
@@ -12,6 +12,7 @@ import { District } from '../../state/district/types'
 import DistrictLabel from './DistrictLabel'
 import AnimatePosition from './AnimatePosition'
 import { getRankPosition } from '../../helpers'
+import './districtRanking.css'
 
 export interface PublicProps {
   className?: string
@@ -29,6 +30,32 @@ export type Positions = {
 
 interface StateProps {
   positions: Positions
+}
+
+const domainOf = (
+  data: { id: string; name: string; value: number }[]
+): [AxisDomain, AxisDomain] => {
+  const values = data.map(d => d.value)
+  const min = Math.min(...values)
+  const max = Math.max(...values)
+  if (values.length === 0) return [0, 0]
+  return [min, max]
+}
+
+const getTicks = (domain: [AxisDomain, AxisDomain], nTicks: number): Number[] => {
+  const calcOffset = (n1: number, n2: number): number => {
+    if ((n1 <= 0 && n2 <= 0) || (n1 >= 0 && n2 >= 0))
+      return Math.abs(Math.abs(n1) - Math.abs(n2)) / (nTicks - 1)
+
+    return (Math.abs(n1) + Math.abs(n2)) / (nTicks - 1)
+  }
+  const min = Number(domain[0])
+  const max = Number(domain[1])
+  const offset = calcOffset(min, max)
+
+  return Array(nTicks)
+    .fill(min)
+    .map((v, index) => v + offset * index)
 }
 
 class DistrictRanking extends React.Component<PublicProps & InjectedProps, StateProps> {
@@ -49,8 +76,6 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
           id: rank.districtId,
         }
       }
-
-      //    rankNum = rankNum - 1
       // Basel-Stadt without rank (number), see handling in DistrictLabel
       return {
         name: `X ${districts[rank.districtId].name}`,
@@ -58,12 +83,11 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
         id: rank.districtId,
       }
     })
-    const ticks = [-1, -0.5, 0, 0.5, 1]
 
     const positions = getRankPosition(data)
-
     const positionsBefore = this.state.positions
 
+    const ticks = getTicks(domainOf(data), 4)
     return (
       <div className="left-grid district-ranking">
         <div className="container">
@@ -82,22 +106,25 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
                   {/* TODO: Check color of bar*/}
                   <XAxis
                     axisLine={false}
-                    domain={[-1, 1]}
+                    domain={domainOf(data)}
                     interval="preserveStart"
                     type="number"
                     tickLine={false}
                     ticks={ticks}
-                    tickFormatter={tick => (ticks.indexOf(tick) % 2 === 0 ? tick : '')}
+                    tickFormatter={tick =>
+                      tick > 0 ? tick.toString().substr(0, 4) : tick.toString().substr(0, 5)
+                    }
                   />
                   <YAxis
                     width={130}
+                    dataKey="name"
                     type="category"
                     orientation="right"
                     axisLine={false}
                     tick={false}
                     tickLine={false}
                   >
-                    {data.map((entry, index) => {
+                    {data.map(entry => {
                       return (
                         <Label
                           content={DistrictLabel}
@@ -118,7 +145,6 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
                       )
                     )}
                   </Bar>
-                  )
                 </BarChart>
               )
             }}
@@ -126,18 +152,19 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
           <div className="districtRankingExplanation">
             <p>
               Berechnungsergebnis aus: <br />
-              {indicators.map(indicator => {
-                return (
-                  <React.Fragment key={indicator.id}>
-                    <span className="districtRankingExplanationEntry">
-                      - {indicator.name} mit einer Gewichtung von{' '}
-                      {indicator.weight * indicator.valuation}
-                    </span>
-                    <br />
-                  </React.Fragment>
-                )
-              })}
+              <ul>
+                {indicators.map(indicator => {
+                  return (
+                    <React.Fragment key={indicator.id}>
+                      <li>
+                        {indicator.name} mit Gewicht {indicator.weight * indicator.valuation}
+                      </li>
+                    </React.Fragment>
+                  )
+                })}
+              </ul>
             </p>
+            )
           </div>
         </div>
       </div>

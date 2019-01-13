@@ -1,8 +1,9 @@
 .nav-button {
   display: flex !important;
-  width: 100%;
+  /* Normally the width would be 190px, but with these values it looks most correct  */
+  width: 191px;
   margin-left: 0.5% !important;
-  margin-right: 0.5% !important;
+  margin-right: 0.6% !important;
 }
 
 div.wizardFooter {

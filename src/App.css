@@ -98,28 +98,13 @@ div.hideDescription {
   top: 120px /**--ranking-top**/;
 }
 
-.districtRankingExplanation {
-  margin-left: 5px;
-}
-/* Didn't work with IE, partial support 
-.districtRankingExplanationList {
-  display: flex;
-  flex-direction: column;
-}
-*/
-
-.districtRankingExplanation > li {
-  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
-  border-bottom: 1px solid red;
-}
-
 .main-view > .indicator-ranking {
   height: 95%;
   top: 0;
 }
 
 .main-view > .navigation {
-  height: 5%;
+  height: 4%;
   bottom: 0;
 
   text-align: center;
@@ -149,6 +134,7 @@ div.hideDescription {
   background: #f5f5f5;
   border: 1px solid #cccccc;
   border-radius: 5px;
+  overflow: hidden;
 }
 .mainFrame {
   background-color: #f5f5f5;
