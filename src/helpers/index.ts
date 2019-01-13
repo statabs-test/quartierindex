@@ -1,6 +1,7 @@
 import { LineRank } from '../state/observation/types'
 import { Indicator, NegativePositive, WeightNumber } from '../state/indicator/types'
 import { District } from '../state/district/types'
+import { reduce } from 'lodash'
 
 export const getRankingColor = (rank: LineRank): string => {
   if (rank.highlighted && rank.hover) {
@@ -88,3 +89,18 @@ export const getLabelBy = (weight: WeightNumber): string => {
 
 export const anyUserSelection = (districts: District[]): boolean =>
   districts.map(d => d.viewOptions.highlight).reduce((a, b) => a || b)
+
+export const getRankPosition = (
+  data: { value: number; id: string }[]
+): { [id: string]: number } => {
+  return reduce(
+    data,
+    (accu, entry, idx) => {
+      return {
+        ...accu,
+        [entry.id]: idx * 22.27 + 7.22,
+      }
+    },
+    {}
+  )
+}
