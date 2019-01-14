@@ -164,7 +164,6 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
                 })}
               </ul>
             </p>
-            )
           </div>
         </div>
       </div>
