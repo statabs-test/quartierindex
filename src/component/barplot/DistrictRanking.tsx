@@ -101,7 +101,7 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
           >
             {props => {
               return (
-                <BarChart data={data} width={280} height={530} layout="vertical">
+                <BarChart data={data} width={285} height={530} layout="vertical">
                   <CartesianGrid />
                   {/* TODO: Check color of bar*/}
                   <XAxis
@@ -116,7 +116,7 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
                     }
                   />
                   <YAxis
-                    width={130}
+                    width={135}
                     dataKey="name"
                     type="category"
                     orientation="right"

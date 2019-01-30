@@ -25,14 +25,14 @@
     },
     {
         "id": "3",
-        "name": "Anteil Konfessionslose",
+        "name": "Anteil Personen ohne Religionszugehörigkeit",
         "subject": "Gesellschaft und Soziales",
         "publication": "2018",
         "year": "2017",
         "valuation": 1,
-        "valuationText": "Ein hoher Anteil Konfessionsloser ist für mich",
+        "valuationText": "Ein hoher Anteil Personen ohne Religionszugehörigkeit ist für mich",
         "weight": 1,
-        "weightText": "Der Anteil Konfessionsloser ist für mich",
+        "weightText": "Der Anteil Personen ohne Religionszugehörigkeit ist für mich",
         "description": "Anteil Personen, welche keiner Konfession angehört."
     },
     {
@@ -57,7 +57,7 @@
         "valuationText": "Eine hohe Gymnasialquote ist für mich",
         "weight": 1,
         "weightText": "Die Gymnasialquote ist für mich",
-        "description": "Anteil Gymnasiastinnen und Gymnasiasten am Total der Schülerinnen und Schüler der 10. und 11. Schulstufe (inkl. zweier Jahre obligatorischer Kindergarten)."
+        "description": "Anteil Gymnasiastinnen und Gymnasiasten am Total der Schülerinnen und Schüler der 10. und 11. Schulstufe (inkl. 2 Jahre Kindergarten)."
     },
     {
         "id": "6",
@@ -73,14 +73,14 @@
     },
     {
         "id": "7",
-        "name": "Sesshaftigkeit",
+        "name": "Anteil Sesshafte",
         "subject": "Gesellschaft und Soziales",
         "publication": "2018",
         "year": "2017",
         "valuation": 1,
-        "valuationText": "Eine hohe Sesshaftigkeit ist für mich",
+        "valuationText": "Ein hoher Anteil Sesshafte ist für mich",
         "weight": 1,
-        "weightText": "Der Anteil Sesshafter ist für mich",
+        "weightText": "Der Anteil Sesshafte ist für mich",
         "description": "Anteil Personen, der seit mindestens 10 Jahren an derselben Adresse wohnt gemessen am Total der Bevölkerung."
     },
     {
@@ -126,9 +126,9 @@
         "publication": "2018",
         "year": "2017",
         "valuation": 1,
-        "valuationText": "Ein hoher Anteil Grünflächen ist für mich",
+        "valuationText": "Ein hoher Anteil Grünfläche ist für mich",
         "weight": 1,
-        "weightText": "Der Anteil Grünflächen ist für mich",
+        "weightText": "Der Anteil Grünfläche ist für mich",
         "description": "Anteil der Grünflächen an der Gesamtfläche. Als Grünflächen gelten alle privaten und öffentlichen bestockten oder humusierten Flächen."
     },
     {

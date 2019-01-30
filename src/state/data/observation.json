@@ -1,1 +1,3170 @@
-[{"id":1,"districtId":"1","indicatorId":"1","value":0.0166023166,"normValue":0.005256204718322733,"ranking":"2"},{"id":2,"districtId":"2","indicatorId":"1","value":0.0362911266,"normValue":0.16463198545085264,"ranking":"6"},{"id":3,"districtId":"3","indicatorId":"1","value":0.0369102683,"normValue":0.16964377599693267,"ranking":"7"},{"id":4,"districtId":"4","indicatorId":"1","value":0.0592991914,"normValue":0.3508762678957866,"ranking":"12"},{"id":5,"districtId":"5","indicatorId":"1","value":0.039971321,"normValue":0.1944221990669871,"ranking":"9"},{"id":6,"districtId":"6","indicatorId":"1","value":0.0714703225,"normValue":0.4493983990687968,"ranking":"13"},{"id":7,"districtId":"7","indicatorId":"1","value":0.0179556517,"normValue":0.01621109930845978,"ranking":"3"},{"id":8,"districtId":"8","indicatorId":"1","value":0.0246931835,"normValue":0.07074966161035856,"ranking":"4"},{"id":9,"districtId":"9","indicatorId":"1","value":0.046390258,"normValue":0.2463818195746726,"ranking":"10"},{"id":10,"districtId":"10","indicatorId":"1","value":0.0970977506,"normValue":0.6568457441142452,"ranking":"17"},{"id":11,"districtId":"11","indicatorId":"1","value":0.0888650964,"normValue":0.5902045560167452,"ranking":"16"},{"id":12,"districtId":"12","indicatorId":"1","value":0.0799512987,"normValue":0.518049688976567,"ranking":"14"},{"id":13,"districtId":"13","indicatorId":"1","value":0.0844760039,"normValue":0.5546759972112718,"ranking":"15"},{"id":14,"districtId":"14","indicatorId":"1","value":0.0359855335,"normValue":0.16215828902638746,"ranking":"5"},{"id":15,"districtId":"15","indicatorId":"1","value":0.048733362,"normValue":0.26534863520941715,"ranking":"11"},{"id":16,"districtId":"16","indicatorId":"1","value":0.1117673785,"normValue":0.7755925551006992,"ranking":"18"},{"id":17,"districtId":"17","indicatorId":"1","value":0.1171948838,"normValue":0.8195267946315516,"ranking":"19"},{"id":18,"districtId":"18","indicatorId":"1","value":0.1394900069,"normValue":1,"ranking":"21"},{"id":19,"districtId":"19","indicatorId":"1","value":0.1332630098,"normValue":0.9495940829114762,"ranking":"20"},{"id":20,"districtId":"20","indicatorId":"1","value":0.0369328834,"normValue":0.16982683933183426,"ranking":"8"},{"id":21,"districtId":"30","indicatorId":"1","value":0.0159529807,"normValue":0,"ranking":"1"},{"id":22,"districtId":"99","indicatorId":"1","value":0.063775896561905,"normValue":0.38711402834387637,"ranking":"-1"},{"id":23,"districtId":"1","indicatorId":"2","value":0.2841698842,"normValue":0.2035261337989775,"ranking":"7"},{"id":24,"districtId":"2","indicatorId":"2","value":0.3840478564,"normValue":0.49427245396659025,"ranking":"14"},{"id":25,"districtId":"3","indicatorId":"2","value":0.3619796485,"normValue":0.43003155982057506,"ranking":"11"},{"id":26,"districtId":"4","indicatorId":"2","value":0.3286163522,"normValue":0.3329104888354483,"ranking":"9"},{"id":27,"districtId":"5","indicatorId":"2","value":0.3310629145,"normValue":0.34003246948961513,"ranking":"10"},{"id":28,"districtId":"6","indicatorId":"2","value":0.3930070673,"normValue":0.5203528553143919,"ranking":"15"},{"id":29,"districtId":"7","indicatorId":"2","value":0.2398053002,"normValue":0.0743801443515971,"ranking":"2"},{"id":30,"districtId":"8","indicatorId":"2","value":0.2142540293,"normValue":0,"ranking":"1"},{"id":31,"districtId":"9","indicatorId":"2","value":0.2752971876,"normValue":0.17769757691510346,"ranking":"6"},{"id":32,"districtId":"10","indicatorId":"2","value":0.3791322927,"normValue":0.47996317209147726,"ranking":"13"},{"id":33,"districtId":"11","indicatorId":"2","value":0.4300856531,"normValue":0.6282891914344508,"ranking":"16"},{"id":34,"districtId":"12","indicatorId":"2","value":0.3717532468,"normValue":0.45848265547188866,"ranking":"12"},{"id":35,"districtId":"13","indicatorId":"2","value":0.4674338883,"normValue":0.7370104811239354,"ranking":"17"},{"id":36,"districtId":"14","indicatorId":"2","value":0.3113924051,"normValue":0.28277131272103145,"ranking":"8"},{"id":37,"districtId":"15","indicatorId":"2","value":0.249463289,"normValue":0.10249469896226852,"ranking":"4"},{"id":38,"districtId":"16","indicatorId":"2","value":0.5577767681,"normValue":1,"ranking":"21"},{"id":39,"districtId":"17","indicatorId":"2","value":0.5057022242,"normValue":0.8484101981664801,"ranking":"19"},{"id":40,"districtId":"18","indicatorId":"2","value":0.5235010338,"normValue":0.9002228078999003,"ranking":"20"},{"id":41,"districtId":"19","indicatorId":"2","value":0.4743319269,"normValue":0.7570907780617637,"ranking":"18"},{"id":42,"districtId":"20","indicatorId":"2","value":0.2609673791,"normValue":0.13598328297911208,"ranking":"5"},{"id":43,"districtId":"30","indicatorId":"2","value":0.241813602,"normValue":0.08022634191923246,"ranking":"3"},{"id":44,"districtId":"99","indicatorId":"2","value":0.361218759490476,"normValue":0.4278166001582775,"ranking":"-1"},{"id":45,"districtId":"1","indicatorId":"3","value":0.5196911197,"normValue":0.7102382976637227,"ranking":"18"},{"id":46,"districtId":"2","indicatorId":"3","value":0.5509471585,"normValue":0.8880815425423398,"ranking":"20"},{"id":47,"districtId":"3","indicatorId":"3","value":0.5094357077,"normValue":0.6518861897937032,"ranking":"17"},{"id":48,"districtId":"4","indicatorId":"3","value":0.4916891285,"normValue":0.5509102071805968,"ranking":"13"},{"id":49,"districtId":"5","indicatorId":"3","value":0.4933679871,"normValue":0.5604627183937698,"ranking":"14"},{"id":50,"districtId":"6","indicatorId":"3","value":0.4567724109,"normValue":0.3522381234201191,"ranking":"6"},{"id":51,"districtId":"7","indicatorId":"3","value":0.485559762,"normValue":0.5160348208789168,"ranking":"12"},{"id":52,"districtId":"8","indicatorId":"3","value":0.4814431465,"normValue":0.4926117549196559,"ranking":"11"},{"id":53,"districtId":"9","indicatorId":"3","value":0.5010147869,"normValue":0.6039721246263076,"ranking":"16"},{"id":54,"districtId":"10","indicatorId":"3","value":0.4521930085,"normValue":0.3261818535379315,"ranking":"5"},{"id":55,"districtId":"11","indicatorId":"3","value":0.4697537473,"normValue":0.4261004257742139,"ranking":"8"},{"id":56,"districtId":"12","indicatorId":"3","value":0.5706168831,"normValue":1,"ranking":"21"},{"id":57,"districtId":"13","indicatorId":"3","value":0.4708619001,"normValue":0.432405687008191,"ranking":"9"},{"id":58,"districtId":"14","indicatorId":"3","value":0.5497287523,"normValue":0.881148952217163,"ranking":"19"},{"id":59,"districtId":"15","indicatorId":"3","value":0.4971017604,"normValue":0.5817074565246022,"ranking":"15"},{"id":60,"districtId":"16","indicatorId":"3","value":0.4160230198,"normValue":0.12037880220466644,"ranking":"3"},{"id":61,"districtId":"17","indicatorId":"3","value":0.4649990549,"normValue":0.3990467760706658,"ranking":"7"},{"id":62,"districtId":"18","indicatorId":"3","value":0.4121295658,"normValue":0.09822549936369236,"ranking":"2"},{"id":63,"districtId":"19","indicatorId":"3","value":0.3948663854,"normValue":0,"ranking":"1"},{"id":64,"districtId":"20","indicatorId":"3","value":0.4805961755,"normValue":0.4877925879125404,"ranking":"10"},{"id":65,"districtId":"30","indicatorId":"3","value":0.4391267842,"normValue":0.25183654885319845,"ranking":"4"},{"id":66,"districtId":"99","indicatorId":"3","value":0.481329440242857,"normValue":0.491964779470761,"ranking":"-1"},{"id":67,"districtId":"1","indicatorId":"4","value":0.2922636103,"normValue":0.8485853162101218,"ranking":"19"},{"id":68,"districtId":"2","indicatorId":"4","value":0.3167572085,"normValue":0.9776033300556001,"ranking":"20"},{"id":69,"districtId":"3","indicatorId":"4","value":0.2780228594,"normValue":0.7735733321894889,"ranking":"16"},{"id":70,"districtId":"4","indicatorId":"4","value":0.2849794239,"normValue":0.8102164634946296,"ranking":"17"},{"id":71,"districtId":"5","indicatorId":"4","value":0.2392694911,"normValue":0.569443152251765,"ranking":"10"},{"id":72,"districtId":"6","indicatorId":"4","value":0.273321097,"normValue":0.7488071854817607,"ranking":"15"},{"id":73,"districtId":"7","indicatorId":"4","value":0.1545054945,"normValue":0.12295577225804641,"ranking":"2"},{"id":74,"districtId":"8","indicatorId":"4","value":0.2107660146,"normValue":0.4193034342857349,"ranking":"6"},{"id":75,"districtId":"9","indicatorId":"4","value":0.2869757174,"normValue":0.8207317753046618,"ranking":"18"},{"id":76,"districtId":"10","indicatorId":"4","value":0.2655998089,"normValue":0.7081359355144642,"ranking":"13"},{"id":77,"districtId":"11","indicatorId":"4","value":0.2289479562,"normValue":0.515075316143684,"ranking":"9"},{"id":78,"districtId":"12","indicatorId":"4","value":0.3210091344,"normValue":1,"ranking":"21"},{"id":79,"districtId":"13","indicatorId":"4","value":0.2677286742,"normValue":0.719349558376562,"ranking":"14"},{"id":80,"districtId":"14","indicatorId":"4","value":0.2642381657,"normValue":0.7009635919577629,"ranking":"12"},{"id":81,"districtId":"15","indicatorId":"4","value":0.1886155855,"normValue":0.30262787094171456,"ranking":"4"},{"id":82,"districtId":"16","indicatorId":"4","value":0.2144399877,"normValue":0.43865578539451217,"ranking":"7"},{"id":83,"districtId":"17","indicatorId":"4","value":0.2433320448,"normValue":0.5908423197091048,"ranking":"11"},{"id":84,"districtId":"18","indicatorId":"4","value":0.2177126918,"normValue":0.4558944850513863,"ranking":"8"},{"id":85,"districtId":"19","indicatorId":"4","value":0.1952813067,"normValue":0.3377390090868523,"ranking":"5"},{"id":86,"districtId":"20","indicatorId":"4","value":0.1628540045,"normValue":0.16693086199268217,"ranking":"3"},{"id":87,"districtId":"30","indicatorId":"4","value":0.1311627907,"normValue":0,"ranking":"1"},{"id":88,"districtId":"99","indicatorId":"4","value":0.2398944318,"normValue":0.5727349759857397,"ranking":"-1"},{"id":89,"districtId":"1","indicatorId":"5","value":0.6666666667,"normValue":0.841391660504103,"ranking":"19"},{"id":90,"districtId":"2","indicatorId":"5","value":0.44,"normValue":0.42528523930867906,"ranking":"11"},{"id":91,"districtId":"3","indicatorId":"5","value":0.5888888889,"normValue":0.6986100453682287,"ranking":"17"},{"id":92,"districtId":"4","indicatorId":"5","value":0.329787234,"normValue":0.22296065273412957,"ranking":"6"},{"id":93,"districtId":"5","indicatorId":"5","value":0.5507246377,"normValue":0.6285495013295531,"ranking":"13"},{"id":94,"districtId":"6","indicatorId":"5","value":0.2606635071,"normValue":0.09606582942904568,"ranking":"2"},{"id":95,"districtId":"7","indicatorId":"5","value":0.6835443038,"normValue":0.8723750127285882,"ranking":"20"},{"id":96,"districtId":"8","indicatorId":"5","value":0.693877551,"normValue":0.8913444120422089,"ranking":"21"},{"id":97,"districtId":"9","indicatorId":"5","value":0.578313253,"normValue":0.6791956776966065,"ranking":"16"},{"id":98,"districtId":"10","indicatorId":"5","value":0.3436293436,"normValue":0.24837149399855812,"ranking":"7"},{"id":99,"districtId":"11","indicatorId":"5","value":0.3625498008,"normValue":0.2831049810502437,"ranking":"8"},{"id":100,"districtId":"12","indicatorId":"5","value":0.44,"normValue":0.42528523930867906,"ranking":"11"},{"id":101,"districtId":"13","indicatorId":"5","value":0.3191489362,"normValue":0.2034312526259612,"ranking":"5"},{"id":102,"districtId":"14","indicatorId":"5","value":0.5555555556,"normValue":0.6374179246743867,"ranking":"15"},{"id":103,"districtId":"15","indicatorId":"5","value":0.4277108434,"normValue":0.40272525266933734,"ranking":"10"},{"id":104,"districtId":"16","indicatorId":"5","value":0.3023255814,"normValue":0.1725475498731697,"ranking":"4"},{"id":105,"districtId":"17","indicatorId":"5","value":0.3,"normValue":0.16827833213753585,"ranking":"3"},{"id":106,"districtId":"18","indicatorId":"5","value":0.2083333333,"normValue":0,"ranking":"1"},{"id":107,"districtId":"19","indicatorId":"5","value":0.3673469388,"normValue":0.29191139248348064,"ranking":"9"},{"id":108,"districtId":"20","indicatorId":"5","value":0.5512820513,"normValue":0.6295727809392039,"ranking":"14"},{"id":109,"districtId":"30","indicatorId":"5","value":0.652173913,"normValue":0.8147863904696021,"ranking":"18"},{"id":110,"districtId":"99","indicatorId":"5","value":0.7530657747,"normValue":1,"ranking":"-1"},{"id":111,"districtId":"1","indicatorId":"6","value":0.2812328013,"normValue":0.4390741827666433,"ranking":"8"},{"id":112,"districtId":"2","indicatorId":"6","value":0.3685828466,"normValue":0.6836915160498062,"ranking":"15"},{"id":113,"districtId":"3","indicatorId":"6","value":0.3426260292,"normValue":0.6110013711151475,"ranking":"13"},{"id":114,"districtId":"4","indicatorId":"6","value":0.3408931083,"normValue":0.6061484544636131,"ranking":"12"},{"id":115,"districtId":"5","indicatorId":"6","value":0.4655742871,"normValue":0.9553088626111884,"ranking":"20"},{"id":116,"districtId":"6","indicatorId":"6","value":0.219809322,"normValue":0.26706227761266227,"ranking":"4"},{"id":117,"districtId":"7","indicatorId":"6","value":0.4217833399,"normValue":0.8326755578519546,"ranking":"18"},{"id":118,"districtId":"8","indicatorId":"6","value":0.3699692308,"normValue":0.6875739823352576,"ranking":"16"},{"id":119,"districtId":"9","indicatorId":"6","value":0.3449315704,"normValue":0.6174578685122755,"ranking":"14"},{"id":120,"districtId":"10","indicatorId":"6","value":0.2522425547,"normValue":0.3578891439935349,"ranking":"6"},{"id":121,"districtId":"11","indicatorId":"6","value":0.2299215096,"normValue":0.2953807101432412,"ranking":"5"},{"id":122,"districtId":"12","indicatorId":"6","value":0.2743055556,"normValue":0.41967494417081325,"ranking":"7"},{"id":123,"districtId":"13","indicatorId":"6","value":0.3210332103,"normValue":0.5505322808102305,"ranking":"11"},{"id":124,"districtId":"14","indicatorId":"6","value":0.2948402948,"normValue":0.4771809606304205,"ranking":"10"},{"id":125,"districtId":"15","indicatorId":"6","value":0.422836584,"normValue":0.8356250899575577,"ranking":"19"},{"id":126,"districtId":"16","indicatorId":"6","value":0.1244444444,"normValue":0,"ranking":"1"},{"id":127,"districtId":"17","indicatorId":"6","value":0.1771840394,"normValue":0.1476933302441461,"ranking":"2"},{"id":128,"districtId":"18","indicatorId":"6","value":0.2034212696,"normValue":0.22116875045964618,"ranking":"3"},{"id":129,"districtId":"19","indicatorId":"6","value":0.285391991,"normValue":0.45072168551880043,"ranking":"9"},{"id":130,"districtId":"20","indicatorId":"6","value":0.4815329799,"normValue":1,"ranking":"21"},{"id":131,"districtId":"30","indicatorId":"6","value":0.4144927536,"normValue":0.8122588108124799,"ranking":"17"},{"id":132,"districtId":"99","indicatorId":"6","value":0.316049986785714,"normValue":0.536577132383781,"ranking":"-1"},{"id":133,"districtId":"1","indicatorId":"7","value":0.3111969112,"normValue":0.4604093081526826,"ranking":"6"},{"id":134,"districtId":"2","indicatorId":"7","value":0.2783649053,"normValue":0.31272196286861026,"ranking":"3"},{"id":135,"districtId":"3","indicatorId":"7","value":0.3042553191,"normValue":0.4291841276865116,"ranking":"5"},{"id":136,"districtId":"4","indicatorId":"7","value":0.3470350404,"normValue":0.6216190185071634,"ranking":"13"},{"id":137,"districtId":"5","indicatorId":"7","value":0.3366194659,"normValue":0.5747669147338306,"ranking":"11"},{"id":138,"districtId":"6","indicatorId":"7","value":0.3199426112,"normValue":0.4997498595519779,"ranking":"9"},{"id":139,"districtId":"7","indicatorId":"7","value":0.431151974,"normValue":1,"ranking":"21"},{"id":140,"districtId":"8","indicatorId":"7","value":0.4232589088,"normValue":0.9644948332096244,"ranking":"18"},{"id":141,"districtId":"9","indicatorId":"7","value":0.3545955349,"normValue":0.6556281912985168,"ranking":"15"},{"id":142,"districtId":"10","indicatorId":"7","value":0.3312956259,"normValue":0.550818825825953,"ranking":"10"},{"id":143,"districtId":"11","indicatorId":"7","value":0.3171841542,"normValue":0.4873415652597834,"ranking":"8"},{"id":144,"districtId":"12","indicatorId":"7","value":0.2727272727,"normValue":0.2873623489931466,"ranking":"2"},{"id":145,"districtId":"13","indicatorId":"7","value":0.3148873653,"normValue":0.4770099803925022,"ranking":"7"},{"id":146,"districtId":"14","indicatorId":"7","value":0.3638336347,"normValue":0.6971836917174333,"ranking":"16"},{"id":147,"districtId":"15","indicatorId":"7","value":0.3984542722,"normValue":0.8529167913029573,"ranking":"17"},{"id":148,"districtId":"16","indicatorId":"7","value":0.2088444646,"normValue":0,"ranking":"1"},{"id":149,"districtId":"17","indicatorId":"7","value":0.2982168735,"normValue":0.4020215472757214,"ranking":"4"},{"id":150,"districtId":"18","indicatorId":"7","value":0.3419710544,"normValue":0.5988398239866205,"ranking":"12"},{"id":151,"districtId":"19","indicatorId":"7","value":0.3516174402,"normValue":0.6422319065394559,"ranking":"14"},{"id":152,"districtId":"20","indicatorId":"7","value":0.4280089989,"normValue":0.9858620380909184,"ranking":"20"},{"id":153,"districtId":"30","indicatorId":"7","value":0.4265323258,"normValue":0.9792195584734485,"ranking":"19"},{"id":154,"districtId":"99","indicatorId":"7","value":0.340952102533333,"normValue":0.5942562997079442,"ranking":"-1"},{"id":155,"districtId":"1","indicatorId":"8","value":0.1441937259,"normValue":0,"ranking":"1"},{"id":156,"districtId":"2","indicatorId":"8","value":0.1730710114,"normValue":0.11942361305814489,"ranking":"3"},{"id":157,"districtId":"3","indicatorId":"8","value":0.2188357648,"normValue":0.308686284639344,"ranking":"8"},{"id":158,"districtId":"4","indicatorId":"8","value":0.2245077356,"normValue":0.3321430339275102,"ranking":"9"},{"id":159,"districtId":"5","indicatorId":"8","value":0.2924216165,"normValue":0.613004648634285,"ranking":"15"},{"id":160,"districtId":"6","indicatorId":"8","value":0.2041464891,"normValue":0.24793797166854167,"ranking":"5"},{"id":161,"districtId":"7","indicatorId":"8","value":0.3859992178,"normValue":1,"ranking":"21"},{"id":162,"districtId":"8","indicatorId":"8","value":0.2947692308,"normValue":0.6227133375542658,"ranking":"16"},{"id":163,"districtId":"9","indicatorId":"8","value":0.2551612155,"normValue":0.45891219727090066,"ranking":"11"},{"id":164,"districtId":"10","indicatorId":"8","value":0.2591496233,"normValue":0.4754064785573218,"ranking":"12"},{"id":165,"districtId":"11","indicatorId":"8","value":0.2510901451,"normValue":0.44207606022533014,"ranking":"10"},{"id":166,"districtId":"12","indicatorId":"8","value":0.1516203704,"normValue":0.03071329952700713,"ranking":"2"},{"id":167,"districtId":"13","indicatorId":"8","value":0.1859778598,"normValue":0.1728005992406494,"ranking":"4"},{"id":168,"districtId":"14","indicatorId":"8","value":0.2148512149,"normValue":0.29220795791197657,"ranking":"6"},{"id":169,"districtId":"15","indicatorId":"8","value":0.3412232532,"normValue":0.8148265192483001,"ranking":"19"},{"id":170,"districtId":"16","indicatorId":"8","value":0.273015873,"normValue":0.5327511219359531,"ranking":"13"},{"id":171,"districtId":"17","indicatorId":"8","value":0.2177008262,"normValue":0.30399268321994627,"ranking":"7"},{"id":172,"districtId":"18","indicatorId":"8","value":0.2918384171,"normValue":0.6105927952250948,"ranking":"14"},{"id":173,"districtId":"19","indicatorId":"8","value":0.3186689227,"normValue":0.7215518366810096,"ranking":"18"},{"id":174,"districtId":"20","indicatorId":"8","value":0.3726427392,"normValue":0.944763543230343,"ranking":"20"},{"id":175,"districtId":"30","indicatorId":"8","value":0.3115942029,"normValue":0.6922939412361626,"ranking":"17"},{"id":176,"districtId":"99","indicatorId":"8","value":0.256308545485714,"normValue":0.463657043952003,"ranking":"-1"},{"id":177,"districtId":"1","indicatorId":"9","value":1822.9739479,"normValue":0,"ranking":"1"},{"id":178,"districtId":"2","indicatorId":"9","value":1898.8798521,"normValue":0.5461854278395899,"ranking":"3"},{"id":179,"districtId":"3","indicatorId":"9","value":1918.832483,"normValue":0.689755764817959,"ranking":"4"},{"id":180,"districtId":"4","indicatorId":"9","value":1940.8815592,"normValue":0.848411198076928,"ranking":"15"},{"id":181,"districtId":"5","indicatorId":"9","value":1938.8973928,"normValue":0.8341340112689885,"ranking":"14"},{"id":182,"districtId":"6","indicatorId":"9","value":1932.2727273,"normValue":0.7864658384365033,"ranking":"8"},{"id":183,"districtId":"7","indicatorId":"9","value":1948.622051,"normValue":0.9041083651159028,"ranking":"18"},{"id":184,"districtId":"8","indicatorId":"9","value":1934.1737915,"normValue":0.8001450584441027,"ranking":"11"},{"id":185,"districtId":"9","indicatorId":"9","value":1924.7530612,"normValue":0.7323576357963277,"ranking":"5"},{"id":186,"districtId":"10","indicatorId":"9","value":1937.1588721,"normValue":0.821624382639369,"ranking":"13"},{"id":187,"districtId":"11","indicatorId":"9","value":1932.9564931,"normValue":0.7913859157341933,"ranking":"9"},{"id":188,"districtId":"12","indicatorId":"9","value":1880.2206406,"normValue":0.41192196673353115,"ranking":"2"},{"id":189,"districtId":"13","indicatorId":"9","value":1928.2022901,"normValue":0.7571767665651192,"ranking":"7"},{"id":190,"districtId":"14","indicatorId":"9","value":1933.15625,"normValue":0.7928232783351701,"ranking":"10"},{"id":191,"districtId":"15","indicatorId":"9","value":1941.7718078,"normValue":0.8548170345872659,"ranking":"16"},{"id":192,"districtId":"16","indicatorId":"9","value":1949.2990033,"normValue":0.9089794154709357,"ranking":"19"},{"id":193,"districtId":"17","indicatorId":"9","value":1925.1191937,"normValue":0.7349921638777217,"ranking":"6"},{"id":194,"districtId":"18","indicatorId":"9","value":1936.9816092,"normValue":0.8203488769471969,"ranking":"12"},{"id":195,"districtId":"19","indicatorId":"9","value":1946.4011976,"normValue":0.8881280829859116,"ranking":"17"},{"id":196,"districtId":"20","indicatorId":"9","value":1957.6253324,"normValue":0.9688920094877874,"ranking":"20"},{"id":197,"districtId":"30","indicatorId":"9","value":1961.9485531,"normValue":1,"ranking":"21"},{"id":198,"districtId":"99","indicatorId":"9","value":1928.14895757143,"normValue":0.7567930091981289,"ranking":"-1"},{"id":199,"districtId":"1","indicatorId":"10","value":0.1022044088,"normValue":0.10324704621709085,"ranking":"8"},{"id":200,"districtId":"2","indicatorId":"10","value":0.0776340111,"normValue":0.07125834034980418,"ranking":"6"},{"id":201,"districtId":"3","indicatorId":"10","value":0.1972789116,"normValue":0.22702649588988655,"ranking":"12"},{"id":202,"districtId":"4","indicatorId":"10","value":0.1349325337,"normValue":0.1458564648271088,"ranking":"9"},{"id":203,"districtId":"5","indicatorId":"10","value":0.3372582002,"normValue":0.4092684093179885,"ranking":"15"},{"id":204,"districtId":"6","indicatorId":"10","value":0.0293706294,"normValue":0.008423251548539595,"ranking":"2"},{"id":205,"districtId":"7","indicatorId":"10","value":0.7332691382,"normValue":0.9248431904258378,"ranking":"20"},{"id":206,"districtId":"8","indicatorId":"10","value":0.5605273672,"normValue":0.6999471276521696,"ranking":"17"},{"id":207,"districtId":"9","indicatorId":"10","value":0.3693877551,"normValue":0.45109853734000827,"ranking":"16"},{"id":208,"districtId":"10","indicatorId":"10","value":0.166437414,"normValue":0.18687331614574965,"ranking":"11"},{"id":209,"districtId":"11","indicatorId":"10","value":0.2478576137,"normValue":0.2928759479167056,"ranking":"13"},{"id":210,"districtId":"12","indicatorId":"10","value":0.0996441281,"normValue":0.09991376414123783,"ranking":"7"},{"id":211,"districtId":"13","indicatorId":"10","value":0.0229007634,"normValue":0,"ranking":"1"},{"id":212,"districtId":"14","indicatorId":"10","value":0.3352272727,"normValue":0.4066243030553014,"ranking":"14"},{"id":213,"districtId":"15","indicatorId":"10","value":0.6972187105,"normValue":0.8779083975028407,"ranking":"19"},{"id":214,"districtId":"16","indicatorId":"10","value":0.0697674419,"normValue":0.06101669219270265,"ranking":"3"},{"id":215,"districtId":"17","indicatorId":"10","value":0.0709903593,"normValue":0.06260883349567338,"ranking":"4"},{"id":216,"districtId":"18","indicatorId":"10","value":0.0712643678,"normValue":0.06296557079470523,"ranking":"5"},{"id":217,"districtId":"19","indicatorId":"10","value":0.1556886228,"normValue":0.17287924391607304,"ranking":"10"},{"id":218,"districtId":"20","indicatorId":"10","value":0.6565143824,"normValue":0.8249145959773395,"ranking":"18"},{"id":219,"districtId":"30","indicatorId":"10","value":0.7909967846,"normValue":1,"ranking":"21"},{"id":220,"districtId":"99","indicatorId":"10","value":0.282208134119048,"normValue":0.3375975966050844,"ranking":"-1"},{"id":221,"districtId":"1","indicatorId":"11","value":0.0672594599,"normValue":0,"ranking":"1"},{"id":222,"districtId":"2","indicatorId":"11","value":0.1947350181,"normValue":0.15271065713735993,"ranking":"8"},{"id":223,"districtId":"3","indicatorId":"11","value":0.2376157997,"normValue":0.20408013085580964,"ranking":"10"},{"id":224,"districtId":"4","indicatorId":"11","value":0.3595967668,"normValue":0.35020848602540233,"ranking":"15"},{"id":225,"districtId":"5","indicatorId":"11","value":0.3221370715,"normValue":0.30533325844292547,"ranking":"13"},{"id":226,"districtId":"6","indicatorId":"11","value":0.1760147512,"normValue":0.1302845207042051,"ranking":"7"},{"id":227,"districtId":"7","indicatorId":"11","value":0.7137712478,"normValue":0.7744954512955288,"ranking":"19"},{"id":228,"districtId":"8","indicatorId":"11","value":0.4131869998,"normValue":0.4144074572880693,"ranking":"17"},{"id":229,"districtId":"9","indicatorId":"11","value":0.3240684495,"normValue":0.3076469725989984,"ranking":"14"},{"id":230,"districtId":"10","indicatorId":"11","value":0.369216064,"normValue":0.36173202212403904,"ranking":"16"},{"id":231,"districtId":"11","indicatorId":"11","value":0.2839416111,"normValue":0.2595766134851785,"ranking":"12"},{"id":232,"districtId":"12","indicatorId":"11","value":0.0809475704,"normValue":0.016397812874404002,"ranking":"2"},{"id":233,"districtId":"13","indicatorId":"11","value":0.1596210148,"normValue":0.1106454754320687,"ranking":"5"},{"id":234,"districtId":"14","indicatorId":"11","value":0.2785714268,"normValue":0.25314334592407417,"ranking":"11"},{"id":235,"districtId":"15","indicatorId":"11","value":0.5903189074,"normValue":0.6266044493353661,"ranking":"18"},{"id":236,"districtId":"16","indicatorId":"11","value":0.1357870952,"normValue":0.08209338610868185,"ranking":"4"},{"id":237,"districtId":"17","indicatorId":"11","value":0.1657239983,"normValue":0.1179566073380082,"ranking":"6"},{"id":238,"districtId":"18","indicatorId":"11","value":0.1193188639,"normValue":0.06236509890426433,"ranking":"3"},{"id":239,"districtId":"19","indicatorId":"11","value":0.2267642282,"normValue":0.19108037907485964,"ranking":"9"},{"id":240,"districtId":"20","indicatorId":"11","value":0.7956226483,"normValue":0.8725501790760283,"ranking":"20"},{"id":241,"districtId":"30","indicatorId":"11","value":0.9020116677,"normValue":1,"ranking":"21"},{"id":242,"districtId":"99","indicatorId":"11","value":0.329344317161905,"normValue":0.3139672525726323,"ranking":"-1"},{"id":243,"districtId":"1","indicatorId":"12","value":89.982578397,"normValue":0.4433533685891991,"ranking":"16"},{"id":244,"districtId":"2","indicatorId":"12","value":81.703573521,"normValue":0.2939237976955816,"ranking":"13"},{"id":245,"districtId":"3","indicatorId":"12","value":81.96043395,"normValue":0.2985599277933289,"ranking":"14"},{"id":246,"districtId":"4","indicatorId":"12","value":70.004521477,"normValue":0.08276504697847203,"ranking":"6"},{"id":247,"districtId":"5","indicatorId":"12","value":93.466570467,"normValue":0.5062367039434355,"ranking":"18"},{"id":248,"districtId":"6","indicatorId":"12","value":70.427866942,"normValue":0.09040610192676586,"ranking":"8"},{"id":249,"districtId":"7","indicatorId":"12","value":109.24315693,"normValue":0.7909917657705237,"ranking":"20"},{"id":250,"districtId":"8","indicatorId":"12","value":92.894002211,"normValue":0.49590229418249765,"ranking":"17"},{"id":251,"districtId":"9","indicatorId":"12","value":74.544131911,"normValue":0.1647014692099992,"ranking":"11"},{"id":252,"districtId":"10","indicatorId":"12","value":68.511779293,"normValue":0.055822216608055364,"ranking":"4"},{"id":253,"districtId":"11","indicatorId":"12","value":71.680063511,"normValue":0.11300727184787063,"ranking":"9"},{"id":254,"districtId":"12","indicatorId":"12","value":72.17236927,"normValue":0.12189300623475147,"ranking":"10"},{"id":255,"districtId":"13","indicatorId":"12","value":66.391708968,"normValue":0.017556603327959712,"ranking":"2"},{"id":256,"districtId":"14","indicatorId":"12","value":83.225836146,"normValue":0.32139944896625045,"ranking":"15"},{"id":257,"districtId":"15","indicatorId":"12","value":80.960734102,"normValue":0.28051612644926827,"ranking":"12"},{"id":258,"districtId":"16","indicatorId":"12","value":69.447001989,"normValue":0.07270225572463718,"ranking":"5"},{"id":259,"districtId":"17","indicatorId":"12","value":67.244349005,"normValue":0.032946089958771574,"ranking":"3"},{"id":260,"districtId":"18","indicatorId":"12","value":65.419001868,"normValue":0,"ranking":"1"},{"id":261,"districtId":"19","indicatorId":"12","value":70.42468773,"normValue":0.0903487196335973,"ranking":"7"},{"id":262,"districtId":"20","indicatorId":"12","value":102.73655706,"normValue":0.6735527207267039,"ranking":"19"},{"id":263,"districtId":"30","indicatorId":"12","value":120.82306163,"normValue":1,"ranking":"21"},{"id":264,"districtId":"99","indicatorId":"12","value":81.1078088751428,"normValue":0.2831707112175069,"ranking":"-1"},{"id":265,"districtId":"1","indicatorId":"13","value":52.670028818,"normValue":0.9978072779010031,"ranking":"20"},{"id":266,"districtId":"2","indicatorId":"13","value":49.710686542,"normValue":0.8571219168174339,"ranking":"19"},{"id":267,"districtId":"3","indicatorId":"13","value":45.562575574,"normValue":0.6599232034139311,"ranking":"13"},{"id":268,"districtId":"4","indicatorId":"13","value":38.929061785,"normValue":0.3445699270366837,"ranking":"9"},{"id":269,"districtId":"5","indicatorId":"13","value":48.696245096,"normValue":0.8088959774639259,"ranking":"18"},{"id":270,"districtId":"6","indicatorId":"13","value":38.358770363,"normValue":0.3174586140677162,"ranking":"8"},{"id":271,"districtId":"7","indicatorId":"13","value":48.67246313,"normValue":0.8077653970301852,"ranking":"17"},{"id":272,"districtId":"8","indicatorId":"13","value":46.408682635,"normValue":0.7001466268271349,"ranking":"15"},{"id":273,"districtId":"9","indicatorId":"13","value":41.130126881,"normValue":0.4492072446969276,"ranking":"11"},{"id":274,"districtId":"10","indicatorId":"13","value":36.325632892,"normValue":0.22080447522076072,"ranking":"6"},{"id":275,"districtId":"11","indicatorId":"13","value":36.186283285,"normValue":0.2141798782835836,"ranking":"5"},{"id":276,"districtId":"12","indicatorId":"13","value":42.151075977,"normValue":0.49774255383759386,"ranking":"12"},{"id":277,"districtId":"13","indicatorId":"13","value":36.433815926,"normValue":0.22594743192598438,"ranking":"7"},{"id":278,"districtId":"14","indicatorId":"13","value":45.690524754,"normValue":0.6660058308729546,"ranking":"14"},{"id":279,"districtId":"15","indicatorId":"13","value":38.967116725,"normValue":0.3463790361141742,"ranking":"10"},{"id":280,"districtId":"16","indicatorId":"13","value":33.579200248,"normValue":0.09024071064835137,"ranking":"3"},{"id":281,"districtId":"17","indicatorId":"13","value":34.833732445,"normValue":0.14988042064650262,"ranking":"4"},{"id":282,"districtId":"18","indicatorId":"13","value":31.680970411,"normValue":0,"ranking":"1"},{"id":283,"districtId":"19","indicatorId":"13","value":32.477628228,"normValue":0.03787263594131583,"ranking":"2"},{"id":284,"districtId":"20","indicatorId":"13","value":47.494001816,"normValue":0.7517420512929694,"ranking":"16"},{"id":285,"districtId":"30","indicatorId":"13","value":52.716153128,"normValue":1,"ranking":"21"},{"id":286,"districtId":"99","indicatorId":"13","value":41.841656031381,"normValue":0.48303291476377047,"ranking":"-1"},{"id":287,"districtId":"1","indicatorId":"14","value":5514.6161194,"normValue":0.29793495076062443,"ranking":"17"},{"id":288,"districtId":"2","indicatorId":"14","value":6165.9059687,"normValue":0.33434935460578213,"ranking":"19"},{"id":289,"districtId":"3","indicatorId":"14","value":2060.938612,"normValue":0.10483566072782173,"ranking":"15"},{"id":290,"districtId":"4","indicatorId":"14","value":512.9425141,"normValue":0.018285325081958285,"ranking":"8"},{"id":291,"districtId":"5","indicatorId":"14","value":5783.6317751,"normValue":0.31297594170783233,"ranking":"18"},{"id":292,"districtId":"6","indicatorId":"14","value":552.75010831,"normValue":0.020511015860380642,"ranking":"9"},{"id":293,"districtId":"7","indicatorId":"14","value":18071.401123,"normValue":1,"ranking":"21"},{"id":294,"districtId":"8","indicatorId":"14","value":1877.6147682,"normValue":0.09458580271183284,"ranking":"14"},{"id":295,"districtId":"9","indicatorId":"14","value":962.38892866,"normValue":0.0434144181641495,"ranking":"11"},{"id":296,"districtId":"10","indicatorId":"14","value":448.2365746,"normValue":0.014667537679520195,"ranking":"4"},{"id":297,"districtId":"11","indicatorId":"14","value":509.91830365,"normValue":0.01811623781496432,"ranking":"7"},{"id":298,"districtId":"12","indicatorId":"14","value":1123.5396725,"normValue":0.0524245513213673,"ranking":"12"},{"id":299,"districtId":"13","indicatorId":"14","value":508.20508614,"normValue":0.018020449750171377,"ranking":"6"},{"id":300,"districtId":"14","indicatorId":"14","value":1328.9580318,"normValue":0.06390974044384407,"ranking":"13"},{"id":301,"districtId":"15","indicatorId":"14","value":735.59236151,"normValue":0.03073394756296963,"ranking":"10"},{"id":302,"districtId":"16","indicatorId":"14","value":254.13869538,"normValue":0.003815290301486762,"ranking":"3"},{"id":303,"districtId":"17","indicatorId":"14","value":491.56606275,"normValue":0.01709014181129639,"ranking":"5"},{"id":304,"districtId":"18","indicatorId":"14","value":185.90031762,"normValue":0,"ranking":"1"},{"id":305,"districtId":"19","indicatorId":"14","value":206.8607831,"normValue":0.0011719249971292403,"ranking":"2"},{"id":306,"districtId":"20","indicatorId":"14","value":3075.9103589,"normValue":0.16158395969603928,"ranking":"16"},{"id":307,"districtId":"30","indicatorId":"14","value":15530.157643,"normValue":0.8579160009187112,"ranking":"20"},{"id":308,"districtId":"99","indicatorId":"14","value":3138.15113373429,"normValue":0.16506391675799462,"ranking":"-1"},{"id":309,"districtId":"1","indicatorId":"15","value":16657.376716,"normValue":0.8006567422534947,"ranking":"19"},{"id":310,"districtId":"2","indicatorId":"15","value":16404.67856,"normValue":0.784066426774484,"ranking":"18"},{"id":311,"districtId":"3","indicatorId":"15","value":11315.365443,"normValue":0.4499392945507824,"ranking":"14"},{"id":312,"districtId":"4","indicatorId":"15","value":7288.0944151,"normValue":0.18553808984891304,"ranking":"9"},{"id":313,"districtId":"5","indicatorId":"15","value":16187.932598,"normValue":0.7698364697961605,"ranking":"17"},{"id":314,"districtId":"6","indicatorId":"15","value":7236.5977818,"normValue":0.18215719698417077,"ranking":"8"},{"id":315,"districtId":"7","indicatorId":"15","value":19693.706779,"normValue":1,"ranking":"21"},{"id":316,"districtId":"8","indicatorId":"15","value":11394.452909,"normValue":0.45513159999592195,"ranking":"15"},{"id":317,"districtId":"9","indicatorId":"15","value":8647.5237414,"normValue":0.27478829155887746,"ranking":"11"},{"id":318,"districtId":"10","indicatorId":"15","value":6316.4219119,"normValue":0.12174516937200978,"ranking":"5"},{"id":319,"districtId":"11","indicatorId":"15","value":6584.1510923,"normValue":0.13932231214218885,"ranking":"7"},{"id":320,"districtId":"12","indicatorId":"15","value":8736.081864,"normValue":0.28060237115256825,"ranking":"12"},{"id":321,"districtId":"13","indicatorId":"15","value":6127.2649713,"normValue":0.10932650605735349,"ranking":"3"},{"id":322,"districtId":"14","indicatorId":"15","value":10771.600289,"normValue":0.4142396456330718,"ranking":"13"},{"id":323,"districtId":"15","indicatorId":"15","value":7527.794101,"normValue":0.20127502070843536,"ranking":"10"},{"id":324,"districtId":"16","indicatorId":"15","value":6401.2032932,"normValue":0.12731129571332472,"ranking":"6"},{"id":325,"districtId":"17","indicatorId":"15","value":6313.3239063,"normValue":0.12154177694891771,"ranking":"4"},{"id":326,"districtId":"18","indicatorId":"15","value":4462.0400684,"normValue":0,"ranking":"1"},{"id":327,"districtId":"19","indicatorId":"15","value":4908.5997514,"normValue":0.029317847579295522,"ranking":"2"},{"id":328,"districtId":"20","indicatorId":"15","value":13428.811448,"normValue":0.588692724832264,"ranking":"16"},{"id":329,"districtId":"30","indicatorId":"15","value":19464.664013,"normValue":0.9849627246740763,"ranking":"20"},{"id":330,"districtId":"99","indicatorId":"15","value":10279.4136025286,"normValue":0.3819262622179215,"ranking":"-1"},{"id":331,"districtId":"1","indicatorId":"16","value":0.8563773753,"normValue":1,"ranking":"21"},{"id":332,"districtId":"2","indicatorId":"16","value":0.7730196667,"normValue":0.655036695290476,"ranking":"17"},{"id":333,"districtId":"3","indicatorId":"16","value":0.8011045547,"normValue":0.7712617684071913,"ranking":"20"},{"id":334,"districtId":"4","indicatorId":"16","value":0.7402545444,"normValue":0.5194431784142253,"ranking":"12"},{"id":335,"districtId":"5","indicatorId":"16","value":0.7285669841,"normValue":0.47107597287566205,"ranking":"10"},{"id":336,"districtId":"6","indicatorId":"16","value":0.7611023509,"normValue":0.6057186812677751,"ranking":"16"},{"id":337,"districtId":"7","indicatorId":"16","value":0.7357069134,"normValue":0.5006234934119976,"ranking":"11"},{"id":338,"districtId":"8","indicatorId":"16","value":0.780542957,"normValue":0.6861706975053246,"ranking":"18"},{"id":339,"districtId":"9","indicatorId":"16","value":0.7497290566,"normValue":0.5586520181714002,"ranking":"15"},{"id":340,"districtId":"10","indicatorId":"16","value":0.705780116,"normValue":0.37677595604727215,"ranking":"7"},{"id":341,"districtId":"11","indicatorId":"16","value":0.7033538377,"normValue":0.3667351692433869,"ranking":"5"},{"id":342,"districtId":"12","indicatorId":"16","value":0.7043903035,"normValue":0.37102442663291135,"ranking":"6"},{"id":343,"districtId":"13","indicatorId":"16","value":0.6647432124,"normValue":0.20695091984297614,"ranking":"3"},{"id":344,"districtId":"14","indicatorId":"16","value":0.8001764749,"normValue":0.7674210501314714,"ranking":"19"},{"id":345,"districtId":"15","indicatorId":"16","value":0.7095861405,"normValue":0.3925266144012065,"ranking":"8"},{"id":346,"districtId":"16","indicatorId":"16","value":0.727021636,"normValue":0.4646807828391815,"ranking":"9"},{"id":347,"districtId":"17","indicatorId":"16","value":0.6812807264,"normValue":0.27538892728023945,"ranking":"4"},{"id":348,"districtId":"18","indicatorId":"16","value":0.6147351268,"normValue":0,"ranking":"1"},{"id":349,"districtId":"19","indicatorId":"16","value":0.6593773305,"normValue":0.18474502690285982,"ranking":"2"},{"id":350,"districtId":"20","indicatorId":"16","value":0.74117237,"normValue":0.5232414612298231,"ranking":"13"},{"id":351,"districtId":"30","indicatorId":"16","value":0.74117237,"normValue":0.5232414612298231,"ranking":"13"},{"id":352,"districtId":"99","indicatorId":"16","value":null,"normValue":null,"ranking":"-1"},{"id":353,"districtId":"1","indicatorId":"17","value":4.3204680878,"normValue":0.9762158709043237,"ranking":"20"},{"id":354,"districtId":"2","indicatorId":"17","value":4.4226589734,"normValue":1,"ranking":"21"},{"id":355,"districtId":"3","indicatorId":"17","value":1.0218275784,"normValue":0.20848310046048796,"ranking":"15"},{"id":356,"districtId":"4","indicatorId":"17","value":0.1260591194,"normValue":0,"ranking":"1"},{"id":357,"districtId":"5","indicatorId":"17","value":2.2305900441,"normValue":0.4898131071574533,"ranking":"19"},{"id":358,"districtId":"6","indicatorId":"17","value":0.58465375,"normValue":0.10673431228953348,"ranking":"10"},{"id":359,"districtId":"7","indicatorId":"17","value":0.13613081,"normValue":0.002344107187599413,"ranking":"2"},{"id":360,"districtId":"8","indicatorId":"17","value":0.2139095874,"normValue":0.02044650909677194,"ranking":"6"},{"id":361,"districtId":"9","indicatorId":"17","value":0.2957959879,"normValue":0.039504928144979634,"ranking":"8"},{"id":362,"districtId":"10","indicatorId":"17","value":0.156407656,"normValue":0.00706338445078763,"ranking":"3"},{"id":363,"districtId":"11","indicatorId":"17","value":0.9785720793,"normValue":0.19841572147016137,"ranking":"14"},{"id":364,"districtId":"12","indicatorId":"17","value":1.6536017327,"normValue":0.35552359195793054,"ranking":"16"},{"id":365,"districtId":"13","indicatorId":"17","value":0.6670430957,"normValue":0.12590978789806567,"ranking":"11"},{"id":366,"districtId":"14","indicatorId":"17","value":1.8984669248,"normValue":0.41251404962692617,"ranking":"17"},{"id":367,"districtId":"15","indicatorId":"17","value":0.3361931625,"normValue":0.04890705447107711,"ranking":"9"},{"id":368,"districtId":"16","indicatorId":"17","value":0.8699137943,"normValue":0.1731263557641968,"ranking":"13"},{"id":369,"districtId":"17","indicatorId":"17","value":0.1825223428,"normValue":0.013141373485695785,"ranking":"5"},{"id":370,"districtId":"18","indicatorId":"17","value":0.7963973842,"normValue":0.15601598649591164,"ranking":"12"},{"id":371,"districtId":"19","indicatorId":"17","value":2.1589777005,"normValue":0.4731458944698833,"ranking":"18"},{"id":372,"districtId":"20","indicatorId":"17","value":0.1686329241,"normValue":0.009908719952211775,"ranking":"4"},{"id":373,"districtId":"30","indicatorId":"17","value":0.2922294754,"normValue":0.03867485026451802,"ranking":"7"},{"id":374,"districtId":"99","indicatorId":"17","value":1.11957391479524,"normValue":0.23123279550231066,"ranking":"-1"},{"id":375,"districtId":"1","indicatorId":"18","value":0.0257474605,"normValue":0.12099573333851965,"ranking":"6"},{"id":376,"districtId":"2","indicatorId":"18","value":0.0242808282,"normValue":0.09310201604201088,"ranking":"4"},{"id":377,"districtId":"3","indicatorId":"18","value":0.0313845067,"normValue":0.22820609076086687,"ranking":"8"},{"id":378,"districtId":"4","indicatorId":"18","value":0.0492950163,"normValue":0.568844089404976,"ranking":"13"},{"id":379,"districtId":"5","indicatorId":"18","value":0.0295674895,"normValue":0.19364844185343857,"ranking":"7"},{"id":380,"districtId":"6","indicatorId":"18","value":0.0418457558,"normValue":0.4271674288984198,"ranking":"12"},{"id":381,"districtId":"7","indicatorId":"18","value":0.0251482114,"normValue":0.1095986810674171,"ranking":"5"},{"id":382,"districtId":"8","indicatorId":"18","value":0.0241987109,"normValue":0.09154023620711114,"ranking":"3"},{"id":383,"districtId":"9","indicatorId":"18","value":0.0344512819,"normValue":0.2865327486701084,"ranking":"9"},{"id":384,"districtId":"10","indicatorId":"18","value":0.0501539147,"normValue":0.5851793829588025,"ranking":"14"},{"id":385,"districtId":"11","indicatorId":"18","value":0.050458782,"normValue":0.5909776203760132,"ranking":"15"},{"id":386,"districtId":"12","indicatorId":"18","value":0.0542989532,"normValue":0.664013411162153,"ranking":"17"},{"id":387,"districtId":"13","indicatorId":"18","value":0.0539961926,"normValue":0.6582552408389428,"ranking":"16"},{"id":388,"districtId":"14","indicatorId":"18","value":0.038280833,"normValue":0.3593665569504349,"ranking":"10"},{"id":389,"districtId":"15","indicatorId":"18","value":0.0404742079,"normValue":0.40108211127571347,"ranking":"11"},{"id":390,"districtId":"16","indicatorId":"18","value":0.0654724892,"normValue":0.8765216549710227,"ranking":"20"},{"id":391,"districtId":"17","indicatorId":"18","value":0.0555946177,"normValue":0.6886555108037076,"ranking":"18"},{"id":392,"districtId":"18","indicatorId":"18","value":0.0719648949,"normValue":1,"ranking":"21"},{"id":393,"districtId":"19","indicatorId":"18","value":0.0631074121,"normValue":0.8315405155185186,"ranking":"19"},{"id":394,"districtId":"20","indicatorId":"18","value":0.0193855888,"normValue":0,"ranking":"1"},{"id":395,"districtId":"30","indicatorId":"18","value":0.0193855888,"normValue":0,"ranking":"1"},{"id":396,"districtId":"99","indicatorId":"18","value":0.041356796957143,"normValue":0.41786797481420157,"ranking":"-1"}]
+[
+    {
+        "id": 1,
+        "districtId": "1",
+        "indicatorId": "1",
+        "value": 0.0166023166,
+        "normValue": 0.005256204718322733,
+        "ranking": "2"
+    },
+    {
+        "id": 2,
+        "districtId": "2",
+        "indicatorId": "1",
+        "value": 0.0362911266,
+        "normValue": 0.16463198545085264,
+        "ranking": "6"
+    },
+    {
+        "id": 3,
+        "districtId": "3",
+        "indicatorId": "1",
+        "value": 0.0369102683,
+        "normValue": 0.16964377599693267,
+        "ranking": "7"
+    },
+    {
+        "id": 4,
+        "districtId": "4",
+        "indicatorId": "1",
+        "value": 0.0592991914,
+        "normValue": 0.3508762678957866,
+        "ranking": "12"
+    },
+    {
+        "id": 5,
+        "districtId": "5",
+        "indicatorId": "1",
+        "value": 0.039971321,
+        "normValue": 0.1944221990669871,
+        "ranking": "9"
+    },
+    {
+        "id": 6,
+        "districtId": "6",
+        "indicatorId": "1",
+        "value": 0.0714703225,
+        "normValue": 0.4493983990687968,
+        "ranking": "14"
+    },
+    {
+        "id": 7,
+        "districtId": "7",
+        "indicatorId": "1",
+        "value": 0.0179556517,
+        "normValue": 0.01621109930845978,
+        "ranking": "3"
+    },
+    {
+        "id": 8,
+        "districtId": "8",
+        "indicatorId": "1",
+        "value": 0.0246931835,
+        "normValue": 0.07074966161035856,
+        "ranking": "4"
+    },
+    {
+        "id": 9,
+        "districtId": "9",
+        "indicatorId": "1",
+        "value": 0.046390258,
+        "normValue": 0.2463818195746726,
+        "ranking": "10"
+    },
+    {
+        "id": 10,
+        "districtId": "10",
+        "indicatorId": "1",
+        "value": 0.0970977506,
+        "normValue": 0.6568457441142452,
+        "ranking": "18"
+    },
+    {
+        "id": 11,
+        "districtId": "11",
+        "indicatorId": "1",
+        "value": 0.0888650964,
+        "normValue": 0.5902045560167452,
+        "ranking": "17"
+    },
+    {
+        "id": 12,
+        "districtId": "12",
+        "indicatorId": "1",
+        "value": 0.0799512987,
+        "normValue": 0.518049688976567,
+        "ranking": "15"
+    },
+    {
+        "id": 13,
+        "districtId": "13",
+        "indicatorId": "1",
+        "value": 0.0844760039,
+        "normValue": 0.5546759972112718,
+        "ranking": "16"
+    },
+    {
+        "id": 14,
+        "districtId": "14",
+        "indicatorId": "1",
+        "value": 0.0359855335,
+        "normValue": 0.16215828902638746,
+        "ranking": "5"
+    },
+    {
+        "id": 15,
+        "districtId": "15",
+        "indicatorId": "1",
+        "value": 0.048733362,
+        "normValue": 0.26534863520941715,
+        "ranking": "11"
+    },
+    {
+        "id": 16,
+        "districtId": "16",
+        "indicatorId": "1",
+        "value": 0.1117673785,
+        "normValue": 0.7755925551006992,
+        "ranking": "19"
+    },
+    {
+        "id": 17,
+        "districtId": "17",
+        "indicatorId": "1",
+        "value": 0.1171948838,
+        "normValue": 0.8195267946315516,
+        "ranking": "20"
+    },
+    {
+        "id": 18,
+        "districtId": "18",
+        "indicatorId": "1",
+        "value": 0.1394900069,
+        "normValue": 1,
+        "ranking": "22"
+    },
+    {
+        "id": 19,
+        "districtId": "19",
+        "indicatorId": "1",
+        "value": 0.1332630098,
+        "normValue": 0.9495940829114762,
+        "ranking": "21"
+    },
+    {
+        "id": 20,
+        "districtId": "20",
+        "indicatorId": "1",
+        "value": 0.0369328834,
+        "normValue": 0.16982683933183426,
+        "ranking": "8"
+    },
+    {
+        "id": 21,
+        "districtId": "30",
+        "indicatorId": "1",
+        "value": 0.0159529807,
+        "normValue": 0,
+        "ranking": "1"
+    },
+    {
+        "id": 22,
+        "districtId": "99",
+        "indicatorId": "1",
+        "value": 0.0698584839,
+        "normValue": 0.4363509860819364,
+        "ranking": "13"
+    },
+    {
+        "id": 23,
+        "districtId": "1",
+        "indicatorId": "2",
+        "value": 0.2841698842,
+        "normValue": 0.2035261337989775,
+        "ranking": "7"
+    },
+    {
+        "id": 24,
+        "districtId": "2",
+        "indicatorId": "2",
+        "value": 0.3840478564,
+        "normValue": 0.49427245396659025,
+        "ranking": "15"
+    },
+    {
+        "id": 25,
+        "districtId": "3",
+        "indicatorId": "2",
+        "value": 0.3619796485,
+        "normValue": 0.43003155982057506,
+        "ranking": "12"
+    },
+    {
+        "id": 26,
+        "districtId": "4",
+        "indicatorId": "2",
+        "value": 0.3286163522,
+        "normValue": 0.3329104888354483,
+        "ranking": "9"
+    },
+    {
+        "id": 27,
+        "districtId": "5",
+        "indicatorId": "2",
+        "value": 0.3310629145,
+        "normValue": 0.34003246948961513,
+        "ranking": "10"
+    },
+    {
+        "id": 28,
+        "districtId": "6",
+        "indicatorId": "2",
+        "value": 0.3930070673,
+        "normValue": 0.5203528553143919,
+        "ranking": "16"
+    },
+    {
+        "id": 29,
+        "districtId": "7",
+        "indicatorId": "2",
+        "value": 0.2398053002,
+        "normValue": 0.0743801443515971,
+        "ranking": "2"
+    },
+    {
+        "id": 30,
+        "districtId": "8",
+        "indicatorId": "2",
+        "value": 0.2142540293,
+        "normValue": 0,
+        "ranking": "1"
+    },
+    {
+        "id": 31,
+        "districtId": "9",
+        "indicatorId": "2",
+        "value": 0.2752971876,
+        "normValue": 0.17769757691510346,
+        "ranking": "6"
+    },
+    {
+        "id": 32,
+        "districtId": "10",
+        "indicatorId": "2",
+        "value": 0.3791322927,
+        "normValue": 0.47996317209147726,
+        "ranking": "14"
+    },
+    {
+        "id": 33,
+        "districtId": "11",
+        "indicatorId": "2",
+        "value": 0.4300856531,
+        "normValue": 0.6282891914344508,
+        "ranking": "17"
+    },
+    {
+        "id": 34,
+        "districtId": "12",
+        "indicatorId": "2",
+        "value": 0.3717532468,
+        "normValue": 0.45848265547188866,
+        "ranking": "13"
+    },
+    {
+        "id": 35,
+        "districtId": "13",
+        "indicatorId": "2",
+        "value": 0.4674338883,
+        "normValue": 0.7370104811239354,
+        "ranking": "18"
+    },
+    {
+        "id": 36,
+        "districtId": "14",
+        "indicatorId": "2",
+        "value": 0.3113924051,
+        "normValue": 0.28277131272103145,
+        "ranking": "8"
+    },
+    {
+        "id": 37,
+        "districtId": "15",
+        "indicatorId": "2",
+        "value": 0.249463289,
+        "normValue": 0.10249469896226852,
+        "ranking": "4"
+    },
+    {
+        "id": 38,
+        "districtId": "16",
+        "indicatorId": "2",
+        "value": 0.5577767681,
+        "normValue": 1,
+        "ranking": "22"
+    },
+    {
+        "id": 39,
+        "districtId": "17",
+        "indicatorId": "2",
+        "value": 0.5057022242,
+        "normValue": 0.8484101981664801,
+        "ranking": "20"
+    },
+    {
+        "id": 40,
+        "districtId": "18",
+        "indicatorId": "2",
+        "value": 0.5235010338,
+        "normValue": 0.9002228078999003,
+        "ranking": "21"
+    },
+    {
+        "id": 41,
+        "districtId": "19",
+        "indicatorId": "2",
+        "value": 0.4743319269,
+        "normValue": 0.7570907780617637,
+        "ranking": "19"
+    },
+    {
+        "id": 42,
+        "districtId": "20",
+        "indicatorId": "2",
+        "value": 0.2609673791,
+        "normValue": 0.13598328297911208,
+        "ranking": "5"
+    },
+    {
+        "id": 43,
+        "districtId": "30",
+        "indicatorId": "2",
+        "value": 0.241813602,
+        "normValue": 0.08022634191923246,
+        "ranking": "3"
+    },
+    {
+        "id": 44,
+        "districtId": "99",
+        "indicatorId": "2",
+        "value": 0.359870947,
+        "normValue": 0.4238930971750858,
+        "ranking": "11"
+    },
+    {
+        "id": 45,
+        "districtId": "1",
+        "indicatorId": "3",
+        "value": 0.5196911197,
+        "normValue": 0.7102382976637227,
+        "ranking": "19"
+    },
+    {
+        "id": 46,
+        "districtId": "2",
+        "indicatorId": "3",
+        "value": 0.5509471585,
+        "normValue": 0.8880815425423398,
+        "ranking": "21"
+    },
+    {
+        "id": 47,
+        "districtId": "3",
+        "indicatorId": "3",
+        "value": 0.5094357077,
+        "normValue": 0.6518861897937032,
+        "ranking": "18"
+    },
+    {
+        "id": 48,
+        "districtId": "4",
+        "indicatorId": "3",
+        "value": 0.4916891285,
+        "normValue": 0.5509102071805968,
+        "ranking": "14"
+    },
+    {
+        "id": 49,
+        "districtId": "5",
+        "indicatorId": "3",
+        "value": 0.4933679871,
+        "normValue": 0.5604627183937698,
+        "ranking": "15"
+    },
+    {
+        "id": 50,
+        "districtId": "6",
+        "indicatorId": "3",
+        "value": 0.4567724109,
+        "normValue": 0.3522381234201191,
+        "ranking": "6"
+    },
+    {
+        "id": 51,
+        "districtId": "7",
+        "indicatorId": "3",
+        "value": 0.485559762,
+        "normValue": 0.5160348208789168,
+        "ranking": "13"
+    },
+    {
+        "id": 52,
+        "districtId": "8",
+        "indicatorId": "3",
+        "value": 0.4814431465,
+        "normValue": 0.4926117549196559,
+        "ranking": "12"
+    },
+    {
+        "id": 53,
+        "districtId": "9",
+        "indicatorId": "3",
+        "value": 0.5010147869,
+        "normValue": 0.6039721246263076,
+        "ranking": "17"
+    },
+    {
+        "id": 54,
+        "districtId": "10",
+        "indicatorId": "3",
+        "value": 0.4521930085,
+        "normValue": 0.3261818535379315,
+        "ranking": "5"
+    },
+    {
+        "id": 55,
+        "districtId": "11",
+        "indicatorId": "3",
+        "value": 0.4697537473,
+        "normValue": 0.4261004257742139,
+        "ranking": "8"
+    },
+    {
+        "id": 56,
+        "districtId": "12",
+        "indicatorId": "3",
+        "value": 0.5706168831,
+        "normValue": 1,
+        "ranking": "22"
+    },
+    {
+        "id": 57,
+        "districtId": "13",
+        "indicatorId": "3",
+        "value": 0.4708619001,
+        "normValue": 0.432405687008191,
+        "ranking": "9"
+    },
+    {
+        "id": 58,
+        "districtId": "14",
+        "indicatorId": "3",
+        "value": 0.5497287523,
+        "normValue": 0.881148952217163,
+        "ranking": "20"
+    },
+    {
+        "id": 59,
+        "districtId": "15",
+        "indicatorId": "3",
+        "value": 0.4971017604,
+        "normValue": 0.5817074565246022,
+        "ranking": "16"
+    },
+    {
+        "id": 60,
+        "districtId": "16",
+        "indicatorId": "3",
+        "value": 0.4160230198,
+        "normValue": 0.12037880220466644,
+        "ranking": "3"
+    },
+    {
+        "id": 61,
+        "districtId": "17",
+        "indicatorId": "3",
+        "value": 0.4649990549,
+        "normValue": 0.3990467760706658,
+        "ranking": "7"
+    },
+    {
+        "id": 62,
+        "districtId": "18",
+        "indicatorId": "3",
+        "value": 0.4121295658,
+        "normValue": 0.09822549936369236,
+        "ranking": "2"
+    },
+    {
+        "id": 63,
+        "districtId": "19",
+        "indicatorId": "3",
+        "value": 0.3948663854,
+        "normValue": 0,
+        "ranking": "1"
+    },
+    {
+        "id": 64,
+        "districtId": "20",
+        "indicatorId": "3",
+        "value": 0.4805961755,
+        "normValue": 0.4877925879125404,
+        "ranking": "11"
+    },
+    {
+        "id": 65,
+        "districtId": "30",
+        "indicatorId": "3",
+        "value": 0.4391267842,
+        "normValue": 0.25183654885319845,
+        "ranking": "4"
+    },
+    {
+        "id": 66,
+        "districtId": "99",
+        "indicatorId": "3",
+        "value": 0.4772297827,
+        "normValue": 0.4686382023258417,
+        "ranking": "10"
+    },
+    {
+        "id": 67,
+        "districtId": "1",
+        "indicatorId": "4",
+        "value": 0.2922636103,
+        "normValue": 0.8485853162101218,
+        "ranking": "20"
+    },
+    {
+        "id": 68,
+        "districtId": "2",
+        "indicatorId": "4",
+        "value": 0.3167572085,
+        "normValue": 0.9776033300556001,
+        "ranking": "21"
+    },
+    {
+        "id": 69,
+        "districtId": "3",
+        "indicatorId": "4",
+        "value": 0.2780228594,
+        "normValue": 0.7735733321894889,
+        "ranking": "17"
+    },
+    {
+        "id": 70,
+        "districtId": "4",
+        "indicatorId": "4",
+        "value": 0.2849794239,
+        "normValue": 0.8102164634946296,
+        "ranking": "18"
+    },
+    {
+        "id": 71,
+        "districtId": "5",
+        "indicatorId": "4",
+        "value": 0.2392694911,
+        "normValue": 0.569443152251765,
+        "ranking": "11"
+    },
+    {
+        "id": 72,
+        "districtId": "6",
+        "indicatorId": "4",
+        "value": 0.273321097,
+        "normValue": 0.7488071854817607,
+        "ranking": "16"
+    },
+    {
+        "id": 73,
+        "districtId": "7",
+        "indicatorId": "4",
+        "value": 0.1545054945,
+        "normValue": 0.12295577225804641,
+        "ranking": "2"
+    },
+    {
+        "id": 74,
+        "districtId": "8",
+        "indicatorId": "4",
+        "value": 0.2107660146,
+        "normValue": 0.4193034342857349,
+        "ranking": "6"
+    },
+    {
+        "id": 75,
+        "districtId": "9",
+        "indicatorId": "4",
+        "value": 0.2869757174,
+        "normValue": 0.8207317753046618,
+        "ranking": "19"
+    },
+    {
+        "id": 76,
+        "districtId": "10",
+        "indicatorId": "4",
+        "value": 0.2655998089,
+        "normValue": 0.7081359355144642,
+        "ranking": "14"
+    },
+    {
+        "id": 77,
+        "districtId": "11",
+        "indicatorId": "4",
+        "value": 0.2289479562,
+        "normValue": 0.515075316143684,
+        "ranking": "9"
+    },
+    {
+        "id": 78,
+        "districtId": "12",
+        "indicatorId": "4",
+        "value": 0.3210091344,
+        "normValue": 1,
+        "ranking": "22"
+    },
+    {
+        "id": 79,
+        "districtId": "13",
+        "indicatorId": "4",
+        "value": 0.2677286742,
+        "normValue": 0.719349558376562,
+        "ranking": "15"
+    },
+    {
+        "id": 80,
+        "districtId": "14",
+        "indicatorId": "4",
+        "value": 0.2642381657,
+        "normValue": 0.7009635919577629,
+        "ranking": "13"
+    },
+    {
+        "id": 81,
+        "districtId": "15",
+        "indicatorId": "4",
+        "value": 0.1886155855,
+        "normValue": 0.30262787094171456,
+        "ranking": "4"
+    },
+    {
+        "id": 82,
+        "districtId": "16",
+        "indicatorId": "4",
+        "value": 0.2144399877,
+        "normValue": 0.43865578539451217,
+        "ranking": "7"
+    },
+    {
+        "id": 83,
+        "districtId": "17",
+        "indicatorId": "4",
+        "value": 0.2433320448,
+        "normValue": 0.5908423197091048,
+        "ranking": "12"
+    },
+    {
+        "id": 84,
+        "districtId": "18",
+        "indicatorId": "4",
+        "value": 0.2177126918,
+        "normValue": 0.4558944850513863,
+        "ranking": "8"
+    },
+    {
+        "id": 85,
+        "districtId": "19",
+        "indicatorId": "4",
+        "value": 0.1952813067,
+        "normValue": 0.3377390090868523,
+        "ranking": "5"
+    },
+    {
+        "id": 86,
+        "districtId": "20",
+        "indicatorId": "4",
+        "value": 0.1628540045,
+        "normValue": 0.16693086199268217,
+        "ranking": "3"
+    },
+    {
+        "id": 87,
+        "districtId": "30",
+        "indicatorId": "4",
+        "value": 0.1311627907,
+        "normValue": 0,
+        "ranking": "1"
+    },
+    {
+        "id": 88,
+        "districtId": "99",
+        "indicatorId": "4",
+        "value": 0.2351604188,
+        "normValue": 0.5477989518952215,
+        "ranking": "10"
+    },
+    {
+        "id": 89,
+        "districtId": "1",
+        "indicatorId": "5",
+        "value": 0.6666666667,
+        "normValue": 0.943957968588532,
+        "ranking": "20"
+    },
+    {
+        "id": 90,
+        "districtId": "2",
+        "indicatorId": "5",
+        "value": 0.4230769231,
+        "normValue": 0.4422740133066155,
+        "ranking": "10"
+    },
+    {
+        "id": 91,
+        "districtId": "3",
+        "indicatorId": "5",
+        "value": 0.5888888889,
+        "normValue": 0.7837711617752832,
+        "ranking": "18"
+    },
+    {
+        "id": 92,
+        "districtId": "4",
+        "indicatorId": "5",
+        "value": 0.329787234,
+        "normValue": 0.2501397324332712,
+        "ranking": "6"
+    },
+    {
+        "id": 93,
+        "districtId": "5",
+        "indicatorId": "5",
+        "value": 0.5507246377,
+        "normValue": 0.7051701820729972,
+        "ranking": "14"
+    },
+    {
+        "id": 94,
+        "districtId": "6",
+        "indicatorId": "5",
+        "value": 0.2606635071,
+        "normValue": 0.10777632992497692,
+        "ranking": "2"
+    },
+    {
+        "id": 95,
+        "districtId": "7",
+        "indicatorId": "5",
+        "value": 0.6835443038,
+        "normValue": 0.9787182159249096,
+        "ranking": "21"
+    },
+    {
+        "id": 96,
+        "districtId": "8",
+        "indicatorId": "5",
+        "value": 0.693877551,
+        "normValue": 1,
+        "ranking": "22"
+    },
+    {
+        "id": 97,
+        "districtId": "9",
+        "indicatorId": "5",
+        "value": 0.578313253,
+        "normValue": 0.761990167347842,
+        "ranking": "17"
+    },
+    {
+        "id": 98,
+        "districtId": "10",
+        "indicatorId": "5",
+        "value": 0.3436293436,
+        "normValue": 0.2786481753214791,
+        "ranking": "7"
+    },
+    {
+        "id": 99,
+        "districtId": "11",
+        "indicatorId": "5",
+        "value": 0.3625498008,
+        "normValue": 0.3176157018829636,
+        "ranking": "8"
+    },
+    {
+        "id": 100,
+        "districtId": "12",
+        "indicatorId": "5",
+        "value": 0.44,
+        "normValue": 0.47712784594036367,
+        "ranking": "12"
+    },
+    {
+        "id": 101,
+        "districtId": "13",
+        "indicatorId": "5",
+        "value": 0.3191489362,
+        "normValue": 0.2282296830243974,
+        "ranking": "5"
+    },
+    {
+        "id": 102,
+        "districtId": "14",
+        "indicatorId": "5",
+        "value": 0.5555555556,
+        "normValue": 0.7151196732292998,
+        "ranking": "16"
+    },
+    {
+        "id": 103,
+        "districtId": "15",
+        "indicatorId": "5",
+        "value": 0.4277108434,
+        "normValue": 0.45181777910811266,
+        "ranking": "11"
+    },
+    {
+        "id": 104,
+        "districtId": "16",
+        "indicatorId": "5",
+        "value": 0.3023255814,
+        "normValue": 0.19358123250903247,
+        "ranking": "4"
+    },
+    {
+        "id": 105,
+        "districtId": "17",
+        "indicatorId": "5",
+        "value": 0.2983425414,
+        "normValue": 0.18537798375268344,
+        "ranking": "3"
+    },
+    {
+        "id": 106,
+        "districtId": "18",
+        "indicatorId": "5",
+        "value": 0.2083333333,
+        "normValue": 0,
+        "ranking": "1"
+    },
+    {
+        "id": 107,
+        "districtId": "19",
+        "indicatorId": "5",
+        "value": 0.3673469388,
+        "normValue": 0.32749562182665864,
+        "ranking": "9"
+    },
+    {
+        "id": 108,
+        "districtId": "20",
+        "indicatorId": "5",
+        "value": 0.5512820513,
+        "normValue": 0.7063182002754184,
+        "ranking": "15"
+    },
+    {
+        "id": 109,
+        "districtId": "30",
+        "indicatorId": "5",
+        "value": 0.652173913,
+        "normValue": 0.9141094951196245,
+        "ranking": "19"
+    },
+    {
+        "id": 110,
+        "districtId": "99",
+        "indicatorId": "5",
+        "value": 0.4468960359,
+        "normValue": 0.49133053984261255,
+        "ranking": "13"
+    },
+    {
+        "id": 111,
+        "districtId": "1",
+        "indicatorId": "6",
+        "value": 0.2812328013,
+        "normValue": 0.4390741827666433,
+        "ranking": "8"
+    },
+    {
+        "id": 112,
+        "districtId": "2",
+        "indicatorId": "6",
+        "value": 0.3685828466,
+        "normValue": 0.6836915160498062,
+        "ranking": "16"
+    },
+    {
+        "id": 113,
+        "districtId": "3",
+        "indicatorId": "6",
+        "value": 0.3426260292,
+        "normValue": 0.6110013711151475,
+        "ranking": "14"
+    },
+    {
+        "id": 114,
+        "districtId": "4",
+        "indicatorId": "6",
+        "value": 0.3408931083,
+        "normValue": 0.6061484544636131,
+        "ranking": "13"
+    },
+    {
+        "id": 115,
+        "districtId": "5",
+        "indicatorId": "6",
+        "value": 0.4655742871,
+        "normValue": 0.9553088626111884,
+        "ranking": "21"
+    },
+    {
+        "id": 116,
+        "districtId": "6",
+        "indicatorId": "6",
+        "value": 0.219809322,
+        "normValue": 0.26706227761266227,
+        "ranking": "4"
+    },
+    {
+        "id": 117,
+        "districtId": "7",
+        "indicatorId": "6",
+        "value": 0.4217833399,
+        "normValue": 0.8326755578519546,
+        "ranking": "19"
+    },
+    {
+        "id": 118,
+        "districtId": "8",
+        "indicatorId": "6",
+        "value": 0.3699692308,
+        "normValue": 0.6875739823352576,
+        "ranking": "17"
+    },
+    {
+        "id": 119,
+        "districtId": "9",
+        "indicatorId": "6",
+        "value": 0.3449315704,
+        "normValue": 0.6174578685122755,
+        "ranking": "15"
+    },
+    {
+        "id": 120,
+        "districtId": "10",
+        "indicatorId": "6",
+        "value": 0.2522425547,
+        "normValue": 0.3578891439935349,
+        "ranking": "6"
+    },
+    {
+        "id": 121,
+        "districtId": "11",
+        "indicatorId": "6",
+        "value": 0.2299215096,
+        "normValue": 0.2953807101432412,
+        "ranking": "5"
+    },
+    {
+        "id": 122,
+        "districtId": "12",
+        "indicatorId": "6",
+        "value": 0.2743055556,
+        "normValue": 0.41967494417081325,
+        "ranking": "7"
+    },
+    {
+        "id": 123,
+        "districtId": "13",
+        "indicatorId": "6",
+        "value": 0.3210332103,
+        "normValue": 0.5505322808102305,
+        "ranking": "12"
+    },
+    {
+        "id": 124,
+        "districtId": "14",
+        "indicatorId": "6",
+        "value": 0.2948402948,
+        "normValue": 0.4771809606304205,
+        "ranking": "10"
+    },
+    {
+        "id": 125,
+        "districtId": "15",
+        "indicatorId": "6",
+        "value": 0.422836584,
+        "normValue": 0.8356250899575577,
+        "ranking": "20"
+    },
+    {
+        "id": 126,
+        "districtId": "16",
+        "indicatorId": "6",
+        "value": 0.1244444444,
+        "normValue": 0,
+        "ranking": "1"
+    },
+    {
+        "id": 127,
+        "districtId": "17",
+        "indicatorId": "6",
+        "value": 0.1771840394,
+        "normValue": 0.1476933302441461,
+        "ranking": "2"
+    },
+    {
+        "id": 128,
+        "districtId": "18",
+        "indicatorId": "6",
+        "value": 0.2034212696,
+        "normValue": 0.22116875045964618,
+        "ranking": "3"
+    },
+    {
+        "id": 129,
+        "districtId": "19",
+        "indicatorId": "6",
+        "value": 0.285391991,
+        "normValue": 0.45072168551880043,
+        "ranking": "9"
+    },
+    {
+        "id": 130,
+        "districtId": "20",
+        "indicatorId": "6",
+        "value": 0.4815329799,
+        "normValue": 1,
+        "ranking": "22"
+    },
+    {
+        "id": 131,
+        "districtId": "30",
+        "indicatorId": "6",
+        "value": 0.4144927536,
+        "normValue": 0.8122588108124799,
+        "ranking": "18"
+    },
+    {
+        "id": 132,
+        "districtId": "99",
+        "indicatorId": "6",
+        "value": 0.3060333276,
+        "normValue": 0.5085262201031935,
+        "ranking": "11"
+    },
+    {
+        "id": 133,
+        "districtId": "1",
+        "indicatorId": "7",
+        "value": 0.3111969112,
+        "normValue": 0.4604093081526826,
+        "ranking": "6"
+    },
+    {
+        "id": 134,
+        "districtId": "2",
+        "indicatorId": "7",
+        "value": 0.2783649053,
+        "normValue": 0.31272196286861026,
+        "ranking": "3"
+    },
+    {
+        "id": 135,
+        "districtId": "3",
+        "indicatorId": "7",
+        "value": 0.3042553191,
+        "normValue": 0.4291841276865116,
+        "ranking": "5"
+    },
+    {
+        "id": 136,
+        "districtId": "4",
+        "indicatorId": "7",
+        "value": 0.3470350404,
+        "normValue": 0.6216190185071634,
+        "ranking": "14"
+    },
+    {
+        "id": 137,
+        "districtId": "5",
+        "indicatorId": "7",
+        "value": 0.3366194659,
+        "normValue": 0.5747669147338306,
+        "ranking": "11"
+    },
+    {
+        "id": 138,
+        "districtId": "6",
+        "indicatorId": "7",
+        "value": 0.3199426112,
+        "normValue": 0.4997498595519779,
+        "ranking": "9"
+    },
+    {
+        "id": 139,
+        "districtId": "7",
+        "indicatorId": "7",
+        "value": 0.431151974,
+        "normValue": 1,
+        "ranking": "22"
+    },
+    {
+        "id": 140,
+        "districtId": "8",
+        "indicatorId": "7",
+        "value": 0.4232589088,
+        "normValue": 0.9644948332096244,
+        "ranking": "19"
+    },
+    {
+        "id": 141,
+        "districtId": "9",
+        "indicatorId": "7",
+        "value": 0.3545955349,
+        "normValue": 0.6556281912985168,
+        "ranking": "16"
+    },
+    {
+        "id": 142,
+        "districtId": "10",
+        "indicatorId": "7",
+        "value": 0.3312956259,
+        "normValue": 0.550818825825953,
+        "ranking": "10"
+    },
+    {
+        "id": 143,
+        "districtId": "11",
+        "indicatorId": "7",
+        "value": 0.3171841542,
+        "normValue": 0.4873415652597834,
+        "ranking": "8"
+    },
+    {
+        "id": 144,
+        "districtId": "12",
+        "indicatorId": "7",
+        "value": 0.2727272727,
+        "normValue": 0.2873623489931466,
+        "ranking": "2"
+    },
+    {
+        "id": 145,
+        "districtId": "13",
+        "indicatorId": "7",
+        "value": 0.3148873653,
+        "normValue": 0.4770099803925022,
+        "ranking": "7"
+    },
+    {
+        "id": 146,
+        "districtId": "14",
+        "indicatorId": "7",
+        "value": 0.3638336347,
+        "normValue": 0.6971836917174333,
+        "ranking": "17"
+    },
+    {
+        "id": 147,
+        "districtId": "15",
+        "indicatorId": "7",
+        "value": 0.3984542722,
+        "normValue": 0.8529167913029573,
+        "ranking": "18"
+    },
+    {
+        "id": 148,
+        "districtId": "16",
+        "indicatorId": "7",
+        "value": 0.2088444646,
+        "normValue": 0,
+        "ranking": "1"
+    },
+    {
+        "id": 149,
+        "districtId": "17",
+        "indicatorId": "7",
+        "value": 0.2982168735,
+        "normValue": 0.4020215472757214,
+        "ranking": "4"
+    },
+    {
+        "id": 150,
+        "districtId": "18",
+        "indicatorId": "7",
+        "value": 0.3419710544,
+        "normValue": 0.5988398239866205,
+        "ranking": "12"
+    },
+    {
+        "id": 151,
+        "districtId": "19",
+        "indicatorId": "7",
+        "value": 0.3516174402,
+        "normValue": 0.6422319065394559,
+        "ranking": "15"
+    },
+    {
+        "id": 152,
+        "districtId": "20",
+        "indicatorId": "7",
+        "value": 0.4280089989,
+        "normValue": 0.9858620380909184,
+        "ranking": "21"
+    },
+    {
+        "id": 153,
+        "districtId": "30",
+        "indicatorId": "7",
+        "value": 0.4265323258,
+        "normValue": 0.9792195584734485,
+        "ranking": "20"
+    },
+    {
+        "id": 154,
+        "districtId": "99",
+        "indicatorId": "7",
+        "value": 0.3464379762,
+        "normValue": 0.618933260380452,
+        "ranking": "13"
+    },
+    {
+        "id": 155,
+        "districtId": "1",
+        "indicatorId": "8",
+        "value": 0.1441937259,
+        "normValue": 0,
+        "ranking": "1"
+    },
+    {
+        "id": 156,
+        "districtId": "2",
+        "indicatorId": "8",
+        "value": 0.1730710114,
+        "normValue": 0.11942361305814489,
+        "ranking": "3"
+    },
+    {
+        "id": 157,
+        "districtId": "3",
+        "indicatorId": "8",
+        "value": 0.2188357648,
+        "normValue": 0.308686284639344,
+        "ranking": "8"
+    },
+    {
+        "id": 158,
+        "districtId": "4",
+        "indicatorId": "8",
+        "value": 0.2245077356,
+        "normValue": 0.3321430339275102,
+        "ranking": "9"
+    },
+    {
+        "id": 159,
+        "districtId": "5",
+        "indicatorId": "8",
+        "value": 0.2924216165,
+        "normValue": 0.613004648634285,
+        "ranking": "16"
+    },
+    {
+        "id": 160,
+        "districtId": "6",
+        "indicatorId": "8",
+        "value": 0.2041464891,
+        "normValue": 0.24793797166854167,
+        "ranking": "5"
+    },
+    {
+        "id": 161,
+        "districtId": "7",
+        "indicatorId": "8",
+        "value": 0.3859992178,
+        "normValue": 1,
+        "ranking": "22"
+    },
+    {
+        "id": 162,
+        "districtId": "8",
+        "indicatorId": "8",
+        "value": 0.2947692308,
+        "normValue": 0.6227133375542658,
+        "ranking": "17"
+    },
+    {
+        "id": 163,
+        "districtId": "9",
+        "indicatorId": "8",
+        "value": 0.2551612155,
+        "normValue": 0.45891219727090066,
+        "ranking": "11"
+    },
+    {
+        "id": 164,
+        "districtId": "10",
+        "indicatorId": "8",
+        "value": 0.2591496233,
+        "normValue": 0.4754064785573218,
+        "ranking": "12"
+    },
+    {
+        "id": 165,
+        "districtId": "11",
+        "indicatorId": "8",
+        "value": 0.2510901451,
+        "normValue": 0.44207606022533014,
+        "ranking": "10"
+    },
+    {
+        "id": 166,
+        "districtId": "12",
+        "indicatorId": "8",
+        "value": 0.1516203704,
+        "normValue": 0.03071329952700713,
+        "ranking": "2"
+    },
+    {
+        "id": 167,
+        "districtId": "13",
+        "indicatorId": "8",
+        "value": 0.1859778598,
+        "normValue": 0.1728005992406494,
+        "ranking": "4"
+    },
+    {
+        "id": 168,
+        "districtId": "14",
+        "indicatorId": "8",
+        "value": 0.2148512149,
+        "normValue": 0.29220795791197657,
+        "ranking": "6"
+    },
+    {
+        "id": 169,
+        "districtId": "15",
+        "indicatorId": "8",
+        "value": 0.3412232532,
+        "normValue": 0.8148265192483001,
+        "ranking": "20"
+    },
+    {
+        "id": 170,
+        "districtId": "16",
+        "indicatorId": "8",
+        "value": 0.273015873,
+        "normValue": 0.5327511219359531,
+        "ranking": "14"
+    },
+    {
+        "id": 171,
+        "districtId": "17",
+        "indicatorId": "8",
+        "value": 0.2177008262,
+        "normValue": 0.30399268321994627,
+        "ranking": "7"
+    },
+    {
+        "id": 172,
+        "districtId": "18",
+        "indicatorId": "8",
+        "value": 0.2918384171,
+        "normValue": 0.6105927952250948,
+        "ranking": "15"
+    },
+    {
+        "id": 173,
+        "districtId": "19",
+        "indicatorId": "8",
+        "value": 0.3186689227,
+        "normValue": 0.7215518366810096,
+        "ranking": "19"
+    },
+    {
+        "id": 174,
+        "districtId": "20",
+        "indicatorId": "8",
+        "value": 0.3726427392,
+        "normValue": 0.944763543230343,
+        "ranking": "21"
+    },
+    {
+        "id": 175,
+        "districtId": "30",
+        "indicatorId": "8",
+        "value": 0.3115942029,
+        "normValue": 0.6922939412361626,
+        "ranking": "18"
+    },
+    {
+        "id": 176,
+        "districtId": "99",
+        "indicatorId": "8",
+        "value": 0.2625057149,
+        "normValue": 0.4892857811886613,
+        "ranking": "13"
+    },
+    {
+        "id": 177,
+        "districtId": "1",
+        "indicatorId": "9",
+        "value": 1822.9739479,
+        "normValue": 0,
+        "ranking": "1"
+    },
+    {
+        "id": 178,
+        "districtId": "2",
+        "indicatorId": "9",
+        "value": 1898.8798521,
+        "normValue": 0.5461854278395899,
+        "ranking": "3"
+    },
+    {
+        "id": 179,
+        "districtId": "3",
+        "indicatorId": "9",
+        "value": 1918.832483,
+        "normValue": 0.689755764817959,
+        "ranking": "4"
+    },
+    {
+        "id": 180,
+        "districtId": "4",
+        "indicatorId": "9",
+        "value": 1940.8815592,
+        "normValue": 0.848411198076928,
+        "ranking": "16"
+    },
+    {
+        "id": 181,
+        "districtId": "5",
+        "indicatorId": "9",
+        "value": 1938.8973928,
+        "normValue": 0.8341340112689885,
+        "ranking": "15"
+    },
+    {
+        "id": 182,
+        "districtId": "6",
+        "indicatorId": "9",
+        "value": 1932.2727273,
+        "normValue": 0.7864658384365033,
+        "ranking": "8"
+    },
+    {
+        "id": 183,
+        "districtId": "7",
+        "indicatorId": "9",
+        "value": 1948.622051,
+        "normValue": 0.9041083651159028,
+        "ranking": "19"
+    },
+    {
+        "id": 184,
+        "districtId": "8",
+        "indicatorId": "9",
+        "value": 1934.1737915,
+        "normValue": 0.8001450584441027,
+        "ranking": "11"
+    },
+    {
+        "id": 185,
+        "districtId": "9",
+        "indicatorId": "9",
+        "value": 1924.7530612,
+        "normValue": 0.7323576357963277,
+        "ranking": "5"
+    },
+    {
+        "id": 186,
+        "districtId": "10",
+        "indicatorId": "9",
+        "value": 1937.1588721,
+        "normValue": 0.821624382639369,
+        "ranking": "14"
+    },
+    {
+        "id": 187,
+        "districtId": "11",
+        "indicatorId": "9",
+        "value": 1932.9564931,
+        "normValue": 0.7913859157341933,
+        "ranking": "9"
+    },
+    {
+        "id": 188,
+        "districtId": "12",
+        "indicatorId": "9",
+        "value": 1880.2206406,
+        "normValue": 0.41192196673353115,
+        "ranking": "2"
+    },
+    {
+        "id": 189,
+        "districtId": "13",
+        "indicatorId": "9",
+        "value": 1928.2022901,
+        "normValue": 0.7571767665651192,
+        "ranking": "7"
+    },
+    {
+        "id": 190,
+        "districtId": "14",
+        "indicatorId": "9",
+        "value": 1933.15625,
+        "normValue": 0.7928232783351701,
+        "ranking": "10"
+    },
+    {
+        "id": 191,
+        "districtId": "15",
+        "indicatorId": "9",
+        "value": 1941.7718078,
+        "normValue": 0.8548170345872659,
+        "ranking": "17"
+    },
+    {
+        "id": 192,
+        "districtId": "16",
+        "indicatorId": "9",
+        "value": 1949.2990033,
+        "normValue": 0.9089794154709357,
+        "ranking": "20"
+    },
+    {
+        "id": 193,
+        "districtId": "17",
+        "indicatorId": "9",
+        "value": 1925.1191937,
+        "normValue": 0.7349921638777217,
+        "ranking": "6"
+    },
+    {
+        "id": 194,
+        "districtId": "18",
+        "indicatorId": "9",
+        "value": 1936.9816092,
+        "normValue": 0.8203488769471969,
+        "ranking": "13"
+    },
+    {
+        "id": 195,
+        "districtId": "19",
+        "indicatorId": "9",
+        "value": 1946.4011976,
+        "normValue": 0.8881280829859116,
+        "ranking": "18"
+    },
+    {
+        "id": 196,
+        "districtId": "20",
+        "indicatorId": "9",
+        "value": 1957.6253324,
+        "normValue": 0.9688920094877874,
+        "ranking": "21"
+    },
+    {
+        "id": 197,
+        "districtId": "30",
+        "indicatorId": "9",
+        "value": 1961.9485531,
+        "normValue": 1,
+        "ranking": "22"
+    },
+    {
+        "id": 198,
+        "districtId": "99",
+        "indicatorId": "9",
+        "value": 1935.7040764,
+        "normValue": 0.811156314045784,
+        "ranking": "12"
+    },
+    {
+        "id": 199,
+        "districtId": "1",
+        "indicatorId": "10",
+        "value": 0.1022044088,
+        "normValue": 0.10324704621709085,
+        "ranking": "8"
+    },
+    {
+        "id": 200,
+        "districtId": "2",
+        "indicatorId": "10",
+        "value": 0.0776340111,
+        "normValue": 0.07125834034980418,
+        "ranking": "6"
+    },
+    {
+        "id": 201,
+        "districtId": "3",
+        "indicatorId": "10",
+        "value": 0.1972789116,
+        "normValue": 0.22702649588988655,
+        "ranking": "12"
+    },
+    {
+        "id": 202,
+        "districtId": "4",
+        "indicatorId": "10",
+        "value": 0.1349325337,
+        "normValue": 0.1458564648271088,
+        "ranking": "9"
+    },
+    {
+        "id": 203,
+        "districtId": "5",
+        "indicatorId": "10",
+        "value": 0.3372582002,
+        "normValue": 0.4092684093179885,
+        "ranking": "15"
+    },
+    {
+        "id": 204,
+        "districtId": "6",
+        "indicatorId": "10",
+        "value": 0.0293706294,
+        "normValue": 0.008423251548539595,
+        "ranking": "2"
+    },
+    {
+        "id": 205,
+        "districtId": "7",
+        "indicatorId": "10",
+        "value": 0.7332691382,
+        "normValue": 0.9248431904258378,
+        "ranking": "21"
+    },
+    {
+        "id": 206,
+        "districtId": "8",
+        "indicatorId": "10",
+        "value": 0.5605273672,
+        "normValue": 0.6999471276521696,
+        "ranking": "18"
+    },
+    {
+        "id": 207,
+        "districtId": "9",
+        "indicatorId": "10",
+        "value": 0.3693877551,
+        "normValue": 0.45109853734000827,
+        "ranking": "16"
+    },
+    {
+        "id": 208,
+        "districtId": "10",
+        "indicatorId": "10",
+        "value": 0.166437414,
+        "normValue": 0.18687331614574965,
+        "ranking": "11"
+    },
+    {
+        "id": 209,
+        "districtId": "11",
+        "indicatorId": "10",
+        "value": 0.2478576137,
+        "normValue": 0.2928759479167056,
+        "ranking": "13"
+    },
+    {
+        "id": 210,
+        "districtId": "12",
+        "indicatorId": "10",
+        "value": 0.0996441281,
+        "normValue": 0.09991376414123783,
+        "ranking": "7"
+    },
+    {
+        "id": 211,
+        "districtId": "13",
+        "indicatorId": "10",
+        "value": 0.0229007634,
+        "normValue": 0,
+        "ranking": "1"
+    },
+    {
+        "id": 212,
+        "districtId": "14",
+        "indicatorId": "10",
+        "value": 0.3352272727,
+        "normValue": 0.4066243030553014,
+        "ranking": "14"
+    },
+    {
+        "id": 213,
+        "districtId": "15",
+        "indicatorId": "10",
+        "value": 0.6972187105,
+        "normValue": 0.8779083975028407,
+        "ranking": "20"
+    },
+    {
+        "id": 214,
+        "districtId": "16",
+        "indicatorId": "10",
+        "value": 0.0697674419,
+        "normValue": 0.06101669219270265,
+        "ranking": "3"
+    },
+    {
+        "id": 215,
+        "districtId": "17",
+        "indicatorId": "10",
+        "value": 0.0709903593,
+        "normValue": 0.06260883349567338,
+        "ranking": "4"
+    },
+    {
+        "id": 216,
+        "districtId": "18",
+        "indicatorId": "10",
+        "value": 0.0712643678,
+        "normValue": 0.06296557079470523,
+        "ranking": "5"
+    },
+    {
+        "id": 217,
+        "districtId": "19",
+        "indicatorId": "10",
+        "value": 0.1556886228,
+        "normValue": 0.17287924391607304,
+        "ranking": "10"
+    },
+    {
+        "id": 218,
+        "districtId": "20",
+        "indicatorId": "10",
+        "value": 0.6565143824,
+        "normValue": 0.8249145959773395,
+        "ranking": "19"
+    },
+    {
+        "id": 219,
+        "districtId": "30",
+        "indicatorId": "10",
+        "value": 0.7909967846,
+        "normValue": 1,
+        "ranking": "22"
+    },
+    {
+        "id": 220,
+        "districtId": "99",
+        "indicatorId": "10",
+        "value": 0.3964203134,
+        "normValue": 0.4862927807078712,
+        "ranking": "17"
+    },
+    {
+        "id": 221,
+        "districtId": "1",
+        "indicatorId": "11",
+        "value": 0.0672594599,
+        "normValue": 0,
+        "ranking": "1"
+    },
+    {
+        "id": 222,
+        "districtId": "2",
+        "indicatorId": "11",
+        "value": 0.1947350181,
+        "normValue": 0.15271065713735993,
+        "ranking": "8"
+    },
+    {
+        "id": 223,
+        "districtId": "3",
+        "indicatorId": "11",
+        "value": 0.2376157997,
+        "normValue": 0.20408013085580964,
+        "ranking": "10"
+    },
+    {
+        "id": 224,
+        "districtId": "4",
+        "indicatorId": "11",
+        "value": 0.3595967668,
+        "normValue": 0.35020848602540233,
+        "ranking": "15"
+    },
+    {
+        "id": 225,
+        "districtId": "5",
+        "indicatorId": "11",
+        "value": 0.3221370715,
+        "normValue": 0.30533325844292547,
+        "ranking": "13"
+    },
+    {
+        "id": 226,
+        "districtId": "6",
+        "indicatorId": "11",
+        "value": 0.1760147512,
+        "normValue": 0.1302845207042051,
+        "ranking": "7"
+    },
+    {
+        "id": 227,
+        "districtId": "7",
+        "indicatorId": "11",
+        "value": 0.7137712478,
+        "normValue": 0.7744954512955288,
+        "ranking": "20"
+    },
+    {
+        "id": 228,
+        "districtId": "8",
+        "indicatorId": "11",
+        "value": 0.4131869998,
+        "normValue": 0.4144074572880693,
+        "ranking": "17"
+    },
+    {
+        "id": 229,
+        "districtId": "9",
+        "indicatorId": "11",
+        "value": 0.3240684495,
+        "normValue": 0.3076469725989984,
+        "ranking": "14"
+    },
+    {
+        "id": 230,
+        "districtId": "10",
+        "indicatorId": "11",
+        "value": 0.369216064,
+        "normValue": 0.36173202212403904,
+        "ranking": "16"
+    },
+    {
+        "id": 231,
+        "districtId": "11",
+        "indicatorId": "11",
+        "value": 0.2839416111,
+        "normValue": 0.2595766134851785,
+        "ranking": "12"
+    },
+    {
+        "id": 232,
+        "districtId": "12",
+        "indicatorId": "11",
+        "value": 0.0809475704,
+        "normValue": 0.016397812874404002,
+        "ranking": "2"
+    },
+    {
+        "id": 233,
+        "districtId": "13",
+        "indicatorId": "11",
+        "value": 0.1596210148,
+        "normValue": 0.1106454754320687,
+        "ranking": "5"
+    },
+    {
+        "id": 234,
+        "districtId": "14",
+        "indicatorId": "11",
+        "value": 0.2785714268,
+        "normValue": 0.25314334592407417,
+        "ranking": "11"
+    },
+    {
+        "id": 235,
+        "districtId": "15",
+        "indicatorId": "11",
+        "value": 0.5903189074,
+        "normValue": 0.6266044493353661,
+        "ranking": "19"
+    },
+    {
+        "id": 236,
+        "districtId": "16",
+        "indicatorId": "11",
+        "value": 0.1357870952,
+        "normValue": 0.08209338610868185,
+        "ranking": "4"
+    },
+    {
+        "id": 237,
+        "districtId": "17",
+        "indicatorId": "11",
+        "value": 0.1657239983,
+        "normValue": 0.1179566073380082,
+        "ranking": "6"
+    },
+    {
+        "id": 238,
+        "districtId": "18",
+        "indicatorId": "11",
+        "value": 0.1193188639,
+        "normValue": 0.06236509890426433,
+        "ranking": "3"
+    },
+    {
+        "id": 239,
+        "districtId": "19",
+        "indicatorId": "11",
+        "value": 0.2267642282,
+        "normValue": 0.19108037907485964,
+        "ranking": "9"
+    },
+    {
+        "id": 240,
+        "districtId": "20",
+        "indicatorId": "11",
+        "value": 0.7956226483,
+        "normValue": 0.8725501790760283,
+        "ranking": "21"
+    },
+    {
+        "id": 241,
+        "districtId": "30",
+        "indicatorId": "11",
+        "value": 0.9020116677,
+        "normValue": 1,
+        "ranking": "22"
+    },
+    {
+        "id": 242,
+        "districtId": "99",
+        "indicatorId": "11",
+        "value": 0.5253487015,
+        "normValue": 0.5487727223954281,
+        "ranking": "18"
+    },
+    {
+        "id": 243,
+        "districtId": "1",
+        "indicatorId": "12",
+        "value": 89.982578397,
+        "normValue": 0.4433533685891991,
+        "ranking": "17"
+    },
+    {
+        "id": 244,
+        "districtId": "2",
+        "indicatorId": "12",
+        "value": 81.703573521,
+        "normValue": 0.2939237976955816,
+        "ranking": "14"
+    },
+    {
+        "id": 245,
+        "districtId": "3",
+        "indicatorId": "12",
+        "value": 81.96043395,
+        "normValue": 0.2985599277933289,
+        "ranking": "15"
+    },
+    {
+        "id": 246,
+        "districtId": "4",
+        "indicatorId": "12",
+        "value": 70.004521477,
+        "normValue": 0.08276504697847203,
+        "ranking": "6"
+    },
+    {
+        "id": 247,
+        "districtId": "5",
+        "indicatorId": "12",
+        "value": 93.466570467,
+        "normValue": 0.5062367039434355,
+        "ranking": "19"
+    },
+    {
+        "id": 248,
+        "districtId": "6",
+        "indicatorId": "12",
+        "value": 70.427866942,
+        "normValue": 0.09040610192676586,
+        "ranking": "8"
+    },
+    {
+        "id": 249,
+        "districtId": "7",
+        "indicatorId": "12",
+        "value": 109.24315693,
+        "normValue": 0.7909917657705237,
+        "ranking": "21"
+    },
+    {
+        "id": 250,
+        "districtId": "8",
+        "indicatorId": "12",
+        "value": 92.894002211,
+        "normValue": 0.49590229418249765,
+        "ranking": "18"
+    },
+    {
+        "id": 251,
+        "districtId": "9",
+        "indicatorId": "12",
+        "value": 74.544131911,
+        "normValue": 0.1647014692099992,
+        "ranking": "11"
+    },
+    {
+        "id": 252,
+        "districtId": "10",
+        "indicatorId": "12",
+        "value": 68.511779293,
+        "normValue": 0.055822216608055364,
+        "ranking": "4"
+    },
+    {
+        "id": 253,
+        "districtId": "11",
+        "indicatorId": "12",
+        "value": 71.680063511,
+        "normValue": 0.11300727184787063,
+        "ranking": "9"
+    },
+    {
+        "id": 254,
+        "districtId": "12",
+        "indicatorId": "12",
+        "value": 72.17236927,
+        "normValue": 0.12189300623475147,
+        "ranking": "10"
+    },
+    {
+        "id": 255,
+        "districtId": "13",
+        "indicatorId": "12",
+        "value": 66.391708968,
+        "normValue": 0.017556603327959712,
+        "ranking": "2"
+    },
+    {
+        "id": 256,
+        "districtId": "14",
+        "indicatorId": "12",
+        "value": 83.225836146,
+        "normValue": 0.32139944896625045,
+        "ranking": "16"
+    },
+    {
+        "id": 257,
+        "districtId": "15",
+        "indicatorId": "12",
+        "value": 80.960734102,
+        "normValue": 0.28051612644926827,
+        "ranking": "13"
+    },
+    {
+        "id": 258,
+        "districtId": "16",
+        "indicatorId": "12",
+        "value": 69.447001989,
+        "normValue": 0.07270225572463718,
+        "ranking": "5"
+    },
+    {
+        "id": 259,
+        "districtId": "17",
+        "indicatorId": "12",
+        "value": 67.244349005,
+        "normValue": 0.032946089958771574,
+        "ranking": "3"
+    },
+    {
+        "id": 260,
+        "districtId": "18",
+        "indicatorId": "12",
+        "value": 65.419001868,
+        "normValue": 0,
+        "ranking": "1"
+    },
+    {
+        "id": 261,
+        "districtId": "19",
+        "indicatorId": "12",
+        "value": 70.42468773,
+        "normValue": 0.0903487196335973,
+        "ranking": "7"
+    },
+    {
+        "id": 262,
+        "districtId": "20",
+        "indicatorId": "12",
+        "value": 102.73655706,
+        "normValue": 0.6735527207267039,
+        "ranking": "20"
+    },
+    {
+        "id": 263,
+        "districtId": "30",
+        "indicatorId": "12",
+        "value": 120.82306163,
+        "normValue": 1,
+        "ranking": "22"
+    },
+    {
+        "id": 264,
+        "districtId": "99",
+        "indicatorId": "12",
+        "value": 79.719344232,
+        "normValue": 0.2581100090034951,
+        "ranking": "12"
+    },
+    {
+        "id": 265,
+        "districtId": "1",
+        "indicatorId": "13",
+        "value": 52.670028818,
+        "normValue": 0.9978072779010031,
+        "ranking": "21"
+    },
+    {
+        "id": 266,
+        "districtId": "2",
+        "indicatorId": "13",
+        "value": 49.710686542,
+        "normValue": 0.8571219168174339,
+        "ranking": "20"
+    },
+    {
+        "id": 267,
+        "districtId": "3",
+        "indicatorId": "13",
+        "value": 45.562575574,
+        "normValue": 0.6599232034139311,
+        "ranking": "14"
+    },
+    {
+        "id": 268,
+        "districtId": "4",
+        "indicatorId": "13",
+        "value": 38.929061785,
+        "normValue": 0.3445699270366837,
+        "ranking": "9"
+    },
+    {
+        "id": 269,
+        "districtId": "5",
+        "indicatorId": "13",
+        "value": 48.696245096,
+        "normValue": 0.8088959774639259,
+        "ranking": "19"
+    },
+    {
+        "id": 270,
+        "districtId": "6",
+        "indicatorId": "13",
+        "value": 38.358770363,
+        "normValue": 0.3174586140677162,
+        "ranking": "8"
+    },
+    {
+        "id": 271,
+        "districtId": "7",
+        "indicatorId": "13",
+        "value": 48.67246313,
+        "normValue": 0.8077653970301852,
+        "ranking": "18"
+    },
+    {
+        "id": 272,
+        "districtId": "8",
+        "indicatorId": "13",
+        "value": 46.408682635,
+        "normValue": 0.7001466268271349,
+        "ranking": "16"
+    },
+    {
+        "id": 273,
+        "districtId": "9",
+        "indicatorId": "13",
+        "value": 41.130126881,
+        "normValue": 0.4492072446969276,
+        "ranking": "12"
+    },
+    {
+        "id": 274,
+        "districtId": "10",
+        "indicatorId": "13",
+        "value": 36.325632892,
+        "normValue": 0.22080447522076072,
+        "ranking": "6"
+    },
+    {
+        "id": 275,
+        "districtId": "11",
+        "indicatorId": "13",
+        "value": 36.186283285,
+        "normValue": 0.2141798782835836,
+        "ranking": "5"
+    },
+    {
+        "id": 276,
+        "districtId": "12",
+        "indicatorId": "13",
+        "value": 42.151075977,
+        "normValue": 0.49774255383759386,
+        "ranking": "13"
+    },
+    {
+        "id": 277,
+        "districtId": "13",
+        "indicatorId": "13",
+        "value": 36.433815926,
+        "normValue": 0.22594743192598438,
+        "ranking": "7"
+    },
+    {
+        "id": 278,
+        "districtId": "14",
+        "indicatorId": "13",
+        "value": 45.690524754,
+        "normValue": 0.6660058308729546,
+        "ranking": "15"
+    },
+    {
+        "id": 279,
+        "districtId": "15",
+        "indicatorId": "13",
+        "value": 38.967116725,
+        "normValue": 0.3463790361141742,
+        "ranking": "10"
+    },
+    {
+        "id": 280,
+        "districtId": "16",
+        "indicatorId": "13",
+        "value": 33.579200248,
+        "normValue": 0.09024071064835137,
+        "ranking": "3"
+    },
+    {
+        "id": 281,
+        "districtId": "17",
+        "indicatorId": "13",
+        "value": 34.833732445,
+        "normValue": 0.14988042064650262,
+        "ranking": "4"
+    },
+    {
+        "id": 282,
+        "districtId": "18",
+        "indicatorId": "13",
+        "value": 31.680970411,
+        "normValue": 0,
+        "ranking": "1"
+    },
+    {
+        "id": 283,
+        "districtId": "19",
+        "indicatorId": "13",
+        "value": 32.477628228,
+        "normValue": 0.03787263594131583,
+        "ranking": "2"
+    },
+    {
+        "id": 284,
+        "districtId": "20",
+        "indicatorId": "13",
+        "value": 47.494001816,
+        "normValue": 0.7517420512929694,
+        "ranking": "17"
+    },
+    {
+        "id": 285,
+        "districtId": "30",
+        "indicatorId": "13",
+        "value": 52.716153128,
+        "normValue": 1,
+        "ranking": "22"
+    },
+    {
+        "id": 286,
+        "districtId": "99",
+        "indicatorId": "13",
+        "value": 41.063367876,
+        "normValue": 0.4460335615443658,
+        "ranking": "11"
+    },
+    {
+        "id": 287,
+        "districtId": "1",
+        "indicatorId": "14",
+        "value": 5514.6161194,
+        "normValue": 0.29793495076062443,
+        "ranking": "18"
+    },
+    {
+        "id": 288,
+        "districtId": "2",
+        "indicatorId": "14",
+        "value": 6165.9059687,
+        "normValue": 0.33434935460578213,
+        "ranking": "20"
+    },
+    {
+        "id": 289,
+        "districtId": "3",
+        "indicatorId": "14",
+        "value": 2060.938612,
+        "normValue": 0.10483566072782173,
+        "ranking": "15"
+    },
+    {
+        "id": 290,
+        "districtId": "4",
+        "indicatorId": "14",
+        "value": 512.9425141,
+        "normValue": 0.018285325081958285,
+        "ranking": "8"
+    },
+    {
+        "id": 291,
+        "districtId": "5",
+        "indicatorId": "14",
+        "value": 5783.6317751,
+        "normValue": 0.31297594170783233,
+        "ranking": "19"
+    },
+    {
+        "id": 292,
+        "districtId": "6",
+        "indicatorId": "14",
+        "value": 552.75010831,
+        "normValue": 0.020511015860380642,
+        "ranking": "9"
+    },
+    {
+        "id": 293,
+        "districtId": "7",
+        "indicatorId": "14",
+        "value": 18071.401123,
+        "normValue": 1,
+        "ranking": "22"
+    },
+    {
+        "id": 294,
+        "districtId": "8",
+        "indicatorId": "14",
+        "value": 1877.6147682,
+        "normValue": 0.09458580271183284,
+        "ranking": "14"
+    },
+    {
+        "id": 295,
+        "districtId": "9",
+        "indicatorId": "14",
+        "value": 962.38892866,
+        "normValue": 0.0434144181641495,
+        "ranking": "11"
+    },
+    {
+        "id": 296,
+        "districtId": "10",
+        "indicatorId": "14",
+        "value": 448.2365746,
+        "normValue": 0.014667537679520195,
+        "ranking": "4"
+    },
+    {
+        "id": 297,
+        "districtId": "11",
+        "indicatorId": "14",
+        "value": 509.91830365,
+        "normValue": 0.01811623781496432,
+        "ranking": "7"
+    },
+    {
+        "id": 298,
+        "districtId": "12",
+        "indicatorId": "14",
+        "value": 1123.5396725,
+        "normValue": 0.0524245513213673,
+        "ranking": "12"
+    },
+    {
+        "id": 299,
+        "districtId": "13",
+        "indicatorId": "14",
+        "value": 508.20508614,
+        "normValue": 0.018020449750171377,
+        "ranking": "6"
+    },
+    {
+        "id": 300,
+        "districtId": "14",
+        "indicatorId": "14",
+        "value": 1328.9580318,
+        "normValue": 0.06390974044384407,
+        "ranking": "13"
+    },
+    {
+        "id": 301,
+        "districtId": "15",
+        "indicatorId": "14",
+        "value": 735.59236151,
+        "normValue": 0.03073394756296963,
+        "ranking": "10"
+    },
+    {
+        "id": 302,
+        "districtId": "16",
+        "indicatorId": "14",
+        "value": 254.13869538,
+        "normValue": 0.003815290301486762,
+        "ranking": "3"
+    },
+    {
+        "id": 303,
+        "districtId": "17",
+        "indicatorId": "14",
+        "value": 491.56606275,
+        "normValue": 0.01709014181129639,
+        "ranking": "5"
+    },
+    {
+        "id": 304,
+        "districtId": "18",
+        "indicatorId": "14",
+        "value": 185.90031762,
+        "normValue": 0,
+        "ranking": "1"
+    },
+    {
+        "id": 305,
+        "districtId": "19",
+        "indicatorId": "14",
+        "value": 206.8607831,
+        "normValue": 0.0011719249971292403,
+        "ranking": "2"
+    },
+    {
+        "id": 306,
+        "districtId": "20",
+        "indicatorId": "14",
+        "value": 3075.9103589,
+        "normValue": 0.16158395969603928,
+        "ranking": "17"
+    },
+    {
+        "id": 307,
+        "districtId": "30",
+        "indicatorId": "14",
+        "value": 15530.157643,
+        "normValue": 0.8579160009187112,
+        "ranking": "21"
+    },
+    {
+        "id": 308,
+        "districtId": "99",
+        "indicatorId": "14",
+        "value": 2340.8408303,
+        "normValue": 0.12048533256791943,
+        "ranking": "16"
+    },
+    {
+        "id": 309,
+        "districtId": "1",
+        "indicatorId": "15",
+        "value": 16657.376716,
+        "normValue": 0.8006567422534947,
+        "ranking": "20"
+    },
+    {
+        "id": 310,
+        "districtId": "2",
+        "indicatorId": "15",
+        "value": 16404.67856,
+        "normValue": 0.784066426774484,
+        "ranking": "19"
+    },
+    {
+        "id": 311,
+        "districtId": "3",
+        "indicatorId": "15",
+        "value": 11315.365443,
+        "normValue": 0.4499392945507824,
+        "ranking": "15"
+    },
+    {
+        "id": 312,
+        "districtId": "4",
+        "indicatorId": "15",
+        "value": 7288.0944151,
+        "normValue": 0.18553808984891304,
+        "ranking": "9"
+    },
+    {
+        "id": 313,
+        "districtId": "5",
+        "indicatorId": "15",
+        "value": 16187.932598,
+        "normValue": 0.7698364697961605,
+        "ranking": "18"
+    },
+    {
+        "id": 314,
+        "districtId": "6",
+        "indicatorId": "15",
+        "value": 7236.5977818,
+        "normValue": 0.18215719698417077,
+        "ranking": "8"
+    },
+    {
+        "id": 315,
+        "districtId": "7",
+        "indicatorId": "15",
+        "value": 19693.706779,
+        "normValue": 1,
+        "ranking": "22"
+    },
+    {
+        "id": 316,
+        "districtId": "8",
+        "indicatorId": "15",
+        "value": 11394.452909,
+        "normValue": 0.45513159999592195,
+        "ranking": "16"
+    },
+    {
+        "id": 317,
+        "districtId": "9",
+        "indicatorId": "15",
+        "value": 8647.5237414,
+        "normValue": 0.27478829155887746,
+        "ranking": "11"
+    },
+    {
+        "id": 318,
+        "districtId": "10",
+        "indicatorId": "15",
+        "value": 6316.4219119,
+        "normValue": 0.12174516937200978,
+        "ranking": "5"
+    },
+    {
+        "id": 319,
+        "districtId": "11",
+        "indicatorId": "15",
+        "value": 6584.1510923,
+        "normValue": 0.13932231214218885,
+        "ranking": "7"
+    },
+    {
+        "id": 320,
+        "districtId": "12",
+        "indicatorId": "15",
+        "value": 8736.081864,
+        "normValue": 0.28060237115256825,
+        "ranking": "12"
+    },
+    {
+        "id": 321,
+        "districtId": "13",
+        "indicatorId": "15",
+        "value": 6127.2649713,
+        "normValue": 0.10932650605735349,
+        "ranking": "3"
+    },
+    {
+        "id": 322,
+        "districtId": "14",
+        "indicatorId": "15",
+        "value": 10771.600289,
+        "normValue": 0.4142396456330718,
+        "ranking": "14"
+    },
+    {
+        "id": 323,
+        "districtId": "15",
+        "indicatorId": "15",
+        "value": 7527.794101,
+        "normValue": 0.20127502070843536,
+        "ranking": "10"
+    },
+    {
+        "id": 324,
+        "districtId": "16",
+        "indicatorId": "15",
+        "value": 6401.2032932,
+        "normValue": 0.12731129571332472,
+        "ranking": "6"
+    },
+    {
+        "id": 325,
+        "districtId": "17",
+        "indicatorId": "15",
+        "value": 6313.3239063,
+        "normValue": 0.12154177694891771,
+        "ranking": "4"
+    },
+    {
+        "id": 326,
+        "districtId": "18",
+        "indicatorId": "15",
+        "value": 4462.0400684,
+        "normValue": 0,
+        "ranking": "1"
+    },
+    {
+        "id": 327,
+        "districtId": "19",
+        "indicatorId": "15",
+        "value": 4908.5997514,
+        "normValue": 0.029317847579295522,
+        "ranking": "2"
+    },
+    {
+        "id": 328,
+        "districtId": "20",
+        "indicatorId": "15",
+        "value": 13428.811448,
+        "normValue": 0.588692724832264,
+        "ranking": "17"
+    },
+    {
+        "id": 329,
+        "districtId": "30",
+        "indicatorId": "15",
+        "value": 19464.664013,
+        "normValue": 0.9849627246740763,
+        "ranking": "21"
+    },
+    {
+        "id": 330,
+        "districtId": "99",
+        "indicatorId": "15",
+        "value": 9664.6299359,
+        "normValue": 0.341564056406212,
+        "ranking": "13"
+    },
+    {
+        "id": 331,
+        "districtId": "1",
+        "indicatorId": "16",
+        "value": 0.8563773753,
+        "normValue": 1,
+        "ranking": "22"
+    },
+    {
+        "id": 332,
+        "districtId": "2",
+        "indicatorId": "16",
+        "value": 0.7730196667,
+        "normValue": 0.655036695290476,
+        "ranking": "18"
+    },
+    {
+        "id": 333,
+        "districtId": "3",
+        "indicatorId": "16",
+        "value": 0.8011045547,
+        "normValue": 0.7712617684071913,
+        "ranking": "21"
+    },
+    {
+        "id": 334,
+        "districtId": "4",
+        "indicatorId": "16",
+        "value": 0.7402545444,
+        "normValue": 0.5194431784142253,
+        "ranking": "13"
+    },
+    {
+        "id": 335,
+        "districtId": "5",
+        "indicatorId": "16",
+        "value": 0.7285669841,
+        "normValue": 0.47107597287566205,
+        "ranking": "10"
+    },
+    {
+        "id": 336,
+        "districtId": "6",
+        "indicatorId": "16",
+        "value": 0.7611023509,
+        "normValue": 0.6057186812677751,
+        "ranking": "17"
+    },
+    {
+        "id": 337,
+        "districtId": "7",
+        "indicatorId": "16",
+        "value": 0.7357069134,
+        "normValue": 0.5006234934119976,
+        "ranking": "12"
+    },
+    {
+        "id": 338,
+        "districtId": "8",
+        "indicatorId": "16",
+        "value": 0.780542957,
+        "normValue": 0.6861706975053246,
+        "ranking": "19"
+    },
+    {
+        "id": 339,
+        "districtId": "9",
+        "indicatorId": "16",
+        "value": 0.7497290566,
+        "normValue": 0.5586520181714002,
+        "ranking": "16"
+    },
+    {
+        "id": 340,
+        "districtId": "10",
+        "indicatorId": "16",
+        "value": 0.705780116,
+        "normValue": 0.37677595604727215,
+        "ranking": "7"
+    },
+    {
+        "id": 341,
+        "districtId": "11",
+        "indicatorId": "16",
+        "value": 0.7033538377,
+        "normValue": 0.3667351692433869,
+        "ranking": "5"
+    },
+    {
+        "id": 342,
+        "districtId": "12",
+        "indicatorId": "16",
+        "value": 0.7043903035,
+        "normValue": 0.37102442663291135,
+        "ranking": "6"
+    },
+    {
+        "id": 343,
+        "districtId": "13",
+        "indicatorId": "16",
+        "value": 0.6647432124,
+        "normValue": 0.20695091984297614,
+        "ranking": "3"
+    },
+    {
+        "id": 344,
+        "districtId": "14",
+        "indicatorId": "16",
+        "value": 0.8001764749,
+        "normValue": 0.7674210501314714,
+        "ranking": "20"
+    },
+    {
+        "id": 345,
+        "districtId": "15",
+        "indicatorId": "16",
+        "value": 0.7095861405,
+        "normValue": 0.3925266144012065,
+        "ranking": "8"
+    },
+    {
+        "id": 346,
+        "districtId": "16",
+        "indicatorId": "16",
+        "value": 0.727021636,
+        "normValue": 0.4646807828391815,
+        "ranking": "9"
+    },
+    {
+        "id": 347,
+        "districtId": "17",
+        "indicatorId": "16",
+        "value": 0.6812807264,
+        "normValue": 0.27538892728023945,
+        "ranking": "4"
+    },
+    {
+        "id": 348,
+        "districtId": "18",
+        "indicatorId": "16",
+        "value": 0.6147351268,
+        "normValue": 0,
+        "ranking": "1"
+    },
+    {
+        "id": 349,
+        "districtId": "19",
+        "indicatorId": "16",
+        "value": 0.6593773305,
+        "normValue": 0.18474502690285982,
+        "ranking": "2"
+    },
+    {
+        "id": 350,
+        "districtId": "20",
+        "indicatorId": "16",
+        "value": 0.74117237,
+        "normValue": 0.5232414612298231,
+        "ranking": "14"
+    },
+    {
+        "id": 351,
+        "districtId": "30",
+        "indicatorId": "16",
+        "value": 0.74117237,
+        "normValue": 0.5232414612298231,
+        "ranking": "14"
+    },
+    {
+        "id": 352,
+        "districtId": "99",
+        "indicatorId": "16",
+        "value": 0.7304640146,
+        "normValue": 0.47892654748244484,
+        "ranking": "11"
+    },
+    {
+        "id": 353,
+        "districtId": "1",
+        "indicatorId": "17",
+        "value": 4.3282413547,
+        "normValue": 0.9813054169336896,
+        "ranking": "21"
+    },
+    {
+        "id": 354,
+        "districtId": "2",
+        "indicatorId": "17",
+        "value": 4.4082940087,
+        "normValue": 1,
+        "ranking": "22"
+    },
+    {
+        "id": 355,
+        "districtId": "3",
+        "indicatorId": "17",
+        "value": 1.0231113167,
+        "normValue": 0.2094630737635494,
+        "ranking": "16"
+    },
+    {
+        "id": 356,
+        "districtId": "4",
+        "indicatorId": "17",
+        "value": 0.1261629916,
+        "normValue": 0,
+        "ranking": "1"
+    },
+    {
+        "id": 357,
+        "districtId": "5",
+        "indicatorId": "17",
+        "value": 2.2298924122,
+        "normValue": 0.49128095618725703,
+        "ranking": "20"
+    },
+    {
+        "id": 358,
+        "districtId": "6",
+        "indicatorId": "17",
+        "value": 0.5803410867,
+        "normValue": 0.10606356818283068,
+        "ranking": "10"
+    },
+    {
+        "id": 359,
+        "districtId": "7",
+        "indicatorId": "17",
+        "value": 0.136182938,
+        "normValue": 0.0023399439111010303,
+        "ranking": "2"
+    },
+    {
+        "id": 360,
+        "districtId": "8",
+        "indicatorId": "17",
+        "value": 0.2151706756,
+        "normValue": 0.020785838556681747,
+        "ranking": "6"
+    },
+    {
+        "id": 361,
+        "districtId": "9",
+        "indicatorId": "17",
+        "value": 0.2944427077,
+        "normValue": 0.0392981240947561,
+        "ranking": "8"
+    },
+    {
+        "id": 362,
+        "districtId": "10",
+        "indicatorId": "17",
+        "value": 0.1560386188,
+        "normValue": 0.006976812965482957,
+        "ranking": "3"
+    },
+    {
+        "id": 363,
+        "districtId": "11",
+        "indicatorId": "17",
+        "value": 0.9784494321,
+        "normValue": 0.19903324702035774,
+        "ranking": "15"
+    },
+    {
+        "id": 364,
+        "districtId": "12",
+        "indicatorId": "17",
+        "value": 1.656596399,
+        "normValue": 0.35739994906472056,
+        "ranking": "17"
+    },
+    {
+        "id": 365,
+        "districtId": "13",
+        "indicatorId": "17",
+        "value": 0.6666663388,
+        "normValue": 0.1262229822117976,
+        "ranking": "11"
+    },
+    {
+        "id": 366,
+        "districtId": "14",
+        "indicatorId": "17",
+        "value": 1.9001055923,
+        "normValue": 0.4142663065693334,
+        "ranking": "18"
+    },
+    {
+        "id": 367,
+        "districtId": "15",
+        "indicatorId": "17",
+        "value": 0.3350795757,
+        "normValue": 0.04878799440412386,
+        "ranking": "9"
+    },
+    {
+        "id": 368,
+        "districtId": "16",
+        "indicatorId": "17",
+        "value": 0.8716042457,
+        "normValue": 0.1740818417566395,
+        "ranking": "14"
+    },
+    {
+        "id": 369,
+        "districtId": "17",
+        "indicatorId": "17",
+        "value": 0.1834371286,
+        "normValue": 0.013375148208049909,
+        "ranking": "5"
+    },
+    {
+        "id": 370,
+        "districtId": "18",
+        "indicatorId": "17",
+        "value": 0.795416447,
+        "normValue": 0.15628981288228785,
+        "ranking": "13"
+    },
+    {
+        "id": 371,
+        "districtId": "19",
+        "indicatorId": "17",
+        "value": 2.1233821858,
+        "normValue": 0.46640777365858893,
+        "ranking": "19"
+    },
+    {
+        "id": 372,
+        "districtId": "20",
+        "indicatorId": "17",
+        "value": 0.1686427466,
+        "normValue": 0.009920237103994239,
+        "ranking": "4"
+    },
+    {
+        "id": 373,
+        "districtId": "30",
+        "indicatorId": "17",
+        "value": 0.2878331991,
+        "normValue": 0.03775461489954326,
+        "ranking": "7"
+    },
+    {
+        "id": 374,
+        "districtId": "99",
+        "indicatorId": "17",
+        "value": 0.7678397957,
+        "normValue": 0.14984987650717999,
+        "ranking": "12"
+    },
+    {
+        "id": 375,
+        "districtId": "1",
+        "indicatorId": "18",
+        "value": 0.0257474605,
+        "normValue": 0.12099573333851965,
+        "ranking": "6"
+    },
+    {
+        "id": 376,
+        "districtId": "2",
+        "indicatorId": "18",
+        "value": 0.0242808282,
+        "normValue": 0.09310201604201088,
+        "ranking": "4"
+    },
+    {
+        "id": 377,
+        "districtId": "3",
+        "indicatorId": "18",
+        "value": 0.0313845067,
+        "normValue": 0.22820609076086687,
+        "ranking": "8"
+    },
+    {
+        "id": 378,
+        "districtId": "4",
+        "indicatorId": "18",
+        "value": 0.0492950163,
+        "normValue": 0.568844089404976,
+        "ranking": "14"
+    },
+    {
+        "id": 379,
+        "districtId": "5",
+        "indicatorId": "18",
+        "value": 0.0295674895,
+        "normValue": 0.19364844185343857,
+        "ranking": "7"
+    },
+    {
+        "id": 380,
+        "districtId": "6",
+        "indicatorId": "18",
+        "value": 0.0418457558,
+        "normValue": 0.4271674288984198,
+        "ranking": "13"
+    },
+    {
+        "id": 381,
+        "districtId": "7",
+        "indicatorId": "18",
+        "value": 0.0251482114,
+        "normValue": 0.1095986810674171,
+        "ranking": "5"
+    },
+    {
+        "id": 382,
+        "districtId": "8",
+        "indicatorId": "18",
+        "value": 0.0241987109,
+        "normValue": 0.09154023620711114,
+        "ranking": "3"
+    },
+    {
+        "id": 383,
+        "districtId": "9",
+        "indicatorId": "18",
+        "value": 0.0344512819,
+        "normValue": 0.2865327486701084,
+        "ranking": "9"
+    },
+    {
+        "id": 384,
+        "districtId": "10",
+        "indicatorId": "18",
+        "value": 0.0501539147,
+        "normValue": 0.5851793829588025,
+        "ranking": "15"
+    },
+    {
+        "id": 385,
+        "districtId": "11",
+        "indicatorId": "18",
+        "value": 0.050458782,
+        "normValue": 0.5909776203760132,
+        "ranking": "16"
+    },
+    {
+        "id": 386,
+        "districtId": "12",
+        "indicatorId": "18",
+        "value": 0.0542989532,
+        "normValue": 0.664013411162153,
+        "ranking": "18"
+    },
+    {
+        "id": 387,
+        "districtId": "13",
+        "indicatorId": "18",
+        "value": 0.0539961926,
+        "normValue": 0.6582552408389428,
+        "ranking": "17"
+    },
+    {
+        "id": 388,
+        "districtId": "14",
+        "indicatorId": "18",
+        "value": 0.038280833,
+        "normValue": 0.3593665569504349,
+        "ranking": "10"
+    },
+    {
+        "id": 389,
+        "districtId": "15",
+        "indicatorId": "18",
+        "value": 0.0404742079,
+        "normValue": 0.40108211127571347,
+        "ranking": "11"
+    },
+    {
+        "id": 390,
+        "districtId": "16",
+        "indicatorId": "18",
+        "value": 0.0654724892,
+        "normValue": 0.8765216549710227,
+        "ranking": "21"
+    },
+    {
+        "id": 391,
+        "districtId": "17",
+        "indicatorId": "18",
+        "value": 0.0555946177,
+        "normValue": 0.6886555108037076,
+        "ranking": "19"
+    },
+    {
+        "id": 392,
+        "districtId": "18",
+        "indicatorId": "18",
+        "value": 0.0719648949,
+        "normValue": 1,
+        "ranking": "22"
+    },
+    {
+        "id": 393,
+        "districtId": "19",
+        "indicatorId": "18",
+        "value": 0.0631074121,
+        "normValue": 0.8315405155185186,
+        "ranking": "20"
+    },
+    {
+        "id": 394,
+        "districtId": "20",
+        "indicatorId": "18",
+        "value": 0.0193855888,
+        "normValue": 0,
+        "ranking": "1"
+    },
+    {
+        "id": 395,
+        "districtId": "30",
+        "indicatorId": "18",
+        "value": 0.0193855888,
+        "normValue": 0,
+        "ranking": "1"
+    },
+    {
+        "id": 396,
+        "districtId": "99",
+        "indicatorId": "18",
+        "value": 0.0406846898,
+        "normValue": 0.4050852432227134,
+        "ranking": "12"
+    }
+]

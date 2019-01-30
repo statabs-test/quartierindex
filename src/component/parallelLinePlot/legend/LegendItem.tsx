@@ -59,8 +59,8 @@ const LegendItem: React.SFC<Props & PublicProps> = ({
       <div key={indicator.id} className={'legend-container' + getClassNameNegPosBorder(indicator)}>
         <Grid container>
           <Grid item xs={2}>
-            <div className="clear-icon-container">
-              <Icon className={'clear-icon'} onClick={() => deselect(indicator.id)}>
+            <div className="clear-icon-container" onClick={() => deselect(indicator.id)}>
+              <Icon className={'clear-icon'}>
                 clear{' '}
               </Icon>
             </div>
