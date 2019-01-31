@@ -10,3 +10,7 @@ const select = (state: Rootstate)  => {
 export const getUtil = (state: Rootstate) => {
   return select(state);
 };
+
+export const getShowDisclaimer = (state: Rootstate) => {
+  return state.util.showDisclaimer;
+}

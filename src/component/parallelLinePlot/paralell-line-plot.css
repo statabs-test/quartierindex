@@ -1,0 +1,65 @@
+#scroll-area {
+  --number-of-selected-indicators: 0; /* the default */
+}
+
+.parallel-line-plot-scroll-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+  /* background: green; */
+}
+
+.parallel-line-plot-container {
+  --flex-box-margin-multiplier: 4;
+  height: 100%;
+}
+
+.parallel-line-plot-legend {
+  height: 18% /**--parallel-line-plot-height:**/ ;
+  width: inherit;
+  /* background: rgb(245, 143, 0); */
+  align-items: center;
+  display: flex;
+
+  /* rechars creates some transparant divs...*/
+}
+
+.parallel-line-plot-chart {
+  position: absolute;
+  /* background: cornflowerblue; */
+  left: calc(190px /**--column-width-indicator:**/ / 2);
+  top: 125px;
+}
+
+/* Height need to be aligned with container (of rankning) */
+.bar-plot-container {
+  height: calc(100% - 18% /**--parallel-line-plot-height:**/ - 1% /**scroll bar**/);
+  width: inherit;
+  top: 120px /*--ranking-top*/;
+  /* background: rgb(245, 143, 0); */
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  display: inline-flex;
+  overflow: hidden; /** hide recarts bar plot overflow (IE11)**/
+}
+/* For responsive container of recharts a width and height is needed */
+.bar-plot {
+  width: 190px /**--column-width-indicator:**/;
+
+  /* The height must be set a little bit less than 100%,
+     since the parent container otherwise hides the border.
+   */
+  height: 99.7%;
+  margin-left: 3px; /**--column-margin-indicator**/
+  margin-right: 3px; /**--column-margin-indicator**/
+  border: 1px solid #999999;
+  background-color: #ffffff;
+}
+
+.bar-plot-empty {
+  border: 1px solid #aaa;
+}

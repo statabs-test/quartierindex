@@ -1,1 +1,178 @@
-[{"id":"1","name":"Altstadt Grossbasel","viewOptions":{"highlight":false,"hover":false}},{"id":"2","name":"Vorstädte","viewOptions":{"highlight":false,"hover":false}},{"id":"3","name":"Am Ring","viewOptions":{"highlight":false,"hover":false}},{"id":"4","name":"Breite","viewOptions":{"highlight":false,"hover":false}},{"id":"5","name":"St. Alban","viewOptions":{"highlight":false,"hover":false}},{"id":"6","name":"Gundeldingen","viewOptions":{"highlight":false,"hover":false}},{"id":"7","name":"Bruderholz","viewOptions":{"highlight":false,"hover":false}},{"id":"8","name":"Bachletten","viewOptions":{"highlight":false,"hover":false}},{"id":"9","name":"Gotthelf","viewOptions":{"highlight":false,"hover":false}},{"id":"10","name":"Iselin","viewOptions":{"highlight":false,"hover":false}},{"id":"11","name":"St. Johann","viewOptions":{"highlight":false,"hover":false}},{"id":"12","name":"Altstadt Kleinbasel","viewOptions":{"highlight":false,"hover":false}},{"id":"13","name":"Clara","viewOptions":{"highlight":false,"hover":false}},{"id":"14","name":"Wettstein","viewOptions":{"highlight":false,"hover":false}},{"id":"15","name":"Hirzbrunnen","viewOptions":{"highlight":false,"hover":false}},{"id":"16","name":"Rosental","viewOptions":{"highlight":false,"hover":false}},{"id":"17","name":"Matthäus","viewOptions":{"highlight":false,"hover":false}},{"id":"18","name":"Klybeck","viewOptions":{"highlight":false,"hover":false}},{"id":"19","name":"Kleinhüningen","viewOptions":{"highlight":false,"hover":false}},{"id":"20","name":"Riehen","viewOptions":{"highlight":false,"hover":false}},{"id":"30","name":"Bettingen","viewOptions":{"highlight":false,"hover":false}}]
+[
+    {
+        "id": "1",
+        "name": "Altstadt Grossbasel",
+        "viewOptions": {
+            "highlight": false,
+            "hover": false
+        }
+    },
+    {
+        "id": "2",
+        "name": "Vorstädte",
+        "viewOptions": {
+            "highlight": false,
+            "hover": false
+        }
+    },
+    {
+        "id": "3",
+        "name": "Am Ring",
+        "viewOptions": {
+            "highlight": false,
+            "hover": false
+        }
+    },
+    {
+        "id": "4",
+        "name": "Breite",
+        "viewOptions": {
+            "highlight": false,
+            "hover": false
+        }
+    },
+    {
+        "id": "5",
+        "name": "St. Alban",
+        "viewOptions": {
+            "highlight": false,
+            "hover": false
+        }
+    },
+    {
+        "id": "6",
+        "name": "Gundeldingen",
+        "viewOptions": {
+            "highlight": false,
+            "hover": false
+        }
+    },
+    {
+        "id": "7",
+        "name": "Bruderholz",
+        "viewOptions": {
+            "highlight": false,
+            "hover": false
+        }
+    },
+    {
+        "id": "8",
+        "name": "Bachletten",
+        "viewOptions": {
+            "highlight": false,
+            "hover": false
+        }
+    },
+    {
+        "id": "9",
+        "name": "Gotthelf",
+        "viewOptions": {
+            "highlight": false,
+            "hover": false
+        }
+    },
+    {
+        "id": "10",
+        "name": "Iselin",
+        "viewOptions": {
+            "highlight": false,
+            "hover": false
+        }
+    },
+    {
+        "id": "11",
+        "name": "St. Johann",
+        "viewOptions": {
+            "highlight": false,
+            "hover": false
+        }
+    },
+    {
+        "id": "12",
+        "name": "Altstadt Kleinbasel",
+        "viewOptions": {
+            "highlight": false,
+            "hover": false
+        }
+    },
+    {
+        "id": "13",
+        "name": "Clara",
+        "viewOptions": {
+            "highlight": false,
+            "hover": false
+        }
+    },
+    {
+        "id": "14",
+        "name": "Wettstein",
+        "viewOptions": {
+            "highlight": false,
+            "hover": false
+        }
+    },
+    {
+        "id": "15",
+        "name": "Hirzbrunnen",
+        "viewOptions": {
+            "highlight": false,
+            "hover": false
+        }
+    },
+    {
+        "id": "16",
+        "name": "Rosental",
+        "viewOptions": {
+            "highlight": false,
+            "hover": false
+        }
+    },
+    {
+        "id": "17",
+        "name": "Matthäus",
+        "viewOptions": {
+            "highlight": false,
+            "hover": false
+        }
+    },
+    {
+        "id": "18",
+        "name": "Klybeck",
+        "viewOptions": {
+            "highlight": false,
+            "hover": false
+        }
+    },
+    {
+        "id": "19",
+        "name": "Kleinhüningen",
+        "viewOptions": {
+            "highlight": false,
+            "hover": false
+        }
+    },
+    {
+        "id": "20",
+        "name": "Riehen",
+        "viewOptions": {
+            "highlight": false,
+            "hover": false
+        }
+    },
+    {
+        "id": "30",
+        "name": "Bettingen",
+        "viewOptions": {
+            "highlight": false,
+            "hover": false
+        }
+    },
+    {
+        "id": "99",
+        "name": "Kanton Basel-Stadt",
+        "viewOptions": {
+            "highlight": false,
+            "hover": false
+        }
+    }
+]

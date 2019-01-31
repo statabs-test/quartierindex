@@ -1,0 +1,22 @@
+.disclaimer {
+    display: flex;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f5f5f5;
+    justify-content: space-between;
+    margin: 0px 5px 5px 5px;
+}
+
+.disclaimerCloseButton {
+    border:none;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+.main-view > .disclaimer-main-view {
+  top: 102%;
+  display: flex;
+  width: 631px !important;
+  left: 300px !important;
+}

@@ -21,10 +21,13 @@ export interface Indicator {
     readonly valuationText: string
     readonly weight: WeightNumber
     readonly weightText: string
+    readonly description: string
 }
 
 export interface IndicatorState {
     readonly byId: {
         readonly [key: string]: Indicator
     }
+
+    readonly orderedBySelection: string[]
 }

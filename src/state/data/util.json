@@ -6,5 +6,6 @@
   },
   "selectIndicatorConf": {
     "visible": false
-  }
+  },
+  "showDisclaimer": true
 }

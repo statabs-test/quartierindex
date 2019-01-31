@@ -1,94 +1,66 @@
-import * as React from 'react';
-import { connect } from 'react-redux';
-import { compose } from 'redux';
-import { Rootstate } from '../../state';
-import { getSelectedIndicators } from '../../state/indicator/selectors';
-import { Indicator } from '../../state/indicator/types';
-import Grid from 'material-ui/Grid';
-import { Theme, WithStyles, withStyles } from 'material-ui/styles';
-import Button from 'material-ui/Button';
-import Icon from 'material-ui/Icon';
-import { SetNegativeValuation, SetPositiveValuation, } from '../../state/indicator/actions';
-import { getClassNameSelectedUnselected } from '../../helpers';
+import * as React from 'react'
+import { connect } from 'react-redux'
+import { compose } from 'recompose'
+import { Rootstate } from '../../state'
+import { getSelectedIndicators } from '../../state/indicator/selectors'
+import { Indicator } from '../../state/indicator/types'
+// import Grid from '@material-ui/core/Grid'
+// import { Theme, WithStyles, withStyles, createStyles } from '@material-ui/core/styles'
+// import Button from '@material-ui/core/Button'
+import Icon from '@material-ui/core/Icon'
+import { setNegativeValuation, setPositiveValuation } from '../../state/indicator/actions'
+import { getClassNameSelectedUnselected } from '../../helpers'
 
-export interface Props {
+export interface PublicProps {
   indicator: Indicator
-
-  positiveValuation(id: string): void
-
-  negativeValuation(id: string): void
-
 }
 
-type ClassNames = WithStyles<'root' | 'title' | 'textCentered' | 'positiveButton' | 'negativeButton'>
+type Props = {
+  positiveValuation(id: string): void
+  negativeValuation(id: string): void
+} & PublicProps
 
-export const styles = (theme: Theme) => ({
-  root: {
-    flexGrow: 1,
-  } as React.CSSProperties,
-  title: {
-    padding: theme.spacing.unit * 2,
-    textAlign: 'center',
-    color: '#1D4E2C',
-  } as React.CSSProperties,
-  textCentered: {
-    display: 'inline-block'
-  } as React.CSSProperties,
-  positiveButton: {
-    color: 'white',
-    marginRight: theme.spacing.unit,
-    marginBottom: theme.spacing.unit,
-    textTransform: 'none'
-  } as React.CSSProperties,
-  negativeButton: {
-    color: 'white',
-    marginRight: theme.spacing.unit,
-    marginBottom: theme.spacing.unit,
-    textTransform: 'none'
-  } as React.CSSProperties,
-});
-
-const IndicatorRatingLine: React.SFC<Props & ClassNames> = (props) => {
-  const {classes, positiveValuation, negativeValuation, indicator} = props;
+const IndicatorRatingLine: React.SFC<Props> = props => {
+  const { positiveValuation, negativeValuation, indicator } = props
   return (
-      <Grid container spacing={0}>
-        <Grid item xs={8}>
-            {indicator.valuationText}
-        </Grid>
-        <Grid item xs={4}>
-          <Button
-              variant="raised"
-              component="span"
-              className={classes.positiveButton + getClassNameSelectedUnselected(indicator, 'positive')}
-              onClick={() => positiveValuation(indicator.id)}
-          >
-            <Icon style={{paddingRight: '5px'}}>mood</Icon>
-            Positiv
-          </Button>
-          <Button
-              className={classes.negativeButton + getClassNameSelectedUnselected(indicator, 'negative')}
-              variant="raised"
-              component="span"
-              onClick={() => negativeValuation(indicator.id)}
-          >
-            <Icon style={{paddingRight: '5px'}}>mood_bad</Icon>
-            Negativ
-          </Button>
-        </Grid>
-      </Grid>
-  );
+    <div className="ratingLine">
+      <div className="ratingLineText">
+        <p>&#x25BA; {indicator.valuationText} ...</p>
+      </div>
+      <div className="ratingLineButtons">
+        <button
+          className={'ratingButton' + getClassNameSelectedUnselected(indicator, 'positive')}
+          onClick={() => positiveValuation(indicator.id)}
+        >
+          <Icon style={{ paddingRight: '5px' }}>mood</Icon>
+          Positiv
+        </button>
+
+        <button
+          className={'ratingButton' + getClassNameSelectedUnselected(indicator, 'negative')}
+          onClick={() => negativeValuation(indicator.id)}
+        >
+          <Icon style={{ paddingRight: '5px' }}>mood_bad</Icon>
+          Negativ
+        </button>
+      </div>
+    </div>
+  )
 }
 
 const mapStateToProps = (state: Rootstate) => ({
-  selectedIndicators: getSelectedIndicators(state)
-});
+  selectedIndicators: getSelectedIndicators(state),
+})
 
-const mapDispatchToProps = ({
-  positiveValuation: SetPositiveValuation,
-  negativeValuation: SetNegativeValuation,
-});
+const mapDispatchToProps = {
+  positiveValuation: setPositiveValuation,
+  negativeValuation: setNegativeValuation,
+}
 
-export default compose(
-    withStyles(styles),
-    connect(mapStateToProps, mapDispatchToProps))
-(IndicatorRatingLine);
+export default compose<Props, PublicProps>(
+  // withStyles(styles),
+  connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )
+)(IndicatorRatingLine)

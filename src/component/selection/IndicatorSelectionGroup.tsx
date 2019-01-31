@@ -1,86 +1,97 @@
-import * as React from 'react';
-import { connect } from 'react-redux';
-import { compose } from 'redux';
-import { Rootstate } from '../../state/index';
-import { getGroupedIndicators } from '../../state/indicator/selectors';
-import { Indicator } from '../../state/indicator/types';
-import { deselectIndicator, selectIndicator, } from '../../state/indicator/actions';
-import { getUtil } from '../../state/util/selectors';
-import Grid from 'material-ui/Grid';
-import { Theme, WithStyles, withStyles } from 'material-ui/styles';
-import { FormControlLabel } from 'material-ui/Form';
+import * as React from 'react'
+import * as _ from 'lodash'
+import { connect } from 'react-redux'
+import { compose } from 'recompose'
+import { Rootstate } from '../../state/index'
+import { Indicator } from '../../state/indicator/types'
+import {
+  deselectIndicator,
+  selectIndicator,
+  toggleGroupIndicators,
+} from '../../state/indicator/actions'
 
-export interface Props {
+interface PublicProps {
+  groupName: string
   value: Indicator[]
-  groupName: String
-
-  select(id: string): void
-  deselect(id: string): void
 }
 
-type ClassNames = WithStyles<'checkbox' | 'checked' | 'sizeIcon' >
+type Props = {
+  select(id: string): void
+  deselect(id: string): void
+  toggleGroup(subject: string, selected: boolean): void
+} & PublicProps
 
-export const styles = (theme: Theme) => ({
-  checkbox: {
-    marginLeft: '15px',
-  } as React.CSSProperties,
-  checked: {
-    color: '#1d4e2c',
-    '&$checked': {
-      color: '#1d4e2c'[500],
-    }
-  } as React.CSSProperties,
-  sizeIcon: {
-    fontSize: 20,
-  } as React.CSSProperties,
-});
+function getToggleLabel(label: String) {
+  switch (label) {
+    case 'Gesellschaft und Soziales':
+      return 'Alle gesellschaftlichen Indikatoren'
+    case 'Raum und Umwelt':
+      return 'Alle räumlichen Indiktatoren'
+    case 'Wirtschaft und Arbeit':
+      return 'Alle wirtschaftlichen Indikatoren'
+    default:
+      return 'Alle Indikatoren'
+  }
+}
 
-const IndicatorSelectionGroup: React.SFC<Props & ClassNames> = (props) => {
-  const {classes, value, groupName, select, deselect} = props;
-  // console.log(classes);
+const IndicatorSelectionGroup: React.SFC<Props> = props => {
+  const { value, groupName, select, deselect, toggleGroup } = props
+  const groupSelectedCount = _.filter(value, indicator => indicator.selected).length
   return (
-    <Grid item xs={4}>
-        <h3>{groupName}</h3>
-        <Grid container>
-        {
-            value.map(indicator => (
-                <Grid item xs={12} key={indicator.id}>
-                <FormControlLabel
-                    key={indicator.id}
-                    control={
-                        <input
-                            type="checkbox"
-                            id={indicator.id}
-                            className={classes.checkbox}
-                            checked={indicator.selected}
-                            onChange={(e) => {
-                              return e.target.checked ? select(indicator.id) : deselect(indicator.id)
-                            }}
-                            value={indicator.id}
-                        />
-                    }
-                    label={indicator.name}
-                    style={{padding: '5px'}}
-                />
-                </Grid>
-            ))
-        }
-        </Grid>
-    </Grid>
-  );
+    <div className="selectionGroup">
+      <div className="selectionGroupTitle">
+        {groupName} ({groupSelectedCount})
+      </div>
+      <div className="selectionCheckboxes">
+        {value.map(indicator => (
+          <div key={indicator.id} className="selectionCheckbox">
+            <label>
+              <input
+                type="checkbox"
+                id={indicator.id}
+                name={indicator.name}
+                value={indicator.id}
+                checked={indicator.selected || false}
+                onChange={e => {
+                  return e.target.checked ? select(indicator.id) : deselect(indicator.id)
+                }}
+              />
+              {indicator.name}
+            </label>
+          </div>
+        ))}
+      </div>
+      <div className="toggleGroup">
+        <label>
+          <input
+            type="checkbox"
+            id={groupName}
+            value={groupName}
+            checked={groupSelectedCount === value.length}
+            onChange={e => {
+              return toggleGroup(groupName, e.target.checked)
+            }}
+          />
+          {getToggleLabel(groupName)}
+        </label>
+      </div>
+    </div>
+  )
 }
 
 const mapStateToProps = (state: Rootstate) => ({
-  groupedIndicators: getGroupedIndicators(state),
-  util: getUtil(state)
-});
+  // empty
+})
 
-const mapDispatchToProps = ({
+const mapDispatchToProps = {
   select: selectIndicator,
   deselect: deselectIndicator,
-});
+  toggleGroup: toggleGroupIndicators,
+}
 
-export default compose(
-    withStyles(styles),
-    connect(mapStateToProps, mapDispatchToProps))
-(IndicatorSelectionGroup);
+export default compose<Props, PublicProps>(
+  connect(
+    mapStateToProps,
+    mapDispatchToProps
+  )
+)(IndicatorSelectionGroup)

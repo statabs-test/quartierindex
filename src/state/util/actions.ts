@@ -10,7 +10,14 @@ export interface ToggleIndicatorSelectionVisibility {
   }
 }
 
-export type UtilAction = ToggleIndicatorSelectionVisibility; // type with all interfaces, more with ||
+export interface DisableDisclaimer {
+  type: constants.DISABLE_DISCLAIMER;
+  payload: {
+    visible: boolean
+  }
+}
+
+export type UtilAction = ToggleIndicatorSelectionVisibility | DisableDisclaimer; // type with all interfaces, more with ||
 
 /**
  * Actions with type and payload
@@ -24,3 +31,11 @@ export const toggleIndicatorSelectionVisibility = (currentVisibility: boolean)
       }
     }
 );
+
+export const disableDisclaimer = (): DisableDisclaimer => ({
+  type: constants.DISABLE_DISCLAIMER,
+  payload: {
+    visible: false
+  }
+});
+

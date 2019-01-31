@@ -11,4 +11,5 @@ export interface SelectIndicatorConfig {
 export interface Util {
   readonly rootConf: RootConfig
   readonly selectIndicatorConf: SelectIndicatorConfig
+  readonly showDisclaimer: boolean
 }

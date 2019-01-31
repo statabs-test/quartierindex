@@ -4,17 +4,18 @@
 }
 
 * {
-  font-size:12px;
-  font-weight:normal;
-  font-family: "Helvetica Neue", Helvetica, Arial sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: 'Helvetica Neue', Helvetica, Arial sans-serif;
 }
 
-h1, h2 {
-  font-size:14px;
+h1,
+h2 {
+  font-size: 12px;
 }
 
 html {
- background: #fcfcfc;
+  background: #fcfcfc;
 }
 
 /*Grid setup*/
@@ -26,27 +27,156 @@ html {
   height: 700px;
 }
 
-/*HEADER
-----------------------------------------------*/
+label,
+input[type='checkbox'],
+input[type='radio'] {
+  cursor: pointer;
+}
 
-.App-navigation {
-  position: absolute;
+.text {
+  font-size: 9.6pt;
+  line-height: 14pt;
+}
+
+/* Wizard
+------------------------------------------------*/
+h2.wizardTitle {
+  font-family: Arial;
+  font-size: 13pt;
+  font-weight: bold;
+  color: #225b33;
+  margin-left: 5px;
+  margin-bottom: 0px;
+}
+
+.wizardDescription {
+  margin-bottom: 10px;
+}
+h1.welcome-title {
+  font-family: Arial, sans-serif;
+  font-size: 22pt;
+  font-weight: bold;
+  color: black;
+}
+
+.welcome-img {
+  width: 951px;
+  height: 153px;
+  margin-top: 6px;
+  margin-bottom: 54px;
+}
+
+h2.district-ranking-title {
+  font-family: Arial, sans-serif;
+  font-size: 13pt;
+  font-weight: bold;
+  color: black;
+}
+
+div.hideDescription {
+  display: none;
+}
+
+/* Main view
+-----------------------------------------------*/
+.main-view {
+  position: relative;
+}
+
+.main-view > .information {
+  height: 10%;
+  top: 0;
+}
+
+.main-view > .title {
   height: 5%;
-  width: 100%;
-  
-  font-size: 1.5em;
-  margin: 0;
+  top: 10%;
+}
+
+.main-view > .district-ranking {
+  height: 83%;
+  top: 120px /**--ranking-top**/;
+}
+
+.main-view > .indicator-ranking {
+  height: 95%;
+  top: 0;
+}
+
+.main-view > .navigation {
+  height: 4%;
+  bottom: 0;
+
   text-align: center;
-  /* background-color: #1208081f; */
   display: flex;
-  
 }
-.nav-button {
-  display: flex !important;
-  width: 100%;
-  margin-left: 5% !important;
-  margin-right: 5% !important;
+
+.main-view > .left-grid {
+  position: absolute;
+  width: 300px; /*--district-ranking-width*/
+  left: 0;
 }
+
+.main-view > .right-grid {
+  position: absolute;
+  width: calc(100% - 300px /*--district-ranking-width*/);
+  left: 300px; /* --district-ranking-width */
+}
+
+
+.district-ranking > .container {
+  --margin: 4%;
+  position: relative;
+  display: inline-table;
+  width: calc(100% - 4px /**--margin**/);
+  height: calc(100% - 4px /**--margin**/);
+  left: calc(4px /**--margin**/ / 2);
+  background: #f5f5f5;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.mainFrame {
+  background-color: #f5f5f5;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+}
+
+/*----------------------------------------------*/
+/* INDICATOR SELECTION                          */
+/*----------------------------------------------*/
+.selections {
+  display: flex;
+}
+
+.selectionGroup {
+  display: flex; /* This pushs the toggle group to the bottom */
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1; /* All columns same width */
+  background-color: #fcfcfc;
+  margin: 5px;
+  padding-left: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+}
+
+.selectionGroupTitle {
+  padding: 5px 0px 3px 5px;
+}
+.selectionCheckboxes {
+  flex-grow: 1;
+  padding-bottom: 10px;
+}
+
+.selectionCheckbox {
+  padding-bottom: 2px;
+}
+
+.toggleGroup {
+  padding: 0px 0px 5px 0px;
+}
+
 /*RANKING MAIN CONTAINER
 -----------------------------------------------*/
 .ranking-container {
@@ -63,63 +193,27 @@ html {
   /* background: blue;*/
   height: 100%;
   width: 100%;
- 
   z-index: 2;
 }
 
-/*PARALLEL LINE PLOT MAIN CONTAINER
-------------------------------------------------*/
-
-
-.parallel-line-plot-scroll-area {
-  position: absolute;
-  left: 20%;
-  top: 6%;
-  
-  width: 727px;
-  height: 750px;
-
-  overflow-x: scroll;
-  overflow-y: hidden;
-   /* background: green; */
-}
-
-.parallel-line-plot-container{
-  width: 100%;
-  height: 100%;
-}
-
-.parallel-line-plot-legend {
-  height: 18%;
-  width: 100%;
-  /* background: rgb(245, 143, 0); */
-  align-items: center;
-  position: absolute;
-  /* rechars creates some transparant divs...*/  
-}
-
-.parallel-line-plot-chart {
-  position: absolute;
-  /* background: cornflowerblue; */
-  left: 115px;
-  top: 125px;
-}
-
-
 .legend-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 230px;
+  align-items: center;
+  display: -webkit-box;
+  width: 190px;
   height: 110px;
-  position: absolute;
-  left: 0;
 
-  border-radius: 12px;
+  margin-left: 3px; /**--column-margin-indicator**/
+  margin-right: 3px; /**--column-margin-indicator**/
+
+  border-radius: 5px;
   text-align: center;
-  border: solid #e0e0e0;
+  border: 1px solid #999999;
 
   /* background: #cc8dab; */
+}
+
+.neutral-border {
+  border: 1px solid #aaa;
 }
 
 .legend-container-title {
@@ -138,12 +232,8 @@ html {
   display: flex;
   flex-direction: column;
 }
-/*RANKING MAIN CONTAINER
------------------------------------------------*/
-.ranking-container {
-  display: grid;
-  grid-area: ranking;
-}
+
+/*RANKING MAIN CONTAINER -----------------------------------------------*/
 
 .legend-container-right {
   width: 165px;
@@ -160,118 +250,181 @@ html {
 }
 
 .rate-positive {
- 
   grid-area: positiv;
   align-items: center;
-   /* background: #0044ed; */
+  /* background: #0044ed; */
 }
 
 .rate-negativ {
-  
   grid-area: negativ;
   align-items: center;
 
-   /* background: #eded00; */
+  /* background: #eded00; */
 }
 
 .rating-icon {
   color: white;
   border-radius: 0 12px 12px 0;
   width: 100% !important;
-
-}
-
-.weight {
-  grid-area: weighting;
-  padding: 0 20px;
-  margin-top: 10px;
-  margin-bottom: 0px;
-   /* background: cornflowerblue; */
 }
 
 .weight-label {
-  margin-top: 12%;
+  grid-area: weighting;
+  margin-top: 12px;
+  /* background: cornflowerblue; */
+}
+
+.weight {
+  padding: 0 20px;
+  margin-top: 10px;
   text-align: left;
   color: #808080;
 }
 
 /* Indicator selection and deselection
 ------------------------------------------------*/
-.floating-container {
-  z-index: 10;
-  display: grid;
-  width: calc(var(--app-width) - var(--app-header-height));
-  height: var(--app-height);
- 
-  padding: 0;
+
+/*------------------------------------------------*/
+/* R A I T I N G  (Pos / Neg)                     */
+/*------------------------------------------------*/
+.contentBox {
+  background-color: #fcfcfc;
+  margin: 5px;
+  padding: 8px 5px 8px 5px;
+  padding-right: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  height: 100%;
 }
 
-.selection-container {
-  --margin: calc(var(--app-header-height) );
-  --height: calc(var(--app-height) - var(--margin));
-  --width: calc(var(--app-width) - var(--ranking-width));
-
-  height: var(--height);
-  margin-top: var(--margin);
-  margin-left: var(--ranking-width);
-  width: var(--width);
-
+.rating {
   display: flex;
-  flex-direction: column;
-  background: #e0e0e0f5;
-  border-radius: 50px 20px;
-  background: blanchedalmond;
 }
 
-/*UTIL ELEMENTS
-------------------------------------------------*/
-.title {
-  grid-area: title;
-  width: 100%;
-  height: auto;
-  background: brown;
-  text-align: center;
-  margin: 0;
+.ratingLeft {
+  flex: 8;
+  background-color: #fcfcfc;
+  margin: 5px;
+  padding: 8px 5px 8px 5px;
+  padding-right: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.raitingRight {
+  flex: 4;
+  background-color: #fcfcfc;
+  margin: 5px;
+  padding: 8px 5px 8px 5px;
+  padding-right: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.indicatorRatingDescription {
+  padding: 4px 0px 4px 0px;
+  height: 45px;
+}
+.ratingLine {
+  /* Use Flex row system */
+  display: flex;
+  padding: 4px 0px 4px 0px;
+  height: 45px;
+  justify-content: space-between;
+}
+
+.ratingLineButtons {
+  display: flex;
+  height: 35px;
+  justify-content: flex-end;
+}
+
+.ratingButton {
+  display: flex;
+  color: white;
+  text-transform: none;
+  border-radius: 2px;
+  align-items: center;
+  box-shadow: 1px 2px #c1c1c1;
 }
 
 /* Rating buttons
 ------------------------------------------------*/
 .negative-selected {
-  background-color: #e54803 !important;
+  background-color: #e54803;
+  border: 1px solid #e54803;
 }
 
 .negative-unselected {
-  background-color: #E6D3CB !important;
+  background-color: #e6d3cb;
+  border: 1px solid #e6d3cb;
+  cursor: pointer;
+}
+
+.negative-unselected-disabled {
+  background-color: #e6d3cb;
+  border: 1px solid #e6d3cb;
+  cursor: not-allowed;
 }
 
 .negative-unselected:hover {
-  background-color: #e54803 !important;
-}
-
-.negative-border {
-
+  background-color: #e54803;
+  border: 1px solid #e54803;
 }
 
 .negative {
-  background: #e54803 !important;
-}
-
-.positive {
-  background: #0387c1 !important;
-}
-
-.positive-border {
-
+  background: #e54803;
+  border: 1px solid #e54803;
 }
 
 .positive-selected {
-  background-color: #0387c1 !important;
+  background-color: #0387c1;
+  border: 1px solid #0387c1;
+  margin-right: 10px;
 }
 
 .positive-unselected {
-  background-color: #9AB6C3 !important;
+  background-color: #9ab6c3;
+  border: 1px solid #9ab6c3;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.positive-unselected-disabled {
+  background-color: #9ab6c3;
+  border: 1px solid #9ab6c3;
+  margin-right: 10px;
+  cursor: not-allowed;
 }
 
 .positive-unselected:hover {
-  background-color: #0387c1 !important;
+  background-color: #0387c1;
+  border: 1px solid #0387c1;
+  margin-right: 10px;
+}
+
+/* Remove horizontal lines in barchart */
+.recharts-wrapper .recharts-cartesian-grid-horizontal {
+  stroke-opacity: 0;
+}
+
+/* keep white space in labels of y-axis */
+.preserveWhiteSpace {
+  white-space: pre;
+  margin-left: 1em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.recharts-cartesian-axis-tick-value {
+  fill: black;
+  white-space: pre;
+}
+
+.clear-icon {
+  cursor: pointer;
 }

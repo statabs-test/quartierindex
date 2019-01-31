@@ -1,0 +1,31 @@
+.nav-button {
+  display: flex !important;
+  /* Normally the width would be 190px, but with these values it looks most correct  */
+  width: 191px;
+  margin-left: 0.5% !important;
+  margin-right: 0.6% !important;
+}
+
+div.wizardFooter {
+  margin: 10px 5px 5px 5px;
+  height: 80px;
+}
+
+p.stepper-description {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.wizard-right-button {
+  width: 100% !important;
+  margin-bottom: 5px !important;
+  padding: 8px 13px !important;
+}
+
+.wizard-left-button {
+  width: 100% !important;
+  margin-bottom: 5px !important;
+  padding: 8px 13px !important;
+}
