@@ -1,7 +1,7 @@
 import * as React from 'react'
-import { round, isEqual } from 'lodash'
+import { isEqual, round } from 'lodash'
 import { connect } from 'react-redux'
-import { Bar, BarChart, CartesianGrid, Cell, XAxis, YAxis, Label } from 'recharts'
+import { Bar, BarChart, CartesianGrid, Cell, Label, XAxis, YAxis } from 'recharts'
 import { Rootstate } from '../../state'
 import { getSortedGlobalRanking } from '../../state/observation/selectors'
 import { Rank } from '../../state/observation/types'
@@ -13,7 +13,7 @@ import DistrictLabel from './DistrictLabel'
 import AnimatePosition from './AnimatePosition'
 import { getRankPosition } from '../../helpers'
 import './districtRanking.css'
-import { domainOf, getTicks } from './util';
+import { asDomain, getTicks } from './util';
 
 export interface PublicProps {
   className?: string
@@ -34,15 +34,14 @@ interface StateProps {
 }
 
 
-
 class DistrictRanking extends React.Component<PublicProps & InjectedProps, StateProps> {
   constructor(props: any) {
     super(props)
-    this.state = { positions: {} }
+    this.state = {positions: {}}
   }
 
   render() {
-    const { districts, ranks, indicators } = this.props
+    const {districts, ranks, indicators} = this.props
     let rankNum = 0
     const data = ranks.map((rank, i) => {
       if (rank.districtId !== '99') {
@@ -63,8 +62,8 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
 
     const positions = getRankPosition(data)
     const positionsBefore = this.state.positions
-
-    const ticks = getTicks(domainOf(data), 4)
+    const ticks = getTicks(data)
+    const domain = asDomain(ticks)
     return (
       <div className="left-grid district-ranking">
         <div className="container">
@@ -73,17 +72,17 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
             from={positionsBefore ? positionsBefore : positions}
             to={positions}
             onRest={() =>
-              !isEqual(positionsBefore, positions) ? this.setState({ positions: positions }) : {}
+              !isEqual(positionsBefore, positions) ? this.setState({positions: positions}) : {}
             }
           >
             {props => {
               return (
                 <BarChart data={data} width={285} height={530} layout="vertical">
-                  <CartesianGrid />
+                  <CartesianGrid/>
                   {/* TODO: Check color of bar*/}
                   <XAxis
                     axisLine={false}
-                    domain={domainOf(data)}
+                    domain={domain}
                     interval="preserveStart"
                     type="number"
                     tickLine={false}
@@ -116,9 +115,9 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
                   <Bar dataKey="value">
                     {data.map((entry, index) =>
                       entry.id === '99' ? (
-                        <Cell key={`cell-${index}`} fill={'black'} y={props[entry.id]} />
+                        <Cell key={`cell-${index}`} fill={'black'} y={props[entry.id]}/>
                       ) : (
-                        <Cell key={`cell-${index}`} fill={'#FFD300'} y={props[entry.id]} />
+                        <Cell key={`cell-${index}`} fill={'#FFD300'} y={props[entry.id]}/>
                       )
                     )}
                   </Bar>
@@ -128,7 +127,7 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
           </AnimatePosition>
           <div className="districtRankingExplanation">
             <p>
-              Berechnungsergebnis aus: <br />
+              Berechnungsergebnis aus: <br/>
               <ul>
                 {indicators.map(indicator => {
                   return (
