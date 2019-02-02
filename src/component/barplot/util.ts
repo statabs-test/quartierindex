@@ -14,13 +14,28 @@ export const getTicks = (
   const baseTicks = getBaseTicks(minMax)
   const exponent = getExponent(minMax, baseTicks)
   const ticks = baseTicks.map(b => b * Math.pow(10, exponent))
-  console.log(ticks)
   return ticks
 }
 
 const getBaseTicks = (minMax: { min: number, max: number })
   : number[] => {
-  return [0, 0.25, 0.5, 0.75, 1]
+  const min = minMax.min
+  const max = minMax.max
+  const getCondition = ()
+    : 'bothNegative' | 'negativePositive' | 'bothPositive' => {
+    if (min < 0 && max < 0) return 'bothNegative'
+    else if (min < 0 && max > 0) return 'negativePositive'
+    else return 'bothPositive'
+  }
+
+  switch (getCondition()) {
+    case 'bothNegative':
+      return [-1, -0.75, -0.5, -0.25, 0]
+    case 'negativePositive':
+      return [-1, -0.5, 0, 0.5, 1]
+    case 'bothPositive':
+      return [0, 0.25, 0.5, 0.75, 1]
+  }
 }
 
 const getExponent = (minMax: { min: number, max: number }, bases: number[])
