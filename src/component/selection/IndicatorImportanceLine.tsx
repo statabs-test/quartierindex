@@ -2,7 +2,8 @@ import * as React from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'recompose'
 import { Rootstate } from '../../state'
-import { Tooltip } from '@material-ui/core'
+// import { Tooltip } from '@material-ui/core'
+import Tooltip from '../customElements/Tooltip'
 import { getSelectedIndicators } from '../../state/indicator/selectors'
 import { Indicator, WeightNumber } from '../../state/indicator/types'
 import Grid from '@material-ui/core/Grid'
@@ -65,9 +66,7 @@ const IndicatorImportanceLine: React.SFC<Props> = props => {
       <Grid item xs={6}>
         <p>
           &#x25BA; {prefix}{' '}
-          <Tooltip placement="top" title={indicator.description}>
-            <span style={{ color: '#386c8e', fontWeight: 'bold' }}>{text}</span>
-          </Tooltip>{' '}
+          <Tooltip title={text} description={indicator.description}>{text}</Tooltip>
           {suffix} ...
         </p>
       </Grid>
