@@ -11,36 +11,74 @@ export const getTicks = (
 )
   : number[] => {
   const minMax = getMinMax(data)
-  const baseTicks = getBaseTicks(minMax)
-  const exponent = getExponent(minMax, baseTicks)
-  const ticks = baseTicks.map(b => b * Math.pow(10, exponent))
+  const ticks = getBaseTicks(minMax)
   return ticks
 }
 
-const getBaseTicks = (minMax: { min: number, max: number })
+const getBaseTicks = (minMax: { min: Number, max: Number })
   : number[] => {
+
   const min = minMax.min
   const max = minMax.max
-  const getCondition = ()
-    : 'bothNegative' | 'negativePositive' | 'bothPositive' => {
-    if (min < 0 && max < 0) return 'bothNegative'
-    else if (min < 0 && max > 0) return 'negativePositive'
-    else return 'bothPositive'
+
+  const getDecimals = (n: Number): Number => {
+    const nAsString = n.toString().replace('.', '').replace('-', '')
+    if (nAsString.charAt(0) !== '0') {
+      return 0
+    } else {
+      let decimal = 1
+      while (nAsString.charAt(decimal) === '0') {
+        decimal++
+      }
+
+      return decimal
+    }
   }
 
-  switch (getCondition()) {
-    case 'bothNegative':
-      return [-1, -0.75, -0.5, -0.25, 0]
-    case 'negativePositive':
-      return [-1, -0.5, 0, 0.5, 1]
-    case 'bothPositive':
-      return [0, 0.25, 0.5, 0.75, 1]
-  }
-}
 
-const getExponent = (minMax: { min: number, max: number }, bases: number[])
-  : number => {
-  return -1
+  const getSmallerDecimal = (): Number => {
+    const minDecimal = getDecimals(min)
+    const maxDecimal = getDecimals(max)
+    if (minDecimal > maxDecimal) return maxDecimal
+    else return minDecimal
+  }
+
+  const decimals = getSmallerDecimal()
+  const minTick = (): number => {
+    return Number((min.valueOf() - Math.pow(10, -decimals.valueOf())).toFixed(decimals.valueOf()))
+  }
+
+  const maxTick = (): number => {
+    if (max === 1) {
+      return 1
+    } else {
+      const roundingErrorCorrection = Math.pow(10, -decimals)
+      return Number((Number(max.toFixed(decimals.valueOf())) + roundingErrorCorrection).toFixed(decimals.valueOf()))
+    }
+  }
+
+  const withMiddleTick = (minTick: number, maxTick: number): number[] => {
+    let diff = 0
+    if (minTick === maxTick) {
+      const offset = Math.pow(10, decimals.valueOf())
+      return [minTick - offset, minTick, maxTick + offset]
+    }
+
+    if (minTick + Math.pow(10, decimals.valueOf()).toFixed(decimals.valueOf()) === maxTick.toString()) {
+      const offset = Math.pow(10, decimals.valueOf())
+      return [minTick - offset, minTick, maxTick]
+    }
+
+    if (minTick < 0 && maxTick > 0) {
+      diff = Math.abs(minTick) + maxTick
+    } else {
+      diff = Math.abs(Math.abs(minTick) - Math.abs(maxTick))
+    }
+    const middleTick = Number((minTick + diff / 2).toFixed(decimals.valueOf()))
+    return [minTick, middleTick, maxTick]
+  }
+
+  return withMiddleTick(minTick(), maxTick())
 }
 
 const getMinMax = (
