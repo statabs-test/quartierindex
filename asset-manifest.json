@@ -1,16 +1,16 @@
 {
   "main.css": "/quartierindex/static/css/main.887279ff.chunk.css",
-  "main.js": "/quartierindex/static/js/main.06754cfa.chunk.js",
-  "main.js.map": "/quartierindex/static/js/main.06754cfa.chunk.js.map",
+  "main.js": "/quartierindex/static/js/main.369619b1.chunk.js",
+  "main.js.map": "/quartierindex/static/js/main.369619b1.chunk.js.map",
   "static/css/1.e986a47d.chunk.css": "/quartierindex/static/css/1.e986a47d.chunk.css",
   "static/js/1.5d055b5e.chunk.js": "/quartierindex/static/js/1.5d055b5e.chunk.js",
   "static/js/1.5d055b5e.chunk.js.map": "/quartierindex/static/js/1.5d055b5e.chunk.js.map",
   "runtime~main.js": "/quartierindex/static/js/runtime~main.fbb9092a.js",
   "runtime~main.js.map": "/quartierindex/static/js/runtime~main.fbb9092a.js.map",
-  "static/css/1.e986a47d.chunk.css.map": "/quartierindex/static/css/1.e986a47d.chunk.css.map",
-  "static/media/welcome.jpg": "/quartierindex/static/media/welcome.516a5680.jpg",
   "static/css/main.887279ff.chunk.css.map": "/quartierindex/static/css/main.887279ff.chunk.css.map",
+  "static/media/welcome.jpg": "/quartierindex/static/media/welcome.516a5680.jpg",
+  "static/css/1.e986a47d.chunk.css.map": "/quartierindex/static/css/1.e986a47d.chunk.css.map",
   "index.html": "/quartierindex/index.html",
-  "precache-manifest.a5d230fe04c47bfabb33f940d001af7a.js": "/quartierindex/precache-manifest.a5d230fe04c47bfabb33f940d001af7a.js",
+  "precache-manifest.e15b5dc77140499998599fb0d027a90f.js": "/quartierindex/precache-manifest.e15b5dc77140499998599fb0d027a90f.js",
   "service-worker.js": "/quartierindex/service-worker.js"
 }
