@@ -128,8 +128,7 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
             }}
           </AnimatePosition>
           <div className="districtRankingExplanation">
-            <p>
-              Berechnungsergebnis aus: <br/>
+              Berechnungsergebnis aus:
               <ul>
                 {indicators.map(indicator => {
                   return (
@@ -141,7 +140,6 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
                   )
                 })}
               </ul>
-            </p>
           </div>
         </div>
       </div>

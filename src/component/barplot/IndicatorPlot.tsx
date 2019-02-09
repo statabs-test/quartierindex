@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { compose } from 'recompose'
 import { connect } from 'react-redux'
-import { Bar, BarChart, CartesianGrid, XAxis, YAxis } from 'recharts'
+import { Bar, BarChart, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts'
 import { round } from 'lodash'
 import { Rank } from '../../state/observation/types'
 import { Rootstate } from '../../state'
@@ -10,6 +10,7 @@ import { District } from '../../state/district/types'
 import { Indicator, NegativePositive } from '../../state/indicator/types'
 import { allDistrictsById } from '../../state/district/selectors'
 import { getColor } from '../../helpers'
+import IndicatorTooltip from './IndicatorTooltip'
 export interface IndicatorPlotPublicProps {
   // indicator id
   indicator: Indicator
@@ -46,6 +47,7 @@ const IndicatorPlot: React.SFC<IndicatorProps> = ({ districts, indicator, ranks 
           ticks={ticks}
           tickFormatter={tick => (ticks.indexOf(tick) % 2 === 0 ? tick : '')}
         />
+        <Tooltip content={<IndicatorTooltip indicator={indicator} />}/>
         {
           <YAxis
             dataKey="name"

@@ -88,6 +88,7 @@ const indicatorData = _.uniqBy(
         subject: data.subject,
         publication: data.publication,
         year: data.year,
+        yearText: data.yearChar,
         // Compare with indicator types
         valuation: 1,
         valuationText: data.valuationText,

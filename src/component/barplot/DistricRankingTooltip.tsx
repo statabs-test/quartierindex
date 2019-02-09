@@ -27,9 +27,7 @@ class DistrictRankingTooltip extends React.Component<TooltipProps> {
       const { active } = this.props;
       
       if (active) {
-        
         const { payload } = this.props;
-        console.log(payload)
         let style = this.getStyle(payload[0].payload.id);
         return (
           <div className="districtRankingTooltip" style={style}>
