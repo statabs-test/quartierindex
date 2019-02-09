@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { isEqual, round } from 'lodash'
 import { connect } from 'react-redux'
-import { Bar, BarChart, CartesianGrid, Cell, Label, XAxis, YAxis } from 'recharts'
+import { Bar, BarChart, CartesianGrid, Cell, Label, XAxis, YAxis, Tooltip } from 'recharts'
 import { Rootstate } from '../../state'
 import { getSortedGlobalRanking } from '../../state/observation/selectors'
 import { Rank } from '../../state/observation/types'
@@ -12,6 +12,7 @@ import { District } from '../../state/district/types'
 import DistrictLabel from './DistrictLabel'
 import AnimatePosition from './AnimatePosition'
 import { getRankPosition } from '../../helpers'
+import DistrictRankingTooltip from './DistricRankingTooltip'
 import './districtRanking.css'
 import { asDomain, getTicks } from './util';
 
@@ -91,6 +92,7 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
                       tick > 0 ? tick.toString().substr(0, 4) : tick.toString().substr(0, 5)
                     }
                   />
+                  <Tooltip content={<DistrictRankingTooltip/>} />
                   <YAxis
                     width={135}
                     dataKey="name"
