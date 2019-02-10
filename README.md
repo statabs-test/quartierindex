@@ -24,6 +24,13 @@ This file uses setup/convert.js to convert the input data located in ./data in J
 
 The header names will be replaced and normalized, compare with output in directory.
 
+## Publish site
+To publish the site run the deploy command
+```
+npm run deploy
+```
+With this command the current changes are published to the Github pages which can be accessed under [https://statabs-test.github.io/quartierindex](https://statabs-test.github.io/quartierindex/#/)
+
 ## Authors
 - Denis Augsburger
 - Fabrizio Parillo
