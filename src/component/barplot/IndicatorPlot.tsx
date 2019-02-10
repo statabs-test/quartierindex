@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { compose } from 'recompose'
 import { connect } from 'react-redux'
-import { Bar, BarChart, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts'
+import { Bar, BarChart, CartesianGrid, Tooltip, XAxis, YAxis } from 'recharts'
 import { round } from 'lodash'
 import { Rank } from '../../state/observation/types'
 import { Rootstate } from '../../state'
@@ -11,18 +11,26 @@ import { Indicator, NegativePositive } from '../../state/indicator/types'
 import { allDistrictsById } from '../../state/district/selectors'
 import { getColor } from '../../helpers'
 import IndicatorTooltip from './IndicatorTooltip'
+
 export interface IndicatorPlotPublicProps {
   // indicator id
   indicator: Indicator
 }
 
+
 interface IndicatorProps {
   indicator: Indicator
-  districts: { [key: string]: District }
+  districts: {
+    [key
+      :
+      string
+      ]:
+      District
+  }
   ranks: Rank[]
 }
 
-const IndicatorPlot: React.SFC<IndicatorProps> = ({ districts, indicator, ranks }) => {
+const IndicatorPlot: React.SFC<IndicatorProps> = ({districts, indicator, ranks}) => {
   const data = ranks.map(rank => {
     return {
       name: districts[rank.districtId].name,
@@ -37,7 +45,7 @@ const IndicatorPlot: React.SFC<IndicatorProps> = ({ districts, indicator, ranks 
   return (
     <div className="bar-plot" key={indicator.id}>
       <BarChart data={data} layout="vertical" width={190} height={530}>
-        <CartesianGrid />
+        <CartesianGrid/>
         // TODO: Check color of bar
         <XAxis
           axisLine={false}
@@ -47,7 +55,8 @@ const IndicatorPlot: React.SFC<IndicatorProps> = ({ districts, indicator, ranks 
           ticks={ticks}
           tickFormatter={tick => (ticks.indexOf(tick) % 2 === 0 ? tick : '')}
         />
-        <Tooltip content={<IndicatorTooltip indicator={indicator} />}/>
+        <Tooltip offsetX={-190} offsetY={-37}
+                 content={<IndicatorTooltip indicator={indicator}/>}/>
         {
           <YAxis
             dataKey="name"
@@ -58,7 +67,7 @@ const IndicatorPlot: React.SFC<IndicatorProps> = ({ districts, indicator, ranks 
             tickLine={false}
           />
         }
-        <Bar dataKey="value" fill={color.backgroundColor} />
+        <Bar dataKey="value" fill={color.backgroundColor}/>
       </BarChart>
     </div>
   )
@@ -68,7 +77,7 @@ const IndicatorPlot: React.SFC<IndicatorProps> = ({ districts, indicator, ranks 
 const makeMapStateToProps = () => {
   const getIndicatorRanking = makeGetIndicatorRanking()
   const mapStateToProps = (state: Rootstate, props: IndicatorPlotPublicProps): IndicatorProps => ({
-    ranks: getIndicatorRanking(state, { id: props.indicator.id }),
+    ranks: getIndicatorRanking(state, {id: props.indicator.id}),
     districts: allDistrictsById(state),
     ...props,
   })

@@ -1,7 +1,10 @@
 
 .districtRankingTooltip {
-    background: #fff;
-    color: #000;
-    text-align: left;
+  overflow: visible;
+  position: relative;
+  text-align: left;
+  width: 180px;
+  height: 74px;
+  padding-top: 1px;
 }
 

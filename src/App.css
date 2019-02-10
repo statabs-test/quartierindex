@@ -134,7 +134,7 @@ div.hideDescription {
   background: #f5f5f5;
   border: 1px solid #cccccc;
   border-radius: 5px;
-  overflow: hidden;
+  overflow: visible;
 }
 .mainFrame {
   background-color: #f5f5f5;
@@ -427,4 +427,8 @@ div.hideDescription {
 
 .clear-icon {
   cursor: pointer;
+}
+
+.recharts-tooltip-wrapper {
+  z-index: 2;
 }

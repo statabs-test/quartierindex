@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { isEqual, round } from 'lodash'
 import { connect } from 'react-redux'
-import { Bar, BarChart, CartesianGrid, Cell, Label, XAxis, YAxis, Tooltip } from 'recharts'
+import { Bar, BarChart, CartesianGrid, Cell, Label, Tooltip, XAxis, YAxis } from 'recharts'
 import { Rootstate } from '../../state'
 import { getSortedGlobalRanking } from '../../state/observation/selectors'
 import { Rank } from '../../state/observation/types'
@@ -67,7 +67,7 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
     const domain = asDomain(ticks)
     return (
       <div className="left-grid district-ranking">
-        <div className="container">
+        <div className="container" >
           {/* District ranking bar plot */}
           <AnimatePosition
             from={positionsBefore ? positionsBefore : positions}
@@ -92,7 +92,7 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
                       tick > 0 ? tick.toString().substr(0, 4) : tick.toString().substr(0, 5)
                     }
                   />
-                  <Tooltip content={<DistrictRankingTooltip/>} />
+                  <Tooltip offsetX={-195} offsetY={-37} content={<DistrictRankingTooltip/>} />
                   <YAxis
                     width={135}
                     dataKey="name"
@@ -128,18 +128,18 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
             }}
           </AnimatePosition>
           <div className="districtRankingExplanation">
-              Berechnungsergebnis aus:
-              <ul>
-                {indicators.map(indicator => {
-                  return (
-                    <React.Fragment key={indicator.id}>
-                      <li>
-                        {indicator.name} mit Gewicht {indicator.weight * indicator.valuation}
-                      </li>
-                    </React.Fragment>
-                  )
-                })}
-              </ul>
+            Berechnungsergebnis aus:
+            <ul>
+              {indicators.map(indicator => {
+                return (
+                  <React.Fragment key={indicator.id}>
+                    <li>
+                      {indicator.name} mit Gewicht {indicator.weight * indicator.valuation}
+                    </li>
+                  </React.Fragment>
+                )
+              })}
+            </ul>
           </div>
         </div>
       </div>
