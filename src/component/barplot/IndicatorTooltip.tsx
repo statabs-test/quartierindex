@@ -1,12 +1,13 @@
 import * as React from 'react'
 import { connect } from 'react-redux'
 import { TooltipProps } from 'recharts'
-import { Indicator } from '../../state/indicator/types'
+import { Indicator, NegativePositive } from '../../state/indicator/types'
 import { District } from '../../state/district/types'
 import { Observation } from '../../state/observation/types'
 import { Rootstate } from '../../state'
 import { allDistricts } from '../../state/district/selectors'
 import { getAllObservations } from '../../state/observation/selectors'
+import { getColor } from '../../helpers'
 import './indicatorTooltip.css'
 
 const getObservationText = (indicator: Indicator, observation: Observation)
@@ -47,19 +48,27 @@ class IndicatorTooltip extends React.Component<PublicProps> {
       && observation.indicatorId === indicatorId)[0]
   }
 
+  getRectStyle(indicator: Indicator): any {
+    const color = getColor(indicator.valuation === NegativePositive.Positive)
+    return {
+      fill: 'white',
+      stroke: color.borderColor,
+      strokeWidth: 1
+    }
+  }
+
   render() {
     const {active} = this.props;
     if (active) {
       const {payload, indicator} = this.props;
       const district = this.getDistrictByName(payload[0].payload.name)
       const observation = this.getObservation(indicator.id, district.id);
+      const style = this.getRectStyle(indicator)
       return (
         <div className="indicatorTooltip">
           <svg width={180} height={74} viewBox="-10 -4 190 80" style={{position: 'absolute', zIndex: -1}}>
-            <rect x="0" y="0" rx="5" ry="5" width="180" height="74"
-                  style={{fill: 'white', stroke: 'rgb(3, 135, 193)', strokeWidth: 1}}/>
-            <rect x="-4" y="27" width="10" height="10" transform="rotate(45 -4 32)"
-                  style={{fill: 'white', stroke: 'rgb(3, 135, 193)', strokeWidth: 1}}/>
+            <rect x="0" y="0" rx="5" ry="5" width="180" height="74" style={style}/>
+            <rect x="-4" y="27" width="10" height="10" transform="rotate(45 -4 32)" style={style}/>
             <rect x="-2" y="26" width="11" height="11" transform="rotate(45 -2 31)"
                   style={{fill: 'white', stroke: 'white', strokeWidth: 1}}/>
           </svg>
