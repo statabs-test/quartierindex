@@ -1,0 +1,43 @@
+.tooltip {
+    position: relative;
+  }
+  .tooltip-trigger {
+    /* display: inline-block; */
+    cursor: help;
+  }
+  .tooltip-bubble {
+    position: absolute;
+    display: inline-block;
+    z-index: 10;
+    width: 350px;
+    
+  }
+  .tooltip-top {
+      bottom: 100%;
+      left: 150px;
+      padding-bottom: 9px;
+      transform: translateX(-50%);
+    }
+  .tooltip-bubble::after {
+    content: '';
+    position: absolute;
+    }
+    
+  .tooltip-top::after {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #fff;
+    bottom: 0;
+    left: 10%;
+    transform: translateX(-50%);
+  }
+  .tooltip-message {
+    background: #fff;
+    border-radius: 3px;
+    color: #000;
+    font-size: 1rem;
+    line-height: 1.4;
+    padding: 0.75em;
+    text-align: left;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.1), 10px 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }

@@ -18,6 +18,16 @@ export const allDistrictsById = (state: Rootstate) => {
 }
 
 /**
+ * Get a district by name.
+ * 
+ * @param name the name of the district
+ * @param state the state of the application
+ */
+export const districtByName = (name: string, state: Rootstate): District => {
+  return allDistricts(state).filter(district => district.name === name)[0]
+}
+
+/**
  * Selects one district
  */
 export const getDistrictBy = (districtId: string, state: Rootstate): District => {
