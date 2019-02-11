@@ -1,0 +1,99 @@
+{
+  "_args": [
+    [
+      "@types/recharts@1.1.2",
+      "/home/fp/Repositories/quartierindex"
+    ]
+  ],
+  "_from": "@types/recharts@1.1.2",
+  "_id": "@types/recharts@1.1.2",
+  "_inBundle": false,
+  "_integrity": "sha512-lriVDcpbbSjRK1n1rL41ZxgNhbxJAXZkSZAQ1M91IvNwlM2uc4W9Stevk9ODK1/lzgHpJjc/WJs6aN0s707fCQ==",
+  "_location": "/@types/recharts",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@types/recharts@1.1.2",
+    "name": "@types/recharts",
+    "escapedName": "@types%2frecharts",
+    "scope": "@types",
+    "rawSpec": "1.1.2",
+    "saveSpec": null,
+    "fetchSpec": "1.1.2"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@types/recharts/-/recharts-1.1.2.tgz",
+  "_spec": "1.1.2",
+  "_where": "/home/fp/Repositories/quartierindex",
+  "bugs": {
+    "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues"
+  },
+  "contributors": [
+    {
+      "name": "Maarten Mulders",
+      "url": "https://github.com/mthmulders"
+    },
+    {
+      "name": "Raphael Mueller",
+      "url": "https://github.com/rapmue"
+    },
+    {
+      "name": "Roy Xue",
+      "url": "https://github.com/royxue"
+    },
+    {
+      "name": "Zheyang Song",
+      "url": "https://github.com/ZheyangSong"
+    },
+    {
+      "name": "Rich Baird",
+      "url": "https://github.com/richbai90"
+    },
+    {
+      "name": "Dan Torberg",
+      "url": "https://github.com/caspeco-dan"
+    },
+    {
+      "name": "Peter Keuter",
+      "url": "https://github.com/pkeuter"
+    },
+    {
+      "name": "Jamie Saunders",
+      "url": "https://github.com/jrsaunde"
+    },
+    {
+      "name": "Paul Melnikow",
+      "url": "https://github.com/paulmelnikow"
+    },
+    {
+      "name": "Harry Cruse",
+      "url": "https://github.com/crusectrl"
+    },
+    {
+      "name": "Andrew Palugniok",
+      "url": "https://github.com/apalugniok"
+    }
+  ],
+  "dependencies": {
+    "@types/d3-shape": "*",
+    "@types/react": "*",
+    "@types/recharts-scale": "*"
+  },
+  "description": "TypeScript definitions for Recharts",
+  "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped#readme",
+  "license": "MIT",
+  "main": "",
+  "name": "@types/recharts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+  },
+  "scripts": {},
+  "typeScriptVersion": "2.8",
+  "types": "index",
+  "typesPublisherContentHash": "a4ecbafa55aab59ad413a7f4b32135ec7229f7e73f9643357a7b69a68e5e259c",
+  "version": "1.1.2"
+}

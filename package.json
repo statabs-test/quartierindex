@@ -29,7 +29,7 @@
     "@material-ui/icons": "^3.0.1",
     "@types/classnames": "^2.2.6",
     "@types/rc-slider": "^8.6.0",
-    "@types/recharts": "^1.1.0",
+    "@types/recharts": "file:@types/recharts",
     "babel-polyfill": "^6.26.0",
     "classnames": "^2.2.6",
     "lodash": "^4.17.11",
