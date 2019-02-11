@@ -44,7 +44,6 @@
   align-items: center;
   position: absolute;
   display: inline-flex;
-  overflow: hidden; /** hide recarts bar plot overflow (IE11)**/
 }
 /* For responsive container of recharts a width and height is needed */
 .bar-plot {
