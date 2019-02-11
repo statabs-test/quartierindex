@@ -41,7 +41,7 @@
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-spring": "^7.1.3",
-    "recharts": "^1.4.1",
+    "recharts": "git+https://github.com/FUUbi/recharts.git#v1.4.2-patch.1",
     "recompose": "^0.30.0",
     "redux": "^4.0.1",
     "reselect": "^4.0.0"
