@@ -10,21 +10,35 @@ import { getAllObservations } from '../../state/observation/selectors'
 import { getColor } from '../../helpers'
 import './indicatorTooltip.css'
 
-const getObservationText = (indicator: Indicator, observation: Observation)
-  : any => {
+const getObservationText = (indicator: Indicator, observation: Observation): any => {
   let s = observation.value_txt
   if (s.includes('sup')) {
-    return <p style={getParagraphStyle(indicator)}>{s.replace('<sup>2</sup>', '')}<sup>2</sup> |
+    return <p style={getParagraphStyle(indicator, false)}>{s.replace('<sup>2</sup>', '')}<sup>2</sup> |
       Rang {observation.ranking}</p>
   }
-  return <p style={getParagraphStyle(indicator)}>{s} | Rang {observation.ranking}</p>
+  return <p style={getParagraphStyle(indicator, false)}>{s} | Rang {observation.ranking}</p>
 }
-const getParagraphStyle = (indicator: Indicator)
-  : React.CSSProperties => {
-  if ((indicator.name + indicator.yearText).length <= 28) {
-    return {margin: 0, paddingTop: 9, paddingLeft: 20}
+const getParagraphStyle = (indicator: Indicator, top: boolean): React.CSSProperties => {
+  const style = {
+    margin: 0,
+    paddingLeft: 20
   }
-  return {margin: 0, paddingTop: 5, paddingLeft: 20}
+  if ((indicator.name + indicator.yearText).length <= 27 && top) {
+    style['paddingTop'] = 15
+    return style
+  }
+  if (top) {
+    style['paddingTop'] = 9
+  }
+  return style
+}
+
+const getIndicatorYear = (indicator: Indicator): string => {
+  if (indicator.yearText.includes('-')) {
+    let yearText = indicator.yearText;
+    return yearText.replace('-', '\u2011')
+  }
+  return indicator.yearText
 }
 
 export interface PublicProps extends TooltipProps {
@@ -72,8 +86,8 @@ class IndicatorTooltip extends React.Component<PublicProps> {
             <rect x="-2" y="26" width="11" height="11" transform="rotate(45 -2 31)"
                   style={{fill: 'white', stroke: 'white', strokeWidth: 1}}/>
           </svg>
-          <p style={getParagraphStyle(indicator)}> {indicator.name} {indicator.yearText} </p>
-          <p style={getParagraphStyle(indicator)}> {district.name} </p>
+          <p style={getParagraphStyle(indicator, true)}> {indicator.name} {getIndicatorYear(indicator)} </p>
+          <p style={getParagraphStyle(indicator, false)}> {district.name} </p>
           {getObservationText(indicator, observation)}
         </div>
       );
