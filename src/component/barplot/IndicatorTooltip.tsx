@@ -13,10 +13,10 @@ import './indicatorTooltip.css'
 const getObservationText = (indicator: Indicator, observation: Observation): any => {
   let s = observation.value_txt
   if (s.includes('sup')) {
-    return <p style={getParagraphStyle(indicator, false)}>{s.replace('<sup>2</sup>', '')}<sup>2</sup> |
+    return <p style={getParagraphStyle(indicator, false)}>{s.replace('<sup>2</sup>', '')}<sup>2</sup>,
       Rang {observation.ranking}</p>
   }
-  return <p style={getParagraphStyle(indicator, false)}>{s} | Rang {observation.ranking}</p>
+  return <p style={getParagraphStyle(indicator, false)}>{s}, Rang {observation.ranking}</p>
 }
 const getParagraphStyle = (indicator: Indicator, top: boolean): React.CSSProperties => {
   const style = {
@@ -80,8 +80,8 @@ class IndicatorTooltip extends React.Component<PublicProps> {
       const style = this.getRectStyle(indicator)
       return (
         <div className="indicatorTooltip">
-          <svg width={180} height={74} viewBox="-10 -4 190 80" style={{position: 'absolute', zIndex: -1}}>
-            <rect x="0" y="0" rx="5" ry="5" width="180" height="74" style={style}/>
+          <svg width={185} height={74} viewBox="-10 -4 195 80" style={{position: 'absolute', zIndex: -1}}>
+            <rect x="0" y="0" rx="5" ry="5" width="185" height="74" style={style}/>
             <rect x="-4" y="27" width="10" height="10" transform="rotate(45 -4 32)" style={style}/>
             <rect x="-2" y="26" width="11" height="11" transform="rotate(45 -2 31)"
                   style={{fill: 'white', stroke: 'white', strokeWidth: 1}}/>
