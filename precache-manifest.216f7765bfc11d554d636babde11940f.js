@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "7d105470c96652c8b01a",
+    "revision": "509db485763e6a807263",
     "url": "/quartierindex/static/css/main.355e7811.chunk.css"
   },
   {
-    "revision": "7d105470c96652c8b01a",
-    "url": "/quartierindex/static/js/main.7d105470.chunk.js"
+    "revision": "509db485763e6a807263",
+    "url": "/quartierindex/static/js/main.509db485.chunk.js"
   },
   {
     "revision": "2e0d470ae1e8a2db02ef",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/quartierindex/static/media/welcome.516a5680.jpg"
   },
   {
-    "revision": "f658124e2d95fb706df4f1a2180a9508",
+    "revision": "d40346a1325b94435a0cde7777add88e",
     "url": "/quartierindex/index.html"
   }
 ];
