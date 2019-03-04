@@ -26,7 +26,7 @@ function getToggleLabel(label: String) {
     case 'Gesellschaft und Soziales':
       return 'Alle gesellschaftlichen Indikatoren'
     case 'Raum und Umwelt':
-      return 'Alle räumlichen Indiktatoren'
+      return 'Alle räumlichen Indikatoren'
     case 'Wirtschaft und Arbeit':
       return 'Alle wirtschaftlichen Indikatoren'
     default:
