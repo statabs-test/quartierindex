@@ -10,7 +10,7 @@
         "valuationText": "Ein hoher Anteil Sozialhilfeempfänger ist für mich",
         "weight": 1,
         "weightText": "Der Anteil Sozialhilfeempfänger ist für mich",
-        "description": "Anteil Personen, der wenigstens einmal pro Jahr eine Sozialhilfeleistung empfangen hat gemessen am Total der Bevölkerung."
+        "description": "Anteil Personen, der wenigstens einmal pro Jahr eine Sozialhilfeleistung empfangen hat, gemessen am Total der Bevölkerung."
     },
     {
         "id": "2",
@@ -23,7 +23,7 @@
         "valuationText": "Ein hoher Anteil Ausländer ist für mich",
         "weight": 1,
         "weightText": "Der Anteil Ausländer ist für mich",
-        "description": "Anteil Personen ohne Schweizer Pass gemessen am Total der Bevölkerung."
+        "description": "Anteil Personen ohne Schweizer Pass, gemessen am Total der Bevölkerung."
     },
     {
         "id": "3",
@@ -36,7 +36,7 @@
         "valuationText": "Ein hoher Anteil Personen ohne Religionszugehörigkeit ist für mich",
         "weight": 1,
         "weightText": "Der Anteil Personen ohne Religionszugehörigkeit ist für mich",
-        "description": "Anteil Personen, welche keiner Konfession angehört."
+        "description": "Anteil Personen, welcher keiner Konfession angehört."
     },
     {
         "id": "4",
@@ -49,7 +49,7 @@
         "valuationText": "Ein hoher Anteil Personen in Einpersonenhaushalten ist für mich",
         "weight": 1,
         "weightText": "Der Anteil Personen in Einpersonenhaushalten ist für mich",
-        "description": "Anteil Personen, welcher in einem Einpersonenhaushalt lebt gemessen am Total der Bevölkerung."
+        "description": "Anteil Personen, welcher in einem Einpersonenhaushalt lebt, gemessen am Total der Bevölkerung."
     },
     {
         "id": "5",
@@ -75,7 +75,7 @@
         "valuationText": "Ein hoher Altersquotient ist für mich",
         "weight": 1,
         "weightText": "Der Altersquotient ist für mich",
-        "description": "Anzahl Personen im Alter von 65 und mehr Jahren gemessen an 100 Personen im Alter zwischen 20 und 64 Jahren."
+        "description": "Anzahl Personen im Alter von 65 und mehr Jahren, gemessen an 100 Personen im Alter zwischen 20 und 64 Jahren."
     },
     {
         "id": "7",
@@ -88,7 +88,7 @@
         "valuationText": "Ein hoher Anteil Sesshafte ist für mich",
         "weight": 1,
         "weightText": "Der Anteil Sesshafte ist für mich",
-        "description": "Anteil Personen, der seit mindestens 10 Jahren an derselben Adresse wohnt gemessen am Total der Bevölkerung."
+        "description": "Anteil Personen, der seit mindestens 10 Jahren an derselben Adresse wohnt, gemessen am Total der Bevölkerung."
     },
     {
         "id": "8",
@@ -101,7 +101,7 @@
         "valuationText": "Ein hoher Jugendquotient ist für mich",
         "weight": 1,
         "weightText": "Der Jugendquotient ist für mich",
-        "description": "Anzahl Personen im Alter zwischen 0 und 19 Jahren gemessen an 100 Personen im Alter zwischen 20 und 64 Jahren."
+        "description": "Anzahl Personen im Alter zwischen 0 und 19 Jahren, gemessen an 100 Personen im Alter zwischen 20 und 64 Jahren."
     },
     {
         "id": "9",
@@ -179,7 +179,7 @@
         "valuationText": "Eine hohe Vermögenssteuer ist für mich",
         "weight": 1,
         "weightText": "Die Vermögenssteuer ist für mich",
-        "description": "Mittlere Vermögenssteuer pro ordentliche Veranlagung natürlicher Personen."
+        "description": "Mittelwert Vermögenssteuerbetrag pro ordentliche Veranlagung natürlicher Personen."
     },
     {
         "id": "15",
@@ -192,7 +192,7 @@
         "valuationText": "Eine hohe Einkommenssteuer ist für mich",
         "weight": 1,
         "weightText": "Die Einkommenssteuer ist für mich",
-        "description": "Mittlere Einkommenssteuer pro ordentliche Veranlagung natürlicher Personen."
+        "description": "Mittelwert Einkommenssteuerbetrag pro ordentliche Veranlagung natürlicher Personen."
     },
     {
         "id": "16",

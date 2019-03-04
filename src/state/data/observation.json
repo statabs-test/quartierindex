@@ -2426,8 +2426,8 @@
         "value": 89.982578397,
         "normValue": 0.4433533685891991,
         "ranking": "17",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "90,0 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "90,0 m²"
     },
     {
         "id": 244,
@@ -2436,8 +2436,8 @@
         "value": 81.703573521,
         "normValue": 0.2939237976955816,
         "ranking": "14",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "81,7 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "81,7 m²"
     },
     {
         "id": 245,
@@ -2446,8 +2446,8 @@
         "value": 81.96043395,
         "normValue": 0.2985599277933289,
         "ranking": "15",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "82,0 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "82,0 m²"
     },
     {
         "id": 246,
@@ -2456,8 +2456,8 @@
         "value": 70.004521477,
         "normValue": 0.08276504697847203,
         "ranking": "6",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "70,0 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "70,0 m²"
     },
     {
         "id": 247,
@@ -2466,8 +2466,8 @@
         "value": 93.466570467,
         "normValue": 0.5062367039434355,
         "ranking": "19",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "93,5 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "93,5 m²"
     },
     {
         "id": 248,
@@ -2476,8 +2476,8 @@
         "value": 70.427866942,
         "normValue": 0.09040610192676586,
         "ranking": "8",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "70,4 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "70,4 m²"
     },
     {
         "id": 249,
@@ -2486,8 +2486,8 @@
         "value": 109.24315693,
         "normValue": 0.7909917657705237,
         "ranking": "21",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "109,2 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "109,2 m²"
     },
     {
         "id": 250,
@@ -2496,8 +2496,8 @@
         "value": 92.894002211,
         "normValue": 0.49590229418249765,
         "ranking": "18",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "92,9 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "92,9 m²"
     },
     {
         "id": 251,
@@ -2506,8 +2506,8 @@
         "value": 74.544131911,
         "normValue": 0.1647014692099992,
         "ranking": "11",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "74,5 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "74,5 m²"
     },
     {
         "id": 252,
@@ -2516,8 +2516,8 @@
         "value": 68.511779293,
         "normValue": 0.055822216608055364,
         "ranking": "4",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "68,5 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "68,5 m²"
     },
     {
         "id": 253,
@@ -2526,8 +2526,8 @@
         "value": 71.680063511,
         "normValue": 0.11300727184787063,
         "ranking": "9",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "71,7 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "71,7 m²"
     },
     {
         "id": 254,
@@ -2536,8 +2536,8 @@
         "value": 72.17236927,
         "normValue": 0.12189300623475147,
         "ranking": "10",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "72,2 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "72,2 m²"
     },
     {
         "id": 255,
@@ -2546,8 +2546,8 @@
         "value": 66.391708968,
         "normValue": 0.017556603327959712,
         "ranking": "2",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "66,4 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "66,4 m²"
     },
     {
         "id": 256,
@@ -2556,8 +2556,8 @@
         "value": 83.225836146,
         "normValue": 0.32139944896625045,
         "ranking": "16",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "83,2 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "83,2 m²"
     },
     {
         "id": 257,
@@ -2566,8 +2566,8 @@
         "value": 80.960734102,
         "normValue": 0.28051612644926827,
         "ranking": "13",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "81,0 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "81,0 m²"
     },
     {
         "id": 258,
@@ -2576,8 +2576,8 @@
         "value": 69.447001989,
         "normValue": 0.07270225572463718,
         "ranking": "5",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "69,4 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "69,4 m²"
     },
     {
         "id": 259,
@@ -2586,8 +2586,8 @@
         "value": 67.244349005,
         "normValue": 0.032946089958771574,
         "ranking": "3",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "67,2 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "67,2 m²"
     },
     {
         "id": 260,
@@ -2596,8 +2596,8 @@
         "value": 65.419001868,
         "normValue": 0,
         "ranking": "1",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "65,4 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "65,4 m²"
     },
     {
         "id": 261,
@@ -2606,8 +2606,8 @@
         "value": 70.42468773,
         "normValue": 0.0903487196335973,
         "ranking": "7",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "70,4 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "70,4 m²"
     },
     {
         "id": 262,
@@ -2616,8 +2616,8 @@
         "value": 102.73655706,
         "normValue": 0.6735527207267039,
         "ranking": "20",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "102,7 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "102,7 m²"
     },
     {
         "id": 263,
@@ -2626,8 +2626,8 @@
         "value": 120.82306163,
         "normValue": 1,
         "ranking": "22",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "120,8 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "120,8 m²"
     },
     {
         "id": 264,
@@ -2636,8 +2636,8 @@
         "value": 79.719344232,
         "normValue": 0.2581100090034951,
         "ranking": "12",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "79,7 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "79,7 m²"
     },
     {
         "id": 265,
@@ -2646,8 +2646,8 @@
         "value": 52.670028818,
         "normValue": 0.9978072779010031,
         "ranking": "21",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "52,7 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "52,7 m²"
     },
     {
         "id": 266,
@@ -2656,8 +2656,8 @@
         "value": 49.710686542,
         "normValue": 0.8571219168174339,
         "ranking": "20",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "49,7 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "49,7 m²"
     },
     {
         "id": 267,
@@ -2666,8 +2666,8 @@
         "value": 45.562575574,
         "normValue": 0.6599232034139311,
         "ranking": "14",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "45,6 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "45,6 m²"
     },
     {
         "id": 268,
@@ -2676,8 +2676,8 @@
         "value": 38.929061785,
         "normValue": 0.3445699270366837,
         "ranking": "9",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "38,9 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "38,9 m²"
     },
     {
         "id": 269,
@@ -2686,8 +2686,8 @@
         "value": 48.696245096,
         "normValue": 0.8088959774639259,
         "ranking": "19",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "48,7 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "48,7 m²"
     },
     {
         "id": 270,
@@ -2696,8 +2696,8 @@
         "value": 38.358770363,
         "normValue": 0.3174586140677162,
         "ranking": "8",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "38,4 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "38,4 m²"
     },
     {
         "id": 271,
@@ -2706,8 +2706,8 @@
         "value": 48.67246313,
         "normValue": 0.8077653970301852,
         "ranking": "18",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "48,7 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "48,7 m²"
     },
     {
         "id": 272,
@@ -2716,8 +2716,8 @@
         "value": 46.408682635,
         "normValue": 0.7001466268271349,
         "ranking": "16",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "46,4 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "46,4 m²"
     },
     {
         "id": 273,
@@ -2726,8 +2726,8 @@
         "value": 41.130126881,
         "normValue": 0.4492072446969276,
         "ranking": "12",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "41,1 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "41,1 m²"
     },
     {
         "id": 274,
@@ -2736,8 +2736,8 @@
         "value": 36.325632892,
         "normValue": 0.22080447522076072,
         "ranking": "6",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "36,3 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "36,3 m²"
     },
     {
         "id": 275,
@@ -2746,8 +2746,8 @@
         "value": 36.186283285,
         "normValue": 0.2141798782835836,
         "ranking": "5",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "36,2 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "36,2 m²"
     },
     {
         "id": 276,
@@ -2756,8 +2756,8 @@
         "value": 42.151075977,
         "normValue": 0.49774255383759386,
         "ranking": "13",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "42,2 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "42,2 m²"
     },
     {
         "id": 277,
@@ -2766,8 +2766,8 @@
         "value": 36.433815926,
         "normValue": 0.22594743192598438,
         "ranking": "7",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "36,4 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "36,4 m²"
     },
     {
         "id": 278,
@@ -2776,8 +2776,8 @@
         "value": 45.690524754,
         "normValue": 0.6660058308729546,
         "ranking": "15",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "45,7 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "45,7 m²"
     },
     {
         "id": 279,
@@ -2786,8 +2786,8 @@
         "value": 38.967116725,
         "normValue": 0.3463790361141742,
         "ranking": "10",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "39,0 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "39,0 m²"
     },
     {
         "id": 280,
@@ -2796,8 +2796,8 @@
         "value": 33.579200248,
         "normValue": 0.09024071064835137,
         "ranking": "3",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "33,6 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "33,6 m²"
     },
     {
         "id": 281,
@@ -2806,8 +2806,8 @@
         "value": 34.833732445,
         "normValue": 0.14988042064650262,
         "ranking": "4",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "34,8 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "34,8 m²"
     },
     {
         "id": 282,
@@ -2816,8 +2816,8 @@
         "value": 31.680970411,
         "normValue": 0,
         "ranking": "1",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "31,7 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "31,7 m²"
     },
     {
         "id": 283,
@@ -2826,8 +2826,8 @@
         "value": 32.477628228,
         "normValue": 0.03787263594131583,
         "ranking": "2",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "32,5 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "32,5 m²"
     },
     {
         "id": 284,
@@ -2836,8 +2836,8 @@
         "value": 47.494001816,
         "normValue": 0.7517420512929694,
         "ranking": "17",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "47,5 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "47,5 m²"
     },
     {
         "id": 285,
@@ -2846,8 +2846,8 @@
         "value": 52.716153128,
         "normValue": 1,
         "ranking": "22",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "52,7 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "52,7 m²"
     },
     {
         "id": 286,
@@ -2856,8 +2856,8 @@
         "value": 41.063367876,
         "normValue": 0.4460335615443658,
         "ranking": "11",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "41,1 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "41,1 m²"
     },
     {
         "id": 287,
@@ -2867,7 +2867,7 @@
         "normValue": 0.29793495076062443,
         "ranking": "18",
         "value_unit": "Fr.",
-        "value_txt": "5 515 Fr."
+        "value_txt": "5 515 Fr."
     },
     {
         "id": 288,
@@ -2877,7 +2877,7 @@
         "normValue": 0.33434935460578213,
         "ranking": "20",
         "value_unit": "Fr.",
-        "value_txt": "6 166 Fr."
+        "value_txt": "6 166 Fr."
     },
     {
         "id": 289,
@@ -2887,7 +2887,7 @@
         "normValue": 0.10483566072782173,
         "ranking": "15",
         "value_unit": "Fr.",
-        "value_txt": "2 061 Fr."
+        "value_txt": "2 061 Fr."
     },
     {
         "id": 290,
@@ -2907,7 +2907,7 @@
         "normValue": 0.31297594170783233,
         "ranking": "19",
         "value_unit": "Fr.",
-        "value_txt": "5 784 Fr."
+        "value_txt": "5 784 Fr."
     },
     {
         "id": 292,
@@ -2927,7 +2927,7 @@
         "normValue": 1,
         "ranking": "22",
         "value_unit": "Fr.",
-        "value_txt": "18 071 Fr."
+        "value_txt": "18 071 Fr."
     },
     {
         "id": 294,
@@ -2937,7 +2937,7 @@
         "normValue": 0.09458580271183284,
         "ranking": "14",
         "value_unit": "Fr.",
-        "value_txt": "1 878 Fr."
+        "value_txt": "1 878 Fr."
     },
     {
         "id": 295,
@@ -2977,7 +2977,7 @@
         "normValue": 0.0524245513213673,
         "ranking": "12",
         "value_unit": "Fr.",
-        "value_txt": "1 124 Fr."
+        "value_txt": "1 124 Fr."
     },
     {
         "id": 299,
@@ -2997,7 +2997,7 @@
         "normValue": 0.06390974044384407,
         "ranking": "13",
         "value_unit": "Fr.",
-        "value_txt": "1 329 Fr."
+        "value_txt": "1 329 Fr."
     },
     {
         "id": 301,
@@ -3057,7 +3057,7 @@
         "normValue": 0.16158395969603928,
         "ranking": "17",
         "value_unit": "Fr.",
-        "value_txt": "3 076 Fr."
+        "value_txt": "3 076 Fr."
     },
     {
         "id": 307,
@@ -3067,7 +3067,7 @@
         "normValue": 0.8579160009187112,
         "ranking": "21",
         "value_unit": "Fr.",
-        "value_txt": "15 530 Fr."
+        "value_txt": "15 530 Fr."
     },
     {
         "id": 308,
@@ -3077,7 +3077,7 @@
         "normValue": 0.12048533256791943,
         "ranking": "16",
         "value_unit": "Fr.",
-        "value_txt": "2 341 Fr."
+        "value_txt": "2 341 Fr."
     },
     {
         "id": 309,
@@ -3087,7 +3087,7 @@
         "normValue": 0.8006567422534947,
         "ranking": "20",
         "value_unit": "Fr.",
-        "value_txt": "16 657 Fr."
+        "value_txt": "16 657 Fr."
     },
     {
         "id": 310,
@@ -3097,7 +3097,7 @@
         "normValue": 0.784066426774484,
         "ranking": "19",
         "value_unit": "Fr.",
-        "value_txt": "16 405 Fr."
+        "value_txt": "16 405 Fr."
     },
     {
         "id": 311,
@@ -3107,7 +3107,7 @@
         "normValue": 0.4499392945507824,
         "ranking": "15",
         "value_unit": "Fr.",
-        "value_txt": "11 315 Fr."
+        "value_txt": "11 315 Fr."
     },
     {
         "id": 312,
@@ -3117,7 +3117,7 @@
         "normValue": 0.18553808984891304,
         "ranking": "9",
         "value_unit": "Fr.",
-        "value_txt": "7 288 Fr."
+        "value_txt": "7 288 Fr."
     },
     {
         "id": 313,
@@ -3127,7 +3127,7 @@
         "normValue": 0.7698364697961605,
         "ranking": "18",
         "value_unit": "Fr.",
-        "value_txt": "16 188 Fr."
+        "value_txt": "16 188 Fr."
     },
     {
         "id": 314,
@@ -3137,7 +3137,7 @@
         "normValue": 0.18215719698417077,
         "ranking": "8",
         "value_unit": "Fr.",
-        "value_txt": "7 237 Fr."
+        "value_txt": "7 237 Fr."
     },
     {
         "id": 315,
@@ -3147,7 +3147,7 @@
         "normValue": 1,
         "ranking": "22",
         "value_unit": "Fr.",
-        "value_txt": "19 694 Fr."
+        "value_txt": "19 694 Fr."
     },
     {
         "id": 316,
@@ -3157,7 +3157,7 @@
         "normValue": 0.45513159999592195,
         "ranking": "16",
         "value_unit": "Fr.",
-        "value_txt": "11 394 Fr."
+        "value_txt": "11 394 Fr."
     },
     {
         "id": 317,
@@ -3167,7 +3167,7 @@
         "normValue": 0.27478829155887746,
         "ranking": "11",
         "value_unit": "Fr.",
-        "value_txt": "8 648 Fr."
+        "value_txt": "8 648 Fr."
     },
     {
         "id": 318,
@@ -3177,7 +3177,7 @@
         "normValue": 0.12174516937200978,
         "ranking": "5",
         "value_unit": "Fr.",
-        "value_txt": "6 316 Fr."
+        "value_txt": "6 316 Fr."
     },
     {
         "id": 319,
@@ -3187,7 +3187,7 @@
         "normValue": 0.13932231214218885,
         "ranking": "7",
         "value_unit": "Fr.",
-        "value_txt": "6 584 Fr."
+        "value_txt": "6 584 Fr."
     },
     {
         "id": 320,
@@ -3197,7 +3197,7 @@
         "normValue": 0.28060237115256825,
         "ranking": "12",
         "value_unit": "Fr.",
-        "value_txt": "8 736 Fr."
+        "value_txt": "8 736 Fr."
     },
     {
         "id": 321,
@@ -3207,7 +3207,7 @@
         "normValue": 0.10932650605735349,
         "ranking": "3",
         "value_unit": "Fr.",
-        "value_txt": "6 127 Fr."
+        "value_txt": "6 127 Fr."
     },
     {
         "id": 322,
@@ -3217,7 +3217,7 @@
         "normValue": 0.4142396456330718,
         "ranking": "14",
         "value_unit": "Fr.",
-        "value_txt": "10 772 Fr."
+        "value_txt": "10 772 Fr."
     },
     {
         "id": 323,
@@ -3227,7 +3227,7 @@
         "normValue": 0.20127502070843536,
         "ranking": "10",
         "value_unit": "Fr.",
-        "value_txt": "7 528 Fr."
+        "value_txt": "7 528 Fr."
     },
     {
         "id": 324,
@@ -3237,7 +3237,7 @@
         "normValue": 0.12731129571332472,
         "ranking": "6",
         "value_unit": "Fr.",
-        "value_txt": "6 401 Fr."
+        "value_txt": "6 401 Fr."
     },
     {
         "id": 325,
@@ -3247,7 +3247,7 @@
         "normValue": 0.12154177694891771,
         "ranking": "4",
         "value_unit": "Fr.",
-        "value_txt": "6 313 Fr."
+        "value_txt": "6 313 Fr."
     },
     {
         "id": 326,
@@ -3257,7 +3257,7 @@
         "normValue": 0,
         "ranking": "1",
         "value_unit": "Fr.",
-        "value_txt": "4 462 Fr."
+        "value_txt": "4 462 Fr."
     },
     {
         "id": 327,
@@ -3267,7 +3267,7 @@
         "normValue": 0.029317847579295522,
         "ranking": "2",
         "value_unit": "Fr.",
-        "value_txt": "4 909 Fr."
+        "value_txt": "4 909 Fr."
     },
     {
         "id": 328,
@@ -3277,7 +3277,7 @@
         "normValue": 0.588692724832264,
         "ranking": "17",
         "value_unit": "Fr.",
-        "value_txt": "13 429 Fr."
+        "value_txt": "13 429 Fr."
     },
     {
         "id": 329,
@@ -3287,7 +3287,7 @@
         "normValue": 0.9849627246740763,
         "ranking": "21",
         "value_unit": "Fr.",
-        "value_txt": "19 465 Fr."
+        "value_txt": "19 465 Fr."
     },
     {
         "id": 330,
@@ -3297,7 +3297,7 @@
         "normValue": 0.341564056406212,
         "ranking": "13",
         "value_unit": "Fr.",
-        "value_txt": "9 665 Fr."
+        "value_txt": "9 665 Fr."
     },
     {
         "id": 331,
