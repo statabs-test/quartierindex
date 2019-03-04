@@ -134,7 +134,7 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
                 return (
                   <React.Fragment key={indicator.id}>
                     <li>
-                      {indicator.name} mit Gewicht {indicator.weight * indicator.valuation}
+                      {indicator.name} mit Gewicht {(indicator.weight * indicator.valuation).toString().replace('.', ',')}
                     </li>
                   </React.Fragment>
                 )

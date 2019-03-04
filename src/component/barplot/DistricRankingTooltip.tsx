@@ -36,6 +36,7 @@ class DistrictRankingTooltip extends React.Component<TooltipProps> {
     if (active) {
       const {payload} = this.props;
       let style = this.getStyle(payload[0].payload.id);
+      let value = payload[0].value.toString().replace('.', ',')
       return (
         <div className="districtRankingTooltip">
           <svg width={155} height={74} viewBox="-10 -4 190 80" style={{position: 'absolute', zIndex: -1}}>
@@ -50,7 +51,7 @@ class DistrictRankingTooltip extends React.Component<TooltipProps> {
           <div style={{padding: 5, paddingLeft: 20}}>
             <p>Berechneter Wert<br />
             {this.getDistrictName(payload[0].payload.name)}<br />
-            {payload[0].value} </p>
+            {value} </p>
           </div>
         </div>
       );
