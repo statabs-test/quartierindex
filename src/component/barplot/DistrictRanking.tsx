@@ -89,7 +89,7 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
                     tickLine={false}
                     ticks={ticks}
                     tickFormatter={tick =>
-                      tick > 0 ? tick.toString().substr(0, 4) : tick.toString().substr(0, 5)
+                      tick > 0 ? tick.toString().substr(0, 4).replace('.', ',') : tick.toString().substr(0, 5).replace('.', ',')
                     }
                   />
                   <Tooltip offsetX={-195} offsetY={-37} content={<DistrictRankingTooltip/>} />

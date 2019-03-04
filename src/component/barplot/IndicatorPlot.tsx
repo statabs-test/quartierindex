@@ -53,7 +53,7 @@ const IndicatorPlot: React.SFC<IndicatorProps> = ({districts, indicator, ranks})
           type="number"
           tickLine={false}
           ticks={ticks}
-          tickFormatter={tick => (ticks.indexOf(tick) % 2 === 0 ? tick : '')}
+          tickFormatter={tick => (ticks.indexOf(tick) % 2 === 0 ? tick : '').toString().replace('.', ',')}
         />
         <Tooltip offsetX={-190} offsetY={-37}
                  content={<IndicatorTooltip indicator={indicator}/>}/>
