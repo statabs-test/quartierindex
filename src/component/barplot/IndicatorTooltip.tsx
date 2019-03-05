@@ -11,19 +11,25 @@ import { getColor } from '../../helpers'
 import './indicatorTooltip.css'
 
 const getObservationText = (indicator: Indicator, observation: Observation): any => {
-  let s = observation.value_txt
-  if (s.includes('sup')) {
-    return <p style={getParagraphStyle(indicator, false)}>{s.replace('<sup>2</sup>', '')}<sup>2</sup>,
-      Rang {observation.ranking}</p>
-  }
-  return <p style={getParagraphStyle(indicator, false)}>{s}, Rang {observation.ranking}</p>
+  let value = observation.value_txt
+  return <p style={getParagraphStyle(indicator, false)}>{value}, Rang {observation.ranking}</p>
 }
 const getParagraphStyle = (indicator: Indicator, top: boolean): React.CSSProperties => {
   const style = {
     margin: 0,
     paddingLeft: 20
   }
-  if ((indicator.name + indicator.yearText).length <= 27 && top) {
+  /*
+  This is a special hack have 'Anteil Einfamilienhäuser 2017' with a paddingTop of 15 
+  but 'Erwerbstätigenqutoe 2012-2016' with a padding of 9 because both have the length 
+  of 28, but the browser will write 'Erwerbstätigenqutoe 2012-2016' in two lines
+  and 'Anteil Einfamilienhäuser 2017' in one.
+  */
+  let size = (indicator.name + indicator.yearText).length;
+  if (indicator.yearText.indexOf('-') > 0) {
+    size += 1;
+  }
+  if (size <= 28 && top) {
     style['paddingTop'] = 15
     return style
   }
@@ -80,8 +86,8 @@ class IndicatorTooltip extends React.Component<PublicProps> {
       const style = this.getRectStyle(indicator)
       return (
         <div className="indicatorTooltip">
-          <svg width={185} height={74} viewBox="-10 -4 195 80" style={{position: 'absolute', zIndex: -1}}>
-            <rect x="0" y="0" rx="5" ry="5" width="185" height="74" style={style}/>
+          <svg width={190} height={74} viewBox="-10 -4 200 80" style={{position: 'absolute', zIndex: -1}}>
+            <rect x="0" y="0" rx="5" ry="5" width="190" height="74" style={style}/>
             <rect x="-4" y="27" width="10" height="10" transform="rotate(45 -4 32)" style={style}/>
             <rect x="-2" y="26" width="11" height="11" transform="rotate(45 -2 31)"
                   style={{fill: 'white', stroke: 'white', strokeWidth: 1}}/>

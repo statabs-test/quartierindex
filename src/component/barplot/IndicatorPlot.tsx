@@ -9,7 +9,7 @@ import { makeGetIndicatorRanking } from '../../state/observation/selectors'
 import { District } from '../../state/district/types'
 import { Indicator, NegativePositive } from '../../state/indicator/types'
 import { allDistrictsById } from '../../state/district/selectors'
-import { getColor } from '../../helpers'
+import { getColor, convertDecimalPoint } from '../../helpers'
 import IndicatorTooltip from './IndicatorTooltip'
 
 export interface IndicatorPlotPublicProps {
@@ -53,7 +53,7 @@ const IndicatorPlot: React.SFC<IndicatorProps> = ({districts, indicator, ranks})
           type="number"
           tickLine={false}
           ticks={ticks}
-          tickFormatter={tick => (ticks.indexOf(tick) % 2 === 0 ? tick : '').toString().replace('.', ',')}
+          tickFormatter={tick => convertDecimalPoint(ticks.indexOf(tick) % 2 === 0 ? tick : '')}
         />
         <Tooltip offsetX={-190} offsetY={-37}
                  content={<IndicatorTooltip indicator={indicator}/>}/>

@@ -11,7 +11,7 @@ import { getSelectedIndicators } from '../../state/indicator/selectors'
 import { District } from '../../state/district/types'
 import DistrictLabel from './DistrictLabel'
 import AnimatePosition from './AnimatePosition'
-import { getRankPosition } from '../../helpers'
+import { getRankPosition, convertDecimalPoint } from '../../helpers'
 import DistrictRankingTooltip from './DistricRankingTooltip'
 import './districtRanking.css'
 import { asDomain, getTicks } from './util';
@@ -89,7 +89,7 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
                     tickLine={false}
                     ticks={ticks}
                     tickFormatter={tick =>
-                      tick > 0 ? tick.toString().substr(0, 4).replace('.', ',') : tick.toString().substr(0, 5).replace('.', ',')
+                      tick > 0 ? convertDecimalPoint(tick.toString().substr(0, 4)) : convertDecimalPoint(tick.toString().substr(0, 5))
                     }
                   />
                   <Tooltip offsetX={-195} offsetY={-37} content={<DistrictRankingTooltip/>} />
@@ -134,7 +134,7 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
                 return (
                   <React.Fragment key={indicator.id}>
                     <li>
-                      {indicator.name} mit Gewicht {(indicator.weight * indicator.valuation).toString().replace('.', ',')}
+                      {indicator.name} mit Gewicht {convertDecimalPoint(indicator.weight * indicator.valuation)}
                     </li>
                   </React.Fragment>
                 )
