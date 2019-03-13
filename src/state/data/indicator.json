@@ -157,15 +157,15 @@
     },
     {
         "id": "13",
-        "name": "Wohnfäche pro Kopf",
+        "name": "Wohnfläche pro Kopf",
         "subject": "Raum und Umwelt",
         "publication": "2018",
         "year": "2017",
         "yearText": "2017",
         "valuation": 1,
-        "valuationText": "Eine hohe Wohnfäche pro Kopf ist für mich",
+        "valuationText": "Eine hohe Wohnfläche pro Kopf ist für mich",
         "weight": 1,
-        "weightText": "Die Wohnfäche pro Kopf ist für mich",
+        "weightText": "Die Wohnfläche pro Kopf ist für mich",
         "description": "Gesamtfläche der durch Privatpersonen belegten Wohnungen geteilt durch das Total der dort wohnenden Bevölkerung."
     },
     {
