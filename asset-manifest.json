@@ -1,7 +1,7 @@
 {
   "main.css": "/quartierindex/static/css/main.f12f14c0.chunk.css",
-  "main.js": "/quartierindex/static/js/main.84b7ae30.chunk.js",
-  "main.js.map": "/quartierindex/static/js/main.84b7ae30.chunk.js.map",
+  "main.js": "/quartierindex/static/js/main.0ddf6e71.chunk.js",
+  "main.js.map": "/quartierindex/static/js/main.0ddf6e71.chunk.js.map",
   "static/css/1.50d17ec9.chunk.css": "/quartierindex/static/css/1.50d17ec9.chunk.css",
   "static/js/1.ca9f7dc3.chunk.js": "/quartierindex/static/js/1.ca9f7dc3.chunk.js",
   "static/js/1.ca9f7dc3.chunk.js.map": "/quartierindex/static/js/1.ca9f7dc3.chunk.js.map",
@@ -11,6 +11,6 @@
   "static/media/welcome.jpg": "/quartierindex/static/media/welcome.14e2335c.jpg",
   "static/css/main.f12f14c0.chunk.css.map": "/quartierindex/static/css/main.f12f14c0.chunk.css.map",
   "index.html": "/quartierindex/index.html",
-  "precache-manifest.0e76c61e850fb3d7785bf1437876f911.js": "/quartierindex/precache-manifest.0e76c61e850fb3d7785bf1437876f911.js",
+  "precache-manifest.fc5e0e3212f1623d18d0b9c43582d3dc.js": "/quartierindex/precache-manifest.fc5e0e3212f1623d18d0b9c43582d3dc.js",
   "service-worker.js": "/quartierindex/service-worker.js"
 }
