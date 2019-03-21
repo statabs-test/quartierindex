@@ -39,13 +39,18 @@ const getBaseTicks = (minMax: { min: Number, max: Number })
   const getSmallerDecimal = (): Number => {
     const minDecimal = getDecimals(min)
     const maxDecimal = getDecimals(max)
-    if (minDecimal > maxDecimal) return maxDecimal
-    else return minDecimal
+    if (minDecimal > maxDecimal) {
+      return maxDecimal
+    }
+    return minDecimal
   }
 
   const decimals = getSmallerDecimal()
   const minTick = (): number => {
-    return Number((min.valueOf() - Math.pow(10, -decimals.valueOf())).toFixed(decimals.valueOf()))
+    if (min === -1 ) {
+      return -1
+    }
+    return Number((min.valueOf() - Math.pow(10, - decimals.valueOf())).toFixed(decimals.valueOf()))
   }
 
   const maxTick = (): number => {

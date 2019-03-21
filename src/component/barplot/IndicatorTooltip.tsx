@@ -12,7 +12,7 @@ import './indicatorTooltip.css'
 
 const getObservationText = (indicator: Indicator, observation: Observation): any => {
   let value = observation.value_txt
-  return <p style={getParagraphStyle(indicator, false)}>{value}, Rang {observation.ranking}</p>
+  return <p style={getParagraphStyle(indicator, false)}>{value}</p>
 }
 const getParagraphStyle = (indicator: Indicator, top: boolean): React.CSSProperties => {
   const style = {
