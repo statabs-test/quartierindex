@@ -1,4 +1,4 @@
-﻿Publikationsjahr,Indikator_Nr,jahr_num,jahr_char,Wert,Indikator_Name,IndikatorLabelShort,Wohnviertel_id,Wohnviertel,Rang,Indikator-Kategorie,Gewichtung_Text,Bewertung_Text,Einheit,wert_txt
+Publikationsjahr,Indikator_Nr,jahr_num,jahr_char,Wert,Indikator_Name,IndikatorLabelShort,Wohnviertel_id,Wohnviertel,Rang,Indikator-Kategorie,Gewichtung_Text,Bewertung_Text,Einheit,wert_txt
 2018,1,2017,2017,0.0166023166,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,1,Altstadt Grossbasel,2,Gesellschaft und Soziales,Der Anteil Sozialhilfeempfänger ist für mich,Ein hoher Anteil Sozialhilfeempfänger ist für mich,,"1,66%"
 2018,1,2017,2017,0.0362911266,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,2,Vorstädte,6,Gesellschaft und Soziales,Der Anteil Sozialhilfeempfänger ist für mich,Ein hoher Anteil Sozialhilfeempfänger ist für mich,,"3,63%"
 2018,1,2017,2017,0.0369102683,Sozialhilfeanteil,Anteil Sozialhilfeempfänger,3,Am Ring,7,Gesellschaft und Soziales,Der Anteil Sozialhilfeempfänger ist für mich,Ein hoher Anteil Sozialhilfeempfänger ist für mich,,"3,69%"
@@ -285,50 +285,50 @@
 2018,13,2017,2017,47.494001816,Wohnflaecheprokopf,Wohnfläche pro Kopf,20,Riehen,17,Raum und Umwelt,Die Wohnfläche pro Kopf ist für mich,Eine hohe Wohnfläche pro Kopf ist für mich,m²,"47,5 m²"
 2018,13,2017,2017,52.716153128,Wohnflaecheprokopf,Wohnfläche pro Kopf,30,Bettingen,22,Raum und Umwelt,Die Wohnfläche pro Kopf ist für mich,Eine hohe Wohnfläche pro Kopf ist für mich,m²,"52,7 m²"
 2018,13,2017,2017,41.063367876,Wohnflaecheprokopf,Wohnfläche pro Kopf,99,Kanton Basel-Stadt,11,Raum und Umwelt,Die Wohnfläche pro Kopf ist für mich,Eine hohe Wohnfläche pro Kopf ist für mich,m²,"41,1 m²"
-2018,14,2015,Steuerjahr 2015,5514.6161194,Vermoegenssteuer,Vermögenssteuer,1,Altstadt Grossbasel,18,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,5 515 Fr.
-2018,14,2015,Steuerjahr 2015,6165.9059687,Vermoegenssteuer,Vermögenssteuer,2,Vorstädte,20,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,6 166 Fr.
-2018,14,2015,Steuerjahr 2015,2060.938612,Vermoegenssteuer,Vermögenssteuer,3,Am Ring,15,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,2 061 Fr.
+2018,14,2015,Steuerjahr 2015,5514.6161194,Vermoegenssteuer,Vermögenssteuer,1,Altstadt Grossbasel,18,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,5 515 Fr.
+2018,14,2015,Steuerjahr 2015,6165.9059687,Vermoegenssteuer,Vermögenssteuer,2,Vorstädte,20,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,6 166 Fr.
+2018,14,2015,Steuerjahr 2015,2060.938612,Vermoegenssteuer,Vermögenssteuer,3,Am Ring,15,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,2 061 Fr.
 2018,14,2015,Steuerjahr 2015,512.9425141,Vermoegenssteuer,Vermögenssteuer,4,Breite,8,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,513 Fr.
-2018,14,2015,Steuerjahr 2015,5783.6317751,Vermoegenssteuer,Vermögenssteuer,5,St. Alban,19,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,5 784 Fr.
+2018,14,2015,Steuerjahr 2015,5783.6317751,Vermoegenssteuer,Vermögenssteuer,5,St. Alban,19,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,5 784 Fr.
 2018,14,2015,Steuerjahr 2015,552.75010831,Vermoegenssteuer,Vermögenssteuer,6,Gundeldingen,9,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,553 Fr.
-2018,14,2015,Steuerjahr 2015,18071.401123,Vermoegenssteuer,Vermögenssteuer,7,Bruderholz,22,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,18 071 Fr.
-2018,14,2015,Steuerjahr 2015,1877.6147682,Vermoegenssteuer,Vermögenssteuer,8,Bachletten,14,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,1 878 Fr.
+2018,14,2015,Steuerjahr 2015,18071.401123,Vermoegenssteuer,Vermögenssteuer,7,Bruderholz,22,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,18 071 Fr.
+2018,14,2015,Steuerjahr 2015,1877.6147682,Vermoegenssteuer,Vermögenssteuer,8,Bachletten,14,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,1 878 Fr.
 2018,14,2015,Steuerjahr 2015,962.38892866,Vermoegenssteuer,Vermögenssteuer,9,Gotthelf,11,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,962 Fr.
 2018,14,2015,Steuerjahr 2015,448.2365746,Vermoegenssteuer,Vermögenssteuer,10,Iselin,4,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,448 Fr.
 2018,14,2015,Steuerjahr 2015,509.91830365,Vermoegenssteuer,Vermögenssteuer,11,St. Johann,7,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,510 Fr.
-2018,14,2015,Steuerjahr 2015,1123.5396725,Vermoegenssteuer,Vermögenssteuer,12,Altstadt Kleinbasel,12,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,1 124 Fr.
+2018,14,2015,Steuerjahr 2015,1123.5396725,Vermoegenssteuer,Vermögenssteuer,12,Altstadt Kleinbasel,12,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,1 124 Fr.
 2018,14,2015,Steuerjahr 2015,508.20508614,Vermoegenssteuer,Vermögenssteuer,13,Clara,6,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,508 Fr.
-2018,14,2015,Steuerjahr 2015,1328.9580318,Vermoegenssteuer,Vermögenssteuer,14,Wettstein,13,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,1 329 Fr.
+2018,14,2015,Steuerjahr 2015,1328.9580318,Vermoegenssteuer,Vermögenssteuer,14,Wettstein,13,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,1 329 Fr.
 2018,14,2015,Steuerjahr 2015,735.59236151,Vermoegenssteuer,Vermögenssteuer,15,Hirzbrunnen,10,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,736 Fr.
 2018,14,2015,Steuerjahr 2015,254.13869538,Vermoegenssteuer,Vermögenssteuer,16,Rosental,3,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,254 Fr.
 2018,14,2015,Steuerjahr 2015,491.56606275,Vermoegenssteuer,Vermögenssteuer,17,Matthäus,5,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,492 Fr.
 2018,14,2015,Steuerjahr 2015,185.90031762,Vermoegenssteuer,Vermögenssteuer,18,Klybeck,1,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,186 Fr.
 2018,14,2015,Steuerjahr 2015,206.8607831,Vermoegenssteuer,Vermögenssteuer,19,Kleinhüningen,2,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,207 Fr.
-2018,14,2015,Steuerjahr 2015,3075.9103589,Vermoegenssteuer,Vermögenssteuer,20,Riehen,17,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,3 076 Fr.
-2018,14,2015,Steuerjahr 2015,15530.157643,Vermoegenssteuer,Vermögenssteuer,30,Bettingen,21,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,15 530 Fr.
-2018,14,2015,Steuerjahr 2015,2340.8408303,Vermoegenssteuer,Vermögenssteuer,99,Kanton Basel-Stadt,16,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,2 341 Fr.
-2018,15,2015,Steuerjahr 2015,16657.376716,Einkommenssteuer,Einkommenssteuer,1,Altstadt Grossbasel,20,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,16 657 Fr.
-2018,15,2015,Steuerjahr 2015,16404.67856,Einkommenssteuer,Einkommenssteuer,2,Vorstädte,19,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,16 405 Fr.
-2018,15,2015,Steuerjahr 2015,11315.365443,Einkommenssteuer,Einkommenssteuer,3,Am Ring,15,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,11 315 Fr.
-2018,15,2015,Steuerjahr 2015,7288.0944151,Einkommenssteuer,Einkommenssteuer,4,Breite,9,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,7 288 Fr.
-2018,15,2015,Steuerjahr 2015,16187.932598,Einkommenssteuer,Einkommenssteuer,5,St. Alban,18,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,16 188 Fr.
-2018,15,2015,Steuerjahr 2015,7236.5977818,Einkommenssteuer,Einkommenssteuer,6,Gundeldingen,8,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,7 237 Fr.
-2018,15,2015,Steuerjahr 2015,19693.706779,Einkommenssteuer,Einkommenssteuer,7,Bruderholz,22,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,19 694 Fr.
-2018,15,2015,Steuerjahr 2015,11394.452909,Einkommenssteuer,Einkommenssteuer,8,Bachletten,16,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,11 394 Fr.
-2018,15,2015,Steuerjahr 2015,8647.5237414,Einkommenssteuer,Einkommenssteuer,9,Gotthelf,11,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,8 648 Fr.
-2018,15,2015,Steuerjahr 2015,6316.4219119,Einkommenssteuer,Einkommenssteuer,10,Iselin,5,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,6 316 Fr.
-2018,15,2015,Steuerjahr 2015,6584.1510923,Einkommenssteuer,Einkommenssteuer,11,St. Johann,7,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,6 584 Fr.
-2018,15,2015,Steuerjahr 2015,8736.081864,Einkommenssteuer,Einkommenssteuer,12,Altstadt Kleinbasel,12,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,8 736 Fr.
-2018,15,2015,Steuerjahr 2015,6127.2649713,Einkommenssteuer,Einkommenssteuer,13,Clara,3,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,6 127 Fr.
-2018,15,2015,Steuerjahr 2015,10771.600289,Einkommenssteuer,Einkommenssteuer,14,Wettstein,14,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,10 772 Fr.
-2018,15,2015,Steuerjahr 2015,7527.794101,Einkommenssteuer,Einkommenssteuer,15,Hirzbrunnen,10,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,7 528 Fr.
-2018,15,2015,Steuerjahr 2015,6401.2032932,Einkommenssteuer,Einkommenssteuer,16,Rosental,6,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,6 401 Fr.
-2018,15,2015,Steuerjahr 2015,6313.3239063,Einkommenssteuer,Einkommenssteuer,17,Matthäus,4,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,6 313 Fr.
-2018,15,2015,Steuerjahr 2015,4462.0400684,Einkommenssteuer,Einkommenssteuer,18,Klybeck,1,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,4 462 Fr.
-2018,15,2015,Steuerjahr 2015,4908.5997514,Einkommenssteuer,Einkommenssteuer,19,Kleinhüningen,2,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,4 909 Fr.
-2018,15,2015,Steuerjahr 2015,13428.811448,Einkommenssteuer,Einkommenssteuer,20,Riehen,17,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,13 429 Fr.
-2018,15,2015,Steuerjahr 2015,19464.664013,Einkommenssteuer,Einkommenssteuer,30,Bettingen,21,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,19 465 Fr.
-2018,15,2015,Steuerjahr 2015,9664.6299359,Einkommenssteuer,Einkommenssteuer,99,Kanton Basel-Stadt,13,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,9 665 Fr.
+2018,14,2015,Steuerjahr 2015,3075.9103589,Vermoegenssteuer,Vermögenssteuer,20,Riehen,17,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,3 076 Fr.
+2018,14,2015,Steuerjahr 2015,15530.157643,Vermoegenssteuer,Vermögenssteuer,30,Bettingen,21,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,15 530 Fr.
+2018,14,2015,Steuerjahr 2015,2340.8408303,Vermoegenssteuer,Vermögenssteuer,99,Kanton Basel-Stadt,16,Wirtschaft und Arbeit,Die Vermögenssteuer ist für mich,Eine hohe Vermögenssteuer ist für mich,Fr.,2 341 Fr.
+2018,15,2015,Steuerjahr 2015,16657.376716,Einkommenssteuer,Einkommenssteuer,1,Altstadt Grossbasel,20,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,16 657 Fr.
+2018,15,2015,Steuerjahr 2015,16404.67856,Einkommenssteuer,Einkommenssteuer,2,Vorstädte,19,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,16 405 Fr.
+2018,15,2015,Steuerjahr 2015,11315.365443,Einkommenssteuer,Einkommenssteuer,3,Am Ring,15,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,11 315 Fr.
+2018,15,2015,Steuerjahr 2015,7288.0944151,Einkommenssteuer,Einkommenssteuer,4,Breite,9,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,7 288 Fr.
+2018,15,2015,Steuerjahr 2015,16187.932598,Einkommenssteuer,Einkommenssteuer,5,St. Alban,18,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,16 188 Fr.
+2018,15,2015,Steuerjahr 2015,7236.5977818,Einkommenssteuer,Einkommenssteuer,6,Gundeldingen,8,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,7 237 Fr.
+2018,15,2015,Steuerjahr 2015,19693.706779,Einkommenssteuer,Einkommenssteuer,7,Bruderholz,22,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,19 694 Fr.
+2018,15,2015,Steuerjahr 2015,11394.452909,Einkommenssteuer,Einkommenssteuer,8,Bachletten,16,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,11 394 Fr.
+2018,15,2015,Steuerjahr 2015,8647.5237414,Einkommenssteuer,Einkommenssteuer,9,Gotthelf,11,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,8 648 Fr.
+2018,15,2015,Steuerjahr 2015,6316.4219119,Einkommenssteuer,Einkommenssteuer,10,Iselin,5,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,6 316 Fr.
+2018,15,2015,Steuerjahr 2015,6584.1510923,Einkommenssteuer,Einkommenssteuer,11,St. Johann,7,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,6 584 Fr.
+2018,15,2015,Steuerjahr 2015,8736.081864,Einkommenssteuer,Einkommenssteuer,12,Altstadt Kleinbasel,12,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,8 736 Fr.
+2018,15,2015,Steuerjahr 2015,6127.2649713,Einkommenssteuer,Einkommenssteuer,13,Clara,3,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,6 127 Fr.
+2018,15,2015,Steuerjahr 2015,10771.600289,Einkommenssteuer,Einkommenssteuer,14,Wettstein,14,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,10 772 Fr.
+2018,15,2015,Steuerjahr 2015,7527.794101,Einkommenssteuer,Einkommenssteuer,15,Hirzbrunnen,10,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,7 528 Fr.
+2018,15,2015,Steuerjahr 2015,6401.2032932,Einkommenssteuer,Einkommenssteuer,16,Rosental,6,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,6 401 Fr.
+2018,15,2015,Steuerjahr 2015,6313.3239063,Einkommenssteuer,Einkommenssteuer,17,Matthäus,4,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,6 313 Fr.
+2018,15,2015,Steuerjahr 2015,4462.0400684,Einkommenssteuer,Einkommenssteuer,18,Klybeck,1,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,4 462 Fr.
+2018,15,2015,Steuerjahr 2015,4908.5997514,Einkommenssteuer,Einkommenssteuer,19,Kleinhüningen,2,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,4 909 Fr.
+2018,15,2015,Steuerjahr 2015,13428.811448,Einkommenssteuer,Einkommenssteuer,20,Riehen,17,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,13 429 Fr.
+2018,15,2015,Steuerjahr 2015,19464.664013,Einkommenssteuer,Einkommenssteuer,30,Bettingen,21,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,19 465 Fr.
+2018,15,2015,Steuerjahr 2015,9664.6299359,Einkommenssteuer,Einkommenssteuer,99,Kanton Basel-Stadt,13,Wirtschaft und Arbeit,Die Einkommenssteuer ist für mich,Eine hohe Einkommenssteuer ist für mich,Fr.,9 665 Fr.
 2018,16,,2012-2016,0.8563773753,Erwerbstaetigenquote,Erwerbstätigenquote,1,Altstadt Grossbasel,22,Wirtschaft und Arbeit,Die Erwerbstätigenquote ist für mich,Eine hohe Erwerbstätigenquote ist für mich,,"85,6%"
 2018,16,,2012-2016,0.7730196667,Erwerbstaetigenquote,Erwerbstätigenquote,2,Vorstädte,18,Wirtschaft und Arbeit,Die Erwerbstätigenquote ist für mich,Eine hohe Erwerbstätigenquote ist für mich,,"77,3%"
 2018,16,,2012-2016,0.8011045547,Erwerbstaetigenquote,Erwerbstätigenquote,3,Am Ring,21,Wirtschaft und Arbeit,Die Erwerbstätigenquote ist für mich,Eine hohe Erwerbstätigenquote ist für mich,,"80,1%"

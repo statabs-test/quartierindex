@@ -15,6 +15,10 @@ const getObservations = (state: Rootstate) => {
   return state.observation.byId
 }
 
+export const getAllObservations = (state: Rootstate) => {
+  return _.values(state.observation.byId)
+}
+
 /**
  * Group observations by district
  * @returns { [districtId: string]: Observation[] }

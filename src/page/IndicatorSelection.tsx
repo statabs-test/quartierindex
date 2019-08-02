@@ -46,7 +46,7 @@ const IndicatorSelection: React.SFC<Props> = props => {
     <WizardLayout ignoreRedirect>
 
       {welcome(
-        `Herzlich Willkommen bei \u00ABFinden Sie Ihr Lieblingswohnviertel\u00BB!
+        `Herzlich willkommen bei \u00ABFinden Sie Ihr Lieblingswohnviertel\u00BB!
           Auf dieser Seite können Sie Ihre ganz persönliche Rangliste der
           Basler Wohnviertel und Gemeinden erstellen.
         `
@@ -63,7 +63,7 @@ const IndicatorSelection: React.SFC<Props> = props => {
       </div>
       <div className="mainFrame">
         <h2 className="wizardTitle">
-          Schritt 1: Wählen Sie mindestends einen Indikator aus
+          Schritt 1: Wählen Sie mindestens einen Indikator aus.
         </h2>
         <div className="selections">
           {_.map(groupedIndicators, (value, key) => (

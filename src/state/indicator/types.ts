@@ -16,6 +16,7 @@ export interface Indicator {
     readonly subject: string
     readonly publication: string
     readonly year: string
+    readonly yearText: string
     readonly selected?: boolean
     readonly valuation: NegativePositive
     readonly valuationText: string

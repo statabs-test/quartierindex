@@ -4,6 +4,9 @@ export interface Observation {
   readonly indicatorId: string
   readonly value: number
   readonly normValue: number
+  readonly value_unit: string
+  readonly value_txt: string
+  readonly ranking: string
   // should not be used, until we know for what this value is, confusing with our calculated ranking
   // readonly ranking: string
 }

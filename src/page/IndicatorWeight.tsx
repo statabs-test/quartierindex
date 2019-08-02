@@ -41,16 +41,16 @@ const IndicatorWeight: React.SFC<Props & WithStyles<typeof styles>> = props => {
 
       <div className="wizardDescription text">
         Bitte weisen Sie jedem ausgewählten Indikator ein individuelles Gewicht zu und bestimmen Sie
-        somit, wie wichtig er für die Berechnung ihrer Wohnviertel-Rangliste sein soll. Folgende
+        somit, wie wichtig er für die Berechnung Ihrer Wohnviertel-Rangliste sein soll. Folgende
         Gewichtungs-Einstellungen stehen zur Auswahl: <br />
-        positiv: sehr unwichtig = Gewicht von 0.25, eher unwichtig = Gewicht von 0.5, eher wichtig =
-        Gewicht von 0.75, sehr wichtig = Gewicht von 1. <br />
-        negativ: sehr unwichtig = Gewicht von -0.25, eher unwichtig = Gewicht von -0.5, eher wichtig
-        = Gewicht von -0.75, sehr wichtig = Gewicht von -1.
+        positiv: sehr unwichtig = Gewicht von 0,25, eher unwichtig = Gewicht von 0,5, eher wichtig =
+        Gewicht von 0,75, sehr wichtig = Gewicht von 1. <br />
+        negativ: sehr unwichtig = Gewicht von -0,25, eher unwichtig = Gewicht von -0,5, eher wichtig
+        = Gewicht von -0,75, sehr wichtig = Gewicht von -1.
       </div>
       <div className="mainFrame">
         <h2 className="wizardTitle">
-          Schritt 3: Geben Sie an, wie wichtig der Indikator für Sie ist
+          Schritt 3: Geben Sie an, wie wichtig der Indikator für Sie ist.
         </h2>
         <div className="contentBox">
           {selectedIndicators.map(indicator => {

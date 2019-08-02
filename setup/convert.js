@@ -50,7 +50,8 @@ function check(error, name) {
 const data = fs.readFileSync(QUARTIERINDEX_2018, { encoding : 'utf8'});
 
 const options = {
-  delimiter : ',', // optional
+  delimiter : ',',
+  quote     : '"',
   
   // Rename column header, original was
   // Publikationsjahr,Indikator_Nr,jahr_num,jahr_char,Wert,Indikator_Name,Indicator_Label,Wohnviertel_id,Wohnviertel,Rang,Subjekt,Gewichtung_Text,Bewertung_Text,Einheit,wert_txt
@@ -87,6 +88,7 @@ const indicatorData = _.uniqBy(
         subject: data.subject,
         publication: data.publication,
         year: data.year,
+        yearText: data.yearChar,
         // Compare with indicator types
         valuation: 1,
         valuationText: data.valuationText,
@@ -136,6 +138,7 @@ const groupObservationsByIndicator = (data) => {
 let valueId = 0;
 const indicatorGroupedData = groupObservationsByIndicator(dataWithoutHeader);
 const valueData = _.map(dataWithoutHeader, (data) => {
+
   const min = _.minBy(indicatorGroupedData[data.indicatorId], function(indicator) {
       return parseFloat(indicator.value);
   });
@@ -150,6 +153,8 @@ const valueData = _.map(dataWithoutHeader, (data) => {
       value: parseFloat(data.value),
       normValue: normalizeValue(parseFloat(data.value), max.value, min.value),
       ranking: data.ranking,
+      value_unit: data.unit,
+      value_txt: data.value_txt,
     }
 });
 writeJsonFile(valueData, OBSERVATIONS);

@@ -104,3 +104,12 @@ export const getRankPosition = (
     {}
   )
 }
+/**
+ * Convert the decimal point into a comma.
+ * 
+ * @param num the number to convert
+ */
+export const convertDecimalPoint = (num: any): String => {
+  return num.toString().replace('.', ',');
+}
+

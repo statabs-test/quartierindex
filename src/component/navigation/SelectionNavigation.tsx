@@ -20,7 +20,7 @@ const SelectionNavigation: React.SFC<SelectionNavigationProps> = ({ valid }) => 
             an.
             <br />
             In diesem Fall wird für jeden ausgewählten Indikator angenommen, dass ein hoher Wert für
-            Sie positiv und der Indikator sehr wichtig ist. Alternativ dazu können sie die Bewertung
+            Sie positiv und der Indikator sehr wichtig ist. Alternativ dazu können Sie die Bewertung
             und die Gewichtung in separaten Arbeitsschritten für jeden ausgewählten Indikator
             einzeln anpassen.
           </p>
