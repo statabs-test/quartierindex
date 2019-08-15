@@ -8,15 +8,15 @@ self.__precacheManifest = [
     "url": "/quartierindex/static/js/runtime~main.fbb9092a.js"
   },
   {
-    "revision": "7913947fd66ef3f24f54",
-    "url": "/quartierindex/static/js/main.7913947f.chunk.js"
+    "revision": "141fcfe82f0c9755e557",
+    "url": "/quartierindex/static/js/main.141fcfe8.chunk.js"
   },
   {
     "revision": "89e4a34443b56f5caf55",
     "url": "/quartierindex/static/js/1.89e4a344.chunk.js"
   },
   {
-    "revision": "7913947fd66ef3f24f54",
+    "revision": "141fcfe82f0c9755e557",
     "url": "/quartierindex/static/css/main.1831a75c.chunk.css"
   },
   {
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/quartierindex/static/css/1.54942335.chunk.css"
   },
   {
-    "revision": "81a58d358a4f3c752b4bc2297406d363",
+    "revision": "1198a7a6ae13e24d7eb38f58446e85eb",
     "url": "/quartierindex/index.html"
   }
 ];
