@@ -2426,8 +2426,8 @@
         "value": 89.764261168,
         "normValue": 0.4355177173368799,
         "ranking": "17",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "89,8 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "89,8 m²"
     },
     {
         "id": 244,
@@ -2436,8 +2436,8 @@
         "value": 82.107153371,
         "normValue": 0.29807324030413906,
         "ranking": "15",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "82,1 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "82,1 m²"
     },
     {
         "id": 245,
@@ -2446,8 +2446,8 @@
         "value": 81.975544336,
         "normValue": 0.29571086857477075,
         "ranking": "14",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "82,0 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "82,0 m²"
     },
     {
         "id": 246,
@@ -2456,8 +2456,8 @@
         "value": 70.169032499,
         "normValue": 0.08378491845910101,
         "ranking": "6",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "70,2 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "70,2 m²"
     },
     {
         "id": 247,
@@ -2466,8 +2466,8 @@
         "value": 93.409726538,
         "normValue": 0.500953531302686,
         "ranking": "19",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "93,4 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "93,4 m²"
     },
     {
         "id": 248,
@@ -2476,8 +2476,8 @@
         "value": 70.318120925,
         "normValue": 0.08646104386917211,
         "ranking": "7",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "70,3 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "70,3 m²"
     },
     {
         "id": 249,
@@ -2486,8 +2486,8 @@
         "value": 109.46916648,
         "normValue": 0.7892192032489129,
         "ranking": "21",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "109,5 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "109,5 m²"
     },
     {
         "id": 250,
@@ -2496,8 +2496,8 @@
         "value": 92.818792867,
         "normValue": 0.4903463188244375,
         "ranking": "18",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "92,8 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "92,8 m²"
     },
     {
         "id": 251,
@@ -2506,8 +2506,8 @@
         "value": 74.558432132,
         "normValue": 0.1625742933823268,
         "ranking": "11",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "74,6 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "74,6 m²"
     },
     {
         "id": 252,
@@ -2516,8 +2516,8 @@
         "value": 68.644185571,
         "normValue": 0.05641403716420084,
         "ranking": "4",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "68,6 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "68,6 m²"
     },
     {
         "id": 253,
@@ -2526,8 +2526,8 @@
         "value": 71.702207331,
         "normValue": 0.11130528496962097,
         "ranking": "10",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "71,7 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "71,7 m²"
     },
     {
         "id": 254,
@@ -2536,8 +2536,8 @@
         "value": 71.346925972,
         "normValue": 0.1049280127825468,
         "ranking": "9",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "71,3 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "71,3 m²"
     },
     {
         "id": 255,
@@ -2546,8 +2546,8 @@
         "value": 66.433217693,
         "normValue": 0.01672733929023891,
         "ranking": "2",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "66,4 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "66,4 m²"
     },
     {
         "id": 256,
@@ -2556,8 +2556,8 @@
         "value": 83.103856666,
         "normValue": 0.31596398531777947,
         "ranking": "16",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "83,1 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "83,1 m²"
     },
     {
         "id": 257,
@@ -2566,8 +2566,8 @@
         "value": 81.079755892,
         "normValue": 0.27963153712461264,
         "ranking": "13",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "81,1 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "81,1 m²"
     },
     {
         "id": 258,
@@ -2576,8 +2576,8 @@
         "value": 69.496442255,
         "normValue": 0.07171197697849117,
         "ranking": "5",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "69,5 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "69,5 m²"
     },
     {
         "id": 259,
@@ -2586,8 +2586,8 @@
         "value": 67.260189147,
         "normValue": 0.03157141123350811,
         "ranking": "3",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "67,3 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "67,3 m²"
     },
     {
         "id": 260,
@@ -2596,8 +2596,8 @@
         "value": 65.501328374,
         "normValue": 0,
         "ranking": "1",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "65,5 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "65,5 m²"
     },
     {
         "id": 261,
@@ -2606,8 +2606,8 @@
         "value": 70.376193975,
         "normValue": 0.08750345050605843,
         "ranking": "8",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "70,4 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "70,4 m²"
     },
     {
         "id": 262,
@@ -2616,8 +2616,8 @@
         "value": 102.7498071,
         "normValue": 0.6686072358503375,
         "ranking": "20",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "102,7 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "102,7 m²"
     },
     {
         "id": 263,
@@ -2626,8 +2626,8 @@
         "value": 121.21188119,
         "normValue": 1,
         "ranking": "22",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "121,2 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "121,2 m²"
     },
     {
         "id": 264,
@@ -2636,8 +2636,8 @@
         "value": 79.755369431,
         "normValue": 0.25585890529713545,
         "ranking": "12",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "79,8 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "79,8 m²"
     },
     {
         "id": 265,
@@ -2646,8 +2646,8 @@
         "value": 53.158121706,
         "normValue": 1,
         "ranking": "22",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "53,2 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "53,2 m²"
     },
     {
         "id": 266,
@@ -2656,8 +2656,8 @@
         "value": 49.837307449,
         "normValue": 0.844764578110397,
         "ranking": "20",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "49,8 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "49,8 m²"
     },
     {
         "id": 267,
@@ -2666,8 +2666,8 @@
         "value": 45.35195972,
         "normValue": 0.6350916505851142,
         "ranking": "15",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "45,4 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "45,4 m²"
     },
     {
         "id": 268,
@@ -2676,8 +2676,8 @@
         "value": 38.580147476,
         "normValue": 0.31853521312745625,
         "ranking": "9",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "38,6 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "38,6 m²"
     },
     {
         "id": 269,
@@ -2686,8 +2686,8 @@
         "value": 48.422274199,
         "normValue": 0.7786171616782571,
         "ranking": "18",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "48,4 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "48,4 m²"
     },
     {
         "id": 270,
@@ -2696,8 +2696,8 @@
         "value": 38.334746684,
         "normValue": 0.3070636605111479,
         "ranking": "8",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "38,3 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "38,3 m²"
     },
     {
         "id": 271,
@@ -2706,8 +2706,8 @@
         "value": 48.463106267,
         "normValue": 0.780525905381475,
         "ranking": "19",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "48,5 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "48,5 m²"
     },
     {
         "id": 272,
@@ -2716,8 +2716,8 @@
         "value": 46.271230827,
         "normValue": 0.6780640745396486,
         "ranking": "16",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "46,3 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "46,3 m²"
     },
     {
         "id": 273,
@@ -2726,8 +2726,8 @@
         "value": 40.865903756,
         "normValue": 0.42538561577031914,
         "ranking": "11",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "40,9 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "40,9 m²"
     },
     {
         "id": 274,
@@ -2736,8 +2736,8 @@
         "value": 36.415617577,
         "normValue": 0.21735168220408704,
         "ranking": "7",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "36,4 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "36,4 m²"
     },
     {
         "id": 275,
@@ -2746,8 +2746,8 @@
         "value": 36.361505244,
         "normValue": 0.21482213667922706,
         "ranking": "6",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "36,4 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "36,4 m²"
     },
     {
         "id": 276,
@@ -2756,8 +2756,8 @@
         "value": 42.766153846,
         "normValue": 0.5142150719180394,
         "ranking": "13",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "42,8 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "42,8 m²"
     },
     {
         "id": 277,
@@ -2766,8 +2766,8 @@
         "value": 36.286571056,
         "normValue": 0.2113192487162479,
         "ranking": "5",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "36,3 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "36,3 m²"
     },
     {
         "id": 278,
@@ -2776,8 +2776,8 @@
         "value": 45.328020756,
         "normValue": 0.633972595170224,
         "ranking": "14",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "45,3 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "45,3 m²"
     },
     {
         "id": 279,
@@ -2786,8 +2786,8 @@
         "value": 38.913104491,
         "normValue": 0.33409968578222043,
         "ranking": "10",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "38,9 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "38,9 m²"
     },
     {
         "id": 280,
@@ -2796,8 +2796,8 @@
         "value": 33.602657907,
         "normValue": 0.08585652850483336,
         "ranking": "3",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "33,6 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "33,6 m²"
     },
     {
         "id": 281,
@@ -2806,8 +2806,8 @@
         "value": 34.932337722,
         "normValue": 0.14801399684998745,
         "ranking": "4",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "34,9 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "34,9 m²"
     },
     {
         "id": 282,
@@ -2816,8 +2816,8 @@
         "value": 31.766005032,
         "normValue": 0,
         "ranking": "1",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "31,8 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "31,8 m²"
     },
     {
         "id": 283,
@@ -2826,8 +2826,8 @@
         "value": 32.244484629,
         "normValue": 0.022367099258650932,
         "ranking": "2",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "32,2 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "32,2 m²"
     },
     {
         "id": 284,
@@ -2836,8 +2836,8 @@
         "value": 47.529964691,
         "normValue": 0.7369050898156111,
         "ranking": "17",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "47,5 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "47,5 m²"
     },
     {
         "id": 285,
@@ -2846,8 +2846,8 @@
         "value": 52.784728611,
         "normValue": 0.9825452945732188,
         "ranking": "21",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "52,8 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "52,8 m²"
     },
     {
         "id": 286,
@@ -2856,8 +2856,8 @@
         "value": 41.045173628,
         "normValue": 0.43376579968254897,
         "ranking": "12",
-        "value_unit": "m<sup>2</sup>",
-        "value_txt": "41,0 m<sup>2</sup>"
+        "value_unit": "m²",
+        "value_txt": "41,0 m²"
     },
     {
         "id": 287,
