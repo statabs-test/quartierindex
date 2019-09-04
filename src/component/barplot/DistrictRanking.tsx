@@ -138,8 +138,10 @@ class DistrictRanking extends React.Component<PublicProps & InjectedProps, State
                     </li>
                   </React.Fragment>
                 )
-              })}
+              })} 
             </ul>
+            <div className="method-explanation-header">Methodischer Hinweis</div>
+            <div className="method-explanation-content"> Die Länge der Balken entspricht nicht dem Wert, der im Tooltip angezeigt wird, sondern ergibt sich durch Min-Max-Normalisierung der einzelnen Indikatoren. Der höchste Wert pro Indikator wird auf 1 skaliert, der niedrigste Wert auf 0.</div>
           </div>
         </div>
       </div>
