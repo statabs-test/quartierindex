@@ -32,7 +32,7 @@
     "@types/recharts": "file:@types/recharts",
     "babel-polyfill": "^6.26.0",
     "classnames": "^2.2.6",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.17",
     "rc-slider": "^8.6.3",
     "react": "^16.5.3",
     "react-dom": "^16.5.3",
