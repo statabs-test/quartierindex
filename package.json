@@ -32,7 +32,7 @@
     "@types/recharts": "file:@types/recharts",
     "babel-polyfill": "^6.26.0",
     "classnames": "^2.2.6",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "rc-slider": "^8.6.3",
     "react": "^16.5.3",
     "react-dom": "^16.5.3",
@@ -44,7 +44,8 @@
     "recharts": "git+https://github.com/FUUbi/recharts.git#v1.4.2-patch.1",
     "recompose": "^0.30.0",
     "redux": "^4.0.1",
-    "reselect": "^4.0.0"
+    "reselect": "^4.0.0",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "setup": "node ./setup/convert",
@@ -53,12 +54,15 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "snyk": true
 }
